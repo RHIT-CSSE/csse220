@@ -1,0 +1,31 @@
+- type: class
+  session_no: 1
+  reading:
+    - Bookmark this page
+    - [Syllabus](syllabus.md)
+    - [Coding Standards and Grading](coding_standards.md)
+    - Skim materials available on moodle
+    - Big Java Ch. 5
+  topics:
+    - Brief course introduction
+    - Getting started with java
+    - Eclipse and subclipse
+    - Variables/types
+    - The String class
+  materials: JavaIntro
+  other:
+    - [Python vs. Java](https://www.rose-hulman.edu/class/csse/csse220/201830/Resources/Python_vs_Java.html)
+- type: class
+  session_no: 2
+  reading:
+    - Big Java, 7.1-7.3, 7.7
+  topics:
+    - Loops (for and while)
+    - The String class
+    - Primitive Types
+    - Arrays
+    - ArrayLists
+    - Enhanced for loop
+  materials: ArrayAndArrayLists
+  other:
+    - None
