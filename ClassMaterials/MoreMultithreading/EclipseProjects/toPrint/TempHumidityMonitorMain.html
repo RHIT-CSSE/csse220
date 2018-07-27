@@ -1,0 +1,698 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+.Wrap { white-space: nowrap; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+.TextSegElementKeyword { font-weight: bold; }
+.TextSegElementIdentifier { }
+.TextSegElementNumber { color: #2E9269; }
+.TextSegElementString { color: #3A7726; }
+.TextSegElementComment { color: #786A41; }
+.TextSegElementOperator { }
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+Text Compare<br/>
+Produced: 11/28/2015 9:49:11 PM<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; All, With Context, Ignoring Unimportant &nbsp;
+<br/>
+Left file: C:\Classes\CSSE220\SVN\ClassMaterials\MoreMultithreading\EclipseProjects\TemperatureMonitor\src\TempHumidityMonitorMain.java &nbsp;
+<br/>
+Right file: C:\Classes\CSSE220\SVN\ClassMaterials\MoreMultithreading\EclipseProjects\TemperatureMonitorSolution\src\TempHumidityMonitorMain.java &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">util</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">ArrayList</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSigMod Wrap"><span class="TextSegSigDiff">import</span> <span class="TextSegSigDiff">java</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">util</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">Collections</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSigMod Wrap"><span class="TextSegSigDiff">import</span> <span class="TextSegSigDiff">java</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">util</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">List</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">util</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Random</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">javax</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">swing</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">JFrame</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">javax</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">swing</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">JOptionPane</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">javax</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">swing</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">JPanel</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;*&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* Main class for running the Temperature and Humidity Monitor program.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;*&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* This program is intended to simulate a user who is watching temperature</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* and humidity sensors for a number of labs.&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;*&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* This application is intended to illustrate use case 1 from the More&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* Multithreading slides for CSSE220. This use case involves gathering&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* data from multiple threads into a central location. In this case,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* all temperature and humidity sensor errors should be gathered and&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* displayed in the Console.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;*</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* @author Amanda Stouder. Created Oct 30, 2015.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;*/</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">class</span> <span class="TextSegElementIdentifier">TempHumidityMonitorMain</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * The list of labs to create. Shorten for fewer labs.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">final</span> <span class="TextSegElementIdentifier">String</span><span class="TextSegElementOperator">[]</span> <span class="TextSegElementIdentifier">LabNames</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">String</span><span class="TextSegElementOperator">[]</span> <span class="TextSegElementOperator">{</span> <span class="TextSegElementString">&quot;Stability Lab&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementString">&quot;Chemistry Lab 1&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementString">&quot;Clean Room&quot;</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementString">&quot;Production Lab 1&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementString">&quot;Chemistry Lab 2&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementString">&quot;Research Lab 1&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementString">&quot;Biohazard Lab&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementString">&quot;Chemistry Lab 3&quot;</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementString">&quot;Production Lab 2&quot;</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementString">&quot;Research Lab 2&quot;</span> <span class="TextSegElementOperator">};</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * The width of the frame.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">final</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">FRAME_WIDTH</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">700</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * The height of the frame.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">final</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">FRAME_HEIGHT</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">600</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Whether or not to use the test sensors that you can control values.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">final</span> <span class="TextSegElementKeyword">boolean</span> <span class="TextSegElementIdentifier">USE_TEST_SENSOR</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">false</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Runs the application.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param args</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">main</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">String</span><span class="TextSegElementOperator">[]</span> <span class="TextSegElementIdentifier">args</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">JFrame</span> <span class="TextSegElementIdentifier">frame</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">JFrame</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">frame</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">setSize</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">FRAME_WIDTH</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">FRAME_HEIGHT</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">JPanel</span> <span class="TextSegElementIdentifier">panel</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">JPanel</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">panel</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">setLayout</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">frame</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">panel</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">MonitorPanel</span> <span class="TextSegElementIdentifier">monitorPanel</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">MonitorPanel</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">FRAME_WIDTH</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">FRAME_HEIGHT</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">panel</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">monitorPanel</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">List</span><span class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">MonitorError</span><span class="TextSegSigDiff">&gt;</span> <span class="TextSegSigDiff">queue</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">Collections</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">synchronizedList</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">ArrayList</span><span class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">MonitorError</span><span class="TextSegSigDiff">&gt;());</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">ErrorReporter</span> <span class="TextSegSigDiff">monitorRunner</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">ErrorReporter</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">queue</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">Thread</span> <span class="TextSegSigDiff">monitorThread</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">Thread</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">monitorRunner</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">monitorThread</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">start</span><span class="TextSegSigDiff">();</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SubsectionAll">
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; ArrayList&lt;TemperatureHumiditySensor&gt; monitors = createMonitors();</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; ArrayList&lt;TemperatureHumiditySensor&gt; monitors = createMonitors(<span class="TextSegSigDiff">queue</span>);</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">monitorPanel</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">addMonitors</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">monitors</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">startMonitors</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">monitors</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">frame</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">setDefaultCloseOperation</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">JFrame</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">EXIT_ON_CLOSE</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">frame</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">setVisible</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">true</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">USE_TEST_SENSOR</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">JOptionPane</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">showMessageDialog</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">frame</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementString">&quot;You are using test sensors, to change the values in them, click on the sensor.&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Creates the list of monitors and then returns a the list of</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * monitors.&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param queue - The list that tracks errors that have occurred.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @return</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SubsectionAll">
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; public static ArrayList&lt;TemperatureHumiditySensor&gt; createMonitors() {</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; public static ArrayList&lt;TemperatureHumiditySensor&gt; createMonitors(<span class="TextSegSigDiff">List</span><span class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">MonitorError</span><span class="TextSegSigDiff">&gt;</span> <span class="TextSegSigDiff">queue</span>) {</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Random</span> <span class="TextSegElementIdentifier">rand</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Random</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ArrayList</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">TemperatureHumiditySensor</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">monitors</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">ArrayList</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">TemperatureHumiditySensor</span><span class="TextSegElementOperator">&gt;();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">LabNames</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">length</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">++)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">String</span> <span class="TextSegElementIdentifier">labName</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">LabNames</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">i</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">TemperatureHumiditySensor</span> <span class="TextSegElementIdentifier">monitor</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">null</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">USE_TEST_SENSOR</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SubsectionAll">
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; monitor = new TemperatureHumiditySensorWithButtons(labName, rand.nextDouble() * 50,</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; monitor = new TemperatureHumiditySensorWithButtons(<span class="TextSegSigDiff">queue</span><span class="TextSegSigDiff">,</span> labName, rand.nextDouble() * 50,</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">rand</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">nextDouble</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">*</span> <span class="TextSegElementNumber">50</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">60</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">rand</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">nextDouble</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">*</span> <span class="TextSegElementNumber">30</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">rand</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">nextDouble</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">*</span> <span class="TextSegElementNumber">50</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">50</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span> <span class="TextSegElementKeyword">else</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SubsectionAll">
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; monitor = new RandomTemperatureHumiditySensor(labName, rand.nextDouble() * 50,</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; monitor = new RandomTemperatureHumiditySensor(<span class="TextSegSigDiff">queue</span><span class="TextSegSigDiff">,</span> labName, rand.nextDouble() * 50,</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemNum AlignRight Wrap">102</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">rand</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">nextDouble</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">*</span> <span class="TextSegElementNumber">50</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">60</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">rand</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">nextDouble</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">*</span> <span class="TextSegElementNumber">30</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">rand</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">nextDouble</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">*</span> <span class="TextSegElementNumber">50</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">50</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemNum AlignRight Wrap">103</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemNum AlignRight Wrap">104</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemNum AlignRight Wrap">105</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">monitors</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">monitor</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemNum AlignRight Wrap">106</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemNum AlignRight Wrap">107</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">monitors</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">102</td>
+<td class="TextItemNum AlignRight Wrap">108</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">103</td>
+<td class="TextItemNum AlignRight Wrap">109</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">104</td>
+<td class="TextItemNum AlignRight Wrap">110</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">105</td>
+<td class="TextItemNum AlignRight Wrap">111</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Creates threads and starts the monitors.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">106</td>
+<td class="TextItemNum AlignRight Wrap">112</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">107</td>
+<td class="TextItemNum AlignRight Wrap">113</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param monitors - The list of monitors</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">108</td>
+<td class="TextItemNum AlignRight Wrap">114</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">109</td>
+<td class="TextItemNum AlignRight Wrap">115</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">startMonitors</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ArrayList</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">TemperatureHumiditySensor</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">monitors</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">110</td>
+<td class="TextItemNum AlignRight Wrap">116</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">TemperatureHumiditySensor</span> <span class="TextSegElementIdentifier">monitor</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementIdentifier">monitors</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">111</td>
+<td class="TextItemNum AlignRight Wrap">117</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Thread</span> <span class="TextSegElementIdentifier">thread</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Thread</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">monitor</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">112</td>
+<td class="TextItemNum AlignRight Wrap">118</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">thread</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">start</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">113</td>
+<td class="TextItemNum AlignRight Wrap">119</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">114</td>
+<td class="TextItemNum AlignRight Wrap">120</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">121</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">115</td>
+<td class="TextItemNum AlignRight Wrap">122</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementOperator">}</span></td>
+</tr>
+</table>
+<br/>
+</body>
+</html>

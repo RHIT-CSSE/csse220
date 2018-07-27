@@ -1,0 +1,11 @@
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/TestingGUIApplications/EclipseProjects/TicTacToe TicTacToe <fileContainingRepos>
+
+
+SOLUTION:
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/TestingGUIApplications/EclipseProjects/MinesweeperTestingSolution MinesweeperTestingSolution <fileContainingRepos>
+
+
+./svnPopulateTeamRepos-flex.sh boutell http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/TestingGUIApplications/EclipseProjects/TicTacToe TicTacToe csse220-201710-repos.txt
+
+
+

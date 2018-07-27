@@ -1,0 +1,142 @@
+Start 
+Name: HW1
+MainLink: ../Homework/hw01.html
+SessionStartName: JavaIntro
+NumCalendarDaysAllowed: 1
+DueBeforeClass: 0
+End
+
+Start 
+Name: TwelveProblems
+MainLink: ../Programs/TwelveProblems/instructions.htm
+SessionStartName: JavaIntro
+NumCalendarDaysAllowed: 3
+End
+
+
+Start 
+Name: Map and 2D Array Problems
+MainLink: ../Programs/SixMapAnd2DArrayHomework/instructions.htm
+SessionStartName: 2DArraysAndMaps
+NumCalendarDaysAllowed: 4
+End
+
+Start 
+Name: Team Gradebook
+MainLink: ../Programs/TeamGradebook/instructions.htm
+SessionStartName: ObjectIntroAndMisc
+NumCalendarDaysAllowed: 4
+End
+
+Start 
+Name: Scenes
+MainLink: ../Programs/Scenes/instructions.htm
+SessionStartName: IntroToGraphics
+NumCalendarDaysAllowed: 4
+End
+
+
+
+Start 
+Name: DesignProblems Pt1
+MainLink: ../Programs/DesignProblems/instructions.htm
+SessionStartName: SETechniques 
+NumCalendarDaysAllowed: 1
+DueBeforeClass: 1
+End
+
+Start 
+Name: ImplementingDesign1
+MainLink: ../Programs/ImplementingDesign1/instructions.htm
+SessionStartName: SETechniques
+NumCalendarDaysAllowed: 3
+End
+
+
+Start 
+Name: DesignProblems Pt2
+MainLink: ../Programs/DesignProblems/instructions.htm
+SessionStartName: PairingAndEncapsulation 
+NumCalendarDaysAllowed: 1
+DueBeforeClass: 1
+End
+
+Start 
+Name: ImplementingDesign2
+MainLink: ../Programs/ImplementingDesign2/instructions.htm
+SessionStartName: CohesionAndCoupling
+NumCalendarDaysAllowed: 3
+End
+
+
+Start 
+Name: DesignProblems Pt3
+MainLink: ../Programs/DesignProblems/instructions.htm
+SessionStartName: CohesionAndCoupling
+NumCalendarDaysAllowed: 4
+DueBeforeClass: 1
+End
+
+Start 
+Name: Recursion Practice
+MainLink: ../Programs/RecursionPractice/instructions.htm
+SessionStartName: Interfaces
+NumCalendarDaysAllowed: 2
+End
+
+Start 
+Name: Linear Lights Out
+MainLink: ../Programs/LinearLightsOut/instructions.htm
+SessionStartName: EventBasedProgramming
+NumCalendarDaysAllowed: 12
+End
+
+Start 
+Name: BallWorlds
+MainLink: ../Programs/BallWorlds/index.html
+SessionStartName: Inheritance
+NumCalendarDaysAllowed: 5
+End
+
+Start 
+Name: Arcade Game - Cycle 0
+MainLink: ../Programs/ArcadeGame/CSSE220_DigDug_programming_assignment.pdf
+SessionStartName: Exam2
+NumCalendarDaysAllowed: 2
+End
+
+Start 
+Name: Arcade Game - Cycle 1
+MainLink: ../Programs/ArcadeGame/CSSE220_DigDug_programming_assignment.pdf
+SessionStartNumber: 22
+NumCalendarDaysAllowed: 5
+End
+
+Start 
+Name: Arcade Game - Cycle 2
+MainLink: ../Programs/ArcadeGame/CSSE220_DigDug_programming_assignment.pdf
+SessionStartNumber: 24
+NumCalendarDaysAllowed: 6
+End
+
+Start 
+Name: Arcade Game - Cycle 3
+MainLink: ../Programs/ArcadeGame/CSSE220_DigDug_programming_assignment.pdf
+SessionStartNumber: 26
+NumCalendarDaysAllowed: 4
+End
+
+Start 
+Name: Arcade Game - Cycle 4
+MainLink: ../Programs/ArcadeGame/CSSE220_DigDug_programming_assignment.pdf
+SessionStartNumber: 27
+NumCalendarDaysAllowed: 6
+DueBeforeClass: 1
+End
+
+Start 
+Name: SinglyLinkedList
+MainLink: ../Programs/SinglyLinkedList/index.html
+SessionStartName: LinkedLists
+NumCalendarDaysAllowed: 3
+End

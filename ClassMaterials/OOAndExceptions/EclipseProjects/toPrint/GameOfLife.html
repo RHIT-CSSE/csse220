@@ -1,0 +1,1132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+.Wrap { white-space: nowrap; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+.TextSegElementKeyword { font-weight: bold; }
+.TextSegElementIdentifier { }
+.TextSegElementNumber { color: #2E9269; }
+.TextSegElementComment { color: #786A41; }
+.TextSegElementOperator { }
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+Text Compare<br/>
+Produced: 11/28/2015 9:49:16 PM<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; All, With Context, Ignoring Unimportant &nbsp;
+<br/>
+Left file: C:\Classes\CSSE220\SVN\ClassMaterials\OOAndExceptions\EclipseProjects\FilesAndExceptions\src\gameOfLifeWithIO\GameOfLife.java &nbsp;
+<br/>
+Right file: C:\Classes\CSSE220\SVN\ClassMaterials\OOAndExceptions\EclipseProjects\FilesAndExceptionsSolution\src\gameOfLifeWithIO\GameOfLife.java &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">package</span> <span class="TextSegElementIdentifier">gameOfLifeWithIO</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">awt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Graphics</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">awt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Graphics2D</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">awt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">event</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">ActionEvent</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">awt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">event</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">ActionListener</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">awt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">event</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">MouseAdapter</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">awt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">event</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">MouseEvent</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">awt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">event</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">MouseListener</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">awt</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">geom</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Ellipse2D</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">util</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">ArrayList</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">javax</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">swing</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">JComponent</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">javax</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">swing</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Timer</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* This class represents the game board. It can draw a graphical rendering of</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* its current state and can calculate its next state.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;*&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* @author Curt Clifton.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;*/</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">class</span> <span class="TextSegElementIdentifier">GameOfLife</span> <span class="TextSegElementKeyword">extends</span> <span class="TextSegElementIdentifier">JComponent</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">final</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">MAX_ROWS</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">90</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">final</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">MAX_COLUMNS</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">90</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">final</span> <span class="TextSegElementKeyword">double</span> <span class="TextSegElementIdentifier">DOT_SIZE</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">7</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementKeyword">final</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">AUTO_CLICK_INTERVAL</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">50</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">boolean</span><span class="TextSegElementOperator">[][]</span> <span class="TextSegElementIdentifier">occupiedCell</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Timer</span> <span class="TextSegElementIdentifier">updateTimer</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Constructs a new game board from the list of initially occupied</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * coordinates.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param initialCells</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementIdentifier">GameOfLife</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ArrayList</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Coordinates</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">initialCells</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">setFilledSquares</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">initialCells</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">/*</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; * This code creates a Timer object that periodically &quot;clicks&quot; the</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; * update button. See Big Java, ch. 9.9 for discussion.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">final</span> <span class="TextSegElementIdentifier">GameOfLife</span> <span class="TextSegElementIdentifier">game</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ActionListener</span> <span class="TextSegElementIdentifier">updater</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">ActionListener</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">actionPerformed</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ActionEvent</span> <span class="TextSegElementIdentifier">e</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">game</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">nextGeneration</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">game</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">repaint</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">};</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">updateTimer</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Timer</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">AUTO_CLICK_INTERVAL</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">updater</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">MouseListener</span> <span class="TextSegElementIdentifier">mouseHandler</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">MouseAdapter</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; @<span class="TextSegElementIdentifier">Override</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">mouseClicked</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">MouseEvent</span> <span class="TextSegElementIdentifier">e</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">row</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">e</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">getY</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">/</span> <span class="TextSegElementIdentifier">DOT_SIZE</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">col</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">e</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">getX</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">/</span> <span class="TextSegElementIdentifier">DOT_SIZE</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">game</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">toggleCell</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">row</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">col</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">};</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">addMouseListener</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">mouseHandler</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Returns whether the given cell is occupied. Treats out-of-bounds accesses</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * as &quot;wrapping&quot; around to the other side of the board. Method is</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * synchronized so that the test must complete before the board state is</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * changed by other threads.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param row</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; can be negative but must be &gt; -MAX_ROWS</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param column</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; can be negative but must be &gt; -MAX_COLUMNS</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @return whether or not the square in the given row and column is occupied</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">synchronized</span> <span class="TextSegElementKeyword">boolean</span> <span class="TextSegElementIdentifier">isOccupied</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">row</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">column</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">actualRow</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">row</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">MAX_ROWS</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">%</span> <span class="TextSegElementIdentifier">MAX_ROWS</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">actualColumn</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">column</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementIdentifier">MAX_COLUMNS</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">%</span> <span class="TextSegElementIdentifier">MAX_COLUMNS</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">occupiedCell</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">actualRow</span><span class="TextSegElementOperator">][</span><span class="TextSegElementIdentifier">actualColumn</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Counts the number of occupied cells around the given square. Method is</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * synchronized so that the count must complete before the board state is</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * changed by other threads.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param row</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param column</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @return the number of occupied cells</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">synchronized</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">getNeighborCount</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">row</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">column</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">minR</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">row</span> <span class="TextSegElementOperator">-</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">maxR</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">row</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">minC</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">column</span> <span class="TextSegElementOperator">-</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">maxC</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">column</span> <span class="TextSegElementOperator">+</span> <span class="TextSegElementNumber">1</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Counts all the cells in the neighborhood</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">count</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">r</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">minR</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">r</span> <span class="TextSegElementOperator">&lt;=</span> <span class="TextSegElementIdentifier">maxR</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">++)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">c</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">minC</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">c</span> <span class="TextSegElementOperator">&lt;=</span> <span class="TextSegElementIdentifier">maxC</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">++)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">count</span> <span class="TextSegElementOperator">+=</span> <span class="TextSegElementIdentifier">isOccupied</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">?</span> <span class="TextSegElementNumber">1</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">102</td>
+<td class="TextItemNum AlignRight Wrap">102</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">103</td>
+<td class="TextItemNum AlignRight Wrap">103</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">104</td>
+<td class="TextItemNum AlignRight Wrap">104</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Removes the central cell since it doesn't count</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">105</td>
+<td class="TextItemNum AlignRight Wrap">105</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">count</span> <span class="TextSegElementOperator">-=</span> <span class="TextSegElementIdentifier">isOccupied</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">row</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">column</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">?</span> <span class="TextSegElementNumber">1</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">106</td>
+<td class="TextItemNum AlignRight Wrap">106</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">107</td>
+<td class="TextItemNum AlignRight Wrap">107</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">count</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">108</td>
+<td class="TextItemNum AlignRight Wrap">108</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">109</td>
+<td class="TextItemNum AlignRight Wrap">109</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">110</td>
+<td class="TextItemNum AlignRight Wrap">110</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">111</td>
+<td class="TextItemNum AlignRight Wrap">111</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Updates the state of this game board for the next generation. Method is</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">112</td>
+<td class="TextItemNum AlignRight Wrap">112</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * synchronized so that updates to the game board must complete before the</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">113</td>
+<td class="TextItemNum AlignRight Wrap">113</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * board state is changed by other threads.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">114</td>
+<td class="TextItemNum AlignRight Wrap">114</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">115</td>
+<td class="TextItemNum AlignRight Wrap">115</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">synchronized</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">nextGeneration</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">116</td>
+<td class="TextItemNum AlignRight Wrap">116</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">boolean</span><span class="TextSegElementOperator">[][]</span> <span class="TextSegElementIdentifier">next</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementKeyword">boolean</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">MAX_ROWS</span><span class="TextSegElementOperator">][</span><span class="TextSegElementIdentifier">MAX_COLUMNS</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">117</td>
+<td class="TextItemNum AlignRight Wrap">117</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">r</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">r</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">MAX_ROWS</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">++)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">118</td>
+<td class="TextItemNum AlignRight Wrap">118</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">c</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">c</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">MAX_COLUMNS</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">++)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">119</td>
+<td class="TextItemNum AlignRight Wrap">119</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">count</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">getNeighborCount</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">120</td>
+<td class="TextItemNum AlignRight Wrap">120</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">isOccupied</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">count</span> <span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementNumber">1</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">count</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementNumber">4</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">121</td>
+<td class="TextItemNum AlignRight Wrap">121</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// lives on</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">122</td>
+<td class="TextItemNum AlignRight Wrap">122</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">next</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">][</span><span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">true</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">123</td>
+<td class="TextItemNum AlignRight Wrap">123</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">124</td>
+<td class="TextItemNum AlignRight Wrap">124</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(!</span><span class="TextSegElementIdentifier">isOccupied</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">&amp;&amp;</span> <span class="TextSegElementIdentifier">count</span> <span class="TextSegElementOperator">==</span> <span class="TextSegElementNumber">3</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">125</td>
+<td class="TextItemNum AlignRight Wrap">125</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// it's a girl!</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">126</td>
+<td class="TextItemNum AlignRight Wrap">126</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">next</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">][</span><span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">true</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">127</td>
+<td class="TextItemNum AlignRight Wrap">127</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">128</td>
+<td class="TextItemNum AlignRight Wrap">128</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// otherwise leave the next generation square unoccupied</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">129</td>
+<td class="TextItemNum AlignRight Wrap">129</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">130</td>
+<td class="TextItemNum AlignRight Wrap">130</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">131</td>
+<td class="TextItemNum AlignRight Wrap">131</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">occupiedCell</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">next</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">132</td>
+<td class="TextItemNum AlignRight Wrap">132</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">133</td>
+<td class="TextItemNum AlignRight Wrap">133</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">134</td>
+<td class="TextItemNum AlignRight Wrap">134</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; @<span class="TextSegElementIdentifier">Override</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">135</td>
+<td class="TextItemNum AlignRight Wrap">135</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">protected</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">paintComponent</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Graphics</span> <span class="TextSegElementIdentifier">g</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">136</td>
+<td class="TextItemNum AlignRight Wrap">136</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">super</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">paintComponent</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">g</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">137</td>
+<td class="TextItemNum AlignRight Wrap">137</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">138</td>
+<td class="TextItemNum AlignRight Wrap">138</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Graphics2D</span> <span class="TextSegElementIdentifier">g2</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Graphics2D</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementIdentifier">g</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">139</td>
+<td class="TextItemNum AlignRight Wrap">139</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">Ellipse2D</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Double</span> <span class="TextSegElementIdentifier">cell</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Ellipse2D</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Double</span><span class="TextSegElementOperator">(</span><span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">DOT_SIZE</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">DOT_SIZE</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">140</td>
+<td class="TextItemNum AlignRight Wrap">140</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">r</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">r</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">MAX_ROWS</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">++)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">141</td>
+<td class="TextItemNum AlignRight Wrap">141</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">c</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">c</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">MAX_COLUMNS</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">++)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">142</td>
+<td class="TextItemNum AlignRight Wrap">142</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">isOccupied</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">))</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">143</td>
+<td class="TextItemNum AlignRight Wrap">143</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">cell</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">y</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">DOT_SIZE</span> <span class="TextSegElementOperator">*</span> <span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">144</td>
+<td class="TextItemNum AlignRight Wrap">144</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">cell</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">x</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">DOT_SIZE</span> <span class="TextSegElementOperator">*</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">145</td>
+<td class="TextItemNum AlignRight Wrap">145</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">g2</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">fill</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">cell</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">146</td>
+<td class="TextItemNum AlignRight Wrap">146</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">147</td>
+<td class="TextItemNum AlignRight Wrap">147</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">148</td>
+<td class="TextItemNum AlignRight Wrap">148</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">149</td>
+<td class="TextItemNum AlignRight Wrap">149</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">150</td>
+<td class="TextItemNum AlignRight Wrap">150</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">151</td>
+<td class="TextItemNum AlignRight Wrap">151</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">152</td>
+<td class="TextItemNum AlignRight Wrap">152</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">153</td>
+<td class="TextItemNum AlignRight Wrap">153</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Toggles the occupied state of the cell at the given row and column</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">154</td>
+<td class="TextItemNum AlignRight Wrap">154</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * coordinates. Synchronized so calls from GUI thread don't collide with</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">155</td>
+<td class="TextItemNum AlignRight Wrap">155</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * calls from animation thread.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">156</td>
+<td class="TextItemNum AlignRight Wrap">156</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">157</td>
+<td class="TextItemNum AlignRight Wrap">157</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param row</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">158</td>
+<td class="TextItemNum AlignRight Wrap">158</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param col</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">159</td>
+<td class="TextItemNum AlignRight Wrap">159</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">160</td>
+<td class="TextItemNum AlignRight Wrap">160</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementKeyword">synchronized</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">toggleCell</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">row</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">col</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">161</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">if</span> <span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">row</span> <span class="TextSegSigDiff">&gt;=</span> <span class="TextSegSigDiff">0</span> <span class="TextSegSigDiff">&amp;&amp;</span> <span class="TextSegSigDiff">col</span> <span class="TextSegSigDiff">&gt;=</span> <span class="TextSegSigDiff">0</span> <span class="TextSegSigDiff">&amp;&amp;</span> <span class="TextSegSigDiff">row</span> <span class="TextSegSigDiff">&lt;</span> <span class="TextSegSigDiff">MAX_ROWS</span> <span class="TextSegSigDiff">&amp;&amp;</span> <span class="TextSegSigDiff">col</span> <span class="TextSegSigDiff">&lt;</span> <span class="TextSegSigDiff">MAX_COLUMNS</span><span class="TextSegSigDiff">)</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">161</td>
+<td class="TextItemNum AlignRight Wrap">162</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">occupiedCell</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">row</span><span class="TextSegElementOperator">][</span><span class="TextSegElementIdentifier">col</span><span class="TextSegElementOperator">]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementOperator">!</span><span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">occupiedCell</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">row</span><span class="TextSegElementOperator">][</span><span class="TextSegElementIdentifier">col</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">162</td>
+<td class="TextItemNum AlignRight Wrap">163</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">repaint</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">164</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">163</td>
+<td class="TextItemNum AlignRight Wrap">165</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">164</td>
+<td class="TextItemNum AlignRight Wrap">166</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">165</td>
+<td class="TextItemNum AlignRight Wrap">167</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">166</td>
+<td class="TextItemNum AlignRight Wrap">168</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Returns a list of the occupied coordinates. Method is synchronized so</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">167</td>
+<td class="TextItemNum AlignRight Wrap">169</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * animation thread cannot mutate the game state while this method is</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">168</td>
+<td class="TextItemNum AlignRight Wrap">170</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * constructing the list.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">169</td>
+<td class="TextItemNum AlignRight Wrap">171</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">170</td>
+<td class="TextItemNum AlignRight Wrap">172</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @return a list of the occupied coordinates</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">171</td>
+<td class="TextItemNum AlignRight Wrap">173</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">172</td>
+<td class="TextItemNum AlignRight Wrap">174</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">synchronized</span> <span class="TextSegElementIdentifier">ArrayList</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Coordinates</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">getFilledSquares</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">173</td>
+<td class="TextItemNum AlignRight Wrap">175</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">ArrayList</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Coordinates</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">result</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">ArrayList</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Coordinates</span><span class="TextSegElementOperator">&gt;();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">174</td>
+<td class="TextItemNum AlignRight Wrap">176</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">r</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">r</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">MAX_ROWS</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">++)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">175</td>
+<td class="TextItemNum AlignRight Wrap">177</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">int</span> <span class="TextSegElementIdentifier">c</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementNumber">0</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">c</span> <span class="TextSegElementOperator">&lt;</span> <span class="TextSegElementIdentifier">MAX_COLUMNS</span><span class="TextSegElementOperator">;</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">++)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">176</td>
+<td class="TextItemNum AlignRight Wrap">178</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">if</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">isOccupied</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">))</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">177</td>
+<td class="TextItemNum AlignRight Wrap">179</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">result</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">add</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Coordinates</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">r</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">c</span><span class="TextSegElementOperator">));</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">178</td>
+<td class="TextItemNum AlignRight Wrap">180</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">179</td>
+<td class="TextItemNum AlignRight Wrap">181</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">180</td>
+<td class="TextItemNum AlignRight Wrap">182</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">181</td>
+<td class="TextItemNum AlignRight Wrap">183</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">return</span> <span class="TextSegElementIdentifier">result</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">182</td>
+<td class="TextItemNum AlignRight Wrap">184</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">183</td>
+<td class="TextItemNum AlignRight Wrap">185</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">184</td>
+<td class="TextItemNum AlignRight Wrap">186</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">185</td>
+<td class="TextItemNum AlignRight Wrap">187</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Sets the occupied coordinates of this game. Method is synchronized so</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">186</td>
+<td class="TextItemNum AlignRight Wrap">188</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * animation thread cannot mutate the game state while this method is</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">187</td>
+<td class="TextItemNum AlignRight Wrap">189</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * filling the board.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">188</td>
+<td class="TextItemNum AlignRight Wrap">190</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">189</td>
+<td class="TextItemNum AlignRight Wrap">191</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param coordinates</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">190</td>
+<td class="TextItemNum AlignRight Wrap">192</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">191</td>
+<td class="TextItemNum AlignRight Wrap">193</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">synchronized</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">setFilledSquares</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">ArrayList</span><span class="TextSegElementOperator">&lt;</span><span class="TextSegElementIdentifier">Coordinates</span><span class="TextSegElementOperator">&gt;</span> <span class="TextSegElementIdentifier">coordinates</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">192</td>
+<td class="TextItemNum AlignRight Wrap">194</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">occupiedCell</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementKeyword">boolean</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">MAX_ROWS</span><span class="TextSegElementOperator">][</span><span class="TextSegElementIdentifier">MAX_COLUMNS</span><span class="TextSegElementOperator">];</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">193</td>
+<td class="TextItemNum AlignRight Wrap">195</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">for</span> <span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">Coordinates</span> <span class="TextSegElementIdentifier">coord</span> <span class="TextSegElementOperator">:</span> <span class="TextSegElementIdentifier">coordinates</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">194</td>
+<td class="TextItemNum AlignRight Wrap">196</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">occupiedCell</span><span class="TextSegElementOperator">[</span><span class="TextSegElementIdentifier">coord</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">getRow</span><span class="TextSegElementOperator">()][</span><span class="TextSegElementIdentifier">coord</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">getColumn</span><span class="TextSegElementOperator">()]</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementIdentifier">true</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">195</td>
+<td class="TextItemNum AlignRight Wrap">197</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">196</td>
+<td class="TextItemNum AlignRight Wrap">198</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">repaint</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">197</td>
+<td class="TextItemNum AlignRight Wrap">199</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">198</td>
+<td class="TextItemNum AlignRight Wrap">200</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">199</td>
+<td class="TextItemNum AlignRight Wrap">201</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">200</td>
+<td class="TextItemNum AlignRight Wrap">202</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Begins or resumes animation of this game.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">201</td>
+<td class="TextItemNum AlignRight Wrap">203</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">202</td>
+<td class="TextItemNum AlignRight Wrap">204</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">animate</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">203</td>
+<td class="TextItemNum AlignRight Wrap">205</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">updateTimer</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">start</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">204</td>
+<td class="TextItemNum AlignRight Wrap">206</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">205</td>
+<td class="TextItemNum AlignRight Wrap">207</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">206</td>
+<td class="TextItemNum AlignRight Wrap">208</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">207</td>
+<td class="TextItemNum AlignRight Wrap">209</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Pauses animation of this game.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">208</td>
+<td class="TextItemNum AlignRight Wrap">210</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">209</td>
+<td class="TextItemNum AlignRight Wrap">211</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">210</td>
+<td class="TextItemNum AlignRight Wrap">212</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">pause</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">211</td>
+<td class="TextItemNum AlignRight Wrap">213</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">updateTimer</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">stop</span><span class="TextSegElementOperator">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">212</td>
+<td class="TextItemNum AlignRight Wrap">214</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">213</td>
+<td class="TextItemNum AlignRight Wrap">215</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementOperator">}</span></td>
+</tr>
+</table>
+<br/>
+</body>
+</html>

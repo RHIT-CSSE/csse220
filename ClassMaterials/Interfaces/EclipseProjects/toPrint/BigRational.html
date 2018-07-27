@@ -1,0 +1,771 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+.Wrap { white-space: nowrap; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+.TextSegElementKeyword { font-weight: bold; }
+.TextSegElementIdentifier { }
+.TextSegElementComment { color: #786A41; }
+.TextSegElementOperator { }
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+Text Compare<br/>
+Produced: 11/28/2015 9:49:03 PM<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; All, With Context, Ignoring Unimportant &nbsp;
+<br/>
+Left file: C:\Classes\CSSE220\SVN\ClassMaterials\Interfaces\EclipseProjects\Interfaces\src\bigRational\BigRational.java &nbsp;
+<br/>
+Right file: C:\Classes\CSSE220\SVN\ClassMaterials\Interfaces\EclipseProjects\InterfacesSolution\src\bigRational\BigRational.java &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">package</span> <span class="TextSegElementIdentifier">bigRational</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">java</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">math</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">BigInteger</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* This class implements arbitrary precision rational numbers (i.e., fractions).</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;*&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* @author </span><span class="TextSegElementComment">Matt</span><span class="TextSegElementComment"> B</span><span class="TextSegElementComment">out</span><span class="TextSegElementComment">ell</span><span class="TextSegElementComment">.</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;*/</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap"><span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">class</span> <span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SubsectionEnd">
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; // TODO 2: Make this class implement Comparable&lt;BigRational&gt;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSigMod Wrap"><span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">class</span> <span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">implements</span> <span class="TextSegSigDiff">Comparable</span><span class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">BigRational</span><span class="TextSegSigDiff">&gt;,</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SubsectionAll">
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">ArithmeticObject</span><span class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">BigRational</span><span class="TextSegSigDiff">&gt;</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; // negate, add, subtract, multiply, divide.</td>
+</tr>
+<tr class="SubsectionEnd">
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; // TODO 9: Implement compareTo.</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">private</span> <span class="TextSegSigDiff">Big</span><span class="TextSegSigDiff">Integer</span> <span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">private</span> <span class="TextSegSigDiff">Big</span><span class="TextSegSigDiff">Integer</span> <span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Constructs an arbitrary precision rational number with the given</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * numerator and denominator.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param numerator</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param denominator</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">BigRational</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">String</span> <span class="TextSegElementIdentifier">numerator</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">String</span> <span class="TextSegElementIdentifier">denominator</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SubsectionAll">
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; // TODO 4: replace this constructor stub by working code.</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">Big</span><span class="TextSegSigDiff">Integer</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">),</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">Big</span><span class="TextSegSigDiff">Integer</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">));</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Constructs an arbitrary precision rational number with the given</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * numerator and denominator.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *&nbsp;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param numerator</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @param denominator</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementIdentifier">BigRational</span><span class="TextSegElementOperator">(</span><span class="TextSegElementIdentifier">BigInteger</span> <span class="TextSegElementIdentifier">numerator</span><span class="TextSegElementOperator">,</span> <span class="TextSegElementIdentifier">BigInteger</span> <span class="TextSegElementIdentifier">denominator</span><span class="TextSegElementOperator">)</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; // TODO 5: replace this constructor stub by working code and test it</td>
+</tr>
+<tr class="SubsectionEnd">
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; // with the supplied JUnit tests.</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">if</span> <span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">equals</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">BigInteger</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">ZE</span><span class="TextSegSigDiff">R</span><span class="TextSegSigDiff">O</span><span class="TextSegSigDiff">))</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">throw</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">ArithmeticException</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;Division by zero with numerator: &quot;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">+</span> <span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;</td>
+</tr>
+<tr class="SubsectionEnd">
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; /**</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// No</span><span class="TextSegElementComment">rma</span><span class="TextSegElementComment">l</span><span class="TextSegElementComment">izes</span><span class="TextSegElementComment"> </span><span class="TextSegElementComment">s</span><span class="TextSegElementComment">ign</span><span class="TextSegElementComment">s</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">if</span> <span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">signum</span><span class="TextSegSigDiff">()</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">signum</span><span class="TextSegSigDiff">())</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">abs</span><span class="TextSegSigDiff">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">}</span> <span class="TextSegSigDiff">else</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">abs</span><span class="TextSegSigDiff">().</span><span class="TextSegSigDiff">negate</span><span class="TextSegSigDiff">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">abs</span><span class="TextSegSigDiff">();</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// Reduces</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; * numerator and denominator, in lowest terms. No spaces. If the BigRational</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; * is negative, the minus sign is displayed with the numerator (not the</td>
+</tr>
+<tr class="SubsectionEnd">
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; * denominator).</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">Big</span><span class="TextSegSigDiff">Integer</span> <span class="TextSegSigDiff">gcd</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">gcd</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">divide</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">gcd</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">divide</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">gcd</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; @<span class="TextSegElementIdentifier">Override</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; public <span class="TextSegSigDiff">Stri</span><span class="TextSegSigDiff">ng</span> to<span class="TextSegSigDiff">String</span><span class="TextSegSigDiff">(</span>) {</td>
+</tr>
+<tr class="SubsectionEnd">
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; // TODO 6: replace this method stub by working code and test it</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; public <span class="TextSegSigDiff">boolean</span> <span class="TextSegSigDiff">equals</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">Objec</span>t o<span class="TextSegSigDiff">bj</span>) {</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">if</span> <span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">obj</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">null</span> <span class="TextSegSigDiff">||</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">getClass</span><span class="TextSegSigDiff">()</span> <span class="TextSegSigDiff">!=</span> <span class="TextSegSigDiff">obj</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">get</span><span class="TextSegSigDiff">Class</span><span class="TextSegSigDiff">())</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SubsectionAll">
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; return <span class="TextSegSigDiff">null</span>;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; return <span class="TextSegSigDiff">false</span>;</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;</td>
+</tr>
+<tr class="SubsectionEnd">
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; /**</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">other</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">BigRational</span><span class="TextSegSigDiff">)</span> <span class="TextSegSigDiff">obj</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">equals</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">&amp;&amp;</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">equals</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; @<span class="TextSegElementIdentifier">Override</span></td>
+</tr>
+<tr class="SubsectionAll">
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">boolean</span> <span class="TextSegSigDiff">equals</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">Object</span> <span class="TextSegSigDiff">object</span><span class="TextSegSigDiff">)</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">String</span> <span class="TextSegSigDiff">toString</span><span class="TextSegSigDiff">()</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">if</span> <span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">equals</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">BigInteger</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">ZERO</span><span class="TextSegSigDiff">)</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">||</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">equals</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">BigInteger</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">ONE</span><span class="TextSegSigDiff">))</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">toString</span><span class="TextSegSigDiff">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">toString</span><span class="TextSegSigDiff">()</span> <span class="TextSegSigDiff">+</span> <span class="TextSegSigDiff">&quot;/&quot;</span> <span class="TextSegSigDiff">+</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">toString</span><span class="TextSegSigDiff">();</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemSigMod Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">int</span> <span class="TextSegSigDiff">compareTo</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">o</span><span class="TextSegSigDiff">)</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">BigInteger</span> <span class="TextSegSigDiff">left</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">multiply</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">o</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">BigInteger</span> <span class="TextSegSigDiff">right</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">o</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">multiply</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">left</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">compareTo</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">right</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">abs</span><span class="TextSegSigDiff">()</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">BigRational</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">abs</span><span class="TextSegSigDiff">(),</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">add</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">)</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// a/b + c/d = (ad + cb)/bd</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">if</span> <span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">object</span> <span class="TextSegSigDiff">==</span> <span class="TextSegSigDiff">null</span> <span class="TextSegSigDiff">||</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">getClass</span><span class="TextSegSigDiff">()</span> <span class="TextSegSigDiff">!=</span> <span class="TextSegSigDiff">object</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">getClass</span><span class="TextSegSigDiff">())</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SubsectionEnd">
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">r</span><span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">turn</span> <span class="TextSegSigDiff">false</span>;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">BigInteger</span> <span class="TextSegSigDiff">ad</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">multiply</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">BigInteger</span> <span class="TextSegSigDiff">cb</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">multiply</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">BigInteger</span> <span class="TextSegSigDiff">ad_plus_cb</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">ad</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">add</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">cb</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">BigInteger</span> <span class="TextSegSigDiff">bd</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">multiply</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">BigRational</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">ad_plus_cb</span><span class="TextSegSigDiff">,</span> <span class="TextSegSigDiff">bd</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemSigMod Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">divide</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">)</span> <span class="TextSegSigDiff">throws</span> <span class="TextSegSigDiff">ArithmeticException</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">otherInverse</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">BigRational</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">)</span>;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">multiply</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">otherInverse</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SubsectionAll">
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; BigRational <span class="TextSegSigDiff">o</span><span class="TextSegSigDiff">ther</span> <span class="TextSegSigDiff">=</span> (BigRational<span class="TextSegSigDiff">)</span>o<span class="TextSegSigDiff">bject</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">public</span> BigRational <span class="TextSegSigDiff">multiply</span>(BigRational o<span class="TextSegSigDiff">ther</span><span class="TextSegSigDiff">)</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementComment">// </span><span class="TextSegElementComment">(a/b) *</span><span class="TextSegElementComment"> (c/d)</span><span class="TextSegElementComment"> =</span><span class="TextSegElementComment"> a</span><span class="TextSegElementComment">c/b</span><span class="TextSegElementComment">d</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">102</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">BigInteger</span> <span class="TextSegSigDiff">ac</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">multiply</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">103</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">BigInteger</span> <span class="TextSegSigDiff">bd</span> <span class="TextSegSigDiff">=</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">multiply</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">104</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">BigRational</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">ac</span><span class="TextSegSigDiff">,</span> <span class="TextSegSigDiff">bd</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">105</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemNum AlignRight Wrap">106</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SubsectionAll">
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">false</span><span class="TextSegSigDiff">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">107</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">negate</span><span class="TextSegSigDiff">()</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">108</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">BigRational</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">numerator</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">negate</span><span class="TextSegSigDiff">(),</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">denominator</span><span class="TextSegSigDiff">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">109</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">110</td>
+<td class="TextItemSigMod Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">111</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegSigDiff">public</span> <span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">subtract</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">BigRational</span> <span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">)</span> <span class="TextSegSigDiff">{</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">112</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">return</span> <span class="TextSegSigDiff">this</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">add</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">other</span><span class="TextSegSigDiff">.</span><span class="TextSegSigDiff">negate</span><span class="TextSegSigDiff">());</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemNum AlignRight Wrap">113</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">114</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemNum AlignRight Wrap">115</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementOperator">}</span></td>
+</tr>
+</table>
+<br/>
+</body>
+</html>

@@ -1,0 +1,11 @@
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/MoreMultithreading/EclipseProjects/TemperatureMonitor TemperatureMonitor <fileContainingRepos>
+
+SOLUTION:
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/MoreMultithreading/EclipseProjects/TemperatureMonitorSolution TemperatureMonitorSolution <fileContainingRepos>
+
+
+--201610 stouder only
+./svnPopulateTeamRepos-flex.sh stouder http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/MoreMultithreading/EclipseProjects/TemperatureMonitor TemperatureMonitor data/csse220-201610-stouder.txt
+
+./svnPopulateTeamRepos-flex.sh boutell http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/MoreMultithreading/EclipseProjects/ThreadProblems ThreadProblems csse220-201710-repos.txt
+

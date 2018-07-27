@@ -1,0 +1,24 @@
+Reading
+<ul><li> Big Java, 7.1-7.3, 7.7</li></ul>
+End Reading
+
+Due
+<ul>
+$due
+</ul>
+End Due
+
+Topics
+<ul><li>Loops (for and while)</li><li>The String class</li><li></li>Primitive Types<li> Arrays</li><li> ArrayLists</li><li> Enhanced for loop</li></ul>
+End Topics
+
+Resources
+<ul>
+$slides
+$solutions
+</ul>
+End Resources
+
+Programs
+$programs
+End Programs

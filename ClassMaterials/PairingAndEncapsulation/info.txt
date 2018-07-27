@@ -1,0 +1,23 @@
+Reading
+<ul>
+<li>Big Java 3.1.3
+</ul>
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul><li> Encapsulation</li></ul>
+End Topics
+
+Resources
+<ul>
+$slides
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

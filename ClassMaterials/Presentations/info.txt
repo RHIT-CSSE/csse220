@@ -1,0 +1,24 @@
+Reading
+<ul><li> Big Java, Ch. 18 (skim)</li></ul>
+End Reading
+
+Due
+<ul>
+$due
+<li> Final <a href="../Programs/ArcadeGame/CSSE220_Centipede_programming_assignment.pdf">ArcadeGame</a> project due (see spec for details)</li>
+<li> Team Performance Evalutions <em>this Monday</em>
+</li></ul>
+End Due
+
+Topics
+<ul><li><span class="exam">Project presentations<br /> In Class <br /> (<a href="../Programs/ArcadeGame/Arcade Game Presentation.pdf" style="color:white;">see grading guide</a>)</span></li></ul>
+End Topics
+
+Resources
+<ul>$slides<li><a href="../Resources/SampleExam2AndFinal.zip">Sample exams 2 and finals</a></li>
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

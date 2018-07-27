@@ -1,0 +1,21 @@
+Reading
+<ul><li> Big Java, 14.1 - 14.3</li><li><a href="http://en.wikipedia.org/wiki/Insertion_sort">Insertion Sort</a></li></ul>
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul><li> Sorting</li><li> Algorithm analysis</li></ul>
+End Topics
+
+Resources
+<ul><li><a href="http://www.sorting-algorithms.com">Sorting Algorithm Visualizations</a></li>
+$slides
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

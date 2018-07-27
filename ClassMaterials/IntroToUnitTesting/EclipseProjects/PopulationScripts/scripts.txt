@@ -1,0 +1,4 @@
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/IntroToUnitTesting/EclipseProjects/ConsoleAndUnitTestingPractice ConsoleAndUnitTestingPractice <fileContainingRepos>
+
+SOLUTION:
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/IntroToUnitTesting/EclipseProjects/ConsoleAndUnitTestingPracticeSolution ConsoleAndUnitTestingPracticeSolution <fileContainingRepos>

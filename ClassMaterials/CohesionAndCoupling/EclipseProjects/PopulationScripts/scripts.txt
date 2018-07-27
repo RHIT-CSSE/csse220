@@ -1,0 +1,4 @@
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/CohesionAndCoupling/EclipseProjects/VideoStore VideoStore <fileContainingRepos>
+
+SOLUTION:
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/CohesionAndCoupling/EclipseProjects/VideoStoreSolution VideoStoreSolution <fileContainingRepos>

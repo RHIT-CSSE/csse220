@@ -1,0 +1,21 @@
+Reading
+<ul><li>None</li></ul>
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul><li>Timers for a game loop</li>
+<li>Workday and feedback on design</li></ul>
+End Topics
+
+Resources
+<ul>$slides</ul>
+<ul>$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

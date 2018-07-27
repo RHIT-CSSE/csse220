@@ -1,0 +1,29 @@
+Reading
+<ul>
+<li> Bookmark <a href="../index.html">this page</a></li>
+<li><a href="../syllabus.html">Syllabus</a></li>
+<li><a href="../Homework/programGrading.html">Coding Standards and Grading</a></li>
+<li> Skim materials available on Moodle</li>
+<li> Follow instructions to install various programs provided via email.</li>
+<li><a href="http://www.rose-hulman.edu/class/csse/resources/Eclipse/eclipse-java-configuration.htm">Configure Eclipse for Java</a></li>
+<li> Big Java Chapter 5</li>
+</ul>
+End Reading
+
+Due
+<ul><li> Nothing due before the 1st class.  Look at Session 2 to see what's due (at 11:55 PM) on the due date (that's after class so you can ask questions in class).</li></ul>
+End Due
+
+Topics
+<ul><li> Brief course introduction</li><li> Getting started with Java (printing, defining and calling static methods, declaring variables, if statements)</li><li> Eclipse and Subclipse (running a program, checking out and committing a project)</li><li> Variables/types</li><li>The String class</li></ul>
+End Topics
+
+Resources
+<ul>$slides
+<li><a href="../Resources/Python_vs_Java.html">Python vs. Java features</a></li>
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

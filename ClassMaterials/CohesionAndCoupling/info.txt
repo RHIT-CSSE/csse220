@@ -1,0 +1,25 @@
+Reading
+<ul>
+<li> Big Java, Ch. 8</li>
+</ul>
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul>
+<li> Cohesion and Coupling</li>
+<li> Scope</li>
+</ul>
+End Topics
+
+Resources
+<ul>$slides
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

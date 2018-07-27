@@ -1,0 +1,427 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+.Wrap { white-space: nowrap; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+.TextSegElementKeyword { font-weight: bold; }
+.TextSegElementIdentifier { }
+.TextSegElementString { color: #3A7726; }
+.TextSegElementComment { color: #786A41; }
+.TextSegElementOperator { }
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+Text Compare<br/>
+Produced: 11/28/2015 9:49:22 PM<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; All, With Context, Ignoring Unimportant &nbsp;
+<br/>
+Left file: C:\Classes\CSSE220\SVN\ClassMaterials\RecursionIntroduction\EclipseProjects\Recursion\src\examples\SentenceTest.java &nbsp;
+<br/>
+Right file: C:\Classes\CSSE220\SVN\ClassMaterials\RecursionIntroduction\EclipseProjects\RecursionSolution\src\examples\SentenceTest.java &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">package</span> <span class="TextSegElementIdentifier">examples</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementKeyword">static</span> <span class="TextSegElementIdentifier">org</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">junit</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Assert</span><span class="TextSegElementOperator">.*;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">org</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">junit</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Before</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">import</span> <span class="TextSegElementIdentifier">org</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">junit</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">Test</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* Some test cases for Sentence.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;*</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;* @author Curt Clifton.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;*/</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">class</span> <span class="TextSegElementIdentifier">SentenceTest</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Sentence</span> <span class="TextSegElementIdentifier">sentence1</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Sentence</span> <span class="TextSegElementIdentifier">sentence2</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Sentence</span> <span class="TextSegElementIdentifier">sentence3</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Sentence</span> <span class="TextSegElementIdentifier">sentence4</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Sentence</span> <span class="TextSegElementIdentifier">sentence5</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Sentence</span> <span class="TextSegElementIdentifier">sentence6</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Sentence</span> <span class="TextSegElementIdentifier">sentence7</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Sentence</span> <span class="TextSegElementIdentifier">sentence8</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Sentence</span> <span class="TextSegElementIdentifier">sentence9</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">private</span> <span class="TextSegElementIdentifier">Sentence</span> <span class="TextSegElementIdentifier">sentence10</span><span class="TextSegElementOperator">;</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Sets up some test sentences.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; *</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * @throws java.lang.Exception</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; @<span class="TextSegElementIdentifier">Before</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">setUp</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementKeyword">throws</span> <span class="TextSegElementIdentifier">Exception</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence1</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Sentence</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;deified&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence2</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Sentence</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;I prefer Pi&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence3</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Sentence</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;A man, a plan, a canal -- Panama!&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence4</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Sentence</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Madam, I'm Adam&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence5</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Sentence</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;Go hang a salami, I'm a lasagna hog.&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence6</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Sentence</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;A&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence7</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Sentence</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;AA&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence8</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Sentence</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;ABA&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence9</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Sentence</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;AB&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence10</span> <span class="TextSegElementOperator">=</span> <span class="TextSegElementKeyword">new</span> <span class="TextSegElementIdentifier">Sentence</span><span class="TextSegElementOperator">(</span><span class="TextSegElementString">&quot;!AB&quot;</span><span class="TextSegElementOperator">);</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Test method for {@link examples.Sentence#isPalindrome()}.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; @<span class="TextSegElementIdentifier">Test</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">testIsPalindrome</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">assertTrue</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence1</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">isPalindrome</span><span class="TextSegElementOperator">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">assertTrue</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence2</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">isPalindrome</span><span class="TextSegElementOperator">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">assertTrue</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence3</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">isPalindrome</span><span class="TextSegElementOperator">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">assertTrue</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence4</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">isPalindrome</span><span class="TextSegElementOperator">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">assertTrue</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence5</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">isPalindrome</span><span class="TextSegElementOperator">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">assertTrue</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence6</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">isPalindrome</span><span class="TextSegElementOperator">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">assertTrue</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence7</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">isPalindrome</span><span class="TextSegElementOperator">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">assertTrue</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence8</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">isPalindrome</span><span class="TextSegElementOperator">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">assertFalse</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence9</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">isPalindrome</span><span class="TextSegElementOperator">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegElementIdentifier">assertFalse</span><span class="TextSegElementOperator">(</span><span class="TextSegElementKeyword">this</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">sentence10</span><span class="TextSegElementOperator">.</span><span class="TextSegElementIdentifier">isPalindrome</span><span class="TextSegElementOperator">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementComment">/**</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; * Test method for {@link examples.Sentence#isPalindrome()}.</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">&nbsp;&nbsp; &nbsp; */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; @<span class="TextSegElementIdentifier">Test</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementKeyword">public</span> <span class="TextSegElementKeyword">void</span> <span class="TextSegElementIdentifier">testReverse</span><span class="TextSegElementOperator">()</span> <span class="TextSegElementOperator">{</span></td>
+</tr>
+<tr class="SubsectionAll">
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; // TODO: implement tests for your reverse method</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">assertEquals</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;&quot;</span><span class="TextSegSigDiff">,</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">Sentence</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;&quot;</span><span class="TextSegSigDiff">).</span><span class="TextSegSigDiff">reverse</span><span class="TextSegSigDiff">().</span><span class="TextSegSigDiff">toString</span><span class="TextSegSigDiff">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">assertEquals</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;A&quot;</span><span class="TextSegSigDiff">,</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">Sentence</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;A&quot;</span><span class="TextSegSigDiff">).</span><span class="TextSegSigDiff">reverse</span><span class="TextSegSigDiff">().</span><span class="TextSegSigDiff">toString</span><span class="TextSegSigDiff">());</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">assertEquals</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;AB&quot;</span><span class="TextSegSigDiff">,</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">Sentence</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;BA&quot;</span><span class="TextSegSigDiff">).</span><span class="TextSegSigDiff">reverse</span><span class="TextSegSigDiff">().</span><span class="TextSegSigDiff">toString</span><span class="TextSegSigDiff">());</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSigMod Wrap">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <span class="TextSegSigDiff">assertEquals</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;banana&quot;</span><span class="TextSegSigDiff">,</span> <span class="TextSegSigDiff">new</span> <span class="TextSegSigDiff">Sentence</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;ananab&quot;</span><span class="TextSegSigDiff">).</span><span class="TextSegSigDiff">reverse</span><span class="TextSegSigDiff">().</span><span class="TextSegSigDiff">toString</span><span class="TextSegSigDiff">());</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSame Wrap">&nbsp;&nbsp;&nbsp; <span class="TextSegElementOperator">}</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementOperator">}</span></td>
+</tr>
+</table>
+<br/>
+</body>
+</html>

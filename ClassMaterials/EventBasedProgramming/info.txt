@@ -1,0 +1,20 @@
+Reading
+<ul><li> Big Java, 10.7, 10.10</li></ul>
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul><li> Swing containers, Layout Managers</li><li> Event-based programming</li><li> Listeners, callbacks, and inner classes</li><li> Buttons and other Swing objects</li></ul>
+End Topics
+
+Resources
+<ul>$slides<li><a href="http://docs.oracle.com/javase/tutorial/uiswing/">Oracles Swing Tutorial</a></li>
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

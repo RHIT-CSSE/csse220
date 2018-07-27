@@ -1,0 +1,91 @@
+Design Inheritance Script:
+
+Designed to be done in 1st hour of class, second time for project and understanding the code
+
+Start by demoing the running code as is. 
+Next introduce the idea of what functionality you want to add:
+
+
+Implement an InvincibilityDrop 
+-makes a BouncingPlatform invulnerable for 50 timesteps 
+-color should be Yellow
+-size should be 20
+
+Look through the code in GameComponent and 
+let them cringe as you they see all the code they would need to change
+and modify to add this functionality.
+
+Suggest that this is terrible and that especially for handling the collisions
+we can handle this in a different manner. Put up a chart of the different objects
+(on slides)
+
+                       |UserControlledPlatform | BouncingPlatform | HealingDrop | DamagingDrop |
+________________________________________________________________________________________________
+UserControlledPlatform |                       |                  |     Y       |      Y       |
+________________________________________________________________________________________________
+BouncingPlatform       |                       |                  |     Y       |      Y       |
+________________________________________________________________________________________________
+HealingDrop            |                       |                  |             |              |
+________________________________________________________________________________________________
+DamagingDrop           |                       |                  |             |              |
+________________________________________________________________________________________________
+
+Why are we trying to make everything collide with everything? We just care about a few things.
+
+
+If we create some collideWith( UserControlledPlatform) and collideWith( BouncingPlatform )
+we can simplify everything by putting the code to deal with the collisions INSIDE THE DROP CLASSES.
+
+
+
+~ Times are how long it takes just to change the code when I did a test run. 
+Should be probably double those times for live-coding walk through.
+
+
+Step #1
+~2:30  - create class AbstractDrop and have the two drops extend it
+
+Step #2
+~ 1:00 - make a list to store drops, bouncing platforms, and a userPlatform variable and update GameComponent() to use these instead.
+
+Step #3
+~ 1:00  -  use "drops.size()" instead of having to count the drops. Inside "drawScreen()" just create a List<GameObject> and addAll drops,platforms, userPlatform to it to draw
+
+Step #4
+~ 0:30  copy and paste from step 3 to temporarily get things to compile inside of handleCollision:
+...
+List<GameObject> gameObjects = new ArrayList<>();
+gameObjects.addAll(drops);
+gameObjects.addAll(platforms);
+gameObjects.add(userPlatform);
+
+
+Step #5
+~ 2:00 go to the remaining compile errors at the bottom of the file and update to avoid using instanceof and use the new fields
+
+
+Step #6
+~ 3:30   . Create methods abstract collideWith(BouncingPlatform p) and collideWith(UserPlatform p) inside of AbstractDrop. 
+Copy and paste code from GameComponent to provide the desired functionality. (replace "r" with "this" )
+Delete the nested gameObjects for loops and replace it by iterating through drops and then handling platforms and userPlatform inside it.
+
+//Looks like this:
+
+		for (AbstractDrop d: drops) {
+			for (BouncingPlatform p: platforms) {
+				d.collideWith(p);
+			}
+			d.collideWith(userPlatform);
+		}
+		
+
+Don't forget to remove objects from drops and platforms at the bottom (just remove from each list)
+
+Step #7  Let students now create the drop discussed at the very beginning of the class
+
+~ 4:00   Implement an InvincibilityDrop that makes the user invulnerable for 50 timesteps (YELLOW color size 20)
+             - create InvincibilityDrop (setInvincibilityCountdown(50)   )
+             - add countdown field to BouncingPlatform
+             - modify either setRainDropsCollected  to check for countdown <= 0 or modify drops to do the same
+             - change the BouncingPlatform color to be Yellow when countdown > 0
+

@@ -1,0 +1,19 @@
+Reading
+
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul><li> NO CLASS TODAY</li><li><span class="exam">Exam 1 at 7:00 PM WED 9/23 <br /> New Olin 257 - Section 1 <br /> New Olin 269 - Section 2 <br /> Olin 101 - Section 3 <br /> Olin 103 - Section 4 <br /></span></li></ul>
+End Topics
+
+Resources
+
+End Resources
+
+Programs
+$programs
+End Programs

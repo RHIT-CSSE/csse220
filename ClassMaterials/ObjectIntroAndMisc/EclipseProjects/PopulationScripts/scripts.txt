@@ -1,0 +1,4 @@
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/ObjectIntroAndMisc/EclipseProjects/ObjectIntroAndMiscPractice ObjectIntroAndMiscPractice <fileContainingRepos>
+
+SOLUTION:
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/ObjectIntroAndMiscPraticeSolution/EclipseProjects/ObjectIntroAndMiscPracticeSolution ObjectIntroAndMiscPracticeSolution <fileContainingRepos>

@@ -1,0 +1,13 @@
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/EclipseProjects/201320/Exam2-201630 Exam2-201630 <fileContainingRepos>
+
+201630:
+./svnPopulateTeamRepos-flex.sh defoe http://svn.csse.rose-hulman.edu/repos csse220/trunk/EclipseProjects/201630/Exam2-201630 Exam2-201630 data/csse220-201630-exam2sect03.txt
+
+201710:
+./svnPopulateTeamRepos-flex.sh boutell http://svn.csse.rose-hulman.edu/repos csse220/trunk/EclipseProjects/201710/Exam2-201710 Exam2-201710 csse220-201710-sec4.txt
+
+
+
+
+SOLUTION:
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/TypesLoopsStrings/EclipseProjects/LoopsAndStringsSolution LoopsAndStringsSolution <fileContainingRepos>

@@ -1,0 +1,20 @@
+Reading
+<ul><li> Big Java, 9.1 - 9.3</li><li> Be sure to read <em>Special Topic 10.1 Abstract Classes</em> on p. 437</li><li> Skim the remainder of <a href="http://www.objectmentor.com/resources/articles/umlClassDiagrams.pdf">UML Class Diagrams intro</a></li></ul>
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul><li> Inheritance</li><li> Polymorphism</li><li> Access control</li></ul>
+End Topics
+
+Resources
+<ul>$slides
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

@@ -1,0 +1,22 @@
+Reading
+
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul>
+<li><span class="exam">Exam 2 Programming Portion<br />In class</span></li>
+</ul>
+End Topics
+
+Resources
+$slides
+$solutions
+End Resources
+
+Programs
+$programs
+End Programs

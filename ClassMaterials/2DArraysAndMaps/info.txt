@@ -1,0 +1,20 @@
+Reading
+<ul><li> Big Java, 15.4</li></ul>
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul><li> Maps</li><li> 2D Arrays</li></ul>
+End Topics
+
+Resources
+<ul>$slides<li><a href="../Resources/2DArraysAndMapsSamples.pdf">2d Array and Map Example Code</a></li>
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

@@ -1,0 +1,14 @@
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/EventBasedProgramming/EclipseProjects/EventBasedProgramming EventBasedProgramming <fileContainingRepos>
+
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/HomeworkProjects/LinearLightsOut LinearLightsOut <fileContainingRepos>
+
+SOLUTION:
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/EventBasedProgramming/EclipseProjects/EventBasedProgrammingSolution EventBasedProgrammingSolution <fileContainingRepos>
+
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/EventBasedProgramming/EclipseProjects/LinearLightsOutSolution LinearLightsOutSolution <fileContainingRepos>
+
+
+// 201710
+./svnPopulateTeamRepos-flex.sh boutell http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/EventBasedProgramming/EclipseProjects/EventBasedProgramming EventBasedProgramming csse220-201710-repos.txt
+
+./svnPopulateTeamRepos-flex.sh boutell http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/HomeworkProjects/LinearLightsOut LinearLightsOut csse220-201710-repos.txt

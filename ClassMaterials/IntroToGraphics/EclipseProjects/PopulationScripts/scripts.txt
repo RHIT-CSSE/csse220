@@ -1,0 +1,5 @@
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/IntroToGraphics/EclipseProjects/BiggestFan BiggestFan <fileContainingRepos>
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/IntroToGraphics/EclipseProjects/IntroToJavaGraphics IntroToJavaGraphics <fileContainingRepos>
+SOLUTION:
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/IntroToGraphics/EclipseProjects/BiggestFanSolution BiggestFanSolution <fileContainingRepos>
+./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/IntroToGraphics/EclipseProjects/IntroToJavaGraphicsSolution IntroToJavaGraphicsSolution <fileContainingRepos>

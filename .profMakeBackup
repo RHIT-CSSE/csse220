@@ -1,0 +1,33 @@
+SHELL = /bin/bash
+
+# we want the freedom to have a traditional git ignore
+# so this is just stuff that we don't want to check in
+define GIT_IGNORED
+Makefile
+_site
+Private
+endef
+
+all: .git/info/exclude .profMakeBackup
+.PHONY : all demo
+
+demo:
+	bundle exec jekyll serve --watch                                
+
+
+# rules for symlinking all the stuff in private into the other directories
+# but preventing those simlinks from being checked into git
+
+.git/info/exclude : $(PRIVATE_FILES)
+# this does the recreate
+	find . -type l -delete
+	cp -Rsn $(CURDIR)/Private/* .
+# this prevents the links from being used in git
+	$(file > .git/info/exclude,$(GIT_IGNORED))
+	find . -type l -printf '%P\n' >> .git/info/exclude
+
+# we don't want to check the makefile in as Makefile because it might
+# be confused for a real Makefile.  But it really should be checked
+# into the repo
+.profMakeBackup: Makefile
+	cp Makefile .profMakeBackup

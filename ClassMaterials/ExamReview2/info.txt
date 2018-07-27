@@ -1,0 +1,29 @@
+Reading
+<ul><li>All previously noted chapters/sections (review)</li></ul>
+End Reading
+
+Due
+<ul>$due
+<li>BEFORE THIS CLASS: Attempt a previous exam's programming portion (201520 is a good one) for review. The old exams can be found here: <a href="../Resources/SampleExam2AndFinal.zip">Exam review</a>.</li>
+<li>Give yourself 105 minutes to complete the programming portion. If you struggle, speak with your professor and/or bring questions to this class period.</li>
+</ul>
+End Due
+
+Topics
+<ul>
+<span class="exam">Exam 2 Written Portion<br />In Class - 1st Hour Only</span>
+<li>Exam Review - Programming Portion</li></ul>
+End Topics
+
+Resources
+<ul>
+$slides
+<li><a href="../Resources/SampleExam2AndFinal.zip">Exam review</a>.</li>
+$solutions
+</ul>
+</ul>
+End Resources
+
+Programs
+$programs
+End Programs

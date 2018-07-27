@@ -1,0 +1,20 @@
+Reading
+<ul><li> Big Java, 9.4, 9.5 Skip anything about clone().</li></ul>
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul><li><code>Object</code></li><li> Polymorphism</li></ul>
+End Topics
+
+Resources
+<ul>$slides
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

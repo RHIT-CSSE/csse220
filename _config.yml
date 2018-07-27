@@ -1,0 +1,5 @@
+theme: jekyll-theme-minimal
+title: CSSE000 Example course
+layouts_dir: .internal/layouts
+include: ['.internal']
+exclude: ['Private'] # This shouldn't be uploaded in the first place, but for local testing

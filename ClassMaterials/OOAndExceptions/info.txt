@@ -1,0 +1,20 @@
+Reading
+<ul><li> Big Java, Ch. 11, 12,1-2</li></ul>
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul><li> Object-oriented design</li><li> File I/O</li><li> Exception handling</li></ul>
+End Topics
+
+Resources
+<ul>$slides
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

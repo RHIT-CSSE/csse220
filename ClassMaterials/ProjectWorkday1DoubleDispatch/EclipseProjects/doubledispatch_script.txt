@@ -1,0 +1,13 @@
+This project builds off MoreEventDrivenProgramming. With the addition of Platforms to the game, now we begin to see some copy/paste in the drawing code. That's troubling and an omen of yet further trouble.
+
+The massive GameComponent handles all collisions. It is so big there is an entire series of bannered collision handling methods at the bottom.
+
+Turn attention to the GameObject interface. It separates what changes from what stays the same. It also concretely describes Double Dispatch. The method parameter names are designed to encourage students to pass this.
+
+Make Platform implement GameObject. I chose not to refactor the existing methods, but instead to have the interface methods call them directly.
+
+To implement Platform's collision handling, look for the related handle* methods. The collision handler should both check for a collision and resolve it. You will inevitably want to pass in a GameComponent to the constructor so you can get its size and add more Raindrops.
+
+Do the same for Raindrop. The big question is where the collision logic between Platform and Raindrop should go. I went with Raindrop because it was pre-computing whether it should remove itself.
+
+Finally, add a handleCollision method to GameComponent, called in updateState. Have it do a double-loop over all GameObjects (construct a temporary list of them) to handle the collisions. Don't forget to collide with the box in the outer loop. Then have it remove all objects that are shouldRemove(), just like the original raindrop code does with the extra shouldRemove list to avoid ConcurrentModificationExceptions.

@@ -1,0 +1,20 @@
+Reading
+<ul><li> Big Java, Ch. 2.9, 2.10</li></ul>
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul><li> Java Graphics</li></ul>
+End Topics
+
+Resources
+<ul>$slides<li><a href="https://docs.oracle.com/javase/tutorial/2d/">Java2D Tutorial</a></li><li><a href="../Programs/IntroToJavaGraphics/instructions.htm">Intro to Java Graphics</a></li>
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

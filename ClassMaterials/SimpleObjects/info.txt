@@ -1,0 +1,20 @@
+Reading
+<ul><li> Chapter 2.1-2.8</li></ul>
+End Reading
+
+Due
+<ul>$due</ul>
+End Due
+
+Topics
+<ul><li> Object references</li><li> Object-Oriented Encapsulation</li><li> Implementing Classes in Java</li></ul>
+End Topics
+
+Resources
+<ul>$slides<li><a href="../Resources/How to draw a boxes and pointers diagrams.pdf">Boxes and Pointers Diagrams</a></li>
+$solutions</ul>
+End Resources
+
+Programs
+$programs
+End Programs

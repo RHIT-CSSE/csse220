@@ -2,8 +2,8 @@
   session_no: 1
   reading:
     - Bookmark this page
-    - [Syllabus](syllabus.md)
-    - [Coding Standards and Grading](coding_standards.md)
+    - Syllabus - syllabus.md
+    - Coding Standards and Grading coding_standards.md
     - Skim materials available on moodle
     - Big Java Ch. 5
   topics:
@@ -14,7 +14,7 @@
     - The String class
   materials: JavaIntro
   other:
-    - [Python vs. Java](https://www.rose-hulman.edu/class/csse/csse220/201830/Resources/Python_vs_Java.html)
+    - Python vs. Java https://www.rose-hulman.edu/class/csse/csse220/201830/Resources/Python_vs_Java.html
 - type: class
   session_no: 2
   reading:
