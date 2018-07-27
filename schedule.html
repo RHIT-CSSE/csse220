@@ -1,0 +1,45 @@
+---
+title: CSSE220 Schedule
+layout: default
+---
+
+<h1>Schedule</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td>Session</td><td>Reading</td><td>Topics</td><td>Materials</td>
+        </tr>
+    </thead>
+    <tbody>
+      {% for event in site.data.schedule %}
+      <tr>
+          <td>{{ event.session_no }}</td>
+          <td>
+              <ul>
+              {% for item in event.reading %}
+                  <li>{{item}}</li>
+              {% endfor %}
+              </ul>
+          </td>
+           <td>
+              <ul>
+              {% for item in event.topics %}
+                  <li>{{item}}</li>
+              {% endfor %}
+              </ul>
+          </td>
+          <td>
+              <ul>
+              <li>{{ event.materials }}</li>
+              {% for item in event.other %}
+                  <li>{{item}}</li>
+              {% endfor %}
+              </ul>
+          </td>
+
+      </tr>
+      {% endfor %}
+    </tbody>
+</table>
+    
