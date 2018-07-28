@@ -1,0 +1,416 @@
+\documentclass[12pt,twoside]{article}
+\usepackage[parfill]{parskip}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{underscore}
+\usepackage{caption}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\usepackage{fourier}
+\usepackage{listings}
+\lstset{
+	language=java,
+	tabsize=4,
+	frame=trbl,
+	columns=fullflexible,
+	escapechar=\#,
+	basicstyle=\sffamily,
+	stringstyle=\textit,
+	showstringspaces=false}
+\usepackage{pdfpages}
+%\usepackage{pdfsync}
+% from use-full-height.tex
+\setlength{\textheight}{9.5in}
+\setlength{\headheight}{.60in}
+\setlength{\headsep}{.40in}
+\setlength{\topmargin}{-1.5in}
+
+% from use-full-width.tex
+\setlength{\textwidth}{6.5in} 
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+% crowd figures and text on pages to reduce page count
+\renewcommand\floatpagefraction{.9}
+\renewcommand\topfraction{.9}
+\renewcommand\bottomfraction{.9}
+\renewcommand\textfraction{.1}   
+\setcounter{totalnumber}{50}
+\setcounter{topnumber}{50}
+\setcounter{bottomnumber}{50}
+
+% use san-serif for code
+\renewcommand{\ttdefault}{\sfdefault}
+
+% ----------------------------------------------------------------
+% Question formatting macros
+% ----------------------------------------------------------------
+\newcommand{\fillInBlank}[1][0.5in]{\underline{\hspace{#1}}}
+\newcommand*{\fixme}[1]{\textsc{To be fixed:} \emph{{#1}}}
+
+% #1 answer: T, F, or none to hide
+% #2 question text
+\newcommand*{\truefalse}[2][none]{\hspace{0.25in}%
+\ifthenelse{\equal{#1}{none}}{T\hspace{0.15in}F}{%
+	\ifthenelse{\equal{#1}{T}}{T\hspace{0.25in}}{%
+		\hspace{0.25in}F}}%
+\hspace{0.15in}{#2}}
+
+\newcommand*{\bigoh}[1]{\ensuremath{\mathrm{O}({#1})}}
+
+\newcommand*{\littleoh}[1]{\ensuremath{\mathrm{o}({#1})}}
+
+\newcommand*{\bigtheta}[1]{\ensuremath{\Theta({#1})}}
+% ----------------------------------------------------------------
+
+\renewcommand{\labelenumi}{\alph{enumi}.}
+
+\newcommand{\code}[1]{\texttt{#1}}
+
+\frenchspacing
+
+\begin{document}
+%\maketitle
+
+\begin{flushright}
+Name: \fillInBlank[3in] Section: \fillInBlank[1in]
+
+\LARGE{CSSE 220---Object-Oriented Software Development}
+
+\Large{Exam 1 -- Part 1, Sep. 23, 2015}
+\end{flushright}
+
+This exam consists of two parts.  Part 1 is to be solved on these pages. If you need more space, please ask your instructor for blank paper.  After you finish Part 1, please turn in your Part 1 answers and then open your computers.
+
+Part 2 is to be solved using your computer.  You will need network access to download template code and upload your solution for part 2.  Please disable Lync, Skype for Business, IM, email, and other such communication programs before beginning the exam.  Any communication with anyone other than the instructor or a TA during the exam for any reason, \emph{may result in a failing grade for the course.}
+
+\emph{Allowed Resources on Part 1}:  You are allowed one 8.5'' by 11'' sheet of paper with notes of your choice.  This section is \emph{not} open book or open notes; and you are not allowed to use your computer for this part.  
+
+\emph{Allowed Resources on Part 2}:  Open book, open notes, and computer.  Limited network access.  You may use the network \emph{only} to access your own files, the course Moodle and Piazza sites and web pages, the textbook's site, Oracle's Java website, and Logan Library's online books. 
+
+\emph{Part 1 is included in this document}.  
+
+\begin{center}
+\textbf{We suggest spending no more than 45 minutes on part 1.}
+\end{center}
+
+Please, begin by writing your name on every page of the exam. We encourage you to skim the
+entire exam before answering any questions. Recall that \emph{you must turn in part 1 before accessing resources for part 2. Use of your computer before turning
+in part 1 of the exam will be considered academic dishonesty.}
+
+
+\vfill
+
+\begin{flushright}
+\begin{tabular}{rcc}
+\textbf{Problem} & \textbf{Poss. Pts.} & \textbf{Earned} \\
+1 & 9 & \fillInBlank \\
+2 & 9 & \fillInBlank \\
+3 & 12 & \fillInBlank \\
+4 & 5 & \fillInBlank \\
+\textbf{Paper Part Subtotal} & \textbf{35} & \fillInBlank\\
+ & & \\
+\textbf{Computer Part Subtotal} & \textbf{65} & \fillInBlank\\
+ & & \\
+\textbf{Total} & \textbf{100} & \fillInBlank
+\end{tabular}
+\end{flushright}
+\clearpage
+
+{\Large Part 1---Paper Part}
+
+\begin{center}
+\begin{minipage}[t]{0.9\linewidth}
+\begin{lstlisting}
+public class CalcItem {
+	private double amt;
+	
+	public CalcItem(double amount) {
+		this.amt = amount;
+	}
+	
+	public void tripleAmount(){
+		this.amt = this.amt * 3;
+	}
+	
+	public double getAmount(){
+		return this.amt;
+	}
+}
+
+public class Calc {
+	
+	public CalcItem first;
+	public CalcItem second;
+
+	public Calc(CalcItem first, CalcItem second) {
+		this.first = first;
+		this.second = second;
+	}
+	
+	public double calculate(){
+		return this.first.getAmount() - this.second.getAmount();
+	}	
+}
+
+\end{lstlisting}
+\end{minipage}
+\end{center}
+\clearpage
+
+The next several questions all refer to the \code{CalculatorItem and Calculator} classes on the previous page showing its fields, constructors, and methods.  The javadocs are omitted to save space. \textsc{Do not type this class in Eclipse}.
+
+1. (9 points) Below are several code snippets that use the \code{CalculatorItem and Calculator} classes.  For each snippet, first 
+\emph{draw a box-and-pointer diagram} (in the blank area below the snippet) showing the \emph{final} result of executing it (i.e., you do not have to show any of the intermediate steps of any of the temporary variables created in the various methods).  Then \emph{give the output} of the print statement at the end of the snippet. 
+
+\begin{minipage}[t]{0.68\linewidth}
+\begin{lstlisting}
+CalcItem a = new CalcItem(50);
+Calc r = new Calc(a, new CalcItem(20));
+System.out.println(r.second.getAmount() + `` '' + r.calculate());
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}[t]{0.3\linewidth}
+\vspace*{1 mm} 
+(a) Output: \fillInBlank[1in]\\
+\\ \\
+\textbf{Diagram}:
+\end{minipage}
+
+\vfill
+\hrule
+\begin{minipage}[t]{0.68\linewidth}
+\begin{lstlisting}
+CalcItem b1 = new CalcItem(100);
+CalcItem b2 = b1;
+b2.tripleAmount();
+Calc c = new Calc(b1, b2);
+System.out.println(c.first.getAmount() + `` '' + c.calculate());	
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}[t]{0.3\linewidth}
+\vspace{0.1in}
+(b) Output: \fillInBlank[1in]\\
+\\ \\ \\
+\textbf{Diagram}:
+\end{minipage}
+
+\vfill
+\hrule
+\begin{minipage}[t]{0.68\linewidth}
+\begin{lstlisting}
+CalcItem[] foo = new CalcItem[2];
+CalcItem[] bar = new CalcItem[3];
+bar[2] = new CalcItem(10);
+foo[1] = bar[2];
+bar = foo;
+System.out.println(foo.length + bar.length);
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}[t]{0.3\linewidth}
+\vspace{0.1in}
+(c) Output: \fillInBlank[1in]\\
+\\ \\ \\ \\ \\
+\textbf {Diagram}:
+\end{minipage}
+\vfill
+
+
+\clearpage
+
+2. (9 points) Predict the output for each code snippet below. (You do \emph{not} need to draw a diagram, but you may if it might help you.) \textsc{Do not type the code snippets for this question in Eclipse}.
+\vspace{0.25in}
+
+\hfill
+\begin{minipage}{0.60\linewidth}
+\begin{lstlisting}
+String advisor = ``Advisor'';
+int startYear = 2014;
+int startMonth = 9;
+int score = (startYear - 2000) + startMonth;
+System.out.println(advisor + `` scores '' + score);
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+(a) Output: \fillInBlank[1in]
+
+\vfill
+\hfill
+\begin{minipage}{0.60\linewidth}
+\begin{lstlisting}
+String[] words = {``Welcome'', ``alumni!'', ``Happy'', 
+                 ``Homecoming.''};
+String result = ``'';
+for(String word : words){
+	result = result + word.substring(3) + `` '';
+}
+System.out.println(result);
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+(b) Output: \fillInBlank[1in]
+
+\vfill
+\hfill
+
+\begin{minipage}{0.60\linewidth}
+\begin{lstlisting}
+// For the given values of num and bool (true, false), 
+// what does invoking this method print?
+public void puzzle(int num, boolean bool) {
+	if (num >= 90 && bool) {
+		System.out.println(``Tic'');
+	}
+	else if (num >= 20) {
+		System.out.println(``Tac'');
+	}
+	else {
+		System.out.println(``Toe'');	
+	}
+}
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}{0.3\linewidth}
+(c) (3 points) Output: 
+
+\vspace{0.25in}
+
+\begin{tabular}{|r|c|c|}\hline
+\textbf{num} & \textbf{bool=true} & \textbf{bool=false} \\ \hline
+90 & ~ &  ~ \\ \hline
+40 &  &  \\  \hline
+20 &  &  \\ \hline
+\end{tabular}
+\end{minipage}
+\vfill
+\hfill
+\begin{minipage}{0.60\linewidth}
+\begin{lstlisting}
+ArrayList<Integer> list = new ArrayList<Integer>();
+int index = 0;
+for(int i = 1; i < 11; i++){
+	list.add(i);
+}
+while(list.size() > 0){
+	// returns the element removed at location index
+	Integer num = list.remove(index);
+	if(num % 2 == 1){
+		System.out.println(num);
+	}
+}
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+(d) Output: \fillInBlank[1in]
+\vfill
+
+
+\clearpage
+3. (12 points) For each loop below, write down how many times its body will execute, infinity, or indicate that we can't tell from the information given. \textsc{Do not type the code snippets for this question in Eclipse}.
+\vspace{0.25in}
+
+\hfill
+\begin{minipage}{0.58\linewidth}
+\begin{lstlisting}
+int run = 20;
+for(int i = 1; i < run; i=i+i){
+	System.out.println(i);
+}
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}[t]{0.25\linewidth}
+(a) Answer: \fillInBlank
+\end{minipage}
+\vfill
+
+\hfill
+\begin{minipage}{0.58\linewidth}
+\begin{lstlisting}
+int a = 30;
+int b = 20;
+while (a != b){ 
+    if (a > b) {
+    	a = a - b; 
+    }
+    else {
+    	b = b - a;
+    }
+}
+System.out.println(a);
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}[t]{0.25\linewidth}
+(b) Answer: \fillInBlank
+\end{minipage}
+\vfill
+
+\hfill
+\begin{minipage}{0.58\linewidth}
+\begin{lstlisting}
+ArrayList<String> names = new ArrayList<String>();
+names.add("Oscar");
+while(names.size() != 4){
+	names.add(names.get(0));
+	names.add("Robinson");
+}
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}[t]{0.25\linewidth}
+(c) Answer: \fillInBlank
+\end{minipage}
+\vfill
+
+\hfill
+\begin{minipage}{0.58\linewidth}
+\begin{lstlisting}
+int[] nums = {1, 2, 3, 4, 5};
+int[] vals = {5, 4, 3, 2, 1};
+int sum = 0;
+for(int i = 0; i >= nums.length; i++){
+	sum = sum + nums[i] + vals[i];
+}
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}[t]{0.25\linewidth}
+(d) Answer: \fillInBlank
+\end{minipage}
+\vfill
+
+\clearpage
+
+4. (5 points) {\emph Write T next to the statements that are true, F next to the statements that are false. }
+
+  \fillInBlank Constructors in a class should be declared private.
+ 
+  \fillInBlank Static methods cannot access instance variables or instance methods directly.
+
+  \fillInBlank The keys of a \code{HashMap} are always unique, but not the values they associate with.
+    
+\fillInBlank The code below prints ``Hurrey!''. 
+\begin{lstlisting}
+String x = ``Hurray!'';
+x.replace(``a'', ``e'');
+System.out.println(x);
+\end{lstlisting}
+
+\fillInBlank \code{ArrayList<int> numbers = new ArrayList<int>();}  is correct code.
+
+
+
+\vfill
+\vfill
+
+\begin{center}
+{\Large Turn in your answers to this part of the exam before you begin the computer part.}
+\end{center}
+
+\end{document}  

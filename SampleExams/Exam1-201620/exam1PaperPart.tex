@@ -1,0 +1,415 @@
+\documentclass[12pt,twoside]{article}
+\usepackage[parfill]{parskip}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{underscore}
+\usepackage{caption}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\usepackage{fourier}
+\usepackage{listings}
+\lstset{
+	language=java,
+	tabsize=4,
+	frame=trbl,
+	columns=fullflexible,
+	escapechar=\#,
+	basicstyle=\sffamily,
+	stringstyle=\textit,
+	showstringspaces=false}
+\usepackage{pdfpages}
+%\usepackage{pdfsync}
+% from use-full-height.tex
+\setlength{\textheight}{9.5in}
+\setlength{\headheight}{.60in}
+\setlength{\headsep}{.40in}
+\setlength{\topmargin}{-1.5in}
+
+% from use-full-width.tex
+\setlength{\textwidth}{6.5in} 
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+% crowd figures and text on pages to reduce page count
+\renewcommand\floatpagefraction{.9}
+\renewcommand\topfraction{.9}
+\renewcommand\bottomfraction{.9}
+\renewcommand\textfraction{.1}   
+\setcounter{totalnumber}{50}
+\setcounter{topnumber}{50}
+\setcounter{bottomnumber}{50}
+
+% use san-serif for code
+\renewcommand{\ttdefault}{\sfdefault}
+
+% ----------------------------------------------------------------
+% Question formatting macros
+% ----------------------------------------------------------------
+\newcommand{\fillInBlank}[1][0.5in]{\underline{\hspace{#1}}}
+\newcommand*{\fixme}[1]{\textsc{To be fixed:} \emph{{#1}}}
+
+% #1 answer: T, F, or none to hide
+% #2 question text
+\newcommand*{\truefalse}[2][none]{\hspace{0.25in}%
+\ifthenelse{\equal{#1}{none}}{T\hspace{0.15in}F}{%
+	\ifthenelse{\equal{#1}{T}}{T\hspace{0.25in}}{%
+		\hspace{0.25in}F}}%
+\hspace{0.15in}{#2}}
+
+\newcommand*{\bigoh}[1]{\ensuremath{\mathrm{O}({#1})}}
+
+\newcommand*{\littleoh}[1]{\ensuremath{\mathrm{o}({#1})}}
+
+\newcommand*{\bigtheta}[1]{\ensuremath{\Theta({#1})}}
+% ----------------------------------------------------------------
+
+\renewcommand{\labelenumi}{\alph{enumi}.}
+
+\newcommand{\code}[1]{\texttt{#1}}
+
+\frenchspacing
+
+\begin{document}
+%\maketitle
+
+\begin{flushright}
+Name: \fillInBlank[3in] Section: \fillInBlank[1in]
+
+\LARGE{CSSE 220---Object-Oriented Software Development}
+
+\Large{Exam 1 -- Part 1, Dec. 16, 2015}
+\end{flushright}
+
+This exam consists of two parts.  Part 1 is to be solved on these pages. If you need more space, please ask your instructor for blank paper.  After you finish Part 1, please turn in your Part 1 answers and then open your computers and wait quietly for the programming exam review section of class to begin.
+
+\emph{Allowed Resources on Part 1}:  You are allowed one 8.5'' by 11'' sheet of paper with notes of your choice.  This section is \emph{not} open book or open notes; and you are not allowed to use your computer for this part.  
+
+\begin{center}
+\textbf{You will have 50 minutes (the first Rose hour of class) to complete Part 1. Part 2 will be completed on Friday, Dec. 18th.}
+\end{center}
+
+Please, begin by writing your name on every page of the exam. We encourage you to skim the
+entire exam before answering any questions. 
+
+
+\vfill
+
+\begin{flushright}
+\begin{tabular}{rcc}
+\textbf{Problem} & \textbf{Poss. Pts.} & \textbf{Earned} \\
+1 & 10 & \fillInBlank \\
+2 & 12 & \fillInBlank \\
+3 & 8 & \fillInBlank \\
+4 & 5 & \fillInBlank \\
+\textbf{Paper Part Subtotal} & \textbf{35} & \fillInBlank\\
+ & & \\
+\textbf{Computer Part Subtotal} & \textbf{65} & \fillInBlank\\
+ & & \\
+\textbf{Total} & \textbf{100} & \fillInBlank
+\end{tabular}
+\end{flushright}
+\clearpage
+
+{\Large Part 1---Paper Part}
+
+\begin{center}
+\begin{minipage}[t]{0.9\linewidth}
+\begin{lstlisting}
+public class Car {
+	private double miles;
+	private double gas;
+	
+	public Car(double miles, double gas) {
+		this.miles = miles;
+		this.gas = gas;
+	}
+	public void drive(double numMiles) {
+		this.miles += numMiles;
+		this.gas -= numMiles * .25;
+	}
+	public double getMiles() {
+		return this.miles;
+	}
+	public double getGas() {
+		return this.gas;
+	}
+}
+
+public class Owner {
+	private String name;
+	private Car car;
+	
+	public Owner(String name, Car car) {
+		this.name = name;
+		this.car = car;
+	}
+	public void takeTrip(double oneWayMiles) {
+		this.car.drive(oneWayMiles*2);
+	}
+	public void buyNewCar(Car car) {
+		this.car = car;
+	}
+	public String getName() {
+		return this.name;
+	}
+	public Car getCar(){
+		return this.car;
+	}
+}
+
+\end{lstlisting}
+\end{minipage}
+\end{center}
+\clearpage
+
+The next several questions all refer to the \code{Car and Owner} classes on the previous page showing its fields, constructors, and methods.  The javadocs are omitted to save space. \textsc{Do not type this class in Eclipse}.
+
+1. (10 points, 3 each for a \& b, 4 points for c) Below are several code snippets that use the \code{Car and Owner} classes.  For each snippet, first 
+\emph{draw a box-and-pointer diagram} (in the blank area below the snippet) showing the \emph{final} result of executing it (i.e., you do not have to show any of the intermediate steps of any of the temporary variables created in the various methods).  Then \emph{give the output} of the print statement at the end of the snippet. 
+
+\begin{minipage}[t]{0.68\linewidth}
+\begin{lstlisting}
+Car c = new Car(1000.0, 13.0);
+Owner o = new Owner("Steve", c);
+System.out.println(c.getGas());
+\end{lstlisting}
+\end{minipage}
+\hspace{3.25in}
+\begin{minipage}[t]{0.3\linewidth}
+\vspace*{1 mm} 
+\end{minipage}
+(a) \textbf{Diagram:}
+
+\vfill
+\textbf{Output:}
+\hrule
+\begin{minipage}[t]{0.68\linewidth}
+\begin{lstlisting}
+Car c1 = new Car(500.0, 10.0);
+Car c2 = new Car(1000.0, 5.0);
+c2 = c1;
+c1.drive(4.0);
+System.out.println(c2.getMiles() + ", " + c2.getGas());
+\end{lstlisting}
+\end{minipage}
+\hspace{3.25in}
+\begin{minipage}[t]{0.3\linewidth}
+\vspace*{1 mm} 
+\end{minipage}
+(b) \textbf{Diagram:}
+
+\vfill
+\textbf{Output:}
+\hrule
+\clearpage
+\begin{minipage}[t]{0.68\linewidth}
+\begin{lstlisting}
+Car[] cars = new Car[3];
+cars[0] = new Car(200.0, 3.0);
+cars[1] = new Car(0.0, 15.0);
+Owner own = new Owner("Greg", cars[0]);
+own.buyNewCar(cars[1]);
+own.getCar().drive(10);
+own.takeTrip(2.5);
+System.out.println(own.getName() + " has driven " 
+	+ own.getCar().getMiles() + " miles.");
+\end{lstlisting}
+\end{minipage}
+\hspace{3.25in}
+\begin{minipage}[t]{0.3\linewidth}
+\vspace*{1 mm} 
+\end{minipage}
+(c) \textbf{Diagram:}
+
+
+\vfill
+\textbf{Output:}
+\hrule
+
+\clearpage
+
+2. (12 points) Predict the output for each code snippet below. (You do \emph{not} need to draw a diagram, but you may if it might help you.) \textsc{Do not type the code snippets for this question in Eclipse}. If output spans multiple lines, write additional lines below the Output: line.
+\vspace{0.25in}
+
+\hfill
+\begin{minipage}{0.60\linewidth}
+\begin{lstlisting}
+String name = "Joe";
+int x = 5;
+int factor = 3;
+int y = 6;
+String text = "score of " + ((x + y) * factor);
+System.out.println("Player " + name + ": " + text);
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+(a) Output: \fillInBlank[1in]
+
+\vfill
+\hfill
+\begin{minipage}{0.60\linewidth}
+\begin{lstlisting}
+String[] words = { "Break", "is", "almost", "here!" };
+String result = "";
+for (String word : words) {
+	int beginIndex = word.length()/2;
+	int endIndex = word.length();
+	result = result + 
+		word.substring(beginIndex, endIndex) + " ";
+}
+System.out.println(result);
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+(b) Output: \fillInBlank[1in]
+
+\vfill
+\hfill
+
+\begin{minipage}{0.60\linewidth}
+\begin{lstlisting}
+// What does invoking the following 
+// method print for arguments (450, ``bc'')?
+public void whatDoIDo(int test, String testString) {
+	testString.replace("bc","ab");
+	if (test < 500) {
+		System.out.println("small");
+	}
+	if (testString.equals("ab")) {
+		System.out.println("true!");
+	}
+	else {
+		System.out.println("false!");
+	}	
+}
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}{0.3\linewidth}
+(c) Output: \fillInBlank[1in]
+
+\vspace{0.25in}
+
+\end{minipage}
+\vfill
+\hfill
+\begin{minipage}{0.60\linewidth}
+\begin{lstlisting}
+ArrayList<Integer> list = new ArrayList<Integer>();
+for (int i=1;i<=5;i++) {
+	list.add(i);
+}
+for (int i=0;i<list.size();i++) {
+	list.set(i, list.get(i)*i);
+	System.out.println(list.get(i));
+}
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+(d) Output: \fillInBlank[1in]
+\vfill
+
+
+\clearpage
+3. (8 points) For each loop below, write down how many times its body will execute, infinity, or indicate that we can't tell from the information given. \textsc{Do not type the code snippets for this question in Eclipse}.
+\vspace{0.25in}
+
+\hfill
+\begin{minipage}{0.58\linewidth}
+\begin{lstlisting}
+for(int i = 0; i < 50; i+=2){
+	System.out.println(i);
+}
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}[t]{0.25\linewidth}
+(a) Answer: \fillInBlank
+\end{minipage}
+\vfill
+
+\hfill
+\begin{minipage}{0.58\linewidth}
+\begin{lstlisting}
+int a = 30;
+int b = 0;
+while (a != b){ 
+	if (a < b) {
+    		b = b - a;
+	}
+	else {
+		b = b + 3;
+	}
+}
+System.out.println(a);
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}[t]{0.25\linewidth}
+(b) Answer: \fillInBlank
+\end{minipage}
+\vfill
+
+\hfill
+\begin{minipage}{0.58\linewidth}
+\begin{lstlisting}
+ArrayList<String> items = new ArrayList<String>();
+items.add("keys");
+items.add("backpack");
+items.add("calculator");
+while(items.size() < 6){
+	items.add("new item");
+}
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}[t]{0.25\linewidth}
+(c) Answer: \fillInBlank
+\end{minipage}
+\vfill
+
+\hfill
+\begin{minipage}{0.58\linewidth}
+\begin{lstlisting}
+int[] testArray = {4, 2, 5, 1, 8};
+int sum = 0;
+for(int i = 0; i >= testArray.length; i++){
+	sum = sum + testArray[i];
+}
+\end{lstlisting}
+\end{minipage}
+\hspace{0.25in}
+\begin{minipage}[t]{0.25\linewidth}
+(d) Answer: \fillInBlank
+\end{minipage}
+\vfill
+
+\clearpage
+
+4. (5 points) {\emph Write T next to the statements that are true, F next to the statements that are false. }
+
+  \fillInBlank You may only have one constructor for a class in Java.
+
+  \fillInBlank When an field of a class is static, there is only one instance of that field no matter how many instances of the class are constructed.
+ 
+  \fillInBlank Static methods can access instance variables or instance methods directly.
+
+\fillInBlank This line of code \code {if (string1 == string2)} will check if two strings contain the same data.
+
+\fillInBlank This code creates a new HashMap of strings to integers: 
+
+\hspace{1in}
+\code{HashMap<String, int> map = new HashMap<String, int>();}
+
+
+
+
+\vfill
+\vfill
+
+\begin{center}
+{\Large Turn in your answers to this part of the exam and wait quietly for class to resume. You may turn on your computer once this portion of the exam is turned in.}
+\end{center}
+
+\end{document}  
