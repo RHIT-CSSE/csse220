@@ -4,7 +4,6 @@ layout: default
 ---
 
 <h1>Schedule</h1>
-
 <table>
     <thead>
         <tr>
@@ -13,29 +12,19 @@ layout: default
     </thead>
     <tbody>
       {% for event in site.data.schedule %}
-      <tr>
-          <td>{{ event.session_no }}</td>
+      <tr {% if event.bgcolor %} bgcolor="#{{event.bgcolor}}" {% endif %} >
+        <td>
+          {{ event.session_no }} <br/> {{site.data.date_convert[event.session_no] | date: "%a %d %b %Y" }}
+        </td>
           <td>
-              <ul>
-              {% for item in event.reading %}
-                  <li>{{item}}</li>
-              {% endfor %}
-              </ul>
-          </td>
-           <td>
-              <ul>
-              {% for item in event.topics %}
-                  <li>{{item}}</li>
-              {% endfor %}
-              </ul>
+              {{event.reading | join: "<br/>"}}
           </td>
           <td>
-              <ul>
-              <li>{{ event.materials }}</li>
-              {% for item in event.other %}
-                  <li>{{item}}</li>
-              {% endfor %}
-              </ul>
+              {{event.topics | join: "<br/>"}}
+          </td>
+          <td>
+              <a href="{{ site.github.repository_url }}/tree/master/ClassMaterials/{{ event.materials }}">{{event.materials}}</a><br/>
+              {{event.other | join: "<br/>"}}
           </td>
 
       </tr>

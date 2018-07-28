@@ -1,5 +1,4 @@
-- type: class
-  session_no: 1
+- session_no: 1
   reading:
     - Bookmark this page
     - <a href="syllabus.html">Syllabus</a>
@@ -15,8 +14,7 @@
   materials: JavaIntro
   other:
     - <a href="https://www.rose-hulman.edu/class/csse/csse220/201830/Resources/Python_vs_Java.html">Python vs. Java</a>
-- type: class
-  session_no: 2
+- session_no: 2
   reading:
     - Big Java, 7.1-7.3, 7.7
   topics:
@@ -26,6 +24,74 @@
     - Arrays
     - ArrayLists
     - Enhanced for loop
-  materials: ArrayAndArrayLists
+  materials: ArraysAndLists
   other:
+- session_no: 3
+  reading:
+    - Big Java, 15.4
+  topics:
+    - Maps
+    - 2D Arrays
+  materials: 2DArraysAndMaps
+  other:
+- session_no: 4
+  reading:
+    - None
+  topics:
+    - Miscellaneous
+  materials: ObjectIntroAndMisc
+  other:
+- session_no: 5
+  reading:
+    - Chapter 2.1-2.8
+  topics:
+    - Object references
+    - Object-Oriented Encapsulation
+    - Implementing Classes in Java
+  materials: ObjectIntroAndMisc
+  other:
+    - <a href="Docs/drawing_box_and_pointer.pdf">Drawing Box And Pointer Guide</a>
+- session_no: 6
+  reading:
+    - Big Java Pages 567-569, Special Topics 12.1, 12.2, 12.3 (focus on association, we will not use aggregation/composition in this class)
+  topics:
+    - Class diagrams
+    - Intro to Object Design
+  materials: SETechniques
+  other:
+    - <a href="Docs/UML_Cheatsheet.pdf">UML Cheatsheet</a>
+- session_no: 7
+  reading:
+    - Big Java, Ch. 2.9, 2.10
+  topics:
+    - Java Graphics
+  materials: IntroToGraphics
+  other:
+- session_no: 8
+  reading:
+    - Big Java, Ch. 3.4
+    - <a href="http://www.vogella.com/tutorials/JUnit/article.html">Article on testing</a>
+    - Sections 1, 2.1, 2.3, 4, 5.1 - 5.3, 6, 8.2
+  topics:
+    - Unit testing
+    - Console input
+    - Exam Review - Written portion
+  materials: IntroToUnitTesting
+  other:
+- session_no: 9
+  reading:
+    - Big Java, review Ch. 2 - 7
+  topics:
+    - EXAM 1 WRITTEN PORTION (in class, 1st hour only)
+    - Exam Review - Programming Portion
+  materials:
+    - Exam Review (TODO)
+  bgcolor: FFDDDD
+- session_no: 10
+  reading:
+  topics:
+    - EXAM 1 PROGRAMMING PORTION (in class)
+  materials:
+  bgcolor: FFDDDD
+    
 
