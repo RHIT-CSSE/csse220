@@ -23,7 +23,9 @@ layout: default
               {{event.topics | join: "<br/>"}}
           </td>
           <td>
-              <a href="{{ site.github.repository_url }}/tree/master/ClassMaterials/{{ event.materials }}">{{event.materials}}</a><br/>
+              {% for material in event.materials %}
+              <a href="{{ site.github.repository_url }}/tree/master/ClassMaterials/{{ material }}">{{event.materials}}</a><br/>
+              {% endfor %}
               {{event.other | join: "<br/>"}}
           </td>
 
