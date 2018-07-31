@@ -5,7 +5,7 @@ title: Getting The Repo
 # How to Clone the CSSE220 Repo
 
 All the materials for CSSE220 are stored in [the course git
-repo]("../").  To access code examples and homework, you'll want to
+repo](https://github.com/hewner/csse220).  To access code examples and homework, you'll want to
 use Eclipse to clone (that is, copy) the repo onto your local system.
 
 1. Start Eclipse
