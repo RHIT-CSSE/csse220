@@ -82,8 +82,6 @@ Remember: EVERY class must be documented! Above each class, you should include a
 
 Here is an example that shows a simple class with “good” style and documentation. This represents the minimum documentation to receive full credit on any assignment when style/documentation is part of    the grading rubric for the assignment:
 
-{% highlight java %}
-
     /**
     *	Class: GoodExample
     *	@author	John Doe
@@ -103,21 +101,13 @@ Here is an example that shows a simple class with “good” style and documenta
     	
     }//end class GoodExample
     
-{% endhighlight %}
-
 ## Example of Good Names
-
-{% highlight java %}
 
     public int a(int b, int c) {
     	return (b < c) ? c : b;
     }
 
-{% endhighlight %}
-
 This code is not readable. Now consider the same method with better coding conventions:
-
-{% highlight java %}
 
     public int max(int num1, int num2) {
     	int maxValue = num1;
@@ -127,8 +117,6 @@ This code is not readable. Now consider the same method with better coding conve
     	
     	return maxValue;
     }
-    	
-{% endhighlight %}
 
 ## Example of Method Length
 
@@ -137,8 +125,6 @@ For the size of methods, this can be tricky sometimes. Researching this topic on
 Also, remember that a method should complete only one task. If you are attempting to do too much in one method, it can quickly grow to an unmanageable mess. In assuring that each method only completes one task, you also assure that the method size remains manageable.
 
 For example, consider the following method to return a letter grade given an array of double values:
-
-{% highlight java %}
 
     public static char getLetterGrade(double[] grades) {
     	double total = 0;
@@ -158,11 +144,8 @@ For example, consider the following method to return a letter grade given an arr
     	return gradeToReturn;
     }
 
-{% endhighlight %}
-
 Even though this method is still quite small, it is apparent that more than this method contains more than just one task. The following better represents the proper coding style when splitting methods:
 
-{% highlight java %}
 
     private static double getAvg(double[] grades) {
     	double total = 0;
@@ -186,4 +169,4 @@ Even though this method is still quite small, it is apparent that more than this
     	return gradeToReturn;
     }
 
-{% endhighlight %}
+

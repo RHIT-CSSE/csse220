@@ -8,4 +8,5 @@ on how to do both [in the docs directory](https://github.com/hewner/csse220/tree
 
 1. Checkout this project (HW1) in eclipse
 2. Fill in the two functions in HW1.java
-3. Submit your code via moodle
+3. Run the included unit tests to ensure you solution works 
+4. Submit your code via moodle
