@@ -3,5 +3,4 @@ title: CSSE220
 description: Object Oriented Development
 layouts_dir: .internal/layouts
 include: ['.internal']
-exclude: ['Private'] # This shouldn't be uploaded in the first place, but for local testing
 moodle: https://moodle.rose-hulman.edu/course/view.php?id=44072

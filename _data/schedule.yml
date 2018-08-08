@@ -1,4 +1,4 @@
-- session_no: 1
+1:
   reading:
     - Bookmark this page
     - <a href="syllabus.html">Syllabus</a>
@@ -14,7 +14,7 @@
   materials: JavaIntro
   other:
     - <a href="https://www.rose-hulman.edu/class/csse/csse220/201830/Resources/Python_vs_Java.html">Python vs. Java</a>
-- session_no: 2
+2:
   reading:
     - Big Java, 7.1-7.3, 7.7
   topics:
@@ -26,7 +26,7 @@
     - Enhanced for loop
   materials: ArraysAndLists
   other:
-- session_no: 3
+3:
   reading:
     - Big Java, 15.4
   topics:
@@ -34,14 +34,14 @@
     - 2D Arrays
   materials: 2DArraysAndMaps
   other:
-- session_no: 4
+4:
   reading:
     - None
   topics:
     - Miscellaneous
   materials: ObjectIntroAndMisc
   other:
-- session_no: 5
+5:
   reading:
     - Chapter 2.1-2.8
   topics:
@@ -51,7 +51,7 @@
   materials: ObjectIntroAndMisc
   other:
     - <a href="Docs/drawing_box_and_pointer.pdf">Drawing Box And Pointer Guide</a>
-- session_no: 6
+6:
   reading:
     - Big Java Pages 567-569, Special Topics 12.1, 12.2, 12.3 (focus on association, we will not use aggregation/composition in this class)
   topics:
@@ -60,14 +60,14 @@
   materials: SETechniques
   other:
     - <a href="Docs/UML_Cheatsheet.pdf">UML Cheatsheet</a>
-- session_no: 7
+7:
   reading:
     - Big Java, Ch. 2.9, 2.10
   topics:
     - Java Graphics
   materials: IntroToGraphics
   other:
-- session_no: 8
+8:
   reading:
     - Big Java, Ch. 3.4
     - <a href="http://www.vogella.com/tutorials/JUnit/article.html">Article on testing</a>
@@ -78,7 +78,7 @@
     - Exam Review - Written portion
   materials: IntroToUnitTesting
   other:
-- session_no: 9
+9:
   reading:
     - Big Java, review Ch. 2 - 7
   topics:
@@ -86,7 +86,7 @@
     - Exam Review - Programming Portion
   materials: ../SampleExams
   bgcolor: FFDDDD
-- session_no: 10
+10:
   reading: 
   topics: EXAM 1 PROGRAMMING PORTION (in class)
   materials: ../SampleExams

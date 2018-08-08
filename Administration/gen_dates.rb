@@ -16,7 +16,12 @@ while(current <= end_date)
   current = current.next_day()
 end
 day_list =  day_list.keep_if { |d| allowed_days_of_week.include?(d.cwday()) }
-string_list = day_list.map { |d| d.to_time().strftime("%Y-%m-%d") }
-string_list.prepend("No day zero")
+class_index = 0;
+string_list = day_list.map { |d|
+  class_index = class_index + 1
+  { "type" => "class_session",
+    "class_num" => class_index,
+    "date" => d.to_time().strftime("%Y-%m-%d 08:00") }
+}
 puts string_list.to_yaml
 $stderr.puts "#{day_list.length} days output"

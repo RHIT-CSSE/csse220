@@ -11,10 +11,16 @@ layout: default
         </tr>
     </thead>
     <tbody>
-      {% for event in site.data.schedule %}
+      {% assign stuff = site.data.date_convert | concat: site.data.assignments | sort: "date" %}
+      {% for session in stuff %}
+
+      {% if session.type == "class_session" %}
+      {% if site.data.schedule[session.class_num] %}
+      {% assign event = site.data.schedule[session.class_num] %}
+
       <tr {% if event.bgcolor %} bgcolor="#{{event.bgcolor}}" {% endif %} >
         <td>
-          {{ event.session_no }} <br/> {{site.data.date_convert[event.session_no] | date: "%a %d %b %Y" }}
+          {{ session.class_num }} <br/> {{ session.date | date: "%a %d %b %Y" }}
         </td>
           <td>
               {{event.reading | join: "<br/>"}}
@@ -30,6 +36,25 @@ layout: default
           </td>
 
       </tr>
+      {% else %} <!-- we have a class but it's not is schedule.yml -->
+      <tr>
+        <td>
+          {{ session.class_num }} <br/> {{ session.date | date: "%a %d %b %Y" }}
+        </td>
+        <td>
+          ?? <!-- maybe add class {{ session.class_num }} to schedule.yml -->
+        </td>
+      </tr>
+      {% endif %}
+      {% else %}
+            <tr bgcolor="#eeeeff" >
+        <td colspan="4">
+          <a href="{{ site.github.repository_url }}/tree/master/Homework/{{ session.dirname }}">{{session.name}}</a> DUE {{ session.date | date: "%a %d %b %Y %l:%M %P" }}
+        </td>
+      </tr>
+
+      {% endif %}
+
       {% endfor %}
     </tbody>
 </table>
