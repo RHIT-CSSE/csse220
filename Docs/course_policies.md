@@ -8,7 +8,7 @@ Outside of normal class time, we the instructors are almost always
 able to assist you when we are in our respective offices.
 
 * Mike Hewner
-* Joe Hollingsworth!
+* Joe Hollingsworth
 
 ## Other sources of help
 
