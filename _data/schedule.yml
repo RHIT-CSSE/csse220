@@ -13,7 +13,7 @@
     - The String class
   materials: JavaIntro
   other:
-    - <a href="https://www.rose-hulman.edu/class/csse/csse220/201830/Resources/Python_vs_Java.html">Python vs. Java</a>
+    - <a target="_blank" href="https://www.rose-hulman.edu/class/csse/csse220/201830/Resources/Python_vs_Java.html">Python vs. Java</a>
 2:
   reading:
     - Big Java, 7.1-7.3, 7.7
@@ -70,7 +70,7 @@
 8:
   reading:
     - Big Java, Ch. 3.4
-    - <a href="http://www.vogella.com/tutorials/JUnit/article.html">Article on testing</a>
+    - <a target="_blank" href="http://www.vogella.com/tutorials/JUnit/article.html">Article on testing</a>
     - Sections 1, 2.1, 2.3, 4, 5.1 - 5.3, 6, 8.2
   topics:
     - Unit testing
@@ -88,7 +88,8 @@
   bgcolor: FFDDDD
 10:
   reading: 
-  topics: EXAM 1 PROGRAMMING PORTION (in class)
+  topics: 
+    - EXAM 1 PROGRAMMING PORTION (in class)
   materials: ../SampleExams
   bgcolor: FFDDDD
 11:
@@ -114,4 +115,149 @@
     - Recursion helper methods
   materials: RecursionIntroduction
   other:  
-
+14:
+  reading:
+    - Big Java, 13.3 - 13.5 (13.6 is optional)
+    - Big Java, 10.1 - 10.3
+  topics:
+    - Interfaces
+  materials: Interfaces
+  other:  
+15:
+  reading:
+    - Big Java, 10.7, 10.10
+  topics:
+    - Swing containers, Layout Managers
+    - Event-based programming
+    - Listeners, callbacks, and inner classes
+    - Buttons and other Swing objects
+  materials: EventBasedProgramming
+  other:
+    - <a target="_blank" href="https://docs.oracle.com/javase/tutorial/uiswing/">Oracle's Swing Tutorial</a>
+16:
+  reading:
+    - None
+  topics:
+    - More recursion
+    - More interfaces
+  materials: MoreRecursionMoreInterfaces
+  other:  
+17:
+  reading:
+    - Big Java, 9.1 - 9.3
+    - Be sure to read Special Topic 10.1 Abstract Classes on p. 437
+    - Help - (link broken) Skim the remainder of: UML Class Diagrams intro
+  topics:
+    - Inheritance
+    - Polymorphism
+    - Access control
+  materials: Inheritance
+  other:  
+18:
+  reading:
+    - Big Java, 9.4, 9.5 Skip anything about clone()
+  topics:
+    - Java's "Object" class
+    - Polymorphism
+  materials: Polymorphism
+  other:  
+19:
+  reading:
+    - Big Java, Ch. 11, 12,1-2
+  topics:
+    - Object-oriented design
+    - File I/O
+    - Exception handling
+  materials: OOAndExceptions
+  other:  
+20:
+  reading:
+    - All previously noted chapters/sections (review)
+  topics:
+    - EXAM 2 WRITTEN PORTION (in class, 1st hour only)
+    - Exam Review - Programming Portion
+    - Help - need link to Exam 2 samples
+  materials: 
+  other: 
+  bgcolor: FFDDDD
+21:
+  reading:
+    - None
+  topics:
+    - EXAM 2 PROGRAMMING PORTION (in class)
+  materials: 
+  other:  
+  bgcolor: FFDDDD
+22:
+  reading:
+    - Big Java, 15.1 - 15.2, 16.1
+  topics:
+    - Intro to linked lists
+    - A linked list implementation
+  materials: LinkedLists
+  other:  
+23:
+  reading:
+    - None
+  topics:
+    - Linked lists part 2
+    - linked list worktime
+  materials: 
+  other:  
+24:
+  reading:
+    - None
+  topics:
+    - Timers for a game loop
+    - Workday and feedback on design
+  materials: MoreEventBasedProgramming
+  other:  
+25:
+  reading:
+    - None
+  topics:
+    - Team worktime for project
+  materials: ProjectWorkday1
+  other:  
+26:
+  reading:
+    - Big Java, 14.1 - 14.3
+    - <a target="_blank" href="https://en.wikipedia.org/wiki/Insertion_sort">Insertion sort</a>
+  topics:
+    - Sorting
+    - Algorithm analysis
+  materials: Sorting
+  other:
+    - <a target="_blank" https://www.toptal.com/developers/sorting-algorithms">Sorting Algorithm Visualizations</a>
+27:
+  reading:
+    - Big Java 14.4 - 14.8
+  topics:
+    - Merge sort
+    - More on Big-O notation
+  materials: MergeSort
+  other:  
+28:
+  reading:
+    - Big Java 14.4 - 14.8
+  topics:
+    - Comparable/Comparator
+  materials: Comparators
+  other:  
+29:
+  reading:
+    - None
+  topics:
+    - Course evaluations
+    - ArcadeGame work time
+  materials: CourseEvals
+  other:   
+30:
+  reading:
+    - Big Java, Ch. 18 (skim)
+  topics:
+    - Project presentations In Class (see grading guideline)
+    - Help - need link to review for final
+  materials: 
+  other: 
+  bgcolor: FFDDDD
