@@ -91,5 +91,27 @@
   topics: EXAM 1 PROGRAMMING PORTION (in class)
   materials: ../SampleExams
   bgcolor: FFDDDD
-    
+11:
+  reading:
+    - Big Java 3.1.3
+  topics:
+    - Encapsulation
+  materials: PairingAndEncapsulation
+  other:  
+12:
+  reading:
+    - Big Java, Ch. 8
+  topics:
+    - Cohesion and Coupling
+    - Scoping
+  materials: CohesionAndCoupling
+  other:  
+13:
+  reading:
+    - Big Java, 13.1 - 13.2
+  topics:
+    - Recursion
+    - Recursion helper methods
+  materials: RecursionIntroduction
+  other:  
 
