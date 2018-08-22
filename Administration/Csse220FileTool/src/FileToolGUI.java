@@ -22,6 +22,7 @@ import javax.swing.JTextArea;
 public class FileToolGUI implements ActionListener, Runnable {
 	
 	private static final String DEFAULT_TEXT = "Select a directory...";
+	private static final String DEFAULT_OUTPUT_TEXT = "Defaults to submission directory";
 	private JPanel configPanes;
 	private JFrame frame;
 	private JButton masterButton;
@@ -43,8 +44,8 @@ public class FileToolGUI implements ActionListener, Runnable {
 		
 		addConfigButton("Original assignment project directory, from 220 repo", masterButton);
 		addConfigButton("Student submission directory, unzipped from moodle", studentButton);
-		addConfigButton("Workspace output directory, probably should be empty", outputButton);
-		
+		addConfigButton("Workspace output directory", outputButton);
+		outputButton.setText(DEFAULT_OUTPUT_TEXT);
 		
 		JPanel bigButtonPanel = new JPanel();
 		bigButtonPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
@@ -117,10 +118,7 @@ public class FileToolGUI implements ActionListener, Runnable {
 		if(studentButton.getText().equals(DEFAULT_TEXT)) {
 			outputArea.setText("You must choose a student submission directory");
 		}
-		
-		if(outputButton.getText().equals(DEFAULT_TEXT)) {
-			outputArea.setText("You must choose a output directory");
-		}
+
 		
 		outputArea.setText("Starting generate...");
 		startButton.setEnabled(false);
@@ -136,7 +134,17 @@ public class FileToolGUI implements ActionListener, Runnable {
 		
 		File master = new File(masterButton.getText());
 		File student = new File(studentButton.getText());
-		File output = new File(outputButton.getText());
+		
+		String outputText;
+		
+		if(outputButton.getText().equals(DEFAULT_OUTPUT_TEXT)) {
+			outputText = studentButton.getText();
+			ps.println("using " + outputText + " as output dir");
+		} else {
+			outputText = outputButton.getText();
+		}
+		
+		File output = new File(outputText);
 		
 		
 		try {
