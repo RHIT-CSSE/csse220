@@ -7,7 +7,7 @@
 Outside of normal class time, we the instructors are almost always
 able to assist you when we are in our respective offices.
 
-* Mike Hewner
+* [Mike Hewner's contact info](https://moodle.rose-hulman.edu/blog/index.php?entryid=111)
 * Joe Hollingsworth
 
 ## Other sources of help
