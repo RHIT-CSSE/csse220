@@ -16,7 +16,7 @@
     - <a target="_blank" href="https://www.rose-hulman.edu/class/csse/csse220/201830/Resources/Python_vs_Java.html">Python vs. Java</a>
 2:
   reading:
-    - Big Java, 7.1-7.3, 7.7
+    - Big Java, 7.1 - 7.3, 7.7
   topics:
     - Loops (for and while)
     - The String class
@@ -43,7 +43,7 @@
   other:
 5:
   reading:
-    - Chapter 2.1-2.8
+    - Big Java, 2.1 - 2.8
   topics:
     - Object references
     - Object-Oriented Encapsulation
@@ -62,14 +62,14 @@
     - <a href="Docs/UML_Cheatsheet.pdf">UML Cheatsheet</a>
 7:
   reading:
-    - Big Java, Ch. 2.9, 2.10
+    - Big Java, 2.9, 2.10
   topics:
     - Java Graphics
   materials: IntroToGraphics
   other:
 8:
   reading:
-    - Big Java, Ch. 3.4
+    - Big Java, 3.4
     - <a target="_blank" href="http://www.vogella.com/tutorials/JUnit/article.html">Article on testing</a>
     - Sections 1, 2.1, 2.3, 4, 5.1 - 5.3, 6, 8.2
   topics:
@@ -80,7 +80,7 @@
   other:
 9:
   reading:
-    - Big Java, review Ch. 2 - 7
+    - Big Java, review 2 - 7
   topics:
     - EXAM 1 WRITTEN PORTION (in class, 1st hour only)
     - Exam Review - Programming Portion
@@ -94,14 +94,14 @@
   bgcolor: FFDDDD
 11:
   reading:
-    - Big Java 3.1.3
+    - Big Java, 3.1.3
   topics:
     - Encapsulation
   materials: PairingAndEncapsulation
   other:  
 12:
   reading:
-    - Big Java, Ch. 8
+    - Big Java, 8
   topics:
     - Cohesion and Coupling
     - Scoping
@@ -155,7 +155,7 @@
   other:  
 18:
   reading:
-    - Big Java, 9.4, 9.5 Skip anything about clone()
+    - Big Java, 9.4, 9.5, Skip anything about clone()
   topics:
     - Java's "Object" class
     - Polymorphism
@@ -163,7 +163,7 @@
   other:  
 19:
   reading:
-    - Big Java, Ch. 11, 12,1-2
+    - Big Java, 11, 12.1 - 12.2
   topics:
     - Object-oriented design
     - File I/O
@@ -228,7 +228,7 @@
     - Algorithm analysis
   materials: Sorting
   other:
-    - <a target="_blank" https://www.toptal.com/developers/sorting-algorithms">Sorting Algorithm Visualizations</a>
+    - <a target="_blank" href="https://www.toptal.com/developers/sorting-algorithms">Sorting Algorithm Visualizations</a>
 27:
   reading:
     - Big Java 14.4 - 14.8
@@ -254,7 +254,7 @@
   other:   
 30:
   reading:
-    - Big Java, Ch. 18 (skim)
+    - Big Java, 18 (skim)
   topics:
     - Project presentations In Class (see grading guideline)
     - Help - need link to review for final
