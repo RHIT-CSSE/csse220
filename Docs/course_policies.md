@@ -39,7 +39,15 @@ right away.
 
 Please use the 5th edition of the textbook. Assignments will not be given for other editions.
 
-The book is excellent, but it is written for students who are new to programming as well as to Java. Thus in the beginning of the term the reading assignments are rather long, since you will already know many of the concepts. You should skim the text, looking for things you don't know, and slow down to focus on those. Definitely read the Java code in the textbook; if there is something there that you don't understand, read the surrounding text also. After the first few chapters, almost everything will be new, and most reading assignments will be smaller. 
+The book is excellent, but it is written for students who are new to
+programming as well as to Java. Thus in the beginning of the term the
+reading assignments are rather long, since you will already know many
+of the concepts. You should skim the text, looking for things you
+don't know, and slow down to focus on those. Definitely read the Java
+code in the textbook; if there is something there that you don't
+understand, read the surrounding text also. After the first few
+chapters, almost everything will be new, and most reading assignments
+will be smaller.
 
 # Late Assignment Policy
 
@@ -89,7 +97,8 @@ Final grades are also contingent on the following:
   reserves the right to change final grades when the average in a
   major category (homework, exams, project) differs significantly from
   the overall average.
-* Attendance is required, as detailed below.
+* Attendance is required, if you miss more than 3 classes over the
+  course of the term you must contact us.
 * Please note that CSSE 230 has as a prerequisite a grade of C or
   better in CSSE 220
 
