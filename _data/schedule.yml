@@ -175,8 +175,7 @@
   topics:
     - EXAM 2 WRITTEN PORTION (in class, 1st hour only)
     - Exam Review - Programming Portion
-    - Help - need link to Exam 2 samples
-  materials: 
+  materials: ../SampleExams
   other: 
   bgcolor: FFDDDD
 21:
@@ -256,7 +255,6 @@
     - Big Java, 18 (skim)
   topics:
     - Project presentations In Class (see grading guideline)
-    - Help - need link to review for final
-  materials: 
+  materials: ../SampleExams
   other: 
   bgcolor: FFDDDD
