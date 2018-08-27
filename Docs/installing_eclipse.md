@@ -9,8 +9,6 @@ The thing you want to install is the "Java 8 SE Development Kit"
 
 <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Download it here</a>
 
-
-
 Click the radio button that says "Accept License Agreement".  Then
 select the "Windows x64 version".
 
@@ -30,3 +28,19 @@ install.  Select the Eclipse IDE for EE Developers.
 
 After that, just install eclipse following the defaults.
 
+# Run eclipse
+
+After the install, running eclipse should be as simple as double clicking the eclipse icon.
+
+When eclipse starts up, it should ask you where it's eclipse "workspace" should be.
+
+You can pick anywhere you like, but:
+
+1. If you've taken CSSE120 (or CSSE220 before), it should probably a
+   new empty directory 'cause otherwise there will be a ton of
+   projects that cause confusion.
+2. You'll need to navigate to this directory to submit assignments so
+   you should know where it is
+3. It can be good to put in a place that's synced to the cloud
+   (e.g. Rose Hulman's OneDrive).  That way your code will be
+   automatically backed up.
