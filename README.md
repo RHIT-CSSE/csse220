@@ -1,3 +1,3 @@
 # CSSE220: Object Oriented Development
 
-This repo is still in development2
+To clone this repo see [the instructions](Docs/getting_the_repo.md)
