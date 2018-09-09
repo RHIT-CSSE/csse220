@@ -48,9 +48,9 @@
     - Object references
     - Object-Oriented Encapsulation
     - Implementing Classes in Java
-  materials: ObjectIntroAndMisc
+  materials: SampleObjects
   other:
-    - <a href="Docs/drawing_box_and_pointer.pdf">Drawing Box And Pointer Guide</a>
+    - <a href="Docs/Handouts/drawing_box_and_pointer.pdf">Drawing Box And Pointer Guide</a>
 6:
   reading:
     - Big Java Pages 567-569, Special Topics 12.1, 12.2, 12.3 (focus on association, we will not use aggregation/composition in this class)
