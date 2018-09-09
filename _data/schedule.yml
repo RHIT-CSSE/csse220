@@ -48,7 +48,7 @@
     - Object references
     - Object-Oriented Encapsulation
     - Implementing Classes in Java
-  materials: SampleObjects
+  materials: SimpleObjects
   other:
     - <a href="Docs/Handouts/drawing_box_and_pointer.pdf">Drawing Box And Pointer Guide</a>
 6:
@@ -59,7 +59,7 @@
     - Intro to Object Design
   materials: SETechniques
   other:
-    - <a href="Docs/UML_Cheatsheet.pdf">UML Cheatsheet</a>
+    - <a href="Docs/Handouts/UML_Cheatsheet.pdf">UML Cheatsheet</a>
 7:
   reading:
     - Big Java, 2.9, 2.10
