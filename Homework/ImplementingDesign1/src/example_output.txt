@@ -1,0 +1,26 @@
+--------------------------------------------------
+Showing three or more original quizzes:
+--------------------------------------------------
+Quiz: 1
+    Question[1]: What is 1x1?
+    Question[2]: What is 1x2?
+    Question[3]: What is 1x3?
+Quiz: 2
+    Question[2]: What is 1x2?
+    Question[3]: What is 1x3?
+    Question[4]: What is 1x4?
+Quiz: 3
+    Question[5]: What is 1x5?
+--------------------------------------------------
+Showing three or more changed quizzes:
+--------------------------------------------------
+Quiz: 1
+    Question[1]: What is 1x1?
+    Question[2]: What is different 2?
+    Question[3]: What is 1x3?
+Quiz: 2
+    Question[2]: What is different 2?
+    Question[3]: What is 1x3?
+    Question[4]: What is 1x4?
+Quiz: 3
+    Question[5]: What is different 5?

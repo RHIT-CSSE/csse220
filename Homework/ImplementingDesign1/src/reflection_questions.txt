@@ -1,0 +1,19 @@
+Reflection Questions:
+
+1.A In your implementation could you replace Questions with Strings (yes or no)? 
+
+
+1.B Why or why not? (2-3 sentences)
+
+
+
+2.A. What data type did you use to represent the 1 to many relationship between QuizMain and Question? (provide type)
+
+
+2.B. What is another type could you have used? (provide type) 
+
+
+
+2.C. Would that have made the code better or worse? Why? (2-3 sentences)
+
+
