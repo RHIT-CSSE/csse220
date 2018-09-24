@@ -1,0 +1,61 @@
+create-question 1 true Is this the first question?
+OK: created question
+create-question 2 false Is this the first question?
+OK: created question
+create-question 3 false Is this the first question?
+OK: created question
+create-question 4 false Is this the last question?
+OK: created question
+create-question 5 true Is this the last question?
+OK: created question
+create-quiz 1
+OK: created quiz
+create-quiz 2
+OK: created quiz
+create-quiz 3
+OK: created quiz
+add-question-to-quiz 1 1
+OK: question added to quiz
+add-question-to-quiz 2 1
+OK: question added to quiz
+add-question-to-quiz 1 2
+OK: question added to quiz
+add-question-to-quiz 3 2
+OK: question added to quiz
+add-question-to-quiz 4 3
+OK: question added to quiz
+add-question-to-quiz 5 3
+OK: question added to quiz
+create-quiz-tester 1 last
+OK: created quiz tester
+create-quiz-tester 2 first
+OK: created quiz tester
+display-question-prompt 1
+OK: Displaying Question Prompt:
+ Is this the first question?
+display-question-prompt 5
+OK: Displaying Question Prompt:
+ Is this the last question?
+update-question 5 false Is this the first question?
+OK: question updated
+display-question-prompt 5
+OK: Displaying Question Prompt:
+ Is this the first question?
+report-quiz-tester-score-on-quiz 1 1
+OK: Individual Score:0.5
+report-quiz-tester-score-on-quiz 1 2
+OK: Individual Score:0.5
+report-quiz-tester-score-on-quiz 1 3
+OK: Individual Score:0.5
+report-quiz-tester-score-on-quiz 2 3
+OK: Individual Score:0.5
+update-question 5 false Is this the last question?
+OK: question updated
+report-quiz-tester-score-on-quiz 1 1
+OK: Individual Score:0.5
+report-quiz-tester-score-on-quiz 1 2
+OK: Individual Score:0.5
+report-quiz-tester-score-on-quiz 1 3
+OK: Individual Score:0.0
+report-quiz-tester-score-on-quiz 2 3
+OK: Individual Score:1.0
