@@ -1,0 +1,17 @@
+Reflection Questions:
+
+1. Compare your original draft and the final draft. What is the biggest difference between the two?
+
+
+
+2. What did you have to change and why did you have to change it? If not, explain how you made your decisions in designing.
+
+
+
+3. Did you re-use your code from ImplementingDesign1? How much did you have to change it if so? (If not, then please explain why)
+
+
+
+4. Select one or more specific design principles and discuss how they relate to the your experience in designing and implementing the code for this assignment.
+
+

@@ -1,6 +1,6 @@
 # Implementing Design 1
 
-# Rubic
+# Rubric
 
 Write code to represent either your design (you should have gotten
 Design Problems 1 back) or any alternative you might prefer (perhaps
