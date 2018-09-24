@@ -10,7 +10,7 @@
 * 10 points for submitting a computer-generated UML diagram FINAL DRAFT which corresponds to your code
   *  We recommend using either [PlantUML](http://plantuml.com/plantuml) or [UMLet](http://www.umlet.com/)
 * 36 points for implementing and demonstrating functionality of the Extended Online Quiz problem (approximately 4 points for each handle* method successfully implemented)
-* 4 points for responding completely to the questions in [reflection_questions.txt](src/ reflection_questions.txt)
+* 4 points for responding completely to the questions in [reflection_questions.txt](src/reflection_questions.txt)
 
 Total possible: 60 points. 
 
