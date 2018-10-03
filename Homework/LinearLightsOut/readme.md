@@ -51,7 +51,7 @@ Remember to ask for help if you get stuck.
 
 Here are the various stages you should complete:
 - **Stage 0:** Examine the main method in the LinearMain class in the linearLightsOut package in the LinearLightsOut 
-project that you checked out in class. This is all the code that we supply for the project — the rest is your responsibility.
+project that you checked out in class. This is all the code that we supply for the project: the rest is your responsibility.
 - **Stage 1:** Display a frame with the right title.
 - **Stage 2:** Display the right number of buttons in the frame (see the nButtons variable in *LinearMain.main*) 
 without worrying about event handling or the symbols on the buttons. For full credit, your final solution must 
