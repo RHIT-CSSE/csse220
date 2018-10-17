@@ -60,6 +60,7 @@
   materials: SETechniques
   other:
     - <a href="Docs/Handouts/UML_Cheatsheet.pdf">UML Cheatsheet</a>
+    - <a href="Docs/Handouts/Basic_OO_Principles_for_CSSE220.pdf">Basic OO Design Principles</a>
 7:
   reading:
     - Big Java, 2.9, 2.10
