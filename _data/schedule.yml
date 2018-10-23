@@ -190,27 +190,28 @@
   bgcolor: FFDDDD
 22:
   reading:
+    - None
+  topics:
+    - Source control basics
+    - Timers for a game loop
+    - Workday and feedback on design
+  materials: MoreEventBasedProgramming
+  other:  
+23:
+  reading:
     - Big Java, 15.1 - 15.2, 16.1
   topics:
     - Intro to linked lists
     - A linked list implementation
   materials: LinkedLists
   other:  
-23:
+24:
   reading:
     - None
   topics:
     - Linked lists part 2
     - linked list worktime
   materials: 
-  other:  
-24:
-  reading:
-    - None
-  topics:
-    - Timers for a game loop
-    - Workday and feedback on design
-  materials: MoreEventBasedProgramming
   other:  
 25:
   reading:
