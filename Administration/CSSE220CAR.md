@@ -61,17 +61,38 @@ Students who successfully complete this course should be able to:
 
 # MAPPING TO DEPARTMENT STUDENT OUTCOMES
 
-Outcome 1 (insofar as it lays the foundation for object-oriented
-design and development) contributes to the following outcomes:
+# MAPPING COURSE OUTCOMES (CO) TO PROGRAM STUDENT OUTCOMES (PO)
 
-* Effectively apply a variety of computing resources, programming
-  languages, programming paradigms, operating systems, networks, and
-  software development tools (CS, ICS)
+NOTE: Course outcomes are across the top (columns) and Program outcomes are down the side (rows).
 
-* Apply software engineering theory, principles, tools and processes,
-  as well as the theory and principles of computer science and
-  mathematics, to the full lifecycle of complex, scalable software
-  systems (SE)
+**Computer Science**
+
+| PO \ CO | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---------|---|---|---|---|---|---|---|
+| P1      | x | x |   |   |   |   |   |
+| P2      | x | x |   |   |   |   | x |
+| P3      |   |   |   |   |   |   | x |
+| P4      |   |   |   |   |   |   |   |
+| P5      |   |   | x | x | x | x |   |
+| P6      |   |   |   |   |   |   |   |
+| P7      |   |   |   |   |   |   |   |
+| P8      |   |   |   |   |   |   |   |
+| P9      |   |   |   |   |   |   | x |
+| P10     |   |   |   |   |   |   |   |
+
+**Software Engineering**
+
+| PO \ CO | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---------|---|---|---|---|---|---|---|
+| P1      | x | x | x | x | x | x |   |
+| P2      |   |   |   |   |   |   |   |
+| P3      | x | x |   |   |   |   |   |
+| P4      |   |   |   |   |   |   |   |
+| P5      |   |   |   |   |   |   |   |
+| P6      |   |   |   |   |   |   |   |
+| P7      |   |   |   |   |   |   |   |
+| P8      |   |   |   |   |   |   | x |
+| P9      |   |   |   |   |   |   |   |
 
 
 # DESCRIPTION OF ASSESSMENT TOOLS 
@@ -97,7 +118,7 @@ students
 | Written exercises and small problems |    | x  | x  | x  | x  |    | x  |
 | Programming assignments              | x  |    |    |    |    | x  |    |
 | Exams                                | x  |    | x  | x  | x  | x  |    |
-| Project                              | x  | x  |    |    |    |    |    |
+| Project                              | x  | x  |    |    |    |    | x  |
  
 # SUCCESS CRITERIA
 
@@ -110,6 +131,28 @@ relevant to the learning outcome is in the proficient range.
 
 ## Quantitative Evaluation
 The success criteria hold for all tool-outcome pairs.
+
+**Students in Computer Science Program:**
+
+| Activity                             | O1 | O2 | O3 | O4 | O5 | O6 | O7 |
+|--------------------------------------|----|----|----|----|----|----|----|
+| Written exercises and small problems |    | A  | A  | A  | A  |    | A  |
+| Programming assignments              | A  |    |    |    |    | A  |    |
+| Exams                                | A  |    | A  | A  | A  | A  |    |
+| Project                              | A  | A  |    |    |    |    | A  |
+
+
+**Students in Software Engineering Program:**
+
+| Activity                             | O1 | O2 | O3 | O4 | O5 | O6 | O7 |
+|--------------------------------------|----|----|----|----|----|----|----|
+| Written exercises and small problems |    | A  | A  | A  | A  |    | A  |
+| Programming assignments              | A  |    |    |    |    | A  |    |
+| Exams                                | A  |    | A  | A  | A  | A  |    |
+| Project                              | A  | A  |    |    |    |    | A  |
+
+A = acceptable
+N = not acceptable
 
 ## Summary of Relevant student feedback
 
