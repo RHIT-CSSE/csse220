@@ -16,6 +16,7 @@ points, contact your grader.
 # Correctness
 
 For each item marked (per the grading instructions specific to the assignment):
+
 |             |                                        |
 |-------------|----------------------------------------|
 | Full credit | Behaves as specifies                    |
