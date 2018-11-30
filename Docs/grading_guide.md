@@ -16,8 +16,9 @@ points, contact your grader.
 # Correctness
 
 For each item marked (per the grading instructions specific to the assignment):
-
-| Full credit | Behaves as specifies                   |
+|             |                                        |
+|-------------|----------------------------------------|
+| Full credit | Behaves as specifies                    |
 | 80%         | One “very small” error                 |
 | 40 or 50%   | One “small to medium-sized” error      |
 | 0%          | A “large” error or more than one error |
