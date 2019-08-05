@@ -1,11 +1,11 @@
 require 'date'
 require 'yaml'
 
-start_date = Date.new(2018, 8, 30)
-end_date = Date.new(2018, 11, 11)
-vacation_start = Date.new(2018, 10, 11) #inclusive
-vacation_end = Date.new(2018, 10, 12) # inclusive
-allowed_days_of_week = [1,3,5] # monday is 1
+start_date = Date.new(2019, 9, 5)
+end_date = Date.new(2019, 11, 17)
+vacation_start = Date.new(2019, 10, 10) #inclusive
+vacation_end = Date.new(2019, 10, 11) # inclusive
+allowed_days_of_week = [2,3,5] # monday is 1
 
 day_list = []
 current = start_date;
