@@ -16,7 +16,7 @@ use Eclipse to clone (that is, copy) the repo onto your local system.
 
 4. Select "Clone URI"
 
-5. Put https://github.com/hewner/csse220.git in the URI field and click "Next"
+5. Put https://github.com/RHIT-CSSE/csse220.git in the URI field and click "Next"
 
 6. Make sure master is checked and click "Next"
 
