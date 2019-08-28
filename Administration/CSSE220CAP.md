@@ -6,20 +6,22 @@ APPROVED:
 
 ## INSTRUCTOR
 
-Not listed as the final schedules have not been decided for Winter and
-Spring terms
+# RECOMMENDATIONS FROM PREVIOUS OFFERING
 
-# RECOMMENDATIONS FROM PREVIOUS OFFERING AND CORRESPONDING CHANGES
+## Planning to implement
 
-* Continue revisions to the OO-curriculum, try to reduce student
-  frustration with UML
-* Implement the threading piloting officially
-* Consider piloting some ideas to make project easier:
-  - Reducing the scope slightly and dropping group size to pairs
-  - Getting team assignment and initial design happening before Exam 2
-  - Further refining the project related classes to give more timely
-    help on issues students struggle with
+* Releasing the most challenging/recent past exams to help set student expectations
+* Finalizing a more sustainable plan for the course website for future instructors to all use
+* Try to find ways to require course material presented during the final project to be used in the final project
 
+## Will attempt if there's time
+
+* Getting team assignment and initial design happening before Exam 2
+* Possibly getting partners setup on an assignment before the project (and a chance for students to switch)
+* Reviewing distribution of assignments to try to better balance the
+  workload, eliminating overlapping assignments as possible
+* Improving the quality and accessibility of additional resources for greater depth or preparation
+* Introduce a survey early during the project about the effectiveness of team communication.
 
 # LEARNING OUTCOMES
 
@@ -46,29 +48,48 @@ Students who successfully complete this course should be able to:
    times.  
 6. Select basic data structures (i.e., arrays, linked lists) based on
    asymptotic time complexity of typical operations.
-7. Work in a team of 3-4 students on a small-to-medium-size software
+7. Work in a team of 2-4 students on a small-to-medium-size software
    development project including at least three iterative development
    cycles, demonstrating effective:
    - Use of team roles
    - Team decision making
    - Division of labor
    - Conflict resolution
-8. Explain what a thread is, why one wants to use them, and what can
-   go wrong.
-   
+
 # MAPPING TO DEPARTMENT STUDENT OUTCOMES
 
-Outcome 1 (insofar as it lays the foundation for object-oriented
-design and development) contributes to the following outcomes:
+# MAPPING COURSE OUTCOMES (CO) TO PROGRAM STUDENT OUTCOMES (PO)
 
-* Effectively apply a variety of computing resources, programming
-  languages, programming paradigms, operating systems, networks, and
-  software development tools (CS, ICS)
+NOTE: Course outcomes are across the top (columns) and Program outcomes are down the side (rows).
 
-* Apply software engineering theory, principles, tools and processes,
-  as well as the theory and principles of computer science and
-  mathematics, to the full lifecycle of complex, scalable software
-  systems (SE)
+**Computer Science**
+
+| PO \ CO | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---------|---|---|---|---|---|---|---|
+| P1      | x | x |   |   |   |   |   |
+| P2      | x | x |   |   |   |   | x |
+| P3      |   |   |   |   |   |   | x |
+| P4      |   |   |   |   |   |   |   |
+| P5      |   |   | x | x | x | x |   |
+| P6      |   |   |   |   |   |   |   |
+| P7      |   |   |   |   |   |   |   |
+| P8      |   |   |   |   |   |   |   |
+| P9      |   |   |   |   |   |   | x |
+| P10     |   |   |   |   |   |   |   |
+
+**Software Engineering**
+
+| PO \ CO | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---------|---|---|---|---|---|---|---|
+| P1      | x | x | x | x | x | x |   |
+| P2      |   |   |   |   |   |   |   |
+| P3      | x | x |   |   |   |   |   |
+| P4      |   |   |   |   |   |   |   |
+| P5      |   |   |   |   |   |   |   |
+| P6      |   |   |   |   |   |   |   |
+| P7      |   |   |   |   |   |   |   |
+| P8      |   |   |   |   |   |   | x |
+| P9      |   |   |   |   |   |   |   |
 
 
 # DESCRIPTION OF ASSESSMENT TOOLS 
@@ -84,17 +105,17 @@ size and length.
 Exams: 2 exams during the term, plus the final exam
 
 Project: A small-to-medium-size software development project including
-at least three iterative development cycles done by teams of 3 or 4
+at least three iterative development cycles done by teams of 2 and occasionally 3
 students
 
 # COURSE ASSESSMENT MATRIX
 
-| Activity                             | O1 | O2 | O3 | O4 | O5 | O6 | O7 | O8 |
-|--------------------------------------|----|----|----|----|----|----|----|----|
-| Written exercises and small problems |    | x  | x  | x  | x  |    | x  | x  |
-| Programming assignments              | x  |    |    |    |    | x  |    |    |
-| Exams                                | x  |    | x  | x  | x  | x  |    |    |
-| Project                              | x  | x  |    |    |    |    | x  |    |
+| Activity                             | O1 | O2 | O3 | O4 | O5 | O6 | O7 |
+|--------------------------------------|----|----|----|----|----|----|----|
+| Written exercises and small problems |    | x  | x  | x  | x  |    | x  |
+| Programming assignments              | x  |    |    |    |    | x  |    |
+| Exams                                | x  |    | x  | x  | x  | x  |    |
+| Project                              | x  | x  |    |    |    |    | x  |
  
 # SUCCESS CRITERIA
 
@@ -105,23 +126,3 @@ Among the students who earn proficient grades in the course, the
 average grade on the portions of the assessment tools that are
 relevant to the learning outcome is in the proficient range.
 
-# REVISIONS
-
-* 7/15/2017 - By Hewner, revised thread outcomes re department
-  discussion, also removed generics and function objects from topic
-  list
-* 11/25/2017 – Boutell: added mappings to department outcomes
-* 8/15/2017 – By Hewner 
-* 8/12/2016 – By Hewner for 2016-17 CAP
-* 11/06/2015, By Delvin Defoe, Removed ForkJoin paralellism
-* 8/21/2014 Removed sequential lists, other minor changes
-* 11/15/2012, By Matt Boutell and Micah Taylor, Removed recommendations; they were implemented.
-* 8/18/2011, By Delvin Defoe, Removed recommendations; they were implemented.
-* 8/18/2011, By Claude Anderson, Edited recommendations from last
-  term.  Modified outcomes 1 and 6 as recommended in previous CAR.
-* 2/17/2011, by Clifton and Defoe. Edited recommendations from last term.
-* 11/4/2010, by Clifton and Defoe. Edited recommendations from last term.
-* 8/25/2010, by Michael Wollowski. Edited recommendations from last term.
-* 2/12/2010, by Matt Boutell. Removed recommendations made this term.
-* 12/2/2009, by Matt Boutell, based on meeting with Curt Clifton: removed mini-project and clarified wording of Written exercises and small programs tool.
-* 8/19/2009, by Curt Clifton, based on faculty meeting from 7/28/2009, attended by Bohner, Boutell, 

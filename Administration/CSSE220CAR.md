@@ -6,23 +6,36 @@ APPROVED:
 
 ## INSTRUCTOR
 
-Michael Hewner (3 sections)
-Jason Yoder (5 sections)
-Matt Boutell (2 sections)
-Mark Hays (1 section)
+Delvin Defoe (4 sections)
+Jason Yoder (3 sections)
+Michael Hewner (2 sections)
+Joseph Hollingsworth (2 sections)
+Steve Chenoweth (1 section)
 
 # RECOMMENDATIONS FROM PREVIOUS OFFERING AND CORRESPONDING CHANGES
 
-* Continue to look for ways to make small exercises.  We did a lot of
-  this with OO questions.
+* Continue revisions to the OO-curriculum, try to reduce student frustration with UML
+We did this and there was greatly reduced negative feedback from the students about UML.
+
+* Implement the threading piloting officially
+We did this, which created more time to allow students to focus on the project, even allowing in-class work time for the project.
+
+* Consider piloting some ideas to make project easier:
+  - Reducing the scope slightly and dropping group size to pairs
+We did this successfully and the pairing seemed to help greatly in terms of team conflicts.
+
+  - Getting team assignment and initial design happening before Exam 2
+We did NOT do this, but based on some feedback from students this could be an appropriate measure to take.
+  - Further refining the project related classes to give more timely help on issues students struggle with
+Several classes are now devoted to discussing design pattern/problem issues and live-coding an example “game” to the project which provides students an example to learn from.
 
 This year we also: 
 
-* overhauled the Object Oriented design materials (objectives pretty
-  much unchanged, by implementation-wise quite different).
-* Reduced the amount of material in the final 3rd of the course, to
-  give more in class project work time
-* Piloted a reduced threads curriculum
+1. Changed course materials organization/website (did two different versions)
+2. Changed the way assignments are submitted (git)
+3. Moved some content earlier in the course (UML/design)
+ 
+
 
 # LEARNING OUTCOMES
 
@@ -34,8 +47,6 @@ Students who successfully complete this course should be able to:
    - Polymorphism
    - Casting
    - Exceptions
-   - Function objects
-   - Generics
    - Collections
    - Event-driven graphical user interfaces
    - Exploring and using large-scale API packages (e.g. GUI libraries)
@@ -51,7 +62,7 @@ Students who successfully complete this course should be able to:
    times.  
 6. Select basic data structures (i.e., arrays, linked lists) based on
    asymptotic time complexity of typical operations.
-7. Work in a team of 3-4 students on a small-to-medium-size software
+7. Work in a team of 2-4 students on a small-to-medium-size software
    development project including at least three iterative development
    cycles, demonstrating effective:
    - Use of team roles
@@ -108,7 +119,7 @@ size and length.
 Exams: 2 exams during the term, plus the final exam
 
 Project: A small-to-medium-size software development project including
-at least three iterative development cycles done by teams of 3 or 4
+at least three iterative development cycles done by teams of 2 and occasionally 3
 students
 
 # COURSE ASSESSMENT MATRIX
@@ -156,52 +167,63 @@ N = not acceptable
 
 ## Summary of Relevant student feedback
 
-Overall student feedback remains very positive.  Reoccuring concerns:
+Overall student feedback remains very positive.  Recurring concerns:
 
-### UML was hard/confusing/not enough time spent on it
 
-So this term we did a major revamp of the object oriented design
-curriculum. What the students are referring to is the new design
-questions where you have to evaluate a series of UML diagrams to solve
-a problem and then produce one of your own. There are a lot of these
-in the new curriculum. Prior to this we were teaching OO design in a
-bad way the students really learned hardly anything about it and
-nobody complained because it was fairly easy. Now I can see we are
-teaching and evaluating it much better students are struggling and
-seeing they don't understand it so they have some complaints.
 
-### The main project was too compressed/hard
+### The course moves too quickly from topic to topic without enough depth
 
-There are frequently a few student concerns with the project,
-generally:
+This is always a challenge, but perhaps it could be that by adding additional resources and  optional activities, the students that feel the need for more depth could do this independently.
 
-* The project is too hard, or there is not enough time given to do it
-* Team members are not pulling their weight
 
-We made some revisions this year to actually make things easier with
-the final project (more in class work time, a few clarified examples).
-A few other ideas have been floated to further reduce annoyance:
+### The exams were too long or too hard (they sometimes claimed that the homework was not as hard as the exams)
 
-* Reducing the scope slightly and dropping group size to pairs
+Aside from making exams easier, we could look to add some extra challenges that go above and beyond the current assignments. This could be done purely for the students wanting to push themselves and not necessarily requiring additional grading/workload for TAs.
+
+
+### Wishing the project were started earlier 
+There are frequently a few student concerns with the project, generally:
+
+* There is not enough time to do the project
+* The final weeks of the semester are overloaded with work from other classes
+
+We made some revisions this year to actually make things easier with the final project. We gave more in-class time, continued to improve examples and workday materials, and switched to groups of size 2 primarily. 
+
+Other ideas we have moving forward:
+
 * Getting team assignment and initial design happening before Exam 2
-* Further refining the project related classes to give more timely
-  help on issues students struggle with
+* Possibly getting partners setup on an assignment before the project (and a chance for students to switch)
+
   
-We hope to pilot some of these next year and have a more concrete
-recommendation for future years
 
-### Threading is hard, presented at the wrong time, not useful
 
-We are changing the threading requirements for the coming year and
-piloted in the Spring.
+
+### Some students seemed interested in the course being turned into a flipped classroom or online course
+
+Obviously creating a flipped classroom would take a lot of work and might not be a good change for all students. However, if we did provide more materials for students to prepare for class ahead of time and work through activities it might help the students that did express this interest.
+
+
+### Course topics seeming disconnected (esp. re. project)
+
+We could explore ideas to make some connection between the project and the material covered in the last third of the course. For instance, require a Big-O analysis of the operation of their collision detection, require the use of their own implementation of a linked list somewhere, etc.
+
+
+### More even distribution or topics/workload throughout the course
+
+The movement of some paper homework design problems created a number of times where multiple assignments overlap and we could look to modify the schedule and assignments to prevent this more. 
+
+### Desire for more resources for help 
+
+Some students might not have been particularly aggressive in seeking out resources and might not have been aware of the resources that were available. Improving the extra resources we have and making sure that they are very easily accessible could definitely help some of the students that struggled but did not get the help they apparently desired.
+
 
 ## Recommendations for the Next Offering
 
-* Continue revisions to the OO-curriculum, try to reduce student
-  frustration with UML
-* Implement the threading piloting officially
-* Consider piloting some ideas to make project easier:
-  - Reducing the scope slightly and dropping group size to pairs
-  - Getting team assignment and initial design happening before Exam 2
-  - Further refining the project related classes to give more timely
-    help on issues students struggle with
+* Getting team assignment and initial design happening before Exam 2
+* Possibly getting partners setup on an assignment before the project (and a chance for students to switch)
+* Reviewing distribution of assignments to try to better balance the workload, eliminating overlapping assignments as possible
+* Improving the quality and accessibility of additional resources for greater depth or preparation
+* Finalizing a more sustainable plan for the course website for future instructors to all use
+* Releasing the most challenging/recent past exams to help set student expectations
+* Try to find ways to require course material presented during the final project to be used in the final project
+* Introduce a survey early during the project about the effectiveness of team communication.
