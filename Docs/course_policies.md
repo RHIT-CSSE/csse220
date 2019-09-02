@@ -9,6 +9,7 @@ able to assist you when we are in our respective offices.
 
 * [Mike Hewner's contact info](https://moodle.rose-hulman.edu/blog/index.php?entryid=111)
 * [Joe Hollingsworth's contact info](https://moodle.rose-hulman.edu/blog/index.php?entryid=120)
+* [Aaron Wilkin's contact info](https://moodle.rose-hulman.edu/blog/index.php?userid=5188)
 
 ## Other sources of help
 
