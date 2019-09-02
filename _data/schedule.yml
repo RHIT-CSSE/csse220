@@ -1,8 +1,8 @@
 1:
   reading:
     - Bookmark this page
-    - <a href="syllabus.html">Syllabus</a>
-    - <a href="coding_standards.md">Coding Standards and Grading</a>
+    - <a href="https://github.com/RHIT-CSSE/csse220/blob/master/Docs/course_policies.md">Syllabus</a>
+    - <a href="https://github.com/RHIT-CSSE/csse220/blob/master/Docs/grading_guide.md">Coding Standards and Grading</a>
     - Skim materials available on moodle
     - Big Java Ch. 5
   topics:

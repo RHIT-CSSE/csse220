@@ -24,9 +24,10 @@ right away.
   students who will serve as CSSE 220 assistants at different
   times. Be sure to visit the learning center whenever you need
   assistance and an instructor is not available.
-* Sophomore residence (Percopo Hall) has tutors available to help
-  anyone with CSSE220: Lewis Kelley and Connor Boyle. See hours for
-  Sophomore Residence tutors and Connor's calendar.
+* Sophomore residence (Percopo Hall) frequently has tutors available
+  to help anyone with CSSE220
+* The CSSE Labs often have student lab assistants who can help with
+  220
 * Besides the instructors, in-class assistants, and other resources
   noted above, other students in the course can often be a great
   source of help. And they will also learn more as they explain things
@@ -37,17 +38,10 @@ right away.
 
 ![Book Cover](misc/BigJava5.jpg)
 
-Please use the 5th edition of the textbook. Assignments will not be given for other editions.
-
-The book is excellent, but it is written for students who are new to
-programming as well as to Java. Thus in the beginning of the term the
-reading assignments are rather long, since you will already know many
-of the concepts. You should skim the text, looking for things you
-don't know, and slow down to focus on those. Definitely read the Java
-code in the textbook; if there is something there that you don't
-understand, read the surrounding text also. After the first few
-chapters, almost everything will be new, and most reading assignments
-will be smaller.
+This book is especially good for students who would like some help
+with Java, as it introduces the language from scratch.  It also covers
+the later topics of the course.  That said, it's completely optional
+and just for folks who would like extra help.
 
 # Late Assignment Policy
 
@@ -109,6 +103,7 @@ grade. Note that to receive an “A” in this course, your final grade in
 the course must be 93% or higher. Also note that below 65% is failing.
  
 | Letter Grade | Final Average |
+|--------------|---------------|
 | A            | 93‐100%       |
 | B+           | 88‐92%        |
 | B            | 83‐87%        |
