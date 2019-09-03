@@ -21,7 +21,7 @@ The thing you want to install is the Eclipse IDE for EE Developers.
 <a href="https://www.eclipse.org/downloads/">Download it here</a>
 
 There should be a "Download 64-bit" button for the latest version of
-eclipse (eclipse version usually have space names like Photon etc.).
+eclipse.
 
 Then run the downloaded file it will ask which version you'd like to
 install.  Select the Eclipse IDE for EE Developers.
