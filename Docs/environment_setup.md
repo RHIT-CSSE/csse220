@@ -4,17 +4,14 @@ title: Setting Up Software Development Environment
 
 # Install Java and Eclipse on your computer
 
-For those of you who are sophomores/juniors/seniors, if you 
-still have your original laptop configuration Java and Eclipse 
-should already be installed.  (It's still good to check of course).  
-Freshman and anyone who doesn't have eclipse should follow the 
+Follow the 
 instructions here: 
 [Installing Eclipse](installing_eclipse.md)
 
 
 # Checkout the public CSSE220 git repo
 
-Everyone should follow the instructions here:
+Follow the instructions here:
 [Clone CSSE220 git repo](getting_the_repo.md)
 
 
