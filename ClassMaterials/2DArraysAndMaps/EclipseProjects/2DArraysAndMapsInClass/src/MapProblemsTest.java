@@ -19,15 +19,14 @@ public class MapProblemsTest {
 	 *
 	 */
 	@Test
-	public void testHasDuplicates() {
-		int[] test1 = {1,2,3};
-		int[] test2 = {1,2,3,1,4};
-		int[] test3 = {1,2,3,1};
-		int[] test4 = {1,2,2};
-		assertFalse(MapProblems.hasDuplicates(test1));
-		assertTrue(MapProblems.hasDuplicates(test2));
-		assertTrue(MapProblems.hasDuplicates(test3));
-		assertTrue(MapProblems.hasDuplicates(test4));
+	public void testNicknames() {
+		String[] names = {"Alice","Bill","Charles"};
+		String[] test1 = {"Foo","Bar","Foo"};
+		String[] test2 = {"Foo","Bar","Baz"};
+		String[] test3 = {"Foo","Baz","Baz"};
+		assertEquals("Foo", MapProblems.duplicateNicknames(names, test1));
+		assertEquals(null, MapProblems.duplicateNicknames(names, test2));
+		assertEquals("Baz", MapProblems.duplicateNicknames(names, test3));
 	}
 
 	/**

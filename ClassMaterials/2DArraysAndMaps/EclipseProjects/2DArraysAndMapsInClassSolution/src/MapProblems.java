@@ -11,26 +11,34 @@ import java.util.HashMap;
 public class MapProblems {
 	
 	/**
-	 * Returns true if the array contains a duplicated element
+	 * For a particular class, everybody chooses a nickname.
+	 * It defeats the purpose of a nickname if more than one
+	 * person has it, so we want nicknames to be unique.
 	 * 
-	 * This can be done with for loops, but use a map. It's okay if you 
-	 * don't use the "value" portion of the key-value pair for anything 
-	 * in this problem.
+	 * If there is a duplicate nickname, returns the nickname.
+	 * You can assume there is at most one duplicated nickname
 	 * 
-	 * {1,2,3} yields false
-	 * {1,2,1} yields true
-	 * @param input 
-	 * @return true if the array contains a duplicated element
+	 * If no nickname is duplicated, returns null
+	 * 
+	 * Examples:
+	 * ["Steve S", "Steve K", "Sarah"] ["Stevo", "Bumbly", "Stevo"]
+	 * returns "Stevo"
+	 * 
+	 * ["Jason", "Michael H", "Michael W"] ["Fast Jason", "Buffalo", "Michael"]
+	 * return null
+	 * 
+	 * @param listOfRealNames listOfNicknames 
+	 * @return duplicated nickanme or null
 	 */
-	public static boolean hasDuplicates(int[] input) {
-		HashMap<Integer,Boolean> map = new HashMap<Integer,Boolean>();
-		for(int item : input) {
-			if(map.containsKey(item)){
-				return true;
+	public static String duplicateNicknames(String[] names, String[] nicknames) {
+		HashMap<String,String> map = new HashMap<>();
+		for(int i = 0; i < names.length; i++) {
+			if(map.containsKey(nicknames[i])){
+				return nicknames[i];
 			}
-			map.put(item,true);
+			map.put(nicknames[i],names[i]);
 		}
-		return false;
+		return null;
 	}
 	
 	/**
