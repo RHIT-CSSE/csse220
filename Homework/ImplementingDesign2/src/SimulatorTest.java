@@ -170,24 +170,72 @@ public class SimulatorTest {
 			simulator.handleAddQuestionToQuiz(i, i % 4 );
 		}
 		//quizzes
-		//0    0  4
-		//1    1  5
-		//2    2  6
-		//3    3  7
+		//quiz 0  has questions   0,  4
+		//quiz 1  has questions   1,  5
+		//quiz 2  has questions   2,  6
+		//quiz 3  has questions   3,  7
 		simulator.handleCreateQuizTester(1, "1");
 		simulator.handleCreateQuizTester(2, "2");
 		simulator.handleCreateQuizTester(3, "3");
+		
+		//score quiz tester 1 gets 0%, 50%, 0%, 100%  (on quizzes 0,1,2,3)
 		assertEquals(0.375, simulator.handleGetQuizTesterOverallScore(1), 0.0001 );
+		
+		//score quiz tester 2 gets 100%, 0%, 50%, 100%  (on quizzes 0,1,2,3)
 		assertEquals(0.625, simulator.handleGetQuizTesterOverallScore(2), 0.0001 );
+		
+		//score quiz tester 3 gets 0%, 100%, 0%, 50%  (on quizzes 0,1,2,3)
 		assertEquals(0.375, simulator.handleGetQuizTesterOverallScore(3), 0.0001 );
-		//create lots of questions questions
-		for (int i=9; i< 100; i++) {
-			simulator.handleCreateQuestion(i, i%2==0, "Is "+i+" even?");
-			simulator.handleAddQuestionToQuiz(i, i % 4 );
-		}
-		assertEquals(0.41083333, simulator.handleGetQuizTesterOverallScore(1), 0.0001 );
-		assertEquals(0.593333, simulator.handleGetQuizTesterOverallScore(2), 0.0001 );
-		assertEquals(0.41083333, simulator.handleGetQuizTesterOverallScore(3), 0.0001 );
+		
 	}
 	
+	/**
+	 * This test will only pass when you have successfully completed all the handle methods called within it
+	 */
+	@Test
+	public void testHandleGetQuizTesterOverallScoreHighValues() {
+		//create 10 quizzes
+		for (int i=0; i< 10; i++) {
+			simulator.handleCreateQuiz(  i   );
+		}
+		
+		//create 10 questions
+		for (int i=0; i< 10; i++) {
+			simulator.handleCreateQuestion(i, i%2==0, "Is "+i+" even?");
+			simulator.handleAddQuestionToQuiz(i, i  );
+		}
+		
+		simulator.handleCreateQuizTester(0, "0");
+		simulator.handleCreateQuizTester(1, "1");
+		simulator.handleCreateQuizTester(2, "2");
+		
+		assertEquals(0.6, simulator.handleGetQuizTesterOverallScore(0), 0.0001 );
+		assertEquals(0.4, simulator.handleGetQuizTesterOverallScore(1), 0.0001 );
+		assertEquals(0.6, simulator.handleGetQuizTesterOverallScore(2), 0.0001 );
+		
+		//create 10 questions for one more quiz (11th quiz)
+		simulator.handleCreateQuiz(  10   );
+		
+		//create 10 additional questions
+		for (int i=11; i< 21; i++) {
+			simulator.handleCreateQuestion(i, true, "Is 2 even?");
+			simulator.handleAddQuestionToQuiz(i, 10  );
+		}
+		
+		//   6/11
+		assertEquals(0.54545454, simulator.handleGetQuizTesterOverallScore(0), 0.0001 );
+		//   4/11
+		assertEquals(0.3636363, simulator.handleGetQuizTesterOverallScore(1), 0.0001 );
+		//   7/11
+		assertEquals(0.63636363, simulator.handleGetQuizTesterOverallScore(2), 0.0001 );
+		
+		
+		
+		
+		
+	}
+	
+	
 }
+	
+
