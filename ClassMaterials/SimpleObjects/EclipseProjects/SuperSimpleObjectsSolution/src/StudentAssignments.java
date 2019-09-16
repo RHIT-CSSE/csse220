@@ -18,12 +18,8 @@ public class StudentAssignments {
 	}
 	
 	public void printGradeReport() {
-		String toPrint = this.name;
-		for (String assignment : grades.keySet()) {
-			toPrint += " " + assignment + " - " + this.grades.get(assignment);
-		}
+		String toPrint = getGradeString();
 		System.out.println(toPrint);
-		
 	}
 	
 	public double getAverageGrade(){
@@ -37,12 +33,17 @@ public class StudentAssignments {
 	
 	//Added to test getAverageGrade
 	public void printGradeReportWithAverage() {
-		String toPrint = this.name;
-		for (String assignment : grades.keySet()) {
-			toPrint += " " + assignment + " - " + this.grades.get(assignment);
-		}
+		String toPrint = getGradeString();
 		toPrint += " - Average: " + this.getAverageGrade();
 		System.out.println(toPrint);
-		
 	}
+	
+	private String getGradeString() {
+		String toReturn = this.name;
+		for (String assignment : this.grades.keySet()) {
+			toReturn += " " + assignment + " - " + this.grades.get(assignment);
+		}
+		return toReturn;
+	}
+	
 }
