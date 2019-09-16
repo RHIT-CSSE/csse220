@@ -53,7 +53,7 @@ public class RotateComponent extends JComponent {
 		
 		//WARNING: be sure to always undo any translations you may have done
 		g2.rotate(-Math.toRadians(degreesToRotate));
-		g2.translate(-200, -200);
+		g2.translate(-300, -275);
 		
 	}
 	
