@@ -32,7 +32,8 @@ class TreeCopier implements FileVisitor<Path> {
  
         @Override
         public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-            Files.copy(file, target.resolve(source.relativize(file)), StandardCopyOption.REPLACE_EXISTING);
+            //System.out.println("Attempting to copy " + file.toString() + " to " + target.resolve(source.relativize(file)));
+        	Files.copy(file, target.resolve(source.relativize(file)), StandardCopyOption.REPLACE_EXISTING);
             numFilesCopied++;
             return CONTINUE;
         }

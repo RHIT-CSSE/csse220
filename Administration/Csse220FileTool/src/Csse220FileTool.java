@@ -41,6 +41,7 @@ public class Csse220FileTool {
 				
 	}
 
+	
 	public static void doGenerate(File masterDir, File studentSubmissionDir, File outputDir, PrintStream output)
 			throws IOException, FileNotFoundException {
 		if(!masterDir.exists()) {
@@ -57,6 +58,10 @@ public class Csse220FileTool {
 		
 		for(File submissionDir : studentSubmissionDir.listFiles()) {
 			String dirName = submissionDir.getName();
+			if(dirName.startsWith(".")) {
+				output.printf("Skipping dir %s as probably not a student\n", dirName);
+				continue;
+			}
 			String studentName = dirName.substring(0, dirName.indexOf('_'));
 			studentName = studentName.replace(' ', '_');
 			
