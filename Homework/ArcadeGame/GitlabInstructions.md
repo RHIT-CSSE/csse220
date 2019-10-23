@@ -26,17 +26,16 @@ also using it to submit your homework.
 8. Invite the other members of the grading team to your project as
    Maintainers.  The team should be
    * Michael Hewner
-   * Joseph Hollingsworth
-   * Nicklas Carpenter
-   * Knut Peterson
-   * Jordan Hazelrigg
-   * Ryan Bailey
+   * Aaron Wilkin
+   * Nathaniel Blanco
+   * Max Wang
+   * Lucus Bendzsa
 9. Find your repo URL.  It should appear beneath your project's name
    on the main project page.  It should look something like this:
    
    https://ada.csse.rose-hulman.edu/XXXXXX/ArcadeGame.git
    
-   Go to this spreadsheet and set the URL for your team
+   Go to this spreadsheet and set the URL for your team plus add your team members
    
    https://docs.google.com/spreadsheets/d/13sddHs4ibMhEezSFs-IjkCt71TvmWy19bqk98kSavkw/edit?usp=sharing
 
