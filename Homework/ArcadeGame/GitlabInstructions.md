@@ -27,7 +27,7 @@ also using it to submit your homework.
    Maintainers.  The team should be
    * Michael Hewner
    * Aaron Wilkin
-   * Nathaniel Blanco
+   * Robin Blanco
    * Max Wang
    * Lucus Bendzsa
 9. Find your repo URL.  It should appear beneath your project's name
