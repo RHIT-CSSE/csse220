@@ -29,6 +29,7 @@ public class DamagingDrop extends GameObject{
 		super(component, box.getMinX() + Math.random() * (box.getWidth()), box.getMinY() + Math.random() * (box.getHeight()), 0,1, SIZE, SIZE);
 	}
 	
+
 	public void drawOn(Graphics2D g) {
 		g.setColor( COLOR );
 		Ellipse2D.Double drop = 
