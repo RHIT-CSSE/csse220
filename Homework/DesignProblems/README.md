@@ -15,9 +15,9 @@ you produce on your own.
 Should be handed out in class but you can get them here:
 
 
-[Part 1](Design problems assignment.pdf)
-[Part 2](Design problems assignment part 2.pdf)
-[Part 3](Design problems assignment part 3.pdf)
++ [Part 1](DesignProblemsAssignment1.pdf)
++ [Part 2](DesignProblemsAssignment2.pdf)
++ [Part 3](DesignProblemsAssignment3.pdf)
 
 # Turn-In Instructions 
 
