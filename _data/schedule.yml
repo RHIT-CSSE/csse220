@@ -175,10 +175,11 @@
   reading:
     - All previously noted chapters/sections (review)
   topics:
-    - EXAM 2 WRITTEN PORTION (in class, 1st hour only)
-    - Exam Review - Programming Portion
+    - EXAM 2 WRITTEN PORTION (in class)
   materials: ../SampleExams
-  other: 
+  other:
+    - <a href="Docs/ExampleDesignProblems/ExampleDesignProblemsForStudents.docx">Example Design Problems</a>
+    - <a href="Docs/ExampleDesignProblems/SolutionsForExampleDesignProblemsForStudents.docx">Solutions for Example Design Problems</a>
   bgcolor: FFDDDD
 21:
   reading:
