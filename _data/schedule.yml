@@ -17,6 +17,7 @@
 2:
   reading:
     - Big Java, 7.1 - 7.3, 7.7
+    - (HW1 graded by Jonathan Kinnard kinnarjd@rose-hulman.edu)
   topics:
     - Loops (for and while)
     - The String class
@@ -29,6 +30,7 @@
 3:
   reading:
     - Big Java, 15.4
+    - (Twelve Problems graded by Lucus Bendzsa BENDZSLT@rose-hulman.edu)
   topics:
     - Maps
     - 2D Arrays
@@ -44,6 +46,7 @@
 5:
   reading:
     - Big Java, 2.1 - 2.8
+    - (MapAnd2DArray graded by Abizer Naseem NASEEMA@rose-hulman.edu)
   topics:
     - Object references
     - Object-Oriented Encapsulation
@@ -73,6 +76,7 @@
 8:
   reading:
     - Big Java, review 2 - 7
+    - (TeamGradebook graded by Joshua Key KEYJW@rose-hulman.edu)
   topics:
     - EXAM 1 WRITTEN PORTION (in class, 1st hour only)
     - Exam Review - Programming Portion
@@ -80,6 +84,7 @@
   bgcolor: FFDDDD
 9:
   reading: 
+    - (Scenes Graded by Jonathan Kinnard kinnarjd@rose-hulman.edu)
   topics: 
     - EXAM 1 PROGRAMMING PORTION 
   materials: ../SampleExams
