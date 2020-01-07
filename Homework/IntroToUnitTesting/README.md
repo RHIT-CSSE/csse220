@@ -31,6 +31,6 @@ which fail to pass when certain example code is run.
 You must create at least THREE different examples (provide comments
 justifying why they are different) for each method you are testing.
 These test cases must be placed in a file called TestThisClassTest.java 
-can be run by JUnit just like past examplesyou have used in class.
+that can be run by JUnit just like past examplesyou have used in class.
 
 
