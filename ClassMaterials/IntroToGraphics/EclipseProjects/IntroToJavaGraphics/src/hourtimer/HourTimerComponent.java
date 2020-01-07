@@ -36,7 +36,7 @@ public class HourTimerComponent extends JComponent {
 		
 		//Stage 2
 		
-		/* uncomment this code when you're ready to start stage 2
+		///* uncomment this code when you're ready to start stage 2
 		
 		int clockRadius = 50;
 		int clockCenterY = 50;
@@ -49,7 +49,7 @@ public class HourTimerComponent extends JComponent {
 		HourTimer upperLeftClock = new HourTimer(10, 10, 10);
 		upperLeftClock.drawOn(g2);
 		
-		*/
+		//*/
 		
 		
 		//Stage 3

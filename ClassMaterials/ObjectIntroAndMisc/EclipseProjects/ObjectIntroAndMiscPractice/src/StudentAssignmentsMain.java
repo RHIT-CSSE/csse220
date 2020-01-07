@@ -13,8 +13,8 @@ public class StudentAssignmentsMain {
 	 */
 	public static void main(String[] args) {
 
-		/*
-		 TODO: Uncomment this code to get started with StudentAssignments
+		
+		// TODO: Uncomment this code to get started with StudentAssignments
 		 
 		 StudentAssignments one = new StudentAssignments("John Doe");
 		 StudentAssignments two = new StudentAssignments(); //default name is Studenty McStudenton
@@ -29,7 +29,7 @@ public class StudentAssignmentsMain {
 		 one.printGradeReport(); System.out.println(); //blank line
 		 two.printGradeReport();
 		
-		*/
+		
 
 		/*
 		 * This code should print out:
