@@ -48,19 +48,6 @@ public class Recursion {
 		return null;
 	}
 	
-	private static void minimumsHelper(ArrayList<Integer> resultArray, int curIndex, List<Integer> s1, List<Integer> s2) {
-		if(curIndex == Math.max(s1.size(), s2.size())) return;
-		if(curIndex < s1.size() && curIndex < s2.size())
-			resultArray.add(Math.min(s1.get(curIndex), s2.get(curIndex)));
-		else if(curIndex < s1.size())
-			resultArray.add(s1.get(curIndex));
-		else if(curIndex < s2.size())
-			resultArray.add(s2.get(curIndex));
-		
-		curIndex++;
-		minimumsHelper(resultArray, curIndex, s1, s2);
-	}
-	
 	/**
 	 * For this problem, you should use recursion to find the 3rd capital letter
 	 * in a string. You are to return the index of that third capital letter. If
