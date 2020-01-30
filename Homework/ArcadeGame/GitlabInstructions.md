@@ -25,11 +25,13 @@ also using it to submit your homework.
    show up in the list) as Maintainers
 8. Invite the other members of the grading team to your project as
    Maintainers.  The team should be
-   * Michael Hewner
-   * Aaron Wilkin
-   * Robin Blanco
-   * Max Wang
-   * Lucus Bendzsa
+   * Joe Hollingsworth (hollings)
+   * Jason Yoder (yoder1)
+   * Aaron Wilkin (wilkin)
+   * Jonathan Kinnard (kinnarjd)
+   * Lucus Bendzsa (bendzslt)
+   * Joshua	Key (keyjw)
+   * Abi Naseem (naseema)
 9. Find your repo URL.  It should appear beneath your project's name
    on the main project page.  It should look something like this:
    
@@ -56,7 +58,7 @@ This step should be done by everyone in your team.
    the directories that your existing CSSE220 repos are being checked
    out to
 8. Select "Import existing eclipse projects" and select next.
-9. You should see "AracadeGameGit" on the list, make sure it's checked
+9. You should see "ArcadeGameGit" on the list, make sure it's checked
    and select next
 10. You should see a folder for ArcadeGameGit in your project browser
 
