@@ -58,23 +58,23 @@ public class ByoGUIViewer {
 		component.addByoComponent(hello2, 0, 20);
 		
 		// Part 1: ByoImage
-		/*
+		//*
 		ByoImage logo = new ByoImage("RH.png");
 		component.addByoComponent(logo, 120, 0);
 		ByoImage alien = new ByoImage("alien.png");
 		component.addByoComponent(alien, 320, 0);
 		ByoLabel imageLabel = new ByoLabel("Pt 1. ByoImages");
 		component.addByoComponent(imageLabel, 150, 230);
-		*/
+		//*/
 		
 		// Part 2: ByoButton Sizing and Drawing
 		
-		/*
+		//*
 		ByoButton button = new ByoButton("Pt 2. ByoButton", Color.cyan);
 		component.addByoComponent(button, 400, 0);
 		ByoButton button2 = new ByoButton("ByoButton2", Color.cyan);
 		component.addByoComponent(button2, 400, 30);
-		*/
+		//*/
 		// Part 2: ByoButton ButtonClicks
 		
 		// NOTE: in addition to uncommenting the code below
