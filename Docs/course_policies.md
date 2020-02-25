@@ -7,9 +7,8 @@ This document outlines the main course policies for CSSE220.
 Outside of normal class time, we the instructors are almost always
 able to assist you when we are in our respective offices.
 
-* [Joe Hollingsworth's contact info](https://moodle.rose-hulman.edu/blog/index.php?entryid=120)
-* [Aaron Wilkin's contact info](https://moodle.rose-hulman.edu/blog/index.php?userid=5188)
 * [Jason Yoder's contact info](https://moodle.rose-hulman.edu/blog/index.php?userid=18465)
+* [Aaron Wilkin's contact info](https://moodle.rose-hulman.edu/blog/index.php?userid=5188)
 
 ## Other sources of help
 
