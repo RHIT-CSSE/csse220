@@ -3,7 +3,7 @@ require 'yaml'
 
 start_date = Date.new(2020, 3, 9)
 end_date = Date.new(2020, 5, 22)
-vacation_start = Date.new(2020, 4, 10) #inclusive
+vacation_start = Date.new(2020, 4, 11) #inclusive
 vacation_end = Date.new(2020, 4, 19) # inclusive
 allowed_days_of_week = [2,3,5] # monday is 1
 
