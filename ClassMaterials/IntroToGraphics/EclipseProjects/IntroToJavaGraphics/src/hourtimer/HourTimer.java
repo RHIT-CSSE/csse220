@@ -1,6 +1,5 @@
 package hourtimer;
 import java.awt.Graphics2D;
-import java.awt.geom.Ellipse2D;
 
 
 /**
@@ -19,25 +18,6 @@ public class HourTimer {
 	public static final double RATIO_OF_HAND_WIDTH_TO_RADIUS = .1;
 	
 	//feel free to add constructors or fields to this class as you need
-	
-	private int centerX, centerY, radius;
-	
-	
-	public HourTimer() {
-		this.centerX = DEFAULT_CENTER_X;
-		this.centerY = DEFAULT_CENTER_Y;
-		this.radius = DEFAULT_RADIUS;
-	}
-	
-	
-
-	public HourTimer(int clockCenterX, int clockCenterY, int clockRadius) {
-		this.centerX = clockCenterX;
-		this.centerY = clockCenterY;
-		this.radius = clockRadius;
-	}
-
-
 
 	/**
 	 * Draws the timer
@@ -46,10 +26,6 @@ public class HourTimer {
 	 */
 	public void drawOn(Graphics2D g) {
 		// Implement this method.
-		g.translate(centerX, centerY);
-		Ellipse2D.Double circle = new Ellipse2D.Double(-this.radius, -this.radius, 2*this.radius, 2*this.radius); 
-		g.draw( circle );
-		
 	}
 	
 	/**

@@ -24,17 +24,12 @@ public class RotateComponent extends JComponent {
 		
 		g2.translate(200,200);
 		
-		
-		
-		
 		//drawing a rect so you can see the inital
 		//pos of the face without rotation
 		g2.setColor(Color.PINK);
 		g2.drawRect(0, 0, 200, 150);
 		g2.setColor(Color.BLACK);
 
-		
-		g2.translate(100, 75);
 		
 		// TODO 1: Play with rotation so you get a feel how it works
 		// 
@@ -49,9 +44,6 @@ public class RotateComponent extends JComponent {
 		double degreesToRotate = 30;
 		g2.rotate(Math.toRadians(degreesToRotate));
 
-		g2.translate(-100, -75);
-		
-		
 		// draws a face, with upper left hand corner 0 0
 		// you need to edit this code for TODO2
 		g2.drawRect(0, 0, 200, 150);
@@ -59,17 +51,9 @@ public class RotateComponent extends JComponent {
 		g2.drawRect(130, 20, 50, 50);
 		g2.drawRect(60, 80, 80, 40);
 		
-		g2.translate(100, 75);
-		
-		
 		//WARNING: be sure to always undo any translations you may have done
 		g2.rotate(-Math.toRadians(degreesToRotate));
-		
-		g2.translate(-100, -75);
-		
 		g2.translate(-200, -200);
-		
-		g2.drawRect(10, 10, 10, 10);
 		
 	}
 	

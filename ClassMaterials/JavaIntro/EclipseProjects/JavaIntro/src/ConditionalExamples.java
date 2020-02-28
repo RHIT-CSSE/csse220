@@ -31,7 +31,7 @@ public class ConditionalExamples {
 	 * just multiply several times
 	 */
 	public static int computedCubed(double numberToCube) {
-		return   (int)(numberToCube*numberToCube*numberToCube);
+		return 0;
 	}
 
 	/**
@@ -70,18 +70,6 @@ public class ConditionalExamples {
 	 */
 	public static void guessCubeRoot(double number, double guess) {
 		
-/*		if (  number < 5   ) {
-			
-		} else if (  number > 5  ) {
-			
-		} else if (  number > 8) {
-			
-		} else {
-			
-		}
-	*/	
-		
-		
 	}
 	
 	/**
@@ -118,24 +106,5 @@ public class ConditionalExamples {
 		
 		printDivisibleBy3(12); // note in this case we print within the function
 		printDivisibleBy3(13);
-		
-		//double calc = computedCubed( 1.1);
-		//System.out.println( calc  );
-		System.out.println(  computedCubed( 1.1) );
-		
-		String prof = "Jason";
-		
-		String s = "abcdefghijk";
-		
-		
-		
-		String prof2 = "Apple";
-		
-		System.out.println(  prof.equals( prof2 )   );
-		
-		
-		
-		
-		
 	}
 }

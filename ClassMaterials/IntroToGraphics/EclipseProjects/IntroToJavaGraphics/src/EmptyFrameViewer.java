@@ -16,7 +16,7 @@ public class EmptyFrameViewer {
 	 */
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
-		int frameWidth = 800;
+		int frameWidth = 300;
 		int frameHeight = 400;
 
 		frame.setSize(frameWidth, frameHeight);
