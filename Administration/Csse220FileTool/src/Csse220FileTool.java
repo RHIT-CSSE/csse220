@@ -22,6 +22,14 @@ public class Csse220FileTool {
         return tc.getNumFilesCopied();
 	}
 	
+	private static int copyDirWithProjectTree(Path source, Path target) throws IOException {
+		EnumSet<FileVisitOption> opts = EnumSet.of(FileVisitOption.FOLLOW_LINKS);
+		final int MAX_DIR_DEPTH=20;			
+        TreeWithDirCopier tc = new TreeWithDirCopier(source, target);
+        Files.walkFileTree(source, opts, MAX_DIR_DEPTH, tc);
+        return tc.getNumFilesCopied();
+	}
+	
 	private static Path pathAppend(Path source, String addition) {
 		return source.resolve(Paths.get(addition));
 	}
@@ -71,7 +79,7 @@ public class Csse220FileTool {
 			
 			// copy the student's submissions into the src dir of master
 			Path studentOutputDirSrc = pathAppend(studentOutputDir, "src");
-	        int numStudentCopied = copyDirTree(submissionDir.toPath(), studentOutputDirSrc);
+	        int numStudentCopied = copyDirWithProjectTree(submissionDir.toPath(), studentOutputDirSrc);
 	        
 	        // change the name in the project file
 	        updateProjectFileWithNewName(fullProjectFile, studentName, studentOutputDir);
