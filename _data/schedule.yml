@@ -127,6 +127,14 @@
   other:  
 15:
   reading:
+    - None
+  topics:
+    - More recursion
+    - More interfaces
+  materials: MoreRecursionMoreInterfaces
+  other:  
+16:
+  reading:
     - Big Java, 10.7, 10.10
   topics:
     - Swing containers, Layout Managers
@@ -136,14 +144,6 @@
   materials: EventBasedProgramming
   other:
     - <a target="_blank" href="https://docs.oracle.com/javase/tutorial/uiswing/">Oracle's Swing Tutorial</a>
-16:
-  reading:
-    - None
-  topics:
-    - More recursion
-    - More interfaces
-  materials: MoreRecursionMoreInterfaces
-  other:  
 17:
   reading:
     - Big Java, 9.1 - 9.3
