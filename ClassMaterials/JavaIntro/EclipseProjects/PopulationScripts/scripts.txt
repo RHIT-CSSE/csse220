@@ -1,9 +1,0 @@
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/JavaIntro/EclipseProjects/JavaIntro JavaIntro <fileContainingRepos>
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/EclipseProjects/HW1 HW1 <fileContainingRepos>
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/EclipseProjects/TwelveProblems TwelveProblems <fileContainingRepos>
-
-
-SOLUTION:
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/JavaIntro/EclipseProjects/JavaIntroSolution JavaIntroSolution <fileContainingRepos>
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/EclipseProjects/HW1Solution HW1Solution <fileContainingRepos>
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/EclipseProjects/TwelveProblemsSolution TwelveProblemsSolution <fileContainingRepos>
