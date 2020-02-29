@@ -7,7 +7,7 @@
  */
 public class Point {
 	
-	//CONSTANT
+	//CONSTANT for the origin (never changes)
 	public static final Point ORIGIN = new Point(0,0);
 	
 	//Instance Variables
@@ -41,7 +41,8 @@ public class Point {
 	 * @return distance between this Point and some other Point
 	 */
 	private double distanceTo(Point other) {
-		return distanceFormulaCalc(this.x, other.x, this.y, other.y);
+		//TODO complete this method
+		return 0;
 	}
 
 	/**
@@ -53,12 +54,13 @@ public class Point {
 	 * @return distance between two Points
 	 */
 	private static double distanceBetween(Point a, Point b) {
-		return distanceFormulaCalc(a.x, b.x, a.y, b.y);
+		//TODO complete this method
+		return 0;
 	}
 	
 	/** 
 	 * Applies distance formula to two points giving each 
-	 * coordinate as input (x1, y1) (x2,y2)
+	 * coordinate as input (x1, y1) (x2, y2)
 	 * 
 	 * @param x1, x2, y1, y2
 	 * @return distance between (x1,y1) and (x2,y2)
