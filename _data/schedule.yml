@@ -28,7 +28,7 @@
   other:
 3:
   reading:
-    - Big Java, 15.4
+    - Big Java, 7.6, 15.4
   topics:
     - Maps
     - 2D Arrays
@@ -36,14 +36,14 @@
   other:
 4:
   reading:
-    - None
+    - Big Java, 2.1 - 2.4
   topics:
     - Miscellaneous
   materials: ObjectIntroAndMisc
   other:
 5:
   reading:
-    - Big Java, 2.1 - 2.8
+    - Big Java, 2.5 - 2.8
   topics:
     - Object references
     - Object-Oriented Encapsulation
@@ -53,7 +53,7 @@
     - <a href="Docs/Handouts/drawing_box_and_pointer.pdf">Drawing Box And Pointer Guide</a>
 6:
   reading:
-    - Big Java Pages 567-569, Special Topics 12.1, 12.2, 12.3 (focus on association, we will not use aggregation/composition in this class)
+    - Big Java Pages Special Topics 12.1, 12.2 (focus on association, we will not use aggregation/composition in this class)
   topics:
     - Class diagrams
     - Intro to Object Design
@@ -86,14 +86,14 @@
   bgcolor: FFDDDD
 10:
   reading:
-    - Big Java, 3.1.3
+    - Big Java, 3.1-3.3
   topics:
     - Encapsulation
   materials: PairingAndEncapsulation
   other:  
 11:
   reading:
-    - Big Java, 8
+    - Big Java, 8.1-8.4
   topics:
     - Cohesion and Coupling
     - Scoping
@@ -119,15 +119,14 @@
   other:  
 14:
   reading:
-    - Big Java, 13.3 - 13.5 (13.6 is optional)
-    - Big Java, 10.1 - 10.3
+    - Big Java, 10.1 - 10.2
   topics:
     - Interfaces
   materials: Interfaces
   other:  
 15:
   reading:
-    - None
+    - Big Java, 13.3 - 13.6 (13.5 is optional)
   topics:
     - More recursion
     - More interfaces
@@ -135,7 +134,7 @@
   other:  
 16:
   reading:
-    - Big Java, 10.7, 10.10
+    - Big Java, 10.5, 10.7, 10.10
   topics:
     - Swing containers, Layout Managers
     - Event-based programming
@@ -147,7 +146,7 @@
 17:
   reading:
     - Big Java, 9.1 - 9.3
-    - Be sure to read Special Topic 10.1 Abstract Classes on p. 437
+    - Be sure to read about Abstract Classes on p. 323-324
   topics:
     - Inheritance
     - Polymorphism
@@ -190,7 +189,7 @@
   bgcolor: FFDDDD
 22:
   reading:
-    - None
+    - Big Java, 10.9
   topics:
     - Source control basics
     - Timers for a game loop
@@ -240,7 +239,7 @@
   other:  
 28:
   reading:
-    - Big Java 14.4 - 14.8
+    - Big Java 10.3, 14.8
   topics:
     - Comparable/Comparator
   materials: Comparators
@@ -255,7 +254,7 @@
   other:   
 30:
   reading:
-    - Big Java, 18 (skim)
+    - None
   topics:
     - Project presentations In Class (see grading guideline)
   materials: ../SampleExams
