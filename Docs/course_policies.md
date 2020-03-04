@@ -36,7 +36,7 @@ right away.
 
 # Optional Textbook
 
-![Book Cover](misc/BigJava5.jpg)
+![Book Cover](misc/BigJava7.jpg)
 
 This book is especially good for students who would like some help
 with Java, as it introduces the language from scratch.  It also covers
