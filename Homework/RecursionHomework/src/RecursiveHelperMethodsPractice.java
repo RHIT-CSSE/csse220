@@ -47,31 +47,26 @@ public class RecursiveHelperMethodsPractice {
 		return false;
 	}
 	
-	/**
-	 * For this problem, you should use recursion to find the 3rd value greater than
-	 * the input value called num.
+/**
+	 * For this problem, you should use recursion to find the 3rd capital letter
+	 * in a string. You are to return the index of that third capital letter. If
+	 * a third capital letter is not in the String, you should return -1.
 	 * 
-	 * in an integer array, you are to return the index of that third value that is
-	 * greater than num.  If a third value greater than num does not exist, you should 
-	 * return -1.
+	 * You will probably want to use a helper method for this one.  You should not
+	 * make any changes to the input String.
 	 * 
-	 * Do not make any changes to the array.
+	 * For this method, you will want to use the Character class to determine if a letter
+	 * is upper case.  Below is an example usage:
+	 * 		char curLetter = input.charAt(0);
+	 * 		Character.isUpperCase(curLetter) will return true if curLetter is an upper case letter
 	 * 
-	 * For example:
-	 * input = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-	 * num = 4
-	 * You should return the index of the value 7 (thus you are to return the index of
-	 * 6) because it is the third value in the array greater than the value num = 4
-	 * 
-	 * @param input - the integer array you are to find the third element larger than num
-	 * @param num - the value to find three elements greater than
-	 * @return the index of the third value greater than num, -1 if a third one does not 
-	 * exist in the input array
+	 * @param input - the String you are to find the third capital letter in
+	 * @return the index of the third capital letter, -1 if a third one does not 
+	 * exist in the input String
 	 */
-	public static int findThirdGreater(int[] input, int num) {
-		return 0;
-	}
-	
+	public static int findThirdCapital(String input) {
+		return -1;
+	}	
 	
 	/**
 	 * For this problem, you are given an array of integers.  You are to use 

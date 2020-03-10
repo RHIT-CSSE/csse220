@@ -132,78 +132,77 @@ public class RecursiveHelperMethodsPracticeTest {
 	
 	
 	// **************************************************************
-	// Test: findThirdGreater
+	// Test: findThirdCapital
 	// **************************************************************
-	@Test
-	public void testFindThirdGreater() {
+  @Test
+	public void testFindThirdCapital() {
 		//Test 1
-		int[] input = {1, 1, 1};
-		int num = 0;
+		String input = "QQQ";
 		int res = 2;
-		assertEquals(res, RecursiveHelperMethodsPractice.findThirdGreater(input, num));
+		int actual = Recursion.findThirdCapital(input);
+		assertEquals(res, actual);
 		
 		
 		//Test 2
-		input = new int[] {1, 2, 3, 4, 2, 2, 5, 3, 3, 6, 1, 2, 3, 2, 7};
-		num = 3;
+		input = "abcDefGhiJklmN";
 		res = 9;
-		assertEquals(res, RecursiveHelperMethodsPractice.findThirdGreater(input, num));
+		actual = Recursion.findThirdCapital(input);
+		assertEquals(res, actual);
 		
 		//Test3
-		input = new int[] {1, 1, 1, 1, 1, 1};
-		num = 1;
+		input = "abcdef";
 		res = -1;
-		assertEquals(res, RecursiveHelperMethodsPractice.findThirdGreater(input, num));
+		actual = Recursion.findThirdCapital(input);
+		assertEquals(res, actual);
 		
 		//Test 4
-		input = new int[] {1, 2, 3, 1, 3, 2};
-		num = 2;
+		input = "abCdEf";
 		res = -1;
-		assertEquals(res, RecursiveHelperMethodsPractice.findThirdGreater(input, num));
-		
-		
+		actual = Recursion.findThirdCapital(input);
+		assertEquals(res, actual);
 		
 		//Test 5
-		input = new int[] {1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2};
-		num = 1;
+		input = "aaaaAaaaAaaaA";
 		res = 12;
-		assertEquals(res, RecursiveHelperMethodsPractice.findThirdGreater(input, num));
+		actual = Recursion.findThirdCapital(input);
+		assertEquals(res, actual);
 		
 		//Test 6
-		input = new int[] {2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2};
-		num = 1;
+		input = "AAAAAAAAAAAAAAAAAAAAAAA";
 		res = 2;
-		assertEquals(res, RecursiveHelperMethodsPractice.findThirdGreater(input, num));
+		actual = Recursion.findThirdCapital(input);
+		assertEquals(res, actual);
 		
 		//Test 7
-		input = new int[] {10, 10, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10};
-		num = 9;
+		input = "ABCdefghiJKL";
 		res = 2;
-		assertEquals(res, RecursiveHelperMethodsPractice.findThirdGreater(input, num));
-		
-		input = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10};
-		num = 9;
-		res = 12;
-		assertEquals(res, RecursiveHelperMethodsPractice.findThirdGreater(input, num));
+		actual = Recursion.findThirdCapital(input);
+		assertEquals(res, actual);
 		
 		//Test 8
-		input = new int[] {10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-		num = 9;
+		input = "0123abcdefgHIJ";
+		res = 13;
+		actual = Recursion.findThirdCapital(input);
+		assertEquals(res, actual);
+		
+		//Test 9
+		input = "0123456789";
 		res = -1;
-		assertEquals(res, RecursiveHelperMethodsPractice.findThirdGreater(input, num));
+		actual = Recursion.findThirdCapital(input);
+		assertEquals(res, actual);
 		
 		//Big Test
-		input = new int[100];
+		input = "";
 		for(int i = 0; i < 100; i++) {
 			if(i%12 == 0)
-				input[i] = 1000;
+				input += "Q";
 			else
-				input[i] = i;
+				input += "q";
 		}
-		num = 900;
 		res = 24;
-		assertEquals(res, RecursiveHelperMethodsPractice.findThirdGreater(input, num));
+		actual = Recursion.findThirdCapital(input);
+		assertEquals(res, actual);
+		
 	}
-
 }
 
