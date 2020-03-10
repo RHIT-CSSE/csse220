@@ -139,56 +139,56 @@ public class RecursiveHelperMethodsPracticeTest {
 		//Test 1
 		String input = "QQQ";
 		int res = 2;
-		int actual = Recursion.findThirdCapital(input);
+		int actual = RecursiveHelperMethodsPractice.findThirdCapital(input);
 		assertEquals(res, actual);
 		
 		
 		//Test 2
 		input = "abcDefGhiJklmN";
 		res = 9;
-		actual = Recursion.findThirdCapital(input);
+		actual = RecursiveHelperMethodsPractice.findThirdCapital(input);
 		assertEquals(res, actual);
 		
 		//Test3
 		input = "abcdef";
 		res = -1;
-		actual = Recursion.findThirdCapital(input);
+		actual = RecursiveHelperMethodsPractice.findThirdCapital(input);
 		assertEquals(res, actual);
 		
 		//Test 4
 		input = "abCdEf";
 		res = -1;
-		actual = Recursion.findThirdCapital(input);
+		actual = RecursiveHelperMethodsPractice.findThirdCapital(input);
 		assertEquals(res, actual);
 		
 		//Test 5
 		input = "aaaaAaaaAaaaA";
 		res = 12;
-		actual = Recursion.findThirdCapital(input);
+		actual = RecursiveHelperMethodsPractice.findThirdCapital(input);
 		assertEquals(res, actual);
 		
 		//Test 6
 		input = "AAAAAAAAAAAAAAAAAAAAAAA";
 		res = 2;
-		actual = Recursion.findThirdCapital(input);
+		actual = RecursiveHelperMethodsPractice.findThirdCapital(input);
 		assertEquals(res, actual);
 		
 		//Test 7
 		input = "ABCdefghiJKL";
 		res = 2;
-		actual = Recursion.findThirdCapital(input);
+		actual = RecursiveHelperMethodsPractice.findThirdCapital(input);
 		assertEquals(res, actual);
 		
 		//Test 8
 		input = "0123abcdefgHIJ";
 		res = 13;
-		actual = Recursion.findThirdCapital(input);
+		actual = RecursiveHelperMethodsPractice.findThirdCapital(input);
 		assertEquals(res, actual);
 		
 		//Test 9
 		input = "0123456789";
 		res = -1;
-		actual = Recursion.findThirdCapital(input);
+		actual = RecursiveHelperMethodsPractice.findThirdCapital(input);
 		assertEquals(res, actual);
 		
 		//Big Test
@@ -200,7 +200,7 @@ public class RecursiveHelperMethodsPracticeTest {
 				input += "q";
 		}
 		res = 24;
-		actual = Recursion.findThirdCapital(input);
+		actual = RecursiveHelperMethodsPractice.findThirdCapital(input);
 		assertEquals(res, actual);
 		
 	}
