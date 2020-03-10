@@ -1,4 +1,4 @@
 _site
 .gitignore
-.class
-bin*
+*.class
+bin/
