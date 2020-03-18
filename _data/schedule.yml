@@ -1,7 +1,7 @@
 1:
   reading:
     - Bookmark this page
-    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dd4aa6c7-15e6-4f3e-87f0-ab8200d3f048">	Setting up Eclipse for CSSE220</a>
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dd4aa6c7-15e6-4f3e-87f0-ab8200d3f048"> Video:Setting up Eclipse for CSSE220</a>
     - <a href="https://github.com/RHIT-CSSE/csse220/blob/master/Docs/course_policies.md">Syllabus</a>
     - <a href="https://github.com/RHIT-CSSE/csse220/blob/master/Docs/grading_guide.md">Coding Standards and Grading</a>
     - Skim materials available on moodle
@@ -30,7 +30,7 @@
 3:
   reading:
     - Big Java, 7.6, 15.4
-    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=006a9f56-ecc0-4a23-859e-ab8200e17f7b">Video Lecture</a>
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=006a9f56-ecc0-4a23-859e-ab8200e17f7b">Video:Daily Material</a>
   topics:
     - Maps
     - 2D Arrays
@@ -39,6 +39,8 @@
 4:
   reading:
     - Big Java, 2.1 - 2.4
+    - <a target="_blank" href="">Video : Daily Material</a>
+
   topics:
     - Miscellaneous
   materials: ObjectIntroAndMisc
