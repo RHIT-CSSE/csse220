@@ -66,7 +66,7 @@ public class Point {
 	public static double distanceFormulaCalc(double x1, double x2, double y1, double y2 ) {
 		double xDiff = x1-x2;
 		double yDiff = y1-y2;
-		return xDiff*xDiff + yDiff*yDiff;
+		return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
 	}
 	
 }
