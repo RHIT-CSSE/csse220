@@ -60,6 +60,8 @@
 6:
   reading:
     - Big Java Pages Special Topics 12.1, 12.2 (focus on association, we will not use aggregation/composition in this class)
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=22ce02eb-4848-4e11-83de-ab82012b9aa4">Video:Daily Material</a>
+
   topics:
     - Class diagrams
     - Intro to Object Design
@@ -70,6 +72,8 @@
 7:
   reading:
     - Big Java, 2.9, 2.10
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=d0c72ee0-043a-4e21-80fb-ab82012ba320">Video:Daily Material</a>
+    
   topics:
     - Java Graphics
     - Exam Review - Written portion
