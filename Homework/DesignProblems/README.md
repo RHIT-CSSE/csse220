@@ -12,8 +12,9 @@ you produce on your own.
 
 # The questions
 
-Should be handed out in class but you can get them here:
+~Should be handed out in class but you can get them here:~
 
+These are available on Moodle as Word files, but can be downloaded here as PDFs as well.
 
 + [Part 1](DesignProblemsAssignment1.pdf)
 + [Part 2](DesignProblemsAssignment2.pdf)
@@ -21,7 +22,8 @@ Should be handed out in class but you can get them here:
 
 # Turn-In Instructions 
 
-You will turn in each packet at the beginning of the next class.
+~You will turn in each packet at the beginning of the next class.~
+You will complete these and submit via Moodle.
 
 # Grading rubric 
 
