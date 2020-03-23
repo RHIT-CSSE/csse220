@@ -23,6 +23,7 @@ These are available on Moodle as Word files, but can be downloaded here as PDFs 
 # Turn-In Instructions 
 
 ~You will turn in each packet at the beginning of the next class.~
+
 You will complete these and submit via Moodle.
 
 # Grading rubric 
