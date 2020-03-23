@@ -13,6 +13,8 @@
     - Variables/types
     - The String class
   materials: JavaIntro
+  video:
+    - test
   other:
     - <a target="_blank" href="https://www.rose-hulman.edu/class/csse/csse220/201830/Resources/Python_vs_Java.html">Python vs. Java</a>
 2:
@@ -30,7 +32,7 @@
 3:
   reading:
     - Big Java, 7.6, 15.4
-    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=006a9f56-ecc0-4a23-859e-ab8200e17f7b">Video:Daily Material</a>
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=006a9f56-ecc0-4a23-859e-ab8200e17f7b">Daily Videos</a>
   topics:
     - Maps
     - 2D Arrays
@@ -39,7 +41,7 @@
 4:
   reading:
     - Big Java, 2.1 - 2.4
-    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=cb1d89eb-df7e-499c-87e8-ab82012b4601">Video:Daily Material</a>
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=cb1d89eb-df7e-499c-87e8-ab82012b4601">Daily Videos</a>
 
   topics:
     - Miscellaneous
@@ -48,7 +50,7 @@
 5:
   reading:
     - Big Java, 2.5 - 2.8
-    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3dde8811-d136-470a-8fe9-ab82012b90ad">Video:Daily Material</a>
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3dde8811-d136-470a-8fe9-ab82012b90ad">Daily Videos</a>
 
   topics:
     - Object references
@@ -60,7 +62,7 @@
 6:
   reading:
     - Big Java Pages Special Topics 12.1, 12.2 (focus on association, we will not use aggregation/composition in this class)
-    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=22ce02eb-4848-4e11-83de-ab82012b9aa4">Video:Daily Material</a>
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=d5fedfcd-37c8-4653-acc6-ab870133242a">Daily Videos</a>
 
   topics:
     - Class diagrams
@@ -72,7 +74,7 @@
 7:
   reading:
     - Big Java, 2.9, 2.10
-    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=d0c72ee0-043a-4e21-80fb-ab82012ba320">Video:Daily Material</a>
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=3250df48-fc08-4ed3-a465-ab87013335ff">Daily Videos</a>
     
   topics:
     - Java Graphics
