@@ -43,7 +43,10 @@
     - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=cb1d89eb-df7e-499c-87e8-ab82012b4601">Daily Videos</a>
 
   topics:
-    - Miscellaneous
+    - Coding Conventions and Style
+    - Using the Debugger
+    - Writing Your First Classes
+    - Constructing Your First Objects
   materials: ObjectIntroAndMisc
   other:
 5:
