@@ -5,11 +5,19 @@ import java.util.Collection;
  * 
  * You should not need to modify or submit this class.
  * 
- * This is code for four methods, two of which have errors.
+ * This is code for four methods, THREE of which have errors.
  * You should create a second file called TestThisClassTest.java
- * which provides at least three test cases for each method.
+ * which provides at least FOUR test cases (assertions) for each method.
+ * 
  * The methods with errors should be left with errors, but the
  * code should expose the problem with them.
+ * 
+ * Each problem is worth 5 points:
+ * 
+ * 4 x 1pt each test case (4 assertions minimum, must test different categories)
+ * 1 points for CODE COMMENTS explaining WHY cases are DIFFERENT and identifying failing conditions
+ * 
+ * Total possible: 20 points.
  * 
  * 
  * @author Jason Yoder, Aaron Wilkin, and Joe Hollingsworth
@@ -27,14 +35,11 @@ public class TestThisClass {
 	 * @param the string
 	 */
 	public static int numberOfXs(String input) {
-		int count, count2;
-		count = 0;
-		count2 = 0;
+		int count = 0;
 		for(int i = 0; i < input.length(); i++) {
-			if(input.charAt(i) == 'X')
+			int x = input.charAt(i) / 8;
+			if(x == 15 || x == 11)
 				count++;
-			if(input.charAt(i) == 'x')
-				count2++;
 		}
 		return count;
 	}
@@ -60,6 +65,7 @@ public class TestThisClass {
 	/**
 	 * Given a length and width of a floor in feet and the cost of
 	 * paint in dollar per square foot, calculate the cost to paint the room.
+	 * 
 	 * If any non-positive values are used for any parameters the result should be -1.
 	 * The cost in dollars should be rounded up to the nearest whole dollar.
 	 * 
@@ -70,7 +76,7 @@ public class TestThisClass {
 		if ( Math.min(length, Math.min( width,  dollarsPerSqFoot)) < 0)   {
 			return -1;
 		}
-		return length*width/dollarsPerSqFoot;
+		return length*width*dollarsPerSqFoot;
 	}
 	
 	
