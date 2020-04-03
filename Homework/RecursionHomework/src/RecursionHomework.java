@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author hewner.
  *         Created Jan 2, 2014.
  */
-public class RecursionPractice {
+public class RecursionHomework {
 	
 	/**
 	 * Recursive summation of one to the input value.
