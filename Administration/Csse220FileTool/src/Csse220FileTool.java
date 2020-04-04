@@ -66,7 +66,8 @@ public class Csse220FileTool {
 		
 		for(File submissionDir : studentSubmissionDir.listFiles()) {
 			String dirName = submissionDir.getName();
-			if(dirName.startsWith(".")) {
+			//if there is no "_" in the filenames it could be the question text
+			if(dirName.startsWith(".") ||  dirName.indexOf('_') == -1    ) {
 				output.printf("Skipping dir %s as probably not a student\n", dirName);
 				continue;
 			}
