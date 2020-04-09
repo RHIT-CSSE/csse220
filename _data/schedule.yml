@@ -124,6 +124,7 @@
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=5ac76e23-1fd9-401a-a0d7-ab870135cba1">Daily Videos</a>
     - Big Java, 3.4
     - <a target="_blank" href="http://www.vogella.com/tutorials/JUnit/article.html">Article on testing</a>
+    - <a target="_blank" href= "https://stormpath.com/blog/7-tips-writing-unit-tests-java">Additional Supplemental Article</a>
     - Sections 1, 2.1, 2.3, 4, 5.1 - 5.3, 6, 8.2
   topics:
     - Scoping
@@ -133,11 +134,14 @@
   other:
 13:
   reading:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=cc2ec0c7-b498-4ac2-b934-ab870135d80f">Daily Videos</a>
     - Big Java, 13.1 - 13.2
   topics:
     - Recursion
     - Recursion helper methods
   materials: RecursionIntroduction
+    - <a target="_blank" href="https://docs.google.com/document/d/18o12FzHHIN6nCJLWcLfdau5tolTUg8fy6mY96zr2H-s/edit?usp=sharing">Recursion Summary Sheet</a>
+    - <a target="_blank" href="https://www.topcoder.com/community/competitive-programming/tutorials/an-introduction-to-recursion-part-1/">Supplemental Article</a>
   other:  
 14:
   reading:
