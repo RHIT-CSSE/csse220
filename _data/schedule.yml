@@ -140,9 +140,10 @@
     - Recursion
     - Recursion helper methods
   materials: RecursionIntroduction
+  other:  
     - <a target="_blank" href="https://docs.google.com/document/d/18o12FzHHIN6nCJLWcLfdau5tolTUg8fy6mY96zr2H-s/edit?usp=sharing">Recursion Summary Sheet</a>
     - <a target="_blank" href="https://www.topcoder.com/community/competitive-programming/tutorials/an-introduction-to-recursion-part-1/">Supplemental Article</a>
-  other:  
+
 14:
   reading:
     - Big Java, 10.1 - 10.2
