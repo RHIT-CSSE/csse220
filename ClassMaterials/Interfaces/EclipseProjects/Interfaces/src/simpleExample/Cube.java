@@ -1,8 +1,8 @@
 package simpleExample;
 
 /**
- *  Ball class has a radius and then its weight is calculated using the
- *  volume and a constant volume to weight ratio which is the same for all balls
+ *  Cube class has a side and then its weight is calculated using the
+ *  volume and a constant volume to weight ratio which is the same for all cubes
  * 
  * @author Jason Yoder
  *
