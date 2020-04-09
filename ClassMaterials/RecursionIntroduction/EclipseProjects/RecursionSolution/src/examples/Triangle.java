@@ -37,14 +37,42 @@ public class Triangle {
 		return computeAreaRecursively(this.width);
 	}
 	
-	/**
-	 * Computes the area of this triangle recursively.
-	 *
-	 * @return the area
-	 */
 	private static int computeAreaRecursively(int inputWidth) {
-		if (inputWidth <= 0) return 0;
+		//BASE CASE:
+		//if we get to zero width we are done return 0
+		if (inputWidth < 1) {
+			return 0;
+		}
+		
+		//RECURSIVE CALL:
+		//calculate the area of a triangle with width 1 smaller than us
 		int smallerArea = computeAreaRecursively(inputWidth - 1);
+		
+		
+		//RETURN RESULT
+		//the total area is the area of a triangle one smaller than us PLUS our width
 		return smallerArea + inputWidth;
 	}
+	
+	//Same as above except more compressed
+	private static int computeAreaRecursively2(int inputWidth) {
+		//BASE CASE:
+		//if we get to zero width we are done return 0
+		if (inputWidth < 1) {
+			return 0;
+		}
+		//DO RECURSIVE CALL AND RETURN RESULT IN ONE LINE
+		// "computeAreaRecursively(inputWidth - 1)" is calculated first, then inputWidth and its result are added
+		// and then everything gets returned
+		return inputWidth + computeAreaRecursively(inputWidth - 1) ;
+	}
+	
+	//Same as above except EVEN more compressed
+	private static int computeAreaRecursively3(int inputWidth) {
+		//        TEST           ? result_if_TEST_is_TRUE  :  result_if_TEST_is_FALSE  
+		return (inputWidth < 1) ? 0 : computeAreaRecursively(inputWidth - 1) + inputWidth;
+	}
+	
+	
+	
 }
