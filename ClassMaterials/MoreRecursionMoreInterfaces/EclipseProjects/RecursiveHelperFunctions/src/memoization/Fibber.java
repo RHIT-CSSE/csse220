@@ -8,7 +8,10 @@ package memoization;
 public class Fibber {
 	private static final int MAX = 40;
 	private static final String msg = "fib(%d) = %d%n";
-	private long[] fibStorage = new long[MAX + 1];
+	
+	// You can also do this with an external variable instead of passing it along as a helper parameter
+	// It is important that ALL calls are referring to a single instance of the array
+	//private long[] fibStorage = new long[MAX + 1];
 
 	/**
 	 * Starts the example.
@@ -59,6 +62,7 @@ public class Fibber {
 		return f;
 	}
 	
+	
 	/**
 	 * Recursively calculates the nth Fibonacci number.
 	 * USING Memoization
@@ -67,6 +71,23 @@ public class Fibber {
 	 * @return the nth Fibonacci number
 	 */
 	private long fibWithMemo(int n) {
+		//create an array to hold values as we look them up 
+		// (starts out with all values = 0 by default)
+		long[] fibStorage = new long[MAX + 1];
+		
+		return fibWithMemoHelper(n, fibStorage);
+	}
+	
+	
+	
+	/**
+	 * Helper method which keeps track of the results so far
+	 * in a long[] called fibStorage
+	 *
+	 * @param n, fibStorage
+	 * @return the nth Fibonacci number
+	 */
+	private long fibWithMemoHelper(int n, long[] fibStorage) {
 		long f;
 		// Checks to see if we already know the answer
 		if (fibStorage[n] != 0) {
@@ -76,8 +97,8 @@ public class Fibber {
 		if (n <= 2) {
 			f = 1;
 		} else {
-			final long fNMOne = fibWithMemo(n - 1);
-			final long fNMTwo = fibWithMemo(n - 2);
+			long fNMOne = fibWithMemoHelper(n - 1, fibStorage);
+			long fNMTwo = fibWithMemoHelper(n - 2, fibStorage);
 			f = fNMOne + fNMTwo;
 		}
 		// Stores the answer for later
