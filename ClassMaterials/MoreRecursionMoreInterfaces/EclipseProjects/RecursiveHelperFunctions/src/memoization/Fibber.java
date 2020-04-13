@@ -3,7 +3,7 @@ package memoization;
 /**
  * Would you believe that this calculates Fibonacci numbers? Really.
  * 
- * @author Curt Clifton.
+ * @author Curt Clifton with revisions by Jason Yoder
  */
 public class Fibber {
 	private static final int MAX = 40;
