@@ -31,3 +31,8 @@ There is sample output of a working solution in
 [example_output.txt](src/example_output.txt) that you can use as a
 model for display. You do not have to match this exactly, but try to
 make it look roughly the same.
+
+
+# Introduction Video
+
+A short video walking through some of the important details on this assignment is provided [here](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=131af48c-832c-4dea-ad14-ab9c01154898).
