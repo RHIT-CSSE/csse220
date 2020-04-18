@@ -183,6 +183,7 @@
     - Access control
   materials: Inheritance
   other:  
+  - <a target="_blank" href="https://docs.google.com/document/d/14FUh5vhBM9uUp-cjnVs6YUmg4b9vJn4P9awC1DOU0RA/edit?usp=sharing">Inheritance Summary</a>
 18:
   reading:
     - Big Java, 9.4, 9.5, Skip anything about clone()
