@@ -25,4 +25,14 @@ public class SavingsAccount extends BankAccount {
 		double interest = getBalance() * this.interestRate / 100;
 		deposit(interest);
 	}
+	
+	public static void main(String[] args) {
+		SavingsAccount sa = new SavingsAccount(5);
+		sa.deposit(100);
+		System.out.println(sa.getBalance() );
+		sa.addInterest();
+		System.out.println(sa.getBalance() );
+	}
+
+	
 }
