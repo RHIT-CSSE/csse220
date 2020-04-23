@@ -74,7 +74,6 @@ public class GameComponent extends JComponent {
 			//if (shouldRemove ) {
 			//	this.raindrops.remove(drop);
 			//}
-			
 		}
 
 // We'll uncomment this once we see why this approach it is needed.
