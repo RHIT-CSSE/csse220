@@ -1,3 +1,4 @@
+package fileIO;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -17,9 +18,9 @@ public class LevelIO {
 	private void readFile() {
 		Scanner scanner;
 		try {
-			scanner = new Scanner(new File("level.txt"));
+			scanner = new Scanner(new File("levels/level.txt"));
 		} catch (FileNotFoundException e) {
-			System.out.println("level.txt not found");
+			System.out.println("levels/level.txt not found");
 			//e.printStackTrace();
 			return;
 		}
@@ -37,7 +38,7 @@ public class LevelIO {
 	private void writeFile() {
 		PrintWriter pw = null;
 		try {
-			pw = new PrintWriter("level.txt");
+			pw = new PrintWriter("levels/level.txt");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
