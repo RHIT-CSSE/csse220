@@ -9,7 +9,7 @@ public class LevelIO {
 
 	public LevelIO() {
 		//TODO uncomment and write these methods
-		//readFile("levels/surprise.txt");
+		//readFile("levels/suprise.txt");
 		//writeFile("levels/level1.txt");
 	}
 
