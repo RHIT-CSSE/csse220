@@ -196,19 +196,18 @@
   other:  
 19:
   reading:
-    - Big Java, 11, 12.1 - 12.2
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=6c0bfb96-2a1f-4f69-a46d-ab8701364d14">Daily Videos</a>
+    - Big Java, 10.9, 11.1
   topics:
-    - Object-oriented design
+    - Timers for a game loop
     - File I/O
-    - Exception handling
   materials: OOAndExceptions
   other:  
 20:
   reading:
     - All previously noted chapters/sections (review)
   topics:
-    - EXAM 2 WRITTEN PORTION (in class, both hours)
-    - Exam Review - Programming Portion
+    - EXAM 2 WRITTEN PORTION
   materials: ../SampleExams
   other: 
   bgcolor: FFDDDD
@@ -222,10 +221,10 @@
   bgcolor: FFDDDD
 22:
   reading:
-    - Big Java, 10.9
+    - Big Java, 11, 12.1 - 12.2
   topics:
     - Source control basics
-    - Timers for a game loop
+    - Exception handling
     - Workday and feedback on design
   materials: MoreEventBasedProgramming
   other:  
