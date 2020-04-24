@@ -137,22 +137,24 @@ for a certain length of time (TIME_TO_RECOVER) before they become recovered.
 Once recovered, the Person cannot be infected again.
 
 Tracking status: there are a number of ways to track the status of a Person, but make sure
-that they will always report the correct information about being Healthy, Infected, or Recovered.
-They can ONLY be in ONE of those three conditions.
+that when asked a Person will always report the correct information about being Healthy, Infected, or Recovered.
+Each Person can ONLY be in ONE of those three conditions (healthy/infected/recovered).
 
+Once you have completed the class, you will need to add a button and code just like in step #3 (for the ChargedParticle).
+In order for an infection to spread, you should have 1 infected person be added when adding people to the simulation. 
 
 ##### Hint #1: There are constants in the file to define the speed, size, color, etc.
 
 ##### Hint #2: You will want this class to extend another class which will you allow you to re-use code.
 
-##### Hint #3: To actually get these to show up you need to add code as in step #3 for the ChargedParticle.
-
-##### Hint #4: [Final Functionality Demo (same as above)](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c6958003-1803-436a-bc65-aba6002fdeb3)
+##### Hint #3: [Final Functionality Demo (same as above)](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c6958003-1803-436a-bc65-aba6002fdeb3)
 
 # Part 5: BONUS Pandemic Simulation
-There are a lot of simply things you can do to build on this simulator if you are interested.
+There are a lot of simple things you can do to build on this simulator if you are interested.
 You can extra bonus credit on this assignment by adding some new functionality to the system.
-The bonus will be a maximum of 5 points and will be based on creativity .
+The bonus will be a maximum of 5 points and will be based on creativity.
+Be sure to explain your extra functionality in a comment in your Moodle submission.
+
 
 This assignment was inspired by this [article](https://www.washingtonpost.com/graphics/2020/world/corona-simulator/).
 You might get some ideas from looking at it.
