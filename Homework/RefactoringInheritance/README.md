@@ -71,8 +71,8 @@ lines of code. Create your new super class and be sure to move as much of the du
 the two classes into your super class instead. You may or may not want to make your new class abstract, 
 you can decide what all is placed in it and whether it should/needs to be abstract or not.
 Be VERY careful when looking at the code and make sure to see where there are differences
-between the classes. MOST ofthe code should now be in your super class. 
-After refactoring everything should still work as it started (test it by running it again).
+between the classes. MOST of the code should now be in your super class. 
+After refactoring, everything should still work as it started (test it by running it again).
 To easily reset your classes in Eclipse (in case you delete something on accident)
 you can Right Click->Replace With->HEAD Revision
 (Just be sure to make a backup copy if you want to keep your changes!)
@@ -83,11 +83,11 @@ you can Right Click->Replace With->HEAD Revision
 
 ##### Hint #1: The Particle class might be VERY TINY when you are done! Refactor this class first and then test to make sure it works!
 
-##### Hint #2: There is code for TagPlayer that is different from Particle, so it should NOT be put into the class you are hoping to inherit from. It belongs only in TagPlayer.
+##### Hint #2: There is code for TagPlayer that is different from Particle, so it should NOT be put into the super class. It belongs only in TagPlayer.
 
 ##### Hint #3: To read and change the variables of a superclass (i.e. color) you can create getter/setter methods (i.e. setColor() ) to access the instance variables.
 
-##### Hint #4: Don't forget to call super.methodName() to re-use an existing method (methodName) when overriding it!
+##### Hint #4: Don't forget to call super.methodName() to re-use an existing method (methodName) from a subclass, including when overriding the method itself!
 
 Watch this video to see a nice trick to generating getters and setters:
 [Generating setters and getters in Eclipse](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=91e09e7d-6f73-4298-b801-aba6002b99fb)
@@ -95,19 +95,19 @@ Watch this video to see a nice trick to generating getters and setters:
 
 # Part 3: Extending the Particle class
 Now we want to add a new class which is a specialized version 
-of the Particle class. We call this the ChargedParticle and it
+of the Particle class. We call this class ChargedParticle and it
 is the same as Particle except that in addition:
 
 ### It's center/core has a random color. 
-  * Sample code to easily create a new random color.
+  * Sample code to easily create a new random color:
 ```
     Random r = new Random();
     Color c = new Color( r.nextInt(255),  r.nextInt(255),  r.nextInt(255) );
 ```
-### It has two rings with random colors
+### It has two rings with other separately randomized colors
   * Each ring is centered as normal, but fits in a rectangle width=radius, height=radius x 4 or width=radius x 4, height=radius
-### Everytime it bounces into another Particle (Particle or ChargedParticle) it randomizes its colors
-  * See the video below in the hint sections to see it running as it should.
+### Each time it bounces into another Particle (Particle or ChargedParticle) it randomizes its colors
+  * See the video below in the hint sections to see it running as it desired.
  
 ### To add ChargedParticles to your simulation you will need to provide similar code several places:
   * SimulationViewer.java - look for "TODO Part 3"
@@ -115,24 +115,26 @@ is the same as Particle except that in addition:
  
 ##### Hint #1: You can add ChargedParticles into an ArrayList of Particles that already exists if (as it should) ChargedParticle extends Particle!
  
-##### Hint #2: Don't forget to call super.methodName() to re-use an existing method when overriding it!
+##### Hint #2: Don't forget to call super.methodName() to re-use an existing method!
 
-##### Hint #3: My solution for ChargedParticles has less than 50  lines of code.
+##### Hint #3: My solution for ChargedParticles has less than 50 lines of code. (can be even less!)
 
 ##### Hint #4: [Final Functionality Demo](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c6958003-1803-436a-bc65-aba6002fdeb3)
 
 
 # Part 4: Pandemic Simulation
-Now that you have refactored code and made it easier to build on the Particle class
-let's try to re-use the new class we created earlier (SimulationObject) to build another class.
+Now that you have seen how to use the refactored code and easily buillt on the Particle class,
+let's try to re-use the super class we created earlier (SimulationObject) to build another class.
 The class Person has been started for you and when completed will actually allow
-you to simulate a viral infection spread in a population.
+you to simulate a viral infection spread in a population. Person will need significant modifications.
 
 ## Person
 This class represents a Person who can either be healthy (green), infected (orange), or recovered (pink).
-In each case it is simply drawn as a solid circle of the given color.
-Once a Person becomes infected, they will remain infected for a certain length of time (TIME_TO_RECOVER)
-before they become recovered. Once recovered, the Person cannot be infected again.
+In each case it is simply drawn as a solid circle of the given color. It should move around just like
+the Particle and TagPlayer moved in the starting code. When a healthy Person is touched by an infected 
+Person, the healthy Person becomes infected. Once a Person becomes infected, they will remain infected 
+for a certain length of time (TIME_TO_RECOVER) before they become recovered. 
+Once recovered, the Person cannot be infected again.
 
 Tracking status: there are a number of ways to track the status of a Person, but make sure
 that they will always report the correct information about being Healthy, Infected, or Recovered.
