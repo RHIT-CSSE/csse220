@@ -1,3 +1,5 @@
+# THESE INSTRUCTIONS ARE IN PROGRESS... DO NOT START YET
+
 # Using Git for Your Arcade Game Project
 
 For the arcade game project, you will be doing group development.
@@ -6,42 +8,12 @@ git.  You've already used git to checkout code/homework from the
 CSSE220 repo, but for this project you will be managing a repo and
 also using it to submit your homework.
 
-# Step 1: Forking My Repo
+# Step 1: Accepting the Github assignment.
 
-*This step should only be done by one member of your Arcade Game team.*
 
-1. Go to this URL:
 
-   https://ada.csse.rose-hulman.edu/hewner/ArcadeGame
 
-   You'll have to login with your rose credentials.
-2. Click "fork"
-3. Select your name as the namespace
-4. Go to Settings > General > Permissions
-5. Change the Project Visibility to "Private" and press "Save Changes"
-6. Go to Settings > Members
-7. Invite the other members of your team to your project (they may
-   need to login at https://ada.csse.rose-hulman.edu/hewner/ so they
-   show up in the list) as Maintainers
-8. Invite the other members of the grading team to your project as
-   Maintainers.  The team should be
-   * Joe Hollingsworth (hollings)
-   * Jason Yoder (yoder1)
-   * Aaron Wilkin (wilkin)
-   * Jonathan Kinnard (kinnarjd)
-   * Lucus Bendzsa (bendzslt)
-   * Joshua	Key (keyjw)
-   * Abi Naseem (naseema)
-9. Find your repo URL.  It should appear beneath your project's name
-   on the main project page.  It should look something like this:
-   
-   https://ada.csse.rose-hulman.edu/XXXXXX/ArcadeGame.git
-   
-   Go to this spreadsheet and set the URL for your team plus add your team members
-   
-   https://docs.google.com/spreadsheets/d/13sddHs4ibMhEezSFs-IjkCt71TvmWy19bqk98kSavkw/edit?usp=sharing
-
-# Step 2: Checking out the Repo
+# Step 2: Checking out the Repo OUT OF DATE
 
 This step should be done by everyone in your team.
 
