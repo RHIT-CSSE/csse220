@@ -214,7 +214,7 @@
   bgcolor: FFDDDD
 21:
   reading:
-    - None
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=110f8899-3d2e-40ed-b9fd-ab8c014176d5">Sample Exam Video</a>
   topics:
     - EXAM 2 PROGRAMMING PORTION 
   materials: 
@@ -224,9 +224,8 @@
   reading:
     - Big Java, 11, 12.1 - 12.2
   topics:
-    - Source control basics
     - Exception handling
-    - Workday and feedback on design
+    - Source control basics
   materials: OOAndExceptions
   other:  
 23:
