@@ -67,9 +67,9 @@ Make a quick sketch of how you could do this (not required for turning in).
 
 # Part 2: Redesign (Particle and TagPlayer)
 Let's refactor these two classes with our new design so that we won't have so many redundant 
-lines of code. Create your new super class and be sure to remove all the duplicate code.
-You may or may not want to make your new class abstract, you can decide what all
-is placed in it and whether it should/needs to be abstract or not.
+lines of code. Create your new super class and be sure to move as much of the duplicate code from
+the two classes into your super class instead. You may or may not want to make your new class abstract, 
+you can decide what all is placed in it and whether it should/needs to be abstract or not.
 Be VERY careful when looking at the code and make sure to see where there are differences
 between the classes. MOST ofthe code should now be in your super class. 
 After refactoring everything should still work as it started (test it by running it again).
