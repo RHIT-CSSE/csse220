@@ -222,11 +222,11 @@
   bgcolor: FFDDDD
 22:
   reading:
-    - Big Java, 11, 12.1 - 12.2
+    - <a href="https://www.microverse.org/blog/how-remote-pair-programming-works-and-why-it-can-change-your-life"> Remote Pair Programming</a>
   topics:
-    - Exception handling
     - Source control basics
-  materials: OOAndExceptions
+    - Pair programming
+  materials:
   other:  
 23:
   reading:
@@ -278,12 +278,12 @@
   other:  
 29:
   reading:
-    - None
+    - Big Java, 11, 12.1 - 12.2
   topics:
+    - Exception handling
     - Course evaluations
-    - ArcadeGame work time
-  materials: CourseEvals
-  other:   
+  materials: OOAndExceptions
+  other:   CourseEvals
 30:
   reading:
     - None
