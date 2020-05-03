@@ -222,6 +222,7 @@
   bgcolor: FFDDDD
 22:
   reading:
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f4538859-691e-4793-875f-abaf01415523">Daily Videos</a>
     - <a href="https://www.microverse.org/blog/how-remote-pair-programming-works-and-why-it-can-change-your-life"> Remote Pair Programming</a>
   topics:
     - Source control basics
