@@ -225,11 +225,11 @@
     - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f4538859-691e-4793-875f-abaf01415523">Daily Videos</a>
     - <a href="https://www.microverse.org/blog/how-remote-pair-programming-works-and-why-it-can-change-your-life"> Remote Pair Programming</a>
   topics:
-    - Source control basics
     - Pair programming
+    - Source control basics
   materials: PairProgrammingAndSourceControl
   other:  
-    - <a href="https://docs.google.com/document/d/1JiTXhtVyVt5IjugmZgZb5gNNz9MG1eihujyz_47ONw4/edit">Git Conflict Resolution</a>
+    - <a href="https://docs.google.com/document/d/1JiTXhtVyVt5IjugmZgZb5gNNz9MG1eihujyz_47ONw4/edit">Git Problem Resolution Guide</a>
 23:
   reading:
     - Big Java, 15.1 - 15.2, 16.1
