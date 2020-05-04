@@ -227,8 +227,9 @@
   topics:
     - Source control basics
     - Pair programming
-  materials:
+  materials: PairProgrammingAndSourceControl
   other:  
+    - <a href="https://docs.google.com/document/d/1JiTXhtVyVt5IjugmZgZb5gNNz9MG1eihujyz_47ONw4/edit">Git Conflict Resolution</a>
 23:
   reading:
     - Big Java, 15.1 - 15.2, 16.1
