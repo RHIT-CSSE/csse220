@@ -240,21 +240,22 @@
   other:  
 24:
   reading:
-    - None
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=cf0e4af0-f3cf-4981-9e4d-abb101618bbe">Daily Videos</a>
   topics:
-    - Linked lists part 2
-    - linked list worktime
+    - Data Structures and Big O Intro
+    - Linked Lists Part 2
   materials: 
   other:  
 25:
   reading:
-    - None
+    - Daily Videos TBD
   topics:
     - Team worktime for project
   materials: ProjectWorkday1
   other:  
 26:
   reading:
+    - Daily Videos TBD
     - Big Java, 14.1 - 14.3
     - <a target="_blank" href="https://en.wikipedia.org/wiki/Insertion_sort">Insertion sort</a>
   topics:
@@ -265,6 +266,7 @@
     - <a target="_blank" href="https://www.toptal.com/developers/sorting-algorithms">Sorting Algorithm Visualizations</a>
 27:
   reading:
+    - Daily Videos TBD
     - Big Java 14.4 - 14.8
   topics:
     - Merge sort
@@ -273,6 +275,7 @@
   other:  
 28:
   reading:
+    - Daily Videos TBD
     - Big Java 10.3, 14.8
   topics:
     - Comparable/Comparator
@@ -280,6 +283,7 @@
   other:  
 29:
   reading:
+    - Daily Videos TBD
     - Big Java, 11, 12.1 - 12.2
   topics:
     - Exception handling
