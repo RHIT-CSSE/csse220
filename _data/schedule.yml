@@ -259,20 +259,23 @@
   reading:
     - Daily Videos TBD
     - Big Java, 14.1 - 14.3
-    - <a target="_blank" href="https://en.wikipedia.org/wiki/Insertion_sort">Insertion sort</a>
+    - <a target="_blank" href="https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm">Insertion sort</a>
+    - <a target="_blank" href="https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm">Selection sort</a>
   topics:
     - Sorting
     - Algorithm analysis
   materials: Sorting
   other:
     - <a target="_blank" href="https://www.toptal.com/developers/sorting-algorithms">Sorting Algorithm Visualizations</a>
+    - <a target="_blank" href="https://docs.google.com/spreadsheets/d/19V1f8brgzNm9bcj1giJqIg5MVgJjqbOTsFt9p6tBq_o/edit#gid=0">Google Sheet to Plot Profiling Curve</a>
 27:
   reading:
     - Daily Videos TBD
+    - <a target="_blank" href="https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/">Merge Sort Vizualization</a>
     - Big Java 14.4 - 14.8
   topics:
-    - Merge sort
-    - More on Big-O notation
+    - Merge Sort
+    - More on Big-Oh notation
   materials: MergeSort
   other:  
 28:
