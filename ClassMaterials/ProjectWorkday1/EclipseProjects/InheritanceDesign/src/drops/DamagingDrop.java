@@ -17,7 +17,7 @@ import game.GameObject;
 public class DamagingDrop extends GameObject{
 
 	private static final double SIZE = 5.0;
-	private static final Color COLOR = Color.BLUE;
+	private static final Color DAMAGING_DROP_COLOR = Color.BLUE;
 
 	
 	public DamagingDrop( GameComponent component, int range) {
@@ -31,7 +31,7 @@ public class DamagingDrop extends GameObject{
 	
 
 	public void drawOn(Graphics2D g) {
-		g.setColor( COLOR );
+		g.setColor( DAMAGING_DROP_COLOR );
 		Ellipse2D.Double drop = 
 				new Ellipse2D.Double(this.getBoundingBox().x, this.getBoundingBox().y, this.getBoundingBox().getWidth(), this.getBoundingBox().getHeight() );
 		g.fill(drop);

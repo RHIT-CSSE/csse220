@@ -16,14 +16,14 @@ import game.GameObject;
 public class HealingDrop extends GameObject {
 
 	private static final double SIZE = 10.0;
-	private static final Color COLOR = Color.RED;
+	private static final Color HEALING_DROP_COLOR = Color.RED;
 	
 	public HealingDrop( GameComponent component, int range) {
 		super(component, Math.random()*range, 0, 0, 1, SIZE, SIZE);
 	}
 	
 	public void drawOn(Graphics2D g) {
-		g.setColor(COLOR);
+		g.setColor(HEALING_DROP_COLOR);
 		Ellipse2D.Double drop = 
 				new Ellipse2D.Double(this.getBoundingBox().x, this.getBoundingBox().y, this.getBoundingBox().getWidth(), this.getBoundingBox().getHeight() );
 		g.fill(drop);
