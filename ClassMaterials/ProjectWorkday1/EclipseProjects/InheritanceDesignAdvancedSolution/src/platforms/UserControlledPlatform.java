@@ -49,6 +49,7 @@ public class UserControlledPlatform extends AbstractPlatform {
 	@Override
 	public void collideWithPlatform(AbstractPlatform otherPlatform) {
 		//do nothing
+		//this.reverseDirection();
 	}
 	
 	

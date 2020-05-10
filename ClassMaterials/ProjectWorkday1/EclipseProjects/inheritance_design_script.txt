@@ -69,14 +69,18 @@ Step #6
 Copy and paste code from GameComponent to provide the desired functionality. (replace "r" with "this" )
 Delete the nested gameObjects for loops and replace it by iterating through drops and then handling platforms and userPlatform inside it.
 
-//Looks like this:
+//Looks like this:   (you could put the checks in the classes, but its jsut duplicated code)
 
-		for (AbstractDrop d: drops) {
-			for (BouncingPlatform p: platforms) {
-				d.collideWith(p);
-			}
-			d.collideWith(userPlatform);
+for (AbstractDrop d : this.drops) {
+	for (BouncingPlatform p: this.platforms) {
+		if( !d.shouldRemove() && !p.shouldRemove() && d.overlaps(p)) {
+			d.collideWith(p);
 		}
+	}
+	if( !d.shouldRemove() && d.overlaps(this.userPlatform) ) {
+		d.collideWith(this.userPlatform);
+	}
+}
 		
 
 Don't forget to remove objects from drops and platforms at the bottom (just remove from each list)
