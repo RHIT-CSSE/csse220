@@ -70,13 +70,11 @@ public class UserControlledPlatform extends GameObject {
 	@Override
 	public void collideWithBouncingPlatform(BouncingPlatform p) {
 		p.bounce();
-		
 	}
 	
 	@Override
 	public void collideWithUserControlledPlatform(UserControlledPlatform p) {
 		//do nothing
-		
 	}
 
 }

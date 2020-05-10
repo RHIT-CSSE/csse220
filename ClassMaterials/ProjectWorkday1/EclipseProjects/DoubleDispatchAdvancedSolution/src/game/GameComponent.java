@@ -23,26 +23,22 @@ public class GameComponent extends JComponent {
 	private int numTicks;
 
 
+
 	// There are two types of platforms and three types of
 	// drops in the game that interact.
 	
 	//TODO It might seems like this is a good idea to have one list, but
 	//we might find that having separate lists can make handling collisions easier
-	//private List<GameObject> gameObjects = new ArrayList<>();
-	
-	private List<AbstractDrop> drops = new ArrayList<>();
-	private List<BouncingPlatform> platforms = new ArrayList<>();
+	private List<GameObject> gameObjects = new ArrayList<>();
 	private UserControlledPlatform userPlatform;
 	
-
 	public GameComponent() {
-
 		this.userPlatform = new UserControlledPlatform(10, 0, this);
-		
-		this.platforms.add(new BouncingPlatform(this, 200, 100, 5, 0));
-		this.platforms.add(new BouncingPlatform(this,  30, 100, 0, 5));
-		this.platforms.add(new BouncingPlatform(this, 130, 150, 0, 5 ));
-		this.platforms.add(new BouncingPlatform(this, 230, 200, 0, 5));
+		this.gameObjects.add( this.userPlatform );
+		this.gameObjects.add(new BouncingPlatform(this, 200, 100, 5, 0));
+		this.gameObjects.add(new BouncingPlatform(this,  30, 100, 0, 5));
+		this.gameObjects.add(new BouncingPlatform(this, 130, 150, 0, 5 ));
+		this.gameObjects.add(new BouncingPlatform(this, 230, 200, 0, 5));
 		
 
 	}
@@ -52,20 +48,14 @@ public class GameComponent extends JComponent {
 		System.out.println("Tick " + this.numTicks);
 		
 		
-
-		System.out.println("There are " + drops.size() + " raindrops.");
+		//This is harder now to keep track of
+		//System.out.println("There are " + this.drops + " raindrops.");
 	}
 
 	@Override
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
-
-		ArrayList<GameObject> gameObjects = new ArrayList<>();
-		gameObjects.addAll(drops);
-		gameObjects.addAll(platforms);
-		gameObjects.add(userPlatform);
-		
 		
 		for (GameObject gameObject: gameObjects) {
 			gameObject.drawOn(g2);
@@ -75,20 +65,17 @@ public class GameComponent extends JComponent {
 	}
 
 	public void updateState() {
-		// Each is big enough to be in a helper method.
-		updateRaindrops();
-		updatePlatforms();
+		
+		addRaindrops();
+		for (GameObject gameObject: this.gameObjects) {
+			gameObject.update();
+		}
 		handleCollisions();
 		this.numTicks++;
 	}
 
 	private void handleCollisions() {
 
-		ArrayList<GameObject> gameObjects = new ArrayList<>();
-		gameObjects.addAll(drops);
-		gameObjects.addAll(platforms);
-		gameObjects.add(userPlatform);
-		//FIXED
 		for(GameObject o1: gameObjects){
 			for(GameObject o2: gameObjects){
 				if( o1 != o2 && !o1.shouldRemove() && !o2.shouldRemove() && o1.overlaps(o2)) {
@@ -97,54 +84,30 @@ public class GameComponent extends JComponent {
 			}
 		}
 		
-
-		
 		List<GameObject> shouldRemove = new ArrayList<>();
-		
-		//FIXED
-		
-		
 		for(GameObject object: gameObjects){
 			if(object.shouldRemove()){
 				shouldRemove.add(object);
 			}
 		}
-		
 		for(GameObject object: shouldRemove){
-			this.platforms.remove(object);
-			this.drops.remove(object);
+			this.gameObjects.remove(object);
 			object.onRemove();
 		}
 	}
 
-	private void updateRaindrops() {
+	private void addRaindrops() {
 		double rand = Math.random();
 		if (rand < DAMAGE_DROPS_PERC) {
-			this.drops.add(new DamagingDrop(this, this.getWidth()));
+			this.gameObjects.add(new DamagingDrop(this, this.getWidth()));
 		} else if (rand < DAMAGE_DROPS_PERC + HEALING_DROPS_PERC ) {
-			this.drops.add(new HealingDrop(this, this.getWidth()));
+			this.gameObjects.add(new HealingDrop(this, this.getWidth()));
 		} else {  		//FIXED
-			this.drops.add(new InvincibilityDrop(this, this.getWidth()));
+			this.gameObjects.add(new InvincibilityDrop(this, this.getWidth()));
 		}
-		
-		
-		//FIXED
-		for (AbstractDrop drop: drops) {
-			drop.update();
-		}
-		
-		
 		
 	}
 
-	private void updatePlatforms() {
-		//FIXED
-		for (BouncingPlatform gameObject: this.platforms) {
-			gameObject.update();
-		}
-		userPlatform.update();
-	}
-		
 	public void toggleBoxDirection() {
 		//FIXED
 		this.userPlatform.reverseDirection();
@@ -152,7 +115,7 @@ public class GameComponent extends JComponent {
 
 	public void createRainDrop(Double boundingBox) {
 		//FIXED
-		this.drops.add(new DamagingDrop(this, boundingBox));
+		this.gameObjects.add(new DamagingDrop(this, boundingBox));
 	}
 
 }

@@ -43,7 +43,7 @@ public abstract class AbstractDrop extends GameObject {
 		// Do nothing special.
 	}
 	
-	//public abstract void collideWithBouncingPlatform(BouncingPlatform p);
+
 	@Override
 	public void collideWith(GameObject other) {
 		other.collideWithDrop(this);

@@ -100,14 +100,13 @@ public class BouncingPlatform extends GameObject {
 
 	@Override
 	public void collideWithBouncingPlatform(BouncingPlatform p) {
-		// TODO Auto-generated method stub
 		p.bounce();
+		this.bounce();
 	}
 
 
 	@Override
 	public void collideWithUserControlledPlatform(UserControlledPlatform p) {
-		// TODO Auto-generated method stub
 		p.reverseDirection();
 	}
 
