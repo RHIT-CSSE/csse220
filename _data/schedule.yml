@@ -250,14 +250,16 @@
   other:  
 25:
   reading:
-    - Daily Videos TBD
+    - <a href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=e21f75b9-7220-45a5-83a4-abb601623d4a">Daily Videos</a>
   topics:
-    - Team worktime for project
+    - Collision Handling
+    - Design Inheritance
+    - Multiple/Double Dispatch
   materials: ProjectWorkday1
   other:  
 26:
   reading:
-    - Daily Videos TBD
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=1da79fb3-c411-41ca-980f-ab8701368c02">Daily Videos</a>
     - Big Java, 14.1 - 14.3
     - <a target="_blank" href="https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm">Insertion sort</a>
     - <a target="_blank" href="https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm">Selection sort</a>
@@ -270,7 +272,7 @@
     - <a target="_blank" href="https://docs.google.com/spreadsheets/d/19V1f8brgzNm9bcj1giJqIg5MVgJjqbOTsFt9p6tBq_o/edit#gid=0">Google Sheet to Plot Profiling Curve</a>
 27:
   reading:
-    - Daily Videos TBD
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=8852f329-2638-4ec2-b60b-ab87013697aa">Daily Videos<a/>
     - <a target="_blank" href="https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/">Merge Sort Vizualization</a>
     - Big Java 14.4 - 14.8
   topics:
@@ -278,9 +280,10 @@
     - More on Big-Oh notation
   materials: MergeSort
   other:  
+  - <a target="_blank" href="https://www.youtube.com/watch?v=kPRA0W1kECg">Sounds of Sorting</a>
 28:
   reading:
-    - Daily Videos TBD
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=ecc4c772-df88-4051-9163-ab870136a0f9">Daily Videos</a>
     - Big Java 10.3, 14.8
   topics:
     - Comparable/Comparator
