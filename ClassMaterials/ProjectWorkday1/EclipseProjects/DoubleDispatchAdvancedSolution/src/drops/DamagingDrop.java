@@ -36,11 +36,22 @@ public class DamagingDrop extends AbstractDrop{
 	}
 	
 	@Override
-	public void collideWith(BouncingPlatform p) {
+	public void collideWithBouncingPlatform(BouncingPlatform p) {
 		if (p.getInvincibilityCount() <= 0) {
 			p.setRainDropsCollected( p.getRainDropsCollected() + BouncingPlatform.WATER_INCREMENT);
 			this.markToRemove();
 		}
 	}
+
+	@Override
+	public void collideWithDrop(AbstractDrop drop) {
+		//do nothing
+	}
+
+	
+
+
+
+
 
 }

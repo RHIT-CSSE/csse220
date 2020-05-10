@@ -84,28 +84,25 @@ public class GameComponent extends JComponent {
 
 	private void handleCollisions() {
 
-		
+		ArrayList<GameObject> gameObjects = new ArrayList<>();
+		gameObjects.addAll(drops);
+		gameObjects.addAll(platforms);
+		gameObjects.add(userPlatform);
 		//FIXED
-		
-		for (AbstractDrop d : this.drops) {
-			for (BouncingPlatform p: this.platforms) {
-				if( !d.shouldRemove() && !p.shouldRemove() && d.overlaps(p)) {
-					d.collideWith(p);
+		for(GameObject o1: gameObjects){
+			for(GameObject o2: gameObjects){
+				if( o1 != o2 && !o1.shouldRemove() && !o2.shouldRemove() && o1.overlaps(o2)) {
+					o1.collideWith(o2);
 				}
 			}
-			if( !d.shouldRemove() && d.overlaps(this.userPlatform) ) {
-				d.collideWith(this.userPlatform);
-			}
 		}
+		
 
 		
 		List<GameObject> shouldRemove = new ArrayList<>();
 		
 		//FIXED
-		ArrayList<GameObject> gameObjects = new ArrayList<>();
-		gameObjects.addAll(drops);
-		gameObjects.addAll(platforms);
-		gameObjects.add(userPlatform);
+		
 		
 		for(GameObject object: gameObjects){
 			if(object.shouldRemove()){

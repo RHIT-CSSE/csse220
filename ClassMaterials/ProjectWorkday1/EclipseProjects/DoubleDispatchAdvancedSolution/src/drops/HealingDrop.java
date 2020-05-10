@@ -35,12 +35,15 @@ public class HealingDrop extends AbstractDrop {
 	}
 
 	@Override
-	public void collideWith(BouncingPlatform p) {
+	public void collideWithBouncingPlatform(BouncingPlatform p) {
 		if (p.getInvincibilityCount() <= 0) {
 			p.setRainDropsCollected( 0);
 			this.markToRemove();
 		}
 	}
+
+
+
 	
 
 }

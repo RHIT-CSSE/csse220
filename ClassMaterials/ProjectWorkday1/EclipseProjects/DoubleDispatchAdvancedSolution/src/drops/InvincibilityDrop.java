@@ -28,7 +28,7 @@ public class InvincibilityDrop extends AbstractDrop {
 
 
 	@Override
-	public void collideWith(BouncingPlatform p) {
+	public void collideWithBouncingPlatform(BouncingPlatform p) {
 		p.setInvincibilityCount( 50 );
 		this.markToRemove();
 	}
