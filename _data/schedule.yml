@@ -300,9 +300,9 @@
   other:   CourseEvals
 30:
   reading:
-    - None
+    - <a target="_blank" href="https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=00f0185c-494c-402c-84a9-abbc00fd3bc4">How to make your final presentation</a>
   topics:
-    - Project presentations In Class (see grading guideline)
+    - Final Project Presentations
   materials: ../SampleExams
   other: 
   bgcolor: FFDDDD
