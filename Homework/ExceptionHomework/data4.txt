@@ -1,0 +1,5 @@
+Dallas,1,100,5,
+Dallas,2,200,12,
+Houston,2,200,50,
+Austin,4,400,22,
+Austin,12,4000,10000,
