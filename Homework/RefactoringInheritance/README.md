@@ -25,7 +25,7 @@ The above UML shows you some of the classes in the system you are given.  Here's
 * Person - This is a class that is supposed to allow us to simulate a viral infection and recovery cycle. (Circles with different colors)
 
 ## Other classes needed to run (and modify)
-There are some other files provided as well which allow the system to function.
+There are some other files provided as well, which allow the system to function.
 
 * SimulationViewer - The class with the main method which creates the JFrame and starts everything including setting up GUI pieces.
 * SimulationComponent - This is a specialized JComponent which allows us to see simulations of various things as they move around and bump into each other.
@@ -53,7 +53,7 @@ Also, some variables now have more descriptive variables names to increase clari
 
 # Part 1: Redesign (Inheritance)
 After running the simulation and understanding what is happening a bit, take a 
-look at the code in Particle and TagPlayer. There is an *embarassing* amount
+look at the code in Particle and TagPlayer. There is an *embarrassing* amount
 of code duplication in these files. Is there a way we could use inheritance here?
 Make a quick sketch of how you could do this (not required for turning in).
 
@@ -123,7 +123,7 @@ is the same as Particle except that in addition:
 
 
 # Part 4: Pandemic Simulation
-Now that you have seen how to use the refactored code and easily buillt on the Particle class,
+Now that you have seen how to use the refactored code and easily built on the Particle class,
 let's try to re-use the super class we created earlier (SimulationObject) to build another class.
 The class Person has been started for you and when completed will actually allow
 you to simulate a viral infection spread in a population. Person will need significant modifications.
