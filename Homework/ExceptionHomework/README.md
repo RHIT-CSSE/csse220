@@ -50,7 +50,7 @@ and what line number a given problem occurs on.
 To keep things manageable, we want to try to handle all of the errors in the 
 "processDataFiles" method of ExceptionHomework.java.
 
-As a brief overview, ExceptionHomework.java keeps a tracks different cities.
+As a brief overview, ExceptionHomework.java keeps track of different cities.
 As the data is processed each city gets a City object that represents information
 collected on the cities from the data files.
 
@@ -72,6 +72,18 @@ where a file might not be found.
 
 ![Part 1 Output](part1.PNG)
 
+---
+### Diving Deeper - When `throws` keyword must appear in operation's header
+	Checked exceptions are the exceptions that are checked at compile time. If some code within your operation throws a checked exception, then your operation must either handle the exception or it must specify the exception using the throws keyword.
+
+	For example:
+	IOException is a checked exception, and FileNotFoundException is an IOException
+
+	So if your operation does not have a *try-catch* for a FileNotFoundException, you would then need to annotate your operation with:<br> `throws FileNotFoundException`
+
+	On the other hand, if your operation handles the FileNotFoundException, then your operation should not be annotated with<br> `throws FileNotFoundException`
+
+---
 
 ## Part 2: Creating and throwing a custom exception to process at the right place
 Some of rows (lines) in the files are incomplete or are improperly formatted,
