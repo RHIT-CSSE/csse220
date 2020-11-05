@@ -230,7 +230,7 @@ public class SinglyLinkedListTest {
 	 */
 	@Test(expected = IndexOutOfBoundsException.class)
 	public void testSetBad3() {
-		this.list3.set(0, 5);
+		this.list1.set(0, 5);
 	}
 
 
