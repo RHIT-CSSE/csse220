@@ -5,6 +5,7 @@
 - The primary objective of this assignment is to get working smoothly the process of checking out homework projects Eclipse and submitting your .java files correctly to this assignment's Moodle Dropbox
 - Locate instructions on how to check out an Eclipse project from your local copy of the CSSE220 repo [in the Docs directory](https://github.com/RHIT-CSSE/csse220/tree/master/Docs)
 - Look for file *getting_the_repo.md* and the topic *How to Get Another Project From the Downloaded Repo* toward the bottom of that .md file
+- This is an individual exercise/assignment
 
 ## Rubric:
 
