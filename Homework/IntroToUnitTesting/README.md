@@ -22,7 +22,6 @@ Minimum to Pass this assignment:
 ## Additional Notes:
 - Each of the 4 operations to be tested has a Javadocs comment that specifies its functional behavior
 <br> -- Read these comments to understand what the operation is *supposed* to do
-<br> -- You may read the Javadocs comments directly in the code or here in [TestThisClass's Javadocs Webpage](doc/index.html)
 - Three of the 4 operations to be tested have defects. Do *not* correct any of the defects
 - In each JUnit test operation, supply at least 4 different test cases for the operation under test
 <br>One of the 4 must reveal a defect, *if* the operation under test is defective
