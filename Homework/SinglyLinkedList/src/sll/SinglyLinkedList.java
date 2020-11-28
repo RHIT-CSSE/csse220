@@ -9,45 +9,45 @@ package sll;
 public class SinglyLinkedList implements ILinkedList {
 
 	/**
-	 * Note that in addition to a head (first) pointer
-	 * this list contains a last pointer.  Be sure to
-	 * BOTH first and last up to date in all your code.
+	 * Be sure to BOTH first and last are kept up to date in all your operations
 	 */
-	private ListNode first;
-	private ListNode last;
+
+	private ListNode first; // first holds the reference to the first node in the linked list
+	private ListNode last;  // last holds the reference to the last node in the linked list
+	
 
 	/**
-	 * These are needed for the test code.
+	 * These getters are needed for the test code.
 	 */
 	@Override
 	public IListNode getFirst() {
 		return first;
-	}
+	} // getFirst
 
 	@Override
 	public IListNode getLast() {
 		return last;
-	}
+	} // getLast
 	
 	@Override
 	public void setFirst(IListNode first){
 		this.first = (ListNode) first;
-	}
+	} // setFirst
 	
 	@Override
 	public void setLast(IListNode last){
 		this.last = (ListNode) last;
-	}
+	} // setLast
 	
 	/**
 	 * Constructs a new, empty linked list.
+	 * When the list is empty, the following must be true: first = null and last = null
 	 */
 	public SinglyLinkedList() {
 		this.first = null;
 		this.last = null;
-	}
+	} // SinglyLinkedList
 	
-
 	@Override
 	public String toString() {
 		if (this.first == null) {
@@ -55,14 +55,17 @@ public class SinglyLinkedList implements ILinkedList {
 		}
 		String result = "[";
 		ListNode current = this.first;
-		//while (current != this.last) {
 		while (current.next != null) {
 			result += (current.element + ", ");
 			current = current.next;
-		}
-		result += current.element + "] first=["+this.first.getElement()+"] last=["+this.last.getElement()+"]";
+		} // end while
+		result += current.element + "] first=[" + this.first.getElement() + "] last=[" + this.last.getElement() + "]";
 		return result;
-	}
+	} // toString
+	
+	// --------------------------------------------------------------------------------------------------
+	// From this point on is where you work
+	// --------------------------------------------------------------------------------------------------
 	
 	/**
 	 *  WARNING: add(Integer element) must be completed before OTHER tests can pass!
@@ -146,7 +149,7 @@ public class SinglyLinkedList implements ILinkedList {
 	@Override
 	public int indexOf(Integer element) {
 		// TODO 06 Implement the indexOf(int x) method.
-		return -1;
+		return Integer.MIN_VALUE;
 	}
 
 	

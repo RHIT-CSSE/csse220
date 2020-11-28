@@ -1,31 +1,28 @@
 # Twelve Problems
 
-This exercise will let you practice your algorithmic skills from 120
-in a new Java context.
- 
-You will do this exercise by yourself.
+## Overview:
+- This exercise is intended to give you practice in Java with various algorithms learned in the previous course CSSE120 
+- This is an individual exercise/assignment
 
-# Rubric
+## Rubric:
 
-Each problem is worth 5 points.
+- Each of the 12 operations is worth 1 Pass/No-Pass for this assignment
+- All JUnit tests for an operation must succeed in order to earn a Pass for that operation
+- Minimum to Pass this assignment: 9 operations must Pass all their JUnit tests
 
-Total possible: 60 points.
+## To do:
 
-The problems themselves are already reasonably documented --- don't
-worry about writing Javadocs on this program but do keep your code
-clean, well formatted, and understandable.
+1. In Eclipse, import this project (TwelveProblems) from your local copy of the CSSE220 repo
+2. Implement the 12 operations in *TwelveProblems.java*. 
+3. Run the included JUnit tests to ensure your solution passes all the unit tests - do this by running *RunAllTests.java*
+4. Upload your completed *TwelveProblems.java*.  file to the TwelveProblems Moodle Dropbox
 
-# Notes
 
-The specification of each of the problems is in the TwelveProblems
-code as comments. Write each of the 12 functions in that file. To
-solve the problems, you will likely have to look up details in your
-textbook -- not every function you will need is covered in class. The
-problems have notes indicating what constructs are required to solve
-them.
+- There are no documenting/commenting requirements for this assignment
 
-All the problems have unit tests which can run to ensure your solution
-works as expected. Do run the unit tests to help check
-yourself. However, the unit tests are not designed to be exhaustive -
-your code has to be correct for all inputs, even ones not specified in
-the unit tests
+## Notes:
+- The specification of what to do for each of the problems appears as a comment just above the operation in the *TwelveProblems.java* file
+- The included comments often have notes indicating what constructs are required to solve the problem
+- To solve these problems, you will likely have to look up details in your textbook and/or instructional materials
+- Not every operation that you are asked to implement has been discussed in class, in the instructional videos, or in the instructional materials
+- The JUnit tests provided are not designed to be exhaustive - your code has to be correct for all inputs, even ones not specified in the unit tests

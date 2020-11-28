@@ -1,36 +1,36 @@
 # Intro To Unit Testing
 
-This exercise will let you practice creating unit tests for pre-existing code.
- 
-You will do this exercise by yourself.
+## Overview:
+- Intro To Unit Testing will provide practice at creating JUnit unit tests for preexisting code
+- This is an individual exercise/assignment
 
-# Rubric
+## Rubric:
+Minimum to Pass this assignment:
+1. You must submit the file *TestThisClassTest.java*
+2. *TestThisClassTest.java* must contain these 4 JUnit test operations: *testCountChocula*, *testNumberOfXs*, *testPaintCost*, *testPizzaCostCalculator*
+3. Each JUnit test operation must contain 4 test cases (see details below in the Additional Notes section)
 
-Each problem is worth 5 points:
-4 x 1pt each test case (4 assertions minimum, must test different categories)
-1 points for CODE COMMENTS explaining WHY cases are DIFFERENT and identifying failing conditions
+## To Do:
+1. In Eclipse, import this project (IntroToUnitTesting) from your local copy of the CSSE220 repo
+2. Create a JUnit test file called *TestThisClassTest.java* (see screen shot below)
+3. In *TestThisClassTest.java*, create unit test operations for the 4 operations that appear in *TestThisClass.java*. 
+<br>These unit tests must reveal which of the 4 operations are defective
+4. Upload your completed *TestThisClassTest.java* file to the IntroToUnitTesting Moodle Dropbox
 
-Total possible: 20 points.
+![EclipsePackage](images/introToUnitTestingEclipsePkg.png)
 
-The problems themselves are already reasonably documented --- don't
-worry about writing Javadocs on this program but do keep your code
-clean, well formatted, and understandable.
+## Additional Notes:
+- Each of the 4 operations to be tested has a Javadocs comment that specifies its functional behavior
+<br> -- Read these comments to understand what the operation is *supposed* to do
+- Three of the 4 operations to be tested have defects. Do *not* correct any of the defects
+- In each JUnit test operation, supply at least 4 different test cases for the operation under test
+<br>One of the 4 must reveal a defect, *if* the operation under test is defective
+<br>Add a comment to each of the 4 test cases that indicates how it tests something different than the others
+- For example in *testCountChocula*, supply at least 4 different test cases that test *countChocula*
+<br>And if *countChocula* is defective, then 1 of those 4 test cases must reveal the defect, i.e., must not pass
+- All test inputs must be *legal* test inputs for the operation that is under test
+<br>That is, the input must be one that the operation *should* handle correctly if it were implemented without defects
+- Also, for these operations, it is not fair to pass in a <code>null</code> to operations expecting an object
 
-# Instructions
-
-The specification of each of the problems is in the TestThisClass.java
-code as comments. Your goal is to write unit tests which can be run to 
-ensure the code works as desired (defined in the comments).
-
-There are FOUR problems, THREE of which have an error.
-
-You SHOULD NOT correct the problems in TestThisClass.java, but you
-SHOULD create unit tests in a file called TestThisClassTest.java
-which fail to pass when certain example code is run.
-
-You must create at least FOUR different examples (provide comments
-justifying why they are different) for each method you are testing.
-These test cases must be placed in a file called TestThisClassTest.java 
-can be run by JUnit just like past examples you have used in class.
 
 

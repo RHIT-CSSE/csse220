@@ -1,46 +1,42 @@
-# CSSE 220 Object-Oriented Software Development
 # Singly Linked List
 
-This exercise will let you practice implementing a simple singly linked list and the using that completed class to perform a number of algorithms. 
+## Overview:
+- This exercise provides you with the opportunity to implement and use a singly linked list
+- There are two parts:
+<br> -- *sll* package contains 7 unimplemented operations. These must be done first, this is where you will implement your singly linked list
+<br> -- *sslAlgorithms* package contains 7 unimplemented operations. These must be done second. It depends on the *sll* package. 
+<br>    These algorithms will give you practice at being a client programmer of the singly linked list
 
-You will do this exercise by yourself, but be quick to ask questions of your instructor, student assistants, and classmates as desired. 
+
+- There is no documentation requirement for this assignment
+- This is an individual exercise/assignment
 
 # Rubric
 
-* Each method (6) that you implement in the sll.SinglyLinkedList class is worth 8 points. (6 * 8 = 48)
-* Your instructor will implement sll.SinglyLinkedList.add (Integer element) in class with you, so only 3 points will be awarded for this method.
-* Each method (7) that you implement in the sll.algorithms.Algorithms class is worth 7 points. (7 * 7 = 49)
+- Each of the 14 operations (7 in *sll* + 7 in *sslAlgorithms*) is worth 1 Pass/No-Pass for this assignment
+- For an operation's implementation to Pass, *all* of that operation's JUnit tests must pass
+- To earn a Pass for *sll*: Any 6 of the 7 JUnit tests for *sll* operations must Pass
+- To earn a Pass for *sslAlgorithms*: Any 5 of the 7 JUnit tests for *sslAlgorithms* operations must Pass 
 
-Total possible: 48 + 3 + 49 = 100 points.
+## To do:
 
-The methods are already reasonably documented -- the provided Javadoc comments describe the behavior of each method. 
-Be sure to ask questions of your instructor if the documentation is not clear. 
-You do not need to add additional documentation to the methods of SinglyLinkedList.
+1. In Eclipse, import this project (SinglyLinkedList) from your local copy of the CSSE220 repo
+2. Implement the 7 operations in *SinglyLinkedList.java* found in the *sll* package
+3. Run the included *RunAllTests.java* in the *sll* package to ensure your solution passes all the unit tests
+3. Implement the 7 operations in *Algorithms.java* found in the *sllAlgorithms* package
+3. Run the included *RunAllTests.java* in the *sllAlgorithms* package to ensure your solution passes all the unit tests
+4. Upload your completed *SinglyLinkedList.java* and *Algorithms.java* files to this assignment's Moodle Dropbox
 
 # Problem Description
 
-Import the SinglyLinkedList project from the repository. SinglyLinkedList.sll contains several Interfaces 
-that support the implementation of a singly linked list. All your implementation should be done in the 
-sll.SinglyLinkedList class. After completing the SinglyLinkedList code, you will need to use it to 
-complete a number of problems defined in the sll.algorithms.Algorithms class.
+- The operations in each package have documentation that describe the behavior of each operation
+- This linked list implementation uses two fields called *first* and *last*. This facilitates navigation of the list
+- *first* holds the reference to the first node in the linked list
+- *last* holds the reference to the last node in the linked list
+- If the list is empty, then the following must be true: *first* = <code>null</code> and *last* = <code>null</code>
+- If a list contains a single item, then both *first* and *last* hold the reference to the node containing this item
+- The first method you must complete is the *add* method found in *SinglyLinkedList.java*
 
-It should be noted that this linked list implementation uses two nodes, first and last, that facilitates 
-navigation of the list. first represents the first node (or head) of the list and last represents the last 
-node of the list (or tail). A list is empty if both first and last equal null. A list has a single element 
-if both first and last are equal to that element.
-
-If you have questions, consider posting to Piazza (just be sure not to reveal any solutions there) --- 
-instructors and other students can answer your questions there. You can also visit F217 during lab hours 
-or stop by your instructor's office to get help.
-
-JUnit tests for all the methods are provided in sll.SinglyLinkedList and sll.algorithms.AlgorithmsTests. 
-You might want to run these tests on your code to ensure your solution works as expected. 
-However, the unit tests are not designed to be exhaustive - your code has to be correct for all inputs, 
-even ones not specified in the unit tests.
-
-Please note, you MUST complete sll.SinglyLinkedList.add (Integer element) before you can test the other methods. 
-You should not attempt to implement the methods in Algorithms.java until after completing the 
-SinglyLinkedList.java methods.
 
 
 

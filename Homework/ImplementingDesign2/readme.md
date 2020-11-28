@@ -1,38 +1,49 @@
 # Implementing Design 2
 
-# Rubric
+## Overview:
+- This exercise is intended to give you practice with implementing a set classes based on a UML diagram of those classes
+- This is an individual exercise/assignment
+
+## The Problem
+Online quizzer: Is an online quiz application for teachers who write quizzes and students who take them. The same quiz question can appear in multiple quizzes. If a teacher updates a quiz question, it is important that all quizzes immediately reflect that change.
+
+For this exercise, all questions are true/false questions, which have a prompt and a correct answer (*true* or *false*). 
+
+There are also automated quiz-testers which have a unique id and can attempt to answer questions. To do this the quiz-tester always checks the question's prompt for a particular target string and answers *true* if the target string appears in the prompt, otherwise the quiz-tester answers *false*. This target string is customized for each quiz-tester. 
+
+It should be possible to determine the score that a quiz-tester earns on any given quiz. It also should be possible to determine an overall average quiz score, which must be calculated by treating each quiz score (NOT each question) equally and finding the average over all quizzes in the system.
+
+*For Example*: A quiz-tester with a target string of "cow" gets the question prompt "Are all cows blue?" The quiz-tester returns *true* because it finds "cow" in the question's prompt "Are all cows blue?". But *false* is the answer stored with this question's prompt, so the quiz-tester's answer of *true* is incorrect and therefore the quiz-tester gets this question wrong.
+
+*For Example*: A quiz-tester earns a score of 1/4 (25%), 2/10 (20%) and 3/10 (30%) on the three quizzes in the system. The quiz-tester's overall average on all quizzes  would be:
+<br>(0.25 + 0.2 + 0.3) / 3 = 25%
+
+## To Do:
+
+1. In Eclipse, import this project (ImplementingDesign2) from your local copy of the CSSE220 repo
+2. Create a computer generated UML design diagram that captures how you propose to solve this problem, call it *firstDraftUML.png*
+<br>The following 2 files will help you get started: [exampleUML.png](src/uml/exampleUML.png) and [exampleUML.txt](src/uml/exampleUML.txt)
+3. In the file *QuizSimulatorMain.java* there are a number of TODOs many associated with unimplemented *handle* operations
+<br>These TODOs will have you modify *QuizSimulatorMain.java* and implement the classes *QuizTest.java*, *Question.java*, and *Quiz.java*
+4. Run *QuizSimulatorMain.java* to test by hand and execute the JUnit tests in *SimulatorTest.java* for more a thorough testing of your implementation
+5. Include Javadoc comments in *QuizTest.java*, *Question.java*, and *Quiz.java* 
+6. Create a computer generated UML diagram that corresponds to your final implementation, call it *finalUML.png*
+7. Answer the questions in *reflectionQuestions.txt*
+8. Upload to this assignment's Moodle Dropbox your completed:
+<br>(1) *.java* files, (2) your 2 UML diagrams, (3) your answers in *reflectionQuestions.txt*, and (4) any additional *.java* files that you may have created to solve this problem
+
+## Rubric
+A Pass for this assignment requires each of the following:
+
+1. The output from your program while running *QuizSimulatorMain.java* must closely match that shown in **Sample Output** (below).
+2. Pass the JUnit tests in *SimulatorTest.java*
+2. Javadoc comments for *QuizTest.java*, *Question.java*, and *Quiz.java* - use [BankAccount.java](src/javadocExample/BankAccount.java) for guidance with the class-level Javadoc and Javadocs for methods
+3. UML diagrams *firstDraftUML.png* and *finalUML.png*, we recommend using [PlantUML](http://plantuml.com/plantuml) 
+4. Answers provided to the reflection questions
 
 
-* 10 points for submitting UML diagram FIRST DRAFT
-  * COMPLETE BEFORE CODING
-  * Save this as first_draft.png (or whichever format you choose)
-  * For your benefit, there is a starting example_uml.png and plantuml.txt source located in /src/uml of the ImplementingDesign2 Eclipse package which correspond to the QuizSimulatorMain class found in /src of the package
-* 10 points for submitting a computer-generated UML diagram FINAL DRAFT which corresponds to your code
-  * Save this as final_draft.png (or whichever format you choose)
-  * We recommend using either [PlantUML](http://plantuml.com/plantuml) or [UMLet](http://www.umlet.com/)
-* 36 points for implementing and demonstrating functionality of the Extended Online Quiz problem (approximately 4 points for each handle* method successfully implemented)
-* 4 points for responding completely to the questions in [reflection_questions.txt](src/reflection_questions.txt)
 
-Total possible: 60 points. 
+## Sample Output
+Here is sample output of a working solution in [exampleOutput.txt](src/exampleOutput.txt) that you can use as a
+model for your display operation. You do not have to match this exactly, but try to make it look roughly the same.
 
-To receive full credit, you must pass all unit tests and your simulator should be able to handle all valid inputs
-
-# The problem
-
-In an online quiz system, teachers write quizzes and students take them. The same quiz question can appear in multiple quizzes. If a teacher updates a quiz question, it's important that all quizzes reflect that change. Questions are true or false questions, which have a prompt and a correct answer (true or false). There are also automated quiz-testers which have a unique id and can attempt to answer questions. To do this they always check the prompt of a question for a particular string and answer true if they find it, or false if they do not. This string is customized for each quiz-tester. It should be possible to get the score a quiz-tester receives on any given quiz. It also should be possible to get an overall average quiz score, which should be calculated by treating each quiz score (NOT question!) equally and finding the average of all quizzes in the system.
-
-*Example*: A quiz-tester with a search string of "cow" gets the question prompt "Are all cows blue?" The quiz-tester returns true because it finds "cow" in the string "Are all cows blue?". The answer for this question is false, so the quiz-tester would get this question wrong.
-
-*Example*: A quiz-tester gets 1/4 (25%), 2/10(20%) and 3/10(30%) on the three quizzes in the system. Its overall average quiz score would be: (0.25+0.2+0.3)/3 = 25%
-
-# Sample Output
-
-There is sample output of a working solution in
-[example_output.txt](src/example_output.txt) that you can use as a
-model for display. You do not have to match this exactly, but try to
-make it look roughly the same.
-
-
-# Introduction Video
-
-A short video walking through some of the important details on this assignment is provided [here](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=131af48c-832c-4dea-ad14-ab9c01154898).

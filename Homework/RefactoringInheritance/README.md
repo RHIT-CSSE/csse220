@@ -1,23 +1,42 @@
 # RefactoringInheritance: Redesign, Refactor, Inherit and Extend!
 
-In this assignment you are given some code that is poorly designed. You are expected to:
+## Overview:
+- In this assignment you are given some code that is poorly designed
+- This exercise will provide practice with software refactoring in order to reduce or eliminate code duplication
+- This is an individual exercise
 
-1. Design (Part 1) Come up with an improved design that uses inheritance to reduce code duplication.
-2. Refactor (Part 2) Implement the new design by refactoring code
-3. Extend (Part 3 + 4) Add on additional functionality using inherited functionality from the recently improved classes/design.
+## To do:
 
+1. In Eclipse, import this project (RefactoringInheritance) from your local copy of the CSSE220 repo
+2. Design (Part 1) Come up with an improved design that uses inheritance to reduce code duplication
+3. Refactor (Part 2) Implement the new design by refactoring code
+4. Extend (Part 3 + 4) Add on additional functionality using inherited functionality from the recently improved classes/design
+5. Upload all of your *.java* files to this assignment's Moodle Dropbox
+
+Run the code and ensure you see the functionality in the video below and then go ahead and get started
+
+## Rubric:
+
+To Pass this assignment you will need to:
+
+- Part 1: (no deliverable) Understand and Re-design Particle and TagPlayer
+- Part 2: To Pass - Refactor the code for Particle and TagPlayer and create a super class
+- Part 3: To Pass - Create and complete the ChargedParticle class and modify SimulationViewer and SimulationComponent
+- Part 4: To Pass - Complete the Person class and modify SimulationViewer and SimulationComponent
+
+
+## Starting Point
 Much of this code is relevant to your final project and should be a good preparation 
 for both Exam2 and getting your project started. 
 
 Starting UML for the classes we want to focus our attention on:
 
-# Starting Point
 ![UML Image](http://www.plantuml.com/plantuml/png/nP0nRiCm34LtdaAZUmfdRAO6RO4c8qlzs49foQ0a5q7WkrSEKcJlqeNa-yF70tUvi9KwAObopkxGA8Z2NKaG2-nutoSozg5cagJ9Q84Ujt6YAIrucm5FtlZx9NPkS4zKPyy5dVDXQfGMcFASFq8PEvVA26lfPwfHy61QxnBlF1oKBx3_i90HyhK_DuS1_X6lzFiXM4xnIdtV_wa_v6Umbl7IRVS-dY45_WQlaAtZHYlj47sTz0S0)
 
 [source plantuml](http://www.plantuml.com/plantuml/uml/nP0nRiCm34LtdaAZUmfdRAO6RO4c8qlzs49foQ0a5q7WkrSEKcJlqeNa-yF70tUvi9KwAObopkxGA8Z2NKaG2-nutoSozg5cagJ9Q84Ujt6YAIrucm5FtlZx9NPkS4zKPyy5dVDXQfGMcFASFq8PEvVA26lfPwfHy61QxnBlF1oKBx3_i90HyhK_DuS1_X6lzFiXM4xnIdtV_wa_v6Umbl7IRVS-dY45_WQlaAtZHYlj47sTz0S0)
 
 
-The above UML shows you some of the classes in the system you are given.  Here's a breakdown of each:
+The UML shown above shows you some of the classes in the system you are given.  Here's a breakdown of each:
 
 ## Classes to study in Part 1
 * Particle - This FUNCTIONING class represents a simple object (Black Circle) which bounces off of walls and other particles 
@@ -25,29 +44,18 @@ The above UML shows you some of the classes in the system you are given.  Here's
 * Person - This is a class that is supposed to allow us to simulate a viral infection and recovery cycle. (Circles with different colors)
 
 ## Other classes needed to run (and modify)
-There are some other files provided as well which allow the system to function.
+Here are some other files provided as well which allow the system to function.
 
 * SimulationViewer - The class with the main method which creates the JFrame and starts everything including setting up GUI pieces.
 * SimulationComponent - This is a specialized JComponent which allows us to see simulations of various things as they move around and bump into each other.
 * PandemicStatsComponent - *DO NOT MODIFY* This is a provided class which will connect with the Person class to display statistics.
 
-To complete this assignment you will need to:
-
-Part 1: (no deliverable) Understand and Re-design Particle and TagPlayer
-
-Part 2: (~20 points) Refactor code for Particle and TagPlayer and create a super class
-
-Part 3: (~15 points) Create and complete the ChargedParticle class and modify SimulationViewer and SimulationComponent
-
-Part 4: (~25 points) Complete the Person class and modify SimulationViewer and SimulationComponent
-
-Run the code and ensure you see the functionality in the video below and then go ahead and get started.
 
 
 # Part 0: Watch this video to get started!
 [Video Demonstration of Starting Code](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0810a711-210d-4733-be1f-aba6002d0401)
 
-Since this video was created there, have been some additional comments provided to help highlight code unique to the TagPlayer and Particle classes.
+Since this video was created, there have been some additional comments provided to help highlight code unique to the TagPlayer and Particle classes.
 Also, some variables now have more descriptive variables names to increase clarity.
 
 
@@ -150,10 +158,11 @@ In order for an infection to spread, you should have 1 infected person be added 
 ##### Hint #3: [Final Functionality Demo (same as above)](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c6958003-1803-436a-bc65-aba6002fdeb3)
 
 # Part 5: BONUS Pandemic Simulation
-There are a lot of simple things you can do to build on this simulator if you are interested.
-You can extra bonus credit on this assignment by adding some new functionality to the system.
-The bonus will be a maximum of 5 points and will be based on creativity.
-Be sure to explain your extra functionality in a comment in your Moodle submission.
+- There are a lot of simple things you can do to build on this simulator if you are interested.
+- You can earn extra  bonus credit on this assignment by adding some new functionality to the system.
+- The bonus has potential to replace other missed assignments or No-Passed assignments and will be based on creativity.
+- Be sure to contact your instructor about this Bonus and your ideas for it before getting started
+- Explain your extra functionality in a comment in your Moodle submission.
 
 
 This assignment was inspired by this [article](https://www.washingtonpost.com/graphics/2020/world/corona-simulator/).

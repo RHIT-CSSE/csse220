@@ -1,0 +1,21 @@
+skinparam style strictuml
+
+class QuizSimulatorMain{
++ handleCreateQuestion(id:int, answer:boolean, prompt:String)
++ handleGetQuestionPrompt(questionId:int)
++ handleCreateQuiz(id:int)
++ handleAddQuestionToQuiz(questionId:int, quizId:int)
++ handleUpdateQuestion(questionId:int, answer:boolean, prompt:String)
++ handleGetQuizString(quizId:int)
++ handleCreateQuizTester(id:int, targetString:String)
++ handleGetQuizTesterScoreOnQuiz(quizTesterId:int, quizId:int)
++ handleGetQuizTesterOverallScore(quizTesterId:int)
+}
+
+class Question {
+
+}
+
+class Quiz {
+
+}

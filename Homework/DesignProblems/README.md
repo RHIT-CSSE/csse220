@@ -1,20 +1,17 @@
 ﻿# CSSE 220: Design Problems
 
-This exercise will let you practice object oriented design.  You will
+This exercise provides opportunities to practice object oriented design.  You will
 do this exercise by yourself.
 
 # Example Problems
 
-[Here are a set of four design problems for you to practice on your
-own](../../Docs/ExampleDesignProblems).  In addition, there is a
-solution with commentary and good designs to compare with the designs
-you produce on your own.
+The [*Example Problems*](../../Docs/ExampleDesignProblems) includes a set of four design problems for you to practice on. Since these are practice problems, you can work them on your own or collaborate with other students.  
+
+There are solutions with commentary and good designs provided. Use these to evaluate your proposed solutions.
 
 # The questions
 
-~Should be handed out in class but you can get them here:~
-
-These are available on Moodle as Word files, but can be downloaded here as PDFs as well.
+These are available on the 220 Moodle site as Word documents, but can be downloaded here as PDFs as well.
 
 + [Part 1](DesignProblemsAssignment1.pdf)
 + [Part 2](DesignProblemsAssignment2.pdf)
@@ -22,11 +19,9 @@ These are available on Moodle as Word files, but can be downloaded here as PDFs 
 
 # Turn-In Instructions 
 
-~You will turn in each packet at the beginning of the next class.~
+You will complete these and submit to the corresponding 220 Moodle assignment.
 
-You will complete these and submit via Moodle.
-
-# Grading (pass/fail)
+# Grading (Pass/No-Pass)
 
 + There are two problems, each with 3 parts: The first two parts in each
   problem are
@@ -38,6 +33,7 @@ covered. For all three parts, you are
 only responsible for identifying and fixing the designs based on the
 principles we have covered in class this far, you will not need to worry
 about the other OO Design Principles until we cover them.
+
 + When identifying the principles that a solution has violated, it is vital
 that you both LIST the principle that you believe to be
 violated in the proposed design and that you EXPLAIN why you believe that
@@ -58,10 +54,8 @@ thus far.  For your response, your solution should address the issues
 you have identified and present a design that is "better" than the
 problematic solutions.  If your design is no better, or if it is somehow worse
 than the other proposed solutions, it will not be counted as correct.
-+ To completely miss a problem 
-  is to miss all the main issues and to list things that were not even
-problems, etc. To pass this assignment, you may completely miss any 1 of the 6
++ To completely *No-Pass* a problem means you miss all the main issues and identify things that were not 
+problems, etc. To *Pass* this assignment, you may completely miss any 1 of the 6
   parts of the assignment (there are two problems, each with three
-parts). The remaining 5 need to be reasonably correct responses when
-compared to our answer key.
+parts). The remaining 5 parts must closely track our answer key.
 

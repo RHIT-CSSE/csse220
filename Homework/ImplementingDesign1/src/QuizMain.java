@@ -62,7 +62,7 @@ public class QuizMain {
 	
 	/**
 	 *  This method should display a quiz in a very similar fashion to the output provided
-	 *  in example_output.txt, which is located in your repository
+	 *  in exampleOutput.txt, which is located in your repository
 	 * 
 	 * 
 	 * @param quizId

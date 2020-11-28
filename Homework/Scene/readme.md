@@ -1,16 +1,24 @@
-﻿# Scenes Assignment
+﻿# Scene Assignment
 
-# Grading rubric 
+## Overview:
+- This exercise is intended to give you practice with Java Swing graphics this will help you with the term project
+- This is an individual exercise/assignment
 
-* Stage 1 (Houses) works as specified: 10 points. 
-* Stage 2 (Trees) works as specified: 10 points. 
-* Stage 3 (Sun) works as specified: 15 points. 
-* Stage 4 (Scene) works as specified: 15 points. 
-* Stage 5 (Rotating Faces) works as specified: +15 points BONUS. 
 
-So 50 points is a perfect score, but you may earn up to 65/50 points if you do the BONUS as well.
+## Rubric:
 
-# Stage 0. Study your goal.
+To earn a Pass, at a minimum your submission do the following:
+1. Stage 1 Draw Houses - *HouseViewer* draws image *similar* to [Image in Stage 1](images/Houses.png)
+2. Stage 2 Draw Trees - *PineTreesViewer* draws image *similar* to [Image in Stage 2](images/Trees.png)
+3. Stage 3 Draw Suns - *SunViewer* draws image *similar* to [Image in Stage 3](images/Suns2.png)
+4. Stage 4 Draw Scene - *SceneViewer* draws image *similar* to [Image in Stage 4](images/SceneWithTrees.png)
+
+To earn a Pass for the *Bonus*, which is recorded as a separate assignment, your implementation must draw [this image](images/FacesWhenFinished.png)
+
+## To do
+
+
+## Stage 0 - Study your goal:
 
 In the final stage, you will draw a scene consisting of some houses, trees, a sun, and the sky and grass in the background:
 
@@ -44,7 +52,7 @@ A <strong>HousesViewer</strong> class constructs and displays a HousesComponent
 
 
 
-# Stage 1. Houses
+## Stage 1 - Draw Houses:
 
 ![HousesAppear](images/Houses.png)
 
@@ -65,7 +73,7 @@ You have been given the <strong>House</strong>, <strong>HousesViewer</strong> an
   above.
 
 
-# Stage 2a. Create PineTreesViewer and PineTreesComponent
+## Stage 2a - Create *PineTreesViewer* and *PineTreesComponent*:
 
 Add the PineTreesViewer and PineTreesComponent to your project
 
@@ -81,7 +89,7 @@ Add the PineTreesViewer and PineTreesComponent to your project
     sure it does its work. Refer back to Stage 1 or the in-class work
     if you're not sure how to do this.
 
-# Stage 2b. Creating the <strong>PineTree</strong> class
+## Stage 2b - Creating the *PineTree* class:
 				
 Before we start putting together a PineTree, here are some notes about how a PineTree is drawn:
 
@@ -131,7 +139,7 @@ It should look like this when you run PineTreeViewer:
 
 
 	
-# Stage 3a. Create <strong>SunViewer</strong> and <strong>SunComponent</strong>
+## Stage 3a - Create *SunViewer* and *SunComponent*:
 
 Add the SunViewer and SunComponent to your project
 
@@ -151,7 +159,7 @@ Add the SunViewer and SunComponent to your project
 	    private static final double LITTLE_SUNS_X_OFFSET = 50;
 
 	
-# Stage 3b. Creating the <strong>Sun</strong> class
+## Stage 3b - Creating the *Sun* class:
 
 Before we start putting together a <strong>Sun</strong> here are some notes about how a Sun is drawn:
 
@@ -200,7 +208,7 @@ Create the <strong>Sun</strong> class
 
   * Set the instance fields based on the values provided to the constructor.
 
-# Stage 3c. Draw your first sun
+## Stage 3c - Draw a sun:
 
 
 ![Default Sun without rays](images/Suns1.png)
@@ -228,7 +236,7 @@ Default Sun with rays
      before you call drawRays)
    * Be sure to test that it shows up correctly before you go on to drawing a bunch more suns
 
-# Stage 3d. Drawing more suns
+## Stage 3d - Draw more suns:
 
 ![With guide rectangles to verify sun positioning is correct](images/Suns3.png)
 
@@ -300,7 +308,7 @@ Adding little suns!
 
 
 
-# Stage 4a. Create the SceneViewer, SceneComponent, and Scene classes
+## Stage 4a - Create the *SceneViewer*, *SceneComponent*, and *Scene* classes:
 
 In this pat, you'll put it all together!
 
@@ -309,12 +317,12 @@ In this pat, you'll put it all together!
    * There is <strong>no</strong> Scene class.
    * Set the frame size to 750x600
 
-# Stage 4b. Create Scene
+## Stage 4b - Create a Scene:
 
 1. Create a sky for the Scene by drawing a blue rectangle in the upper 375 pixels of the component.
 2. Create grass for the Scene by drawing a green rectangle in the rest of the component.
 
-# Stage 4c. Finish Scene
+## Stage 4c - Finish the Scene:
 ![Scene with trees](images/SceneWithTrees.png)
 
 1. Add a Sun at the default location to the SceneComponent.
@@ -323,38 +331,30 @@ In this pat, you'll put it all together!
 4. Create a row of 15 bigger (20 pixels x 80 pixels) in front of the first trees.
 5. (Optional) If you want to make them look more natural, you can randomize the x and y coordinates of the trees by a little bit. That's how I got the image at the top of this page. Your textbook has info on the Random class (or see the Java API, of course).
 
-# Stage 5. Rotatable Faces (BONUS) 
+## Stage 5 - Rotatable Faces (BONUS):
 
 ![Translated and rotated faces appear](images/FacesWhenFinished.png)
 	
 1. Create a Face class, FacesViewer class, and FacesComponent class.
 2. The geometry on this one is more complex than the others, using an
-   Arc2D.Double for the mouth. [The Geometry of a
-   Face](images/GeometryOfAFace.pdf)" diagram gives numbers to use to
-   construct the Face.
+ Arc2D.Double for the mouth. [The Geometry of a Face](images/GeometryOfAFace.pdf) diagram provides numbers to use to construct the Face.
 3. Draw some faces in upright position. They can be whatever size and color you like, placed wherever you like, as long as they test your FacesComponent and Face classes adequately for this stage (so use different positions, radii, colors, etc). 
 4. Implement a <strong>translate(double x, double y) </strong> method that translates the Face's position by the amounts given in the arguments.
-	* For example, in the picture, the downward slanting line of yellow Face's (which each have radius 25) have been successively translated by (55, 20). 
-	* They have also been rotated, but wait for the next step for that. 
-	* <strong> All that <em>translate</em> does is change the coordinates of the Face. </strong> You have <em>already written</em> the code that displays the Face at its (translated) position. <em>Implementing this is just <strong>2 new lines of code!</strong></em>					
-	* Translation is not animation; don't expect any animation here (although one could add animation, and you WILL do so in a forthcoming project). 
-
+<br> -- For example, in the picture, the downward slanting line of yellow Face's (which each have radius 25) have been successively translated by (55, 20). 
+<br> -- They have also been rotated, but wait for the next step for that. 
+<br> -- <strong> All that <em>translate</em> does is change the coordinates of the Face. </strong> You have <em>already written</em> the code that displays the Face at its (translated) position. <em>Implementing this is just <strong>2 new lines of code!</strong></em>					
+<br> -- Translation is not animation; don't expect any animation here (although one could add animation, and you WILL do so in a forthcoming project). 
 5. Implement a <strong>rotate(double angleToRotate) </strong> method that rotates the Face by the number of degrees given in the argument.
-
-    * For example, in the picture, the downward slanting line of yellow Face's (which each have radius 25) have been successively rotated by 30 degrees. 
-    * <strong> All that <em>rotate</em> does is change the field (which you must add) that stores the number of degrees to rotate the Face. </strong> 
-    * Unlike <em>translate</em>, you have not yet implemented rotations of the Face in your <em>drawOn</em> method. But this is easy to do &mdash; <strong>2 new lines of code in <em>drawOn</em> are enough</strong> to rotate the Face by the value stored
-					in its <em>degreesToRotate</em> field. 
-    * Test your <em>rotate</em> method by calling it inside a loop in FacesComponent. 
-	* [Square Faces](images/SquareFaces.png) <strong>GIGANTIC
-	  HINT!!!!</strong> The face itself and each eye is currently a
-	  circle created using <code>Ellipse2D.Double</code>. It&rsquo;s
-	  difficult to see whether you&rsquo;re rotating a circle
+<br> -- For example, in the picture, the downward slanting line of yellow Face's (which each have radius 25) have been successively rotated by 30 degrees. 
+v<strong> All that <em>rotate</em> does is change the field (which you must add) that stores the number of degrees to rotate the Face. </strong> 
+<br> -- Unlike <em>translate</em>, you have not yet implemented rotations of the Face in your <em>drawOn</em> method. But this is easy to do &mdash; <strong>2 new lines of code in <em>drawOn</em> are enough</strong> to rotate the Face by the value stored in its <em>degreesToRotate</em> field. 
+<br> -- Test your <em>rotate</em> method by calling it inside a loop in FacesComponent. 
+<br> -- [Square Faces](images/SquareFaces.png) <strong>GIGANTIC HINT!!!!</strong> The face itself and each eye is currently a
+	  circle created using <code>Ellipse2D.Double</code>. It is
+	  difficult to see if your rotating a circle
 	  correctly! So, you may wish to temporarily change your code to
-	  draw squares instead. The constructor for
-	  <code>Rectangle2D.Double</code> takes the same arguments as the
+	  draw squares instead. The constructor for <code>Rectangle2D.Double</code> takes the same arguments as the
 	  one for <code>Ellipse2D.Double</code>, so you can just switch to
-	  squares until you get rotation working. <em>Be sure to switch
-	  back to circles before your final commit!</em>
+	  squares until you get rotation working. <em>Be sure to switch back to circles before you upload your files</em>
 
 

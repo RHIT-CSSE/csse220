@@ -1,97 +1,116 @@
-# CSSE 220 Object-Oriented Software Development
-## Ball/Strike Counter and Linear Lights Out
-### Objectves
-More practice with event-based programming in Swing. This has an Individual Part and a Pair Part.
+# Ball/Strike Counter and Linear Lights Out
 
-### Individual Part
-**Ball/Strike Counter: This part is to be done individually.**
-Implement the code in the *ballStrikeCounter* package. We gave you a
-simple GUI framework for a program that tracks balls and strikes for a
-baseball game. You need to add the buttons, ActionListeners, and
-variables necessary to make the code work. You may add any new classes
-or make any changes you feel necessary. The method for properly
-displaying the label has been provided for you in the updateLabel
-method.
-1. **Points (20 points)**
-     * **5 points** - The Add Ball and Add Strike buttons appear in
-       the window as shown in the image.
-     * **15 points** - The buttons should work as follows: **Add
-     Ball** adds a ball to the count. If the count reaches 4, the
-     count of both the balls and strikes should reset to 0. The label
-     should be updated to reflect the new ball/strike counts. **Add
-     Strike** adds a strike to the count. If the count reaches 3, the
-     count of both of the balls and strikes
-     should reset to 0. The label should be updated to reflect the new ball/strike counts.  
+## Overview:
+- This exercise will provide more practice with event based programming in Java Swing
+- There is an individual part and a paired part (details are below)
 
- ![alt text](ballstrike.png)
+## Rubric:
+
+- To Pass *Part 1 - Ball/Strike Counter* you must add the ball and strike buttons and handle clicks on the buttons correctly (see details below)
+- To Pass *Part 2 - Linear Lights Out* you must allow the user to choose the number of buttons and handle clicks on the buttons correctly (see details below)
+- Javadoc comments are required for all your *.java* files
+<br> -- See the *Documentation Requirements* section below
 
 
-### Pair Part
-**Linear Lights Out. You may work with a single classmate of your
-choosing on this part. You may sit together while you work and discuss
-ideas and code freely, but each person must type and submit their code
-to their own repository.
-If you do this, please identify the classmate in a comment at the top of your program.**  
+## Documentation Requirements
 
-Implement the game Linear Lights Out in the *linearLightsOut*
-project. In Linear Lights Out, the user is presented with an array of
-buttons that are randomly initialized to either Xs or Os, 50%
-probability each. Clicking on a button changes the symbol of the
-button *and both its left and right neighbors*, if they exist. Buttons
-on the end just change their own symbol and their one neighbor's
-symbol; the buttons don't "wrap around". The object of the game is to
-reach a state where the buttons all show the same symbol, whether Xs
-or Os, it doesn't matter.
+- Provide Javadoc comments in your *.java* files
+<br> -- Use the provided *BankAccount.java* for guidance with the class-level Javadoc and Javadocs for methods
+- Use standard Java comments that need to appear in the code body of a method, e.g., to explain non-obvious computations
+- Give self-documenting variable and method name
+<br>Use name completion in Eclipse, i.e., type Ctrl-Space, to keep typing cost low and readability high
+- Delete all of the TODO comments as you complete each TODO
+- Use Ctrl-Shift-F in Eclipse to format your code
 
-We're providing a lot less "scaffolding" for this problem than most of
-the previous ones. Everything you need to solve the problem has either
-appeared in previous homework or examples, or is in the Java API
-documentation for *JButton*.
-Remember to ask for help if you get stuck.  
+## To Do:
 
-Here are the various stages you should complete:
-- **Stage 0:** Examine the main method in the LinearMain class in the linearLightsOut package in the LinearLightsOut 
-project that you checked out in class. This is all the code that we supply for the project: the rest is your responsibility.
-- **Stage 1:** Display a frame with the right title.
-- **Stage 2:** Display the right number of buttons in the frame (see the nButtons variable in *LinearMain.main*) 
-without worrying about event handling or the symbols on the buttons. For full credit, your final solution must 
-work with any *nButtons* greater than 2.
-- **Stage 3:** Make sure the buttons are initialized to random symbols (Xs and Os, 50% probability each).
-- **Stage 4:** Implement a working Quit button (This involves implementing an event handler for the Quit button).
-- **Stage 5:** Implement a working New Game button. When the button it pressed, the game should reset the symbol 
-buttons to a new set of random symbols.
-- **Stage 6:** Set up event handlers for the symbol buttons that correctly toggle the symbols as described above.
-- **Stage 7:** Check for a win and notify the player in some way through the GUI (not simply by System.out.println). 
-Changing the window title would suffice. (If you do that, be sure to change it back when the player clicks *New Game*.)
+1. In Eclipse, import this project (LinearLightsOut) from your local copy of the CSSE220 repo
+2. Implement *Part 1 - Ball/Strike Counter*
+3. Implement *Part 2 - Linear Lights Out*
+3. Include Javadoc comments in for all your classes - see Documentation Requirements section (below)
+4. Each student uploads her or his completed *.java* files to the LinearLightsOut Moodle Dropbox
 
-#### Hints
-1. The *setText()* and *getText()* methods of JButton are your friends.
-2. You do not need to use inheritance to solve this problem; your BallWorlds project will give you practice with that.
-    * You may, however, use inheritance in this project if you wish: extending JFrame, JButton, and/or JPanel, for example. 
-But usually this is not helpful.
+## Part 1 - Individual Part: Ball/Strike Counter
 
-Here's a screen shot of the game in progress:
+*Overview*
 
-![alt text](LinearLightsOut.png)
+- This part is to be done individually
+- Implement the code in the *ballStrikeCounter* package. In this starter project you have been give simple GUI framework for a program 
+that tracks balls and strikes for a baseball game. You need to add the buttons, ActionListeners, and variables necessary to make the code function correctly.
+You may add any new classes or make any changes you feel necessary. The method for properly displaying the label in the app has been provided 
+for you in the *updateLabel* method
 
-### Remember, in all your code:
+*Part 1 To Do*:
+1. Make the Ball and Add Strike buttons appear in the app's window as shown in the screenshot below
+2. The buttons must work as follows: 
+<br> -- The *Add Ball* button, when clicked adds a 1 to the Balls count label. If the count in the Balls count label ever reaches 4, then
+both the Balls count and Strikes count labels must be reset to 0
+<br> -- The *Add Strike* button, when clicked adds 1 to the Strikes count label. If the count in the Strikes count label ever reaches 3, then
+both the Balls count and Strikes count labels must be reset to 0
+<br> -- The labels should be updated to reflect the new ball/strike counts every time a button is clicked
 
-- Write appropriate comments:  
-  * Javadoc comments for public fields and methods.
-  * Explanations of anything else that is not obvious.
-- Give self-documenting variable and method names:
-    * Use name completion in Eclipse, Ctrl-Space, to keep typing cost low and readability high.
-- Use Ctrl-Shift-F in Eclipse to format your code.
-- Take care of all auto-generated TODO's.
-    * Then delete the TODO comment.
-- Correct ALL compiler warnings.
-    * Quick Fix is your friend!
- 1. **Points - 10 points for each stage**
-    - **-5 points** - The windows does not automatically size for the number of buttons entered
-    - **-5 points** - The new game button does not reset the game won notification (if applicable)
- 2. **Total: 70 points**
- 
-**Total for both parts: 90 points**
+ ![ball-strike](images/ballstrike.png)
+
+
+## Part 2 - Pair Part: Linear Lights Out
+*Working Together*
+
+- You may work with a single classmate of your choosing on this part
+- You may sit together while you work and discuss ideas and code freely, but each person must type and upload their 
+own files to the Moodle assignment's dropbox
+- We highly recommend that you seek out a partner to collaborate on this part of the assignment
+<br> -- Why? Because you will be working on a multi-week project with at least 1 partner toward the end of this quarter. Now is a good time to find someone you can work with
+- If you do work together, each partner must identify the other in a comment at the top of your program  
+
+*Overview*
+1. Implement the app Linear Lights Out in the *linearLightsOut* package 
+2. The app presents the user with an array of buttons that are randomly initialized to either Xs or Os, using a 50% probability
+3. Clicking on a button changes the symbol of the clicked-on button and *both its left and right neighbors*, if those neighbors exist
+<br>For example, a click on a button with the label X, changes it to an O, and changes the left and right neighbors' symbols similarly
+4. Buttons on the end just change their own symbol and their one neighbor's symbol; the end buttons do not "wrap around"
+5. The object of the game is to reach a state where all the buttons show the same symbol, either all Xs or all Os, it doesn't matter
+6. When that happens the user *wins* and the game is over
+
+
+- This starter package is providing less *scaffolding* for getting you started
+- But everything you need to solve the problem has either appeared in previous homework or examples, or is in the Java API
+documentation for *JButton*
+- Remember to ask for help if you get stuck.  
+
+Here's a screenshot of the game in progress:
+<br>
+![LinearLightsOut app](images/LinearLightsOut.png)
+
+
+Here's a screenshot of a game that was won with all Xs:
+<br>
+![game won](images/LinearLightsOutWonGame.png)
+
+
+*Part 2 To Do*:
+- *Stage 0:* Examine the main method in the LinearMain class in the linearLightsOut package in the LinearLightsOut 
+project that you checked out in class
+<br> -- This is all the code that we supply for the project: the rest is your responsibility
+- *Stage 1:* Display a frame with the right title
+- *Stage 2:* Display the right number of buttons in the frame (see the nButtons variable in *LinearMain.main*) 
+without worrying about event handling or the symbols on the buttons. 
+<br> -- For full credit, your final solution must work with any *nButtons* greater than 2.
+- *Stage 3:* Make sure the buttons are initialized to random symbols (Xs and Os, 50% probability each)
+- *Stage 4:* Implement a working Quit button (This involves implementing an event handler for the Quit button)
+- *Stage 5:* Implement a working New Game button. When the button it pressed, the game should reset the symbol 
+buttons to a new set of random symbols
+- *Stage 6:* Set up event handlers for the symbol buttons that correctly toggle the symbols as described above
+- *Stage 7:* Check for a win and notify the player in some way through the GUI (not simply by System.out.println)
+Changing the window title would suffice
+<br> -- If you do that, be sure to change it back when the player clicks *New Game*.
+
+## Notes:
+1. *JButton*'s *setText()* and *getText()* methods are your friends, use them
+2. You do not need to use inheritance to solve this problem
+3. You may, however, use inheritance in this project if you wish: extending JFrame, JButton, and/or JPanel, for example
+4. Correct ALL compiler warnings - those warnings are telling you that something is incorrect about your code
+
+
 
 
 
