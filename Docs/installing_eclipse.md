@@ -16,8 +16,8 @@ Then run the downloaded file and install it in the default location.
 
 # Install Eclipse
 
-The thing you want to install is the Eclipse (Eclipse IDE for ENterprise Java Developers):
-<a href="ttps://www.eclipse.org/downloads/packages/release/2020-06/r">Download it here</a>
+The thing you want to install is the Eclipse (Eclipse IDE for Enterprise Java Developers):
+<a href="https://www.eclipse.org/downloads/packages/release/2020-06/r">Download it here</a>
 
 There should be a "Download 64-bit" button for the latest version of
 eclipse.
