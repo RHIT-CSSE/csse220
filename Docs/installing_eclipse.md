@@ -7,7 +7,7 @@ the steps below.
 
 The thing you want to install is the "Java 8 SE Development Kit"
 
-<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Download it here</a>
+<a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html#license-lightbox">Download it here</a>
 
 Click the radio button that says "Accept License Agreement".  Then
 select the "Windows x64 version".
@@ -16,9 +16,8 @@ Then run the downloaded file and install it in the default location.
 
 # Install Eclipse
 
-The thing you want to install is the Eclipse IDE for EE Developers.
-
-<a href="https://www.eclipse.org/downloads/">Download it here</a>
+The thing you want to install is the Eclipse (Eclipse IDE for ENterprise Java Developers):
+<a href="ttps://www.eclipse.org/downloads/packages/release/2020-06/r">Download it here</a>
 
 There should be a "Download 64-bit" button for the latest version of
 eclipse.
