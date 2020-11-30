@@ -22,7 +22,7 @@ public class TestFootballScore {
 
 	@AfterClass
 	public static void oneTimeTearDown() {
-		String className = TestAddFractionGoodNumbers.class.getSimpleName();
+		String className = TestFootballScore.class.getSimpleName();
 		RunAllTests.outputResults(testsPassed, numberOfTests, className);
 	} // oneTimeTearDown
 
