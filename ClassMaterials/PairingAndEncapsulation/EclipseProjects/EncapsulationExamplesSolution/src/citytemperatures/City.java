@@ -44,7 +44,6 @@ public class City {
 		}
 		return total/this.temps.size();
 	}
-	
 
 	@Override
 	public String toString() {

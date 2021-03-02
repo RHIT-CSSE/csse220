@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 public class Team {
 	
+	
+	int x;
+	
 	// You'll need to add fields, constructors, and methods here
 	
 	

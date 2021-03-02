@@ -25,4 +25,11 @@ public class SavingsAccount extends BankAccount {
 		double interest = this.getBalance() * this.interestRate / 100;
 		this.deposit(interest);
 	}
+	
+	@Override
+	public String toString() {
+		return "Savings account with a balance of: "+ this.getBalance()  ;
+	}
+
+
 }

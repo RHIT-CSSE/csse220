@@ -9,8 +9,8 @@ public class StandardBoardProvider implements BoardLayoutProvider {
 //		chessBoard[0][0] = new Rook(false);
 //		chessBoard[1][0] = new Knight(false);
 //		chessBoard[2][0] = new Bishop(false);
-//		chessBoard[3][0] = new Queen(false);
-//		chessBoard[4][0] = new King(false);
+		chessBoard[3][0] = new Queen(false);
+		chessBoard[4][0] = new King(false);
 //		chessBoard[5][0] = new Bishop(false);
 //		chessBoard[6][0] = new Knight(false);
 //		chessBoard[7][0] = new Rook(false);
@@ -36,8 +36,8 @@ public class StandardBoardProvider implements BoardLayoutProvider {
 //		chessBoard[0][7] = new Rook(true);
 //		chessBoard[1][7] = new Knight(true);
 //		chessBoard[2][7] = new Bishop(true);
-//		chessBoard[3][7] = new Queen(true);
-//		chessBoard[4][7] = new King(true);
+		chessBoard[3][7] = new Queen(true);
+		chessBoard[4][7] = new King(true);
 //		chessBoard[5][7] = new Bishop(true);
 //		chessBoard[6][7] = new Knight(true);
 //		chessBoard[7][7] = new Rook(true);

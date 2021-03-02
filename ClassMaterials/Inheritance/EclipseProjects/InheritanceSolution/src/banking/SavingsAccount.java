@@ -15,6 +15,7 @@ public class SavingsAccount extends BankAccount {
 	 * @param rate in percent (i.e., use 5.5 for 5.5%, not 0.055)
 	 */
 	public SavingsAccount(double rate) {
+		super();
 		this.interestRate = rate;
 	}
 	

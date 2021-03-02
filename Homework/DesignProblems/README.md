@@ -47,7 +47,7 @@ basis if your argument is reasonable and demonstrates that you have a grasp on t
 thus far.  For your response, your solution should address the issues you have identified and present a design that is "better" than the
 problematic solutions.  If your design is no better, or if it is somehow worse than the other proposed solutions, it will not be counted as correct.
 + A *No-Pass* is awarded if you miss all the main issues and identify things that were not problems, etc. 
-+ To *Pass* this assignment, you may completely miss 1 of the 2 first parts (explaining violations in Solution A and Solution B)
-However, you MUST submit a design that improves *AT LEAST* one of the two provided solutions by correctly fixing the identified violations.
-
-
++ To *Pass* this assignment, you must do the following:
+  (1) For both Solution A and Solution B, you must make an attempt to identify the Principle violated and must also provide a good English explanation
+  (2) Have correct *AT LEAST* 1 of the 2 answers provided for item #1
+  (3) Submit a design that improves *AT LEAST* one of the two provided solutions by correctly fixing the identified violations

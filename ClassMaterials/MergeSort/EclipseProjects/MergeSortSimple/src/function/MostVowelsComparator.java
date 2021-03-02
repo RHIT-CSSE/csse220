@@ -14,5 +14,19 @@ public class MostVowelsComparator implements Comparator<String> {
 		// TODO implement
 		return 0;
 	}
+	
+	public int countVowels(String s) {
+		int count=0;
+		String vowels = "aeiouAEIOU";
+		for (int i=0; i< s.length;  i++) {
+			if (  vowels.contains( s.substring(i,i+1)   ) ) {
+				count++;
+			}
+		}
+		return count;
+		
+	}
+	
+	
 
 }

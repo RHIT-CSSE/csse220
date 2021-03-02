@@ -16,7 +16,7 @@ public class WhackABug {
 	public static void main(String[] args) {
 		// TODO: uncomment call to a buggy method, use debugger to find the
 		// bug, repeat
-		// hasABug1();
+		hasABug1();
 		// hasABug2();
 		// hasABug3();
 		// hasABug4();

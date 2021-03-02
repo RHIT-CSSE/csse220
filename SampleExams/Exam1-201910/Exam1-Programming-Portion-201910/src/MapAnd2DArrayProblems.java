@@ -2,7 +2,80 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
+import javax.swing.plaf.synth.SynthSliderUI;
+
 public class MapAnd2DArrayProblems {
+		
+	public static void main(String[] args) {
+		
+		HashMap<String, String> nameToState = new HashMap<>();
+		nameToState.put("Jason", "MI");
+		nameToState.put("Ally", "MI");
+		nameToState.put("Owen", "IL");
+		nameToState.put("Jacob", "WI");
+		nameToState.put("Jackson", "ID");
+		System.out.println( nameToState   );
+		
+		HashMap<String, ArrayList<String>> stateToNamesMap = new HashMap<>();
+		
+		
+		for (String name: nameToState.keySet() ) {
+			String state = nameToState.get( name );
+			
+			//if the map has the state already
+			if ( !stateToNamesMap.containsKey( state  )  ) {
+				stateToNamesMap.put(state, new ArrayList<String>() );
+			}
+			stateToNamesMap.get(state).add(name);
+		}
+		
+		System.out.println(   stateToNamesMap  );
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		System.out.println( stateToNamesMap );
+//		stateToNamesMap.put("MI", new ArrayList<String>() );
+//		System.out.println( stateToNamesMap );
+//		
+//		ArrayList<String> miList = stateToNamesMap.get("MI");
+//		miList.add("Jason");
+//		miList.add("Ally");
+//				
+//		System.out.println( stateToNamesMap );
+//		stateToNamesMap.put("MI", new ArrayList<String>() );
+//		miList.add("Jason2");
+//		miList.add("Ally2");
+//		
+//		System.out.println( stateToNamesMap );
+//		System.out.println(   miList  );
+//		
+//		stateToNamesMap.put("MI", miList );
+//		
+//		System.out.println( stateToNamesMap );
+//		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	/**
 	 * Input arrays a1 and a2 have the same number of columns, but

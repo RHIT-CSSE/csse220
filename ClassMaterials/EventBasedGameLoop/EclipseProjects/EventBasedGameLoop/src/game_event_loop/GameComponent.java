@@ -88,6 +88,11 @@ public class GameComponent extends JComponent {
 		Graphics2D g2 = (Graphics2D)g;
 		g2.fill(this.box);
 		// TODO: Draw raindrops
+		
+		for (Raindrop r: this.raindrops) {
+			r.drawOn(g2);
+		}
+		
 
 	}
 }

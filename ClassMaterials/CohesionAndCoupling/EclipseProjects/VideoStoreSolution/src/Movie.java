@@ -40,7 +40,7 @@ public class Movie {
 		double result = 0.0;
 		
 		//Determine amounts for each line
-		switch(priceCode) {
+		switch(this.priceCode) {
 			case REGULAR:  	  //REGULAR_PRICE for 2 day rental, and ADDITIONAL_DAY_PRICE for each additional day
 				result +=  REGULAR_PRICE;
 				if(daysRented > 2)

@@ -1,13 +1,46 @@
 package banking;
 
+import java.util.ArrayList;
+
 /**
  * A bank account has a balance that can be changed by deposits and withdrawals.
  * 
  * @author Cay Horstmann, revised to CSSE220 coding standards by Curt Clifton.
  */
-public class BankAccount {
+public  class BankAccount extends Object { //extends Object included by Java
 	private double balance;
+	
+	
 
+	
+	public static void main(String[] args) {
+		BankAccount ba = new BankAccount(10);
+		SavingsAccount sa = new SavingsAccount(1.0);
+		
+		ArrayList<BankAccount>  nyAccounts = new ArrayList<>();
+		nyAccounts.add(ba);
+		nyAccounts.add(sa);
+		
+		for ( BankAccount b: nyAccounts  ) {
+			System.out.println(  b.getBalance()  );
+			((SavingsAccount)b).addInterest();
+			
+		}
+		
+		
+		
+		
+		
+	}
+	
+	@Override
+	public String toString() {
+		return "Bank account with a balance of: "+ this.balance;
+	}
+	
+	
+	
+	
 	/**
 	 * Constructs a new bank account with a zero balance.
 	 */
@@ -21,6 +54,7 @@ public class BankAccount {
 	 * @param initialBalance
 	 */
 	public BankAccount(double initialBalance) {
+		super();  //included by Java
 		this.balance = initialBalance;
 	}
 
