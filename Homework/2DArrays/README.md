@@ -1,4 +1,4 @@
-# 2D Array
+# 2D Arrays
 
 ## Overview:
 - This exercise will provide practice with the 2D array data structure
