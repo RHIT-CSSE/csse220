@@ -2,6 +2,7 @@ package Homework2DArrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -11,8 +12,6 @@ import java.util.Scanner;
  * 
  */
 public class Homework2DArrays {
-	
-		
 	
 	/**
 	 * 
@@ -202,115 +201,5 @@ public class Homework2DArrays {
 	} // ballRestElevation
 	
 
-	
-	// ***********************************************************************************************
-	// BONUS: HARD Extra credit problem
-	// ***********************************************************************************************
-
-	
-	
-	
-
-	/** Given a int[][] with the states of cells return a NEW int[][]
-	 * with the state of all the cells in the next iteration of
-	 * Conway's Game of Life:
-	 * https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
-	 * 
-	 *   The rules are remarkably simple:
-	 * 
-	 *   A cell is alive if it has a 1 and dead if it contains a 0
-	 * 
-	 *   Live cells stay alive if they have 2 or 3 neighbors that are alive
-	 *   Dead cells become alive if they have exactly 3 live neighbors
-	 * 
-	 *   Each cell has 8 neighbors (all cardinal directions and combinations)
-	 *   The grid should WRAP around the edges (effectively a torus) so that
-	 *   every cell has 8 neighbors and edges touch one another.
-	 *  
-	 *   0000              0000
-	 *   0100    becomes   0000
-	 *   0000              0000
-	 *   
-	 *   0000              0000
-	 *   0110    becomes   0110
-	 *   0110              0110
-	 *   0000              0000
-	 *   
-	 *   000000              000000
-	 *   001000    becomes   000000
-	 *   000100              000000
-	 *   011100              000000
-	 *   000000              000000
-	 * 
-	 * @param cells
-	 * @return new int[][] with next iteration of cell states
-	 */
-	public static int[][] nextCells(int[][] cells) {
-		//TODO:   complete this method
-		return null;
-	} // nextCells
-	
-	
-	public static final int DELAY = 100;
-	public static  int[][] gameOfLifeCells = {  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, 
-												{0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, 
-												{0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0}, 
-												{0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0}, 
-												{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, 
-												{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, 
-												{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-												{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, 
-												{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, 
-												{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, 
-												{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, 
-												{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0} };	
-	
-	
-	/**
-	 * Run this file to visualize Conway's Game of Life
-	 * 
-	 * 
-	 * You do not have to modify this method
-	 * It creates a text visualization of the
-	 * pattern of cells over time.
-	 * You can set the DELAY value to adjust the
-	 * rate at which it updates.
-	 */
-	public static void main(String[] args) {
-		int[][] cells = gameOfLifeCells;
-		for ( int i=0; i< 100; i++) {
-			System.out.println("==================================== step: " + i);
-			//print to the console
-			printGameOfLife(cells);
-			//update state
-			cells = nextCells( cells );
-			
-			//pause to slow down
-			try {
-				Thread.sleep( DELAY );
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			};
-		}
-	}
-	
-	
-	/**
-	 * You do not have to modify this method.
-	 * 
-	 * @param cells
-	 */
-	public static void printGameOfLife( int[][] cells ) {
-		for ( int r=0; r< cells.length; r++) {
-			String line = "";
-			for ( int c=0; c< cells[0].length; c++) {
-				line += cells[r][c] == 1 ? 'O' : ".";
-			}
-			System.out.println( line );
-		}
-	}
-	
-
-	
 	
 }
