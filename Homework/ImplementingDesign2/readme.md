@@ -44,6 +44,6 @@ A Pass for this assignment requires each of the following:
 
 
 ## Sample Output
-Here is sample output of a working solution in [exampleOutput.txt](src/exampleOutput.txt) that you can use as a
+Here is sample output of a working solution in [exampleOutput.txt](exampleOutput.txt) that you can use as a
 model for your display operation. You do not have to match this exactly, but try to make it look roughly the same.
 
