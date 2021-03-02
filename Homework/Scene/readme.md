@@ -8,8 +8,12 @@
 ## Rubric:
 
 To earn a Pass, at a minimum your submission do the following:
+
+* Part 1:
 1. Stage 1 Draw Houses - *HouseViewer* draws image *similar* to [Image in Stage 1](images/Houses.png)
 2. Stage 2 Draw Trees - *PineTreesViewer* draws image *similar* to [Image in Stage 2](images/Trees.png)
+
+* Part 2:
 3. Stage 3 Draw Suns - *SunViewer* draws image *similar* to [Image in Stage 3](images/Suns2.png)
 4. Stage 4 Draw Scene - *SceneViewer* draws image *similar* to [Image in Stage 4](images/SceneWithTrees.png)
 

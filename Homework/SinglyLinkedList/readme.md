@@ -3,8 +3,8 @@
 ## Overview:
 - This exercise provides you with the opportunity to implement and use a singly linked list
 - There are two parts:
-<br> -- *sll* package contains 7 unimplemented operations. These must be done first, this is where you will implement your singly linked list
-<br> -- *sslAlgorithms* package contains 7 unimplemented operations. These must be done second. It depends on the *sll* package. 
+<br> -- Part 1: *sll* package contains 7 unimplemented operations. These must be done first, this is where you will implement your singly linked list
+<br> -- Part 2: *sslAlgorithms* package contains 7 unimplemented operations. These must be done second. It depends on the *sll* package. 
 <br>    These algorithms will give you practice at being a client programmer of the singly linked list
 
 
