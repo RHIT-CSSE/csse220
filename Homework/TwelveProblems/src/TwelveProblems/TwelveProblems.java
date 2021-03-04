@@ -265,27 +265,7 @@ public class TwelveProblems {
 	 *   threeCharacterStrings(["ab"]) returns []
 	 */
 	public static ArrayList<String> threeCharacterStrings(String input) {
-		ArrayList<String> answer = new ArrayList<String>();
-		if ( input.length() < 3 ) {
-			return answer;
-		} else if ( input.length() == 3 ) {
-			answer.add(input);
-		}
-		///    h e l l o
-		//    0 1 2 3 4 5
-		//  substring(2,5) len 4
-		
-		//     d r y o d e r s c l  u  e    
-		//    0 1 2 3 4 5 6 7 8 9 10 11 12 
-		//    substring(9, 12);  len 11
-		//    
-//		for ( int i=0; i< ???; i++) {
-//			
-//		}
-		
-		
-		
-		return answer;
+		return null;
 	}
 	
 	

@@ -29,22 +29,6 @@ public class MapAnd2DArray {
 	 * 
 	 */
 	public static char mostCommonCharacter(String input) {
-		
-		HashMap<Character, Integer> charToCountMap = new HashMap<>();
-		
-		charToCountMap.put('A', 1);
-		
-//		int x = 10;
-//		x = x + 1;
-		
-		
-		//if ( charToCountMap.containsKey('A') )
-		
-		int x = charToCountMap.get('A');
-		
-		charToCountMap.put('A', charToCountMap.get('A') + 1);
-			
-		
 		return 'Q';
 	} // mostCommonCharacter
 	
@@ -119,31 +103,6 @@ public class MapAnd2DArray {
 	 * @return city that had a temperature drop
 	 */
 	public static String getTemperatureDropCity(int[] temps, String[] tempCity) {
-		
-//		         key          value
-//		         ACity        [ 50, 12, 23]
-//		
-//		
-//		
-//		
-		HashMap<String, Integer  >  cityToTempMap = new HashMap<>();
-		for (int i=0; i<temps.length; i++) {
-			//city
-			//temp
-			
-			
-			//is there a city in the map?
-			//  if yes- check the temp of the city....
-			//       if lower.... then we are done, return the city name
-			//       else    keep moving forward, updaintg our current temp
-			//  if no - add it to the hashmap
-			
-		}
-		
-		
-		
-		
-		
 		return "";
 	} // getTemperatureDropCity
 	
@@ -173,13 +132,8 @@ public class MapAnd2DArray {
 	 * @param courseMap map of all courses to a pre-req
 	 * @param course course to check
 	 * @return number of courses before you can take given course, or -1 if it is in a pre-req loop
-	 */                                              // course,  prereq
-	public static int getNumberOfCoursesToTake(HashMap<String,    String> courseMap, String course) {
-		
-		//120  -> 220  -> 230 
-		
-		
-		
+	 */
+	public static int getNumberOfCoursesToTake(HashMap<String,String> courseMap, String course) {
 		return -2;
 	} // getNumberOfCoursesToTake
 	

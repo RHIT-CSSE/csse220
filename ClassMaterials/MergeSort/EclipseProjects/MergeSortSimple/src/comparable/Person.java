@@ -16,7 +16,7 @@ import java.util.Collections;
  * @author hewner
  *
  */
-public class Person implements Comparable<Person> {
+public class Person {
 	
 	private String lastName;
 	private int age;
@@ -41,18 +41,6 @@ public class Person implements Comparable<Person> {
 		Collections.sort(people);
 		
 		System.out.println(people);
-	}
-
-	@Override
-	public int compareTo(Person other) {
-		
-		if ( this.lastName.compareTo(other.lastName) == 0  ) {
-			return this.age - other.age;
-		} else {
-			return this.lastName.compareTo(other.lastName);
-		}
-			
-		
 	}
 
 }

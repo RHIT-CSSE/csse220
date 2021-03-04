@@ -36,13 +36,13 @@ public class CityTempaturesNoClasses {
 			input.nextLine();
 			
 			// Your code goes here
-			
-			if (!map.containsKey(cityName)) {
+			if(map.containsKey(cityName)) {
+				map.get(cityName).add(temperature);
+			} else {
 				ArrayList<Double> tempList = new ArrayList<Double>();
 				map.put(cityName, tempList);
-			}
-			map.get(cityName).add(temperature);
-		
+				tempList.add(temperature);
+			}		
 		}
 		for(String name : map.keySet()) {
 			double total = 0;
@@ -55,4 +55,5 @@ public class CityTempaturesNoClasses {
 		input.close();
 
 	}
+
 }

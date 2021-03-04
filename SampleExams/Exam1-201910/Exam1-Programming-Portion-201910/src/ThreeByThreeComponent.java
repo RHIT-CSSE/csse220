@@ -24,48 +24,48 @@ public class ThreeByThreeComponent extends JComponent {
 		
 		// Part 2
 		
-		ThreeByThree upperGray = new ThreeByThree(130, 30, Color.GRAY);
-		upperGray.drawOn(g2);
-		
-		ThreeByThree lowerYellow = new ThreeByThree(130, 130, Color.YELLOW);
-		lowerYellow.drawOn(g2);
+//		ThreeByThree upperGray = new ThreeByThree(130, 30, Color.GRAY);
+//		upperGray.drawOn(g2);
+//		
+//		ThreeByThree lowerYellow = new ThreeByThree(130, 130, Color.YELLOW);
+//		lowerYellow.drawOn(g2);
 	
 		// Part 3
-		ThreeByThree coloredLowerRow = new ThreeByThree(260, 30, Color.WHITE);
-		coloredLowerRow.setCellColor(2, 0, Color.RED);
-		coloredLowerRow.setCellColor(2, 1, Color.GREEN);
-		coloredLowerRow.setCellColor(2, 2, Color.BLUE);
-		coloredLowerRow.drawOn(g2);
-		
-		ThreeByThree coloredLeftCol = new ThreeByThree(260, 130, Color.LIGHT_GRAY);
-		coloredLeftCol.setCellColor(0, 0, Color.RED);
-		coloredLeftCol.setCellColor(1, 0, Color.GREEN);
-		coloredLeftCol.setCellColor(2, 0, Color.BLUE);
-		coloredLeftCol.drawOn(g2);
+//		ThreeByThree coloredLowerRow = new ThreeByThree(260, 30, Color.WHITE);
+//		coloredLowerRow.setCellColor(2, 0, Color.RED);
+//		coloredLowerRow.setCellColor(2, 1, Color.GREEN);
+//		coloredLowerRow.setCellColor(2, 2, Color.BLUE);
+//		coloredLowerRow.drawOn(g2);
+//		
+//		ThreeByThree coloredLeftCol = new ThreeByThree(260, 130, Color.LIGHT_GRAY);
+//		coloredLeftCol.setCellColor(0, 0, Color.RED);
+//		coloredLeftCol.setCellColor(1, 0, Color.GREEN);
+//		coloredLeftCol.setCellColor(2, 0, Color.BLUE);
+//		coloredLeftCol.drawOn(g2);
 //		
 		// Part 4
-		ThreeByThree source3x3 = new ThreeByThree(390, 30, Color.CYAN);
-		source3x3.setCellColor(1, 1, Color.RED);
-		source3x3.drawOn(g2);
-		
-		ThreeByThree target1 = source3x3.copyTo(390, 130);
-		target1.drawOn(g2);
-		
-		ThreeByThree target2 = source3x3.copyTo(390, 230);
-		target2.setCellColor(2, 0, Color.BLACK);
-		target2.drawOn(g2);
-		
-		ThreeByThree target3 = source3x3.copyTo(390, 330);
-		target3.setCellColor(2, 2, Color.BLACK);
-		target3.drawOn(g2);
-		
-		ThreeByThree target4 = source3x3.copyTo(390, 430);
-		target4.setCellColor(0, 2, Color.BLACK);
-		target4.drawOn(g2);
-		
-		ThreeByThree target5 = target2.copyTo(390, 530);
-		target5.setCellColor(2, 2, Color.BLACK);
-		target5.drawOn(g2);
+//		ThreeByThree source3x3 = new ThreeByThree(390, 30, Color.CYAN);
+//		source3x3.setCellColor(1, 1, Color.RED);
+//		source3x3.drawOn(g2);
+//		
+//		ThreeByThree target1 = source3x3.copyTo(390, 130);
+//		target1.drawOn(g2);
+//		
+//		ThreeByThree target2 = source3x3.copyTo(390, 230);
+//		target2.setCellColor(2, 0, Color.BLACK);
+//		target2.drawOn(g2);
+//		
+//		ThreeByThree target3 = source3x3.copyTo(390, 330);
+//		target3.setCellColor(2, 2, Color.BLACK);
+//		target3.drawOn(g2);
+//		
+//		ThreeByThree target4 = source3x3.copyTo(390, 430);
+//		target4.setCellColor(0, 2, Color.BLACK);
+//		target4.drawOn(g2);
+//		
+//		ThreeByThree target5 = target2.copyTo(390, 530);
+//		target5.setCellColor(2, 2, Color.BLACK);
+//		target5.drawOn(g2);
 	}
 
 }

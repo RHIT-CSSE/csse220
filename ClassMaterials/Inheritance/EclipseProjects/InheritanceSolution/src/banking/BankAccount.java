@@ -21,7 +21,6 @@ public class BankAccount {
 	 * @param initialBalance
 	 */
 	public BankAccount(double initialBalance) {
-		super();
 		this.balance = initialBalance;
 	}
 

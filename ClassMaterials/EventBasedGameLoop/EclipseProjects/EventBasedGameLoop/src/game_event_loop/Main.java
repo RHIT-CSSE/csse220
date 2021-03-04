@@ -50,30 +50,11 @@ public class Main {
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		
-		Timer t = new Timer(100, advanceListener );
-		//
-		
-		button.addActionListener( new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				if (t.isRunning() ) {
-					t.stop();
-				} else {
-					t.start();
-				}
-				
-			}
+		while (true) {
+			advanceListener.advanceOneTick();
+			// 1. How do we slow this down?
 			
-		});
-		
-		
-//		while (true) {
-//			advanceListener.advanceOneTick();
-//			// 1. How do we slow this down?
-//			
-//		}
+		}
 		
 	}
 }

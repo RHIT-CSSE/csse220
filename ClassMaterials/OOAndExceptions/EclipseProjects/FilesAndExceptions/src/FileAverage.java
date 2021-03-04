@@ -12,12 +12,11 @@ public class FileAverage {
 
 		//TODO: Run to see one exception. Trace the code to understand. 
 		// Then change to nums.txt to see the other exception. 
-		String filename = "nums.txt"; 
+		String filename = "nums_wrongname.txt"; 
 		try {
 			double average = computeAverageForFile(filename);
 			System.out.println("Average: " + average);
 		} catch(FileNotFoundException e) {
-			e.printStackTrace();
 			System.err.println("File " + filename + " not found.  Exiting.");
 		} catch(IOException e) {
 			System.err.println("Error closing file.");
@@ -32,9 +31,7 @@ public class FileAverage {
 
 		while(s.hasNext()) {
 			try {
-				int next = s.nextInt();
-				System.out.println( next  );
-				total = total + next;
+				total = total + s.nextInt();
 				count++;
 			} catch (InputMismatchException e) {
 				String nonNumber = s.next();

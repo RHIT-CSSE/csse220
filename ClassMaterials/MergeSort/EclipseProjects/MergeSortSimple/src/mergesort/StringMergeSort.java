@@ -30,37 +30,18 @@ public class StringMergeSort {
 	 */
 	public static String stringMergeSort(String input) {
 		
+		
 		//TODO 1: base case - strings of 0 or 1 length are already sorted
-		if (input.length() < 2) {
-			return input;
-		}
+
 		//TODO 2: split the string in half forming 2 smaller strings
-		int mid = input.length() / 2;
-		
-		String first = input.substring(0,mid);
-		String last = input.substring(mid);
-		
-		
-		return merge( stringMergeSort(first), stringMergeSort(last)   );
-	}
 
-	private static String merge(String firstSorted, String lastSorted) {
-		//continue check first pos until one of the stringsis empty
-		String answer = "";
-		while ( firstSorted.length() > 0  &&  lastSorted.length() > 0 ) {
-			if ( firstSorted.charAt(0) <  lastSorted.charAt(0) ) {
-				answer += firstSorted.charAt(0);
-				firstSorted = firstSorted.substring(1);
-			} else {
-				answer += lastSorted.charAt(0);
-				lastSorted = lastSorted.substring(1);
-			}
-		}
-		//one is empty...
+		//TODO 3: recursively call stringMergeSort on the smaller strings
 
-		answer += firstSorted + lastSorted;
+		//TODO 4: merge the two results back together (a bit tricky...
+		// look down below the function for a hint)
 		
-		return answer;
+		//TODO 5: return the merged string
+		return "";
 	}
 
 	

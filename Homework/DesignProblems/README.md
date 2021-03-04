@@ -5,7 +5,7 @@ do this exercise by yourself.
 
 # Example Problems
 
-The [*Example Problems*](../../Docs/ExampleDesignProblems) includes a set of four design problems for you to practice on. Since these are practice problems, you can work them on your own or collaborate with other students.  
+The [*Example Problems*](../../Docs/ExampleDesignProblems) includes a set of  design problems for you to practice on. Since these are practice problems, you can work them on your own or collaborate with other students.  
 
 There are solutions with commentary and good designs provided. Use these to evaluate your proposed solutions.
 
@@ -13,9 +13,11 @@ There are solutions with commentary and good designs provided. Use these to eval
 
 These are available on the 220 Moodle site as Word documents, but can be downloaded here as PDFs as well.
 
-+ [Part 1](DesignProblemsAssignment1.pdf)
-+ [Part 2](DesignProblemsAssignment2.pdf)
-+ [Part 3](DesignProblemsAssignment3.pdf)
++ [DesignProbHW1 - Online Quizzes](DesignProblemHW1_OnlineQuizzes.pdf)
++ [DesignProbHW2 - Team Gradebook](DesignProblemHW2_TeamGradebook.pdf)
++ [DesignProbHW3 - Spaceships](DesignProblemHW3_Spaceships.pdf)
++ [DesignProbHW4 - Team Budget](DesignProblemHW4_TeamBudget.pdf)
++ [DesignProbHW5 - Sudoku](DesignProblemHW5_Sudoku.pdf)
 
 # Turn-In Instructions 
 
@@ -23,16 +25,13 @@ You will complete these and submit to the corresponding 220 Moodle assignment.
 
 # Grading (Pass/No-Pass)
 
-+ There are two problems, each with 3 parts: The first two parts in each
-  problem are
-  labeled Solution A and Solution B.  Each of these proposed solutions
++ There are different problems, each with 3 parts: The first two parts in each
+  problem are labeled Solution A and Solution B.  Each of these proposed solutions
 violate one or more of the design principles we have covered in the
 lectures.  The third part is asking you to give a UML design for the
 stated problem that correctly follows the OO Design Principles we have
-covered. For all three parts, you are
-only responsible for identifying and fixing the designs based on the
-principles we have covered in class this far, you will not need to worry
-about the other OO Design Principles until we cover them.
+covered. For all three parts, you are only responsible for identifying and fixing the designs based on the
+principles we have covered in class this far, you will not need to worry about the other OO Design Principles until we cover them.
 
 + When identifying the principles that a solution has violated, it is vital
 that you both LIST the principle that you believe to be
@@ -48,7 +47,7 @@ basis if your argument is reasonable and demonstrates that you have a grasp on t
 thus far.  For your response, your solution should address the issues you have identified and present a design that is "better" than the
 problematic solutions.  If your design is no better, or if it is somehow worse than the other proposed solutions, it will not be counted as correct.
 + A *No-Pass* is awarded if you miss all the main issues and identify things that were not problems, etc. 
-+ To *Pass* this assignment, you must do the following:
-  (1) For both Solution A and Solution B, you must make an attempt to identify the Principle violated and must also provide a good English explanation
-  (2) Have correct *AT LEAST* 1 of the 2 answers provided for item #1
-  (3) Submit a design that improves *AT LEAST* one of the two provided solutions by correctly fixing the identified violations
++ To *Pass* this assignment, you may completely miss 1 of the 2 first parts (explaining violations in Solution A and Solution B)
+However, you MUST submit a design that improves *AT LEAST* one of the two provided solutions by correctly fixing the identified violations.
+
+

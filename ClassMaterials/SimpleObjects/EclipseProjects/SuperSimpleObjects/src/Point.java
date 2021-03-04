@@ -11,22 +11,18 @@ public class Point {
 	public static final Point ORIGIN = new Point(0,0);
 	
 	//Instance Variables
-	private static double x, y;
-	
+	private double x, y;
 	
 	//Constructor
 	public Point(double x, double y) {
 		this.x = x;
 		this.y = y;
-		
-		
 	}
 	
 	//Note: main is a static method
 	public static void main(String[] args) {
 		Point a = new Point( 0, 0 );
 		Point b = new Point( 3, 4);
-		
 		
 		//Static method called on the class itself
 		// "How far are Abe and Betty from each other?"
@@ -35,9 +31,6 @@ public class Point {
 		//Instance method called on a SPECIFIC INSTANCE (Object) of Point
 		// "Abe, how far away is Betty from you?"
 		System.out.println(  a.distanceTo( b ) );
-		
-		System.out.println("a:" + a );
-		System.out.println("b:" + b );
 	}
 	
 	/**
@@ -49,7 +42,7 @@ public class Point {
 	 */
 	private double distanceTo(Point other) {
 		//TODO complete this method
-		return distanceFormulaCalc( this.x, other.x, this.y, other.y);
+		return 0;
 	}
 
 	/**
@@ -62,7 +55,7 @@ public class Point {
 	 */
 	private static double distanceBetween(Point a, Point b) {
 		//TODO complete this method
-		return distanceFormulaCalc( a.x, b.x, a.y, b.y);
+		return 0;
 	}
 	
 	/** 
@@ -77,12 +70,5 @@ public class Point {
 		double yDiff = y1-y2;
 		return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
 	}
-	
-	
-	@Override
-	public String toString() {
-		return "Point: (" + this.x +", " + this.y + ")";
-	}
-	
 	
 }

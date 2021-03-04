@@ -24,10 +24,7 @@ public class RecursiveHelperFunctions {
 	 * @return sum of array
 	 */
 	public static int sumWholeArray(int[] array) {
-		
-		
-	
-		return sumArraySingleIndex(0, array);
+		return 0;
 	}
 	
 	
@@ -55,23 +52,6 @@ public class RecursiveHelperFunctions {
 		return 0;
 	}
 	
-	// 100
-	// 0 99
-	// n  n-1
-	
-	public static int sumArraySingleIndex(int index, int[] array) {
-		System.out.println( "sumArraySingleIndex(" + index   );
-		//base case
-		if (  index == array.length - 1  ) {
-			System.out.println( "returning" + array[index]  );
-			return array[index];
-		} else {
-			System.out.println( "returning" + array[index] + " + remainder..."  );
-			return array[index] + sumArraySingleIndex(index+1, array);
-		}
-		
-	}
-	
 	/**
 	 * Returns true if the array is in increasing order
 	 * 
@@ -87,27 +67,7 @@ public class RecursiveHelperFunctions {
 	 * @return true if list is sorted in increasing order
 	 */
 	public static boolean isOrdered(int[] array) {
-		if (array.length <= 1) {
-			return true;
-		}
-		return isOrderedHelper( 1, array);
-	}
-	
-	
-	public static boolean isOrderedHelper( int index, int[] array) {
-		if (index == array.length -1) {
-			//at end of array
-			return array[index-1] < array[index];
-		} else {
-			//smaller problem
-			if (  array[index-1] < array[index]  ) {
-				//move on to the next index
-				return isOrderedHelper( index+1, array);
-			} else {
-				//
-				return false;
-			}
-		}
+		return false;
 	}
 	
 	/**
@@ -128,60 +88,8 @@ public class RecursiveHelperFunctions {
 	 * @return true if there is one uppercase character
 	 */
 	public static boolean hasExactlyOneUppercase(String input) {
-		return countUpper(input) == 1;
+		return false;
 	}
-	
-	public static int countUpper( String input) {
-		if (input.length() == 0) {
-			return 0;
-		}
-		if ( Character.isUpperCase( input.charAt(0) )) {
-			return 1 + countUpper(input.substring(1));
-		} else {
-			return countUpper(input.substring(1));
-		}
-		
-	}
-	
-	
-	
-	
-	public static boolean hasEOUL1(int index, boolean foundUpper, String input) {
-		
-		System.out.println("hasEOUL1: index:" + index + ", foundUpper " + foundUpper +" input:"+input    );
-		if ( Character.isUpperCase( input.charAt(index) )) {
-			if (foundUpper == true) {
-				return false;
-			} else {
-				foundUpper = true;
-			}
-		}
-		if ( index == input.length()-1 ) {
-			return foundUpper;
-		} else {
-			return hasEOUL1(index+1, foundUpper, input);
-		}
-	}
-	
-	public static boolean hasEOUL2(int index, int numberOfUpper, String input) {
-		if ( Character.isUpperCase( input.charAt(index) )) {
-			numberOfUpper++;
-		}
-		
-		if ( index == input.length()-1 ) {
-			return numberOfUpper == 1;
-		} else {
-			if (numberOfUpper > 1) {
-				return false;
-			} else {
-				return hasEOUL2(index+1, numberOfUpper, input);
-			}
-		}
-		
-	}
-	
-	
-	
 
 	/**
 	 * Returns the length of the longest chain of repeated characters

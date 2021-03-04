@@ -21,10 +21,7 @@ public class HW1 {
 	 * addFraction(1,2,1,4) returns 0.75
 	 */
 	public static double addFraction(int num1, int den1, int num2, int den2) {
-		//System.out.println("num1/den1: " + ((double)num1)/den1 );
-		//System.out.println("num2/den2: " + num2/den2 );
-		
-		return 1.0*num1/den1 + 1.0*num2/den2;
+		return -1;
 	}
 
 	/**
