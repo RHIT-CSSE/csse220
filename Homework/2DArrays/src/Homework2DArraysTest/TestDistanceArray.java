@@ -1,10 +1,11 @@
-package Map2DArrayTest;
+package Homework2DArraysTest;
 import static org.junit.Assert.assertArrayEquals;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import Map2DArray.MapAnd2DArray;
-import Map2DArray.RunAllTests;
+
+import Homework2DArrays.Homework2DArrays;
+import Homework2DArrays.RunAllTests;
 
 public class TestDistanceArray {
 	private static int testsPassed;
@@ -60,7 +61,7 @@ public class TestDistanceArray {
 		char[][] expected = convert1DStringArrayTo2DCharArray(test1);
 			
 		numberOfTests++;
-		assertArrayEquals(expected, MapAnd2DArray.distanceArray(1, 1, 1));
+		assertArrayEquals(expected, Homework2DArrays.distanceArray(1, 1, 1));
 		testsPassed++;
 	} // testDistanceArrayN01
 	
@@ -81,7 +82,7 @@ public class TestDistanceArray {
 		char[][] expected = convert1DStringArrayTo2DCharArray(test2);
 
 		numberOfTests++;
-		assertArrayEquals(expected, MapAnd2DArray.distanceArray(0, 0, 1));
+		assertArrayEquals(expected, Homework2DArrays.distanceArray(0, 0, 1));
 		testsPassed++;
 	} // testDistanceArrayN02
 	
@@ -102,7 +103,7 @@ public class TestDistanceArray {
 		char[][] expected = convert1DStringArrayTo2DCharArray(test3);
 
 		numberOfTests++;
-		assertArrayEquals(expected, MapAnd2DArray.distanceArray(1, 6, 2));
+		assertArrayEquals(expected, Homework2DArrays.distanceArray(1, 6, 2));
 		testsPassed++;
 	} // testDistanceArrayN03
 	
@@ -123,7 +124,7 @@ public class TestDistanceArray {
 		char[][] expected = convert1DStringArrayTo2DCharArray(test4);
 
 		numberOfTests++;
-		assertArrayEquals(expected, MapAnd2DArray.distanceArray(6, 6, 2));
+		assertArrayEquals(expected, Homework2DArrays.distanceArray(6, 6, 2));
 		testsPassed++;
 	} // testDistanceArrayN04
 

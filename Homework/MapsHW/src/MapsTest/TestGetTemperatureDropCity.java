@@ -1,10 +1,11 @@
-package Map2DArrayTest;
+package MapsTest;
 import static org.junit.Assert.assertEquals;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import Map2DArray.MapAnd2DArray;
-import Map2DArray.RunAllTests;
+
+import MapsHW.Maps;
+import MapsHW.RunAllTests;
 
 
 public class TestGetTemperatureDropCity {
@@ -33,7 +34,7 @@ public class TestGetTemperatureDropCity {
 		int[] temp1 =    { 90,  80,  89,  92,  80 };
 		
 		numberOfTests++;
-		assertEquals("la", MapAnd2DArray.getTemperatureDropCity(temp1, city1));
+		assertEquals("la", Maps.getTemperatureDropCity(temp1, city1));
 		testsPassed++;
 	} // testGetTemperatureDropCityN01
 
@@ -43,7 +44,7 @@ public class TestGetTemperatureDropCity {
 		int[] temp2 =    { 90,  80,  91,  92,  80 };
 		
 		numberOfTests++;
-		assertEquals(null, MapAnd2DArray.getTemperatureDropCity(temp2, city2));
+		assertEquals(null, Maps.getTemperatureDropCity(temp2, city2));
 		testsPassed++;
 	} // testGetTemperatureDropCityN02
 	
@@ -53,7 +54,7 @@ public class TestGetTemperatureDropCity {
 		int[] temp3 =    { 90,  77,  80,  91,  92,  80,  78,  93,  94,  75};
 		
 		numberOfTests++;
-		assertEquals("ny", MapAnd2DArray.getTemperatureDropCity(temp3, city3));	
+		assertEquals("ny", Maps.getTemperatureDropCity(temp3, city3));	
 		testsPassed++;
 	} // testGetTemperatureDropCityN03
 

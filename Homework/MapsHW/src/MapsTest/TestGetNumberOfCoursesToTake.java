@@ -1,4 +1,4 @@
-package Map2DArrayTest;
+package MapsTest;
 
 import static org.junit.Assert.assertEquals;
 import java.util.HashMap;
@@ -7,8 +7,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import Map2DArray.MapAnd2DArray;
-import Map2DArray.RunAllTests;
+import MapsHW.Maps;
+import MapsHW.RunAllTests;
 
 public class TestGetNumberOfCoursesToTake {
 	private static int testsPassed;
@@ -51,7 +51,7 @@ public class TestGetNumberOfCoursesToTake {
 		loadHashMap(prereqMap);
 
 		numberOfTests++;
-		assertEquals(0, MapAnd2DArray.getNumberOfCoursesToTake(prereqMap, "101"));
+		assertEquals(0, Maps.getNumberOfCoursesToTake(prereqMap, "101"));
 		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN01
 	
@@ -61,7 +61,7 @@ public class TestGetNumberOfCoursesToTake {
 		loadHashMap(prereqMap);
 		
 		numberOfTests++;
-		assertEquals(1, MapAnd2DArray.getNumberOfCoursesToTake(prereqMap, "102"));
+		assertEquals(1, Maps.getNumberOfCoursesToTake(prereqMap, "102"));
 		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN02
 	
@@ -71,7 +71,7 @@ public class TestGetNumberOfCoursesToTake {
 		loadHashMap(prereqMap);
 		
 		numberOfTests++;
-		assertEquals(2, MapAnd2DArray.getNumberOfCoursesToTake(prereqMap, "103"));
+		assertEquals(2, Maps.getNumberOfCoursesToTake(prereqMap, "103"));
 		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN03
 	
@@ -81,7 +81,7 @@ public class TestGetNumberOfCoursesToTake {
 		loadHashMap(prereqMap);
 		
 		numberOfTests++;
-		assertEquals(3, MapAnd2DArray.getNumberOfCoursesToTake(prereqMap, "104"));
+		assertEquals(3, Maps.getNumberOfCoursesToTake(prereqMap, "104"));
 		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN04
 	
@@ -91,7 +91,7 @@ public class TestGetNumberOfCoursesToTake {
 		loadHashMap(prereqMap);
 		
 		numberOfTests++;
-		assertEquals(4, MapAnd2DArray.getNumberOfCoursesToTake(prereqMap, "105"));
+		assertEquals(4, Maps.getNumberOfCoursesToTake(prereqMap, "105"));
 		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN05
 	
@@ -101,7 +101,7 @@ public class TestGetNumberOfCoursesToTake {
 		loadHashMap(prereqMap);
 		
 		numberOfTests++;
-		assertEquals(2, MapAnd2DArray.getNumberOfCoursesToTake(prereqMap, "110"));
+		assertEquals(2, Maps.getNumberOfCoursesToTake(prereqMap, "110"));
 		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN06
 	
@@ -111,7 +111,7 @@ public class TestGetNumberOfCoursesToTake {
 		loadHashMap(prereqMap);
 		
 		numberOfTests++;
-		assertEquals(-1, MapAnd2DArray.getNumberOfCoursesToTake(prereqMap, "202"));
+		assertEquals(-1, Maps.getNumberOfCoursesToTake(prereqMap, "202"));
 		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN07
 	
@@ -121,7 +121,7 @@ public class TestGetNumberOfCoursesToTake {
 		loadHashMap(prereqMap);
 		
 		numberOfTests++;
-		assertEquals(-1, MapAnd2DArray.getNumberOfCoursesToTake(prereqMap, "205"));
+		assertEquals(-1, Maps.getNumberOfCoursesToTake(prereqMap, "205"));
 		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN08
 	
@@ -131,7 +131,7 @@ public class TestGetNumberOfCoursesToTake {
 		loadHashMap(prereqMap);
 		
 		numberOfTests++;
-		assertEquals(-1, MapAnd2DArray.getNumberOfCoursesToTake(prereqMap, "300"));
+		assertEquals(-1, Maps.getNumberOfCoursesToTake(prereqMap, "300"));
 		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN09
 	

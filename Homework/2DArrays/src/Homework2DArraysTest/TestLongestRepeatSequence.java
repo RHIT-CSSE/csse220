@@ -1,10 +1,11 @@
-package Map2DArrayTest;
+package Homework2DArraysTest;
 import static org.junit.Assert.assertEquals;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import Map2DArray.MapAnd2DArray;
-import Map2DArray.RunAllTests;
+
+import Homework2DArrays.Homework2DArrays;
+import Homework2DArrays.RunAllTests;
 
 
 public class TestLongestRepeatSequence {
@@ -31,7 +32,7 @@ public class TestLongestRepeatSequence {
 	public void testLongestRepeatSequenceN01() {
 		char[][] foo = {{'a','b','c'},{'d','d','e'}};
 		numberOfTests++;
-		assertEquals(2,MapAnd2DArray.longestRepeatSequence(foo));
+		assertEquals(2,Homework2DArrays.longestRepeatSequence(foo));
 		testsPassed++;		
 	} // testLongestRepeatSequenceN01
 	
@@ -40,7 +41,7 @@ public class TestLongestRepeatSequence {
 		char[][] foo2 = {{'a','b','b'},{'b','e','f'}};
 
 		numberOfTests++;
-		assertEquals(3,MapAnd2DArray.longestRepeatSequence(foo2));
+		assertEquals(3,Homework2DArrays.longestRepeatSequence(foo2));
 		testsPassed++;
 	} // testLongestRepeatSequenceN02
 	
@@ -49,7 +50,7 @@ public class TestLongestRepeatSequence {
 		char[][] foo3 = {{'a','b','b'},{'b','e','f'},{'b','e','f'},{'b','e','f'}};
 
 		numberOfTests++;
-		assertEquals(3,MapAnd2DArray.longestRepeatSequence(foo3));
+		assertEquals(3,Homework2DArrays.longestRepeatSequence(foo3));
 		testsPassed++;
 	} // testLongestRepeatSequenceN03
 	
@@ -58,7 +59,7 @@ public class TestLongestRepeatSequence {
 		char[][] foo4 = {{'a','b','b'},{'b','e','f'},{'b','e','q'},{'q','q','q'}};
 
 		numberOfTests++;
-		assertEquals(4,MapAnd2DArray.longestRepeatSequence(foo4));
+		assertEquals(4,Homework2DArrays.longestRepeatSequence(foo4));
 		testsPassed++;		
 	} // testLongestRepeatSequenceN04
 	

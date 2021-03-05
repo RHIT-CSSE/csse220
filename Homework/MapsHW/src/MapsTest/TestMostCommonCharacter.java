@@ -1,10 +1,10 @@
-package Map2DArrayTest;
+package MapsTest;
 import static org.junit.Assert.assertEquals;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import Map2DArray.RunAllTests;
-import Map2DArray.MapAnd2DArray;
+import MapsHW.Maps;
+import MapsHW.RunAllTests;
 
 
 
@@ -32,35 +32,35 @@ public class TestMostCommonCharacter {
 	@Test
 	public void testMostCommonCharacterN01() {
 		numberOfTests++;
-		assertEquals('a', MapAnd2DArray.mostCommonCharacter("aaab"));
+		assertEquals('a', Maps.mostCommonCharacter("aaab"));
 		testsPassed++;
 	} // testMostCommonCharacterN01
 	
 	@Test
 	public void testMostCommonCharacterN02() {
 		numberOfTests++;
-		assertEquals('a', MapAnd2DArray.mostCommonCharacter("bbaaa"));
+		assertEquals('a', Maps.mostCommonCharacter("bbaaa"));
 		testsPassed++;
 	} // testMostCommonCharacterN02
 	
 	@Test
 	public void testMostCommonCharacterN03() {
 		numberOfTests++;
-		assertEquals('c', MapAnd2DArray.mostCommonCharacter("abcbcdc"));
+		assertEquals('c', Maps.mostCommonCharacter("abcbcdc"));
 		testsPassed++;
 	} // testMostCommonCharacterN03
 	
 	@Test
 	public void testMostCommonCharacterN04() {
 		numberOfTests++;
-		assertEquals('a', MapAnd2DArray.mostCommonCharacter("a"));
+		assertEquals('a', Maps.mostCommonCharacter("a"));
 		testsPassed++;
 	} // testMostCommonCharacterN04
 	
 	@Test
 	public void testMostCommonCharacterN05() {
 		numberOfTests++;
-		assertEquals('l', MapAnd2DArray.mostCommonCharacter("hello"));
+		assertEquals('l', Maps.mostCommonCharacter("hello"));
 		testsPassed++;
 	} // testMostCommonCharacterN05
 

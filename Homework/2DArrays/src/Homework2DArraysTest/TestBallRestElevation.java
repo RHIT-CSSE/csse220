@@ -1,11 +1,11 @@
-package Map2DArrayTest;
+package Homework2DArraysTest;
 import static org.junit.Assert.assertEquals;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import Map2DArray.MapAnd2DArray;
-import Map2DArray.RunAllTests;
+import Homework2DArrays.Homework2DArrays;
+import Homework2DArrays.RunAllTests;
 
 public class TestBallRestElevation {
 	private static int testsPassed;
@@ -37,7 +37,7 @@ public class TestBallRestElevation {
 				{9,9,9,9,9,9}};
 
 		numberOfTests++;
-		assertEquals(4, MapAnd2DArray.ballRestElevation(array1));
+		assertEquals(4, Homework2DArrays.ballRestElevation(array1));
 		testsPassed++;
 	} // testBallRestElevationN01
 	
@@ -51,7 +51,7 @@ public class TestBallRestElevation {
 				{0,9,9,9,9,9}};
 		
 		numberOfTests++;
-		assertEquals(1, MapAnd2DArray.ballRestElevation(array3));
+		assertEquals(1, Homework2DArrays.ballRestElevation(array3));
 		testsPassed++;
 	} // testBallRestElevationN02
 	
@@ -65,7 +65,7 @@ public class TestBallRestElevation {
 				{9,9,9,9,9,9}};
 
 		numberOfTests++;
-		assertEquals(5, MapAnd2DArray.ballRestElevation(array2));
+		assertEquals(5, Homework2DArrays.ballRestElevation(array2));
 		testsPassed++;
 	} // testBallRestElevationN03
 

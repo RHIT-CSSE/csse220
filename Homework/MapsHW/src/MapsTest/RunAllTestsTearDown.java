@@ -1,10 +1,10 @@
-package Map2DArrayTest;
+package MapsTest;
 
 import static org.junit.Assert.assertTrue;
 import org.junit.AfterClass;
 import org.junit.Test;
 
-import Map2DArray.RunAllTests;
+import MapsHW.RunAllTests;
 
 public class RunAllTestsTearDown {
 

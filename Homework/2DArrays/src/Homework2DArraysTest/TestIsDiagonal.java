@@ -1,11 +1,12 @@
-package Map2DArrayTest;
+package Homework2DArraysTest;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import Map2DArray.MapAnd2DArray;
-import Map2DArray.RunAllTests;
+
+import Homework2DArrays.Homework2DArrays;
+import Homework2DArrays.RunAllTests;
 
 
 public class TestIsDiagonal {
@@ -32,7 +33,7 @@ public class TestIsDiagonal {
 	public void testIsDiagonalN01() {
 		int[][] array = {{1,0,0},{0,2,0},{0,0,3}};
 		numberOfTests++;
-		assertEquals(true, MapAnd2DArray.isDiagonal(array));
+		assertEquals(true, Homework2DArrays.isDiagonal(array));
 		testsPassed++;
 	} // testIsDiagonalN01
 	
@@ -41,7 +42,7 @@ public class TestIsDiagonal {
 		int[][] array = {{1,0,0},{0,2,0},{0,0,3}};
 		numberOfTests++;
 		array[0][2] = 44;
-		assertEquals(false, MapAnd2DArray.isDiagonal(array));
+		assertEquals(false, Homework2DArrays.isDiagonal(array));
 		testsPassed++;
 	} // testIsDiagonalN02
 	
@@ -49,7 +50,7 @@ public class TestIsDiagonal {
 	public void testIsDiagonalN03() {
 		int[][] array2 = {{0,0},{0,99}};
 		numberOfTests++;
-		assertEquals(true, MapAnd2DArray.isDiagonal(array2));
+		assertEquals(true, Homework2DArrays.isDiagonal(array2));
 		testsPassed++;
 	} // testIsDiagonalN03
 	
@@ -58,7 +59,7 @@ public class TestIsDiagonal {
 		int[][] array2 = {{0,0},{0,99}};
 		array2[1][0] = 5;
 		numberOfTests++;
-		assertEquals(false, MapAnd2DArray.isDiagonal(array2));
+		assertEquals(false, Homework2DArrays.isDiagonal(array2));
 		testsPassed++;
 	} // testIsDiagonalN04
 	
@@ -66,7 +67,7 @@ public class TestIsDiagonal {
 	public void testIsDiagonalN05() {
 		int[][] array3 = {{1,0,0,0},{0,2,0,0},{0,0,3,0},{0,0,0,4}};
 		numberOfTests++;
-		assertEquals(true, MapAnd2DArray.isDiagonal(array3));
+		assertEquals(true, Homework2DArrays.isDiagonal(array3));
 		testsPassed++;
 	} // testIsDiagonalN05
 	
@@ -76,7 +77,7 @@ public class TestIsDiagonal {
 		array3[0][0] = 0;
 		array3[0][3] = 5;
 		numberOfTests++;
-		assertEquals(false, MapAnd2DArray.isDiagonal(array3));
+		assertEquals(false, Homework2DArrays.isDiagonal(array3));
 		testsPassed++;
 	} // testIsDiagonalN06
 	

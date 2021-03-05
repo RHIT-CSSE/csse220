@@ -1,11 +1,12 @@
-package Map2DArrayTest;
+package Homework2DArraysTest;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import Map2DArray.MapAnd2DArray;
-import Map2DArray.RunAllTests;
+
+import Homework2DArrays.Homework2DArrays;
+import Homework2DArrays.RunAllTests;
 
 public class TestStringFromColumns {
 	private static int testsPassed;
@@ -32,7 +33,7 @@ public class TestStringFromColumns {
 		char[][] foo = { { 'h', 'l', 'o' }, { 'e', 'l', '!' } };
 
 		numberOfTests++;
-		assertEquals("hello!", MapAnd2DArray.stringFromColumns(foo));
+		assertEquals("hello!", Homework2DArrays.stringFromColumns(foo));
 		testsPassed++;
 	} // testStringFromColumnsN01
 
@@ -41,7 +42,7 @@ public class TestStringFromColumns {
 		char[][] foo2 = { { 'a', 'b', 'c' }, { 'd', 'd', 'e' } };
 
 		numberOfTests++;
-		assertEquals("adbdce", MapAnd2DArray.stringFromColumns(foo2));
+		assertEquals("adbdce", Homework2DArrays.stringFromColumns(foo2));
 		testsPassed++;
 	} // testStringFromColumnsN02
 
@@ -50,7 +51,7 @@ public class TestStringFromColumns {
 		char[][] foo3 = { { 'w', ' ', 'h' }, { 'h', 'i', 'e' }, { 'a', 's', 'r' }, { 't', ' ', 'e' } };
 
 		numberOfTests++;
-		assertEquals("what is here", MapAnd2DArray.stringFromColumns(foo3));
+		assertEquals("what is here", Homework2DArrays.stringFromColumns(foo3));
 		testsPassed++;
 	} // testStringFromColumnsN03
 

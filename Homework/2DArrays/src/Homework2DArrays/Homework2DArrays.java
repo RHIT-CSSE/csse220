@@ -1,141 +1,17 @@
-package Map2DArray;
+package Homework2DArrays;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Random;
+import java.util.Scanner;
 
 /**
- * Class: MapAnd2DArrayHomework
+ * Class: Homework2DArrays
  * @author CSSE Faculty
- * Purpose: provide practice with the data structures HashMap and 2D arrays
+ * Purpose: provide practice with 2D arrays
  * 
  */
-public class MapAnd2DArray {
-	
-	/**
-	 * Given one string, return the most common character.
-	 * 
-	 * Example:
-	 *   mostCommonCharacter("aaab") returns 'a'
-	 *   mostCommonCharacter("abcbcdc") returns 'c'
-	 * 
-	 * You can assume that your string will not be empty and that
-	 * one character will be more common than all the others (i.e. there
-	 * won't be a tie for the most common character)
-	 * 
-	 * Your solution should use hashmaps, NOT nested for loops.
-	 * You'll need one for loop though.
-	 *
-	 * @param input - string to find most common character of
-	 * @return most common character
-	 * 
-	 */
-	public static char mostCommonCharacter(String input) {
-		return 'Q';
-	} // mostCommonCharacter
-	
-	/**
-	 * 
-	 * Reverses (i.e. exchanges the keys and values) a hashmap which 
-	 * may contain multiple keys with the same value.  Because of this,
-	 * the values of the reversed map will be a list.
-	 * 
-	 * 
-	 * For example:
-	 * {1=A,2=A,3=B} yields {A=[1,2], B=[3]}
-	 * 
-	 * The initial hashmap maps Integers to Strings.
-	 * The reversed hashmap will map Strings to ArrayLists of Integers.
-	 * 
-	 * @param initialMap the HashMap to be reversed
-	 * @return a copy of the hashmap with keys and values exchanged
-	 */
-	public static HashMap<String,ArrayList<Integer>> reverseHashmap(HashMap<Integer,String> initialMap) {
-		
-		return null;
-	} // reverseHashmap
-	
-	/**
-	 * During a heat wave, any sign of lower temperatures is news.  This function takes an 
-	 * array of temperatures and an array of the cities where each temperature reading was 
-	 * recorded.  The function should return the name of a city that experienced a temperature 
-	 * drop.  If no city experienced a drop, the function should return null.
-	 * 
-	 * You can assume only 1 city will experience a drop.
-	 * 
-	 * Use maps to solve this problem.
-	 * 
-	 * Example 1:
-	 * 
-	 * Temps:    City:
-	 * 80        Seattle
-	 * 100       LA
-	 * 81        Seattle
-	 * 99        LA
-	 * 
-	 * The function should return "LA" because it experienced a drop from 100 to 99.
-	 * 
-	 * Example 2:
-	 * 
-	 * Temps:    City:
-	 * 91        Terre Haute
-	 * 92        Terre Haute
-	 * 80        Seattle
-	 * 93        Terre Haute
-	 * 100       LA
-	 * 83        Seattle
-	 * 93        Terre Haute
-	 * 82        Seattle
-	 * 105       LA
-	 * 85        Seattle
-	 * 
-	 * The function should return "Seattle" because 83 to 82 was a drop.
-	 *
-	 * Example 3:
-	 * 
-	 * Temps:    City:
-	 * 91        Terre Haute
-	 * 92        Terre Haute
-	 * 80        Seattle
-	 * 
-	 * The function should return null because no city had a drop.
-     *
-	 * @param temps temperatures recorded in time order
-	 * @param names names of the cities where each temperature was taken
-	 * @return city that had a temperature drop
-	 */
-	public static String getTemperatureDropCity(int[] temps, String[] tempCity) {
-		return "";
-	} // getTemperatureDropCity
-	
-	
-	/**
-	 * In a particular school (not Rose-Hulman) each course can only have 1 pre-requisite course.
-	 *  
-	 * These pre-req courses are represented by a map, for example:
-	 * 
-	 * {"CS120"="","CS220"="CS120","CS230"="CS220","MA100"="MA102","MA102"="MA100"}
-	 * 
-	 * Note that if a course has no pre-req, it is represented by the empty string ""
-	 * 
-	 * So in this example, CS120 has no pre-req course.
-	 *                     CS220 has a pre-req of 120
-	 *                     CS230 has a pre-req of 220
-	 *                     MA100 has a pre-req of MA102
-	 *                     MA102 has a pre-req of MA100
-	 *                     
-	 * Your job is to write a function that determines how many courses must be taken to take a specific course.
-	 * 
-	 * So your function should return 0 for "CS120"
-	 *    your function should return 1 for "CS220"
-	 *    your function should return 2 for "CS230"
-	 *    your function should return -1 for "MA102" or "MA100".  They are in a pre-req loop, so it is impossible to take any of the courses. 
-	 * 
-	 * @param courseMap map of all courses to a pre-req
-	 * @param course course to check
-	 * @return number of courses before you can take given course, or -1 if it is in a pre-req loop
-	 */
-	public static int getNumberOfCoursesToTake(HashMap<String,String> courseMap, String course) {
-		return -2;
-	} // getNumberOfCoursesToTake
+public class Homework2DArrays {
 	
 	/**
 	 * 
@@ -222,7 +98,6 @@ public class MapAnd2DArray {
 	public static String stringFromColumns(char[][] data) {
 		return "replace this";
 	} // stringFromColumns
-	
 	
 	
 	/**
@@ -324,4 +199,7 @@ public class MapAnd2DArray {
 	public static int ballRestElevation(int[][] map) {
 		return 0;
 	} // ballRestElevation
+	
+
+	
 }
