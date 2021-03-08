@@ -4,6 +4,7 @@
 - This assignment will provide practice with reading and writing to several files as well as practice with throwing, catching and creating new exception types
 - This assignment has 7 separate TODO items and the entire assignment is to be completed individually
 
+
 ## Rubric:
 To earn a Pass for this assignment, your final version of the program should scan through all the necessary files, saving the relevant information, calculating the average grade for each student and it should then write out all the correct information to the AllGrades.csv file as given below as well as have the correct output to the console (i.e., this is an "all-or-nothing" assignment).  While the results are not required to be in any particular order in the final output file, if you order the records in alphabetical order by last name, you can earn awesome points.  If your program is not fully functioning, individual assessments may be made as to how close your program is to the above to determine if it passes the overall assignment.  But grades/averages must be calculated correctly for all students and written to a file in the very least.
 
