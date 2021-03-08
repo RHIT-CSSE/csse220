@@ -49,11 +49,12 @@ public class ReadAndGradeMain {
 		
 		//TODO 2: Create exception classes
 		
-		//TODOs 3 and 4 in the GradeFileReader.java file
+		//TODO 3 in the GradeFileReader.java file, MAKE SURE AND LOOK OVER THE METHOD written
+    //for you in this file, you only need to complete one method.
 		
 		
 		/*
-		 * TODO 5: Now loop through all the files, using the name of the file, you should call
+		 * TODO 4: Now loop through all the files, using the name of the file, you should call
 		 *         the readGradeFile method in the GradeFileReader class (note it is a static
 		 *         method).  If all goes well, it should return the average of all the integers
 		 *         in the file.  Otherwise, if the method throws an exception, you should track
@@ -73,7 +74,7 @@ public class ReadAndGradeMain {
 		
 		
 		/*
-		 * TODO 6: Now write all the records to the file named AllGrades.csv.  You can write
+		 * TODO 5: Now write all the records to the file named AllGrades.csv.  You can write
 		 * the records in the order you read them (and even do it above in the previous todo 
 		 * section) but if you write the files in alphabetic order of their last names, you
 		 * will receive AWESOME POINTS for doing so.  Remember that a CSV file is a file that
@@ -106,7 +107,7 @@ public class ReadAndGradeMain {
 		pw.close();
 		
 		/*
-		 * TODO 7: Below, print out to the console (using System.out) the following reports:
+		 * TODO 6: Below, print out to the console (using System.out) the following reports:
 		 * 
 		 * 1) All files that were found in the grades directory for which there was no student 
 		 * 2) All records in the AllNames.csv file that had malformed email addresses
