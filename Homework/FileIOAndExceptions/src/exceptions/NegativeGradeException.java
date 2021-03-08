@@ -5,3 +5,7 @@ package exceptions;
   //those fields, and exception classes work just about
   //like any other class other than the fact that they're.
   //thrown
+
+public class NegativeGradeException {
+	
+}
