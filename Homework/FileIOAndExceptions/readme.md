@@ -64,7 +64,7 @@ Once you have this, if your exception needed to save the two strings “abc” a
 
 	throw new MissingGradeException(“abc”, “xyz”);
 
-Then, when the class catches this exception type, it can call the get methods to get those values.
+Then, when the class catches this exception type, it can call the get methods to get those values.  NOTE: When you finish this one, it will fix the compiler errors in the GradeFileReader.java file.
 
 3) TODO 3 will be done in the file named GradeFileReader.java.  The first method in this class is a static method, so it therefore is a utility method that does not require any class fields to work.  The first method is named readGradeFile.  It takes a file name (note, it is very important that the filename have the correct path to the file, more on that below), and reads all the integers separated by commas on several lines and returns the average of those integers as a double type.  The method has a JavaDoc that explains in detail what this method should do.  But if the file is malformed, an exception should be thrown so that the file may be repaired.  A file is malformed if it is missing a value (hence you would throw a MissingGradeException) or a value is negative (hence you would throw a NegativeGradeException).  When you throw these exceptions, you should think about what the exception needs to track so that the caller of this method can access the right data to determine exactly where this problem is in the file so that it may be fixed.  MAKE SURE YOU READ the JavaDoc for the other method that has been written for you.  You will need to utilize it in the next TODO when you catch exceptions and need to make changes to the file.
 
