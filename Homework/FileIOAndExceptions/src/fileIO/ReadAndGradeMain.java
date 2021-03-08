@@ -47,10 +47,11 @@ public class ReadAndGradeMain {
 		
 		
 		
-		//TODO 2: Create exception classes
+		//TODO 2: Create exception classes (NOTE, when this is finished, it should fix the 
+		//compiler error in the GradeFileReader.java file
 		
 		//TODO 3 in the GradeFileReader.java file, MAKE SURE AND LOOK OVER THE METHOD written
-    //for you in this file, you only need to complete one method.
+		//for you in this file, you only need to complete one method.
 		
 		
 		/*
