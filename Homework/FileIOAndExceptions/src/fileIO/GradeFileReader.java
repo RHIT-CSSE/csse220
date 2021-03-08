@@ -63,7 +63,7 @@ public class GradeFileReader {
 		return 0.0;
 	}
 	
- /**
+	/**
 	 * NOTE: Line numbers start at 1 and index values start at 0!
 	 * 
 	 * This method will fix a missing grade AND negative grades depending on the boolean value
