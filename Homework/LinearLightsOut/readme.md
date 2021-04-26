@@ -7,7 +7,7 @@
 ## Rubric:
 
 - To Pass *Part 1 - Ball/Strike Counter* you must add the ball and strike buttons and handle clicks on the buttons correctly (see details below)
-- To Pass *Part 2 - Linear Lights Out* you must allow the user to choose the number of buttons and handle clicks on the buttons correctly (see details below)
+- To Pass *Part 2 - Linear Lights Out* you must allow the user to choose the number of buttons and correctly handle clicks on all of the app's buttons (see details below)
 - Javadoc comments are required for all your *.java* files
 <br> -- See the *Documentation Requirements* section below
 
