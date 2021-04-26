@@ -50,7 +50,7 @@ public class TestRemoveLongNumbers {
 		assertEquals("[]", list1.toString());
 		testsPassed++;
 	} // testRemoveLongNumbersN02
-	
+		
 	@Test
 	public void testRemoveLongNumbersN03() {
 		ILinkedList list1 = new SinglyLinkedList();
