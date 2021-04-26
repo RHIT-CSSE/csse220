@@ -45,10 +45,9 @@ public class TestRemoveLongNumbers {
 		ILinkedList list1 = new SinglyLinkedList();
 		
 		list1.add(Integer.MIN_VALUE);
-		String expectedResult = "[" + Integer.MIN_VALUE + "] first=[" + Integer.MIN_VALUE + "] last=[" + Integer.MIN_VALUE + "]";
 		Algorithms.removeLongNumbers(list1);
 		numberOfTests++;
-		assertEquals(expectedResult, list1.toString());
+		assertEquals("[]", list1.toString());
 		testsPassed++;
 	} // testRemoveLongNumbersN02
 	
