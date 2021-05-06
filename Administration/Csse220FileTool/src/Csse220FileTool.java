@@ -67,8 +67,8 @@ public class Csse220FileTool {
 		for(File submissionDir : studentSubmissionDir.listFiles()) {
 			String dirName = submissionDir.getName();
 			//if there is no "_" in the filenames it could be the question text
-			if(dirName.startsWith(".") ||  dirName.indexOf('_') == -1    ) {
-				output.printf("Skipping dir %s as probably not a student\n", dirName);
+			if(dirName.startsWith(".") ||  dirName.indexOf('_') == -1   || dirName.contains("onlinetext")  ) {
+				output.printf("Skipping dir %s as probably not a student code submission folder\n", dirName);
 				continue;
 			}
 			String studentName = dirName.substring(0, dirName.indexOf('_'));
@@ -76,6 +76,13 @@ public class Csse220FileTool {
 			
 			// copy everything from the master dir to student dir
 			Path studentOutputDir = pathAppend(outputDir.toPath(), studentName);
+			
+			
+			//check to see if the master has been added already
+			if(Files.exists(studentOutputDir) ) {
+				throw new IOException("Student submission dir" + studentSubmissionDir.getName() + "already exists, are there extra folders included that should not be?");
+			}
+			
 			int numMasterCopied = copyDirTree(masterDir.toPath(), studentOutputDir);
 			
 			// copy the student's submissions into the src dir of master
