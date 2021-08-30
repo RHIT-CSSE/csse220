@@ -6,7 +6,8 @@ title: Importing an Eclipse Project
 
 ## Requires:
 - These instructions assume you have already cloned the [CSSE220 Repo](https://github.com/RHIT-CSSE/csse220.git)
-- You only clone the CSSE220 Repo from then on, you import Eclipse projects (e.g., HW1) from the clone that now resides on your machine
+- Only once do you clone the CSSE220 Repo. This cloned repo resides on your machine. From then on, you import Eclipse projects (e.g., HW1) from the clone residing on your machine
+- These instructions will not work if you have not already cloned the CSSE220 Repo
 
 ***
 ## Instructions:
