@@ -16,7 +16,7 @@ use Eclipse to clone (that is, copy) the repo onto your machine
 2. Go to *File > Import* in the menu
 3. Select *Git > Projects From Git* from the folder list and click *Next* 
 4. Select *Clone URI*
-5. Put https://github.com/RHIT-CSSE/csse220.git in the URI field and click *Next*
+5. Type "https://github.com/RHIT-CSSE/csse220.git" in the URI field and click *Next*
 6. Make sure master is checked and click *Next*
 7. You can choose any directory you like as your destination and click *Next*
    * You'll be able to use this directory to access a local copy of all the slides and other 220 materials, so pick a name that you will remember
