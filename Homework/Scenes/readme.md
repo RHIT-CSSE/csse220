@@ -1,4 +1,4 @@
-﻿# Scene Assignment
+﻿# Scenes Assignment
 
 ## Overview:
 - This exercise is intended to give you practice with Java Swing graphics this will help you with the term project
