@@ -36,7 +36,7 @@ To earn a Pass for *Commenting & Conventions*, you must do the following:
 
 ## To do:
 
-1. In Eclipse, import this project (TeamGradebook) from your local copy of the CSSE220 repo
+1. In Eclipse, import this project (ImplementingDesign2) into Eclipse from your local copy of the CSSE220 repo
 2. Modify the classes TeamGradebook, Team, and Student so that they implement the required functionality
 3. Run the included JUnit tests to ensure your solution passes all the unit tests - do this by running *RunAllIndividualTests.java* and *RunAllPairedTests.java*
 4. Each student uploads her or his completed *.java* files to this assignment's Moodle Dropbox
