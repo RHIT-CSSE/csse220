@@ -27,7 +27,7 @@
 1. In Eclipse, import this project (LinearLightsOut) from your local copy of the CSSE220 repo
 2. Implement *Part 1 - Ball/Strike Counter*
 3. Implement *Part 2 - Linear Lights Out*
-3. Include Javadoc comments in for all your classes - see Documentation Requirements section (below)
+3. Include Javadoc comments in for all your classes - see Documentation Requirements section (above)
 4. Each student uploads her or his completed *.java* files to the LinearLightsOut Moodle Dropbox
 
 ## Part 1 - Individual Part: Ball/Strike Counter
