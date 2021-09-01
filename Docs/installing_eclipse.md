@@ -20,10 +20,7 @@ The thing you want to install is the *Eclipse IDE for Java Developers*:
 
 Choose the download based on your platform: Windows, macOS, Linux
 
-Then run the downloaded file select: Eclipse IDE for Java Developers
-hich version you'd like to
-install.<br>
-Select  *Eclipse IDE for EE Developers* and then default choices (if any are presented)
+Then run the downloaded file and select *Eclipse IDE for Java Developers* and then default choices (if any are presented)
 
 After that, just install eclipse following the defaults
 
