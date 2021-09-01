@@ -28,13 +28,13 @@ Online quizzer: Is an online quiz application for teachers who write quizzes and
 
 ## Rubric:
 
-A Pass for this assignment requires each of the following:
+- To earn a 100% for the assignment you must do the following 4 tasks:
 
-1. The output from your program closely matches that shown in **Sample Output** (below).
-<br>This means your implementation has to allow creation of questions and quizzes, updating of quizzes, and displaying
-2. Javadoc comments for *Question.java* and *Quiz.java* - use [BankAccount.java](src/javadocExample/BankAccount.java) for guidance with the class-level Javadoc and Javadocs for methods
-3. A UML diagram that resembles your implementation, we recommend using [PlantUML](http://plantuml.com/plantuml) 
-4. Answers provided to the reflection questions
+1. (60% of grade) The output from your program closely matches that shown in **Sample Output** (below).
+<br>This means your implementation has to allow creation of questions and quizzes, updating of quizzes, and displaying of quizzes
+2. (15% of grade) Javadoc comments for *Question.java* and *Quiz.java* - use [BankAccount.java](src/javadocExample/BankAccount.java) for guidance with the class-level Javadoc and Javadocs for methods
+3. (15% of grade) A UML diagram that resembles your implementation, we recommend using [PlantUML](http://plantuml.com/plantuml) 
+4. (10% of grade) Answers provided to the reflection questions found in *reflectionQuestions.txt*
 
 ## Sample Output:
 
