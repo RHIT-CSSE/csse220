@@ -43,4 +43,4 @@ You can pick anywhere you like, but:
    automatically backed up.
 
 # Make a shortcut to Eclipse
-- You will be starting up Eclipse hundreds of times (if not more) this quarter, save yourself some time by placing a short cut on your machines task bar or startup menu
+- You will be starting up Eclipse hundreds of times (if not more) this quarter, save yourself some time by placing a short cut on your machine's task bar or startup menu
