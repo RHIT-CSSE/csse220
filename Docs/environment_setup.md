@@ -14,7 +14,7 @@ instructions here:
 Follow the instructions here:
 [Clone CSSE220 git repo](getting_the_repo.md)
 
-# Repeat the following or each software development HW
+# Repeat the following for each software development HW
 
 Follow the instructions here:
 [Importing an Eclipse Project](importing_eclipse_project.md)
