@@ -17,12 +17,12 @@ Run the code and ensure you see the functionality in the video below and then go
 
 ## Rubric:
 
-To Pass this assignment you will need to:
+To earn a 100% for the assignment you must do the following tasks:
 
-- Part 1: (no deliverable) Understand and Re-design Particle and TagPlayer
-- Part 2: To Pass - Refactor the code for Particle and TagPlayer and create a super class
-- Part 3: To Pass - Create and complete the ChargedParticle class and modify SimulationViewer and SimulationComponent
-- Part 4: To Pass - Complete the Person class and modify SimulationViewer and SimulationComponent
+0. (no deliverable) Study the provided code adn watch video explaining project  
+1. (35% of grade) Refactor the code for Particle and TagPlayer and create a super class
+2. (35% of grade) Create and complete the ChargedParticle class and modify SimulationViewer and SimulationComponent
+3. (30% of grade) Complete the Person class and modify SimulationViewer and SimulationComponent
 
 
 ## Starting Point
@@ -38,7 +38,7 @@ Starting UML for the classes we want to focus our attention on:
 
 The UML shown above shows you some of the classes in the system you are given.  Here's a breakdown of each:
 
-## Classes to study in Part 1
+# Part 0: Study classes
 * Particle - This FUNCTIONING class represents a simple object (Black Circle) which bounces off of walls and other particles 
 * TagPlayer - This FUNCTIONING class represents a player (Gray Circle) of "the game of " where only one player at a time is "it" (RED).
 * Person - This is a class that is supposed to allow us to simulate a viral infection and recovery cycle. (Circles with different colors)
