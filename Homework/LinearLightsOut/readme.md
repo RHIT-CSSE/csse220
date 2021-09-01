@@ -5,10 +5,11 @@
 - There is an individual part and a paired part (details are below)
 
 ## Rubric:
+To earn a 100% for the assignment you must do the following 3 tasks:
 
-- To Pass *Part 1 - Ball/Strike Counter* you must add the ball and strike buttons and handle clicks on the buttons correctly (see details below)
-- To Pass *Part 2 - Linear Lights Out* you must allow the user to choose the number of buttons and correctly handle clicks on all of the app's buttons (see details below)
-- Javadoc comments are required for all your *.java* files
+1. (30% of grade) *Part 1 - Ball/Strike Counter* you must add the ball and strike buttons and handle clicks on the buttons correctly (see details below)
+2. (60% of grade) *Part 2 - Linear Lights Out* you must allow the user to choose the number of buttons to be displayed and correctly handle clicks on all of the app's buttons (see details below)
+3. (10% of grade) Javadoc comments are required for all your *.java* files
 <br> -- See the *Documentation Requirements* section below
 
 
