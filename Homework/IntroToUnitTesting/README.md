@@ -32,7 +32,7 @@ To earn a 100% for the assignment:
    - And if *countChocula* is defective, then 1 of those 4 test cases must reveal a defect, i.e., must not pass
 - All test inputs must be *legal* test inputs for the operation that is under test
    - That is, the input must be one that the operation *should* handle correctly if it were implemented without defects
-- Also, for these operations, it is not fair to pass in a <code>null</code> to operations expecting a actual object reference
+- Also, for these operations, it is not fair to pass in a <code>null</code> to operations expecting an actual object reference
 
 
 
