@@ -2,18 +2,21 @@
 title: Setting Up Software Development Environment
 ---
 
-# Install Java and Eclipse on your computer
+# Install Java and Eclipse on your computer - do this just 1 time
 
 Follow the 
 instructions here: 
 [Installing Eclipse](installing_eclipse.md)
 
 
-# Checkout the public CSSE220 git repo
+# Checkout the public CSSE220 git repo - do this just 1 time
 
 Follow the instructions here:
 [Clone CSSE220 git repo](getting_the_repo.md)
 
+# Repeat the following or each software development HW
 
-If you have any trouble, contact your course instructor.
+Follow the instructions here:
+[Importing an Eclipse Project](importing_eclipse_project.md)
+
 
