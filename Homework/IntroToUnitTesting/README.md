@@ -5,7 +5,7 @@
 - This is an individual exercise/assignment
 
 ## Rubric:
-Minimum to Pass this assignment:
+To earn a 100% for the assignment:
 1. You must submit the file *TestThisClassTest.java*
 2. *TestThisClassTest.java* must contain these 4 JUnit test operations: *testCountChocula*, *testNumberOfXs*, *testPaintCost*, *testPizzaCostCalculator*
 3. Each JUnit test operation must contain 4 test cases (see details below in the Additional Notes section)
@@ -21,16 +21,18 @@ Minimum to Pass this assignment:
 
 ## Additional Notes:
 - Each of the 4 operations to be tested has a Javadocs comment that specifies its functional behavior
-<br> -- Read these comments to understand what the operation is *supposed* to do
-- Three of the 4 operations to be tested have defects. Do *not* correct any of the defects
+   - Read these comments to understand what the operation is *supposed* to do
+- Three of the 4 operations to be tested have defects
+   - You are *not* to correct any of these defects
+   - The purpose of testing is to expose defects
 - In each JUnit test operation, supply at least 4 different test cases for the operation under test
-<br>One of the 4 must reveal a defect, *if* the operation under test is defective
-<br>Add a comment to each of the 4 test cases that indicates how it tests something different than the others
+   - One of the 4 test cases must reveal a defect, *if* the operation under test is defective
+   - Add a comment to each of the 4 test cases that indicates how it tests something different than the others
 - For example in *testCountChocula*, supply at least 4 different test cases that test *countChocula*
-<br>And if *countChocula* is defective, then 1 of those 4 test cases must reveal the defect, i.e., must not pass
+   - And if *countChocula* is defective, then 1 of those 4 test cases must reveal a defect, i.e., must not pass
 - All test inputs must be *legal* test inputs for the operation that is under test
-<br>That is, the input must be one that the operation *should* handle correctly if it were implemented without defects
-- Also, for these operations, it is not fair to pass in a <code>null</code> to operations expecting an object
+   - That is, the input must be one that the operation *should* handle correctly if it were implemented without defects
+- Also, for these operations, it is not fair to pass in a <code>null</code> to operations expecting a actual object reference
 
 
 
