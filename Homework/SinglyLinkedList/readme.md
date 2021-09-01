@@ -13,10 +13,12 @@
 
 # Rubric
 
-- Each of the 14 operations (7 in *sll* + 7 in *sslAlgorithms*) is worth 1 Pass/No-Pass for this assignment
-- For an operation's implementation to Pass, *all* of that operation's JUnit tests must pass
-- To earn a Pass for *sll*: Any 6 of the 7 JUnit tests for *sll* operations must Pass
-- To earn a Pass for *sslAlgorithms*: Any 5 of the 7 JUnit tests for *sslAlgorithms* operations must Pass 
+- All JUnit tests for each operation must succeed in order to earn a 100% for the assignment
+- Your score for this assignment = (PercentageJUnitTestsPassed * SLLTotalPoints)
+- For example:
+  - if PercentageJUnitTestsPassed = 80%
+  - and if SLLTotalPoints = 25
+  - then Your Score = (.80 * 25) = 20 points
 
 ## To do:
 
