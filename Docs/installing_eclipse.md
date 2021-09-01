@@ -16,14 +16,15 @@ Then run the downloaded file and install it in the default location.
 
 # Install Eclipse
 
-The thing you want to install is the Eclipse (Eclipse IDE for Enterprise Java Developers):
-<a href="https://www.eclipse.org/downloads/packages/release/2020-06/r">Download it here</a>
+The thing you want to install is the *Eclipse IDE for Java Developers*:
+<a href="https://www.eclipse.org/downloads/packages/">Download it here</a>
 
-There should be a "Download 64-bit" button for the latest version of
-eclipse.
+Choose the download based on your platform: Windows, macOS, Linux
 
-Then run the downloaded file it will ask which version you'd like to
-install.  Select the Eclipse IDE for EE Developers.
+Then run the downloaded file select: Eclipse IDE for Java Developers
+hich version you'd like to
+install.<br>
+Select  *Eclipse IDE for EE Developers* and then default choices (if any are presented)
 
 After that, just install eclipse following the defaults.
 
@@ -35,9 +36,7 @@ When eclipse starts up, it should ask you where it's eclipse "workspace" should 
 
 You can pick anywhere you like, but:
 
-1. If you've taken CSSE120 (or CSSE220 before), it should probably a
-   new empty directory 'cause otherwise there will be a ton of
-   projects that cause confusion.
+1. Recommended, create a new workspace for CSSE220. For example, *CSSE220Fa21*
 2. You'll need to navigate to this directory to submit assignments so
    you should know where it is
 3. It can be good to put in a place that's synced to the cloud
