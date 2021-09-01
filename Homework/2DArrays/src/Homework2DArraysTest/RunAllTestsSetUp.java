@@ -10,7 +10,7 @@ public class RunAllTestsSetUp {
 	@BeforeClass
 	public static void oneTimeSetUp() {
 		System.out.println("------------------------------------------------------------------");
-		System.out.println("        Running: MapAnd2DArray JUnit Tests");
+		System.out.println("        Running: 2DArray JUnit Tests");
 		System.out.println("------------------------------------------------------------------");
 		System.out.println(" Tests       Tests    Percentage    JUnit Class");
 		System.out.println("Executed     Passed     Passed       Executed");
