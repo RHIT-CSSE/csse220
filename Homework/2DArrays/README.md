@@ -9,9 +9,12 @@
 
 ## Rubric:
 
-- Each of the 4 operations is worth 1 Pass/No-Pass for this assignment
-- All JUnit tests for an operation must succeed in order to earn a Pass for that operation
-- Minimum to Pass this assignment: <br>3 of the 4 2D Array operations must Pass all their JUnit tests
+- All JUnit tests for each operation must succeed in order to earn a 100% for the assignment
+- Your score for this assignment = (PercentageJUnitTestsPassed * 2DArraysTotalPoints)
+- For example:
+  - if PercentageJUnitTestsPassed = 80%
+  - and if 2DArraysTotalPoints = 25
+  - then Your Score = (.80 * 25) = 20 points
 - FunGameOfLife.java is NOT graded
 
 ## To do:
