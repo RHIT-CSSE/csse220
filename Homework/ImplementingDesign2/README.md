@@ -1,4 +1,4 @@
-# ImplementingDesignPart2 -- Team Gradebook
+# ImplementingDesign2 -- Team Gradebook
 
 ## Overview:
 - This exercise is intended to give you practice with implementing a set classes based on a UML diagram of those classes
