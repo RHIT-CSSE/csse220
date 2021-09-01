@@ -8,10 +8,12 @@
 
 ## Rubric:
 
-- Each of the 5 operations is worth 1 Pass/No-Pass for this assignment
-- All JUnit tests for an operation must succeed in order to earn a Pass for that operation
-- Minimum to Pass this assignment: <br>4 of the 5 HashMap operations must Pass all their JUnit tests 
-
+- All JUnit tests for each operation must succeed in order to earn a 100% for the assignment
+- Your score for this assignment = (PercentageJUnitTestsPassed * MapsHWTotalPoints)
+- For example:
+  - if PercentageJUnitTestsPassed = 80%
+  - and if MapsHWTotalPoints = 25
+  - then Your Score = (.80 * 25) = 20 points
 
 ## To do:
 
