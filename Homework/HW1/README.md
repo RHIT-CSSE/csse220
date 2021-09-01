@@ -8,9 +8,9 @@
 ## Rubric:
 
 - All JUnit tests for each operation must succeed in order to earn a 100% for the assignment
-- Your score for this assignment = (PercentagePassBothOperations * HW1TotalPoints)
+- Your score for this assignment = (PercentageJUnitTestsPassed * HW1TotalPoints)
 - For example:
-  - if PercentagePassBothOperations = 80%
+  - if PercentageJUnitTestsPassed = 80%
   - and if HW1TotalPoints = 25
   - then Your Score = (.80 * 25) = 20 points
 
