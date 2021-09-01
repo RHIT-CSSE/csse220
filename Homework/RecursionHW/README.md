@@ -9,10 +9,12 @@
 
 ## Rubric:
 
-- Each of the 15 operations (9 in *recursionPart1* + 3 in *recursionPart2*) is worth 1 Pass/No-Pass for this assignment
-- For an operation's implementation to Pass, all of that operation's JUnit tests must pass
-- To earn a Pass for *recursionPart1*: Any 6 of the 9 JUnit tests for *recursionPart1* operations must Pass
-- To earn a Pass for *recursionPart2*: Any 2 of the 3 JUnit tests for *recursionPart2* operations must Pass 
+- All JUnit tests for each operation must succeed in order to earn a 100% for the assignment
+- Your score for this assignment = (PercentageJUnitTestsPassed * RecursionHWTotalPoints)
+- For example:
+  - if PercentageJUnitTestsPassed = 80%
+  - and if RecursionHWTotalPoints = 25
+  - then Your Score = (.80 * 25) = 20 points
 
 ## To do:
 
