@@ -19,7 +19,7 @@ Run the code and ensure you see the functionality in the video below and then go
 
 To earn a 100% for the assignment you must do the following tasks:
 
-0. (no deliverable) Study the provided code adn watch video explaining project  
+0. (no deliverable) Study the provided code and watch video explaining project  
 1. (35% of grade) Refactor the code for Particle and TagPlayer and create a super class
 2. (35% of grade) Create and complete the ChargedParticle class and modify SimulationViewer and SimulationComponent
 3. (30% of grade) Complete the Person class and modify SimulationViewer and SimulationComponent
@@ -61,7 +61,7 @@ Also, some variables now have more descriptive variables names to increase clari
 
 # Part 1: Redesign (Inheritance)
 After running the simulation and understanding what is happening a bit, take a 
-look at the code in Particle and TagPlayer. There is an *embarassing* amount
+look at the code in Particle and TagPlayer. There is an *embarrassing* amount
 of code duplication in these files. Is there a way we could use inheritance here?
 Make a quick sketch of how you could do this (not required for turning in).
 
