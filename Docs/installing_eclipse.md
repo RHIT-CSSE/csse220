@@ -5,14 +5,13 @@ the steps below.
 
 # Install Java
 
-The thing you want to install is the "Java 8 SE Development Kit"
+The thing you want to install is the *Java SE 16 - JDK Download* <a href="https://www.oracle.com/java/technologies/javase-downloads.html">Download it here</a>
 
-<a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html#license-lightbox">Download it here</a>
+1. Click on *JDK Download*
+2. Scroll until you see the different OS's listed
+3. Select the download for your machine (e.g., *Windows x64 Installer*)
 
-Click the radio button that says "Accept License Agreement".  Then
-select the "Windows x64 version".
-
-Then run the downloaded file and install it in the default location.
+Then run the downloaded file and install it in the default location
 
 # Install Eclipse
 
@@ -26,9 +25,9 @@ hich version you'd like to
 install.<br>
 Select  *Eclipse IDE for EE Developers* and then default choices (if any are presented)
 
-After that, just install eclipse following the defaults.
+After that, just install eclipse following the defaults
 
-# Run eclipse
+# Run Eclipse and create a workspace
 
 After the install, running eclipse should be as simple as double clicking the eclipse icon.
 
