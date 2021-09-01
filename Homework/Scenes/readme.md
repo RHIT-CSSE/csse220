@@ -7,7 +7,27 @@
 
 ## Rubric:
 
-To earn a Pass, at a minimum your submission do the following:
+To earn a 100% for the assignment your app must draw each of the images *similar* to samples provided for Stages 1 - 4 (see below)
+- Percentage breakdown for the assignment's images:
+   - 20% each for images from Stages 1, 2, and 3
+   - 40% for the Stage 4 image 
+   - 100% total
+- Various aspects of the image will be evaluated, including: (1) its shape, (2) color, (3) individual lines,  (4) rotations, and (5) placement
+- Levels of *not similar* based on the 5 aspects listed above:
+   - 1 aspect not similar: -10% for that image
+   - 2 aspects not similar: -25% for that image
+   - 3 aspects not similar: -50% for that image
+   - 4 aspects not similar: -100% for that image
+
+- For example:
+  - if ScenesTotalPoints = 100
+  - then images for Stages 1, 2, and 3 are each worth 20 points and Stage 4 image is worth 40 points<br><br>
+
+  - if your Stage 1 and 2 images are *similar* then you earn 20 points each for these images
+  - if your Stage 3 image has 2 aspects that are *not similar*, then you earn (.75 * 20) = 15 points
+  - if your Stage 4 image has 3 aspects that are *not similar*, then you earn (.50 * 40) = 20 points
+  - In this example, your total score = (20 + 20 + 15 + 20) = 75 points
+
 
 * Part 1:
 1. Stage 1 Draw Houses - *HouseViewer* draws image *similar* to [Image in Stage 1](images/Houses.png)
@@ -133,7 +153,7 @@ Before we start putting together a PineTree, here are some notes about how a Pin
 	
 	        PineTree littleTree = new PineTree(300, 200, 50, 100);
 	        littleTree.drawOn(graphics2);
-        }
+        } // paintComponent
 
 				
 
@@ -314,7 +334,7 @@ Adding little suns!
 
 ## Stage 4a - Create the *SceneViewer*, *SceneComponent*, and *Scene* classes:
 
-In this pat, you'll put it all together!
+In this part, you'll put it all together!
 
 1. Create the SceneViewer and SceneComponent using the same process as for Houses, PineTrees and Suns
    
