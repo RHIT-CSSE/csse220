@@ -78,7 +78,7 @@ public class ReadAndGradeMain {
 		 * TODO 5: Now write all the records to the file named AllGrades.csv.  You can write
 		 * the records in the order you read them (and even do it above in the previous todo 
 		 * section) but if you write the files in alphabetic order of their last names, you
-		 * will receive AWESOME POINTS for doing so.  Remember that a CSV file is a file that
+		 * will earn incentive for doing so.  Remember that a CSV file is a file that
 		 * contains comma separated records.  The first line should be:
 		 * last,first,email,average,letterGrade
 		 * 
