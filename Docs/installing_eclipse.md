@@ -29,9 +29,9 @@ After that, just install eclipse following the defaults
 
 # Run Eclipse and create a workspace
 
-After the install, running eclipse should be as simple as double clicking the eclipse icon.
+After the install, running Eclipse should be as simple as double clicking the Eclipse icon.
 
-When eclipse starts up, it should ask you where it's eclipse "workspace" should be.
+When Eclipse starts up, it should ask you where about an Eclipse *workspace* and where it should be located on your machine
 
 You can pick anywhere you like, but:
 
@@ -41,3 +41,6 @@ You can pick anywhere you like, but:
 3. It can be good to put in a place that's synced to the cloud
    (e.g. Rose Hulman's OneDrive).  That way your code will be
    automatically backed up.
+
+# Make a shortcut to Eclipse
+- You will be starting up Eclipse hundreds of times (if not more) this quarter, save yourself some time by placing a short cut on your machines task bar or startup menu
