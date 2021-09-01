@@ -9,26 +9,21 @@
 
 ## Rubrics:
 
-To earn a Pass for this assignment, you mast earn a Pass for each of these items: 
-- 1) *Individual Part*
-- 2) *Paired Part*
-- 3) *Commenting & Conventions*
+- To earn a 100% for the assignment you must do the following 3 tasks:
+1. (60% of grade) *Individual Part*
+2. (30% of grade) *Paired Part*
+3. (10% of grade) *Commenting & Conventions*
 
 ### 1) Individual Part Rubric
-To earn a Pass for the *Individual Part*, you must do the following:
-- Pass *all* JUnit tests in: TestAddStudent, TestAbsences, TestAddTeam, TestAddGrade
-- Pass *at least* 3 of the 5 JUnit tests in TestGetAverage
-- Pass *at least* 2 of the 3 JUnit tests in TestGetAverageNoGrades
+To earn a 100% for this part, all JUnit tests for the *Individual Part* operations must succeed 
+- Your score for the *Individual Part* of the assignment = (PercentageJUnitTestsPassed * IndividualPartTotalPoints)
 
-
-### 2) Team Part Rubric
-To earn a Pass for the *Paired Part*, you must do the following:
-- Pass *all* JUnit tests in: TestAddStudent, TestAbsences, TestAddTeam, TestAddGrade
-- Pass *at least* 3 of the 5 JUnit tests in TestGetAverage
-- Pass *at least* 2 of the 3 JUnit tests in TestGetAverageNoGrades
+### 2) Paired Part Rubric
+To earn a 100% for this part, all JUnit tests for the *Paired Part* operations must succeed 
+- Your score for the *Paired Part* of the assignment = (PercentageJUnitTestsPassed * PairedPartTotalPoints)
 
 ### 3) Commenting & Conventions Rubric
-To earn a Pass for *Commenting & Conventions*, you must do the following:
+To earn 100% for *Commenting & Conventions*, you must do the following:
 - The code in each file must being well formatted - Use Eclipse's *Format* command on the *Source* menu
 - Use conventional Java variable naming conventions and also provide meaningful variable names
 - Add Javadoc *class-level* comments for each at class: Student, Team, and TeamGradebook
