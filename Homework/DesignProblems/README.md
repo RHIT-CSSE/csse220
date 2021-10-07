@@ -31,20 +31,6 @@ You will complete these and submit to the corresponding 220 Moodle assignment.
 3. A proposed defective Solution B that attempts to solve the problem
 4. Your solution to the problem - provide a design in UML and an explanation
 
-# Rubric
-
-### The breakdown of points is as follows:
-1. Solution A: correctly identifying the principles
-   violated (10% of the total points)
-2. Solution A: correct explanation for why the design violated
-   the previously stated principles (20% of the total points)
-3. Solution B: correctly identifying the principles
-   violated (10% of the total points)
-4. Solution B: correct explanation for why the design violated
-   the previously stated principles (20% of the total points)
-5. Your solution: A uml that presents a design that both fixes the issues in
-   Solution A and Solution B and does not violate any of the
-   other principles covered in class so far (40% of the total points)
 
 ### Proposed Defective Solutions:
 + When identifying the principles that a defective solution has violated, it is vital
@@ -65,3 +51,17 @@ problematic solutions.  If your design is no better, or if it is somehow worse t
 + To earn full credit for this assignment, you must do the following:
   (1) For both Solution A and Solution B, you must identify the OOD Principle violated and must also provide a good English explanation
   (2) Submit your solution which is a design that improves *AT LEAST* one of the two provided solutions by correctly fixing the identified violations
+
+
+### Rubric:
+1. Solution A: correctly identifying the principles
+   violated (10% of the total points)
+2. Solution A: correct explanation for why the design violated
+   the previously stated principles (20% of the total points)
+3. Solution B: correctly identifying the principles
+   violated (10% of the total points)
+4. Solution B: correct explanation for why the design violated
+   the previously stated principles (20% of the total points)
+5. Your solution: A uml that presents a design that both fixes the issues in
+   Solution A and Solution B and does not violate any of the
+   other principles covered in class so far (40% of the total points)
