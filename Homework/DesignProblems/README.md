@@ -40,7 +40,7 @@ You will complete these and submit to the corresponding 220 Moodle assignment.
    the previously stated principles (20% of the total points)
 3. Solution B: correctly identifying the principles
    violated (10% of the total points)
-4. Solution A: correct explanation for why the design violated
+4. Solution B: correct explanation for why the design violated
    the previously stated principles (20% of the total points)
 5. Your solution: A uml that presents a design that both fixes the issues in
    Solution A and Solution B and does not violate any of the
