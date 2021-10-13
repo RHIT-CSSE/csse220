@@ -23,14 +23,14 @@ CSSE220 repo, but for this project you will be managing a repo.
 3. Click "Authorize github"
 4. Join the team number defined by your instructor (or create one with the correct name, i.e. team11 )
 
-# Step 2: Checking out the Repo
+# Step 2: Cloning the Repo
 
 This step should be done by everyone in your team.
 
 1. In your browser, at the top of this page, you should find a green 
 button you can use to copy the URI of this project to your clipboard.
 
-![Checking out repo](https://github.com/RHIT-CSSE/csse220/blob/master/Docs/misc/checkout_repo.PNG)
+[Cloning out repo screenshot](https://github.com/RHIT-CSSE/csse220/blob/master/Docs/misc/checkout_repo.png)
 
 2. Open your Eclipse and go to File > Import > Git > Projects from Git
 3. Select "Clone URI"
@@ -55,9 +55,9 @@ Have *one* member of your team make a change and push it.  Here's how:
 1.  In eclipse, rename your project to have your team number instead of 00.
     Right Click on ArcadeGameGit-00 then Refactor->Rename:
 
-![Checking out repo](https://github.com/RHIT-CSSE/csse220/blob/master/Docs/misc/rename_project.png)
+[Renaming repo step 1 screenshot](https://github.com/RHIT-CSSE/csse220/blob/master/Docs/misc/RenameProjectRefactoringStep1.png)
 
-![Checking out repo](https://github.com/RHIT-CSSE/csse220/blob/master/Docs/misc/rename_project_with_number.PNG)
+[Renaming repo step 2 screenshot](https://github.com/RHIT-CSSE/csse220/blob/master/Docs/misc/RenameProjectRefactoringStep2.png)
 
 2.  Right click on the project folder and select Team > Commit
 3.  Verify that .project appears in your list of "Staged Changes"
