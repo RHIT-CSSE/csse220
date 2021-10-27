@@ -3,8 +3,9 @@
 14
 3
 66
-FOOBAR
+NotAnInteger
 2
 33
+3.14
 9
 98
