@@ -12,7 +12,7 @@ import exceptions.NegativeGradeException;
 public class GradeFileReader {
 	
 	/**
-	 * TODO 3
+	 * TODO 2.1
 	 * This method should take a file name, open the file and read all the grades contained within.
 	 * The grades, when well-formed, should be one or more lines of comma-separated integers.  It
 	 * is possible that the file is NOT well-formed, but more on that below.  When the file is
@@ -34,6 +34,10 @@ public class GradeFileReader {
 	 * well-formed!
 	 * 
 	 * NOTE: A line should NOT end with a comma but with an integer
+	 * 
+	 * NOTE: From the main method, you should test this method incrementally using the simplest
+	 * option of files first, get it working with those and move on to the more complex cases
+	 * only when you have gotten the previous working.
 	 * 
 	 * Example of a well-formed file:
 	 * 80,90,70,90
@@ -60,14 +64,14 @@ public class GradeFileReader {
 	 */
 	public static double readGradeFile(String filename) throws FileNotFoundException, MissingGradeException,
 																			NegativeGradeException {
-		return 0.0;
+		return 0;
 	}
 	
 	/**
 	 * NOTE: Line numbers start at 1 and index values start at 0!
 	 * 
 	 * This method will fix a missing grade AND negative grades depending on the boolean value
-	 * of the "change" parametes
+	 * of the "change" parameters
 	 * 
 	 * This method will do one of two things with a malformed file:
 	 * If change is FALSE:
@@ -191,5 +195,5 @@ public class GradeFileReader {
 		}
 		pw.write(toWrite);
 		pw.close();
-	} 
+	}
 }

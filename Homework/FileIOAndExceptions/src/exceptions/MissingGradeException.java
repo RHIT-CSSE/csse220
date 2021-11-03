@@ -1,11 +1,6 @@
 package exceptions;
 
-	//you will need to write a MissingGradeException class
-  //BE CAREFUL, you will need fields and methods to access
-  //those fields, and exception classes work just about
-  //like any other class other than the fact that they're 
-  //thrown
-
-public class MissingGradeException {
+//Part of TODO 2.2: add to this class
+public class MissingGradeException extends Exception {
 	
 }
