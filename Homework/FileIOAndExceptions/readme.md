@@ -1,46 +1,33 @@
 # FileIOAndExceptions
 
 ## Overview:
-- This assignment will provide practice with reading and writing to several files as well as practice with throwing, catching, and creating new exception types
-- This assignment has a number of different TODO items (see below)
-- This is an individual exercise/assignment
+- This assignment will provide practice with reading and writing to several files as well as practice with throwing, catching and creating new exception types
 
 
 ## Rubric:
-*The five requirements*:<br>
-To earn 100% for this assignment, your final version of the program must (1) scan through all the necessary files, (2) save the relevant information, (3) calculate the average grade for each student,  (4) write out all the correct information to the AllGrades.csv file, and (5) write the correct output to the console. See below for example output.
-
-*Incentive points*:<br>
-While the results are not required to be in any particular order in the final output file, if you order the records in alphabetical order by last name, you can earn incentive points.  
-
-*Not fully functioning*:<br>
-If your program is not fully functioning, individual assessments will be made as to how close your program is to to achieving the 5 requirements listed above. Minimum requirement to earn 60%: All grades/averages must be calculated correctly for all students and written to a file.
+To earn a full credit for this assignment, your final version of the program should scan through all the necessary files, saving the relevant information, calculating the average grade for each student and it should then write out all the correct information to the AllAveragedGrades.csv file as given below as well as have the correct output to the console.  While the results are not required to be in any particular order in the final output file, if you order the records in alphabetical order by last name, you can earn incentive points.  The breakdown of points is as follows:
+- (20% of the points) Completing TODO 1 by: completing the step1ReadNamesAndMakeRecords method, storing the student records and determining which damsel addresses are malformed
+- (60% total) Completing TODO 2 (2.1-2.3) by: 
+	- (20%) completing the GradeFileReader.readGradeFile method to properly return an average of the values read or to throw the proper exception
+	- (20%) completing the step2GetFileAverages method to properly call the readGradeFile method and storing the averages in each student record
+	- (20%) handling the exceptions and correctly fixing the files to then get their averages after the fix
+- (20% of the points) Completing TODO 3 by: completing the step3WriteGradesToFile method that will write records for each student (firstname,lastname,email,average,letterGrade) in a file named AllAveragedGrades.csv.
 
 
 ## IMPORTANT Notes:
-- In Eclipse, import this project (FileIOAndExceptions) from your local copy of the CSSE220 repo
-- THE FIRST THING YOU SHOULD DO after you import the project, is to copy the “grades” directory (located in the project) and place the copy of the “grades” directory with all its files somewhere accessible.  You should leave a copy of that directory with all the corresponding files in the project to another location that is easily accessible.  The reason you want this unchanged directory of files handy (like on your desktop or in an accessible window) is that as you finish this program, you will be required to make some changes to these files in the grades directory.  But your program should work from start to finish with the original grades directory containing the correct output.  Once you start making the changes to the files in your program, every time you run the program, you should copy in the ORIGINAL grades directory to the project to assure it is running properly.  This can simply be done by dragging the grades directory that you have somewhere accessible and drag it directly onto the top line of the project (the line that says “FileIOAndExceptions” in the project view.  This will assure your grades file will be in the correct place.
-- There is a compiler error in the GradeFileReader class that will be fixed once you complete TODO 2.
+- There is a directory named originalFilesDoNotUseOrChange that you should not do anything with at any point.  When you run your program and it runs correctly, it will be changing a number of files.  The files in the originalFilesDoNotUseOrChange will be used to restore the files to their original state every time you run the program.  You do not need to do anything to change the files back since this will be done automatically.
 - You will be creating your own type of exceptions, more on this below
 - There will be some code provided to you, such as how to walk through all the files of a directory
 - You will be dealing with two different types of files, but both will have an almost exact data format.  One type of file will be a CSV file, which stands for Comma Separated Values file, which is essentially a text file with a special format.  The first line in a CSV file is always the header and contains the name of each column separated by commas (each line ends with an entry followed by the “\n” newline character except for the last line in the file, a line that ends in a comma is missing a value (sometimes that can be on purpose)).  There are Eclipse extensions that make it possible to view a CSV file like a spreadsheet in Eclipse, but frankly, you would be better off just viewing it as a text file.  In Eclipse, you can right-click on the CSV file and select Open With -> Text Editor.  In this way, you will see all the commas that would not be displayed in a spreadsheet format.  You can also open CSV files in Microsoft Excel.  When writing to a new csv file, always remember that each line should contain the same number of specific fields/values separated by commas (two commas side-by-side indicates a missing value).  For example, if the header were “first,last,email” an example entry would be “Jane,Doe,doe@gmail.com”.  Note that there is not a comma at the end of the line, but if there were other records to follow, the line would end in a “\n” newline character except the last line in the file.
 - The other file type you will deal with is a simple text ".txt" file.  For the purposes of this assignment, all the entries in the text file are similar to the CSV in that values will be separated by commas.  The primary differences are the extension (.txt vs. .csv) and the text files will not have headers, just a number of values.
 
 ## IMPORTANT HINTS
-There are some very important things to know in this assignment:
-1) You need to know how to loop through all the files contained in a directory.  A short loop to just go through and display all the names of the files in the grades directory would be as follows:
 
-	File dir = new File("grades/");
-	for (File file : dir.listFiles()) {
-		System.out.println(file.getName());
-	}
+When dealing with files, you read in the lines as Strings.  With such strings, often, you need to remove the spaces in front or in back.  A string that has a space in the beginning or the end will not match a string that doesn’t.  To get rid of leading and trailing spaces from a string called str, you can say: str = str.trim();
 
-NOTE: Above, file.getName() only returns the name of the file without any path information.  If you send that to the method to read the file, it would either need the full path, or “grades/“ in front of the file name in order to access the file. 
-NOTE: If you would rather use the full path to the file, you can instead say file.getAbsolutePath()
+If you have a File object, you can use file.getName() get the name of the file and file.getAbsolutePath() to get the full path and file name.  You will typically want to open the file to read it using the full path.
 
-When dealing with files, you read in the lines as Strings.  With such strings, often, you need to remove the spaces in front or in back.  A string that has a space in the beginning or the end will not match a string that doesn’t.  To eliminate leading and trailing spaces from a string called str, you can say: str = str.trim();
-
-Also, you will be reading in the integers from the text files in the grades directory.  The lines will come in as Strings.  If you read in a line at a time, you can use the handy split method of the String class to create an array of the strings that are separated by commas with the commas removed from each.  For example, with the string str = “1,2,3,4”, you can say: String[] splitStr = str.split(“,”);  Then, splitStr[0] is "1", splitStr[1] is "2" and so on.  However, they are STILL String objects.  To convert them to an integer, you can say: int num = Integer.parseInt(splitStr[0]); and then num would be the integer with value 1.  Be careful!  If the string is empty or contains something other than digits only (with a possible negative sign), if you use the parseInt method on a string, you will cause a NumberFormatException to be thrown which indicates it could not convert that string to an int.
+Also, you will be reading in the integers from the text files in the grades directory.  The lines will come in as Strings.  If you read in a line at a time, you can use the handy split method of the String class to create an array of the strings that are separated by commas with the commas removed from each.  For example, with the string str = “1,2,3,4”, you can say: String[] splitStr = str.split(“,”);  Then, splitStr[0] is "1", splitStr[1] is "2" and so on.  However, they are STILL String objects.  To convert them to an integer, you can say: int num = Integer.parseInt(splitStr[0]); and then num would be the integer with value 1.  Be careful!  If the string is empty or contains something other than digits only (with a possible negative sign), if you use the parseInt method on that string, you will get a NumberFormatException which indicates it could not convert that string to an int.
 
 If you have a double variable named number, you can easily round to the nearest 2 decimal place by doing the following:
 
@@ -51,42 +38,39 @@ If you have a double variable named number, you can easily round to the nearest 
 And then number will be rounded to the nearest 2 digits after the decimal.
 
 ## TODOs
-1) As described in the file named ReadAndGradeMain.java under the TODO 1 comment, you are first to go through the file named AllNames.csv.  You may view this file, but it is merely a list of student names and email addresses.  Your first required task is to save all the student names and emails as separate records that you will find grade averages for later, but you should also save all the records that have a malformed email address.  A well formed email address must match “firstname.lastname@rose-hulman.edu”.  In the description for TODO 1, you are given some examples of malformed email addresses.  You will save these records and print them at the end of the program after everything else is finished.
+There are 3 TODOs and they are all explained above the methods in which you will complete them.
 
-2) TODO 2<br> y
-Create two new exception types.  Namely, a MissingGradeException and a NegativeGradeException that will be used in later TODOs.  You can either have a superclass for the two of them, where the superclass extends the basic “Exception” type, or you may just have both of these exceptions extend the “Exception” type directly.  They both will work exactly similar, but it is important to make both exception types separately since they mean something very different.  NOTE: For these exceptions, you will need to track certain information (such as the line number and the position of a value that caused the exception).  When you write the exception classes, they will work just like any other class.  They need fields, you call a constructor (only you say throw new ABCException(…) to do so).  For example, if your MissingGradeException needed to track two Strings (you will likely need something else though), your class would look something like:
+TODO 2.1 is to be completed in the GradeFileReader class in the readGradeFile method.  We recommend using the incremental nature of the option for the user in main to incrementally test this method with the simplest cases first and working your way up.
 
-	public class MissingGradeException extends Exception {
+For TODO 2.3, you will be altering the exception types MissingGradeException and NegativeGradeException.  NOTE: For these exceptions, you will need to track certain information (such as the line number and the position of a value that caused the exception).  When you write the exception classes, they will work just like any other class.  They need fields, you call a constructor (only you say throw new ABCException(…) to do so).  For example, if you had an exception named ABCException needed to track two Strings, an int and a double, your exception class would look something like:
+
+	public class ABCException extends Exception {
 		
 		private String first;
 		private String second;
+		private int third;
+		private double fourth;
 	
-		public MissingGradeException(String a, String b) {
+		public MissingGradeException(String a, String b, int c, double d) {
 			super();
 			this.first = a;
 			this.second = b;
-		} // MissingGradeException
+			this.third = c;
+			this.fourth = d;
+		}
 
-		//other operations, e.g., getters and setters, etc.
+		//other things like getters and setters…
 	}
 
-Once you have this, if your exception needed to save the two strings “abc” and “xyz”, you could say:
+Once you have this, if your exception needed to save the two strings “abc” and “xyz”, an int = 5 and a double = 7.5, you could say:
 
-	throw new MissingGradeException(“abc”, “xyz”);
+	throw new ABCException(“abc”, “xyz”, 5, 7.5);
 
-Then, when the class catches this exception type, it can call the get methods to obtain those values passed as parameters.  NOTE: When you finish this one, it will fix the compiler errors in the GradeFileReader.java file.
+This is basically just like calling any constructor of any class and then returning that object.
 
-3) TODO 3<br> 
-Work in the file named GradeFileReader.java.  The first method in this class is a static method, so it therefore is a utility method that does not require any class fields to work.  The first method is named readGradeFile.  It takes a file name (note, it is very important that the filename have the correct path to the file, more on that below), and reads all the integers separated by commas on several lines and returns the average of those integers as a double type.  The method has a JavaDoc that explains in detail what this method should do.  But if the file is malformed, an exception should be thrown so that the file may be repaired.  A file is malformed if it is missing a value (hence you would throw a MissingGradeException) or a value is negative (hence you would throw a NegativeGradeException).  When you throw these exceptions, you should think about what the exception needs to track so that the caller of this method can access the right data to determine exactly where this problem is in the file so that it may be fixed.  MAKE SURE YOU READ the JavaDoc for the other method that has been written for you.  You will need to utilize it in the next TODO when you catch exceptions and need to make changes to the file.
+Then, when the class catches this exception type, it can call the get methods to get those values.  
 
-4) TODO 4<br> 
-Work in the ReadAndGradeMain.java file, where you will loop through all the files in the grade directory, requesting the readGradeFile to read the file and return the average.  NOTE: The names of the files are the email addresses for the students AS IT IS LISTED in AllNames.csv (if it is malformed email address, the name of the file will be named the same thing) followed by “.txt”  Since these files are all in the “grades” directory, the path to access a file for Jane Doe (with a properly formed email address) would then be “grades/jane.doe@rose-hulman.edu.txt”.  You can also use the absolute path as described above.  Here is where you would catch the different exceptions that may occur in reading the file.  When you catch the exception, you would call the alterGradeInFile method to repair the value in the file that caused the exception.  You will continue this process until the readGradeFile method finally returns an average.  You should then save that average for that student to write to a file in a later TODO.  You can either round to the nearest 2 decimal places as seen below, or just save the double as it is without rounding.  NOTE: You may loop through some files that do not correspond to ANY student in the AllNames.csv file.  If you find such a file (and you will), you do not need to read the file to get an average since there is no student to associate that average with, however, you should save the name of each file that this happens because you will be printing out these file names to the console with the warning that there was no student these grades belonged to.  NOTE: When a file has a missing grade that needed to be repaired, you want to save the name of that file, and every other file name that had missing values.  These file names will be printed at the end of the program in a later TODO.  NOTE: When a file has a negative grade that needed repair, you should save the names of each and every file that had a negative grade because you will print these out in the end as well.  Final NOTE: You can save each student’s name (first and last), email and average in any way you wish, but we would recommend having a StudentRecord class that tracks all the information for one student such as the name, email and average score.
-
-5) TODO 5<br>
-Save all the records you have calculated to a file named AllGrades.csv.  The header for this file should be exactly "last,first,email,average,letterGrade” and for each student that you calculated an average, you should write to this file one line per student.  Note that the breakdowns of all the letter grades are described in the TODO 5 item comment in the file.  NOTE: You may write the records in the file in any order and still pass.  To sort them alphabetically by last name AFTER the fact, you can open the file in Excel and select the last name column and select to sort it alphabetically.  HOWEVER, if your program correctly writes all the records in alphabetical order by last name without having to open it in Excel to sort them, that is eligible for incentive points.  NOTE: Below is what the file AllGrades.csv should contain when your program runs successfully, it is displayed in alphabetical order.
-
-6) TODO 6<br>
- Print out 4 separate lists to the console (exact expected output displayed below), i.e., All files that had no corresponding student record from TODO 4; All records in AllNames.csv that had malformed email addresses; All files that needed repair due to one or more missing grade (if multiple, it should only be listed once in this category, NOT once for each time you found a missing grade in the same file); All files that needed repair due to one or more negative grades.  NOTE: When your program runs successfully, you should be seeing the same output to the console that is displayed below.  
+For TODO 3, now you simply need to save all the records you have calculated to a file named AllAveragedGrades.csv.  The header for this file should be exactly "last,first,email,average,letterGrade” and for each student that you calculated an average, you should write to this file one line per student.  NOTE: You may write the records in the file in any order and still pass.  To get them sorted alphabetically by last name AFTER the fact, you can open the file in Excel and select the last name column and select to sort it alphabetically.  HOWEVER, if your program correctly writes all the records in alphabetical order by last name without having to open it in Excel to sort them, that is eligible for INCENTIVE points.  NOTE: The file named WhatAllAveragedGradeShouldLookLikeWhenFinished.csv is what the file AllAveragedGrades.csv should contain when your program runs successfully.  The file provided is displayed in alphabetical order, but your solution does not need to do such unless you want the incentive points (your file may contain the records in any order for full credit).
 
 
 ## Proper Output
@@ -94,20 +78,24 @@ Save all the records you have calculated to a file named AllGrades.csv.  The hea
 The following are examples of what your files and output should be (note that it is OK if your output displays the file name with the absolute path to the file as well):
 
 _____________________________________________________
-When the program has finished successfully, it should print the following output to the console (and it should match almost exactly, save spacing or something small and similar):
+Below are the separate run-throughs of the program using the different options.  When the program has finished successfully, it should print the following output to the console in the following four cases (and it should match almost exactly, save spacing or something small and similar, and the ORDER of the names and files do not matter, only that they are all present):
 
+	************************************************************************************************
+	Please choose from the following options to test your file reading and averaging:
+	1 - Test with files that have NO issues (small subset in onlyGoodGrades directory)
+	2 - Test with files that have only ONE issue each (small subset in onlyOneIssueGrades directory)
+	3 - Test with files that have MULTIPLE issues (small subset in multipleIssuesGrades directory)
+	4 - Test with ALL files in allGrades directory
+	
+	1
+	
+	
 	Now calculating grades
-	Now writing grades to AllGrades.csv
-	
-	
-	The following files did not apply to any students:
-	.DS_Store
-	charles.stanley@rose-hulman.edu.txt
-	doc.brown@rose-hulman.edu.txt
-	marty.mcfly@rose-hulman.edu.txt
+	Now writing grades to AllAveragedGrades.csv
 	
 	
 	The following records had malformed email addresses:
+	
 	Adams, John, john.adamsrose-hulman.edu
 	Gilmore, Happy, happy.gilmore@gmail.com
 	Ludgate, April, april.ludgate@@rose-hulman.edu
@@ -116,33 +104,174 @@ When the program has finished successfully, it should print the following output
 	
 	
 	The following files had to be repaired due to MISSING grades:
-	andy.bernard@rose-hulman.edu.txt
-	michael.scott@rose-hulman.edu.txt
-	pam.beesly@rose-hulman.edu.txt
-	kieth.pembroke@rose-hulman.edu.txt
-	david.wallace@rose-hulman.edu.txt
-	angela.martin@rose-hulman.edu.txt
-	josh.porter@rose-hulman.edu.txt
-	andy.dwyer@rose-hulman.edu.txt
+	
 	
 	
 	The following files had to be repaired due to NEGATIVE grades:
+	
+	
+	
+	Done.
+	
+________________________________________________
+
+	************************************************************************************************
+	Please choose from the following options to test your file reading and averaging:
+	1 - Test with files that have NO issues (small subset in onlyGoodGrades directory)
+	2 - Test with files that have only ONE issue each (small subset in onlyOneIssueGrades directory)
+	3 - Test with files that have MULTIPLE issues (small subset in multipleIssuesGrades directory)
+	4 - Test with ALL files in allGrades directory
+	
+	2
+	
+	
+	Now calculating grades
+	Now writing grades to AllAveragedGrades.csv
+	
+	
+	The following records had malformed email addresses:
+	
+	Adams, John, john.adamsrose-hulman.edu
+	Gilmore, Happy, happy.gilmore@gmail.com
+	Ludgate, April, april.ludgate@@rose-hulman.edu
+	Saperstein, Jean-Ralphio, jean-ralphio.superstein@rose-hulman.edu
+	Zippy, Johnny, johnny.zippy
+	
+	
+	The following files had to be repaired due to MISSING grades:
+	
+	dan.gore@rose-hulman.edu.txt
+	happy.gilmore@gmail.com.txt
+	kelly.kapoor@rose-hulman.edu.txt
+	
+	
+	The following files had to be repaired due to NEGATIVE grades:
+	
+	leslie.knope@rose-hulman.edu.txt
+	pete.miller@rose-hulman.edu.txt
+	stanley.hudson@rose-hulman.edu.txt
+	tammy.swanson@rose-hulman.edu.txt
+	
+	
+	Done.
+	
+	
+________________________________________________
+
+	************************************************************************************************
+	Please choose from the following options to test your file reading and averaging:
+	1 - Test with files that have NO issues (small subset in onlyGoodGrades directory)
+	2 - Test with files that have only ONE issue each (small subset in onlyOneIssueGrades directory)
+	3 - Test with files that have MULTIPLE issues (small subset in multipleIssuesGrades directory)
+	4 - Test with ALL files in allGrades directory
+	
+	3
+	
+	
+	Now calculating grades
+	Now writing grades to AllAveragedGrades.csv
+	
+	
+	The following records had malformed email addresses:
+	
+	Adams, John, john.adamsrose-hulman.edu
+	Gilmore, Happy, happy.gilmore@gmail.com
+	Ludgate, April, april.ludgate@@rose-hulman.edu
+	Saperstein, Jean-Ralphio, jean-ralphio.superstein@rose-hulman.edu
+	Zippy, Johnny, johnny.zippy
+	
+	
+	The following files had to be repaired due to MISSING grades:
+	
 	andy.bernard@rose-hulman.edu.txt
+	andy.dwyer@rose-hulman.edu.txt
+	angela.martin@rose-hulman.edu.txt
+	david.wallace@rose-hulman.edu.txt
+	josh.porter@rose-hulman.edu.txt
+	kieth.pembroke@rose-hulman.edu.txt
 	meredith.palmer@rose-hulman.edu.txt
 	michael.scott@rose-hulman.edu.txt
+	pam.beesly@rose-hulman.edu.txt
+	roy.anderson@rose-hulman.edu.txt
+	
+	
+	The following files had to be repaired due to NEGATIVE grades:
+	
+	andy.bernard@rose-hulman.edu.txt
+	angela.martin@rose-hulman.edu.txt
 	bobby.newport@rose-hulman.edu.txt
 	jim.halpert@rose-hulman.edu.txt
-	angela.martin@rose-hulman.edu.txt
 	josh.porter@rose-hulman.edu.txt
+	meredith.palmer@rose-hulman.edu.txt
+	michael.scott@rose-hulman.edu.txt
 	roy.anderson@rose-hulman.edu.txt
 	
 	
 	Done.
-
+	
 ________________________________________________
 
+	************************************************************************************************
+	Please choose from the following options to test your file reading and averaging:
+	1 - Test with files that have NO issues (small subset in onlyGoodGrades directory)
+	2 - Test with files that have only ONE issue each (small subset in onlyOneIssueGrades directory)
+	3 - Test with files that have MULTIPLE issues (small subset in multipleIssuesGrades directory)
+	4 - Test with ALL files in allGrades directory
+	
+	4
+	
+	
+	Now calculating grades
+	Now writing grades to AllAveragedGrades.csv
+	
+	
+	The following records had malformed email addresses:
+	
+	Adams, John, john.adamsrose-hulman.edu
+	Gilmore, Happy, happy.gilmore@gmail.com
+	Ludgate, April, april.ludgate@@rose-hulman.edu
+	Saperstein, Jean-Ralphio, jean-ralphio.superstein@rose-hulman.edu
+	Zippy, Johnny, johnny.zippy
+	
+	
+	The following files had to be repaired due to MISSING grades:
+	
+	andy.bernard@rose-hulman.edu.txt
+	andy.dwyer@rose-hulman.edu.txt
+	angela.martin@rose-hulman.edu.txt
+	dan.gore@rose-hulman.edu.txt
+	david.wallace@rose-hulman.edu.txt
+	happy.gilmore@gmail.com.txt
+	josh.porter@rose-hulman.edu.txt
+	kelly.kapoor@rose-hulman.edu.txt
+	kieth.pembroke@rose-hulman.edu.txt
+	meredith.palmer@rose-hulman.edu.txt
+	michael.scott@rose-hulman.edu.txt
+	pam.beesly@rose-hulman.edu.txt
+	roy.anderson@rose-hulman.edu.txt
+	
+	
+	The following files had to be repaired due to NEGATIVE grades:
+	
+	andy.bernard@rose-hulman.edu.txt
+	angela.martin@rose-hulman.edu.txt
+	bobby.newport@rose-hulman.edu.txt
+	jim.halpert@rose-hulman.edu.txt
+	josh.porter@rose-hulman.edu.txt
+	leslie.knope@rose-hulman.edu.txt
+	meredith.palmer@rose-hulman.edu.txt
+	michael.scott@rose-hulman.edu.txt
+	pete.miller@rose-hulman.edu.txt
+	roy.anderson@rose-hulman.edu.txt
+	stanley.hudson@rose-hulman.edu.txt
+	tammy.swanson@rose-hulman.edu.txt
+	
+	
+	Done.
+	
+________________________________________________
 
-When your program finishes, your AllGrades.csv file should look like the following (you may sort the file in Excel, or output in this order to earn incentive points):
+When your program finishes, depending on which option you chose your AllAveragedGrades.csv file should look like the following.  The output below is with running the program with option 4 to average for all the files, if you use the other options, your file will look different than below:
 
 	last,first,email,average,letterGrade
 	Adams,John,john.adamsrose-hulman.edu,94.0,A
@@ -220,7 +349,7 @@ When your program finishes, your AllGrades.csv file should look like the followi
 	White,Devon,devon.white@rose-hulman.edu,78.33,C
 	Wyatt,Ben,ben.wyatt@rose-hulman.edu,78.11,C
 	Zippy,Johnny,johnny.zippy,78.0,C
-
+	
 _____________________________________________________________
 
 
