@@ -1,46 +1,32 @@
 package comparable;
 
-import java.util.ArrayList;
-import java.util.Collections;
 
 /**
- * A person class, designed for use with comparable.
+ * A Person class, designed for use with comparable.
  * 
- * TODO: Modify this class to be sortable.
+ * TODO #2: Modify this class to implement Comparable<Person>
  * 
- * People should be sorted first by their last name, then by their age.
- * So the output of the sample main should be:
+ * People objects should be sorted in non-decreasing order by
+ *  1) their last name
+ *  2) their age, but only if the 2 People objects begin compared have the same last name
  * 
- * [Anders - 45, Li - 19, Li - 22, Smith - 18, Smith - 20]
+ * So the output of the driver main should be:
+ *  [(Anders, 45), (Li, 22), (Li, 19), (Smith, 20), (Smith, 18)]
  * 
- * @author hewner
+ * @author CSSE Faculty
  *
  */
-public class Person {
-	
+public class Person {	
 	private String lastName;
 	private int age;
 	
 	public Person(String lastName, int age) {
 		this.lastName = lastName;
 		this.age = age;
-	}
+	} // Person
 	
 	public String toString() {
-		return this.lastName + " - " + age;
-	}
-	
-	public static void main(String[] args) {
-		ArrayList<Person> people = new ArrayList<Person>();
-		people.add(new Person("Smith", 18));
-		people.add(new Person("Li", 22));
-		people.add(new Person("Smith", 20));
-		people.add(new Person("Li", 19));
-		people.add(new Person("Anders", 45));
-		
-		Collections.sort(people);
-		
-		System.out.println(people);
-	}
+		return "("+this.lastName + ", " + age +")";
+	} // toString
 
 }
