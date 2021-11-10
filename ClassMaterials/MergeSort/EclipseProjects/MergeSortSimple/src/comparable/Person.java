@@ -4,7 +4,7 @@ package comparable;
 /**
  * A Person class, designed for use with comparable.
  * 
- * TODO #2: Modify this class to implement Comparable<Person>
+ * TODO #2: Modify this class so that is implements Comparable<Person>
  * 
  * People objects should be sorted in non-decreasing order by
  *  1) their last name

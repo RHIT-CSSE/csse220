@@ -4,11 +4,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * An example class for implementing comparable.
+ * A Person class, designed for use with comparable.
  * 
- * Rectangles should be sorted by area in increasing order.
+ * TODO #2: Modify this class so that it implements Comparable<Rectangle>
  * 
- * @author hewner
+ * Rectangle objects should be sorted in non-decreasing order by the rectangle's area
+ * 
+ * So the output of the driver main should be:
+ *  [(3, 3), (1, 20), (5, 5)]
+ * 
+ * @author CSSE Faculty
  *
  */
 public class Rectangle {
@@ -17,24 +22,14 @@ public class Rectangle {
 	public Rectangle(int width, int height) {
 		this.width = width;
 		this.height = height;
-	}
+	} // Rectangle
 	
 	public int getArea() {
-		return this.width*this.height;
-	}
+		return this.width * this.height;
+	} // getArea
 	
 	public String toString() {
-		return this.width + "x" + this.height;
-	}
+		return "(" + this.width + ", " + this.height + ")";
+	} // toString
 	
-	public static void main(String[] args) {
-		ArrayList<Rectangle> rects = new ArrayList<Rectangle>();
-		rects.add(new Rectangle(5,5));
-		rects.add(new Rectangle(1,20));
-		rects.add(new Rectangle(3,3));
-		
-		Collections.sort(rects);
-		
-		System.out.println(rects);
-	}
 }
