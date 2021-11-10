@@ -21,12 +21,12 @@ public class PersonDriver {
 		// TODO #1 - uncomment the following line, then go to Person.java and do TODO #2
 		// Collections.sort(this.people);
 		System.out.println(" After sorting: " + this.people);
-	}
+	} // runApp
 	
 
 	public static void main(String[] args) {
 		PersonDriver app = new PersonDriver();
 		app.runApp();
-	}
+	} // main
 
 }
