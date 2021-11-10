@@ -28,7 +28,7 @@ public class ReadAndGradeMain {
 	public ArrayList<String> getEmailWarnings() {return this.emailWarnings;}
 	public ArrayList<String> getFilesWithMissing() {return this.filesWithMissing;}
 	public ArrayList<String> getFilesWithNegative() {return this.filesWithNegative;}
-	
+	public HashMap<String, StudentRecord> getFilenameToStudentRecord() {return this.filenameToStudentRecord;}
 	
 	/**
 	 * You do not need to change ANYTHING in the main method!
@@ -72,9 +72,11 @@ public class ReadAndGradeMain {
 		scanInput.close();
 		
 		//TODO 2 (2.1 - 2.3): complete the method named step2GetFileAverages()
+		System.out.println("\n\nNow calculating grades");
 		fileProg.step2GetFileAverages(dirs[selection-1]);
 		
 		//TODO 3: complete the method named step3WriteGradesToFile()
+		System.out.println("Now writing grades to AllAveragedGrades.csv");
 		fileProg.step3WriteGradesToFile();
 		
 		
@@ -135,6 +137,13 @@ public class ReadAndGradeMain {
 	 * jane.smith@rose-hulman.com
 	 * jane.smith@rosehulman.edu
 	 * jane.smith@gmail.com 
+	 * 
+	 * When you find a malformed email address, you should add the student's information to
+	 * the emailWarnings ArrayList.  You should add the following:
+	 * "lastName, firstName, malformedEmailAddress"
+	 * 
+	 * For example: "Smith, Jane, janesmith@rose-hulman.edu" is a string you would add to
+	 * emailWarnings.
 	 * 
 	 * 
 	 * 3) For every student record, there will later be a file for that student where we will
@@ -233,8 +242,6 @@ public class ReadAndGradeMain {
 	 * @param directory - the directory in which all the files to read from exist
 	 */
 	public void step2GetFileAverages(String directory) {
-		System.out.println("\n\nNow calculating grades");
-		
 		//The following will loop through all the files, do NOT change the next 4 lines
 		File dir = new File(directory);
 		for (File file : dir.listFiles()) {
@@ -282,7 +289,7 @@ public class ReadAndGradeMain {
 	 */
 	public void step3WriteGradesToFile() {
 		String outputFilename = "AllAveragedGrades.csv";
-		System.out.println("Now writing grades to " + outputFilename);
+		
 		
 	}
 	
