@@ -69,7 +69,7 @@ public class TestStep1ReadNamesAndMakeRecords {
 	public void testAllNamesEmailWarnings() {
 		numberOfTests++;
 		ArrayList<String> warnings = this.fileProg.getEmailWarnings();
-		
+		assertTrue(warnings.size() > 0);
 		for(String warning : warnings) {
 			String[] splitWarn = warning.split(",");
 			assertEquals(3, splitWarn.length);
@@ -79,7 +79,7 @@ public class TestStep1ReadNamesAndMakeRecords {
 			
 			boolean found = false;
 			for(String exp : this.expectedWarnings) {
-				if(exp.contains(last) && exp.contains(first) && exp.contains(email)) {
+				if(exp.contains(last) && exp.contains(first) && exp.contains(email)) { 
 					found = true;
 					break;
 				}
