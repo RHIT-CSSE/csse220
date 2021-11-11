@@ -27,6 +27,12 @@ public class RectangleDriver {
 		// TODO #1 - uncomment the following line, then go to Rectangle.java and do TODO #2
 //		Collections.sort(this.rectangles);
 		System.out.println(" After sorting: " + this.rectangles);	
+		
+		// TODO #3 - declare a variable called byCircumference using type Comparitor<Rectangle>, make it sort by non-increasing circumference
+		// Then uncomment the following line
+//		Collections.sort(this.rectangles, byCircumference);
+		
+		System.out.println("After sorting by circumference (largest first) : " + this.rectangles);
 	} // runApp
 	
 	

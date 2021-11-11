@@ -2,6 +2,7 @@ package comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 
 public class PersonDriver {
@@ -20,6 +21,13 @@ public class PersonDriver {
 		// TODO #1 - uncomment the following line, then go to Person.java and do TODO #2
 //		Collections.sort(this.people);
 		System.out.println(" After sorting: " + this.people);
+		
+		// TODO #3 - declare a variable called byAgeOnly using type Comparitor<Person>, make it sort by non-increasing age only
+		// Then uncomment the following line
+//		Collections.sort(this.people, byAgeOnly);
+		
+		System.out.println("After sorting by age only (oldest first): " + this.people);
+
 	} // runApp
 	
 

@@ -26,7 +26,7 @@ public class Person {
 	} // Person
 	
 	public String toString() {
-		return "("+this.lastName + ", " + age +")";
+		return "("+ this.lastName + ", " + age + ")";
 	} // toString
 
 }
