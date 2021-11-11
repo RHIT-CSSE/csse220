@@ -3,55 +3,49 @@ package mergesort;
 public class StringMergeSort {
 	
 	/**
-	 * 
-	 * Uses merge sort to sort the letters within a string.
-	 * 
-	 * For example, bdac becomes abcd
-	 * ddbabad becomes aabbddd
-	 * 
-	 * You're more than welcome attempting to look at the code
-	 * in MergeSort.java from SortingAndSearching but don't
-	 * copy it and it may be easier to just start from
-	 * scratch.
-	 * 
-	 * You shouldn't convert the strings to arrays.  Just
-	 * use substring, charAt, and +...that's everything
-	 * that's required.
-	 * 
-	 * Note that it's possible to compare characters
-	 * with > and <.  So you can say
-	 * 
-	 * if(firstHalfSorted.charAt(0) < secondHalfSorted.charAt(0))
-	 * 
-	 * You'll want this function to be recursive...trust me.
-	 * 
-	 * @param input
-	 * @return
+	 * ensures String returned contains all of s1 and s2's characters and is sorted
+	 * @param s1 input String
+	 * @param s2 input String
+	 * <br>requires: sorted(s1) and sorted(s2)
+	 * @return String retVal = permutation(s1 + s2) and sorted(retVal)
 	 */
-	public static String stringMergeSort(String input) {
-		
-		if(input.length() <= 1) {
-			return input;
-		}
-		
-		int cutPoint = input.length() / 2;
-		String firstHalf = input.substring(0,cutPoint);
-		String secondHalf = input.substring(cutPoint);
-		String firstHalfSorted = stringMergeSort(firstHalf);
-		String secondHalfSorted = stringMergeSort(secondHalf);
-		String output = "";
-		
-		while(firstHalfSorted.length() > 0 && secondHalfSorted.length() > 0) {
-			if(firstHalfSorted.charAt(0) < secondHalfSorted.charAt(0)) {
-				output += firstHalfSorted.charAt(0);
-				firstHalfSorted = firstHalfSorted.substring(1);
+	private static String mergeStrings(String s1, String s2) {
+		String retVal = "";
+		while(s1.length() > 0 && s2.length() > 0) {
+			if(s1.charAt(0) < s2.charAt(0)) {
+				retVal += s1.charAt(0);
+				s1 = s1.substring(1);
 			} else {
-				output += secondHalfSorted.charAt(0);
-				secondHalfSorted = secondHalfSorted.substring(1);
-			}
-		}
-		
-		return output + firstHalfSorted + secondHalfSorted;
-	}
+				retVal += s2.charAt(0);
+				s2 = s2.substring(1);
+			} // end if
+		} // end while
+		// Fact either |s1| = 0 or |s2| = 0
+		return retVal + s1 + s2;
+	} // mergeStrings
+	
+	/**
+	 * ensures: String returned is a sorted version of inputString
+	 * @param inputString
+	 * @return String retVal = permutation(input) and sorted(retVal)
+	 * <br>requires: input != null
+	 * <br>decreasing: |inputString|
+	 */
+	public static String stringMergeSort(String inputString) {
+
+		if (inputString.length() < 2) {
+			// at base case
+			return inputString;
+		} else {
+			// not at base case
+			// fact: |inputString| >= 2
+			int midPoint = inputString.length() / 2;
+
+			String firstHalfSorted = stringMergeSort(inputString.substring(0, midPoint));
+			String secondHalfSorted = stringMergeSort(inputString.substring(midPoint));
+
+			return mergeStrings(firstHalfSorted, secondHalfSorted);
+		} // end if
+	} // stringMergeSort
 	
 }
