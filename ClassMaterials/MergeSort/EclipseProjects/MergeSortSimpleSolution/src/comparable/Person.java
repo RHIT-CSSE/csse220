@@ -1,56 +1,58 @@
 package comparable;
 
-import java.util.ArrayList;
-import java.util.Collections;
 
 /**
- * A person class, designed for use with comparable.
+ * A Person class, designed for use with comparable.
  * 
- * TODO: Modify this class to be sortable.
+ * TODO #2: Modify this class so that is implements Comparable<Person>
  * 
- * People should be sorted first by their last name, then by their age.
- * So the output of the sample main should be:
+ * People objects should be sorted in non-decreasing order by
+ *  1) their last name
+ *  2) their age, but only if the 2 People objects being compared have the same last name
  * 
- * [Anders - 45, Li - 19, Li - 22, Smith - 18, Smith - 20]
+ * So the output of the driver main should be:
+ *  [(Anders, 45), (Li, 22), (Li, 19), (Smith, 20), (Smith, 18)]
  * 
- * @author hewner
+ * @author CSSE Faculty
  *
  */
-public class Person implements Comparable<Person> {
-	
+public class Person implements Comparable<Person> {	
 	private String lastName;
 	private int age;
 	
 	public Person(String lastName, int age) {
 		this.lastName = lastName;
 		this.age = age;
-	}
+	} // Person
 	
 	public String toString() {
-		return this.lastName + " - " + age;
-	}
-	
+		return "("+ this.lastName + ", " + age + ")";
+	} // toString
+
 	@Override
-	public int compareTo(Person other) {
-		
-		if(this.lastName.equals(other.lastName)) {
-			return this.age - other.age;
-		}
-		return this.lastName.compareTo(other.lastName);
+	public int compareTo(Person o) {
+		// TODO Auto-generated method stub
+		// a.compareTo(b)  a < b must return -1
+		// a == b 0
+		// a > b 1
+		if (this.lastName.compareTo(o.lastName) == 0) {
+			// fact: lastNames are equal
+			return this.age - o.age;
+		} else {
+			return this.lastName.compareTo(o.lastName);
+		} // end if
 	}
-	
-	
-	public static void main(String[] args) {
-		ArrayList<Person> people = new ArrayList<Person>();
-		people.add(new Person("Smith", 18));
-		people.add(new Person("Li", 22));
-		people.add(new Person("Smith", 20));
-		people.add(new Person("Li", 19));
-		people.add(new Person("Anders", 45));
-		
-		Collections.sort(people);
-		
-		System.out.println(people);
+
+	public int getAge() {
+		return this.age;
 	}
 
 }
+
+
+
+
+
+
+
+

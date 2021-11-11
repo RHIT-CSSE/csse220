@@ -1,45 +1,42 @@
 package comparable;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
 /**
- * An example class for implementing comparable.
+ * A Person class, designed for use with comparable.
  * 
- * Rectangles should be sorted by area in increasing order.
+ * TODO #2: Modify this class so that it implements Comparable<Rectangle>
  * 
- * @author hewner
+ * Rectangle objects should be sorted in non-decreasing order by the rectangle's area
+ * 
+ * So the output of the driver main should be:
+ *  [(3, 3), (1, 20), (5, 5)]
+ * 
+ * @author CSSE Faculty
  *
  */
-public class Rectangle implements Comparable<Rectangle>{
+public class Rectangle implements Comparable<Rectangle> {
 	private int width, height;
 	
 	public Rectangle(int width, int height) {
 		this.width = width;
 		this.height = height;
-	}
+	} // Rectangle
 	
 	public int getArea() {
-		return this.width*this.height;
-	}
+		return this.width * this.height;
+	} // getArea
 	
 	public String toString() {
-		return this.width + "x" + this.height;
-	}
-	
-	public static void main(String[] args) {
-		ArrayList<Rectangle> rects = new ArrayList<Rectangle>();
-		rects.add(new Rectangle(5,5));
-		rects.add(new Rectangle(1,20));
-		rects.add(new Rectangle(3,3));
-		
-		Collections.sort(rects);
-		
-		System.out.println(rects);
-	}
+		return "(" + this.width + ", " + this.height + ")";
+	} // toString
 
 	@Override
-	public int compareTo(Rectangle other) {
-		return this.getArea() - other.getArea();
-	}
+	public int compareTo(Rectangle o) {
+		// TODO Auto-generated method stub
+		return this.getArea() - o.getArea();
+	} // compareTo
+
+	public int getCircumference() {
+		return (2 * this.width) + (2 * this.height);
+	} // getCircumference
+	
 }
