@@ -4,7 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-
+/**
+ * Driver class containing main for running and testing 
+ * Collections.sort on the Person class
+ * 
+ * @author CSSE Faculty
+ *
+ */
 public class PersonDriver {
 	private ArrayList<Person> people;
 	
@@ -22,7 +28,8 @@ public class PersonDriver {
 //		Collections.sort(this.people);
 		System.out.println(" After sorting: " + this.people);
 		
-		// TODO #3 - declare a variable called byAgeOnly using type Comparitor<Person>, make it sort by non-increasing age only
+		// TODO #3 - declare a variable called byAgeOnly using type Comparator<Person>, 
+		// make it sort by non-increasing age only
 		// Then uncomment the following line
 //		Collections.sort(this.people, byAgeOnly);
 		

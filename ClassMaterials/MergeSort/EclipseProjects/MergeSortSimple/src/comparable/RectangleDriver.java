@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * An example class for implementing comparable.
+ * Driver class containing main for running and testing 
+ * Collections.sort on the Rectangle class
  * 
- * Rectangles should be sorted by area in increasing order.
- * 
- * @author hewner
+ * @author CSSE Faculty
  *
  */
 public class RectangleDriver {
@@ -28,7 +27,7 @@ public class RectangleDriver {
 //		Collections.sort(this.rectangles);
 		System.out.println(" After sorting: " + this.rectangles);	
 		
-		// TODO #3 - declare a variable called byCircumference using type Comparitor<Rectangle>, make it sort by non-increasing circumference
+		// TODO #3 - declare a variable called byCircumference using type Comparator<Rectangle>, make it sort by non-increasing circumference
 		// Then uncomment the following line
 //		Collections.sort(this.rectangles, byCircumference);
 		

@@ -4,14 +4,14 @@ package comparable;
 /**
  * A Person class, designed for use with comparable.
  * 
- * TODO #2: Modify this class so that is implements Comparable<Person>
+ * TODO #2: Modify this class so that it implements Comparable<Person>
  * 
  * People objects should be sorted in non-decreasing order by
  *  1) their last name
- *  2) their age, but only if the 2 People objects begin compared have the same last name
+ *  2) their age, but only if the 2 People objects being compared have the same last name
  * 
  * So the output of the driver main should be:
- *  [(Anders, 45), (Li, 22), (Li, 19), (Smith, 20), (Smith, 18)]
+ *  [(Anders, 45), (Li, 19), (Li, 22), (Smith, 18), (Smith, 20)]
  * 
  * @author CSSE Faculty
  *

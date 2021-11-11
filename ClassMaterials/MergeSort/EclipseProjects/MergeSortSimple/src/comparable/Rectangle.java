@@ -1,7 +1,5 @@
 package comparable;
 
-import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * A Person class, designed for use with comparable.
