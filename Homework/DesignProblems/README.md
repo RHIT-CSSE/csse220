@@ -17,7 +17,7 @@ These are available on the 220 Moodle site as Word documents, but can be downloa
 + [DesignProbHW2 - Team Gradebook](DP2_TeamGradebook.docx)
 + [DesignProbHW3 - Spaceships](DP3_Spaceships.docx)
 + [DesignProbHW4 - Team Budget](DP4_TeamBudget.docx)
-+ [DesignProbHW5 - Sudoku](DP5_DP5-TagAndInventory.docx)
++ [DesignProbHW5 - Tag and Inventory](DP5_DP5-TagAndInventory.docx)
 
 # Turn-In Instructions 
 
