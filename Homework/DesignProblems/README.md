@@ -13,11 +13,11 @@ There are solutions with commentary and good designs provided. Use these to eval
 
 These are available on the 220 Moodle site as Word documents, but can be downloaded here as PDFs as well.
 
-+ [DesignProbHW1 - Online Quizzes](DesignProblemHW1_OnlineQuizzes.pdf)
-+ [DesignProbHW2 - Team Gradebook](DesignProblemHW2_TeamGradebook.pdf)
-+ [DesignProbHW3 - Spaceships](DesignProblemHW3_Spaceships.pdf)
-+ [DesignProbHW4 - Team Budget](DesignProblemHW4_TeamBudget.pdf)
-+ [DesignProbHW5 - Sudoku](DesignProblemHW5_Sudoku.pdf)
++ [DesignProbHW1 - Online Quizzes](DP1_OnlineQuizzes.docx)
++ [DesignProbHW2 - Team Gradebook](DP2_TeamGradebook.docx)
++ [DesignProbHW3 - Spaceships](DP3_Spaceships.docx)
++ [DesignProbHW4 - Team Budget](DP4_TeamBudget.docx)
++ [DesignProbHW5 - Sudoku](DP5_DP5-TagAndInventory.docx)
 
 # Turn-In Instructions 
 
