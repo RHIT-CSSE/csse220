@@ -1,0 +1,29 @@
+@startuml
+hide empty members
+
+class RotateComponent  {
+	-{static} serialVersionUID: long
+	-drawUnrotatedRect(g2d: Graphics2D): void
+	-drawCenteredFace(g2d: Graphics2D, faceLocX: int, faceLocY: int, faceWidth: int, faceHeight: int): void
+	-drawLeftEye(g2d: Graphics2D, faceLocX: int, faceLocY: int): void
+	-drawRightEye(g2d: Graphics2D, faceLocX: int, faceLocY: int): void
+	-drawNose(g2d: Graphics2D, faceLocX: int, faceLocY: int): void
+	#paintComponent(g: Graphics): void
+}
+
+class RotateViewer  {
+	+{static} COMPONENT_WIDTH: int
+	+{static} COMPONENT_HEIGHT: int
+	-rotateFrame: JFrame
+	-runApp(): void
+	+{static} main(args: String[]): void
+}
+
+class JFrame {}
+class JComponent { }
+
+
+RotateComponent -up-|> JComponent 
+RotateViewer -down-> JFrame
+RotateViewer -right-> RotateComponent
+@enduml

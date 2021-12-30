@@ -1,0 +1,12 @@
+@startuml
+hide empty members
+
+class EmptyFrameViewer {
+	-runApp(): void
+	+{static} main(args: String[]): void
+}
+
+class JFrame { }
+
+EmptyFrameViewer -down-> JFrame
+@enduml
