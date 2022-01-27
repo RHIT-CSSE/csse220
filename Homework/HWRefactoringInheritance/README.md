@@ -1,4 +1,4 @@
-# RefactoringInheritance: Redesign, Refactor, Inherit and Extend!
+# HWRefactoringInheritance
 
 ## Overview:
 - In this assignment you are given some code that is poorly designed
@@ -7,7 +7,7 @@
 
 ## To do:
 
-1. In Eclipse, import this project (RefactoringInheritance) from your local copy of the CSSE220 repo
+1. In Eclipse, import this project (HWRefactoringInheritance) from your local copy of the CSSE220 repo
 2. Design (Part 1) Come up with an improved design that uses inheritance to reduce code duplication
 3. Refactor (Part 2) Implement the new design by refactoring code
 4. Extend (Part 3 + 4) Add on additional functionality using inherited functionality from the recently improved classes/design
@@ -31,10 +31,7 @@ for both Exam2 and getting your project started.
 
 Starting UML for the classes we want to focus our attention on:
 
-![UML Image](http://www.plantuml.com/plantuml/png/nP0nRiCm34LtdaAZUmfdRAO6RO4c8qlzs49foQ0a5q7WkrSEKcJlqeNa-yF70tUvi9KwAObopkxGA8Z2NKaG2-nutoSozg5cagJ9Q84Ujt6YAIrucm5FtlZx9NPkS4zKPyy5dVDXQfGMcFASFq8PEvVA26lfPwfHy61QxnBlF1oKBx3_i90HyhK_DuS1_X6lzFiXM4xnIdtV_wa_v6Umbl7IRVS-dY45_WQlaAtZHYlj47sTz0S0)
-
-[source plantuml](http://www.plantuml.com/plantuml/uml/nP0nRiCm34LtdaAZUmfdRAO6RO4c8qlzs49foQ0a5q7WkrSEKcJlqeNa-yF70tUvi9KwAObopkxGA8Z2NKaG2-nutoSozg5cagJ9Q84Ujt6YAIrucm5FtlZx9NPkS4zKPyy5dVDXQfGMcFASFq8PEvVA26lfPwfHy61QxnBlF1oKBx3_i90HyhK_DuS1_X6lzFiXM4xnIdtV_wa_v6Umbl7IRVS-dY45_WQlaAtZHYlj47sTz0S0)
-
+![UML Image](HWRefactoringInheritanceStartingUML.png)
 
 The UML shown above shows you some of the classes in the system you are given.  Here's a breakdown of each:
 
