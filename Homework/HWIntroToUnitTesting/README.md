@@ -1,4 +1,4 @@
-# Intro To Unit Testing
+# HWIntroToUnitTesting
 
 ## Overview:
 - Intro To Unit Testing will provide practice at creating JUnit unit tests for preexisting code
@@ -11,7 +11,7 @@ To earn a 100% for the assignment:
 3. Each JUnit test operation must contain 4 test cases (see details below in the Additional Notes section)
 
 ## To Do:
-1. In Eclipse, import this project (IntroToUnitTesting) from your local copy of the CSSE220 repo
+1. In Eclipse, import this project (HWIntroToUnitTesting) from your local copy of the CSSE220 repo
 2. Create a JUnit test file called *TestThisClassTest.java* (see screen shot below)
 3. In *TestThisClassTest.java*, create unit test operations for the 4 operations that appear in *TestThisClass.java*. 
 <br>These unit tests must reveal which of the 4 operations are defective
