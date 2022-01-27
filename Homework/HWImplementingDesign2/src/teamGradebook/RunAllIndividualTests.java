@@ -10,12 +10,13 @@ import teamGradebookIndividualTests.TestAbsences;
 import teamGradebookIndividualTests.TestAddGrade;
 import teamGradebookIndividualTests.TestAddStudent;
 import teamGradebookIndividualTests.TestAddTeam;
+import teamGradebookIndividualTests.TestAllToStrings;
 import teamGradebookIndividualTests.TestGetAverage;
 import teamGradebookIndividualTests.TestGetAverageNoGrades;
 
 @RunWith(Suite.class)
 @SuiteClasses({ RunAllTestsSetUp.class, TestAddStudent.class, TestAbsences.class, TestAddTeam.class, TestAddGrade.class,
-		TestGetAverage.class, TestGetAverageNoGrades.class, RunAllTestsTearDown.class })
+		TestGetAverage.class, TestGetAverageNoGrades.class, TestAllToStrings.class, RunAllTestsTearDown.class })
 
 public class RunAllIndividualTests {
 	static public int allTestsPassedCount = 0;
