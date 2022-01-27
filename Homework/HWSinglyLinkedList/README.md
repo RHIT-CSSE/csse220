@@ -1,4 +1,4 @@
-# Singly Linked List
+# HWSinglyLinkedList
 
 ## Overview:
 - This exercise provides you with the opportunity to implement and use a singly linked list
@@ -22,7 +22,7 @@
 
 ## To do:
 
-1. In Eclipse, import this project (SinglyLinkedList) from your local copy of the CSSE220 repo
+1. In Eclipse, import this project (HWSinglyLinkedList) from your local copy of the CSSE220 repo
 2. Implement the 7 operations in *SinglyLinkedList.java* found in the *sll* package
 3. Run the included *RunAllTests.java* in the *sll* package to ensure your solution passes all the unit tests
 3. Implement the 7 operations in *Algorithms.java* found in the *sllAlgorithms* package
