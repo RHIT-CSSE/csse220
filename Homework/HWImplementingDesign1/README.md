@@ -1,4 +1,4 @@
-# Implementing Design 1
+# HWImplementingDesign1
 
 ## Overview:
 - This exercise is intended to give you practice with implementing the set classes based on a UML diagram of those classes
@@ -10,7 +10,7 @@ Online quizzer: Is an online quiz application for teachers who write quizzes and
 
 ## To do:
 
-1. In Eclipse, import this project (ImplementingDesign1) from your local copy of the CSSE220 repo
+1. In Eclipse, import this project (HWImplementingDesign1) from your local copy of the CSSE220 repo
 2. In the file *QuizMain.java* there are a number of TODOs. These will have you implement the classes *QuizMain.java*, *Question.java*, and *Quiz.java*
 3. Implement *QuizMain.java*, *Question.java*, and *Quiz.java* based on your graded *Design Problems 1* UML or an alternative, e.g., the UML design presented in class
 4. Test your implementation by running the *main* found in *QuizMain.java*. Make your output to the console window look similar to the that shown in section **Sample Output** (below)
