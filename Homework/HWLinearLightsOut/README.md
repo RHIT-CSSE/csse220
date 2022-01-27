@@ -1,4 +1,4 @@
-# Ball/Strike Counter and Linear Lights Out
+# HWLinearLightsOut
 
 ## Overview:
 - This exercise will provide more practice with event based programming in Java Swing
@@ -25,7 +25,7 @@ To earn a 100% for the assignment you must do the following 3 tasks:
 
 ## To Do:
 
-1. In Eclipse, import this project (LinearLightsOut) from your local copy of the CSSE220 repo
+1. In Eclipse, import this project (HWLinearLightsOut) from your local copy of the CSSE220 repo
 2. Implement *Part 1 - Ball/Strike Counter*
 3. Implement *Part 2 - Linear Lights Out*
 3. Include Javadoc comments in for all your classes - see Documentation Requirements section (above)
