@@ -1,4 +1,4 @@
-﻿# Scenes Assignment
+﻿# HWScenes 
 
 ## Overview:
 - This exercise is intended to give you practice with Java Swing graphics this will help you with the term project
@@ -40,6 +40,13 @@ To earn a 100% for the assignment your app must draw each of the images *similar
 To earn a Pass for the *Bonus*, which is recorded as a separate assignment, your implementation must draw [this image](images/FacesWhenFinished.png)
 
 ## To do
+
+1. In Eclipse, import this project (HWScenes) from your local copy of the CSSE220 repo
+2. Stage 0
+3. Stage 1
+4. Stage 2a and 2b
+5. Stage 3a, 3b, and 3c
+6. Stage 4a, 4b, and 4c
 
 
 ## Stage 0 - Study your goal:
