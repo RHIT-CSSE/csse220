@@ -1,4 +1,4 @@
-# Twelve Problems
+# HWTwelveProblems
 
 ## Overview:
 - This exercise is intended to give you practice in Java with various algorithms learned in the previous course CSSE120 
@@ -16,7 +16,7 @@
 
 ## To do:
 
-1. In Eclipse, import this project (TwelveProblems) from your local copy of the CSSE220 repo
+1. In Eclipse, import this project (HWTwelveProblems) from your local copy of the CSSE220 repo
 2. Implement the 12 operations in *TwelveProblems.java*. 
 3. Run the included JUnit tests to ensure your solution passes all the unit tests - do this by running *RunAllTests.java*
 4. Upload your completed *TwelveProblems.java*.  file to the TwelveProblems Moodle Dropbox
