@@ -1,4 +1,4 @@
-# MapsHW
+# HWMaps
 
 ## Overview:
 - This exercise will provide practice with the HashMap data structure
@@ -17,7 +17,7 @@
 
 ## To do:
 
-1. In Eclipse, import this project (MapsHW) from your local copy of the CSSE220 repo
+1. In Eclipse, import this project (HWMaps) from your local copy of the CSSE220 repo
 2. Implement the 5 operations in *Maps.java*. 
 3. Run the included JUnit tests to ensure your solution passes all the unit tests - do this by running *RunAllTests.java*
 4. Each student uploads her or his completed *Maps.java* file to the MapsHW Moodle Dropbox
