@@ -60,9 +60,11 @@ public class TestStep3WriteGradesToFileSimpleNoExceptions {
 		assertTrue(this.actualFileString.contains(lastname));
 		String actualLine = this.actualFileString.substring(this.actualFileString.indexOf(lastname));
 		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
+		actualLine = (actualLine.contains("\r")) ? actualLine.substring(0, actualLine.indexOf("\r")) : actualLine;
 		
 		String expectedLine = this.expectedFileString.substring(this.expectedFileString.indexOf(lastname));
 		expectedLine = (expectedLine.contains("\n")) ? expectedLine.substring(0, expectedLine.indexOf("\n")) : expectedLine;
+		expectedLine = (expectedLine.contains("\r")) ? expectedLine.substring(0, expectedLine.indexOf("\r")) : expectedLine;
 		
 		String[] splitActual = actualLine.split(",");
 		String[] splitExpected = expectedLine.split(",");
@@ -80,9 +82,11 @@ public class TestStep3WriteGradesToFileSimpleNoExceptions {
 		assertTrue(this.actualFileString.contains(lastname));
 		String actualLine = this.actualFileString.substring(this.actualFileString.indexOf(lastname));
 		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
+		actualLine = (actualLine.contains("\r")) ? actualLine.substring(0, actualLine.indexOf("\r")) : actualLine;
 		
 		String expectedLine = this.expectedFileString.substring(this.expectedFileString.indexOf(lastname));
 		expectedLine = (expectedLine.contains("\n")) ? expectedLine.substring(0, expectedLine.indexOf("\n")) : expectedLine;
+		expectedLine = (expectedLine.contains("\r")) ? expectedLine.substring(0, expectedLine.indexOf("\r")) : expectedLine;
 		
 		String[] splitActual = actualLine.split(",");
 		String[] splitExpected = expectedLine.split(",");
@@ -100,9 +104,11 @@ public class TestStep3WriteGradesToFileSimpleNoExceptions {
 		assertTrue(this.actualFileString.contains(lastname));
 		String actualLine = this.actualFileString.substring(this.actualFileString.indexOf(lastname));
 		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
+		actualLine = (actualLine.contains("\r")) ? actualLine.substring(0, actualLine.indexOf("\r")) : actualLine;
 		
 		String expectedLine = this.expectedFileString.substring(this.expectedFileString.indexOf(lastname));
 		expectedLine = (expectedLine.contains("\n")) ? expectedLine.substring(0, expectedLine.indexOf("\n")) : expectedLine;
+		expectedLine = (expectedLine.contains("\r")) ? expectedLine.substring(0, expectedLine.indexOf("\r")) : expectedLine;
 		
 		String[] splitActual = actualLine.split(",");
 		String[] splitExpected = expectedLine.split(",");
@@ -120,9 +126,11 @@ public class TestStep3WriteGradesToFileSimpleNoExceptions {
 		assertTrue(this.actualFileString.contains(lastname));
 		String actualLine = this.actualFileString.substring(this.actualFileString.indexOf(lastname));
 		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
+		actualLine = (actualLine.contains("\r")) ? actualLine.substring(0, actualLine.indexOf("\r")) : actualLine;
 		
 		String expectedLine = this.expectedFileString.substring(this.expectedFileString.indexOf(lastname));
 		expectedLine = (expectedLine.contains("\n")) ? expectedLine.substring(0, expectedLine.indexOf("\n")) : expectedLine;
+		expectedLine = (expectedLine.contains("\r")) ? expectedLine.substring(0, expectedLine.indexOf("\r")) : expectedLine;
 		
 		String[] splitActual = actualLine.split(",");
 		String[] splitExpected = expectedLine.split(",");
@@ -145,6 +153,7 @@ public class TestStep3WriteGradesToFileSimpleNoExceptions {
 		while(!foundRight) {
 			actualLine = actualLine.substring(actualLine.indexOf(lastname));
 			String tempLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
+			tempLine = (tempLine.contains("\r")) ? tempLine.substring(0, tempLine.indexOf("\r")) : tempLine;
 			if(tempLine.contains(firstname)) {
 				actualLine = tempLine;
 				foundRight = true;
@@ -158,6 +167,7 @@ public class TestStep3WriteGradesToFileSimpleNoExceptions {
 		while(!foundRight) {
 			expectedLine = expectedLine.substring(expectedLine.indexOf(lastname));
 			String tempLine = (expectedLine.contains("\n")) ? expectedLine.substring(0, expectedLine.indexOf("\n")) : expectedLine;
+			tempLine = (tempLine.contains("\r")) ? tempLine.substring(0, tempLine.indexOf("\r")) : tempLine;
 			if(tempLine.contains(firstname)) {
 				expectedLine = tempLine;
 				foundRight = true;
