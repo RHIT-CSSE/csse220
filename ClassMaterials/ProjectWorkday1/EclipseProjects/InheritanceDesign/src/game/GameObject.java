@@ -3,9 +3,7 @@ package game;
 import java.awt.Graphics2D;
 import java.awt.geom.Rectangle2D;
 
-// TODO: Refactor Raindrop, Platform, (and hopefully that lone box?) into GameObjects.
-public abstract class GameObject {
-	
+public abstract class GameObject {	
 	private double x, y;
 	private double yVelocity;
 	private double xVelocity;
@@ -14,7 +12,8 @@ public abstract class GameObject {
 	private double height;
 	protected GameComponent gameComponent;
 	
-	
+	// ------------------------------------------------------------------------------------------------------------------
+
 	public GameObject(GameComponent gameComponent, double x, double y, double dx, double dy, double width, double height) {
 		this.x = x;
 		this.y = y;
@@ -23,63 +22,64 @@ public abstract class GameObject {
 		this.gameComponent = gameComponent;
 		this.width = width;
 		this.height = height;
-	}
+	} // GameObject
 	
 	public abstract void onRemove();
 	public abstract void drawOn(Graphics2D g2);
-	
-	public double getX() {
-		return this.x;
-	}
-	public double getY() {
-		return this.y;
-	}
-	public double getWidth() {
-		return this.width;
-	}
-	public double getHeight() {
-		return this.height;
-	}
 
 	// updatePosition, fall, ... can all be consolidated into an update method.
 	public void update() {
 		this.x += this.xVelocity;
 		this.y += this.yVelocity;
-	}
+	} // update
 	
 	public void reverseDirection() {
 		this.xVelocity = -this.xVelocity;
 		this.yVelocity = -this.yVelocity;
-	}
+	} // reverseDirection
 	
 	// fall, willExplode, ...
 	public boolean shouldRemove() {
 		return this.shouldRemove;
-	}
+	} // shouldRemove
 	
 	public void markToRemove() {
 		this.shouldRemove = true;
-	}
+	} // markToRemove
 	
 	public Rectangle2D.Double getBoundingBox() {
-		return new Rectangle2D.Double(this.x, this.y, getWidth(), getHeight() );
-	}
+		return new Rectangle2D.Double(this.x, this.y, getWidth(), getHeight());
+	} // getBoundingBox
 
 	public boolean overlaps(GameObject other) {
 		return getBoundingBox().intersects(other.getBoundingBox());
 	}
 	
 	public boolean isOffScreen() {
-		boolean xLow = x < 0;
-		boolean xHigh = x + width > gameComponent.getWidth();
-		boolean yLow = y < 0;
-		boolean yHigh = y + height > gameComponent.getHeight();
+		boolean xLow = this.x < 0;
+		boolean xHigh = this.x + this.width > gameComponent.getWidth();
+		boolean yLow = this.y < 0;
+		boolean yHigh = this.y + this.height > gameComponent.getHeight();
 		return xLow || xHigh || yLow || yHigh;
-	}
+	} // isOffScreen
 	
 	public boolean offBottom() {
-		return y > gameComponent.getHeight();
-	}
+		return this.y > gameComponent.getHeight();
+	} // offBottom
 	
+	public double getX() {
+		return this.x;
+	} // getX
+	
+	public double getY() {
+		return this.y;
+	} // getY
+	
+	public double getWidth() {
+		return this.width;
+	} // getWidth
+	public double getHeight() {
+		return this.height;
+	} // getHeight
 
 }

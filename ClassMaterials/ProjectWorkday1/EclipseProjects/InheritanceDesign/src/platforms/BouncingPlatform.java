@@ -20,56 +20,54 @@ public class BouncingPlatform extends GameObject {
 	private static final int DROPS_ON_EXPLODE = 50;
 	private int rainDropsCollected = 0;
 	
+	// ------------------------------------------------------------------------------------------------------------------
+
 	public BouncingPlatform(GameComponent gameComponent, int x, int y, int xVelocity, int yVelocity) {
 		super(gameComponent, x, y, xVelocity, yVelocity, WIDTH, HEIGHT);
-	}
+	} // BouncingPlatform
 
 
-	public void drawOn(Graphics2D g) {
-		g.setColor(new Color(RED_START-rainDropsCollected, GREEN_START-rainDropsCollected, BLUE_START+rainDropsCollected));
-		g.fill(new Rectangle2D.Double(getBoundingBox().x, getBoundingBox().y, this.getWidth(), this.getHeight()));
-	}
-	
-
+	public void drawOn(Graphics2D g2d) {
+		g2d.setColor(new Color(RED_START-rainDropsCollected, GREEN_START-rainDropsCollected, BLUE_START+rainDropsCollected));
+		g2d.fill(new Rectangle2D.Double(getBoundingBox().x, getBoundingBox().y, this.getWidth(), this.getHeight()));
+	} // drawOn
 
 	public boolean willExplode() {
 		return this.rainDropsCollected >= 255 - BLUE_START;
-	}
+	} // willExplode
 
 	@Override
 	public boolean shouldRemove() {
-		return willExplode();
-	}
+		return this.willExplode();
+	} // shouldRemove
 
 	@Override
 	public void onRemove() {
 		for (int i = 0; i < DROPS_ON_EXPLODE; i++) {
 			this.gameComponent.createRainDrop(this.getBoundingBox());
-		}
-	}
+		} // end for
+	} // onRemove
 
 	public void bounce() {
 		this.reverseDirection();
 		this.update();
-	}
+	} // bounce
 
 	@Override
 	public void update() {
 		super.update();
-		if ( isOffScreen()  ) {
+		if (this.isOffScreen()) {
 			this.reverseDirection();
-		}
-	}
+		} // end if
+	} // update
 	
 	
 	public void setRainDropsCollected(int drops) {
 		this.rainDropsCollected = drops;
-	}
+	} // setRainDropsCollected
 	
 	public int getRainDropsCollected() {
 		return this.rainDropsCollected;
-	}
+	} // getRainDropsCollected
 	
-
-
-}
+} // BouncingPlatform

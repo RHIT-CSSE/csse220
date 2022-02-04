@@ -14,29 +14,29 @@ import game.GameObject;
  *
  */
 public class UserControlledPlatform extends GameObject {
-
 	public static final int SIZE = 25;
 	private static final int STARTING_DX = 3;
-	private static final int STARTING_DY = 0;
-	
-	private static final int BOX_SIZE = 20;
+	private static final int STARTING_DY = 0;	
 	private static final int BOX_X = 10;
 	private static final int BOX_Y = 200;
 	
-	
-	public UserControlledPlatform(GameComponent gameComponent, int x, int y, int xVelocity, int yVelocity ) {
+	// ------------------------------------------------------------------------------------------------------------------
+
+	public UserControlledPlatform(GameComponent gameComponent, int x, int y, int xVelocity, int yVelocity) {
 		super(gameComponent, x, y, xVelocity, yVelocity, SIZE, SIZE);
-	}
+	} // UserControlledPlatform
 
 	public UserControlledPlatform(int width, int height, GameComponent gameComponent) {
 		super(gameComponent, BOX_X, BOX_Y, STARTING_DX, STARTING_DY, SIZE, SIZE);
-	}
+	} // UserControlledPlatform
 
 	@Override
-	public void drawOn(Graphics2D g) {
-		g.setColor(Color.BLACK);
-		g.fill( this.getBoundingBox() );
-	}
+	public void drawOn(Graphics2D g2d) {
+		Color incomingColor = g2d.getColor();
+		g2d.setColor(Color.BLACK);
+		g2d.fill(this.getBoundingBox());
+		g2d.setColor(incomingColor);
+	} // drawOn
 
 	//to make sure that the box stays on screen, we reverse direction and move back one tick
 	//but then we reverse again so that the same thing will happen next state until
@@ -44,18 +44,16 @@ public class UserControlledPlatform extends GameObject {
 	@Override
 	public void update() {
 		super.update();
-		if ( isOffScreen()  ) {
+		if (this.isOffScreen()) {
 			this.reverseDirection();
 			super.update();
 			this.reverseDirection();
-		}
-		
-	}
+		} // end if		
+	} // update
 
 	@Override
 	public void onRemove() {
-		//do nothing
-	}
+		// Do nothing special
+	} // onRemove
 
-
-}
+} // UserControlledPlatform
