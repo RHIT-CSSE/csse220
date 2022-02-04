@@ -1,8 +1,6 @@
-package hourtimer;
+package hourTimer;
 import java.awt.Dimension;
-
 import javax.swing.JFrame;
-
 
 /**
  * 
@@ -23,15 +21,15 @@ public class HourTimerViewer {
 		final int frameLocY = 350;
 		hourTimerFrame = new JFrame();
 		HourTimerComponent hourTimerComponent = new HourTimerComponent();
-		hourTimerComponent.setPreferredSize(new Dimension(COMPONENT_WIDTH, COMPONENT_HEIGHT));
+		hourTimerComponent.setPreferredSize(new Dimension(COMPONENT_WIDTH,COMPONENT_HEIGHT));
 		hourTimerFrame.add(hourTimerComponent);
-
+		
 		hourTimerFrame.setTitle("Tic Toc");
 		hourTimerFrame.setLocation(frameLocX, frameLocY);
 		hourTimerFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		hourTimerFrame.pack();
-		hourTimerFrame.setVisible(true);
+		hourTimerFrame.setVisible(true);	
 	} // runApp
 
 	//
@@ -43,4 +41,4 @@ public class HourTimerViewer {
 		app.runApp();
 	} // main
 
-}
+} // HourTimerViewer

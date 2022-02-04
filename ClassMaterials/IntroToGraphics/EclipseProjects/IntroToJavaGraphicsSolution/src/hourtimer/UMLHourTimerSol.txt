@@ -1,0 +1,43 @@
+@startuml
+hide empty members
+
+class HourTimerComponent [[java:hourtimer.HourTimerComponent]] {
+	-{static} serialVersionUID: long
+	-drawDottedLines(g2d: Graphics2D): void
+	-doStage1(g2d: Graphics2D): void
+	-doStage2(g2d: Graphics2D): void
+	-doStage3(g2d: Graphics2D): void
+	#paintComponent(g: Graphics): void
+}
+
+class HourTimer [[java:hourtimer.HourTimer]] {
+	+{static} DEFAULT_RADIUS: int
+	+{static} DEFAULT_CENTER_X: int
+	+{static} DEFAULT_CENTER_Y: int
+	+{static} RATIO_OF_HAND_LENGTH_TO_RADIUS: double
+	+{static} RATIO_OF_HAND_WIDTH_TO_RADIUS: double
+	-radius: int
+	-centerX: int
+	-centerY: int
+	-rotationFactor: double
+	+HourTimer()
+	+HourTimer(centerX: int, centerY: int, radius: int)
+	+drawOn(g2d: Graphics2D): void
+	+setTime(minutes: double): void
+}
+
+class HourTimerViewer [[java:hourtimer.HourTimerViewer]] {
+	+{static} COMPONENT_WIDTH: int
+	+{static} COMPONENT_HEIGHT: int
+	-runApp(): void
+	+{static} main(args: String[]): void
+}
+
+class JFrame {}
+class JComponent {}
+
+HourTimerComponent -up-|> JComponent
+HourTimerViewer -down-> JFrame
+HourTimerViewer -right-> HourTimerComponent
+HourTimerComponent -down-> HourTimer
+@enduml

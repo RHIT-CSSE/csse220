@@ -1,7 +1,6 @@
-package translaterotate;
+package translateRotate;
 import java.awt.Dimension;
 import javax.swing.JFrame;
-
 
 
 /**

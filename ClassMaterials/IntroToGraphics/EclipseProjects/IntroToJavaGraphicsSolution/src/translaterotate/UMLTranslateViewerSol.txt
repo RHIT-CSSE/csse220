@@ -1,0 +1,26 @@
+@startuml
+hide empty members
+
+class TranslateViewer [[java:translaterotate.TranslateViewer]] {
+	+{static} COMPONENT_WIDTH: int
+	+{static} COMPONENT_HEIGHT: int
+	-runApp(): void
+	+{static} main(args: String[]): void
+}
+
+class TranslateComponent [[java:translaterotate.TranslateComponent]] {
+	-{static} serialVersionUID: long
+	-drawFace(g2d: Graphics2D): void
+	-drawLeftEye(g2d: Graphics2D): void
+	-drawRightEye(g2d: Graphics2D): void
+	-drawNose(g2d: Graphics2D): void
+	#paintComponent(g: Graphics): void
+}
+
+class JFrame {}
+class JComponent {}
+
+TranslateComponent -up-|> JComponent 
+TranslateViewer -down-> JFrame
+TranslateViewer -right-> TranslateComponent
+@enduml
