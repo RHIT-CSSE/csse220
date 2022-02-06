@@ -1,4 +1,0 @@
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/2DArraysAndMaps/EclipseProjects/2DArraysAndMapsInClass 2DArraysAndMapsInClass <fileContainingRepos>
-
-SOLUTION:
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/2DArraysAndMaps/EclipseProjects/2DArraysAndMapsInClassSolution 2DArraysAndMapsInClassSolution <fileContainingRepos>
