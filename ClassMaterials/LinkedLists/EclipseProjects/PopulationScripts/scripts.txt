@@ -1,9 +1,0 @@
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/LinkedLists/EclipseProjects/LinkedListSimple LinkedListSimple <fileContainingRepos>
-
-SOLUTION:
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/LinkedLists/EclipseProjects/LinkedListSimpleSolution LinkedListSimpleSolution <fileContainingRepos>
-
---201610:
-./svnPopulateTeamRepos-flex.sh stouder http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/LinkedLists/EclipseProjects/LinkedListSimple LinkedListSimple data/csse220-201610-allrepos.txt
-
-./svnPopulateTeamRepos-flex.sh boutell http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/LinkedLists/EclipseProjects/LinkedListSimple LinkedListSimple data/csse220-201710-repos.txt
