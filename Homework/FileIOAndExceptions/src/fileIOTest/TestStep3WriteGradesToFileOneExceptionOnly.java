@@ -82,7 +82,7 @@ public class TestStep3WriteGradesToFileOneExceptionOnly {
 		assertTrue(this.actualFileString.contains(lastname));
 		String actualLine = this.actualFileString.substring(this.actualFileString.indexOf(lastname));
 		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
-		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
+		actualLine = (actualLine.contains("\r")) ? actualLine.substring(0, actualLine.indexOf("\r")) : actualLine;
 		
 		String expectedLine = this.expectedFileString.substring(this.expectedFileString.indexOf(lastname));
 		expectedLine = (expectedLine.contains("\n")) ? expectedLine.substring(0, expectedLine.indexOf("\n")) : expectedLine;
@@ -104,7 +104,7 @@ public class TestStep3WriteGradesToFileOneExceptionOnly {
 		assertTrue(this.actualFileString.contains(lastname));
 		String actualLine = this.actualFileString.substring(this.actualFileString.indexOf(lastname));
 		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
-		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
+		actualLine = (actualLine.contains("\r")) ? actualLine.substring(0, actualLine.indexOf("\r")) : actualLine;
 		
 		String expectedLine = this.expectedFileString.substring(this.expectedFileString.indexOf(lastname));
 		expectedLine = (expectedLine.contains("\n")) ? expectedLine.substring(0, expectedLine.indexOf("\n")) : expectedLine;
@@ -126,7 +126,7 @@ public class TestStep3WriteGradesToFileOneExceptionOnly {
 		assertTrue(this.actualFileString.contains(lastname));
 		String actualLine = this.actualFileString.substring(this.actualFileString.indexOf(lastname));
 		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
-		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
+		actualLine = (actualLine.contains("\r")) ? actualLine.substring(0, actualLine.indexOf("\r")) : actualLine;
 		
 		String expectedLine = this.expectedFileString.substring(this.expectedFileString.indexOf(lastname));
 		expectedLine = (expectedLine.contains("\n")) ? expectedLine.substring(0, expectedLine.indexOf("\n")) : expectedLine;
@@ -148,7 +148,7 @@ public class TestStep3WriteGradesToFileOneExceptionOnly {
 		assertTrue(this.actualFileString.contains(lastname));
 		String actualLine = this.actualFileString.substring(this.actualFileString.indexOf(lastname));
 		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
-		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
+		actualLine = (actualLine.contains("\r")) ? actualLine.substring(0, actualLine.indexOf("\r")) : actualLine;
 		
 		String expectedLine = this.expectedFileString.substring(this.expectedFileString.indexOf(lastname));
 		expectedLine = (expectedLine.contains("\n")) ? expectedLine.substring(0, expectedLine.indexOf("\n")) : expectedLine;
@@ -170,7 +170,7 @@ public class TestStep3WriteGradesToFileOneExceptionOnly {
 		assertTrue(this.actualFileString.contains(lastname));
 		String actualLine = this.actualFileString.substring(this.actualFileString.indexOf(lastname));
 		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
-		actualLine = (actualLine.contains("\n")) ? actualLine.substring(0, actualLine.indexOf("\n")) : actualLine;
+		actualLine = (actualLine.contains("\r")) ? actualLine.substring(0, actualLine.indexOf("\r")) : actualLine;
 		
 		String expectedLine = this.expectedFileString.substring(this.expectedFileString.indexOf(lastname));
 		expectedLine = (expectedLine.contains("\n")) ? expectedLine.substring(0, expectedLine.indexOf("\n")) : expectedLine;
