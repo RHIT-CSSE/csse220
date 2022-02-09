@@ -1,5 +1,7 @@
 package sllTest;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -32,30 +34,39 @@ public class TestSetExceptionHandling {
 	public void testSetExceptionN01() {
 		ILinkedList list1 = new SinglyLinkedList();
 
+		boolean exceptionThrown = false;
 		numberOfTests++;
 		try {
 			list1.set(1, 7);
 		} catch (IndexOutOfBoundsException e) {
+			exceptionThrown = true;
 			testsPassed++;
 		} // end try-catch
+		
+		assertTrue(exceptionThrown);
 	} // testSetExceptionN01
 
 	@Test
 	public void testSetExceptionN02() {
 		ILinkedList list1 = new SinglyLinkedList();
 
+		boolean exceptionThrown = false;
 		numberOfTests++;	
 		try {
 			list1.set(-1, 46);	
 		} catch (IndexOutOfBoundsException e) {
+			exceptionThrown = true;
 			testsPassed++;
 		} // end try-catch
+		
+		assertTrue(exceptionThrown);
 	} // testSetExceptionN02
 
 	@Test
 	public void testSetExceptionN03() {
 		ILinkedList list1 = new SinglyLinkedList();
 
+		boolean exceptionThrown = false;
 		numberOfTests++;	
 		list1.insertAtIndex(0, 6);
 		list1.insertAtIndex(0, 2);
@@ -64,8 +75,11 @@ public class TestSetExceptionHandling {
 		try {
 			list1.set(6, 10);	
 		} catch (IndexOutOfBoundsException e) {
+			exceptionThrown = true;
 			testsPassed++;
 		} // end try-catch
+		
+		assertTrue(exceptionThrown);
 	} // testSetExceptionN03
 
 } // end class TestSetExceptionHandling
