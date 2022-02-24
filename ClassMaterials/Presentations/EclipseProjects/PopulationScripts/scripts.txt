@@ -1,4 +1,0 @@
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/TypesLoopsStrings/EclipseProjects/LoopsAndStrings LoopsAndStrings <fileContainingRepos>
-
-SOLUTION:
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/TypesLoopsStrings/EclipseProjects/LoopsAndStringsSolution LoopsAndStringsSolution <fileContainingRepos>

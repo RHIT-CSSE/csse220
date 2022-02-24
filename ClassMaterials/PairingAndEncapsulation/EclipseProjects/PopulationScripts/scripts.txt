@@ -1,4 +1,0 @@
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/PairingAndEncapsulation/EclipseProjects/EncapsulationExamples EncapsulationExamples <fileContainingRepos>
-
-SOLUTION:
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/PairingAndEncapsulation/EclipseProjects/EncapsulationExamplesSolution EncapsulationExamplesSolution <fileContainingRepos>

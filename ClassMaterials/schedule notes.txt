@@ -1,3 +1,0 @@
-Pushing it forward might work best to be able to work unit testing into the section around interfaces.
-
-Swapped Class Diagramming and Pair Programming to start GameOfLife sooner - ask Buffalo if he sees any issues with this.

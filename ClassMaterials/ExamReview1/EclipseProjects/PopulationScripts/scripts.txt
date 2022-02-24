@@ -1,4 +1,0 @@
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/ExamReview1/EclipseProjects/PracticeExam1 PracticeExam1 <fileContainingRepos>
-
-SOLUTION:
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/ExamReview1/EclipseProjects/PracticeExam1Solution PracticeExam1Solution <fileContainingRepos>

@@ -1,6 +1,0 @@
-theme: jekyll-theme-minimal
-title: CSSE220
-description: Object Oriented Development
-layouts_dir: .internal/layouts
-include: ['.internal']
-moodle: https://moodle.rose-hulman.edu/course/view.php?id=65273

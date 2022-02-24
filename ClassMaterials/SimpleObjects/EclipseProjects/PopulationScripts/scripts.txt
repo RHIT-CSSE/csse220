@@ -1,5 +1,0 @@
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/SimpleObjects/EclipseProjects/SuperSimpleObjects SuperSimpleObjects <fileContainingRepos>
-
-SOLUTION:
-./svnPopulateTeamRepos-flex.sh <instructor-username> http://svn.csse.rose-hulman.edu/repos csse220/trunk/ClassMaterials/SimpleObjects/EclipseProjects/SuperSimpleObjectsSolution SuperSimpleObjectsSolution <fileContainingRepos>
-
