@@ -58,6 +58,18 @@ public class LinkedList {
 		list.addAtBeginning(2);
 		list.addAtBeginning(3);
 		System.out.println(list.toString());
+		
+				
+		// TODO: After completing in-class exercises
+		// 
+		// Add ALL values from 1 to 100,000 to a list
+		// Compare how long it takes using:   
+		//  System.currentTimeMillis(); // returns current time in millis, record start and stop times
+		// Try comparing how long it takes using addAtBeginning() and addAtEnd()
+		// Should there a difference? Why or why not?
+		// Is there a difference? Big/small?
+		
+		
 	}
 	
 	/**

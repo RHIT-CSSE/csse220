@@ -57,6 +57,38 @@ public class LinkedList {
 		list.addAtBeginning(2);
 		list.addAtBeginning(3);
 		System.out.println(list.toString());
+		
+		
+		// TODO: After completing in-class exercises
+		// 
+		// Add ALL values from 1 to 100,000 to a list
+		// Compare how long it takes using:   
+		//  System.currentTimeMillis(); // returns current time in millis, record start and stop times
+		// Try comparing how long it takes using addAtBeginning() and addAtEnd()
+		// Should there a difference? Why or why not? - yes, more iterations through list
+		// Is there a difference? Big/small? - YES, HUUUUGE
+		
+		int MAX = 100000;
+		
+		//add 100,000
+		long start = System.currentTimeMillis();
+		for (int i=0; i<MAX; i++) {
+			list.addAtEnd(i);
+		}
+		long stop = System.currentTimeMillis();
+		// ~ 9 seconds for laptop in 2022
+		System.out.println("100,000 added using addAtEnd: Completed in " + (stop-start)/1000.0);
+		
+		
+		
+		start = System.currentTimeMillis();
+		for (int i=0; i<MAX; i++) {
+			list.addAtBeginning(i);
+		}
+		stop = System.currentTimeMillis();
+		// ~ 0.02 seconds for laptop in 2022
+		System.out.println("100,000 added using addAtBeginning: Completed in " + (stop-start)/1000.0);
+		
 	}
 	
 	/**
