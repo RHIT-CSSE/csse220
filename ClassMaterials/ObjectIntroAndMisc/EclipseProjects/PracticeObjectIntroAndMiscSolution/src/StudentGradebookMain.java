@@ -3,7 +3,7 @@
  * 
  * @author <YOUR_NAME_GOES HERE>. Created Dec 9, 2013.
  */
-public class StudentAssignmentsMain {
+public class StudentGradebookMain {
 
 	/**
 	 * Program starts here.
@@ -14,10 +14,10 @@ public class StudentAssignmentsMain {
 	public static void main(String[] args) {
 
 		/*
-		 * TODO: Uncomment this code to get started with StudentAssignments
+		 * TODO: Uncomment this code to get started with StudentGradebook
 		 */ 
-		 StudentAssignments one = new StudentAssignments("John Doe");
-		 StudentAssignments two = new StudentAssignments(); //default name is
+		 StudentGradebook one = new StudentGradebook("John Doe");
+		 StudentGradebook two = new StudentGradebook(); //default name is
 		 //Studenty McStudenton
 		 
 		 one.addAssignment("TwelveProblems", 95);
@@ -41,13 +41,19 @@ public class StudentAssignmentsMain {
 		/*
 		 * This code should print out:
 		 * 
-		 * John Doe TwelveProblems - 95.0 WordGames - 99.0 Faces - 92.0
+		 * John Doe TwelveProblems - 95 WordGames - 99 Faces - 92
 		 * 
-		 * Studenty McStudenton TwelveProblems - 80.0 WordGames - 78.0 Faces -
-		 * 0.0
+		 * Studenty McStudenton TwelveProblems - 80 WordGames - 78 Faces - 0
+		 * 
 		 * 
 		 * If you finish early, add a new function to compute the student's
-		 * average and print it.
+		 * average and print it as part of printGradeReport. 
+		 * 
+		 * If you do so it should show the following:
+		 * 
+		 * John Doe TwelveProblems - 95 WordGames - 99 Faces - 92 - Average: 95.33333333333333
+		 * 
+		 * Studenty McStudenton TwelveProblems - 80 WordGames - 78 Faces - 0 - Average: 52.666666666666664
 		 */
 
 	}
