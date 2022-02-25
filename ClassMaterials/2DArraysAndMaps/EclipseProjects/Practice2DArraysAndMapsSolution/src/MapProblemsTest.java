@@ -10,33 +10,38 @@ public class MapProblemsTest {
 
 	@Test
 	public void testNicknames() {
-		String[] names = {"Alice","Bill","Charles"};
+		String[] names = {"Arun","Bill","Nala"};
 		String[] test1 = {"Foo","Bar","Foo"};
-		String[] test2 = {"Foo","Bar","Baz"};
-		String[] test3 = {"Foo","Baz","Baz"};
+		String[] test2 = {"Foo","Baz","Baz"};
 		assertEquals("Foo", MapProblems.duplicateNicknames(names, test1));
-		assertEquals(null, MapProblems.duplicateNicknames(names, test2));
-		assertEquals("Baz", MapProblems.duplicateNicknames(names, test3));
+		assertEquals("Baz", MapProblems.duplicateNicknames(names, test2));
 	}
 
 	@Test
-	public void testComputeScore() {
-		assertEquals(7, MapProblems.computeScore("ABAA"));
-		assertEquals(7, MapProblems.computeScore("BAAA"));
-		assertEquals(3, MapProblems.computeScore("ABC"));
-		assertEquals(6, MapProblems.computeScore("ABAB"));
+	public void testComputeTotalScore() {
+		assertEquals(7, MapProblems.computeTotalScore("AJAA"));
+		assertEquals(7, MapProblems.computeTotalScore("JAAA"));
+		assertEquals(9, MapProblems.computeTotalScore("KQKQQ"));
+		assertEquals(6, MapProblems.computeTotalScore("AQAQ"));
+		assertEquals(0, MapProblems.computeTotalScore(""));
 	}
 
 	@Test
-	public void testReverseMap() {
-		HashMap<Integer,String> map = new HashMap<Integer,String>();
-		map.put(1, "A");
-		map.put(2, "B");
-		map.put(3, "C");
-		HashMap<String,Integer> result = MapProblems.reverseMap(map);
+	public void testInverseMap() {
+		HashMap<Integer,String> inputMap = new HashMap<Integer,String>();
+		inputMap.put(1, "A");
+		inputMap.put(2, "B");
+		inputMap.put(7, "X");
+		HashMap<String,Integer> result = MapProblems.inverseMap(inputMap);
 		assertEquals(1, (int) result.get("A"));
 		assertEquals(2, (int) result.get("B"));
-		assertEquals(3, (int) result.get("C"));
+		assertEquals(7, (int) result.get("X"));
+		
+		// Clear out the inputMap
+		// Make sure the inverse of an empty map is an empty map, i.e., has size = 0
+		inputMap.clear();
+		HashMap<String, Integer> returnedMap = MapProblems.inverseMap(inputMap);
+		assertEquals(0, returnedMap.size());
 	}
 
 	@Test
@@ -78,16 +83,17 @@ public class MapProblemsTest {
 		cities.add("J");
 		map.put("I", cities);
 		map.put("J", emptyList);
-		assertTrue(MapProblems.canTravelTo(map, "A", "B"));
-		assertTrue(MapProblems.canTravelTo(map, "A", "D"));
-		assertTrue(MapProblems.canTravelTo(map, "A", "E"));
-		assertFalse(MapProblems.canTravelTo(map, "A", "F"));
-		assertFalse(MapProblems.canTravelTo(map, "B", "A"));
-		assertFalse(MapProblems.canTravelTo(map, "H", "F"));
-		assertTrue(MapProblems.canTravelTo(map, "H", "G"));
-		assertTrue(MapProblems.canTravelTo(map, "F", "J"));
-		assertFalse(MapProblems.canTravelTo(map, "J", "A"));
 		
+		
+		assertEquals(true, MapProblems.canTravelTo(map, "A", "B"));
+		assertEquals(true, MapProblems.canTravelTo(map, "A", "D"));
+		assertEquals(true, MapProblems.canTravelTo(map, "A", "E"));
+		assertEquals(false, MapProblems.canTravelTo(map, "A", "F"));
+		assertEquals(false, MapProblems.canTravelTo(map, "B", "A"));
+		assertEquals(false, MapProblems.canTravelTo(map, "H", "F"));
+		assertEquals(true, MapProblems.canTravelTo(map, "H", "G"));
+		assertEquals(true, MapProblems.canTravelTo(map, "F", "J"));
+		assertEquals(false, MapProblems.canTravelTo(map, "J", "A"));
 		
 	}
 
