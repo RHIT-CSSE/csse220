@@ -5,12 +5,12 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 
-public class CaptializeListener implements ActionListener {
+public class CapitalizeListener implements ActionListener {
 
 	JButton buttonToUpdate;
 	boolean isUpperCase;
 	
-	public CaptializeListener(JButton b) {
+	public CapitalizeListener(JButton b) {
 		this.buttonToUpdate = b;
 		this.isUpperCase = Character.isUpperCase(b.getText().charAt(0));
 	}

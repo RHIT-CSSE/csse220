@@ -27,7 +27,7 @@ public class CapitalizeViewer {
 		
 		for(int i = 0; i < name.length(); i++) {
 			JButton b = new JButton(name.charAt(i) + "");
-			b.addActionListener(new CaptializeListener(b));
+			b.addActionListener(new CapitalizeListener(b));
 			panel.add(b);
 		}
 		

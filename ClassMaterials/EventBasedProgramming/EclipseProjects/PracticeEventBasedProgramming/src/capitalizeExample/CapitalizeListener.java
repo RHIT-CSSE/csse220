@@ -8,12 +8,12 @@ import javax.swing.JButton;
 /*
  * A listener that uppercases a button when it's pressed
  */
-public class CaptializeListener implements ActionListener {
+public class CapitalizeListener implements ActionListener {
 
 	JButton buttonToUpdate;
 	boolean isUpperCase;
 	
-	public CaptializeListener(JButton b) {
+	public CapitalizeListener(JButton b) {
 		this.buttonToUpdate = b;
 		this.isUpperCase = Character.isUpperCase(b.getText().charAt(0));
 	}
