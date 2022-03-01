@@ -1,3 +1,4 @@
+package consolePractice;
 import java.util.Scanner;
 
 /**
@@ -83,10 +84,34 @@ public class ConsoleWorker {
 	 * Sets the user's birth month as an integer.
 	 *
 	 */
-	public void setBirthMonth(){
-		System.out.print("Enter your month of birth as an integer: ");
-		this.birthMonth = this.inputScanner.nextInt();
-	}
+	private void setBirthMonth() {
+		Boolean validInput = false;
+		do {
+			//
+			// Use do-while because we always want to go through the loop body one time
+			//
+			System.out.print("Please enter a birth month [1..12]: ");
+			String catcher = this.inputScanner.next();
+			try {
+				//
+				// NumberFormatException is thrown by 'parseInt' if what is in String 'catcher' is not an integer
+				// This try-catch will catch the NumberFormatException and print a message to the Console (see below)
+				// 
+				this.birthMonth = Integer.parseInt(catcher);
+				
+				//
+				// An integer was input by user, now check that is valid
+				if ((this.birthMonth >= 1) && (this.birthMonth <= 12)) {
+					validInput = true;
+				} else {
+					System.out.println(this.birthMonth + " is not in the range [1..12]");
+				} // end if
+			} catch (NumberFormatException e) {
+				System.out.println(e.getMessage() + " is not a valid number for representing a month");
+			} // end try-catch
+		} while (!validInput);
+
+	} // setBirthMonth
 	
 	/**
 	 * 
