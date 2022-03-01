@@ -1,3 +1,4 @@
+package consolePractice;
 import java.util.Scanner;
 
 /**
@@ -37,6 +38,9 @@ public class ConsoleWorker {
 	 * @return user birth month
 	 */
 	public int getBirthMonth(){
+		//
+		// See setBirthMonth in PracticeConsoleAndUnitTestingSolution for a effective way to implement this operation
+		//
 		return this.birthMonth;
 	}
 	
