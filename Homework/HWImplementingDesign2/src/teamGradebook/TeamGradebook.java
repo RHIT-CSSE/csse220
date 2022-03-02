@@ -161,6 +161,9 @@ public class TeamGradebook {
 	 */
 	private String handleGetAverage(String studentName) {
 		//TODO: Your code here
+		// Note: If your code computes the student's averge here, in this method, then you are
+		// not following OOD Principle 4.a by creating 'tell' methods inside of Student
+		// Good design/engineering requires following OODP 4.a and poor design will be graded accordingly
 		return null;
 	}
 	
@@ -193,6 +196,9 @@ public class TeamGradebook {
 	 */
 	private String handleGetBestTeam() {
 		//TODO: Your code here
+		// Note: If your code computes the team's averge here, in this method, then you are
+		// not following OOD Principle 4.a by creating 'tell' methods inside of Team
+		// Good design/engineering requires following OODP 4.a and poor design will be graded accordingly
 		return null;
 	}
 	
