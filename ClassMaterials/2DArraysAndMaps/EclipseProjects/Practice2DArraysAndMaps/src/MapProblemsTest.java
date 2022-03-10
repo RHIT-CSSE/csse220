@@ -109,7 +109,7 @@ public class MapProblemsTest {
 		assertEquals(true, MapProblems.canTravelTo(map, "A", "B"));
 		assertEquals(true, MapProblems.canTravelTo(map, "A", "D"));
 		assertEquals(true, MapProblems.canTravelTo(map, "A", "E"));
-		assertEquals(true, MapProblems.canTravelTo(map, "A", "F"));
+		assertEquals(false, MapProblems.canTravelTo(map, "A", "F"));
 		assertEquals(false, MapProblems.canTravelTo(map, "B", "A"));
 		assertEquals(false, MapProblems.canTravelTo(map, "H", "F"));
 		assertEquals(true, MapProblems.canTravelTo(map, "H", "G"));
