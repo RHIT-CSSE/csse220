@@ -4,12 +4,13 @@ Online quiz: In an online quiz system, teachers write quizzes and students take 
 
 ## Solution A
 
-<img src="DP1_A.png" alt="Bad Solution A" width="400"/>
+<img src="DP1_A.png" alt="Bad Solution A" width="800"/>
 
 
 ## Solution B
 
 <img src="DP1_B.png" alt="Bad Solution B" width="400"/>
+
 ![Bad Solution B](DP1_B.png)
 
 ### Hint
