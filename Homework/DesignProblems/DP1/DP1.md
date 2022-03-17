@@ -4,12 +4,12 @@ In an online quiz application, teachers update quizzes and students take them.  
 ## Bad Design A
 <img src="DP1_A.png" alt="Bad Design A" width="800"/>
 
-[Source PlantUML](http://www.plantuml.com/plantuml/uml/RP31Ja8n44NtynKtR0IL7s1XC75Z8b62VC24LfXGva4xNQZntssfaFSIDvDfJywzQTDUzCYH3qZs6NoPKJQM3u5edenZMs_m5bXjlNZ1HnVnga7KOvdb2wikP9DEyKYq2PpI-Nh1elWc07SxLXVy-kZOV4NBx5CLngU_vTdDHEqUb_CJ6y-miYYwdVGYtdb_3XYVoYWIYZMXdtvjgvJ6-gWb3p7mRsNLha-OHjdkRFemkXrTK-Yo36XLYEPUNVsnNm00)
+[Source PlantUML](http://www.plantuml.com/plantuml/uml/RP11JiCm44NtFiLNDr2W5-W2bIKI5LIb1nZL9Xd5cGHxl4WGTyT984ealB1iF__tPH-YKj1KUnChbfO2rOZQUPVdmDUHv763Dq-Yb-CBFfg0L_4i3gV4FSwDJygDuCcOgwSOn-CZiU3B0BWlIQntbzQIkW6Taej3uFRpT_5izopwWBzzlX2wFSuQM8hjml5ErMZ8IUvp2ZcsDT_BtgcJ9xP4atgDWVyxXzpyY5tWejJTu-PkCslCx5jJxit1YSsVzWC0) 
 
 ## Bad Design B
 <img src="DP1_B.png" alt="Bad Design B" width="800"/>
 
-[Source PlantUML](http://www.plantuml.com/plantuml/uml/RP1DJiCm48NtFiLJDr2W5-W2WSG6YGggqWECQjEEuao2FLuGnDtn3w20s4IJ-VIz9q_iM4OAr2FgctVv6_YWgVV6t4IbqCOpF7aItMyUy384F8fdSTWcdh0RV58U1BV673p5MDSROi6x0N1v8h7UxKTBwWhQ9XUBSFxwDTpRDOjUuVl_ZfJMs6bWEIvd4S_KrO0iyfGbP6jfFkQrhP8RcwEM_1i3_rOMxUS9gy37awwk5nUBMb39dssBCFbWJcmvroS0)
+[Source PlantUML](http://www.plantuml.com/plantuml/uml/RO_1Je8n48JlVOe95q7b1JWOF9f8b20FiA4LDko_FxJR0nhVtVwjcbzZ3vjslivCTfcCekLEN3godYXIXsGN2ML6tbLIpXMUXTIsgqUyzX5FAgm1wynlsFIIZNl5lNCxePIgl29Ml3i0DmTIBs5xycHXGEiSqc2Odhyk3tx1QhVuVfSFyRB0nYBhVZRAUA5ZJPYUooWk5DlCVOnxMoStDaOj-ZS6_kySV3zBp2Fl3pQ_crnFQaCbVzIMuPP1VUxa4m00) 
 
 ### Hint
 Both designs have the worst kind of problem: *they don’t function*.
