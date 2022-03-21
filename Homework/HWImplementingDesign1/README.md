@@ -5,8 +5,8 @@
 - This is an individual exercise/assignment
 
 ## The problem:
-
-Online quizzer: Is an online quiz application for teachers who write quizzes and students who take them.  The same quiz question can appear in multiple quizzes.  If a teacher updates a quiz question, it is important that all quizzes immediately reflect that change.
+Online Quizzes:
+In an online quiz application, teachers update quizzes and students take them.  Quizzes and questions have their own unique id number. The same quiz question can appear in multiple different quizzes.  If a teacher updates the actual query made by a quiz's question, it's important that this update to the query is reflected in all quizzes that utilize that question. A student takes a quiz by providing a quizId to the app at the time of taking the quiz.
 
 ## To do:
 
@@ -21,10 +21,10 @@ Online quizzer: Is an online quiz application for teachers who write quizzes and
 <br>(1) *.java* files, (2) your UML diagram, (3) your answers in *reflectionQuestions.txt*, and (4) any additional *.java* files that you may have created to solve this problem
 
 *Additional Instructions*: 
-- Each question should have both an *idNumber* and *data*
-- The question's *data* should be stored as a Java String and contain the actual question to be asked. For example, "What is the capital of Egypt?"
-- Each quiz should have an *idNumber* along with its data
-- When displaying a quiz, the quiz's *idNumber* should be displayed in addition to each question's *idNumber* and *data*
+- Each question should have both an *id* and *questionQuery*
+- The question's *questionQuery* should be stored as a Java String and contain the actual question to be asked. For example, "What is the capital of Egypt?"
+- Each quiz should have an *id* along with its *questionQuery*
+- When displaying a quiz, the quiz's *id* should be displayed in addition to each question's *id* and *questionQuery*
 
 ## Rubric:
 
