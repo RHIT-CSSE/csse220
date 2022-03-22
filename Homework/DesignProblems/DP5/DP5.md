@@ -8,12 +8,11 @@
 [Source PlantUML](http://www.plantuml.com/plantuml/uml/RL3Bhjem4DtxAwox2XNm0LrKgEc63I01OZtOGsBLZsZi5274lpU9RJ1NR1Zcp7d4P-K3KEYDPlwliXqG6Ex3JUFmIqfC5w71Utw0vivQi59ZtGA124Yrqrf9z2SLsbgHw5NuxO1a9J9Z0mRdNCJR7ac1daMNZoOxTqKwTj_rdRl6lqcBdyKQRaZLHP4FJyASUnJEoYUGBNQaR3WfQv7MzkB8G53ELjSHILcFzFIdbj-PSDeHis2GYIAxIfmiRJ3ymNzAOFMoYS3WuQSUDhqv8p4xZUsbTjQY6B_1Cv3ohSx9Rr-e8b9oV15KuaDSJbZRhWy-hN4vUfHZMkvzngJo0YW3CISjPKI2HdSmE9B6EH3E2C5lGukKBLonp7xoitCQmR87Eq335x_uru-lLyFirVM2LDE6WH1xOt5aHVb6LYwPa1AdbELajSnMxrWfVhzaYnLQsHlz7m00)
 
 # CSSE 220: Design Problem 5 - Inventory (Part 2/2)
-
 ***Laptop Inventory System:***
 EIT needs to keep inventory of the laptops from various professors that are currently being serviced by EIT. It is important for EIT to know the current OS version installed so that it can be updated while being serviced, if necessary. Also, EIT must track the laptop's owner. At the end of each workday the manager of EIT wants two different reports generated: 
 
-1.     A *service ticket report* that lists each laptop being serviced and includes: the laptop type (e.g., MacBook, Surface, etc.), its OS version, and its owner
-2.     A *laptop owner report* that just lists of all the owners of laptops currently being serviced by EIT
+  1.  A *service ticket report* that lists each laptop being serviced and includes: the laptop type (e.g., MacBook, Surface, etc.), its OS version, and its owner
+  2.  A *laptop owner report* that just lists of all the owners of laptops currently being serviced by EIT
 
 ## Bad Design B
 <img src="DP5_B.png" alt="Bad Design B" width="800"/>
