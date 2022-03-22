@@ -11,57 +11,33 @@ There are solutions with commentary and good designs provided. Use these to eval
 
 # The HWs
 
-These are available on the 220 Moodle site as Word documents, but can be downloaded here as PDFs as well.
+The links for the 5 problems are provided below.
 
-+ [DesignProbHW1 - Online Quizzes](DP1-OnlineQuizzes.docx)
-+ [DesignProbHW2 - Team Gradebook](DP2-TeamGradeBook.docx)
-+ [DesignProbHW3 - Spaceships](DP3-Spaceships.docx)
-+ [DesignProbHW4 - Team Budget](DP4-TeamBudget.docx)
-+ [DesignProbHW5 - Tag and Inventory](DP5-TagAndInventory.docx)
++ [DesignProbHW1 - Online Quizzes](DP1/DP1.md)
++ [DesignProbHW2 - Team Gradebook](DP2/DP2.md)
++ [DesignProbHW3 - Spaceships](DP3/DP3.md)
++ [DesignProbHW4 - Team Budget](DP4/DP4.md)
++ [DesignProbHW5 - Tag and Inventory](DP5/DP5.md)
 
 # Turn-In Instructions 
 
-You will complete these and submit to the corresponding 220 Moodle assignment.
+You will complete these via GradeScope which is linked from Moodle.
 
 # Grading 
 
-### Each DP HW contains 4 parts: 
-1. A problem description
-2. A proposed defective Solution A that attempts to solve the problem
-3. A proposed defective Solution B that attempts to solve the problem
-4. Your solution to the problem - provide a design in UML and an explanation
-
+### Assignment Parts and Points
+Details on the specific parts and point values are provided in GradeScope.
 
 ### Proposed Defective Solutions:
 + When identifying the principles that a defective solution has violated, it is vital
-that you both LIST the principle that you believe to be
-violated in the proposed design and that you EXPLAIN why you believe that
-principle to be violated.
+that you CLEARLY EXPLAIN why you believe that a principle is violated.
 + Within individual problems: To earn full credit, you must identify
 that you identify what we would consider to be the single main problem in each flawed design.  You may list
-several flaws (as a defective solution may contain a number of them), but there is usually one in particular that we are
-wanting you to identify.  This means you should look carefully and ensure your examination is exhaustive.  
-If you miss the overall big issue but your argument overall is still reasonable, you will earn less than full credit.
+several flaws (as a defective solution may contain a number of them), but there is usually one in particular that we are wanting you to identify.  This means you should look carefully and ensure your examination is exhaustive. If you miss the overall big issue but your argument overall is still reasonable, you will earn less than full credit.
 
 ### Your Solution:
-+ In each problem, you are asked to give a design in the fourth part that functions properly and that does not violate the principles we have covered in class thus far.  For your response, your solution must address the issues you have identified and present a design that is "better" than the
-problematic solutions.  If your design is no better, or if it is somehow worse than the other proposed solutions, you will not earn full credit.
++ In each problem, you are asked to give a design in the final part that functions properly and that does not violate the principles we have covered in class thus far.  For your response, your solution must address the issues you have identified and present a design that is "better" than the problematic solutions.  If your design is no better, or if it is somehow worse than the other proposed solutions, you will not earn full credit.
 
-### Earning Full Credit:
-+ To earn full credit for this assignment, you must do the following:
-  (1) For both Solution A and Solution B, you must identify the OOD Principle violated and must also provide a good English explanation
-  (2) Submit your solution which is a design that improves *AT LEAST* one of the two provided solutions by correctly fixing the identified violations
+### Your Proposed Solution:
++ To earn full credit for this assignment, you must submit your solution which is a design that improves *AT LEAST* one of the two provided solutions by correctly fixing the identified violations
 
-
-### Rubric:
-1. Solution A: correctly identifying the principles
-   violated (10% of the total points)
-2. Solution A: correct explanation for why the design violated
-   the previously stated principles (20% of the total points)
-3. Solution B: correctly identifying the principles
-   violated (10% of the total points)
-4. Solution B: correct explanation for why the design violated
-   the previously stated principles (20% of the total points)
-5. Your solution: A uml that presents a design that both fixes the issues in
-   Solution A and Solution B and does not violate any of the
-   other principles covered in class so far (40% of the total points)
