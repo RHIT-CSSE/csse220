@@ -1,5 +1,5 @@
 # CSSE 220: Design Problem 4 - Team Budget
-At a particular company, departments are composed of named teams and each team has a yearly budget. Teams have both employees and equipment, each of which have a yearly cost. A team is over budget if the total yearly cost of all employees and equipment is greater than the team's budget. It should be possible to get a list of all teams within a department that are over budget.
+At a particular company, departments are composed of named teams and each team has a yearly budget. Teams have both employees and equipment, each of which have a yearly cost. A team is over budget if the total yearly cost of all employees and equipment is greater than the team's budget. It should be possible to print a list of all teams within a department that are over budget.
 
 ## Bad Design A
 <img src="DP4_A.png" alt="Bad Design A" width="800"/>
