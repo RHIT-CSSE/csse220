@@ -1,4 +1,4 @@
-package game_event_loop;
+package gameEventLoop;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -33,10 +33,11 @@ public class Main {
 	public static final int DELAY=50;
 	
 	public static void main(String[] args) {
-		new Main();
+		Main main = new Main();
+		main.runApp();
 	}
 
-	public Main() {
+	public void runApp() {
 		JFrame frame = new JFrame("Arcade Game");
 		frame.setSize(500, 500);
 		
@@ -50,11 +51,21 @@ public class Main {
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		while (true) {
-			advanceListener.advanceOneTick();
-			// 1. How do we slow this down?
-			
-		}
+		button.addActionListener( new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				component.toggleBoxDirection();
+			}
+		});
+		
+		
+		Timer timer = new Timer(DELAY, advanceListener);
+		timer.start();
+		
+//		while (true) {
+//			advanceListener.advanceOneTick();
+//			// 1. How do we slow this down?
+//		}
 		
 	}
 }

@@ -1,4 +1,4 @@
-package game_event_loop;
+package gameEventLoop;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.geom.Ellipse2D;
@@ -32,5 +32,11 @@ public class Raindrop {
 		g.fill(drop);
 		g.setColor(Color.BLACK);
 	}
+	
+	public boolean overlapsWith(Rectangle2D.Double box) {
+		return box.intersects(this.x, this.y, SIZE, SIZE);
+	}
+	
+	
 		
 }

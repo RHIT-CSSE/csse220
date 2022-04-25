@@ -1,4 +1,4 @@
-package game_event_loop;
+package gameEventLoop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
