@@ -100,6 +100,47 @@ public class LinkedList {
 	}
 	
 	/**
+	 * Removes the first element from the list
+	 * 
+	 * If the list is empty, throw an exception like this:
+	 * throw new RuntimeException("Attempt to remove from an empty list");
+	 */
+	public void removeBeginning() {
+
+	}
+	
+	/**
+	 * Removes the last element from the list
+	 * 
+	 * You'll need a special case for the 1 element list
+	 * 
+	 * If the list is empty, throw an exception like this:
+	 * throw new RuntimeException("Attempt to remove from an empty list");
+	 */
+	public void removeEnd() {
+
+	}
+	
+	
+	
+	/**
+	 * 
+	 * Removes all the nodes with a particular value from the list
+	 * 
+	 * For example, given the list
+	 * 
+	 * 1->2->3->2->null
+	 * 
+	 * Removing all the 2s would result in:
+	 * 1->3->null
+	 * 
+	 * @param nodesWithValue
+	 */
+	public void removalAll(int nodesWithValue) {
+
+	}	
+	
+	/**
 	 * 
 	 * Inserts a particular value after another value in the list
 	 * 
@@ -146,43 +187,6 @@ public class LinkedList {
 
 	}
 	
-	/**
-	 * 
-	 * This constructor takes and array and makes a linked list
-	 * containing all the elements in the array.
-	 * 
-	 * You could do this by repeatedly calling add at end
-	 * but be classy and construct the list by hand.
-	 * 
-	 * You can assume the array has at least one element.
-	 * 
-	 * @param data
-	 */
-	public LinkedList(int[] data) {
-
-	}
-	
-	/**
-	 * Removes the first element from the list
-	 * 
-	 * If the list is empty, throw an exception like this:
-	 * throw new RuntimeException("Attempt to remove from an empty list");
-	 */
-	public void removeBeginning() {
-
-	}
-	
-	/**
-	 * Removes the last element from the list
-	 * 
-	 * You'll need a special case for the 1 element list
-	 * 
-	 * If the list is empty, throw an exception like this:
-	 * throw new RuntimeException("Attempt to remove from an empty list");
-	 */
-	public void removeEnd() {
-
-	}
 	
 	/**
 	 * Removes the element after a particular value in the list
@@ -205,19 +209,20 @@ public class LinkedList {
 	
 	/**
 	 * 
-	 * Removes all the nodes with a particular value from the list
+	 * This constructor takes and array and makes a linked list
+	 * containing all the elements in the array.
 	 * 
-	 * For example, given the list
+	 * You could do this by repeatedly calling add at end
+	 * but be classy and construct the list by hand.
 	 * 
-	 * 1->2->3->2->null
+	 * You can assume the array has at least one element.
 	 * 
-	 * Removing all the 2s would result in:
-	 * 1->3->null
-	 * 
-	 * @param nodesWithValue
+	 * @param data
 	 */
-	public void removalAll(int nodesWithValue) {
+	public LinkedList(int[] data) {
 
-	}	
+	}
+	
+	
 
 }
