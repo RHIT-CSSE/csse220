@@ -5,11 +5,10 @@ the steps below.
 
 # Install Java
 
-The thing you want to install is the *Java SE 16 - JDK Download* <a href="https://www.oracle.com/java/technologies/javase-downloads.html">Download it here</a>
+The thing you want to install is the *Java SE Development Kit 18* <a href="https://www.oracle.com/java/technologies/javase-downloads.html">Download it here</a>
 
-1. Click on *JDK Download*
-2. Scroll until you see the different OS's listed
-3. Select the download for your machine (e.g., *Windows x64 Installer*)
+1. Scroll until you see the different OS's listed
+2. Select the download for your machine (e.g., *Windows x64 Installer*)
 
 Then run the downloaded file and install it in the default location
 
