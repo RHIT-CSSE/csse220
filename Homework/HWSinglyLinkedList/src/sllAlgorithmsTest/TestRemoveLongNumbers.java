@@ -45,12 +45,16 @@ public class TestRemoveLongNumbers {
 		ILinkedList list1 = new SinglyLinkedList();
 		
 		list1.add(Integer.MIN_VALUE);
+		String expectedResult = "[]";
+		
+		System.out.println( Integer.MIN_VALUE   );
+		
 		Algorithms.removeLongNumbers(list1);
 		numberOfTests++;
-		assertEquals("[]", list1.toString());
+		assertEquals(expectedResult, list1.toString());
 		testsPassed++;
 	} // testRemoveLongNumbersN02
-		
+	
 	@Test
 	public void testRemoveLongNumbersN03() {
 		ILinkedList list1 = new SinglyLinkedList();
@@ -91,6 +95,56 @@ public class TestRemoveLongNumbers {
 		assertEquals("[1, 3] first=[1] last=[3]", list2.toString());
 		testsPassed++;
 	} // testRemoveLongNumbersN05
+	
+	@Test
+	public void testRemoveLongNumbersN06() {
+		ILinkedList list1 = new SinglyLinkedList();
+
+		
+		list1.add(-1);
+		list1.add(Integer.MIN_VALUE);
+		list1.add(-2);
+		String expectedResult = "[-1, -2] first=[-1] last=[-2]";
+		
+		System.out.println(-1 + " " + Integer.MIN_VALUE + " " + -2  );
+		
+		Algorithms.removeLongNumbers(list1);
+		numberOfTests++;
+		assertEquals(expectedResult, list1.toString());
+		testsPassed++;
+	}
+	
+	@Test
+	public void testRemoveLongNumbersN07() {
+		ILinkedList list1 = new SinglyLinkedList();
+
+		list1.add(999);
+		list1.add(1000);
+		String expectedResult = "[999] first=[999] last=[999]";
+		
+		System.out.println(999 + " " + 1000);
+		
+		Algorithms.removeLongNumbers(list1);
+		numberOfTests++;
+		assertEquals(expectedResult, list1.toString());
+		testsPassed++;
+	}
+	
+	@Test
+	public void testRemoveLongNumbersN08() {
+		ILinkedList list1 = new SinglyLinkedList();
+
+		list1.add(-1000);
+		list1.add(-999);
+		String expectedResult = "[-999] first=[-999] last=[-999]";
+		
+		System.out.println(-1000 + " " + -999);
+		
+		Algorithms.removeLongNumbers(list1);
+		numberOfTests++;
+		assertEquals(expectedResult, list1.toString());
+		testsPassed++;
+	}
 	
 } // end class TestRemoveLongNumbers
 
