@@ -48,6 +48,8 @@ public class TestDoubleList {
 		list1.add(0);
 		Algorithms.doubleList(list1);
 		numberOfTests++;
+		assertNotEquals("Tail node is not set", null, list1.getLast());
+		assertEquals("Tail node is the wrong one", null, list1.getLast().getNext());
 		assertEquals("[0, 0] first=[0] last=[0]", list1.toString());
 		testsPassed++;
 	} // testDoubleListN02

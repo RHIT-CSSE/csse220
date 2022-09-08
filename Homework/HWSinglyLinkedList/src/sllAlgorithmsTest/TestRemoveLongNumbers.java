@@ -51,6 +51,9 @@ public class TestRemoveLongNumbers {
 		
 		Algorithms.removeLongNumbers(list1);
 		numberOfTests++;
+
+		assertEquals("First node should be null", null, list1.getFirst());
+		assertEquals("Last node should be null", null, list1.getLast());
 		assertEquals(expectedResult, list1.toString());
 		testsPassed++;
 	} // testRemoveLongNumbersN02
