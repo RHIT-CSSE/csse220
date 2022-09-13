@@ -121,7 +121,7 @@ public class Maps {
 	 *           assuming that the caller will make sure that only one city experiences a temperature drop
 	 * 
 	 * example 1:
-	 *    input recordedTemps = [90, 100, 81, 99]
+	 *    input recordedTemps = [90, 100, 90, 99]
 	 *    input cityNames = ["Seattle", "LA", "Seattle", "LA"]
 	 *    return value = "LA", because 100 to 99 was a drop.
 	 * 
