@@ -8,7 +8,7 @@
 To earn a 100% for the assignment:
 1. You must submit the file *TestThisClassTest.java*
 2. *TestThisClassTest.java* must contain these 4 JUnit test operations: *testCountChocula*, *testNumberOfXs*, *testPaintCost*, *testPizzaCostCalculator*
-3. Each JUnit test operation must contain 4 test cases (see details below in the Additional Notes section)
+3. Each JUnit test operation must contain 4 test cases (see details below in the Additional Notes and Detailed Rubric sections)
 
 ## To Do:
 1. In Eclipse, import this project (HWIntroToUnitTesting) from your local copy of the CSSE220 repo
@@ -34,5 +34,12 @@ To earn a 100% for the assignment:
    - That is, the input must be one that the operation *should* handle correctly if it were implemented without defects
 - Also, for these operations, it is not fair to pass in a <code>null</code> to operations expecting an actual object reference
 
-
-
+### Detailed Rubric:
+ - (-5) for missing comments on ALL tests, scale down if it's just for a method. (-1 for one method, -3 for 2... comments are a big deal!)
+ - (-2) if missing comments on the defects, but have comments otherwise.
+ - (-2) if missing comments for other tests, but have comments on defects.
+ - (-3) if pass in NULL as a test case despite being explicitly told not to above.
+ - (-2) for other invalid inputs (Longs instead of ints, integer limits for paintCost)
+ - (-4) if missed more than 1 defective method (there are three total)
+ - (-5) f missing @Test before any of the method's testing cases. (Tests won't even run without it)
+ - (-1) for bad test case examples such as miscalculations
