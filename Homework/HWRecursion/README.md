@@ -19,7 +19,7 @@
 ## To do:
 
 1. In Eclipse, import this project (HWRecursion) from your local copy of the CSSE220 repo
-2. Implement the 12 operations in *Part1Problems.java*
+2. Implement the 9 operations in *Part1Problems.java*
 3. Run the included *RunAllTestsPart1.java* to ensure your solution passes all the unit tests
 3. Implement the 3 operations in *Part2Problems.java* 
 3. Run the included *RunAllTestsPart2.java* to ensure your solution passes all the unit tests
