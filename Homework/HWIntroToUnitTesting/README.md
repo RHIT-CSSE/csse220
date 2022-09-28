@@ -36,9 +36,9 @@ To earn a 100% for the assignment:
 
 ### Detailed Rubric:
  - (-5) for missing comments on ALL tests, scale down if it's just for a method. (-1 for one method, -3 for 2... comments are a big deal!)
- - (-2) if missing comments on the defects, but have comments otherwise.
- - (-2) if missing comments for other tests, but have comments on defects.
- - (-3) if pass in NULL as a test case despite being explicitly told not to above.
+ - (-2) if missing comments on the defects, but have comments otherwise
+ - (-2) if missing comments for other tests, but have comments on defects
+ - (-3) if pass in NULL as a test case despite being explicitly told not to above
  - (-2) for other invalid inputs (Longs instead of ints, integer limits for paintCost)
  - (-4) if missed more than 1 defective method (there are three total)
  - (-5) f missing @Test before any of the method's testing cases. (Tests won't even run without it)
