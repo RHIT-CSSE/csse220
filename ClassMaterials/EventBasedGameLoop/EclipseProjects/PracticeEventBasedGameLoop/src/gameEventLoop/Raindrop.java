@@ -32,11 +32,5 @@ public class Raindrop {
 		g.fill(drop);
 		g.setColor(Color.BLACK);
 	}
-	
-	public boolean overlapsWith(Rectangle2D.Double box) {
-		return box.intersects(this.x, this.y, SIZE, SIZE);
-	}
-	
-	
 		
 }

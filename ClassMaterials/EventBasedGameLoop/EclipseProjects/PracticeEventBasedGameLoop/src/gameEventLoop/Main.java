@@ -9,7 +9,7 @@ import javax.swing.Timer;
 
 
 /**
- * In this project, we build a simple framework for a game.
+ * In this project, we build a simplgameEventLoope framework for a game.
  * This framework stores the state of the game. The framework 
  * then repeatedly does these 3 things in one "tick" of the clock:
  * 
@@ -33,11 +33,10 @@ public class Main {
 	public static final int DELAY=50;
 	
 	public static void main(String[] args) {
-		Main main = new Main();
-		main.runApp();
+		new Main();
 	}
 
-	public void runApp() {
+	public Main() {
 		JFrame frame = new JFrame("Arcade Game");
 		frame.setSize(500, 500);
 		
@@ -51,21 +50,11 @@ public class Main {
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		button.addActionListener( new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				component.toggleBoxDirection();
-			}
-		});
-		
-		
-		Timer timer = new Timer(DELAY, advanceListener);
-		timer.start();
-		
-//		while (true) {
-//			advanceListener.advanceOneTick();
-//			// 1. How do we slow this down?
-//		}
+		while (true) {
+			advanceListener.advanceOneTick();
+			// 1. How do we slow this down?
+			
+		}
 		
 	}
 }

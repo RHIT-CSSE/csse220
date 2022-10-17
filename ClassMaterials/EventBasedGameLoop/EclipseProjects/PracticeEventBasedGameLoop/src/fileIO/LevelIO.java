@@ -1,10 +1,5 @@
 package fileIO;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.util.Scanner;
-
 /**
  * Class: LevelIO
  * @author CSSE 220 Student
@@ -69,49 +64,18 @@ Title: Sample arcade game level: a 20 x 20 field of play not counting boundaries
 	 * ensures: 1st writes a text file, then reads it back in
 	 */
 	public void runApp() {
-		String filename = "levels/IMPOSSIBLE.txt";
+		String filename = "levels/level1.txt";
 		
 
 		// TODO #1 Uncomment the calls to the writeFile and readFile methods (below)
 		// TODO #2 Have Eclipse generate the stubs for these two methods
 		// TODO #3 Implement both writeFile and readFile methods - read instructions above
 		
-		//writeFile(filename);
-		readFile(filename);
+		// writeFile(filename);
+		// readFile(filename);
 	} // runApp
 
 	//-----------------------------------------------------------------------------------
-
-	private void readFile(String filename) {
-		try {
-			Scanner scanner = new Scanner( new File(filename));
-			while ( scanner.hasNext() ) {
-				System.out.println( scanner.nextLine()  );
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-			System.out.println("Sorry that is not a valid level! Exiting..");
-			System.exit(0);
-		}
-		
-	}
-
-	private void writeFile(String filename) {
-		try {
-			PrintWriter pw = new PrintWriter( new File(filename) );
-			pw.println("---------------");
-			pw.println("..B..........A.");
-			pw.println(".......--......");
-			pw.println("...H...........");
-			pw.println("---------------");
-			pw.close();
-			
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-			System.out.println("Level not found. Exiting...");
-			System.exit(0);
-		}
-	}
 
 	/**
 	 * ensures: runs the app
