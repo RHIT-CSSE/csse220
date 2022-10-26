@@ -1,0 +1,27 @@
+@startuml
+hide empty members
+
+class MyViewer {
+	-runApp(): void
+	+{static} main(args: String[]): void
+}
+
+class MyComponent {
+	-drawSimpleSquare(g2d: Graphics2D): void
+	-drawManyRectangles(g2d: Graphics2D): void
+	-drawShapesLines(g2d: Graphics2D): void
+	-drawSomeText(g2d: Graphics2D): void
+	-drawUsingColors(g2d: Graphics2D): void
+	-drawUsingArc(g2d: Graphics2D): void
+	-drawRoundedRect(g2d: Graphics2D): void 
+ 	#paintComponent(g: Graphics): void {override}
+}
+
+class JComponent { }
+class JFrame { }
+
+MyViewer -down-> JFrame
+MyViewer -> MyComponent
+MyComponent -up-|> JComponent
+
+@enduml
