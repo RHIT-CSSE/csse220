@@ -1,0 +1,77 @@
+Some written exercises on big-oh notation and estimating running times.
+
+----------------------------------------------------------------
+INSTRUCTIONS
+----------------------------------------------------------------
+Edit this file to answer the questions below.
+
+You may find it helpful to use the formal definition of big-oh from
+session 13.  That is, f(n) = O(g(n)) if there exists positive constants
+c and n0 such that:
+
+	0 <= f(n) <= c * g(n)
+
+For example, suppose an algorithm is O(n^2) and it takes 10 seconds to
+process a list with 10,000 elements.  How long will it take on a list
+with 20,000 elements?
+
+	From the definition, f(n) represents the actual running time.  The
+	algorithm is O(n^2), so g(n) = n^2.  From the given example we have:
+	
+		f(n) <= c * g(n), which is the same as
+		10 sec <= c * n^2.  But n = 10,000 elements, so we have
+		10 sec <= c * 10^8 elements^2.
+		
+	That means c >= 10^-7 sec/element^2.  So with 20,000 elements we have:
+	
+		f(n) <= (10^-7 sec/element^2) * g(n), or
+		f(n) <= (10^-7 sec/element^2) * n^2.  With 20,000 elements, we get
+		f(n) <= (10^-7 sec/element^2) * 4*10^8 elements^2, or
+		f(n) <= 40 sec.
+
+	Thus the algorithm will take about 40 seconds on a list with 20,000
+	elements.
+
+----------------------------------------------------------------
+QUESTIONS
+----------------------------------------------------------------
+1. Suppose an algorithm in O(n^3) and it takes 50 seconds to process a
+list with 2000 elements.  How long will it take on a list with 4000
+elements?
+
+
+	
+
+2. Suppose an algorithm in O(n^3) and it takes 50 seconds to process a
+list with 800 elements.  How long will it take on a list with 2000
+elements?
+
+
+
+
+3. Suppose an algorithm in O(n*log(n)) and it takes 100 seconds to
+process a list with 1000 elements.  How long will it take on a list with
+4000 elements?
+
+
+
+
+4. Careful!  Suppose an algorithm in O(n) and it takes 1 second to
+process a list with 500 elements.  How large a list can it process in
+1 hour?
+
+
+
+
+5. Careful!  Suppose an algorithm in O(n^3) and it takes 1 second to
+process a list with 500 elements.  How large a list can it process in 1
+hour?
+
+
+
+
+
+
+
+
+
