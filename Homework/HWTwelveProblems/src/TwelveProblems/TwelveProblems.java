@@ -8,6 +8,18 @@ import java.util.ArrayList;
  * @author CSSE Faculty Purpose: This exercise is intended to give you practice
  *         in Java with various algorithms learned in the previous course
  *         CSSE120
+ *         
+ *************************************************************************************** 
+ *         REQUIRED HELP CITATION
+ * 
+ *         Help from anyone other than a CSSE220 Instructor or CSSE220 TA must
+ *         be cited. If you didn't get any outside help, then you can simply
+ *         state below: "I did not receive any outside help"
+ ***************************************************************************************
+ *         Help Citation (for this or any other files in this assignment)
+ * 
+ *         TODO: cite your help here
+ *************************************************************************************** 
  */
 public class TwelveProblems {
 
