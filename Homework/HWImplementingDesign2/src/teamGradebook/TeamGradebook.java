@@ -3,6 +3,24 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
+/**
+ * This class is the main application to demonstrate the solution to the TeamGradebook
+ * Design Problem.
+ * 
+ *************************************************************************************** 
+ *         REQUIRED HELP CITATION
+ * 
+ *         Help from anyone other than a CSSE220 Instructor or CSSE220 TA must
+ *         be cited. If you didn't get any outside help, then you can simply
+ *         state below: "I did not receive any outside help"
+ ***************************************************************************************
+ *         Help Citation (for this or any other files in this assignment)
+ * 
+ *         TODO: cite your help here
+ *************************************************************************************** 
+ */
+ 
+
 public class TeamGradebook {
 
 	private ArrayList<Student> students;

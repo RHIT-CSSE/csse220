@@ -2,10 +2,22 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
-  *  This class is used to demonstrate a functional design
-  *  involving Quizzes and Questions which can be updated and displayed
-  * 
-  */
+ * This class is used to demonstrate a functional design involving Quizzes and
+ * Questions which can be updated and displayed
+ * 
+ * 
+ *************************************************************************************** 
+ *         REQUIRED HELP CITATION
+ * 
+ *         Help from anyone other than a CSSE220 Instructor or CSSE220 TA must
+ *         be cited. If you didn't get any outside help, then you can simply
+ *         state below: "I did not receive any outside help"
+ ***************************************************************************************
+ *         Help Citation (for this or any other files in this assignment)
+ * 
+ *         TODO: cite your help here
+ *************************************************************************************** 
+ */
 public class QuizMain {
 	
 	//TODO add instance variables here

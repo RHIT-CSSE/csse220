@@ -3,15 +3,15 @@ package Homework2DArrays;
 import java.util.Random;
 /**
  * 
- *	 For FUN: Extra Challenge Problem (NO BONUS, NO GRADE)
+ *	 For FUN: Extra Challenge Problem 
+ *   (You can complete the incentive form on Moodle if you complete this)
  *	
- *	 There are no special bonuses for this problem, but if you want a challenge,
- *	 this is a VERY cool application of 2DArrays. If you enjoyed this problem 
- *	 feel free to ask your instructor more about it.
+ *	 If you want a challenge, this is a VERY cool application of 2DArrays. 
+ *   If you enjoyed this problem feel free to ask your instructor more about it.
  * 
  * 	Class:FunGameOfLife
  * 	@author Jason Yoder (yoder1)
- * 	Purpose: provide additonal practice with 2D arrays
+ * 	Purpose: provide additional practice with 2D arrays
  */
 public class FunGameOfLife {
 
@@ -52,8 +52,8 @@ public class FunGameOfLife {
 	 * @param cells
 	 * @return new int[][] with next iteration of cell states
 	 * 
-	 *         Hint: You will want two different int[][] otherwise if you change one
-	 *         cell then it impacts calculate for the next cells that are its
+	 *         Hint: You will want two different int[][]s otherwise if you change one
+	 *         cell then it impacts the calculation for the next cells that are its
 	 *         neighbors, they should all be changed based on the prior state.
 	 *         
 	 *   If you do complete this, be sure to look below and uncomment the line

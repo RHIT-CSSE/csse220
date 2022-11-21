@@ -6,6 +6,18 @@ package HW1;
  * Purpose: The primary objective of this assignment is to get working smoothly the 
  *          process of checking out homework projects Eclipse and submitting your .java files 
  *          correctly to this assignment's Moodle Dropbox
+ * 
+ *************************************************************************************** 
+ *         REQUIRED HELP CITATION
+ * 
+ *         Help from anyone other than a CSSE220 Instructor or CSSE220 TA must
+ *         be cited. If you didn't get any outside help, then you can simply
+ *         state below: "I did not receive any outside help"
+ ***************************************************************************************
+ *         Help Citation (for this or any other files in this assignment)
+ * 
+ *         TODO: cite your help here
+ *************************************************************************************** 
  */
 public class HW1 {
 
@@ -21,6 +33,7 @@ public class HW1 {
 	 * addFraction(1,2,1,4) returns 0.75
 	 */
 	public static double addFraction(int num1, int den1, int num2, int den2) {
+		//TODO Complete this method
 		return -1;
 	}
 
@@ -39,7 +52,7 @@ public class HW1 {
 	 * @return a score
 	 */
 	public static int footballScore(String input) {
-
+		//TODO Complete this method
 		return -1;
 	}
 

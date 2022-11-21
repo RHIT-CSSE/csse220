@@ -5,6 +5,18 @@ package sll;
  * motivated by the implementation in Big Java, 5e, ch. 16.1.
  * 
  * @author TODO <YOUR_NAME> on <DATE>.
+ * 
+ *************************************************************************************** 
+ *         REQUIRED HELP CITATION
+ * 
+ *         Help from anyone other than a CSSE220 Instructor or CSSE220 TA must
+ *         be cited. If you didn't get any outside help, then you can simply
+ *         state below: "I did not receive any outside help"
+ ***************************************************************************************
+ *         Help Citation (for this or any other files in this assignment)
+ * 
+ *         TODO: cite your help here
+ *************************************************************************************** 
  */
 public class SinglyLinkedList implements ILinkedList {
 

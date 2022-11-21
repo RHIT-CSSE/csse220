@@ -4,7 +4,25 @@ import sll.ILinkedList;
 import sll.IListNode;
 import sll.SinglyLinkedList;
 
-// TODO: complete sll.SinglyLinkedList first, then use it to complete these problems.
+/**
+ *  This class has a collection of methods that use a completed implementation
+ *  of a SinglyLinkedList to perform various computations.
+ *  
+ *  TODO: complete sll.SinglyLinkedList first, then use it to complete these problems.
+ * 
+ * 
+ *************************************************************************************** 
+ *         REQUIRED HELP CITATION
+ * 
+ *         Help from anyone other than a CSSE220 Instructor or CSSE220 TA must
+ *         be cited. If you didn't get any outside help, then you can simply
+ *         state below: "I did not receive any outside help"
+ ***************************************************************************************
+ *         Help Citation (for this or any other files in this assignment)
+ * 
+ *         TODO: cite your help here
+ *************************************************************************************** 
+ */
 public class Algorithms {
 	/**
 	 * 
