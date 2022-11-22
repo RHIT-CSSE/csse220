@@ -13,7 +13,7 @@ public class VariableScopeAndBreakExamples {
 		} else {
 			String ans = "X is NOT zero!";
 		}
-		//System.out.println(  ans  );
+		System.out.println(  ans  );
 				
 		//  break; statement allows you to 
 		//  exit the current loop
