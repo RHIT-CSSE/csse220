@@ -1,22 +1,11 @@
 package textbased;
 
-public class DamagingDrop {
+public class DamagingDrop extends GameObject{
 	
-	private boolean shouldRemove = false;
-
-	public DamagingDrop() {
-			
+	
+	public DamagingDrop(String name) {
+		super(name);
 	}
-	
-	
-	public boolean shouldRemove() {
-		return this.shouldRemove;
-	}
-	
-	public void onRemove() {
-		System.out.println();
-	}
-	
 	
 
 }
