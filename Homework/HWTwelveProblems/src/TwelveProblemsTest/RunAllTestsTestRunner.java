@@ -49,7 +49,7 @@ public class RunAllTestsTestRunner extends BlockJUnit4ClassRunner {
 				testFailure++;
 				String msg = failure.getMessage(); // write that
 
-				if (msg.equals("TODO: delete this statement and implement this operation.")) {
+				if (msg != null && msg.equals("TODO: delete this statement and implement this operation.")) {
 					implemented = false;
 				}
 

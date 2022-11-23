@@ -36,7 +36,6 @@ public class TwelveProblems {
 	 */
 	public static double distanceFromOrigin(double x, double y) {
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
-
 	}
 
 	/**
@@ -64,7 +63,6 @@ public class TwelveProblems {
 	 */
 	public static boolean secondDigit5(int input) {
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
-
 	}
 
 	/**
