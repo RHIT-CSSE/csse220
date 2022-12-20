@@ -17,7 +17,7 @@ In an online quiz application, teachers update quizzes and students take them.  
 5. Include Javadoc comments in *Question.java* and *Quiz.java* 
 6. Create a computer generated UML diagram that represents your implementation
 7. Answer the questions in *reflectionQuestions.txt*
-8. Upload to this assignment's Moodle Dropbox your completed:
+8. Upload to this assignment's Dropbox your completed:
 <br>(1) *.java* files, (2) your UML diagram, (3) your answers in *reflectionQuestions.txt*, and (4) any additional *.java* files that you may have created to solve this problem
 
 *Additional Instructions*: 

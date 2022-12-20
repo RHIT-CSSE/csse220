@@ -11,7 +11,7 @@
 2. Design (Part 1) Come up with an improved design that uses inheritance to reduce code duplication
 3. Refactor (Part 2) Implement the new design by refactoring code
 4. Extend (Part 3 + 4) Add on additional functionality using inherited functionality from the recently improved classes/design
-5. Upload all of your *.java* files to this assignment's Moodle Dropbox
+5. Upload all of your *.java* files to this assignment's Dropbox
 
 Run the code and ensure you see the functionality in the video below and then go ahead and get started
 

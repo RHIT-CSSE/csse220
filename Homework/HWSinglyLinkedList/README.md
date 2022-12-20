@@ -27,7 +27,7 @@
 3. Run the included *RunAllTests.java* in the *sll* package to ensure your solution passes all the unit tests
 3. Implement the 7 operations in *Algorithms.java* found in the *sllAlgorithms* package
 3. Run the included *RunAllTests.java* in the *sllAlgorithms* package to ensure your solution passes all the unit tests
-4. Upload your completed *SinglyLinkedList.java* and *Algorithms.java* files to this assignment's Moodle Dropbox
+4. Upload your completed *SinglyLinkedList.java* and *Algorithms.java* files to this assignment's Dropbox
 
 # Problem Description
 

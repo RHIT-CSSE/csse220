@@ -32,12 +32,19 @@ public class Homework2DArrays {
 	 * entries of the form data[i][j] where i == j. Elements on the main diagonal
 	 * can be 0 or any other number.
 	 * 
-	 * Examples: {{1,0,0}, {0,2,0} {0,0,3}} yields true
+     * Examples:
+	 * {{1,0,0},
+	 *  {0,2,0}
+	 *  {0,0,3}} yields true
+	 *  
+	 * {{1,0,9},
+	 *  {0,2,0},
+	 *  {0,0,3}} yields false because 0,2 is nonzero
 	 * 
-	 * {{1,0,9}, {0,2,0}, {0,0,3}} yields false because 0,2 is nonzero
-	 * 
-	 * {{0,0,0}, {0,0,0}, {0,0,3}} yields true because there can be 0 entries on the
-	 * diagonal if desired
+	 * {{0,0,0},
+	 *  {0,0,0},
+	 *  {0,0,3}} yields true because there can be 0
+	 *                  entries on the diagonal if desired
 	 * 
 	 * @param data input array
 	 * @return true if it is diagonal, false otherwise
@@ -55,7 +62,8 @@ public class Homework2DArrays {
 	 * 
 	 * For example
 	 * 
-	 * abba dafa
+	 * abba 
+	 * dafa
 	 * 
 	 * Has a longest sequence of 2 for the 2 repeated bs
 	 * 
@@ -67,7 +75,8 @@ public class Homework2DArrays {
 	 * 
 	 * For example:
 	 * 
-	 * abcdd ddefg
+	 * abcdd 
+	 * ddefg
 	 * 
 	 * Is considered to have a longest sequence of 4 because the two ds on the right
 	 * "wrap around" to connect with the two ds on the next line
@@ -111,12 +120,30 @@ public class Homework2DArrays {
 	 * 
 	 * Unmarked cells should be filled with a period '.'
 	 * 
-	 * For example, given row=1,col=1,distance 1 .x........ xxx....... .x........
-	 * .......... .......... .......... .......... .......... .......... ..........
+	 * For example, given row=1,col=1,distance 1 
+	 * .x........ 
+	 * xxx....... 
+	 * .x........
+	 * .......... 
+	 * .......... 
+	 * .......... 
+	 * .......... 
+	 * .......... 
+	 * .......... 
+	 * ..........
 	 * ..........
 	 * 
-	 * For example, given row=1,col=6,distance 2 .....xxx.. ....xxxxx. .....xxx..
-	 * ......x... .......... .......... .......... .......... .......... ..........
+	 * For example, given row=1,col=6,distance 2 
+	 * .....xxx.. 
+	 * ....xxxxx. 
+	 * .....xxx..
+	 * ......x... 
+	 * .......... 
+	 * .......... 
+	 * .......... 
+	 * .......... 
+	 * .......... 
+	 * ..........
 	 * ..........
 	 * 
 	 * 
@@ -154,12 +181,24 @@ public class Homework2DArrays {
 	 * You can assume there will always be one steepest position for the ball to go
 	 * to
 	 * 
-	 * For example, in an array like this: 9999 9549 9999 yields 4 The ball would
-	 * start in 1,1 (5) rolls to 4 and stops
+	 * For example, in an array like this: 
 	 * 
-	 * 99999999999 98711111199 96999999999 95444444399 99999999999 yields 4 The ball
-	 * starts at 8, follows steepest decent to 6 Then at the first 4 there is no
-	 * lower position so it stops
+	 * 9999 
+	 * 9549 
+	 * 9999 
+	 * 
+	 * yields 4 
+	 * The ball would start in 1,1 (5) rolls to 4 and stops
+	 * 
+	 * 99999999999 
+	 * 98711111199 
+	 * 96999999999 
+	 * 95444444399 
+	 * 99999999999 
+	 * 
+	 * yields 4 
+	 * The ball starts at 8, follows steepest decent to 6
+	 * Then at the first 4 there is no lower position so it stops
 	 * 
 	 * @param map map indicating elevation
 	 * @return height where the ball stops

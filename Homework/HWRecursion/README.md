@@ -23,7 +23,7 @@
 3. Run the included *RunAllTestsPart1.java* to ensure your solution passes all the unit tests
 3. Implement the 3 operations in *Part2Problems.java* 
 3. Run the included *RunAllTestsPart2.java* to ensure your solution passes all the unit tests
-4. Upload your completed *Part1Problems.java* and *PartsProblems.java* files to the RecursionHomework Moodle Dropbox
+4. Upload your completed *Part1Problems.java* and *PartsProblems.java* files to the RecursionHomework Dropbox
 
 
 - There are no documenting/commenting requirements for this assignment

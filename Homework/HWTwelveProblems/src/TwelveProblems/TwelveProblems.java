@@ -29,7 +29,8 @@ public class TwelveProblems {
 	 * 
 	 * For example
 	 * 
-	 * distanceFromOrigin(-1,0) returns 1 distanceFromOrigin(77,77) returns 108.894
+	 * distanceFromOrigin(-1,0) returns 1 
+	 * distanceFromOrigin(77,77) returns 108.894
 	 * distanceFromOrigin(-3,-4) returns 5
 	 * 
 	 * Google for Java square root to figure out how to do it
@@ -51,7 +52,10 @@ public class TwelveProblems {
 	 * 
 	 * Bonus Hint: you usually should not use an if statement to return a boolean
 	 * 
-	 * if (x % 2 == 0) { // checks if x is even return true; } else { return false;
+	 * if (x % 2 == 0) { 
+	 *     // checks if x is even return true; 
+	 * } else { 
+	 *     return false;
 	 * }
 	 * 
 	 * Instead, just return the result of the boolean test directly
@@ -70,7 +74,8 @@ public class TwelveProblems {
 	 * 
 	 * For example:
 	 * 
-	 * endsWithUppercase("dog") returns false endsWithUppercase("doG") returns true
+	 * endsWithUppercase("dog") returns false 
+	 * endsWithUppercase("doG") returns true
 	 * endsWithUppercase("") returns false
 	 * 
 	 * Note that you can check if a particular char is uppercase like this:
@@ -114,10 +119,12 @@ public class TwelveProblems {
 	 * Given two strings of the same length, returns the index at which the strings
 	 * first differ. If the strings are equal the function should return -1.
 	 * 
-	 * For example: firstDifference("abc", "axy") returns 1 firstDifference("aby",
-	 * "abz") returns 2 firstDifference("foo", "bar") returns 0
-	 * firstDifference("ninja", "ninja") returns -1 firstDifference("","") returns
-	 * -1
+	 * For example: 
+	 * firstDifference("abc", "axy") returns 1 
+	 * firstDifference("aby", "abz") returns 2 
+	 * firstDifference("foo", "bar") returns 0
+	 * firstDifference("ninja", "ninja") returns -1 
+	 * firstDifference("","") returns -1
 	 * 
 	 * You don't need to worry about inputs of different lengths.
 	 * 
@@ -126,15 +133,17 @@ public class TwelveProblems {
 	 * 
 	 * if(one.equals(two)) return -1;
 	 * 
-	 * Individual characters however, should be compared with == char a =
-	 * one.charAt(0); char b = two.charAt(0); if(a == b) { System.out.println("First
-	 * characters are equal"); }
+	 * Individual characters however, should be compared with == 
+	 * char a = one.charAt(0); 
+	 * char b = two.charAt(0); 
+	 * if (a == b) { 
+	 *     System.out.println("First characters are equal"); 
+	 * }
 	 * 
 	 * Requires: for loops or while loops, strings
 	 */
 	public static int firstDifference(String one, String two) {
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
-
 	}
 
 	/**
@@ -155,7 +164,6 @@ public class TwelveProblems {
 	 */
 	public static char mostCommonCharacter(String input) {
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
-
 	}
 
 	/**
@@ -164,8 +172,8 @@ public class TwelveProblems {
 	 * If no number is found, the function returns -1
 	 * 
 	 * Example: firstDivisibleBy77({88,24,154,77}) returns 154
-	 * firstDivisibleBy77({5929, 280}) returns 5929 firstDivisibleBy77({1,2,3,4})
-	 * returns -1
+	 * firstDivisibleBy77({5929, 280})             returns 5929 
+	 * firstDivisibleBy77({1,2,3,4})               returns -1
 	 * 
 	 * Don't forget about the modulus operator (%)
 	 */
@@ -181,7 +189,9 @@ public class TwelveProblems {
 	 * If the given exponent is less than zero, return an empty array. You can do
 	 * this by saying "return new int[0];"
 	 * 
-	 * For example: powersOfTwo(3) returns {1,2,4,8} powersOfTwo(0) returns {1}
+	 * For example: 
+	 * powersOfTwo(3) returns {1,2,4,8} 
+	 * powersOfTwo(0) returns {1}
 	 * powersOfTwo(-66) returns {}
 	 * 
 	 * Requires: arrays, for loops
@@ -196,8 +206,9 @@ public class TwelveProblems {
 	 * arrays (i.e. the larger of the two numbers in that slot in the original
 	 * arrays)
 	 * 
-	 * For example: maxArray({2,10},{1,200}) returns {2,200} maxArray({-5, 60,
-	 * 7},{-10,400,8}) returns {-5,400,8}
+	 * For example: 
+	 * maxArray({2,10},{1,200}) returns {2,200} 
+	 * maxArray({-5, 60, 7},{-10,400,8}) returns {-5,400,8}
 	 * 
 	 * Requires: arrays, for loops
 	 */
@@ -212,8 +223,10 @@ public class TwelveProblems {
 	 * second array. You can assume that the first array is shorter than the second.
 	 * 
 	 * For example: timesOccur({1,2}, {7,1,2,7,7,7,1,2,7}) returns 2
-	 * timesOccur({1,1}, {1,1,1,3} returns 2 (in the 0th and 1st position)
-	 * timesOccur({1,2}, {1,3,2,1} returns 0
+	 * timesOccur({1,1},       {1,1,1,3} returns 2 (in the 0th and 1st position)
+	 * timesOccur({1,2},       {1,3,2,1} returns 0
+	 * timesOccur({1,2,3},     {1,2,3,8,1,2,3,9,2}) return 2
+     * timesOccur({1,2,3,4,5}, {2,1,2,3,4,5,7}) returns 1
 	 * 
 	 * Requires: arrays, nested for loops
 	 */
@@ -226,7 +239,9 @@ public class TwelveProblems {
 	 * Given an ArrayList of strings, return a new list where any time the word
 	 * "double" appears in the original list it is doubled in the new list.
 	 * 
-	 * For example: doubleDouble(["foo","double"]) returns ["foo","double","double"]
+	 * For example: 
+	 * doubleDouble(["foo","double"]) returns ["foo","double","double"]
+	 * 
 	 * doubleDouble(["a","double","b","double","c"]) returns
 	 * ["a","double","double","b","double","double","c"]
 	 * 
@@ -250,9 +265,10 @@ public class TwelveProblems {
 	 * Then it will return the 2nd 3rd and 4th characters Then it will return the
 	 * 3rd 4th and 5th characters etc.
 	 * 
-	 * For example: threeCharacterStrings("hello") returns ["hel","ell","llo"]
-	 * threeCharacterStrings("foo") returns ["foo"] threeCharacterStrings(["ab"])
-	 * returns []
+	 * For example: 
+	 * threeCharacterStrings("hello")  returns ["hel","ell","llo"]
+	 * threeCharacterStrings("foo")    returns ["foo"] 
+	 * threeCharacterStrings(["ab"])   returns []
 	 */
 	public static ArrayList<String> threeCharacterStrings(String input) {
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");

@@ -16,7 +16,7 @@ To earn a 100% for the assignment:
 2. Create a JUnit test file called *TestThisClassTest.java* (see screen shot below)
 3. In *TestThisClassTest.java*, create unit test operations for the 4 operations that appear in *TestThisClass.java*. 
 <br>These unit tests must reveal which of the 4 operations are defective
-4. Upload your completed *TestThisClassTest.java* file to the IntroToUnitTesting Moodle Dropbox
+4. Upload your completed *TestThisClassTest.java* file to the IntroToUnitTesting Dropbox
 
 ![EclipsePackage](images/introToUnitTestingEclipsePkg.png)
 

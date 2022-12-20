@@ -20,7 +20,7 @@
    - Read and follow the instructions in [importing_eclipse_project.md](https://github.com/RHIT-CSSE/csse220/tree/master/Docs/importing_eclipse_project.md)
 2. Implement the two operations in *HW1.java*
 3. Run the included JUnit tests to ensure your solution passes all the unit tests - do this by running *RunAllTests.java*
-4. Upload your completed *HW1.java* file to the HW1 Moodle Dropbox
+4. Upload your completed *HW1.java* file to the HW1 Dropbox
 
 
 - There are no documenting/commenting requirements for this assignment

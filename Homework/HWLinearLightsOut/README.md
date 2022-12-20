@@ -29,7 +29,7 @@ To earn a 100% for the assignment you must do the following 3 tasks:
 2. Implement *Part 1 - Ball/Strike Counter*
 3. Implement *Part 2 - Linear Lights Out*
 3. Include Javadoc comments in for all your classes - see Documentation Requirements section (above)
-4. Each student uploads her or his completed *.java* files to the LinearLightsOut Moodle Dropbox
+4. Each student uploads her or his completed *.java* files to the LinearLightsOut Dropbox
 
 ## Part 1 - Individual Part: Ball/Strike Counter
 
@@ -58,7 +58,7 @@ both the Balls count and Strikes count labels must be reset to 0
 
 - You may work with a single classmate of your choosing on this part
 - You may sit together while you work and discuss ideas and code freely, but each person must type and upload their 
-own files to the Moodle assignment's dropbox
+own files to the assignment's dropbox
 - We highly recommend that you seek out a partner to collaborate on this part of the assignment
 <br> -- Why? Because you will be working on a multi-week project with at least 1 partner toward the end of this quarter. Now is a good time to find someone you can work with
 - If you do work together, each partner must identify the other in a comment at the top of your program  

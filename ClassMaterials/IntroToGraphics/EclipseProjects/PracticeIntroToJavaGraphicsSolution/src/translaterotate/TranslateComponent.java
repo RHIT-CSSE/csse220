@@ -87,8 +87,8 @@ public class TranslateComponent extends JComponent {
 		super.paintComponent(g);
 		Graphics2D g2d = (Graphics2D) g;
 		
-		int xOffset = getWidth() - ((int)(getWidth() / 1.5));
-		int yOffset = getHeight() - ((int)(getHeight() / 1.5));
+		int xOffset = getWidth()/2 - 100;
+		int yOffset = getHeight()/2 - 75;
 		g2d.translate(xOffset, yOffset);
 		
 		this.drawFace(g2d);

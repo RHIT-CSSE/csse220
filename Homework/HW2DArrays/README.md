@@ -22,7 +22,7 @@
 1. In Eclipse, import this project (HW2DArrays) from your local copy of the CSSE220 repo
 2. Implement the 4 operations in *Homework2DArrays.java*. 
 3. Run the included JUnit tests to ensure your solution passes all the unit tests - do this by running *RunAllTests.java*
-4. Each student uploads her or his completed *Homework2DArrays.java* file to the HW2DArrays Moodle Dropbox
+4. Each student uploads her or his completed *Homework2DArrays.java* file to the HW2DArrays Dropbox
 
 
 - There are no documenting/commenting requirements for this assignment
