@@ -9,12 +9,17 @@
 
 # CSSE 220: Design Problem 5 - Inventory (Part 2/2)
 ***Laptop Inventory System:***
-EIT needs to keep inventory of the laptops from various professors that are currently being serviced by EIT. It is important for EIT to know the current OS version installed so that it can be updated while being serviced, if necessary. Also, EIT must track the laptop's owner. At the end of each workday the manager of EIT wants two different reports generated: 
+EIT needs to keep inventory of the laptops from various professors that are currently being serviced by EIT. It is important for EIT to know the current OS version installed so that it can be updated while being serviced, if necessary. Also, EIT must track the laptop's owner. Each device comes with an extra as follows:
+  - SurfaceBook owners get a pen, for which we track the pen's model number.
+  - MacBook owners get a trackpad and the shape of the trackpad should be tracked.
+  - ChromeBook owners get an unlimited number of speakers to use with the Chromebook and the number must be tracked.
+
+At the end of each workday the manager of EIT wants two different reports generated: 
 
   1.  A *service ticket report* that lists each laptop being serviced and includes: the laptop type (e.g., MacBook, Surface, etc.), its OS version, and its owner
-  2.  A *laptop owner report* that just lists of all the owners of laptops currently being serviced by EIT
+  2.  A *laptop owner report* that just lists of all the owners of laptops currently being serviced by EIT with their respective extra device information.
 
 ## Bad Design B
 <img src="DP5_B.png" alt="Bad Design B" width="1000"/>
 
-[Source PlantUML](http://www.plantuml.com/plantuml/uml/pPF1IiD048Rl-nH3JucQ5-X1YZs8e0QCU14FwsPCGxCpONRIKgJlRkkoL6ZLGY-z9lz-Cz-_x2Ie5HryPrndGu1xsoltTxH0KfPLjGgA7ZuD01GpItM7jqWeLh52MRGEdritHtt2daL3bXy8HcIv99GOYwbBRrlAh3HX39LAIythMmvWrWRCuIsAcfTKN8ykHZ2T2NkyOPx_dtsmxhXWDSY7TP4A1c8ZFqP1h05ug_9eFQR5usStY21fsM_8BoYXPHf3pSDxXmQ-ZNUeR8znzTVvM5ZpU_DPIkXqdvBbYPD2PPg--PKSriau5NQoRkISj-lkpa_tJQnpTPuWrTkN_WK0)
+[Source PlantUML](http://www.plantuml.com/plantuml/uml/pP9FQ_904CRl-HI3fythwnVmKAGMIg5MQQJtwUxKX2Ixo-n6aU9tR-96Dg3z0rwyv12U_SqpFsRcFB9lwYgH5Je7psYziKzwIzeRtcTxvwc6pmG09ZbgLT4ZQMBqb15l2qdhGfRaNyaQzawa5u81kTnfuX0JAII719BBioRAxFJaRlHl1FESJKttnfI_PnSe_nRC6lv06QYGGBzt7DKl2wOh_88rJI7pNEXD-2qRvXQzj2tvZTWLHaz1cUQzeX1mbh1iNpPrXmSOHxGuO_x_YPSUds--zorE2Jy_fuWqzWgXvMcwI8SxZL6fB9HkWOUJac3qUX-UKPOhL5cEbXx8IUwz1FwjIf4vwWsj-_B7ta9rtyBw5ZGK5I_gQbcMzC8egkBrHFXjcrgH5eFsdPyPQTNKrHS0)
