@@ -11,7 +11,7 @@
 ***Laptop Inventory System:***
 EIT needs to keep inventory of the laptops from various professors that are currently being serviced by EIT. It is important for EIT to know the current OS version installed so that it can be updated while being serviced, if necessary. Also, EIT must track the laptop's owner. Each device comes with an extra as follows:
   - SurfaceBook owners get a pen, for which we track the pen's model number.
-  - MacBook owners get a trackpad and the shape of the trackpad should be tracked.
+  - MacBook owners get a trackpad and the condition of the trackpad should be tracked.
   - ChromeBook owners get an unlimited number of speakers to use with the Chromebook and the number must be tracked.
 
 At the end of each workday the manager of EIT wants two different reports generated: 
@@ -22,4 +22,4 @@ At the end of each workday the manager of EIT wants two different reports genera
 ## Bad Design B
 <img src="DP5_B.png" alt="Bad Design B" width="1000"/>
 
-[Source PlantUML](http://www.plantuml.com/plantuml/uml/pPBDJW8n58NtynGth3egBy32434n9YB48UvhUuN9TDhcjWCXXdUtyzFK2FuaRDYmO4w_S_hDJ9tdv9jQPK9nv-29Ms_iezwYzeRsnTvvhE4Z0u3nXckfy04r4lTO86rBWQjILEXVq1hoZkKdWZroiTD8VOpba1qoo4vtZQNPwV7jw6e4imsP6k-CgVxEphduNx1ew9sBdWeP3FTELSDbmRI3dtcD4oWybNhT_oqQee1Us41-HNAbqHEGfdbJs0USHLw5aqqzWLBxjWFWEl7P4VZcDsZU7L__B9t5X9yTKrWUEJ6qYEqiZ_tnKP6Miroqsm_HJzHxhXnFN5HBBeiDjtYFJb0439v2psLBMWqtwCOpsVwMrWTAIYPhwLixsvn5FJSILNWxtvIbaWlMjkpcAmppsLTJKzIogTKd)
+[Source PlantUML](http://www.plantuml.com/plantuml/uml/pP9DJy8m6CVl-nHFE7KgNu238M9YJ4I88zvh-mZDkhPvsa68uRlRhP0QmPU42vSTrd__Bxzjx0Edq3Qw49fx3q_S1UiUpHfDiBIjjZvW0ny500nNt4YD3sYGUC0AQQq4BfIeCRoWinGyAqy8a-LiOv2IZ9LGx0eeJcSDfTsOuUtWQW2J5Ta6xwoj_zPEkVYVi6hfdOla2WNiT-Ue_LYmNU5dtk08ga3ABDDhqH95wvcBpgz8Nbap0cdRDur9u1toEjvicn4e4xeCWElipuwCRtupBVlhov-XiuCYJ8vTM9dB9T7iaCxAF2mTLRavAqNNVNVWa_2U3oSG5_MSouarKeLuV8zUK3RfgyIiomQrsA_eopFPFPNhrcHb9fV_jxFfEJHJAr77B_GDMGwvO6pplhx6M9zz9JL68zj6Vm80)
