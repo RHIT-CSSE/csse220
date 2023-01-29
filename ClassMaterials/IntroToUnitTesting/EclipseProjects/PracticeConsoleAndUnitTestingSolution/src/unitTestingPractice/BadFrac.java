@@ -1,5 +1,12 @@
 package unitTestingPractice;
 
+/**
+ * This class has some flaws in it.
+ * It is intended to represent a non-negative fraction.
+ * 
+ * Requires that all numerator and denominators are NON-NEGATIVE 
+ *
+ */
 public class BadFrac {
 	private int numerator;
 	private int denominator;
@@ -9,9 +16,19 @@ public class BadFrac {
 		this.denominator = 1;
 	}
 	
-	public BadFrac(int val1, int val2) {
-		this.numerator = val1;
-		this.denominator = val2;
+	/** 
+	 * There are certain requirements for BadFrac that you should assume
+	 * to be true.
+	 * 
+	 * @param num 
+	 * requires non-negative value
+	 * 
+	 * @param den
+	 * requires positive value
+	 */
+	public BadFrac(int num, int den) {
+		this.numerator = num;
+		this.denominator = den;
 	}
 
 	public static int gcm(int a, int b) {
