@@ -15,5 +15,5 @@ There are two commands to consider:
 ## Bad Design B
 <img src="DP3_B.png" alt="Bad Design B" width="800"/>
 
-[http://www.plantuml.com/plantuml/uml/TP1DQWCn38NtFeN9AYdq2YKffP15Q67e0SHO9AAAR2nDm9JUlV8a7RfeDaBsU_hqirM3QjEPWtwI5AXmZcgDqMEbSLR2oA0QXnEL0v34hn3Z2IGnVfG4XkyC3UjUocHhwl4533QBwP0lk6FkvRhUXEy_k1a5zCgDv3XOTTYn-HVfbTaz_YnPoIYBfpKRtD8BSXx9kd-wpf7r6HJJcmnevaHljuWTTLDt-zzM_-jtzl79mtA3nwUuUbZDIuGjIl8x_G00)
+[Source PlantUML](http://www.plantuml.com/plantuml/uml/TP1DQWCn38NtFeN9AYdq2YKffP15Q67e0SHO9AAAR2nDm9JUlV8a7RfeDaBsU_hqirM3QjEPWtwI5AXmZcgDqMEbSLR2oA0QXnEL0v34hn3Z2IGnVfG4XkyC3UjUocHhwl4533QBwP0lk6FkvRhUXEy_k1a5zCgDv3XOTTYn-HVfbTaz_YnPoIYBfpKRtD8BSXx9kd-wpf7r6HJJcmnevaHljuWTTLDt-zzM_-jtzl79mtA3nwUuUbZDIuGjIl8x_G00)
 
