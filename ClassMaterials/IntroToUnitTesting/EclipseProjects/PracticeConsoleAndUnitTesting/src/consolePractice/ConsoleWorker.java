@@ -87,8 +87,10 @@ public class ConsoleWorker {
 //		worker.setBirthMonth();
 //		worker.setBirthDay();
 //		worker.setBirthYear();
-//		worker.setAnualSalary();
+//		worker.setAnnualSalary();
 
+		// Learn more about printf here: https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html
+		
 		System.out.printf("%s was born %02d/%02d/%d and earns $%03.2f.%n", worker.getName(), worker.getBirthMonth(),
 				worker.getBirthDay(), worker.getBirthYear(), worker.getAnnualSalary());
 

@@ -139,7 +139,7 @@ public class ConsoleWorker {
 	 * Sets the user's annual salary
 	 *
 	 */
-	public void setAnualSalary(){
+	public void setAnnualSalary(){
 		System.out.print("Enter your annual salary as a double: ");
 		this.annualSalary = this.inputScanner.nextDouble();
 	}
@@ -160,7 +160,7 @@ public class ConsoleWorker {
 		worker.setBirthMonth();
 		worker.setBirthDay();
 		worker.setBirthYear();
-		worker.setAnualSalary();
+		worker.setAnnualSalary();
 
 		System.out.printf("%s was born %02d/%02d/%d and earns $%03.2f.%n", worker.getName(), worker.getBirthMonth(),
 				worker.getBirthDay(), worker.getBirthYear(), worker.getAnnualSalary());
