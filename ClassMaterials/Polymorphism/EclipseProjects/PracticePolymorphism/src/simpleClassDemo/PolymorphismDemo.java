@@ -12,7 +12,7 @@ class A {
 }
 class B extends A {
 	public void foo() {
-		System.out.println("C");
+		System.out.println("B");
 	}
 }
 class C extends B {
