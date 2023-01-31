@@ -7,6 +7,9 @@ public class Student {
 	// You'll need to add fields, constructors, and methods here
 	// Adhere to (1), (2), and (3) below
 
+	public Student() {
+		//Make sure this constructor exists in order to pass certain tests.
+	}
 
 	// (1) Requirements on Field Declaration Design/Engineering:
 	// -- Fields of this class must be declared with the 'private' access modifier - this provides compiler enforced encapsulation

@@ -8,6 +8,10 @@ public class Team {
 	// You'll need to add fields, constructors, and methods here
 	// Adhere to (1), (2), and (3) below
 	
+	public Team() {
+		// Make sure this constructor exists in order to pass certain tests.
+	}
+	
 	// (1) Requirements on Field Declaration Design/Engineering:
 	// -- Fields of this class must be declared with the 'private' access modifier - this provides compiler enforced encapsulation
 	// -- Getters/setters are not allowed for any field that is a collection, for example, no getter or setter for an ArrayList field
