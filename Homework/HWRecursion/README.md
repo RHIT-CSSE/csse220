@@ -3,8 +3,8 @@
 ## Overview:
 - This exercise is intended to give you practice writing recursive operations
 - There are two parts:
-- *recursionPart1* contains 9 unimplemented recursive operations, simply implement each of these operations using recursion
-- *recursionPart2* contains 3 unimplemented recursive operations which require you to implement a recursive helper operation
+- *recursionPart1* contains 9 unimplemented recursive operations, simply implement each of these operations using recursion (no for/while loops)
+- *recursionPart2* contains 3 unimplemented recursive operations which require you to implement a recursive helper operation (no for/while loops)
 - This is an individual exercise/assignment
 
 ## Rubric:
@@ -29,6 +29,8 @@
 - There are no documenting/commenting requirements for this assignment
 
 ## Notes:
+- You should NOT use ANY kind of while/for loops, all looping must be done using recursion
+- If you use for/while loops in your solution you may be assigned 0% credit even if you pass all tests
 - In both files, the specification of what to do for each of the operations appears as a comment just above the operation
 - For *Part1* simply implement each of the unimplemented operations using recursion
 - For *Part2* create and implement a recursive helper operation for each of the 3 the unimplemented operations; call corresponding helper from the the unimplemented operation
