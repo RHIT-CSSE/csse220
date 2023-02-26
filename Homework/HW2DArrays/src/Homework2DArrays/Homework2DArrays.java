@@ -50,8 +50,7 @@ public class Homework2DArrays {
 	 * @return true if it is diagonal, false otherwise
 	 */
 	public static boolean isDiagonal(int[][] data) {
-
-		return false;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // isDiagonal
 
 	/**
@@ -85,8 +84,7 @@ public class Homework2DArrays {
 	 * @return the length of the longest sequence
 	 */
 	public static int longestRepeatSequence(char[][] data) {
-
-		return 0;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // longestRepeatSequence
 
 	/**
@@ -104,7 +102,7 @@ public class Homework2DArrays {
 	 * @return a single string made of all the characters in each column.
 	 */
 	public static String stringFromColumns(char[][] data) {
-		return "replace this";
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // stringFromColumns
 
 	/**
@@ -153,8 +151,7 @@ public class Homework2DArrays {
 	 * @return new 10x10 char array with correct squares marked
 	 */
 	public static char[][] distanceArray(int row, int col, int distance) {
-
-		return null;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // distanceArray
 
 	// ***********************************************************************************************
@@ -204,7 +201,7 @@ public class Homework2DArrays {
 	 * @return height where the ball stops
 	 */
 	public static int ballRestElevation(int[][] map) {
-		return 0;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // ballRestElevation
 
 }

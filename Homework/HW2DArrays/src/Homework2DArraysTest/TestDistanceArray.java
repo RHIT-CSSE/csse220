@@ -1,27 +1,17 @@
 package Homework2DArraysTest;
+
 import static org.junit.Assert.assertArrayEquals;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import Homework2DArrays.Homework2DArrays;
-import Homework2DArrays.RunAllTests;
+
+
+//*** Have to insert this @RunWith that appears on the next line in order to use the TestRunner class
+@RunWith(RunAllTestsTestRunner.class)
 
 public class TestDistanceArray {
-	private static int testsPassed;
-	private static int numberOfTests;
-
-	@BeforeClass
-	public static void oneTimeSetUp() {
-		testsPassed = 0;
-		numberOfTests = 0;
-	} // oneTimeSetUp
-
-	@AfterClass
-	public static void oneTimeTearDown() {
-		String className = TestDistanceArray.class.getSimpleName();
-		RunAllTests.outputResults(testsPassed, numberOfTests, className);
-	} // oneTimeTearDown
 	
 	// --------------------------------------------
 	// Helper Operations
@@ -60,9 +50,7 @@ public class TestDistanceArray {
 		 };
 		char[][] expected = convert1DStringArrayTo2DCharArray(test1);
 			
-		numberOfTests++;
 		assertArrayEquals(expected, Homework2DArrays.distanceArray(1, 1, 1));
-		testsPassed++;
 	} // testDistanceArrayN01
 	
 	@Test
@@ -81,9 +69,7 @@ public class TestDistanceArray {
 		 };
 		char[][] expected = convert1DStringArrayTo2DCharArray(test2);
 
-		numberOfTests++;
 		assertArrayEquals(expected, Homework2DArrays.distanceArray(0, 0, 1));
-		testsPassed++;
 	} // testDistanceArrayN02
 	
 	@Test
@@ -102,9 +88,7 @@ public class TestDistanceArray {
 		 };
 		char[][] expected = convert1DStringArrayTo2DCharArray(test3);
 
-		numberOfTests++;
 		assertArrayEquals(expected, Homework2DArrays.distanceArray(1, 6, 2));
-		testsPassed++;
 	} // testDistanceArrayN03
 	
 	@Test
@@ -123,9 +107,7 @@ public class TestDistanceArray {
 		};
 		char[][] expected = convert1DStringArrayTo2DCharArray(test4);
 
-		numberOfTests++;
 		assertArrayEquals(expected, Homework2DArrays.distanceArray(6, 6, 2));
-		testsPassed++;
 	} // testDistanceArrayN04
 
 }
