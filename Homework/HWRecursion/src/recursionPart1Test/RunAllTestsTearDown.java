@@ -7,23 +7,19 @@ import org.junit.Test;
 import recursionPart1.RunAllTestsPart1;
 
 public class RunAllTestsTearDown {
-
 	@AfterClass
 	public static void oneTimeTearDown() {
 		double percentagePassed = (double) RunAllTestsPart1.allTestsPassedCount / (double) RunAllTestsPart1.allTestsExecutedCount
 				* 100.0;
 		System.out.println("------------------------------------------------------------------");
-//		System.out.printf("Executed:%2d   Passed:%2d   Percentage:%.1f%%   Grand Total\n",
-//				RunAllTests.allTestsExecutedCount, RunAllTests.allTestsPassedCount, percentagePassed);
-		System.out.printf("%5d   %8d   %10.1f%%   %-15s\n", RunAllTestsPart1.allTestsExecutedCount, RunAllTestsPart1.allTestsPassedCount, percentagePassed, "<-- Grand Totals");
-	} // oneTimeTearDown
+		System.out.printf("Total Tests:%5d  	 Total Passed:%8d 		 Grand Total:%10.1f%%\n", 
+				RunAllTestsPart1.allTestsExecutedCount,RunAllTestsPart1.allTestsPassedCount, percentagePassed);
 
-	// --------------------------------------------
-	// JUnit Tests
-	// --------------------------------------------
+	} // oneTimeTearDown
 
 	@Test
 	public void alwaysPasses() {
 		assertTrue(true);
 	} // alwaysPasses
 }
+

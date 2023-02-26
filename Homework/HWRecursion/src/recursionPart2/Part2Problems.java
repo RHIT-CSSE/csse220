@@ -9,13 +9,7 @@ package recursionPart2;
  *************************************************************************************** 
  *         REQUIRED HELP CITATION
  * 
- *         Help from anyone other than a CSSE220 Instructor or CSSE220 TA must
- *         be cited. If you didn't get any outside help, then you can simply
- *         state below: "I did not receive any outside help"
- ***************************************************************************************
- *         Help Citation (for this or any other files in this assignment)
- * 
- *         TODO: cite your help here
+ *         TODO: cite your help here or say "only used CSSE220 materials"
  *************************************************************************************** 
  */
 public class Part2Problems {
@@ -45,7 +39,8 @@ public class Part2Problems {
 	 */
 
 	public static boolean findIn(int[] input, int[] toFind) {
-		return false;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+
 	}
 
 	/**
@@ -66,7 +61,8 @@ public class Part2Problems {
 	 *         exist in the input String
 	 */
 	public static int findThirdCapital(String input) {
-		return -10;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+
 	}
 
 	/**
@@ -104,7 +100,7 @@ public class Part2Problems {
 	 * @return the highest possible sum of any subsequence
 	 */
 	public static int highestSubsequenceSum(int[] input) {
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 
-		return -1;
 	}
 }

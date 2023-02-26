@@ -1,43 +1,21 @@
 package recursionPart2Test;
 
 import static org.junit.Assert.*;
-
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
-
+import org.junit.runner.RunWith;
 import recursionPart2.Part2Problems;
-import recursionPart2.RunAllTestsPart2;
+
+@RunWith(RunAllTestsTestRunnerPart2.class)
 
 public class TestFindThirdCapital {
-	private static int testsPassed;
-	private static int numberOfTests;
-
-	@BeforeClass
-	public static void oneTimeSetUp() {
-		testsPassed = 0;
-		numberOfTests = 0;
-	} // oneTimeSetUp
-
-	@AfterClass
-	public static void oneTimeTearDown() {
-		String className = TestFindThirdCapital.class.getSimpleName();
-		RunAllTestsPart2.outputResults(testsPassed, numberOfTests, className);
-	} // oneTimeTearDown
-
-	// **************************************************************
-	// Test: findThirdCapital
-	// **************************************************************
-
+	
 	@Test
 	public void testFindThirdCapital01() {
 		// Test 1
 		String input = "QQQ";
 		int res = 2;
 		int actual = Part2Problems.findThirdCapital(input);
-		numberOfTests++;
 		assertEquals(res, actual);
-		testsPassed++;
 	} // testFindThirdCapital01
 
 	@Test
@@ -46,9 +24,7 @@ public class TestFindThirdCapital {
 		String input = "abcDefGhiJklmN";
 		int res = 9;
 		int actual = Part2Problems.findThirdCapital(input);
-		numberOfTests++;
 		assertEquals(res, actual);
-		testsPassed++;
 	} // testFindThirdCapital02
 
 	@Test
@@ -57,9 +33,7 @@ public class TestFindThirdCapital {
 		String input = "abcdef";
 		int res = -1;
 		int actual = Part2Problems.findThirdCapital(input);
-		numberOfTests++;
 		assertEquals(res, actual);
-		testsPassed++;
 	} // testFindThirdCapital03
 
 	@Test
@@ -68,9 +42,7 @@ public class TestFindThirdCapital {
 		String input = "abCdEf";
 		int res = -1;
 		int actual = Part2Problems.findThirdCapital(input);
-		numberOfTests++;
 		assertEquals(res, actual);
-		testsPassed++;
 	} // testFindThirdCapital04
 
 	@Test
@@ -79,9 +51,7 @@ public class TestFindThirdCapital {
 		String input = "aaaaAaaaAaaaA";
 		int res = 12;
 		int actual = Part2Problems.findThirdCapital(input);
-		numberOfTests++;
 		assertEquals(res, actual);
-		testsPassed++;
 	} // testFindThirdCapital05
 
 	@Test
@@ -90,9 +60,7 @@ public class TestFindThirdCapital {
 		String input = "AAAAAAAAAAAAAAAAAAAAAAA";
 		int res = 2;
 		int actual = Part2Problems.findThirdCapital(input);
-		numberOfTests++;
 		assertEquals(res, actual);
-		testsPassed++;
 	} // testFindThirdCapital06
 
 	@Test
@@ -101,9 +69,7 @@ public class TestFindThirdCapital {
 		String input = "ABCdefghiJKL";
 		int res = 2;
 		int actual = Part2Problems.findThirdCapital(input);
-		numberOfTests++;
 		assertEquals(res, actual);
-		testsPassed++;
 	} // testFindThirdCapital07
 
 	@Test
@@ -112,9 +78,7 @@ public class TestFindThirdCapital {
 		String input = "0123abcdefgHIJ";
 		int res = 13;
 		int actual = Part2Problems.findThirdCapital(input);
-		numberOfTests++;
 		assertEquals(res, actual);
-		testsPassed++;
 	} // testFindThirdCapital08
 
 	@Test
@@ -123,9 +87,7 @@ public class TestFindThirdCapital {
 		String input = "0123456789";
 		int res = -1;
 		int actual = Part2Problems.findThirdCapital(input);
-		numberOfTests++;
 		assertEquals(res, actual);
-		testsPassed++;
 	} // testFindThirdCapital09
 
 	@Test
@@ -140,8 +102,6 @@ public class TestFindThirdCapital {
 		}
 		int res = 24;
 		int actual = Part2Problems.findThirdCapital(input);
-		numberOfTests++;
 		assertEquals(res, actual);
-		testsPassed++;
 	} // testFindThirdCapital10
 }

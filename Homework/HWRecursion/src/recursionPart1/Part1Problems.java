@@ -11,13 +11,7 @@ import java.util.ArrayList;
  *************************************************************************************** 
  *         REQUIRED HELP CITATION
  * 
- *         Help from anyone other than a CSSE220 Instructor or CSSE220 TA must
- *         be cited. If you didn't get any outside help, then you can simply
- *         state below: "I did not receive any outside help"
- ***************************************************************************************
- *         Help Citation (for this or any other files in this assignment)
- * 
- *         TODO: cite your help here
+ *         TODO: cite your help here or say "only used CSSE220 materials"
  *************************************************************************************** 
  */
 public class Part1Problems {
@@ -31,7 +25,8 @@ public class Part1Problems {
 	 * 
 	 */
 	public static int summation(int value){
-		return 0;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+
 	} // summation
 	
 	/**
@@ -44,7 +39,7 @@ public class Part1Problems {
 	 * 
 	 */
 	public static String technicallyGramaticallyCorrect(int numberOfBuffalo){
-		return "xyz";
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // technicallyGramaticallyCorrect
 	
 	/**
@@ -58,7 +53,8 @@ public class Part1Problems {
 	 * @return a new string with removals and replacements
 	 */
 	public static String weirdoString(String stringInput){
-		return "xyz";
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+
 	} // weirdoString
 	
 	/**
@@ -70,7 +66,8 @@ public class Part1Problems {
 	 * @return sum of values in the list
 	 */
 	public static int arrayListSummation(ArrayList<Integer> inputList){
-		return 0;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+
 	} // arrayListSummation
 	
 	/**
@@ -82,7 +79,8 @@ public class Part1Problems {
 	 * @return number of 3s in inputNumber's prime factorization
 	 */
 	public static int countNumberOf3sInPrimeFactorization(int inputNumber){
-		return -1;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+
 	} // countNumberOf3sInPrimeFactorization
 	
 	/**
@@ -97,7 +95,8 @@ public class Part1Problems {
 	 * 
 	 */
 	public static boolean bracketMatch(String inputString){
-		return false;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+
 	} // bracketMatch
 	
 	/**
@@ -108,7 +107,7 @@ public class Part1Problems {
 	 * @return true if the input value is an even power of 3, false otherwise
 	 */
 	public static boolean evenPowerOfThree(int inputValue){
-		return false;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // evenPowerOfThree
 	
 	/**
@@ -121,7 +120,7 @@ public class Part1Problems {
 	 * @return true if the string has no doubled letters, false if it has doubled letters
 	 */
 	public static boolean noDoubledLetters(String inputString){
-		return false;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // noDoubledLetters
 	
 	/**
@@ -142,6 +141,6 @@ public class Part1Problems {
 	 * @return true if you can win the numbers game, false otherwise
 	 */
 	public static boolean numbersGame(int startingNumber){
-		return false;
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // numbersGame
 } // end class Part1Problems
