@@ -2,29 +2,14 @@ package MapsTest;
 
 import static org.junit.Assert.assertEquals;
 import java.util.HashMap;
-
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import MapsHW.Maps;
-import MapsHW.RunAllTests;
+
+@RunWith(RunAllTestsTestRunner.class)
 
 public class TestGetNumberOfCoursesToTake {
-	private static int testsPassed;
-	private static int numberOfTests;
-
-	@BeforeClass
-	public static void oneTimeSetUp() {
-		testsPassed = 0;
-		numberOfTests = 0;
-	} // oneTimeSetUp
-
-	@AfterClass
-	public static void oneTimeTearDown() {
-		String className = TestGetNumberOfCoursesToTake.class.getSimpleName();
-		RunAllTests.outputResults(testsPassed, numberOfTests, className);
-	} // oneTimeTearDown
 
 	// --------------------------------------------
 	// Helper Operations
@@ -50,9 +35,7 @@ public class TestGetNumberOfCoursesToTake {
 		HashMap<String, String> prereqMap = new HashMap<String, String>();
 		loadHashMap(prereqMap);
 
-		numberOfTests++;
 		assertEquals(0, Maps.getNumberOfCoursesToTake(prereqMap, "101"));
-		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN01
 	
 	@Test
@@ -60,9 +43,7 @@ public class TestGetNumberOfCoursesToTake {
 		HashMap<String, String> prereqMap = new HashMap<String, String>();
 		loadHashMap(prereqMap);
 		
-		numberOfTests++;
 		assertEquals(1, Maps.getNumberOfCoursesToTake(prereqMap, "102"));
-		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN02
 	
 	@Test
@@ -70,9 +51,7 @@ public class TestGetNumberOfCoursesToTake {
 		HashMap<String, String> prereqMap = new HashMap<String, String>();
 		loadHashMap(prereqMap);
 		
-		numberOfTests++;
 		assertEquals(2, Maps.getNumberOfCoursesToTake(prereqMap, "103"));
-		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN03
 	
 	@Test
@@ -80,9 +59,7 @@ public class TestGetNumberOfCoursesToTake {
 		HashMap<String, String> prereqMap = new HashMap<String, String>();
 		loadHashMap(prereqMap);
 		
-		numberOfTests++;
 		assertEquals(3, Maps.getNumberOfCoursesToTake(prereqMap, "104"));
-		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN04
 	
 	@Test
@@ -90,9 +67,7 @@ public class TestGetNumberOfCoursesToTake {
 		HashMap<String, String> prereqMap = new HashMap<String, String>();
 		loadHashMap(prereqMap);
 		
-		numberOfTests++;
 		assertEquals(4, Maps.getNumberOfCoursesToTake(prereqMap, "105"));
-		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN05
 	
 	@Test
@@ -100,9 +75,7 @@ public class TestGetNumberOfCoursesToTake {
 		HashMap<String, String> prereqMap = new HashMap<String, String>();
 		loadHashMap(prereqMap);
 		
-		numberOfTests++;
 		assertEquals(2, Maps.getNumberOfCoursesToTake(prereqMap, "110"));
-		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN06
 	
 	@Test
@@ -110,9 +83,7 @@ public class TestGetNumberOfCoursesToTake {
 		HashMap<String, String> prereqMap = new HashMap<String, String>();
 		loadHashMap(prereqMap);
 		
-		numberOfTests++;
 		assertEquals(-1, Maps.getNumberOfCoursesToTake(prereqMap, "202"));
-		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN07
 	
 	@Test
@@ -120,9 +91,7 @@ public class TestGetNumberOfCoursesToTake {
 		HashMap<String, String> prereqMap = new HashMap<String, String>();
 		loadHashMap(prereqMap);
 		
-		numberOfTests++;
 		assertEquals(-1, Maps.getNumberOfCoursesToTake(prereqMap, "205"));
-		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN08
 	
 	@Test
@@ -130,9 +99,7 @@ public class TestGetNumberOfCoursesToTake {
 		HashMap<String, String> prereqMap = new HashMap<String, String>();
 		loadHashMap(prereqMap);
 		
-		numberOfTests++;
 		assertEquals(-1, Maps.getNumberOfCoursesToTake(prereqMap, "300"));
-		testsPassed++;
 	} // testGetNumberOfCoursesToTakeN09
 	
 }

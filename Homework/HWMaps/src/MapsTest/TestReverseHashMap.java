@@ -7,29 +7,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import MapsHW.Maps;
-import MapsHW.RunAllTests;
 
+@RunWith(RunAllTestsTestRunner.class)
 public class TestReverseHashMap {
-	private static int testsPassed;
-	private static int numberOfTests;
-
-	@BeforeClass
-	public static void oneTimeSetUp() {
-		testsPassed = 0;
-		numberOfTests = 0;
-	} // oneTimeSetUp
-
-	@AfterClass
-	public static void oneTimeTearDown() {
-		String className = TestReverseHashMap.class.getSimpleName();
-		RunAllTests.outputResults(testsPassed, numberOfTests, className);
-	} // oneTimeTearDown
-
 	// --------------------------------------------
 	// Helper Operations
 	// --------------------------------------------
@@ -56,10 +40,8 @@ public class TestReverseHashMap {
 		HashMap<String, ArrayList<Integer>> reverseMap = Maps.reverseHashmap(map);
 
 		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(3));
-		numberOfTests++;
 		assertNotEquals("Expected a map, but reverseMap returned null instead", null, reverseMap);
 		assertEquals(expected, reverseMap.get("C"));
-		testsPassed++;
 	} // testReverseHashmapN01
 
 	@Test
@@ -69,10 +51,8 @@ public class TestReverseHashMap {
 		HashMap<String, ArrayList<Integer>> reverseMap = Maps.reverseHashmap(map);
 
 		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(1, 2));
-		numberOfTests++;
 		assertNotEquals("Expected a map, but reverseMap returned null instead", null, reverseMap);
 		assertEquals(expected, reverseMap.get("B"));
-		testsPassed++;
 	} // testReverseHashmapN02
 
 	@Test
@@ -82,10 +62,8 @@ public class TestReverseHashMap {
 		HashMap<String, ArrayList<Integer>> reverseMap = Maps.reverseHashmap(map);
 
 		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(9, 10, 11, 12));
-		numberOfTests++;
 		assertNotEquals("Expected a map, but reverseMap returned null instead", null, reverseMap);
 		assertEquals(expected, reverseMap.get("foo"));
-		testsPassed++;
 	} // testReverseHashmapN03
 
 	@Test
@@ -95,10 +73,8 @@ public class TestReverseHashMap {
 		HashMap<String, ArrayList<Integer>> reverseMap = Maps.reverseHashmap(map);
 
 		// Make sure there's exactly 3 keys in the reverseMap
-		numberOfTests++;
 		assertNotEquals("Expected a map, but reverseMap returned null instead", null, reverseMap);
 		assertEquals(reverseMap.size(), 3);
-		testsPassed++;
 	} // testReverseHashmapN04
 
 	@Test
@@ -107,9 +83,7 @@ public class TestReverseHashMap {
 		HashMap<String, ArrayList<Integer>> reverseMap = Maps.reverseHashmap(map);
 
 		// Reverse of an empty map is empty
-		numberOfTests++;
 		assertNotEquals("Expected a map, but reverseMap returned null instead", null, reverseMap);
 		assertEquals(reverseMap.size(), 0);
-		testsPassed++;
 	} // testReverseHashmapN05
 }

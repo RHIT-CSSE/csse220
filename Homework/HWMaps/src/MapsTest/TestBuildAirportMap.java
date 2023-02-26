@@ -1,39 +1,20 @@
 package MapsTest;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import MapsHW.Maps;
-import MapsHW.RunAllTests;
 
+@RunWith(RunAllTestsTestRunner.class)
 public class TestBuildAirportMap {
-	private static int testsPassed;
-	private static int numberOfTests;
-
-	@BeforeClass
-	public static void oneTimeSetUp() {
-		testsPassed = 0;
-		numberOfTests = 0;
-	} // oneTimeSetUp
-
-	@AfterClass
-	public static void oneTimeTearDown() {
-		String className = TestBuildAirportMap.class.getSimpleName();
-		RunAllTests.outputResults(testsPassed, numberOfTests, className);
-	} // oneTimeTearDown
-
-	// --------------------------------------------
-	// JUnit Tests
-	// --------------------------------------------
-
 	@Test
 	public void testBuildAirportMapN01() {
 
@@ -43,7 +24,6 @@ public class TestBuildAirportMap {
 		Set<String> expectedKeySet = new HashSet<>(Arrays.asList(airportCodes));
 		Set<Integer> expectedValueSet = new HashSet<>(Arrays.asList(altitudeInMeters));
 
-		numberOfTests++;
 		HashMap<String, Integer> catcher = Maps.buildAirportMap(airportCodes, altitudeInMeters);
 		assertNotEquals("Expected a keySet, but buildAirportMap returned null instead", null, catcher);
 		
@@ -52,7 +32,6 @@ public class TestBuildAirportMap {
 
 		Set<Integer> actualValueSet = (catcher == null) ? new HashSet<Integer>() : new HashSet<>(catcher.values());		
 		assertEquals("expectedValueSet != actualValueSet;", expectedValueSet, actualValueSet);
-		testsPassed++;
 	} // testBuildAirportMapN01
 
 	@Test
@@ -64,7 +43,6 @@ public class TestBuildAirportMap {
 		Set<String> expectedKeySet = new HashSet<>(Arrays.asList(airportCodes));
 		Set<Integer> expectedValueSet = new HashSet<>(Arrays.asList(altitudeInMeters));
 
-		numberOfTests++;
 		HashMap<String, Integer> catcher = Maps.buildAirportMap(airportCodes, altitudeInMeters);
 
 		Set<String> actualKeySet = (catcher == null) ? new HashSet<String>(): catcher.keySet();
@@ -72,7 +50,6 @@ public class TestBuildAirportMap {
 
 		Set<Integer> actualValueSet = (catcher == null) ? new HashSet<Integer>() : new HashSet<>(catcher.values());	
 		assertEquals("expectedValueSet != actualValueSet;", expectedValueSet, actualValueSet);
-		testsPassed++;
 	} // testBuildAirportMapN02
 
 	@Test
@@ -84,7 +61,6 @@ public class TestBuildAirportMap {
 		Set<String> expectedKeySet = new HashSet<>(Arrays.asList(airportCodes));
 		Set<Integer> expectedValueSet = new HashSet<>(Arrays.asList(altitudeInMeters));
 
-		numberOfTests++;
 		HashMap<String, Integer> catcher = Maps.buildAirportMap(airportCodes, altitudeInMeters);
 
 		Set<String> actualKeySet = (catcher == null) ? new HashSet<String>(): catcher.keySet();
@@ -92,7 +68,6 @@ public class TestBuildAirportMap {
 
 		Set<Integer> actualValueSet = (catcher == null) ? new HashSet<Integer>() : new HashSet<>(catcher.values());	
 		assertEquals("expectedValueSet != actualValueSet;", expectedValueSet, actualValueSet);
-		testsPassed++;
 	} // testBuildAirportMapN03
 
 }

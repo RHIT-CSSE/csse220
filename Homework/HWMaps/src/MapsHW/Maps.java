@@ -10,13 +10,7 @@ import java.util.HashMap;
  *************************************************************************************** 
  *         REQUIRED HELP CITATION
  * 
- *         Help from anyone other than a CSSE220 Instructor or CSSE220 TA must
- *         be cited. If you didn't get any outside help, then you can simply
- *         state below: "I did not receive any outside help"
- ***************************************************************************************
- *         Help Citation (for this or any other files in this assignment)
- * 
- *         TODO: cite your help here
+ *         TODO: cite your help here or say "only used CSSE220 materials"
  *************************************************************************************** 
  */
 public class Maps {
@@ -36,8 +30,8 @@ public class Maps {
 	 *    return value = {CDG=118, FOC=14, IND=230}
 	 */
 	public static HashMap<String, Integer> buildAirportMap(String[] airportCodes, Integer[] airportElevations) {
-		return null;
-	} // buildAirportMap	
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+	} // buildAirportMap
 	
 	
 	/**
@@ -62,7 +56,7 @@ public class Maps {
 	 *    return value = 'c'
 	 */
 	public static char mostCommonCharacter(String inputString) {
-		return 'Q';
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // mostCommonCharacter	
 	
 	
@@ -110,8 +104,8 @@ public class Maps {
 	 *    return value = -1
 	 *    "MA102" are in a prereq infinite loop, that is, by following prereqs of "MA102", one can eventually get back to "MA102"
 	 */
-	public static int getNumberOfCoursesToTake(HashMap<String,String> courseMap, String courseToTake) {
-		return -2;
+	public static int getNumberOfCoursesToTake(HashMap<String, String> courseMap, String courseToTake) {
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // getNumberOfCoursesToTake
 	
 	
@@ -147,7 +141,7 @@ public class Maps {
 	 *    return value = null, because no city experienced a temperature drop
 	 */
 	public static String getTemperatureDropCity(int[] recordedTemps, String[] cityNames) {
-		return "";
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // getTemperatureDropCity
 	
 	
@@ -168,8 +162,8 @@ public class Maps {
 	 *    input initialMap = {1=A,2=A,3=B}
 	 *    return value = {A=[1,2], B=[3]}
 	 */
-	public static HashMap<String,ArrayList<Integer>> reverseHashmap(HashMap<Integer,String> initialMap) {		
-		return null;
-	} // reverseHashmap	
+	public static HashMap<String, ArrayList<Integer>> reverseHashmap(HashMap<Integer, String> initialMap) {
+		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+	} // reverseHashmap
 
 }
