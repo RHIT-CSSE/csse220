@@ -14,13 +14,7 @@ import java.util.Scanner;
  *************************************************************************************** 
  *         REQUIRED HELP CITATION
  * 
- *         Help from anyone other than a CSSE220 Instructor or CSSE220 TA must
- *         be cited. If you didn't get any outside help, then you can simply
- *         state below: "I did not receive any outside help"
- ***************************************************************************************
- *         Help Citation (for this or any other files in this assignment)
- * 
- *         TODO: cite your help here
+ *         TODO: cite your help here or say "only used CSSE220 materials"
  *************************************************************************************** 
  */
 public class Homework2DArrays {
