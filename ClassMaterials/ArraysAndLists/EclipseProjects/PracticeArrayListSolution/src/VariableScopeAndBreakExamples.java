@@ -6,14 +6,14 @@ public class VariableScopeAndBreakExamples {
 		//Variable Scope
 		//uncomment this and remove declarations below to
 		//allow this code to run
-		//String ans;
-		int x = 1;
-		if ( x == 0) {
-			String ans = "X is zero!";
-		} else {
-			String ans = "X is NOT zero!";
-		}
-		System.out.println(  ans  );
+//		String ans;
+//		int x = 1;
+//		if ( x == 0) {
+//			String ans = "X is zero!";
+//		} else {
+//			String ans = "X is NOT zero!";
+//		}
+//		System.out.println(  ans  );
 				
 		//  break; statement allows you to 
 		//  exit the current loop
