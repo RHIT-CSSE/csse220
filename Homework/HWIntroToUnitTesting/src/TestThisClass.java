@@ -3,7 +3,8 @@ import java.util.ArrayList;
 /**
  * Class: TestThisClass
  * 
- * Do not modify or submit this class.
+ * Do not modify or submit this class. 
+ * Be sure to include a Help Citation in the file that you do submit.
  * 
  * @author CSSE Faculty
  *
