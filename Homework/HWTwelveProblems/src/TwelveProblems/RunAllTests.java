@@ -1,5 +1,7 @@
 package TwelveProblems;
 
+import java.sql.Timestamp;
+
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
@@ -27,6 +29,7 @@ import TwelveProblemsTest.TestTimesOccur;
 
 public class RunAllTests {
 
+	static public String timestamp = new Timestamp(System.currentTimeMillis()).toString();
 	static public int allTestsPassedCount = 0;
 	static public int allTestsExecutedCount = 0;
 
