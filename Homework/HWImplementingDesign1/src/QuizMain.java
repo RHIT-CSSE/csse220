@@ -9,8 +9,8 @@ import java.util.HashMap;
  *************************************************************************************** 
  *         REQUIRED HELP CITATION
  * 
- *         Help from anyone other than a CSSE220 Instructor or CSSE220 TA must
- *         be cited. If you didn't get any outside help, then you can simply
+ *         Help from anyone or any resources outside of official CSSE220 materials.
+ *         If you didn't get any outside help, then you can simply
  *         state below: "I did not receive any outside help"
  ***************************************************************************************
  *         Help Citation (for this or any other files in this assignment)
