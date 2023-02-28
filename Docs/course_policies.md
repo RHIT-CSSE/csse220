@@ -1,4 +1,6 @@
-This document outlines the main course policies for CSSE220.
+This document is out of date but kept for historical purposes.
+
+It served the purpose of outlining the main course policies for CSSE220.
 
 # Contact Info, Outside Help
 

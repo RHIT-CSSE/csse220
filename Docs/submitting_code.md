@@ -1,11 +1,10 @@
----
-title: Submitting Code
----
-# How to submit your code
+# Submitting Code
 
-We use Moodle for all assignment submissions.  You need to
+## How to submit your code
+
+We use GradeScope or Moodle for all assignment submissions.  You need to
 find your source files on your harddrive, and submit those files via
-the Moodle assignment on the course Moodle page.
+the Moodle or GradeScope assignment as appropriate.
 
 ## How to find your source files
 
@@ -14,6 +13,10 @@ on the left side of the window.  Select "Show In > System Explorer".
 A OS files window should open, enter the src directory.  You should
 see your files - upload them, or copy them someplace that's easier to
 find.  Just don't delete/move them or your eclipse project will break!
+
+It is also possible to simply *drag and drop* your files from Eclipse directly
+to a website with a dropbox (Moodle or GradeScope).
+
 
 ## What files should I upload?
 
