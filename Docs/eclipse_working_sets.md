@@ -1,5 +1,7 @@
 # Eclipse Working Sets:
 
+[Video Walthrough Setting Up Working Sets](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3da761c9-7fac-43f6-85ae-afb9012179ff)
+
 1. If you prefer to import all projects at once, or did so by accident, there is a way to set up "folders" for Eclipse projects
 2. Make sure to select the Eclipse "Package Explorer View" NOT the "Project Explorer View"
 3. To verify you have the correct view in Eclipse, Select Window->Show View->Package Explorer (If for some reason it is not an option select Windows->Show View->Other->Java->Package Explorer)
