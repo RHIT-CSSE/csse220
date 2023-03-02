@@ -17,4 +17,9 @@ Follow the instructions here:
 Follow the instructions here:
 [Importing an Eclipse Project](importing_eclipse_project.md)
 
+## If you prefer to import all projects at once
+
+Follow the instructions here:
+[Eclipse Working Sets](eclipse_working_sets.md)
+
 

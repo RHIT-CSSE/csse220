@@ -1,7 +1,3 @@
----
-title: Cloning The CSSE220 Repo
----
-
 # How to Clone the CSSE220 Repo
 
 All the materials for CSSE220 are stored in [the course git
@@ -31,10 +27,16 @@ use Eclipse to clone (that is, copy) the repo onto your machine
 
 9. Click *Deselect all* 
    * Use the project search box at the top of the list of projects to search for the project you want to import
-   * For example, type *JavaIntro* into the search box to find the JavaIntro Eclipse project
-   * Check the box located in front of the desired homework (e.g., *JavaIntro*) and then click *Finish*
+   * For example, type *PracticeJavaIntro* into the search box to find the PracticeJavaIntro Eclipse project
+   * Check the box located in front of the desired homework (e.g., *HWTwelveProblems*) and then click *Finish*
 
 10. The Eclipse project you imported will show up in Eclipse's *Package Folder* pane
 
+
+## What if I accidentally imported everything? (or prefer to import all at once)
+
+If you want to import all projects at the same time or did so on accident, 
+see this guide to using Eclipse's "Working Sets"
+[Eclipse Working Sets](eclipse_working_sets.md)
 
 
