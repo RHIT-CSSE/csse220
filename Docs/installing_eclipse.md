@@ -5,7 +5,7 @@ the steps below.
 
 # Install Java
 
-The thing you want to install is the *Java SE Development Kit 17* <a href="https://www.oracle.com/java/technologies/downloads/#java17">Download it here</a>
+The thing you want to install is the *Java SE Development Kit 17* <a href="https://www.oracle.com/java/technologies/downloads/#java17" target="_blank">Download it here</a>
 
 1. Scroll until you see the different OS's listed
 2. Select the download for your machine (e.g., *Windows x64 Installer*)
@@ -15,7 +15,7 @@ Then run the downloaded file and install it in the default location
 # Install Eclipse
 
 The thing you want to install is the *Eclipse IDE for Java Developers*:
-<a href="https://www.eclipse.org/downloads/packages/">Download it here</a>
+<a href="https://www.eclipse.org/downloads/packages/" target="_blank">Download it here</a>
 
 Choose the download based on your platform: Windows, macOS, Linux
 
