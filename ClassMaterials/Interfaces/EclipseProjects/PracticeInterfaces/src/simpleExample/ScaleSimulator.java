@@ -23,23 +23,16 @@ public class ScaleSimulator {
 		cylinders = new ArrayList<Cylinder>();
 	}
 	
-	private void initializeArrays(ArrayList<Ball> balls, ArrayList<Cube> cubes, ArrayList<Cylinder> cylinders) {
+	private void initializeArrays() {
 		final int itemMax = 3;
 		
-		// initialize balls
+		// initialize objects
 		for (int i=1; i<= itemMax; i++) {
 			balls.add( new Ball(i) );
-		}
-		
-		// initialize cubes
-		for (int i=1; i<= itemMax; i++) {
 			cubes.add( new Cube(i) );
-		}
-		
-		// initialize cylinders
-		for (int i=1; i<= itemMax; i++) {
 			cylinders.add( new Cylinder(i, i) );
 		}
+		
 	}
 
 	private void reportBallComparison(ArrayList<Ball> balls) {
@@ -94,7 +87,7 @@ public class ScaleSimulator {
 	}
 	
 	private void runApp() {
-		this.initializeArrays(balls, cubes, cylinders);
+		this.initializeArrays();
 
 		System.out.println("---------------------------------------");
 		this.reportBallComparison(balls);		
