@@ -1,6 +1,7 @@
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /**
@@ -60,8 +61,8 @@ public class FileBestScore {
 		
 		while(s1.hasNext()) {
 			String name = s1.next();
-			String allScoresString = s1.nextLine();
 			try {
+				String allScoresString = s1.nextLine();
 				int total = computeTotal(allScoresString);
 				if(total > bestScore) {
 					bestScore = total;
@@ -71,6 +72,10 @@ public class FileBestScore {
 				System.err.println(name + " caught cheating with " +
 						e.getMessage() + " Skipping.");
 				
+			} catch (NumberFormatException e) {
+				System.err.println(name + " had a bad number");
+			} catch (NoSuchElementException e) {
+				System.err.println(name + " had no numbers!");
 			}
 			
 		} // end while
