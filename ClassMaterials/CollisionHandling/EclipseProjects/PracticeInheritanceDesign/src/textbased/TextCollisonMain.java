@@ -50,7 +50,7 @@ public class TextCollisonMain {
 					// UGLY CODE NEVER DO THIS!
 
 					if (o1 instanceof DamagingDrop && o2 instanceof UserControlledPlatform) {
-						if (o1 != o2 && o1.intersects(o2)) {
+						if (o1.intersects(o2)) {
 							DamagingDrop d = (DamagingDrop) o1;
 							UserControlledPlatform p = (UserControlledPlatform) o2;
 
@@ -59,7 +59,7 @@ public class TextCollisonMain {
 					}
 
 					if (o1 instanceof HealingDrop && o2 instanceof UserControlledPlatform) {
-						if (o1 != o2 && o1.intersects(o2)) {
+						if (o1.intersects(o2)) {
 							HealingDrop d = (HealingDrop) o1;
 							UserControlledPlatform p = (UserControlledPlatform) o2;
 
@@ -68,17 +68,17 @@ public class TextCollisonMain {
 					}
 
 					if (o1 instanceof DamagingDrop && o2 instanceof BouncingPlatform) {
-						if (o1 != o2 && o1.intersects(o2)) {
+						if ( o1.intersects(o2)) {
 							DamagingDrop d = (DamagingDrop) o1;
 							BouncingPlatform p = (BouncingPlatform) o2;
-							System.out.println(d + " collided with userPlatform and will be removed");
+							System.out.println(d + " collided with BouncingPlatform and will be removed");
 							System.out.println(p + " collided with DamagingDrop and will be 1 drop wetter.");
 
 						}
 					}
 
 					if (o1 instanceof HealingDrop && o2 instanceof BouncingPlatform) {
-						if (o1 != o2 && o1.intersects(o2)) {
+						if ( o1.intersects(o2)) {
 							HealingDrop d = (HealingDrop) o1;
 							BouncingPlatform p = (BouncingPlatform) o2;
 							System.out.println(d + " collided with BouncingPlatform and will be removed");
