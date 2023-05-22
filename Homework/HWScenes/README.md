@@ -143,8 +143,8 @@ Before we start putting together a PineTree, here are some notes about how a Pin
 * In the PineTreeComponent's paintComponent method, create a PineTree using the constructor, then draw it to the frame by calling the drawOn method. 
 				(Hint below if you get stuck on this.)
 * In the PineTree's drawOn method, set the color to brown and create and fill the trunk using a Rectangle in the location given above.
-* In the PineTree's drawOn method, create the branches in the location given above. The easiest thing to do it to draw 3 Line2D.Doubles. The only limitation is that you can't fill lines. 
-* If you want filled branches, you may instead use a Polygon (documentation
+* In the PineTree's drawOn method, create the branches in the location given above. The easiest thing to do it to draw 3 Line2D.Doubles. The only limitation is that you can't fill lines (and hence won't receive full credit). 
+* To fill branches, you should instead use a Polygon (documentation
 				<a href="https://docs.oracle.com/javase/7/docs/api/java/awt/Polygon.html#Polygon(int[],%20int[],%20int)" target="_blank">here</a> - basically, you put the x coordinates of each of the 3 corners of the Polygon into an array, put the y coordinates into
 				another array, and pass them into the constructor). You fill it like any other shape: <code>graphics2.fill(my polygon variable)</code>.
 * Then back in paintComponent, draw another tree, half as tall, and located to the right so that the bottoms of the trunks are aligned.
