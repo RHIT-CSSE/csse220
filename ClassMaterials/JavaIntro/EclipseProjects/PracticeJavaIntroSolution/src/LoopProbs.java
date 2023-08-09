@@ -43,7 +43,57 @@ public class LoopProbs {
 		}
 		return current;
 	}
+	
+	
+	/**
+	 * Given a non-empty string like "Code" return a string like "CCoCodCode".
+	 * If the supplied string is null or empty, then returns an empty string.
+	 * 
+	 * For example:
+	 * "Code" returns "CCoCodCode"
+	 * "abc" returns "aababc"
+	 * "ab" returns "aab"
+	 * "" return ""
+	 */
+	public static String stringSplosion(String str) {
+		if(str == null || str.length() == 0)
+			return "";
+		
+		String result = "";
+		
+		int index = 0;
+		while(index < str.length()) {
+			result += str.substring(0, index + 1);
+			++index;
+		}
+		return result;
+	}
 
+	
+	/**
+	 * Returns a new string made of every other char 
+	 * starting with the first. 
+	 * Returns an empty string if the supplied string is 
+	 * null or empty.
+	 * 
+	 * For example:
+	 * "Hello" returns "Hlo"
+	 * "Hi" returns "H"
+	 * "Heeololeo" returns "Hello"
+	 * null returns ""
+	 */
+	public static String stringBits(String str) {
+		if(str == null || str.length() == 0)
+			return "";
+		
+		String bits = "";
+		for(int index = 0; index < str.length(); index += 2) { // Notice index += 2 here
+			bits += str.charAt(index);
+		}
+		
+		return bits;
+	}
+	
 	
 	/**
 	 * Returns the number of "xx" in the given string. 
@@ -75,55 +125,6 @@ public class LoopProbs {
 		}
 		
 		return count;
-	}
-	
-	
-	/**
-	 * Returns a new string made of every other char 
-	 * starting with the first. 
-	 * Returns an empty string if the supplied string is 
-	 * null or empty.
-	 * 
-	 * For example:
-	 * "Hello" returns "Hlo"
-	 * "Hi" returns "H"
-	 * "Heeololeo" returns "Hello"
-	 * null returns ""
-	 */
-	public static String stringBits(String str) {
-		if(str == null || str.length() == 0)
-			return "";
-		
-		String bits = "";
-		for(int index = 0; index < str.length(); index += 2) { // Notice index += 2 here
-			bits += str.charAt(index);
-		}
-		
-		return bits;
-	}
-
-	/**
-	 * Given a non-empty string like "Code" return a string like "CCoCodCode".
-	 * If the supplied string is null or empty, then returns an empty string.
-	 * 
-	 * For example:
-	 * "Code" returns "CCoCodCode"
-	 * "abc" returns "aababc"
-	 * "ab" returns "aab"
-	 * "" return ""
-	 */
-	public static String stringSplosion(String str) {
-		if(str == null || str.length() == 0)
-			return "";
-		
-		String result = "";
-		
-		int index = 0;
-		while(index < str.length()) {
-			result += str.substring(0, index + 1);
-			++index;
-		}
-		return result;
 	}
 
 	
