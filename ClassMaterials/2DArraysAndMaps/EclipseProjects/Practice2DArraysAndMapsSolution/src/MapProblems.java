@@ -81,6 +81,34 @@ public class MapProblems {
 		return inversedMap;
 	} // inverseMap
 	
+	
+	/**
+	 * ensures: builds and returns a map of letters (a-z) to their frequencies
+	 * requires: input only contains letters a-z (lower-case)
+	 * 
+	 * @param inputString a String of cipher text (coded message) 
+	 * @return a map of each letter from a to z to the number of times it appears in inputString (can omit if zero)
+	 * <br>Example:
+	 * <br>if inputString = "abcccbx", the returned map is {'a'->1, 'b'->2, 'c'->3, 'x'-> 1}
+	 * 
+	 * Side note: letter frequencies can be useful in cryptanalysis <a href="https://en.wikipedia.org/wiki/Frequency_analysis">(Wikipedia article)<a/> 
+	 *  
+	 */
+	public static HashMap<Character, Integer> computeLetterFrequencies(String inputString) {
+		HashMap<Character, Integer> letterFreqs = new HashMap<Character, Integer>();
+		
+		for (int i = 0; i < inputString.length(); i++) {
+			Character currentChar = inputString.charAt(i);
+			if (letterFreqs.containsKey(currentChar)) {
+				letterFreqs.put(currentChar, letterFreqs.get(currentChar) + 1);
+			} else {
+				letterFreqs.put(currentChar, 1);
+			}
+		}
+		
+		return letterFreqs;
+	} // computeLetterFrequencies
+	
 
 	/**
 	 * ensures: true is returned if there is a route from startCity to endCity found in roadMap
@@ -98,6 +126,9 @@ public class MapProblems {
 	public static boolean canTravelTo(HashMap<String, ArrayList<String>> roadMap, String startCity, String endCity) {
 		ArrayList<String> citiesAlreadyVisited = new ArrayList<String>();
 		ArrayList<String> citiesToVisitNext = new ArrayList<String>();
+		
+		// We can solve this problem using breadth-first search 
+		// (you might hear more about this in CSSE230 or CSSE473)
 		
 		// Start the visiting with startCity by adding it to cities to visit next
 		citiesToVisitNext.add(startCity);
@@ -122,6 +153,7 @@ public class MapProblems {
 		// 2) (citiesToCheck.contains(endCity) = true)  which means we found a route to endCity
 		return citiesToVisitNext.contains(endCity);
 	} // canTravelTo
+
 
 }
 

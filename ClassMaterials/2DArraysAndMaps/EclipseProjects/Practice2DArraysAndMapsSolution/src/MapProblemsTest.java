@@ -45,6 +45,37 @@ public class MapProblemsTest {
 	}
 
 	@Test
+	public void testComputeLetterFrequencies() {
+		String inputString;
+		HashMap<Character, Integer> letterFreqs;
+		
+		// Test empty string
+		inputString = "";
+		letterFreqs = MapProblems.computeLetterFrequencies(inputString);
+		assertEquals(0, letterFreqs.size());
+		
+		inputString = "abbcccdddd";
+		letterFreqs = MapProblems.computeLetterFrequencies(inputString);
+		assertEquals(4, letterFreqs.size());
+		assertEquals(1, (int) letterFreqs.get('a'));
+		assertEquals(2, (int) letterFreqs.get('b'));
+		assertEquals(3, (int) letterFreqs.get('c'));
+		assertEquals(4, (int) letterFreqs.get('d'));
+		
+		inputString = "thequickbrownfoxjumpsoveralazydog";
+		letterFreqs = MapProblems.computeLetterFrequencies(inputString); 
+		for (char c = 'a'; c <= 'z'; c++) {
+			if (c == 'a' || c == 'e' || c == 'r' || c == 'u') {
+				assertEquals(2, (int) letterFreqs.get(c));
+			} else if (c == 'o') {
+				assertEquals(4, (int) letterFreqs.get(c));
+			} else {
+				assertEquals(1, (int) letterFreqs.get(c));
+			}
+		}
+	}
+	
+	@Test
 	public void testCanTravelTo() {
 		HashMap<String,ArrayList<String>> map = new HashMap<String,ArrayList<String>>();
 		ArrayList<String> cities = new ArrayList<String>();

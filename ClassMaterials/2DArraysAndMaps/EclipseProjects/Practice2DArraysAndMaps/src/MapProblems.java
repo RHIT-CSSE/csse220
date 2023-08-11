@@ -54,6 +54,24 @@ public class MapProblems {
 		return null;
 	} // inverseMap
 	
+	
+	/**
+	 * ensures: builds and returns a map of letters (a-z) to their frequencies
+	 * requires: input only contains letters a-z (lower-case)
+	 * 
+	 * @param inputString a String of cipher text (coded message) 
+	 * @return a map of each letter from a to z to the number of times it appears in inputString (can omit if zero)
+	 * <br>Example:
+	 * <br>if inputString = "abcccbx", the returned map is {'a'->1, 'b'->2, 'c'->3, 'x'-> 1}
+	 * 
+	 * Side note: letter frequencies can be useful in cryptanalysis <a href="https://en.wikipedia.org/wiki/Frequency_analysis">(Wikipedia article)<a/> 
+	 *  
+	 */
+	public static HashMap<Character, Integer> computeLetterFrequencies(String inputString) {
+		return null;
+	} // computeLetterFrequencies
+	
+	
 	/**
 	 * ensures: true is returned if there is a route from startCity to endCity found in roadMap
 	 * @param roadMap is a Map from String to ArrayList&lt;String&gt;
@@ -68,6 +86,9 @@ public class MapProblems {
 	 * <br>canTravelTo(roadMap,"B", "A") returns false
 	 */
 	public static boolean canTravelTo(HashMap<String, ArrayList<String>> roadMap, String startCity, String endCity) {
+		// TODO This problem is a bit trickier, do this one last if you have time. 
+		// HINT: You will need to keep track of which cities you have explored already, 
+		// 		 and which ones you need to explore next.  
 		return false;
 	} // canTravelTo
 
