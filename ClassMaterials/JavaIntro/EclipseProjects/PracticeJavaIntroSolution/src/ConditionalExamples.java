@@ -9,7 +9,6 @@ public class ConditionalExamples {
 	public static void main(String[] args) {
 		System.out.println("Average of 4,5,5 is " + ConditionalExamples.computeAverage(4, 5, 5));
 		ConditionalExamples.printCubed(3);
-		System.out.println("Equation at 3 is " + ConditionalExamples.doEquation(3));
 		ConditionalExamples.printDivisibleBy3(6);
 		ConditionalExamples.guessCubeRoot(27, 2.9);
 		if(ConditionalExamples.isWayBigger(100, 3)) {
@@ -40,18 +39,6 @@ public class ConditionalExamples {
 	public static void printCubed(double numberToCube) {
 		double numCubed = numberToCube*numberToCube*numberToCube;
 		System.out.println(numberToCube + " cubed is " + numCubed + "!!!");
-	}
-	
-	/**
-	 * 
-	 * Computes the function 0.5*x^2 + 3x + 99
-	 * 
-	 * For example, doEquation(3) returns 112.5 (0.5*3^2 + 3*3 + 99)
-	 * 
-	 * Solve this one yourself
-	 */
-	public static double doEquation(double x) {
-		return 0.5*x*x + 3*x + 99;
 	}
 	
 	/**

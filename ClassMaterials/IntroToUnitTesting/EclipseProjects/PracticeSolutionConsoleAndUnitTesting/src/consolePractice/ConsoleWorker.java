@@ -85,6 +85,13 @@ public class ConsoleWorker {
 	 *
 	 */
 	private void setBirthMonth() {
+		// Note: this solution includes some extra error handling, 
+		// which is important in the real-world but not the main point of this activity. 
+		// Don't worry if you didn't come up with a do-while loop and try-catch block; 
+		// we will talk more about exceptions and error handling later in the course. 
+		
+		// See setBirthMonthAlternate() below for a solution without error handling. 
+		
 		Boolean validInput = false;
 		do {
 			//
@@ -112,6 +119,18 @@ public class ConsoleWorker {
 		} while (!validInput);
 
 	} // setBirthMonth
+	
+	/**
+	 * 
+	 * Sets the user's birth month as an integer.
+	 *
+	 */
+	private void setBirthMonthAlternate() {
+		// Same as setBirthMonth() above, but without error handling. 
+		System.out.print("Please enter a birth month [1..12]: ");
+		String inputToken = this.inputScanner.next();
+		this.birthMonth = Integer.parseInt(inputToken);
+	} // setBirthMonthAlternate
 	
 	/**
 	 * 
@@ -157,7 +176,7 @@ public class ConsoleWorker {
 		// the missing methods, adding appropriate prompts 
 		// before each input.
 		worker.setName();
-		worker.setBirthMonth();
+		worker.setBirthMonth(); // Or, worker.setBirthMonthAlternate();
 		worker.setBirthDay();
 		worker.setBirthYear();
 		worker.setAnnualSalary();
