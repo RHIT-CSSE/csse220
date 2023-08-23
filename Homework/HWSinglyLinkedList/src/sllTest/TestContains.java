@@ -13,6 +13,13 @@ public class TestContains {
 
 	private static int testsPassed;
 	private static int numberOfTests;
+	
+	private static final Integer i8 = new Integer(8);
+	private static final Integer i2 = new Integer(2);
+	private static final Integer i71 = new Integer(71);
+	private static final Integer i64 = new Integer(64);
+	private static final Integer i9 = new Integer(9);
+	private static final Integer i89 = new Integer(89);
 
 	@BeforeClass
 	public static void oneTimeSetUp() {
@@ -43,7 +50,7 @@ public class TestContains {
 	public void testContainsN02() {
 		ILinkedList list1 = new SinglyLinkedList();			
 		
-		list1.add(89);		
+		list1.add( new Integer(89) );		
 		numberOfTests++;
 		assertEquals(false, list1.contains(107));
 		testsPassed++;
@@ -53,24 +60,25 @@ public class TestContains {
 	public void testContainsN03() {
 		ILinkedList list1 = new SinglyLinkedList();			
 		
-		list1.add(89);		
+		
+		list1.add( i89 );		
 		numberOfTests++;
-		assertEquals(true, list1.contains(89));
+		assertEquals(true, list1.contains(i89));
 		testsPassed++;
 	} // testContainsN03
 	
 	@Test
 	public void testContainsN04() {
 		ILinkedList list1 = new SinglyLinkedList();	
-			
-		list1.add(8);
-		list1.add(2);
-		list1.add(71);
-		list1.add(64);
-		list1.add(9);		
+				
+		list1.add(i8);
+		list1.add(i2);
+		list1.add(i71);
+		list1.add(i64);
+		list1.add(i9);		
 		
 		numberOfTests++;
-		assertEquals(true, list1.contains(8));
+		assertEquals(true, list1.contains(i8));
 		testsPassed++;
 	} // testContainsN04
 	
@@ -78,14 +86,16 @@ public class TestContains {
 	public void testContainsN05() {
 		ILinkedList list1 = new SinglyLinkedList();	
 		
-		list1.add(8);
-		list1.add(2);
-		list1.add(71);
-		list1.add(64);
-		list1.add(9);		
+
+		
+		list1.add(i8);
+		list1.add(i2);
+		list1.add(i71);
+		list1.add(i64);
+		list1.add(i9);		
 		
 		numberOfTests++;
-		assertEquals(true, list1.contains(2));
+		assertEquals(true, list1.contains(i2));
 		testsPassed++;
 	} // testContainsN05
 	
@@ -93,14 +103,14 @@ public class TestContains {
 	public void testContainsN06() {
 		ILinkedList list1 = new SinglyLinkedList();	
 		
-		list1.add(8);
-		list1.add(2);
-		list1.add(71);
-		list1.add(64);
-		list1.add(9);		
+		list1.add(i8);
+		list1.add(i2);
+		list1.add(i71);
+		list1.add(i64);
+		list1.add(i9);		
 		
 		numberOfTests++;
-		assertEquals(true, list1.contains(64));
+		assertEquals(true, list1.contains(i64));
 		testsPassed++;
 	} // testContainsN06
 	
@@ -108,14 +118,14 @@ public class TestContains {
 	public void testContainsN07() {
 		ILinkedList list1 = new SinglyLinkedList();	
 		
-		list1.add(8);
-		list1.add(2);
-		list1.add(71);
-		list1.add(64);
-		list1.add(9);		
+		list1.add(i8);
+		list1.add(i2);
+		list1.add(i71);
+		list1.add(i64);
+		list1.add(i9);		
 		
 		numberOfTests++;
-		assertEquals(true, list1.contains(9));
+		assertEquals(true, list1.contains(i9));
 		testsPassed++;
 	} // testContainsN07
 	
@@ -123,11 +133,11 @@ public class TestContains {
 	public void testContainsN08() {
 		ILinkedList list1 = new SinglyLinkedList();	
 		
-		list1.add(8);
-		list1.add(2);
-		list1.add(71);
-		list1.add(64);
-		list1.add(9);		
+		list1.add(i8);
+		list1.add(i2);
+		list1.add(i71);
+		list1.add(i64);
+		list1.add(i9);		
 		
 		numberOfTests++;
 		assertEquals(false, list1.contains(200));
