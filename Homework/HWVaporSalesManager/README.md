@@ -38,7 +38,7 @@ Upload *Game.java*, *Bundle.java*, and *SalesManager.java*
 
 ## Notes
 ### The Individual Part (required to be done individually)
-In this program, you are implementing a video game sales manager for Vapor, a hypothetical digital game distributor. This application will keep track of sales of games and game bundles.  From the Design Problem 2 instructions:
+In this program, you are implementing a video game sales manager for Vapor, a hypothetical digital game distributor. This application will keep track of sales of games and game bundles.  From the [Design Problem 2 instructions](../DesignProblems/DP2/DP2.md):
 
 > Vapor, the popular video game digital store, has hired you as a consultant to design a sales management application. Each game available to purchase through Vapor has a title, ESRB rating (e.g., "T" for "Teen"), and price, all of which are fixed. You may assume game titles are unique. 
 > 
@@ -55,7 +55,9 @@ In this program, you are implementing a video game sales manager for Vapor, a hy
 To run this app, right click on the file *SalesManager.java* and choose *Run As* | *Java Application*
 
 The interface for this program is entirely text based and the example input/output (below) will give
-you an idea of how the program will work. The green text is user input, and the rest of the text is the program output:
+you an idea of how the program will work. The green\* text is user input, and the rest of the text is the program output:
+
+\**GitHub may not show this text as green, but if you copy/paste the raw Markdown content of this README into [Markdown Live Preview](https://markdownlivepreview.com/), the green text will be green.*
 
 <pre>
 Welcome to the Vapor Sales Manager.  Enter commands.  Type 'exit' to end. 
@@ -140,15 +142,6 @@ Total Copies Sold: 220
 Total Revenue: $6700.00
 </pre>
 
-<div class="alert alert-block alert-info">
-<b>Tip:</b> If you are having trouble matching the expected report format, use Eclipse's expected vs. actual comparison tool. 
-In the lower-left "Failure Trace" view, double-click on the comparison failure (circled in screenshot below) for the failed test case, or click on the "Compare Actual With Expected Test Result" button (also circled). 
-Eclipse will then show you a side-by-side comparison of the expected and actual test results (second screenshot below). 
-This can help you find missing/extra whitespace and other small formatting errors. 
-<img src="comparison_failure_screenshot.png" alt="Comparison failure in Eclipse" width="800"/>
-<img src="expected_vs_actual_screenshot.png" alt="Expected vs Actual Test Result in Eclipse" width="800"/>
-</div>
-
 - `print-bundle-sales-report [name]`: prints a sales report for the `Bundle` with the given title. 
 
 Implement this by writing the `handlePrintBundleSalesReport` method in `SalesManager.java`, plus anything you need to add to the `Bundle` class. 
@@ -161,6 +154,14 @@ Price: $100.00
 Copies Sold: 4
 Total Revenue: $300.00
 </pre>
+
+> [!NOTE]
+> **Tip:** If you are having trouble matching the expected sales report formats, use Eclipse's expected vs. actual comparison tool. 
+> In the lower-left "Failure Trace" view, double-click on the comparison failure (circled in screenshot below) for the failed test case, or click on the "Compare Actual With Expected Test Result" button (also circled). 
+> Eclipse will then show you a side-by-side comparison of the expected and actual test results (second screenshot below). 
+> This can help you find missing/extra whitespace and other small formatting errors. 
+> <img src="comparison_failure_screenshot.png" alt="Comparison failure in Eclipse" width="800"/>
+> <img src="expected_vs_actual_screenshot.png" alt="Expected vs Actual Test Result in Eclipse" width="800"/>
 
 Some additional details and hints are provided in the comments of the methods themselves. 
 
