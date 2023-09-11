@@ -160,8 +160,9 @@ Total Revenue: $300.00
 > In the lower-left "Failure Trace" view, double-click on the comparison failure (circled in screenshot below) for the failed test case, or click on the "Compare Actual With Expected Test Result" button (also circled). 
 > Eclipse will then show you a side-by-side comparison of the expected and actual test results (second screenshot below). 
 > This can help you find missing/extra whitespace and other small formatting errors. 
-> <img src="comparison_failure_screenshot.png" alt="Comparison failure in Eclipse" width="800"/>
-> <img src="expected_vs_actual_screenshot.png" alt="Expected vs Actual Test Result in Eclipse" width="800"/>
+
+<img src="comparison_failure_screenshot.png" alt="Comparison failure in Eclipse" width="800"/>
+<img src="expected_vs_actual_screenshot.png" alt="Expected vs Actual Test Result in Eclipse" width="800"/>
 
 Some additional details and hints are provided in the comments of the methods themselves. 
 
