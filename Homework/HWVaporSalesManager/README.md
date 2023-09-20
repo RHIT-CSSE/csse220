@@ -152,7 +152,7 @@ Name: BoomerangBundle
 Games: TowerRise,Limitl3ss,KangarooJane
 Price: $100.00
 Copies Sold: 4
-Total Revenue: $300.00
+Total Revenue: $400.00
 </pre>
 
 > [!NOTE]
