@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * This class provides some buggy methods that you can use to practice with the
  * debugger. 
@@ -41,7 +43,7 @@ public class DebugMe {
 	public static String uppercaseIfExclaimation(String sentence) {
 
 		if(sentence.charAt(sentence.length() - 1) == '!') {
-			sentence.toUpperCase();
+			sentence = sentence.toUpperCase();
 		} 
 		return sentence;
 	}
@@ -70,7 +72,7 @@ public class DebugMe {
 			firstHalf[i] = input[i];
 			secondHalf[i] = input[input.length/2 + i];
 		}
-		boolean result = firstHalf.equals(secondHalf);
+		boolean result = Arrays.equals(firstHalf, secondHalf);
 		return result;
 	}
 

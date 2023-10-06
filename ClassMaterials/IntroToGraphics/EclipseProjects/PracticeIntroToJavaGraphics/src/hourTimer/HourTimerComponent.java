@@ -71,7 +71,7 @@ public class HourTimerComponent extends JComponent {
 		// You will have to implement a 3-parameter constructor for the class HourTimer
 		// Go to HourTimer.java and find the Stage #2.1
 		// =======
-	/*
+	///*
 		final int clockRadius = 50;
 		final int maxClockCenterX = 600;
 		final int clockCenterInc = 100;
@@ -87,7 +87,7 @@ public class HourTimerComponent extends JComponent {
 		HourTimer upperLeftClock = new HourTimer(10, 10, 10);
 		upperLeftClock.drawOn(g2d);
 		
-	*/
+	//*/
 		
 
 		// =======

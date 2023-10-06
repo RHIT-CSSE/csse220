@@ -23,13 +23,19 @@ public class HourTimer {
 	//   -- the radius of the clock face
 	//   -- a rotation factor that tells where to draw the minute hand
 	// ======
+	private int x, y, radius;
+	
 	
 	// =======
 	// Stage #1.2
 	// Implement a zero parameter constructor that initializes the 4 fields declared in Stage #1.1
 	// Use the first 3 DEFAULT values (above) and zero for the rotation factor
 	// =======
-	
+	public HourTimer() {
+		this.x = DEFAULT_CENTER_X;
+		this.y = DEFAULT_CENTER_Y;
+		this.radius = DEFAULT_RADIUS;
+	}
 	
 
 	// =======
@@ -61,6 +67,15 @@ public class HourTimer {
 		// 4th draw minute hand
 		// 5th unrotate
 		// 6th untranslate
+		
+		g2d.translate(this.x, this.y);
+		
+		g2d.drawOval(-this.radius, -this.radius, 2*radius, 2*radius);
+		
+		g2d.translate(-this.x, -this.y);
+		
+		
+		
 	} // drawOn
 
 

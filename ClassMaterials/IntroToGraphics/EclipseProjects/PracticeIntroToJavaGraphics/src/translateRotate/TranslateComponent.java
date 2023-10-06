@@ -30,8 +30,7 @@ public class TranslateComponent extends JComponent {
 		// HINT: 
 		// Use this.getWidth() and this.getHeight() to find the correct (x, y) location to translate to
 		// =======
-		
-
+		g2d.translate(this.getWidth()/2, this.getHeight()/2 );
 
 		// =======
 		// This code (below) draws a face, with upper left hand corner (x, y) = (0, 0) you do not need to edit this code
@@ -40,6 +39,8 @@ public class TranslateComponent extends JComponent {
 		int faceLocY = 0;
 		int faceWidth = 200;
 		int faceHeight = 150;
+
+		g2d.translate(-faceWidth/2, -faceHeight/2);
 		// To make drawing centered around the face's center, you'll need to
 		// change the face's (x, y) drawing location, i.e., the first 2 parameters in the drawRect (below)
 		// Then you'll have to make appropriate changes to the (x, y) coordinates for the left eye, right eye, and nose (below)
@@ -64,6 +65,11 @@ public class TranslateComponent extends JComponent {
 		int noseHeight = 50;
 		g2d.drawRect(noseLocX, noseLocY, noseWidth, noseHeight);
 	
+		g2d.translate(faceWidth/2, faceHeight/2);
+		g2d.translate(-this.getWidth()/2, -this.getHeight()/2 );
+		g2d.drawRect(10,10,10,10);
+		
+		
 		// =======
 		// TODO #2
 		// Use a translate command to undo the translate done above in TODo #1
