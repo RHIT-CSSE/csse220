@@ -5,7 +5,9 @@ Vapor also sells game _bundles_, which complicates their sales records (hence wh
 
 For any given bundle, Vapor wants to be able to generate a report including the bundle's name, price, included game titles, how many times the bundle was purchased, and the total revenue from that bundle. 
 
-Also, Vapor wants to be able to produce a sales report for each game, including how many times the game has been sold individually or as a bundle, as well as the total revenue from that game. For calculating total revenue, Vapor distributes the sales price of each bundle evenly across all games in the bundle. For example, a bundle of four games sold for $60 should count as $15 of revenue for each game. 
+Also, Vapor wants to be able to produce a sales report for each game, including how many times the game has been sold individually or as part of a bundle (e.g., "TeamCastle has sold 27 copies individually and 44 copies as part of a bundle"). 
+
+The game's sales report should also include the total revenue from that game. For computing total revenue, Vapor distributes the sales price of each bundle evenly across all games in the bundle. For example, a bundle of four games sold for $60 should count as $15 of revenue for each game. 
 
 Finally, Vapor wants a method to determine the game with the highest total revenue and a method to determine the most popular (i.e., most copies sold) bundle. 
 

@@ -33,5 +33,15 @@ public class TestMostCommonCharacter {
 	public void testMostCommonCharacterN05() {
 		assertEquals('l', Maps.mostCommonCharacter("hello"));
 	} // testMostCommonCharacterN05
+	
+	@Test
+	public void testMostCommonCharacterN06() {
+		assertEquals('a', Maps.mostCommonCharacter("aaaabbbccd"));
+	} // testMostCommonCharacterN06
+	
+	@Test
+	public void testMostCommonCharacterN07() {
+		assertEquals('b', Maps.mostCommonCharacter("aaaabbbbbccd"));
+	} // testMostCommonCharacterN07
 
 }

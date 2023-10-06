@@ -14,7 +14,7 @@ There are solutions with commentary and good designs provided. Use these to eval
 The links for the 5 problems are provided below.
 
 + [DesignProbHW1 - Online Quizzes](DP1/DP1.md)
-+ [DesignProbHW2 - Team Gradebook](DP2/DP2.md)
++ [DesignProbHW2 - Vapor Sales Manager](DP2/DP2.md)
 + [DesignProbHW3 - Spaceships](DP3/DP3.md)
 + [DesignProbHW4 - Team Budget](DP4/DP4.md)
 + [DesignProbHW5 - Tag and Inventory](DP5/DP5.md)
