@@ -13,8 +13,8 @@ public class StudentGradebookMain {
 	 */
 	public static void main(String[] args) {
 
-		///*
-		// TODO: Uncomment this code to get started with StudentGradebook
+		/*
+		 TODO: Uncomment this code to get started with StudentGradebook
 		 
 		 StudentGradebook one = new StudentGradebook("John Doe");
 		 StudentGradebook two = new StudentGradebook(); //default name is Studenty McStudenton
@@ -29,7 +29,7 @@ public class StudentGradebookMain {
 		 one.printGradeReport(); System.out.println(); //blank line
 		 two.printGradeReport();
 		
-		//*/
+		*/
 
 		/*
 		 * This code should print out:

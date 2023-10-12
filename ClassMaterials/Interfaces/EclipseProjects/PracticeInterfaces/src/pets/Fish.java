@@ -1,6 +1,6 @@
 package pets;
 
-public class Fish  implements Pet {
+public class Fish {
 	private String name;
 	private boolean isEating;
 

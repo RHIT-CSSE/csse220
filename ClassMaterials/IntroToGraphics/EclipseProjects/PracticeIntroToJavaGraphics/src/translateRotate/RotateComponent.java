@@ -58,12 +58,9 @@ public class RotateComponent extends JComponent {
 		// HINT 2: 
 		// You may have to adjust the translate or the Pink rectangle too
 		// =======
-		g2d.translate(100, 75 );
-		
-		double degreesToRotate = this.getWidth();
+		double degreesToRotate = 30;
 		g2d.rotate(Math.toRadians(degreesToRotate));
 
-		g2d.translate(-100, -75 );
 		
 		// =======
 		// Draws a face, with upper left hand corner at (x, y) = (0, 0) you need to edit this code for TODO #2
@@ -98,21 +95,8 @@ public class RotateComponent extends JComponent {
 		
 		// WARNING: be sure to always undo any rotations & translations you may have done
 		// Do these in reverse order 
-		
-		g2d.translate(100, 75 );
-		
-		
 		g2d.rotate(-Math.toRadians(degreesToRotate));
-		
-		
-		g2d.translate(-100, -75 );
-		
 		g2d.translate(-200, -200);
-		
-		
-		g2d.drawRect(10,10,10,10);
-		
-		
 		
 	} // RotateComponent	
 	
