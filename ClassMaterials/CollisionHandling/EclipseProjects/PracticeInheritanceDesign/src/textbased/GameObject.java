@@ -9,7 +9,7 @@ public abstract class GameObject {
 		this.name= name;
 	}
 	
-	// 10% change
+	// 1% chance
 	public boolean intersects( GameObject other) {
 		return Math.random() < ODDS_OF_COLLIDING;
 	}

@@ -41,7 +41,7 @@ public class TextCollisonMain {
 		Scanner scanner = new Scanner(System.in);
 		String response = "";
 		while (!response.equals("Exit")) {
-			System.out.println("Press Enter to run a round of collisions. Type Exit to end.");
+			System.out.println("Type anything and then press Enter to run a round of collisions. Type Exit to end.");
 			response = scanner.next();
 
 			for (GameObject o1 : allGameObjects) {
