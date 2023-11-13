@@ -15,8 +15,9 @@ import java.util.List;
  */
 public class PetMain {
 
-	private List<Pet> pets; 
-
+	private List<Cat> cats; 
+	private List<Dog> dogs; 
+	private List<Fish> fishes; 
 	
 	private Zookeeper zookeeper;
 	
@@ -32,43 +33,52 @@ public class PetMain {
 	}
 
 	public void makePets() {
-		this.pets = new ArrayList<Pet>();
-
-		this.pets.add(new Cat("Tiger"));
-		this.pets.add(new Cat("Smokey"));
-		this.pets.add(new Cat("Misty"));
-
-		this.pets.add(new Dog("Spot"));
-		this.pets.add(new Dog("Tiny"));
-
-		this.pets.add(new Fish("Bubbles"));
-		this.pets.add(new Fish("Comet"));
-		this.pets.add(new Fish("Flash"));
+		this.cats = new ArrayList<Cat>();
+		this.dogs = new ArrayList<Dog>();
+		this.fishes = new ArrayList<Fish>();
 		
-		this.pets.add(new Penguin("Happy"));
+		this.cats.add(new Cat("Tiger"));
+		this.cats.add(new Cat("Smokey"));
+		this.cats.add(new Cat("Misty"));
+
+		this.dogs.add(new Dog("Spot"));
+		this.dogs.add(new Dog("Tiny"));
+
+		this.fishes.add(new Fish("Bubbles"));
+		this.fishes.add(new Fish("Comet"));
+		this.fishes.add(new Fish("Flash"));
 	}
 	
 	public void feedPets() {
 		// Note: You are allowed to change the indices 
 		// for it to work. If you merge all the pets into one 
 		// list, the indices should be 0,2,4,5,6,7.
-		this.zookeeper.feedPet(this.pets.get(0));
-		this.zookeeper.feedPet(this.pets.get(2));
+		this.zookeeper.feedCat(this.cats.get(0));
+		this.zookeeper.feedCat(this.cats.get(2));
 
-		this.zookeeper.feedPet(this.pets.get(4));
+		this.zookeeper.feedDog(this.dogs.get(1));
 		
-		this.zookeeper.feedPet(this.pets.get(5));
-		this.zookeeper.feedPet(this.pets.get(6));
-		this.zookeeper.feedPet(this.pets.get(7));
-		
-		this.zookeeper.feedPet(this.pets.get(8));
+		this.zookeeper.feedFish(this.fishes.get(0));
+		this.zookeeper.feedFish(this.fishes.get(1));
+		this.zookeeper.feedFish(this.fishes.get(2));
 	}
 	
 	public void countPetsEating() {
 		int count = 0;
+		for (Cat cat : this.cats) {
+			if (cat.isEating()) {
+				count++;
+			}
+		}
 		
-		for (Pet p: this.pets) {
-			if (p.isEating()) {
+		for (Dog dog : this.dogs) {
+			if (dog.isEating()) {
+				count++;
+			}
+		}
+		
+		for (Fish fish: this.fishes) {
+			if (fish.isEating()) {
 				count++;
 			}
 		}

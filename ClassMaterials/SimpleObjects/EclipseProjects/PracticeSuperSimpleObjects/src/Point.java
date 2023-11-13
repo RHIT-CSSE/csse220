@@ -41,7 +41,8 @@ public class Point {
 	 * @return distance between this Point and some other Point
 	 */
 	private double distanceTo(Point other) {
-		return distanceFormulaCalc(this.x, other.x, this.y, other.y);
+		//TODO complete this method
+		return 0;
 	}
 
 	/**
@@ -53,7 +54,8 @@ public class Point {
 	 * @return distance between two Points
 	 */
 	private static double distanceBetween(Point a, Point b) {
-		return distanceFormulaCalc(a.x, b.x, a.y, b.y);
+		//TODO complete this method
+		return 0;
 	}
 	
 	/** 
