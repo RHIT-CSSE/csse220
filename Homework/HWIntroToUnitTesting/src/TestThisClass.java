@@ -67,6 +67,9 @@ public class TestThisClass {
 	 * <br>    cost = $8 + $2 each for toppings #1 and #2 and then add $1 each for toppings #3, #4, etc.
 	 * <br> cost = $12 for a 'special'
 	 * <br>    a 'special' only has these 3 toppings (in any order): "pepperoni", "onions" and "sausage"
+	 * <br>
+	 * <br> Note: Any Strings in the parameter toppingsList are considered toppings for this method, 
+	 * <br> including empty strings. This isn't considered defective behavior.
 	 * @param toppingsList contains 0 or more pizza toppings
 	 * @return the cost of a pizza based on the toppings found in toppingsList
 	 */
