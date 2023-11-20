@@ -1,3 +1,4 @@
+package simple;
 
 public class LinkedList {
 	
@@ -52,11 +53,48 @@ public class LinkedList {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		LinkedList list = new LinkedList();
-		list.addAtBeginning(1);
-		list.addAtBeginning(2);
-		list.addAtBeginning(3);
-		System.out.println(list.toString());
+//		LinkedList list = new LinkedList();
+//		list.addAtBeginning(1);
+//		list.addAtBeginning(2);
+//		list.addAtBeginning(3);
+//		System.out.println(list.toString());
+
+		// TODO: Time different methods
+		// Add ALL values from 1 to N to a list
+		// Compare how long it takes using:
+		
+		// Try comparing how long it takes using addAtBeginning() and addAtEnd()
+		// Should there a difference? Why or why not?
+		// Is there a difference? Big/small?
+		
+		//Try these values for LIST_SIZE" {10, 100, 1000, 10000, 100000, 1000000}
+		int LIST_SIZE = 100000;
+		
+		// This class will allow us to easily see how long it takes to run some code
+		StopWatch timer = new StopWatch();
+
+		timer.start();
+		LinkedList list1 = new LinkedList();
+		for (int i=0; i<LIST_SIZE; i++) {
+			list1.addAtEnd(i);
+		}
+		timer.stop();
+		
+		double secondsTakenList1 = timer.getElapsedTime()/1000.0;
+		System.out.println("Took "+secondsTakenList1 + " seconds to add 100,000 elements using addAtEnd()");
+		// Took 8.903 to add 100,000 elements using addAtEnd() in 2023
+		
+		timer.reset();
+		timer.start();
+		
+		LinkedList list2 = new LinkedList();
+		for (int i=0; i<LIST_SIZE; i++) {
+			list2.addAtBeginning(i);
+		}
+		timer.stop();
+		double secondsTakenList2 = timer.getElapsedTime()/1000.0;
+		System.out.println("Took "+secondsTakenList2 + " seconds to add 100,000 elements using addAtBeginning()");
+		// Took 0.002 to add 100,000 elements using addAtBeginning() in 2023
 		
 	}
 	
