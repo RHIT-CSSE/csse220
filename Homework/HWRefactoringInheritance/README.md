@@ -176,6 +176,6 @@ You do NOT have to turn in UML, this is just a quick reference to keep you on tr
 
 # The End
 
-That's it!  Make sure you program works like the videos and submit all edited the files via Moodle!
+That's it!  Make sure you program works like the videos and submit all edited the files via GradeScope!
 
 
