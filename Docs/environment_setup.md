@@ -12,14 +12,15 @@ instructions here:
 Follow the instructions here:
 [Clone CSSE220 git repo](getting_the_repo.md)
 
-## Repeat the following for each software development HW
 
-Follow the instructions here:
-[Importing an Eclipse Project](importing_eclipse_project.md)
-
-## If you prefer to import all projects at once
+## Setup Working Sets (should have been done in previous step, but linked here for convenience)
 
 Follow the instructions here:
 [Eclipse Working Sets](eclipse_working_sets.md)
 
+
+## If you did not import a project for any reason use these instructions to import a project
+
+Follow the instructions here:
+[Importing an Eclipse Project](importing_eclipse_project.md)
 

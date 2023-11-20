@@ -23,20 +23,16 @@ use Eclipse to clone (that is, copy) the repo onto your machine
 
 ***
 
-* At this point you can import an Eclipse project into Eclipse from the repo you just cloned
+* At this point you can import all projects into Eclipse from the repo you just cloned
 
-9. Click *Deselect all* 
-   * Use the project search box at the top of the list of projects to search for the project you want to import
-   * For example, type *PracticeJavaIntro* into the search box to find the PracticeJavaIntro Eclipse project
-   * Check the box located in front of the desired homework (e.g., *HWTwelveProblems*) and then click *Finish*
+9. Click *Finish* 
+   * If for any reason you clicked anyting else, first click *Select all* and then *Finish*
+   * The button *Select all*  will NOT be clickable by default since all projects are selected by default
 
-10. The Eclipse project you imported will show up in Eclipse's *Package Folder* pane
+10. All of the Eclipse projects you imported will show up in Eclipse's *Package Folder* pane
 
+11. Now that you have imported all of the projects we want to organize them using this guide
 
-## What if I accidentally imported everything? (or prefer to import all at once)
-
-If you want to import all projects at the same time or did so on accident, 
-see this guide to using Eclipse's "Working Sets"
-[Eclipse Working Sets](eclipse_working_sets.md)
+12. Eclipse's "Working Sets" [Eclipse Working Sets](eclipse_working_sets.md) will make it easy to organize your work
 
 
