@@ -33,4 +33,4 @@ Upload all the .java files you've changed or added.
 * Don't include non source files (e.g. .class files, .jar files).
 * Don't try to use git or svn to submit assignments.  Making a commit
   in your local git repo will not submit code to us.  Instead just
-  submit your updated files via Moodle.
+  submit your updated files via GradeScope.
