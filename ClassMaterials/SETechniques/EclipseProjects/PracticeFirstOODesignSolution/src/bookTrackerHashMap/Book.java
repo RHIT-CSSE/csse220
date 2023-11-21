@@ -1,4 +1,4 @@
-package bookTracker;
+package bookTrackerHashMap;
 import java.util.ArrayList;
 /**
  *  
@@ -40,9 +40,4 @@ public class Book {
 	public String getName() {
 		return name;
 	}
-	
-	public ArrayList<Kid> getKids(){
-		return this.kids;
-	}
-	
 }

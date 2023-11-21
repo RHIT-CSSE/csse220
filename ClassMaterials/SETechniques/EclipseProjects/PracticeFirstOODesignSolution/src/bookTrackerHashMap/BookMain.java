@@ -1,4 +1,4 @@
-package bookTracker;
+package bookTrackerHashMap;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,14 +7,15 @@ import java.util.Scanner;
 /**
  * This class is the main application that is used to allow a user to track books, kids, and generate reports on them
  * 
- * @author Jason Yoder and Jacob Ashworth - March 2022
+ * @author Jason Yoder and Jacob Ashworth
  *
  */
 public class BookMain {
 
-	//TODO:  Improve this!
-	private ArrayList<Kid> kids = new ArrayList<Kid>();
-	
+	// Note that this information could also be stored via an ArrayList, BUT 
+	// the HashMap makes it possible to look up the desired object with a for loop
+	private HashMap<String, Kid> nameToKidMap = new HashMap<String, Kid>();
+	private HashMap<String, Book> nameToBookMap = new HashMap<String, Book>();
 
 	/**
 	 * This is where the program starts. It instantiates an instance of the application and then runs it.
@@ -48,26 +49,18 @@ public class BookMain {
 	 * 
 	 */
 	public void setupKidsAndBooks() {
-		//Parallel arrays of Kid names and levels
 		String[] kidNames = { "Bob", "Joe", "Steve", "Maria", "Katy", "Zoe" };
 		int[] kidLevels = { 0, 1, 4, 2, 4, 3 };
 
-		//Paralle arrays of Book names and authors
 		String[] bookNames = { "Hunger Games", "Harry Potter", "HHGTTG" };
 		String[] authorNames = { "Suzanne Collins", "J. K. Rowling", "Douglas Adams" };
 
-		//Populate list of Kids
 		for (int i = 0; i < kidNames.length; i++) {
-			kids.add( new Kid(kidNames[i], kidLevels[i]));
+			nameToKidMap.put(kidNames[i], new Kid(kidNames[i], kidLevels[i]));
 		}
-		
-		//books is a local variable, hmmmm, can't use this elsewhere.
-		//TODO improve this!
-		ArrayList<Book> books = new ArrayList<Book>();
 		for (int i = 0; i < bookNames.length; i++) {
-			books.add( new Book(bookNames[i], authorNames[i]));
+			nameToBookMap.put(bookNames[i], new Book(bookNames[i], authorNames[i]));
 		}
-	
 		
 		//setup a few books that Kids have read
 		handleCommand("read-book Joe READS Harry Potter");
@@ -155,21 +148,8 @@ public class BookMain {
 		Book thisBook = null;
 		Kid thisKid = null;
 
-		//TODO:  Improve this!
-		// Since we do not have access to an existing list of Books, we cannot specify the author here!
-		// If there were already existing Books associated with Kids we might be able to track them down
-		// But how could we get them added in the first place?
-		thisBook = new Book(bookName, "Unknown");
-		
-		
-		
-		//TODO:  Improve this!
-		// With an ArrayList we have to go through and find the Kid object that has the desired name!
-		for (Kid kid: this.kids) {
-			if (kid.getName().equals( kidName ) ) {
-				thisKid = kid;
-			}
-		}
+		thisBook = this.nameToBookMap.get(bookName);
+		thisKid = this.nameToKidMap.get(kidName);
 		
 		if (thisBook != null && thisKid != null) {
 			thisKid.addBook(thisBook);
@@ -191,13 +171,7 @@ public class BookMain {
 	 * @param kidName
 	 */
 	public void handlePrintReportForKid(String kidName) {
-		//TODO improve this!
-		Kid thisKid = null;
-		for (Kid kid: this.kids) {
-			if (kid.getName().equals( kidName ) ) {
-				thisKid = kid;
-			}
-		}
+		Kid thisKid = this.nameToKidMap.get(kidName);
 		if (thisKid == null) {
 			System.out.println("Kid does not exist");
 		} else {
@@ -211,18 +185,7 @@ public class BookMain {
 	 * @param BookName
 	 */
 	public void handlePrintReportForBook(String bookName) {
-		//NOTE: this is absolutely terrible!
-		//TODO improve this
-		Book thisBook = null;
-		
-		for (Kid kid: this.kids) {
-			for (Book book: kid.getBooks() ) {
-				if (book.getName().equals(bookName) ) {
-					thisBook = book;
-				}
-			}
-		}
-		
+		Book thisBook = this.nameToBookMap.get(bookName);
 		if (thisBook == null) {
 			System.out.println("Book does not exist");
 		} else {
@@ -235,8 +198,8 @@ public class BookMain {
 	 */
 	public void handlePrintKidNames() {
 		System.out.print("Kids: ");
-		for (Kid kid : this.kids) {
-			System.out.print(kid.getName() + ", ");
+		for (String kidName : this.nameToKidMap.keySet() ) {
+			System.out.print(kidName + ", ");
 		}
 		System.out.println("");
 	}
@@ -245,24 +208,9 @@ public class BookMain {
 	 * Use simply to show the list of available Books
 	 */
 	public void handlePrintBookNames() {
-		
-		// Yikes this is awful! Also, when run this exposes that multiple books
-		// with the same name are getting created!
-		// We could check to see if the names match the names of books in the list,
-		// but that does not fix the problem that multiple copies of a Book with a name
-		// may exist here.
-		ArrayList<Book> bookList = new ArrayList<Book>();
-		for (Kid kid: this.kids) {
-			for (Book book: kid.getBooks() ) {
-				if (!bookList.contains(book) ) {
-					bookList.add(book);
-				}
-			}
-		}
-		
 		System.out.print("Books: ");
-		for (Book book : bookList) {
-			System.out.print(book.getName() + ", ");
+		for (String bookName : this.nameToBookMap.keySet() ) {
+			System.out.print(bookName + ", ");
 		}
 		System.out.println("");
 	}
