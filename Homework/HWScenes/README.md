@@ -182,6 +182,7 @@ Add the SunViewer and SunComponent to your project
 * Override the <strong>paintComponent</strong> method of the SunComponent class.
 * Place the following constants in the SunComponent class.
 
+	    private static final double LITTLE_SUNS_X_OFFSET = 50;
 	    private static final double LITTLE_SUN_SIZE = 30.0;
 	    private static final double LITTLE_SUN_SEPARATION = 100.0;
 	    private static final int NUM_LITTLE_SUNS = 5;
@@ -215,7 +216,6 @@ Create the <strong>Sun</strong> class
 	    private static final double DEFAULT_SUN_X = 100.0;
 	    private static final double DEFAULT_SUN_Y = 100.0;
 	    private static final Color DEFAULT_SUN_COLOR = Color.YELLOW;
-	    private static final double LITTLE_SUNS_X_OFFSET = 50; 
 
 2. Add the following instance fields to the Sun class:
 	
@@ -226,14 +226,6 @@ Create the <strong>Sun</strong> class
   * rayWidth - the width of each ray of a Sun
   * rayDistanceFromSun - the distance from the center of the sun to the beginning of a ray
   * color - the fill color for the Sun
-
-	    private static final double LITTLE_SUNS_X_OFFSET = 50;
-	    private static final double LITTLE_SUNS_X_OFFSET = 50;
-	    private static final double LITTLE_SUN_SIZE = 30.0;
-	    private static final double LITTLE_SUN_SEPARATION = 100.0;
-	    private static final int NUM_LITTLE_SUNS = 5;
-	    private static final double LITTLE_SUNS_Y = 400.0;
-	    private static final Color LITTLE_SUN_COLOR = Color.RED;
 
     
 3. Create a default constructor for the Sun class.
@@ -301,13 +293,23 @@ Adding little suns!
 
 		
 
-2. Modify SunComponent's paintComponent method create multiple little Suns (use NUM_LITTLE_SUMS for the exact number), and draw them to the screen
+2. Modify SunComponent's paintComponent method create multiple little Suns (use NUM_LITTLE_SUNS for the exact number), and draw them to the screen
 
     * The little suns should start at x = LITTLE_SUNS_X_OFFSET and should be separated by the amount in LITTLE_SUN_SEPARATION
     * The little suns should be drawn in LITTLE_SUN_COLOR
     * Use a for loop to do this! Don't hard-code each sun indiviudally!
     * It should appear as the item on the right.
-		
+
+  Note: you should already have these constants in the SunComponent:
+  
+	    private static final double LITTLE_SUNS_X_OFFSET = 50;
+	    private static final double LITTLE_SUNS_X_OFFSET = 50;
+	    private static final double LITTLE_SUN_SIZE = 30.0;
+	    private static final double LITTLE_SUN_SEPARATION = 100.0;
+	    private static final int NUM_LITTLE_SUNS = 5;
+	    private static final double LITTLE_SUNS_Y = 400.0;
+	    private static final Color LITTLE_SUN_COLOR = Color.RED;
+
 3. For your final submission, make sure your <code>paintComponent()</code> to the following so that we can check that it looks like the final sun picture:
 
         @Override
