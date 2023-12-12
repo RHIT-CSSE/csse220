@@ -303,7 +303,6 @@ Adding little suns!
   Note: you should already have these constants in the SunComponent:
   
 	    private static final double LITTLE_SUNS_X_OFFSET = 50;
-	    private static final double LITTLE_SUNS_X_OFFSET = 50;
 	    private static final double LITTLE_SUN_SIZE = 30.0;
 	    private static final double LITTLE_SUN_SEPARATION = 100.0;
 	    private static final int NUM_LITTLE_SUNS = 5;
