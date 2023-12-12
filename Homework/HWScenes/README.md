@@ -187,7 +187,6 @@ Add the SunViewer and SunComponent to your project
 	    private static final int NUM_LITTLE_SUNS = 5;
 	    private static final double LITTLE_SUNS_Y = 400.0;
 	    private static final Color LITTLE_SUN_COLOR = Color.RED;
-	    private static final double LITTLE_SUNS_X_OFFSET = 50;
 
 	
 ## Stage 3b - Creating the *Sun* class:
@@ -228,6 +227,15 @@ Create the <strong>Sun</strong> class
   * rayDistanceFromSun - the distance from the center of the sun to the beginning of a ray
   * color - the fill color for the Sun
 
+	    private static final double LITTLE_SUNS_X_OFFSET = 50;
+	    private static final double LITTLE_SUNS_X_OFFSET = 50;
+	    private static final double LITTLE_SUN_SIZE = 30.0;
+	    private static final double LITTLE_SUN_SEPARATION = 100.0;
+	    private static final int NUM_LITTLE_SUNS = 5;
+	    private static final double LITTLE_SUNS_Y = 400.0;
+	    private static final Color LITTLE_SUN_COLOR = Color.RED;
+
+    
 3. Create a default constructor for the Sun class.
 
   * Use as many of the constants defined above as possible when setting values into the specified instance fields.
