@@ -346,7 +346,7 @@ Adding little suns!
 
 
 
-## Stage 4a - Create the *SceneViewer*, *SceneComponent*, and *Scene* classes:
+## Stage 4a - Create the *SceneViewer* and *SceneComponent* classes:
 
 In this part, you'll put it all together!
 
