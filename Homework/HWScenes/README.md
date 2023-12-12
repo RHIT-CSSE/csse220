@@ -307,8 +307,6 @@ Adding little suns!
     * The little suns should be drawn in LITTLE_SUN_COLOR
     * Use a for loop to do this! Don't hard-code each sun indiviudally!
     * It should appear as the item on the right.
-
-
 		
 3. For your final submission, make sure your <code>paintComponent()</code> to the following so that we can check that it looks like the final sun picture:
 
