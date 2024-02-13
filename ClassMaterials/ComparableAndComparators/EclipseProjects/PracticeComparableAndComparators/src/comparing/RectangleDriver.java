@@ -38,7 +38,7 @@ public class RectangleDriver {
 		// TODO #4 - declare a variable called reversePerimeterComparator using type Comparator<Rectangle>, 
 		// make it sort by NON-DECREASING perimeter. (increasing or neutral)
 		// Then uncomment the following line
-//		Collections.sort(this.people, reversePerimeterComparator );
+//		Collections.sort(this.rectangles, reversePerimeterComparator );
 		System.out.println("After sorting by perimeter (smallest first) : " + this.rectangles);
 		
 		
