@@ -32,7 +32,7 @@ public class PersonDriver {
 		// which should sort by non-increasing age only. (decreasing or neutral)
 		// Then uncomment the following line to create an use an instance of it
 		// To sort the people.
-//		Collections.sort(this.people, new ByAgeComparator() );
+//		Collections.sort(this.people, new ByAgeOnlyComparator() );
 		System.out.println("After sorting by age only (oldest first): " + this.people);
 		
 		
