@@ -1,3 +1,4 @@
+package advancedSolution;
 /**
  * This class represents the problem of when too amny scores
  * are provided when playing the FileBestScore game

@@ -1,3 +1,4 @@
+package basicSolution;
 
 
 import java.io.FileNotFoundException;
