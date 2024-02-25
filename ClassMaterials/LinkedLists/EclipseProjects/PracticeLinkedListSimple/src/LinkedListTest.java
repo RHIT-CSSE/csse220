@@ -87,10 +87,18 @@ public class LinkedListTest {
 
 	@Test
 	public void testRemovalAll() {
-		int[] data = {2,1,2,3,2,4,2};
-		LinkedList list = new LinkedList(data);
-		list.removalAll(2);
-		assertEquals("1->3->4->null", list.toString());
+		LinkedList removeTest = new LinkedList();
+		removeTest.addAtBeginning(2);
+		removeTest.addAtBeginning(2);
+		removeTest.addAtBeginning(4);
+		removeTest.addAtBeginning(2);
+		removeTest.addAtBeginning(3);
+		removeTest.addAtBeginning(2);
+		removeTest.addAtBeginning(1);
+		removeTest.addAtBeginning(2);
+		removeTest.addAtBeginning(2);
+		removeTest.removalAll(2);
+		assertEquals("1->3->4->null", removeTest.toString());
 	}
 
 }
