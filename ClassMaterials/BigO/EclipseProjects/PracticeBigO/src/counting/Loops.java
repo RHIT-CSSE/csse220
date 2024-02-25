@@ -83,7 +83,7 @@ public class Loops {
 		int result = array[0];
 		for (int i = 0; i < n; i++) {
 			count++;
-			if (result> array[i]) {
+			if (result >= array[i] ) {
 				result = array[i];
 			}
 		}

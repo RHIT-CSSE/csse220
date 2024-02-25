@@ -87,11 +87,11 @@ public class Loops {
 		int count = 0;
 		if (n == 0)
 			return 0;
-		int result = array[0];
+		int result = array[0];  //1
 		for (int i = 0; i < n; i++) {
 			count++;
-			if (result> array[i]) {
-				result = array[i];
+			if (result >= array[i] ) { // N 
+				result = array[i];     // N 
 			}
 		}
 		return result;
