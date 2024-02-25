@@ -3,15 +3,6 @@ No particular version of java/eclipse is required, so if you've got
 one installed it will probably work fine.  But if you don't, follow
 the steps below.
 
-# Install Java
-
-The thing you want to install is the *Java SE Development Kit 17* <a href="https://www.oracle.com/java/technologies/downloads/#java17">Download it here</a>
-
-1. Scroll until you see the different OS's listed
-2. Select the download for your machine (e.g., *Windows x64 Installer*)
-
-Then run the downloaded file and install it in the default location
-
 # Install Eclipse
 
 The thing you want to install is the *Eclipse IDE for Java Developers*:
@@ -22,6 +13,18 @@ Choose the download based on your platform: Windows, macOS, Linux
 Then run the downloaded file and select *Eclipse IDE for Java Developers* and then default choices (if any are presented)
 
 After that, just install eclipse following the defaults
+
+# Install Java
+
+If for any reason your installation of Eclipse did not include the installation of Java, then you might need to install it separately.
+
+In that case, the thing you want to install is the *Java SE Development Kit 17* <a href="https://www.oracle.com/java/technologies/downloads/#java17">Download it here</a>
+
+1. Scroll until you see the different OS's listed
+2. Select the download for your machine (e.g., *Windows x64 Installer*)
+
+Then run the downloaded file and install it in the default location
+
 
 # Run Eclipse and create a workspace
 
