@@ -83,7 +83,8 @@ public class LinkedList {
 		double secondsTakenList1 = timer.getElapsedTime()/1000.0;
 		System.out.println("Took "+secondsTakenList1 + " seconds to add 100,000 elements using addAtEnd()");
 		// Took 8.903 to add 100,000 elements using addAtEnd() in 2023
-		
+		// Took 1198.591 to add 1,000,000 elements using addAtEnd() in 2023
+
 		timer.reset();
 		timer.start();
 		
