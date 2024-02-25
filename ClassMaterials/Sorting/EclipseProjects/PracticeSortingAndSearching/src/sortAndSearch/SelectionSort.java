@@ -20,7 +20,7 @@ public class SelectionSort {
 	 */
 	public static void main(String[] args) {
 		System.out.println("Testing selection sort:");
-		int n = 10;
+		int n = 10000;
 
 		Integer[] array = randomArray(n);
 		StopWatch timer = new StopWatch();
