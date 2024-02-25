@@ -1,0 +1,7 @@
+Version 2.0
+params:2.0,4.0,1.0,1.5,2.0,5.0
+isDiagonal:26.0
+longestRepeatSequence:26.0
+stringFromColumns:10.0
+distanceArray:26.0
+ballRestElevation:34.0

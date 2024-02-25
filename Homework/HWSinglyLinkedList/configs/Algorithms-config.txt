@@ -1,0 +1,9 @@
+Version 2.0
+params:2.0,4.0,1.0,1.5,2.0,5.0
+arraylistOf1s:14.0
+insertIntoSorted:2.0
+removeLongNumbers:28.0
+checkSorted:6.0
+doubleList:2.0
+isFibSeq:3.0
+recursiveGet:2.0
