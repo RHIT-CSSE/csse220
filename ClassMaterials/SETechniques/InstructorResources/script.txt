@@ -1,0 +1,135 @@
+1. run BookMain.java and try the following commands:
+
+help
+print-kids
+   Kids: Bob, Joe, Steve, Maria, Katy, Zoe, 
+print-books
+   Books: Harry Potter, Hunger Games, HHGTTG, Hunger Games, 
+
+Q: Why is Hunger Games appearing twice?
+
+2. BookMain.java:  handlePrintBookNames (line 247)
+
+We can see that because there is no BookList the only way to see the books
+is to check and see if they exist in the list read by Kids!
+Even though we check to avoid adding duplications (!contains...) 
+we are getting multiple Book that are named Hunger Games!
+
+
+3. That makes me wonder... what if we had a book no kid had read?
+Let's try it, comment out line 73 (  //handleCommand("read-book Joe READS Harry Potter"); 
+
+print-books
+    Books: Hunger Games, HHGTTG, Hunger Games, 
+
+Oh no! This system is so bad! We can't even see that Harry Potter exists, because no one has read it yet!
+
+
+4. OK, let's see if we can improve this design with the suggested list.
+
+Show the Refactoring Coding Exercise Slide (33)
+
+Q: What do we want to add in this new design?
+A: A way to store the books as well as the Kids!
+
+
+
+5.  add array list
+line 17 add:
+private ArrayList<Book> books = new ArrayList<Book>();
+
+6. update everything to use this.books list
+
+line 67 comment out:
+//ArrayList<Book> books = new ArrayList<Book>();
+
+
+line 164:
+for (Book book: this.books) {
+	if (book.getName().equals( bookName ) ) {
+		thisBook = book;
+	}
+}
+
+
+line 223:
+for (Kid kid: this.kids) {		
+	for (Book book: kid.getBooks() ) {
+		if (book.getName().equals(bookName) ) {
+			thisBook = book;
+		}
+	}
+}
+BECOMES ->
+for (Book book: this.books ) {
+	if (book.getName().equals(bookName) ) {
+		thisBook = book;
+	}
+}
+
+
+line 258:
+delete loop and just use:
+
+for (Book book : this.books) {
+	System.out.print(book.getName() + ", ");
+}
+
+
+7.  Let's re-run main (keeping Harry Potter read line commented out)
+
+print-books
+Books: Hunger Games, Harry Potter, HHGTTG, 
+
+WOOHOO! It works now and there is no duplicate Hunger Games
+
+8.  Another area of improvement...
+
+Lots of loops to find students and books by name.
+
+Q: Is there a better way to find a Book/Kid by their name?
+  i.e. do we want to have loop through an ArrayList to find a student by name?
+
+A: Yes- let's use HashMaps!
+
+
+9. Replace kids/books by nameToKidMap, nameToBookMap
+replace for-loops with HashMaps
+
+
+line 16:
+	HashMap<String, Kid> nameToKidMap = new HashMap<String, Kid>();
+	HashMap<String, Book> nameToBookMap = new HashMap<String, Book>();
+
+line 62:
+nameToKidMap.put(kidNames[i],  new Kid(kidNames[i], kidLevels[i]));
+
+line 69:
+nameToBookMap.put( bookNames[i], new Book(bookNames[i], authorNames[i]));
+
+line 164:
+delete loops:
+
+thisBook = this.nameToBookMap.get(bookName);
+thisKid = this.nameToKidMap.get(kidName);
+
+
+line 189:
+Kid thisKid = this.nameToKidMap.get(kidName);
+
+
+line 206:
+Book thisBook = this.nameToBookMap.get(bookName);
+
+line 220:
+for (String name : this.nameToKidMap.keySet()) {
+	System.out.print(name + ", ");
+}
+
+line 239:
+for (String bookName : this.nameToBookMap.keySet() ) {
+	System.out.print(bookName + ", ");
+}
+
+
+
