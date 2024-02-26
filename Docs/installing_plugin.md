@@ -16,6 +16,7 @@
 
 ![Click Finish](images/InstallN07.png)
 
+## This "Trust Artifacts" window may take some time pop up, please be patient:
 ![Check the Unsigned checkbox, then click Trust Selected](images/InstallN08.png)
 
 ![Click Restart Now](images/InstallN09.png)
