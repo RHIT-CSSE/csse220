@@ -13,6 +13,11 @@ Follow the instructions here:
 [Clone CSSE220 git repo](getting_the_repo.md)
 
 
+## Install the Eclipse Complexity Plugin - do this just 1 time
+
+Follow the instructions here:
+[Install the CSSE220 Eclipse Complexity Plugin](installing_plugin.md)
+
 ## Setup Working Sets (should have been done in previous step, but linked here for convenience)
 
 Follow the instructions here:
