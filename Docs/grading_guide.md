@@ -136,7 +136,6 @@ This code is not readable. Now consider the same method with better coding conve
     	if(maxValue < num2) {
     		maxValue = num2;
     	}
-    	
     	return maxValue;
     }
 
@@ -150,28 +149,26 @@ For example, consider the following method to return a letter grade given an arr
 
     public static char getLetterGrade(double[] grades) {
     	double total = 0;
-    	for(double grade : grades) {
+    	for (double grade : grades) {
     		total += grade;
     	}
     	double avg = total/grades.length;
-    	
     	char gradeToReturn;
-    	if(avg >= 90.0)
+    	if (avg >= 90.0) {
     		gradeToReturn = 'A';
-    	else if(avg >= 80.0)
+      } else if (avg >= 80.0) {
     		gradeToReturn = 'B';
-    	else
+      } else {
     		gradeToReturn = 'F';
-    	
+      }
     	return gradeToReturn;
     }
 
 Even though this method is still quite small, it is apparent that more than this method contains more than just one task. The following better represents the proper coding style when splitting methods:
 
-
     private static double getAvg(double[] grades) {
     	double total = 0;
-    	for(double grade : grades) {
+    	for (double grade : grades) {
     		total += grade;
     	}
     	return total/grades.length;
@@ -179,15 +176,14 @@ Even though this method is still quite small, it is apparent that more than this
     
     public static char getLetterGrade(double[] grades) {
     	double avg = getAvg(grades);
-    	
     	char gradeToReturn;
-    	if(avg >= 90.0)
+    	if (avg >= 90.0 ) {
     		gradeToReturn = 'A';
-    	else if(avg >= 80.0)
+      } else if (avg >= 80.0) {
     		gradeToReturn = 'B';
-    	else
+      } else {
     		gradeToReturn = 'F';
-    	
+      }
     	return gradeToReturn;
     }
 
