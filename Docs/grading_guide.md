@@ -123,6 +123,8 @@ Here is an example that shows a simple class with “acceptable” style and doc
 
 ## Example of Bad/Good Names
 
+Take a look at the code below and try to determine what is happening.
+
     public int a(int b, int c) {
     	return (b < c) ? c : b;
     }
