@@ -3,15 +3,15 @@ This document is the official grade guide for CSSE220.
 
 # General Instructions
 
-Unless instructed otherwise, programs are graded in 220 based on the
+Unless instructed otherwise, programs are graded in CSSE220 based on the
 following criteria.
 
 * Correctness
 * Style/Documentation
 
-For any points deducted, a note should be placed in your Moodle
+For any points deducted, a note should be placed in your GradeScope
 feedback explaining why.  If you do not see feedback and you lost
-points, contact your grader.
+points, contact your grader or submit a re-grade request via GradeScope.
 
 # Correctness
 
@@ -28,21 +28,21 @@ For each item marked (per the grading instructions specific to the assignment):
 # Style/Documentation
 
 If an assignment does not specify points for style/documentation, you
-should assume up to 5 points can be taken off for style/documentation.
+should assume up to 20% can be taken off for style/documentation.
 
 Note that points will not be taken off for Style/Documentation until
 we have discussed style in class.  Usually the first style graded
-assignment is Team Gradebook.
+assignment is HWMaps.
 
 Style/Documentation is not graded on exams.
 
-## 220 Style Rules
+## CSSE220 Style Rules
 
 Remove 1 or 2 points for a violation of EACH of the following (up to the maximum allotted points for style):
 
 * No duplicate or cut and pasted code
 * Naming: Variable, method or class names are chosen poorly.
-* Violation of Java Naming Convetions Classes should begin with a capital letter, fields and methods lowercase. Everything should be in camelCase
+* Violation of Java Naming Conventions Classes should begin with a capital letter, fields and methods lowercase. Everything should be in camelCase (Exceptions are CONSTANTS in all capital letters)
 * Method Length: A method is too long (i.e., it should have been broken up into sub-method calls).
 * Statement Length: A statement is too long (i.e., an intermediate variable should have been introduced).
 * Improper Code Indentation: Control-Shift-F on the file causes any significant change.
@@ -57,9 +57,9 @@ Remove points for a violation of EACH of the following (up to the maximum allott
   description header. At the beginning of each class, you must include
   a Javadoc comment which includes:
 
-  - A description of the class, which includes its main purpose/function
-  - How to instantiate and use the class
-  - One or more examples of how the class is used
+  - Required: A description of the class, which includes its main purpose/function
+  - Optional: (but good practice!) How to instantiate and use the class
+  - Optional: One or more examples of how the class is used
 
 * Undocumented (or poorly documented) methods whose name and parameter
   names do not make it clear what the method accomplishes.
@@ -75,14 +75,14 @@ Remove points for a violation of EACH of the following (up to the maximum allott
 
 # Examples
 
-## Example of Documentation
-
 Remember: EVERY class must be documented! Above each class, you should include a (Javadoc) comment that has:
 
-* A description of the class, which includes its main purpose/function
-* How to instantiate and use the class
+* Required: A description of the class, which includes its main purpose/function
+* Optional: How to instantiate and use the class
 
-Here is an example that shows a simple class with “good” style and documentation. This represents the minimum documentation to receive full credit on any assignment when style/documentation is part of    the grading rubric for the assignment:
+## Example of Good Documentation
+
+Here is an example that shows a simple class with “good” style and documentation. This represents complete documentation which will clearly receive full credit on any assignment when style/documentation is part of the grading rubric for the assignment (meaning you wrote 50% or more of the file):
 
     /**
     *	Class: GoodExample
@@ -96,14 +96,32 @@ Here is an example that shows a simple class with “good” style and documenta
     */
     public class GoodExample {
     
-    	// This class returns the value passed in doubled
+    	// This method returns the value passed in doubled
     	public int doubleThatValue(int incomingVariable) {
     		return incomingVariable * 2;
     	}
     	
     }//end class GoodExample
     
-## Example of Good Names
+## Example of Acceptable Documentation
+
+Here is an example that shows a simple class with “acceptable” style and documentation. This represents the minimum documentation to receive full credit on any assignment when style/documentation is part of the grading rubric for the assignment (meaning you wrote 50% or more of the file):
+
+    /**
+    *	Class: GoodExample
+    *	@author	John Doe
+    *	Purpose: This class demonstrates the proper coding style and 
+    *		     contains a method to double any integer value
+    */
+    public class GoodExample {
+    
+    	public int doubleThatValue(int incomingVariable) {
+    		return incomingVariable * 2;
+    	}
+    }
+
+
+## Example of Bad/Good Names
 
     public int a(int b, int c) {
     	return (b < c) ? c : b;
