@@ -84,7 +84,7 @@ Remember: EVERY class must be documented! Above each class, you should include a
 
 Here is an example that shows a simple class with “good” style and documentation. This represents complete documentation which will clearly receive full credit on any assignment when style/documentation is part of the grading rubric for the assignment (meaning you wrote 50% or more of the file):
 
-    `/**
+    /**
     *	Class: GoodExample
     *	@author	John Doe
     *	Purpose: This class demonstrates the proper coding style.
@@ -101,13 +101,13 @@ Here is an example that shows a simple class with “good” style and documenta
     		return incomingVariable * 2;
     	}
     	
-    }//end class GoodExample`
+    }//end class GoodExample
     
 ## Example of Acceptable Documentation
 
 Here is an example that shows a simple class with “acceptable” style and documentation. This represents the minimum documentation to receive full credit on any assignment when style/documentation is part of the grading rubric for the assignment (meaning you wrote 50% or more of the file):
 
-    `/**
+    /**
     *	Class: GoodExample
     *	@author	John Doe
     *	Purpose: This class demonstrates the proper coding style and 
@@ -118,26 +118,26 @@ Here is an example that shows a simple class with “acceptable” style and doc
     	public int doubleThatValue(int incomingVariable) {
     		return incomingVariable * 2;
     	}
-    }`
+    }
 
 
 ## Example of Bad/Good Names
 
 Take a look at the code below and try to determine what is happening.
 
-    `public int a(int b, int c) {
+    public int a(int b, int c) {
     	return (b < c) ? c : b;
-    }`
+    }
 
 This code is not readable. Now consider the same method with better coding conventions:
 
-    `public int max(int num1, int num2) {
+    public int max(int num1, int num2) {
     	int maxValue = num1;
     	if(maxValue < num2) {
     		maxValue = num2;
     	}
     	return maxValue;
-    }`
+    }
 
 ## Example of Method Length
 
@@ -147,7 +147,7 @@ Also, remember that a method should complete only one task. If you are attemptin
 
 For example, consider the following method to return a letter grade given an array of double values:
 
-    `public static char getLetterGrade(double[] grades) {
+    public static char getLetterGrade(double[] grades) {
     	double total = 0;
     	for (double grade : grades) {
     		total += grade;
@@ -162,11 +162,11 @@ For example, consider the following method to return a letter grade given an arr
     		gradeToReturn = 'F';
       } 
     	return gradeToReturn;
-    }`
+    }
 
 Even though this method is still quite small, it is apparent that more than this method contains more than just one task. The following better represents the proper coding style when splitting methods:
-
-    `private static double getAvg(double[] grades) {
+```
+    private static double getAvg(double[] grades) {
     	double total = 0;
     	for (double grade : grades) {
     		total += grade;
@@ -185,6 +185,6 @@ Even though this method is still quite small, it is apparent that more than this
     		gradeToReturn = 'F';
       }
     	return gradeToReturn;
-    }`
-
+    }
+```
 
