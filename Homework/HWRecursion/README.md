@@ -28,6 +28,11 @@
 
 - There are no documenting/commenting requirements for this assignment
 
+## Hint:
+The last problem is a good challenge. 
+The following image might be helpful in guiding you to see a way to approach it.
+![MCSS Hint](mcss_hint.png)
+
 ## Notes:
 - You should NOT use ANY kind of while/for loops, all looping must be done using recursion
 - If you use for/while loops in your solution you may be assigned 0% credit even if you pass all tests
