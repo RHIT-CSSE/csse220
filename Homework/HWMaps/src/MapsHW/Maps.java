@@ -16,7 +16,7 @@ import java.util.HashMap;
 public class Maps {
 	
 	/**
-	 * Given two arrays this operation must build and return a new HashMap that 
+	 * Given two arrays this operation builds and returns a new HashMap that 
 	 * contains a mapping from String (hashmap's key) to Integer (hashmap's value)
 	 * 
 	 * @param airportCodes an array of String containing 3-letter airport codes
@@ -35,7 +35,7 @@ public class Maps {
 	
 	
 	/**
-	 * Given a single input string in inputString, this operation must return the character 
+	 * Given a single input string in inputString, this operation returns the character 
 	 * from inputString that appears the most number of times
 	 * 
 	 * Your solution must use a HashMap; you cannot use nested for-loops to solve this problem.
@@ -114,7 +114,7 @@ public class Maps {
 	 * This operation takes an array of temperatures and a corresponding array of the city names
 	 * giving the location where each temperature reading was recorded.  
 	 * 
-	 * The operation must return the name of a city that experienced a temperature drop.  
+	 * The operation returns the name of a city that experienced a temperature drop.  
 	 * If no city experienced a drop, the operation should return null.	 
 	 * 
 	 * You must use a HashMap to solve this problem.
@@ -148,7 +148,7 @@ public class Maps {
 	/**
 	 * This operation reverses (i.e., exchanges the keys and values) an initialMap.
 	 * initialMap may contain multiple different keys with the same value.  
-	 * Because of this, the value field of the returned map must be a list.
+	 * Because of this, the value field of the returned map must be an ArrayList.
 	 * 
 	 * The initial HashMap contains a mapping from Integers to Strings.
 	 * The reversed HashMap must contain a mapping from Strings to ArrayLists of Integers.
