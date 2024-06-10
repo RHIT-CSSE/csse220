@@ -66,10 +66,10 @@ public class FunGameOfLife {
 		return null;
 	} // nextCells
 
-	
-	public static final int SEED = 1;           // used to reproduce the same starting state
-	public static final int DELAY = 25;         // determines the rate of visualization
-	public static final int STEPS_TO_RUN = 100; // how many steps to simulate
+	public static final boolean RANDOMIZE = false;	// used to decide to use a random seed or not
+	public static final int SEED = 1;           	// used to reproduce the same starting state
+	public static final int DELAY = 25;         	// determines the rate of visualization
+	public static final int STEPS_TO_RUN = 100; 	// how many steps to simulate
 
 	// A good default starting stake to see a "Glider" move across the grid
 	public static int[][] gameOfLifeCells = { 	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -85,6 +85,52 @@ public class FunGameOfLife {
 												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } };
 
+	// The state of the system after 1 step with a correct implementation
+	public static int[][] gameOfLifeCellsAfterOneStep = { 	
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } };
+	
+	// The state of the system after 1 step with a correct implementation
+	public static int[][] gameOfLifeCellsAfterTwoSteps = { 	
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } };
+	
+	// The state of the system after 41 steps with a correct implementation
+	public static int[][] gameOfLifeCellsAfter41Steps = { 	
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+												{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } };
+	
+	
 	/**
 	 * Run this file to visualize Conway's Game of Life
 	 * 
@@ -98,7 +144,9 @@ public class FunGameOfLife {
 		// Having FUN yet? Use this to randomize the starting state and see what happens.
 		// The SEED makes it so that the same random starting state will show up again
 		// Otherwise if something cool happens you might not ever see it again...
-		// randomizeWithSeed(cells, SEED);
+		if (RANDOMIZE) {
+			randomizeWithSeed(cells, SEED);
+		}
 
 		for (int i = 0; i < STEPS_TO_RUN; i++) {
 			System.out.println("==================== step: " + i);
@@ -113,9 +161,60 @@ public class FunGameOfLife {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			;
 		}
+		
+		
+		//verify the solution is correct (but only if not randomized)
+		if (!RANDOMIZE) {
+			runTests();
+		}
+		
 	}
+	
+	
+	public static void runTest(int[][] cellsExpected, int[][] cellsActual, int steps) {
+		boolean passes = true;
+		for (int i=0; i< cellsActual.length; i++) {
+			for (int j=0; j< cellsActual[0].length; j++) {
+				if (cellsActual[i][j] != cellsExpected[i][j]) {
+					System.out.println("Wrong at row: "+ i+" col: "+j);
+					passes = false;
+				}
+			}
+		}
+		if (passes) {
+			System.out.println("Your code produced the correct state after "+steps+" step(s).");
+		} else {
+			System.out.println("Your code produced an INCORRECT state after "+steps+" step(s).");
+		}
+		System.out.println("----------------------------------------------------");
+	}
+	
+	public static void runTests() {
+		System.out.println("----------------------------------------------------");
+		System.out.println("                       TESTING                      ");
+		System.out.println("----------------------------------------------------");
+		// For testing purposes - run 1, 2, 41 steps and verify
+		// the result is correct
+		int[][] cells = gameOfLifeCells;
+		
+		// One Step
+		cells = nextCells(cells);
+		runTest(gameOfLifeCellsAfterOneStep, cells, 1);
+		
+		// Two Steps
+		cells = nextCells(cells);
+		runTest(gameOfLifeCellsAfterTwoSteps, cells, 2);
+	
+		
+		// Forty One Steps
+		for (int i=0; i<39; i++) {
+			cells = nextCells(cells);
+		}
+		runTest(gameOfLifeCellsAfter41Steps, cells, 41);
+		
+	}
+	
 
 	/**
 	 * You do not have to modify this method.
