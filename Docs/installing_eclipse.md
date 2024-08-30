@@ -3,9 +3,11 @@ No particular version of java/eclipse is required, so if you've got
 one installed it will probably work fine.  But if you don't, follow
 the steps below.
 
+NOTE: If you already have a version of Eclipse installed, you will likely want to uninstall it and install the latest version.  When you do this, you MUST make sure that you have Java 21 installed!
+
 # Install Java
 
-The thing you want to install is the *Java SE Development Kit 21* <a href="https://www.oracle.com/java/technologies/downloads/#java21">Download it here</a>
+The thing you want to install is the *Java SE Development Kit 21* <a href="https://www.oracle.com/java/technologies/downloads/#java21-windows">Download it here</a>
 
 1. Scroll until you see the different OS's listed
 2. Select the download for your machine (e.g., *Windows x64 Installer*)
