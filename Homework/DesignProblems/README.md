@@ -7,7 +7,9 @@ do this exercise by yourself.
 
 The [*Example Problems*](../../Docs/ExampleDesignProblems) includes a set of  design problems for you to practice on. Since these are practice problems, you can work them on your own or collaborate with other students.  
 
-There are solutions with commentary and good designs provided. Use these to evaluate your proposed solutions.
+There are solutions with commentary and good designs provided. Use these to evaluate your proposed solutions. 
+
+If you would like to earn incentive points (see syllabus) for practicing with these example design problems, you may use [this reflection template](TEMPLATE_DesignProblemPractice.docx). 
 
 # The HWs
 
