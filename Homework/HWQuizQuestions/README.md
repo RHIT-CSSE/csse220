@@ -23,7 +23,7 @@ In an online quiz application, teachers update quizzes and students take them.  
 *Additional Instructions*: 
 - Each question should have both an *id* and *questionQuery*
 - The question's *questionQuery* should be stored as a Java String and contain the actual question to be asked. For example, "What is the capital of Egypt?"
-- Each quiz should have an *id* along with its *questionQuery*
+- Each quiz should have an *id* along with its *questions*
 - When displaying a quiz, the quiz's *id* should be displayed in addition to each question's *id* and *questionQuery*
 
 ## Rubric:
