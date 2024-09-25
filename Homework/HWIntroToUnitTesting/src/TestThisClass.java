@@ -45,12 +45,12 @@ public class TestThisClass {
 
 
 	/**
-	 * ensures: returns -1 if any input parameter is not positive, otherwise
-	 * <br> returns the cost in dollars to paint a room's floor based on the input parameters 
+	 * ensures: returns -1 if any input parameter is not a positive integer (1, 2, 3, ...), 
+	 * <br> otherwise returns the cost in dollars to paint a room's floor based on the input parameters 
 	 * @param length is the length of the room in feet
 	 * @param width is the width of the room in feet
 	 * @param dollarsPerSqFoot is the cost to paint 1 square foot of a surface
-	 * @return cost to paint a room's floor or -1 if any input parameter is not positive
+	 * @return cost to paint a room's floor or -1 if any input parameter is not positive (i.e., is zero or negative)
 	 */
 	public static int paintCost(int length, int width, int dollarsPerSqFoot) {
 		if (Math.min(length, Math.min(width, dollarsPerSqFoot)) < 0) {
