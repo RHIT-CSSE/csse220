@@ -49,5 +49,15 @@ public class TestBracketMatch {
 	public void testBracketMatch08() {
 		assertEquals(false, Part1Problems.bracketMatch("(((<>))"));
 	} // testBracketMatch08
+	
+	@Test
+	public void testBracketMatch09() {
+		assertEquals(false, Part1Problems.bracketMatch("(<<)"));
+	} // testBracketMatch09
+	
+	@Test
+	public void testBracketMatch10() {
+		assertEquals(false, Part1Problems.bracketMatch("[}}]"));
+	} // testBracketMatch09
 
 } // end TestBracketMatch
