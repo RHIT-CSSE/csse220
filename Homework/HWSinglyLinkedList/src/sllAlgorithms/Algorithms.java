@@ -91,7 +91,7 @@ public class Algorithms {
 	} // isFibonacciSequence
 
 	/**
-	 * Gets the value of the ith node.
+	 * Gets the value of the ith node, relative to the node passed in the parameters.
 	 * 
 	 * If i==0, return the value of the given node.
 	 * 
