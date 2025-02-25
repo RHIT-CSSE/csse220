@@ -2,7 +2,7 @@ package TenProblems;
 
 
 /**
- * Class: TwelveProblems
+ * Class: TenProblems
  * 
  * @author CSSE Faculty Purpose: This exercise is intended to give you practice
  *         in Java with various algorithms learned in the previous course
