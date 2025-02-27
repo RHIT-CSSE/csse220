@@ -5,19 +5,19 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import salesManager.RunAllIndividualTests;
-import salesManager.SalesManager;
+import salesManager.SalesManagerMain;
 
 public class TestSellGame {
 	private static int testsPassed;
 	private static int numberOfTests;
-	private static SalesManager sm;
+	private static SalesManagerMain sm;
 
 	@BeforeClass
 	public static void oneTimeSetUp() {
 		testsPassed = 0;
 		numberOfTests = 0;
 		
-		sm = new SalesManager();
+		sm = new SalesManagerMain();
 		sm.handleCommand("add-game MoonCraft E 27.49");
 		sm.handleCommand("add-game TeamCastle2 T 35");
 		sm.handleCommand("add-game TowerRise E10+ 45.49");

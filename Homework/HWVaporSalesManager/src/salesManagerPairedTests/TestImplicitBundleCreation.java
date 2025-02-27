@@ -7,7 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import salesManager.RunAllPairedTests;
-import salesManager.SalesManager;
+import salesManager.SalesManagerMain;
 
 public class TestImplicitBundleCreation {
 	private static int testsPassed;
@@ -32,7 +32,7 @@ public class TestImplicitBundleCreation {
 	@Test
 	public void testImplicitBundleCreationN01() {
 		numberOfTests++;
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		assertEquals("ok", sm.handleCommand("add-bundle ImplicitBundle 42.96 DeadMitochondria CallOfDestiny"));
 		testsPassed++;
 	}
@@ -40,7 +40,7 @@ public class TestImplicitBundleCreation {
 	@Test
 	public void testImplicitBundleCreationN02() {
 		numberOfTests++;
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		assertEquals("ok", sm.handleCommand("add-bundle ImplicitBundle 94.96 DeadMitochondria CallOfDestiny"));
 		assertEquals("ok", sm.handleCommand("sell-game DeadMitochondria"));
 		assertEquals("ok", sm.handleCommand("sell-game CallOfDestiny"));
@@ -53,7 +53,7 @@ public class TestImplicitBundleCreation {
 	@Test
 	public void testImplicitBundleCreationN03() {
 		numberOfTests++;
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		assertEquals("ok", sm.handleCommand("add-bundle ImplicitBundle 94.96 DeadMitochondria CallOfDestiny"));
 		assertEquals("ok", sm.handleCommand("add-game VertebrateCrossing E 39.99")); 
 		assertEquals("ok", sm.handleCommand("add-bundle MixedBundle 78.33 CallOfDestiny VertebrateCrossing"));
@@ -67,7 +67,7 @@ public class TestImplicitBundleCreation {
 	@Test
 	public void testImplicitBundleCreationN04() {
 		numberOfTests++;
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		assertEquals("ok", sm.handleCommand("add-bundle ImplicitBundle 94.96 DeadMitochondria CallOfDestiny"));
 		assertEquals("ok", sm.handleCommand("add-game VertebrateCrossing E 39.99")); 
 		assertEquals("ok", sm.handleCommand("add-bundle MixedBundle 78.00 CallOfDestiny VertebrateCrossing"));
@@ -83,7 +83,7 @@ public class TestImplicitBundleCreation {
 	@Test
 	public void testImplicitBundleCreationN05() {
 		numberOfTests++;
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		assertEquals("ok", sm.handleCommand("add-bundle ImplicitBundle 94.96 DeadMitochondria CallOfDestiny"));
 		assertEquals("ok", sm.handleCommand("add-game VertebrateCrossing E 39.99")); 
 		assertEquals("ok", sm.handleCommand("add-bundle MixedBundle 105.00 CallOfDestiny VertebrateCrossing DeadMitochondria"));

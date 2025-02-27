@@ -7,7 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import salesManager.RunAllPairedTests;
-import salesManager.SalesManager;
+import salesManager.SalesManagerMain;
 
 public class TestHighestRevenueGame {
 	private static int testsPassed;
@@ -31,7 +31,7 @@ public class TestHighestRevenueGame {
 	
 	@Test
 	public void testHighestRevenueGameN01() {
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		
 		sm.handleCommand("add-game MoonCraft E 27.49");
 		sm.handleCommand("add-game TeamCastle2 T 35");
@@ -54,7 +54,7 @@ public class TestHighestRevenueGame {
 	
 	@Test
 	public void testHighestRevenueGameN02() {
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		
 		sm.handleCommand("add-game MoonCraft E 27.49");
 		sm.handleCommand("add-game TeamCastle2 T 35");
@@ -82,7 +82,7 @@ public class TestHighestRevenueGame {
 	@Test
 	public void testHighestRevenueGameN03() {
 		numberOfTests++;
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		
 		sm.handleCommand("add-bundle ImplicitBundle 94.96 DeadMitochondria CallOfDestiny");
 		sm.handleCommand("sell-game DeadMitochondria");
@@ -100,7 +100,7 @@ public class TestHighestRevenueGame {
 	@Test
 	public void testHighestRevenueGameN04() {
 		numberOfTests++;
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		
 		sm.handleCommand("add-bundle ImplicitBundle 94.96 DeadMitochondria CallOfDestiny");
 		sm.handleCommand("sell-game DeadMitochondria");

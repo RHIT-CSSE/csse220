@@ -7,7 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import salesManager.RunAllPairedTests;
-import salesManager.SalesManager;
+import salesManager.SalesManagerMain;
 
 public class TestBasicBestBundle {
 		private static int testsPassed;
@@ -31,7 +31,7 @@ public class TestBasicBestBundle {
 		
 		@Test
 		public void testBasicBestBundleN01() {
-			SalesManager sm = new SalesManager();
+			SalesManagerMain sm = new SalesManagerMain();
 			
 			sm.handleCommand("add-game MoonCraft E 27.49");
 			sm.handleCommand("add-game TeamCastle2 T 35");
@@ -58,7 +58,7 @@ public class TestBasicBestBundle {
 		
 		@Test
 		public void testBasicBestBundleN02() {
-			SalesManager sm = new SalesManager();
+			SalesManagerMain sm = new SalesManagerMain();
 			
 			sm.handleCommand("add-game MoonCraft E 27.49");
 			sm.handleCommand("add-game TeamCastle2 T 35");
@@ -81,7 +81,7 @@ public class TestBasicBestBundle {
 		
 		@Test
 		public void testBasicBestBundleN03() {
-			SalesManager sm = new SalesManager();
+			SalesManagerMain sm = new SalesManagerMain();
 			
 			sm.handleCommand("add-game MoonCraft E 27.49");
 			sm.handleCommand("add-game TeamCastle2 T 35");

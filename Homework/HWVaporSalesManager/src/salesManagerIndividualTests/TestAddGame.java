@@ -5,7 +5,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import salesManager.RunAllIndividualTests;
-import salesManager.SalesManager;
+import salesManager.SalesManagerMain;
 
 public class TestAddGame {
 	private static int testsPassed;
@@ -29,7 +29,7 @@ public class TestAddGame {
 	
 	@Test
 	public void testAddGameN01() {
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		numberOfTests++;
 		assertEquals("ok", sm.handleCommand("add-game TowerRise E10+ 45.49"));
 		testsPassed++;
@@ -37,7 +37,7 @@ public class TestAddGame {
 	
 	@Test
 	public void testAddGameN02() {
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		numberOfTests++;
 		assertEquals("ok", sm.handleCommand("add-game TowerRise E10+ 45.49"));
 		assertEquals("ok", sm.handleCommand("add-game TeamCastle2 T 35"));
@@ -46,7 +46,7 @@ public class TestAddGame {
 	
 	@Test
 	public void testAddGameN03() {
-		SalesManager sm = new SalesManager();
+		SalesManagerMain sm = new SalesManagerMain();
 		numberOfTests++;
 		assertEquals("ok", sm.handleCommand("add-game TowerRise E10+ 45.49"));
 		assertEquals("ok", sm.handleCommand("add-game TeamCastle2 T 35"));

@@ -30,11 +30,11 @@ To earn 100% for *Commenting & Conventions*, you must do the following:
 
 ## To do:
 1. In Eclipse, import this project (HWVaporSalesManager) from your local copy of the CSSE220 repo. 
-2. Modify the classes SalesManager, Game, and Bundle to implement the required functionality. You may use your own DP2 solution, or you can refer to [our UML](./DP2_Solution.png). 
+2. Modify the classes SalesManager, Game, and Bundle to implement the required functionality. You may use your own DP2 solution, or you can refer to the DP2 solution we provided in class or via email (the delivery method varies by quarter). 
 3. Run the included JUnit tests to ensure your solution passes all the unit tests - do this by running *RunAllIndividualTests.java* and *RunAllPairedTests.java*
 4. Each student uploads her or his completed *.java* files to this assignment's Dropbox
 
-Upload *Game.java*, *Bundle.java*, and *SalesManager.java*
+Upload *Game.java*, *Bundle.java*, and *SalesManagerMain.java*
 
 ## Notes
 ### The Individual Part (required to be done individually)
@@ -52,7 +52,7 @@ In this program, you are implementing a video game sales manager for Vapor, a hy
 > 
 > Finally, Vapor wants a method to determine the game with the highest total revenue and a method to determine the most popular (i.e., most copies sold) bundle. 
 
-To run this app, right click on the file *SalesManager.java* and choose *Run As* | *Java Application*
+To run this app, right click on the file *SalesManagerMain.java* and choose *Run As* | *Java Application*
 
 The interface for this program is entirely text based and the example input/output (below) will give
 you an idea of how the program will work. The green\* text is user input, and the rest of the text is the program output:
@@ -106,30 +106,30 @@ The good news is that the difficulty of dealing with the text based input and ou
 
 To solve this problem, you will modify 3 classes. 
 1. An instance of the `Game` class will keep track of a game's title, rating, price, and number of copies sold. 
-2. An instance of the `Team` class will keep track of a bundle's name, which games are in the bundle, the bundle's price, and how many copies of the bundle have been sold. 
-3. The `SalesManager` class will store a list of all `Game` objects and a list of all `Bundle` objects, as well as handling input/output. 
+2. An instance of the `Bundle` class will keep track of a bundle's name, which games are in the bundle, the bundle's price, and how many copies of the bundle have been sold. 
+3. The `SalesManagerMain` class will store a list of all `Game` objects and a list of all `Bundle` objects, as well as handling input/output. 
 
-To make things work, you'll need to write code for the following commands:
+The starter code in SalesManagerMain supports the following commands:
 
 - `add-game [title] [rating] [price]`: creates a new `Game` object with the given info
 
-Implement this by writing the `handleAddGame` method in `SalesManager.java`, plus anything you need to add to the `Game` class. 
+See the `handleAddGame` method in `SalesManagerMain.java`, and add anything you need to add to the `Game` class. 
 
 - `add-bundle [name] [price] [gameTitle1] [gameTitle2] [...] [gameTitleN]`: creates a new `Bundle` object with the given info, where `N` is the number of games in the bundle
 
-Implement this by writing the `handleAddBundle` method in `SalesManager.java`, plus anything you need to add to the `Bundle` class. 
+See the `handleAddBundle` method in `SalesManagerMain.java`, and add anything you need to add to the `Bundle` class. 
 
 - `sell-game [title]`: adds one to the number of copies sold for the `Game` with the given title
 
-Implement this by writing the `handleSellGame` method in `SalesManager.java`, plus anything you need to add to the `Game` class. 
+See the `handleSellGame` method in `SalesManagerMain.java`, and add anything you need to add to the `Game` class. 
 
 - `sell-bundle [name]`: adds one to the number of copies sold for the `Bundle` with the given name
 
-Implement this by writing the `handleSellBundle` method in `SalesManager.java`, plus anything you need to add to the `Bundle` class. 
+See the `handleSellBundle` method in `SalesManagerMain.java`, plus anything you need to add to the `Bundle` class. 
 
 - `print-game-sales-report [title]`: prints a sales report for the `Game` with the given title. 
 
-Implement this by writing the `handlePrintGameSalesReport` method in `SalesManager.java`, plus anything you need to add to the `Game` class. 
+See the `handlePrintGameSalesReport` method in `SalesManagerMain.java`, and add anything you need to add to the `Game` class. 
 
 The report should look like:
 <pre>
@@ -144,7 +144,7 @@ Total Revenue: $6700.00
 
 - `print-bundle-sales-report [name]`: prints a sales report for the `Bundle` with the given title. 
 
-Implement this by writing the `handlePrintBundleSalesReport` method in `SalesManager.java`, plus anything you need to add to the `Bundle` class. 
+See the `handlePrintBundleSalesReport` method in `SalesManagerMain.java`, and add anything you need to add to the `Bundle` class. 
 
 The report should look like: 
 <pre>
@@ -178,8 +178,8 @@ Why? Because you will be working on a multi-week project with at least 1 partner
 
 #### Paired Part Tasks
 1. Implicitly create games if they appear in an `add-bundle` command but do not yet exist. The default price (if purchased individually) for a new game should be 49.95 USD, and the default rating should be "T". 
-2. Implement the `handleGetBestSellingBundle` method in `SalesManager.java`, which will be called when the user enters the `best-selling-bundle` command. Remember that "best-selling" means most copies sold, not highest total revenue. 
-3. Implement the `handleGetHighestRevenueGame` method in `SalesManager.java`, which will be called when the user enters the `highest-revenue-game` command. Remember that the total revenue for a game includes any revenue portions earned from selling bundles including that game. 
+2. Implement the `handleGetBestSellingBundle` method in `SalesManagerMain.java`, which will be called when the user enters the `best-selling-bundle` command. Remember that "best-selling" means most copies sold, not highest total revenue. 
+3. Implement the `handleGetHighestRevenueGame` method in `SalesManagerMain.java`, which will be called when the user enters the `highest-revenue-game` command. Remember that the total revenue for a game includes any revenue portions earned from selling bundles including that game. 
 
 Example: 
 

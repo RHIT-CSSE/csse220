@@ -9,7 +9,6 @@ import org.junit.Test;
 import salesManager.Bundle;
 import salesManager.Game;
 import salesManager.RunAllIndividualTests;
-import salesManager.SalesManager;
 
 public class TestAllToStrings {
 	private static int testsPassed;
@@ -48,14 +47,4 @@ public class TestAllToStrings {
 		assertFalse(errorMessage, bundle.toString().contains("Bundle@"));
 		testsPassed++;
 	}
-	
-	@Test
-	public void testAllToStringsN03() {
-		String errorMessage = "\nYou must implement SalesManager's toString method to pass this test.";
-		SalesManager sm = new SalesManager();
-		numberOfTests++;
-		assertFalse(errorMessage, sm.toString().contains("SalesManager@"));
-		testsPassed++;
-	}
-
 }
