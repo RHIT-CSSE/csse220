@@ -14,8 +14,7 @@ public class StudentGradebookMain {
 	 */
 	public static void main(String[] args) {
 
-		/*
-		 TODO: Uncomment this code to get started with StudentGradebook
+		 //DONE: Uncomment this code to get started with StudentGradebook
 		 
 		 StudentGradebook one = new StudentGradebook("John Doe");
 		 StudentGradebook two = new StudentGradebook(); //default name is Studenty McStudenton
@@ -30,7 +29,6 @@ public class StudentGradebookMain {
 		 one.printGradeReportWithAverage(); System.out.println(); //blank line
 		 two.printGradeReportWithAverage();
 		
-		*/
 
 		/*
 		 * This code should print out:
