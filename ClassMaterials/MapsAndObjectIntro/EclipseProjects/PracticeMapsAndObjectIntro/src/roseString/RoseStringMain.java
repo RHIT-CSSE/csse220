@@ -1,4 +1,4 @@
-package RoseString;
+package roseString;
 
 /**
  * An example class for demoing how to use a custom String class

@@ -1,7 +1,13 @@
-package RoseString;
+package roseString;
 
 import java.util.Arrays;
 
+/**
+ * This class stores a sequence of chars.
+ * It allows a user to access the length of the sequence and the char at a specific index.
+ * It is meant to show how a String class could be created from scratch.
+ * 
+ */
 public class RoseString {
 	
 	private char[] charArray;
