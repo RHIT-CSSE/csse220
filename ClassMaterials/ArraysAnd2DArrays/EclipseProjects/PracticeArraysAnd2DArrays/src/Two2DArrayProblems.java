@@ -40,6 +40,9 @@ public class Two2DArrayProblems {
 	 *  
 	 */
 	public static char[][] stringsToCharArrays(String[] input) {
+		
+	
+		
 
 		return null;
 	}
@@ -95,6 +98,33 @@ public class Two2DArrayProblems {
 	 */
 	public static int distanceToExit(char[][] input) {
 		
-		return 0;
+		int personRow=-1;
+		int personCol=-1;
+		//find the location of the person
+		for (int r=0; r<input.length; r++) {
+			for (int c=0; c<input[0].length; c++) {
+				if (input[r][c] == '@') {
+					personRow=r;
+					personCol=c;
+				}
+			}
+		}
+		
+		int minDistance=10000;
+		
+		//find the closest X
+		for (int r=0; r<input.length; r++) {
+			for (int c=0; c<input[0].length; c++) {
+				if (input[r][c] == 'X') {
+					int distance = Math.abs(personRow-r) + Math.abs(personCol-c);
+					if (distance < minDistance ) {
+						minDistance = distance;
+					}
+					
+				}
+			}
+		}
+		
+		return minDistance;
 	}
 }
