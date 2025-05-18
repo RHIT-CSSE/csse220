@@ -33,29 +33,50 @@ public class Two2DArrayProblems {
 	}
 	
 	/**
-	 * Takes an array of strings, all of which have equal length.
+	 * Takes an array of numbers (ints), all of which have equal number of digits.
 	 * 
-	 * Returns a 2D array of characters, where the characters
-	 * correspond to the strings.  
+	 * Returns a 2D array of ints, where the digits
+	 * correspond to the original numbers (ints).  
 	 * 
-	 * {"abc",
-	 *  "def"} yields {{'a','b','c'},
-     *                 {'d','e','f'}};
+	 *    [123, 456]
+	 *     
+	 *     yields
+	 *      
+	 *    [[1, 2, 3],
+     *     [4, 5, 6] ];
 	 * @param input 
-	 * @return a 2D array of characters, where the characters
-	 * correspond to the strings. 
+	 * @return a 2D array of ints, where the digits
+	 * correspond to the original ints. 
 	 *  
 	 */
-	public static char[][] stringsToCharArrays(String[] input) {
-		int strLength = input[0].length();
-		char[][] output = new char[input.length][strLength];
+	public static int[][] numbersToDigitArrays(int[] input) {
+		int numDigits=0;
+		//find the number of digits by repeatedly dividing until reaching zero
+		int firstNum = input[0];
+		while (firstNum != 0) {
+			numDigits++;
+			firstNum = firstNum/10;
+		}
+		
+		//setup array based on number of digits and number of numbers
+		int[][] output = new int[input.length][numDigits];
 		for(int i = 0; i < input.length; i++) {
-			String current = input[i];
-			for(int j = 0; j < strLength; j++) {
-				output[i][j] = current.charAt(j);
+			//grab current number
+			int current = input[i];
+			for(int j = 0; j < numDigits; j++) {
+				// for 123, we have 3 digits and to get 1 from 123, we can divide
+				// 123 by 100, which means we need the place value of 100
+				int currentPlaceValue = (int) Math.pow(10, numDigits-j-1);
+				int currentDigit = (int) (current / currentPlaceValue ); 
+				output[i][j] = currentDigit;
+				// since we have calculated the first digit, now we subtract it
+				// from the original number (123-100 -> 23)
+				// and then on again 23-20 -> 3
+				current -= currentDigit*currentPlaceValue;
 			}
 		}
 		return output;
+		
 	}
 	
 	/**

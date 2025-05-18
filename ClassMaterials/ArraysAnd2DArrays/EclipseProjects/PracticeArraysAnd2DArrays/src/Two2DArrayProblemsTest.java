@@ -43,26 +43,26 @@ public class Two2DArrayProblemsTest {
 	}
 
 	/**
-	 * Tests the {@link Two2DArrayProblems#stringsToCharArrays(String[])} method.
+	 * Tests the {@link Two2DArrayProblems#numbersToDigitArrays(String[])} method.
 	 *
 	 */
 	@Test
 	public void testStringsToCharArrays() {
-		String[] charArray1 = {"abc",
-				               "def"};
-		char[][] result1 = {{'a','b','c'},
-				            {'d','e','f'}};
-		String[] charArray2 = {"xy",
-				               "zq",
-				               "12",
-				               "iy"};
-		char[][] result2 = {{'x','y'},
-	                        {'z','q'},
-	                        {'1','2'},
-	                        {'i','y'}};
+		int[] numArray1 = {123,
+				               456};
+		int[][] result1 = {{1,2,3},
+				            {4,5,6}};
+		int[] numArray2 = {78,
+				               96,
+				               12,
+				               38};
+		int[][] result2 = { {7,8},
+	                        {9,6},
+	                        {1,2},
+	                        {3,8}};
 
-		assertArrayEquals(result1, Two2DArrayProblems.stringsToCharArrays(charArray1));
-		assertArrayEquals(result2, Two2DArrayProblems.stringsToCharArrays(charArray2));
+		assertArrayEquals(result1, Two2DArrayProblems.numbersToDigitArrays(numArray1));
+		assertArrayEquals(result2, Two2DArrayProblems.numbersToDigitArrays(numArray2));
 	}
 
 	/**

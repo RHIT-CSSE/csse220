@@ -26,24 +26,25 @@ public class Two2DArrayProblems {
 	}
 	
 	/**
-	 * Takes an array of strings, all of which have equal length.
+	 * Takes an array of numbers (ints), all of which have equal number of digits.
 	 * 
-	 * Returns a 2D array of characters, where the characters
-	 * correspond to the strings.  
+	 * Returns a 2D array of ints, where the digits
+	 * correspond to the original numbers (ints).  
 	 * 
-	 * {"abc",
-	 *  "def"} yields {{'a','b','c'},
-     *                 {'d','e','f'}};
+	 *    [123, 456]
+	 *     
+	 *     yields
+	 *      
+	 *    [[1, 2, 3],
+     *     [4, 5, 6] ];
 	 * @param input 
-	 * @return a 2D array of characters, where the characters
-	 * correspond to the strings. 
+	 * @return a 2D array of ints, where the digits
+	 * correspond to the original ints. 
 	 *  
 	 */
-	public static char[][] stringsToCharArrays(String[] input) {
+	public static int[][] numbersToDigitArrays(int[] input) {
 		
 	
-		
-
 		return null;
 	}
 	
