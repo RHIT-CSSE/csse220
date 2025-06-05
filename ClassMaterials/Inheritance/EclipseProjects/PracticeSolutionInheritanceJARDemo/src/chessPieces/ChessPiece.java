@@ -4,7 +4,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 
 import javax.imageio.ImageIO;
 
@@ -26,15 +25,14 @@ public abstract class ChessPiece  {
 	public abstract boolean checkMove(int dx, int dy);
 	
 	public void draw(Graphics2D graphics2, int x, int y, int squareSize) {
-		//String fileName = "images/" + name.toLowerCase() + "-";
 		String fileName = "/images/" + name.toLowerCase() + "-";
 		fileName += this.isWhite() ? "white" : "black";
 		fileName += ".png";
 		BufferedImage img;
-		try {
-			//img = ImageIO.read(new File(fileName));
+		try {	
 			InputStream stream = getClass().getResourceAsStream(  fileName );
 			img = ImageIO.read( stream );
+			//img = ImageIO.read(new File(fileName));
 			graphics2.drawImage(img, x, y, squareSize, squareSize, null);
 		} catch (IOException e) {
 			e.printStackTrace();
