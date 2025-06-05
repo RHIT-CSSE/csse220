@@ -25,28 +25,7 @@ public class Two2DArrayProblems {
 		return 0;
 	}
 	
-	/**
-	 * Takes an array of numbers (ints), all of which have equal number of digits.
-	 * 
-	 * Returns a 2D array of ints, where the digits
-	 * correspond to the original numbers (ints).  
-	 * 
-	 *    [123, 456]
-	 *     
-	 *     yields
-	 *      
-	 *    [[1, 2, 3],
-     *     [4, 5, 6] ];
-	 * @param input 
-	 * @return a 2D array of ints, where the digits
-	 * correspond to the original ints. 
-	 *  
-	 */
-	public static int[][] numbersToDigitArrays(int[] input) {
-		
 	
-		return null;
-	}
 	
 	/**
 	 * Takes a square array of integers.
@@ -67,6 +46,29 @@ public class Two2DArrayProblems {
 	public static boolean isSymmetric(int[][] input) {
 		
 		return false;
+	}
+	
+	/**
+	 * Takes an array of numbers (ints), all of which have equal number of digits.
+	 * 
+	 * Returns a 2D array of ints, where the digits
+	 * correspond to the original numbers (ints).  
+	 * 
+	 *    [123, 456]
+	 *     
+	 *     yields
+	 *      
+	 *    [[1, 2, 3],
+     *     [4, 5, 6] ];
+	 * @param input 
+	 * @return a 2D array of ints, where the digits
+	 * correspond to the original ints. 
+	 *  
+	 */
+	public static int[][] numbersToDigitArrays(int[] input) {
+		
+		return null;
+	
 	}
 	
 	/**

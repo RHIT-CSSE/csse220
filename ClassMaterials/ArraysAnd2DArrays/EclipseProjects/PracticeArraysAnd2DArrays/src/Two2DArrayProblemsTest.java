@@ -47,7 +47,7 @@ public class Two2DArrayProblemsTest {
 	 *
 	 */
 	@Test
-	public void testStringsToCharArrays() {
+	public void testNumbersToDigitArrays() {
 		int[] numArray1 = {123,
 				               456};
 		int[][] result1 = {{1,2,3},

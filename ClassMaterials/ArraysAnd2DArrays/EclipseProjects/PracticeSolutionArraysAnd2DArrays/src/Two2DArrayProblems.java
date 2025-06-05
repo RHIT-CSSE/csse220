@@ -32,6 +32,35 @@ public class Two2DArrayProblems {
 		return count;
 	}
 	
+	
+	
+	/**
+	 * Takes a square array of integers.
+	 * 
+	 * Returns true if the array is symmetric.  That is if
+	 * the array[i,j] == array[j,i] for all i and j
+	 * 
+	 * So {{1,0,0},
+	 *     {0,1,0},
+	 *     {0,0,1}} returns true
+     *
+     *    {{1,0,3},
+	 *     {0,1,0},
+	 *     {0,0,1}} returns false because [0,2] != [2,0]
+	 * @param input 
+	 * @return true if the array is symmetric, false otherwise.
+	 */
+	public static boolean isSymmetric(int[][] input) {
+		for(int i = 0; i < input.length; i++) {
+			for(int j = i+1; j < input.length; j++) {
+				if(input[i][j] != input[j][i]) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
 	/**
 	 * Takes an array of numbers (ints), all of which have equal number of digits.
 	 * 
@@ -63,47 +92,13 @@ public class Two2DArrayProblems {
 		for(int i = 0; i < input.length; i++) {
 			//grab current number
 			int current = input[i];
-			for(int j = 0; j < numDigits; j++) {
-				// for 123, we have 3 digits and to get 1 from 123, we can divide
-				// 123 by 100, which means we need the place value of 100
-				int currentPlaceValue = (int) Math.pow(10, numDigits-j-1);
-				int currentDigit = (int) (current / currentPlaceValue ); 
-				output[i][j] = currentDigit;
-				// since we have calculated the first digit, now we subtract it
-				// from the original number (123-100 -> 23)
-				// and then on again 23-20 -> 3
-				current -= currentDigit*currentPlaceValue;
+			for(int j = numDigits-1; j >= 0; j--) {
+				output[i][j] = current % 10; // get the last digit
+				current = current / 10;
 			}
 		}
 		return output;
 		
-	}
-	
-	/**
-	 * Takes a square array of integers.
-	 * 
-	 * Returns true if the array is symmetric.  That is if
-	 * the array[i,j] == array[j,i] for all i and j
-	 * 
-	 * So {{1,0,0},
-	 *     {0,1,0},
-	 *     {0,0,1}} returns true
-     *
-     *    {{1,0,3},
-	 *     {0,1,0},
-	 *     {0,0,1}} returns false because [0,2] != [2,0]
-	 * @param input 
-	 * @return true if the array is symmetric, false otherwise.
-	 */
-	public static boolean isSymmetric(int[][] input) {
-		for(int i = 0; i < input.length; i++) {
-			for(int j = i+1; j < input.length; j++) {
-				if(input[i][j] != input[j][i]) {
-					return false;
-				}
-			}
-		}
-		return true;
 	}
 	
 	/**
