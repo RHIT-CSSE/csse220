@@ -22,7 +22,7 @@ public class StudentGradebookMain {
 		 one.addAssignment("TwelveProblems", 95);
 		 two.addAssignment("TwelveProblems", 80);
 		  
-		 one.addAssignment("TwelveProblems", 99); two.addAssignment("WordGames", 78);
+		 one.addAssignment("WordGames", 99); two.addAssignment("WordGames", 78);
 		 
 		 one.addAssignment("TeamGradebook", 92); two.addAssignment("Faces", 0);
 		  
@@ -34,7 +34,7 @@ public class StudentGradebookMain {
 		/*
 		 * This code should print out:
 		 * 
-		 * John Doe TwelveProblems - 95 WordGames - 99 Faces - 92
+		 * John Doe TwelveProblems - 95 WordGames - 99 TeamGradebook - 92
 		 * 
 		 * Studenty McStudenton TwelveProblems - 80 WordGames - 78 Faces - 0
 		 * 
