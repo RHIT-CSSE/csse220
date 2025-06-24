@@ -1,16 +1,30 @@
 package HW0;
 
 /**
- * Class: HW0
- * @author CSSE Faculty
- * Purpose: The primary objective of this assignment is to get familiar with 
- *          the process of running JUnit tests and submitting homework. 
- * 
- *************************************************************************************** 
+ **************************************************************************************** 
  *         REQUIRED HELP CITATION
  * 
  *         TODO: cite your help here or say "only used CSSE220 materials"
- *************************************************************************************** 
+ ****************************************************************************************
+ * 
+ * <dl> 
+ * <dt>Class:</dt><dd>HW0</dd>
+ * 
+ * <dt>Purpose:</dt><dd>The primary objective of this assignment is to get familiar with 
+ *          the process of running JUnit tests and submitting homework.</dd> 
+ * 
+ * <dt>Learning targets:</dt>
+ * <dd>
+ * <ul>
+ * <li>I can identify components of simple Java programs.</li>
+ * <li>I can write Java code to declare int and double variables.</li>
+ * <li>I can explain what it means to assign a value to a variable.</li>
+ * <li>I can evaluate Java expressions that use the % operator with integers.</li>
+ * <li>I can explain the difference between integer and floating-point division.</li> 
+ * <li>I can identify operator precedence for addition, division, and assignment.</li>
+ * </ul></dd></dl>
+ * 
+ * @author CSSE Faculty
  */
 public class HW0 {
 

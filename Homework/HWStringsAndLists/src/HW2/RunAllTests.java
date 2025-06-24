@@ -1,4 +1,4 @@
-package HW1;
+package HW2;
 
 import java.sql.Timestamp;
 
@@ -6,20 +6,21 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import HW1Test.RunAllTestsTearDown;
-import HW1Test.TestDistanceFromOrigin;
-import HW1Test.TestFootballScore;
-import HW1Test.TestMaxArray;
-import HW1Test.TestPow;
-import HW1Test.TestPowersOfTwo;
-import HW1Test.TestSecondDigit5;
+import HW2Test.RunAllTestsTearDown;
+import HW2Test.TestDoubleDouble;
+import HW2Test.TestEndsWithUpperCaseLetter;
+import HW2Test.TestFirstDifference;
+import HW2Test.TestFootballScore;
+import HW2Test.TestMostCommonCharacter;
+import HW2Test.TestThreeCharacterStrings;
+import HW2Test.TestTruncateStringsAtX;
 
 @RunWith(Suite.class)
 
-@SuiteClasses({ TestDistanceFromOrigin.class, TestSecondDigit5.class,
-		TestPow.class, TestFootballScore.class,
-		TestPowersOfTwo.class, TestMaxArray.class, 
-		RunAllTestsTearDown.class })
+@SuiteClasses({ TestEndsWithUpperCaseLetter.class,
+		TestFirstDifference.class, TestFootballScore.class, TestMostCommonCharacter.class,
+		TestDoubleDouble.class,
+		TestThreeCharacterStrings.class, TestTruncateStringsAtX.class, RunAllTestsTearDown.class })
 
 public class RunAllTests {
 
