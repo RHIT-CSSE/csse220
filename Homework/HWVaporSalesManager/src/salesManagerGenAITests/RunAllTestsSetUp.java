@@ -1,4 +1,4 @@
-package salesManagerPairedTests;
+package salesManagerGenAITests;
 
 import static org.junit.Assert.assertTrue;
 import org.junit.BeforeClass;

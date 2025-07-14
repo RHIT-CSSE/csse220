@@ -1,43 +1,51 @@
 # HWVaporSalesManager - Implementing Design Problem 2
 
-## Overview: 
-In this assignment, you will implement the sales manager for Vapor video games (Design Problem 2). There is an _Individual Part_, which you must complete alone, and a _Paired Part_, which you can work on either alone or with one partner. If you work with a partner on the *Paired Part*, then add a comment with your partner's name at the top the files you submit. 
-## Learning Objectives: 
-After completing this assignment, you will be able to:
-- Implement a set of classes given their UML diagram. 
-- Develop new objects, complete with fields and methods. 
+## Overview
+In this assignment, you will implement the sales manager for Vapor video games (Design Problem 2). This is a _Pair Programming_ assignment: you will work in a team of two, alternating Navigator and Driver roles so that each person has each role at least twice. Why? Because you will be working on a multi-week team project at the end of this quarter. Now is a good time to start building teamwork skills and looking for possible final project teammates. 
+
+There is a _Manual Part_, which you must complete without external resources beyond the Java API Docs and CSSE 220 course materials. Then, there is a _GenAI Part_, in which you will use a GenAI tool to add some features and write a brief report on the experience. 
+
+You and your partner should write all code on one of your machines, then send the final version (after submission) to the other person via email or Teams for future reference. If you split the work across more than one session, consider sending intermediate versions of the code too. 
+
+## Content Learning Targets
+_After completing this assignment, you should be able to say:_
+- I can develop new objects, complete with fields and methods. 
+- I can implement a small object-oriented application given a UML class diagram, system requirements, and unit tests. 
+- I can interpret unit test results and apply them to accelerate the debugging process. 
+- I can review code that I didn't write with respect to design principles and documentation/style guidelines. 
+
+## Process Skill Goals
+_During the activity, you should make progress toward:_ 
+- Forming shared understanding of system requirements with a teammate. (Teamwork)
+- Writing reflections with technical detail on the software development process. (Communication)
 
 ## Rubrics:
-To earn a 100% for the assignment you must do the following 3 tasks:
-1. (60% of grade) *Individual Part*
-2. (30% of grade) *Paired Part*
-3. (10% of grade) *Commenting & Conventions*
+Your overall grade for this assignment comes from these parts: 
+1. (50% of grade) *Manual Part* unit tests passed (percentage)
+2. (10% of grade) *GenAI Part* unit tests passed (percentage)
+3. (30% of grade) *GenAI Part* written report
+4. (10% of grade) *Commenting & Conventions*
 
-### 1) Individual Part Rubric
-To earn a 100% for this part, all JUnit tests for the *Individual Part* operations must succeed 
-- Your score for the *Individual Part* of the assignment = (PercentageJUnitTestsPassed * IndividualPartTotalPoints)
+### 3) Written Report Details
+Complete the report template in [VaporSalesReport.docx](./VaporSalesReport.docx). 
+**TODO: Additional rubric details**
 
-### 2) Paired Part Rubric
-To earn a 100% for this part, all JUnit tests for the *Paired Part* operations must succeed 
-- Your score for the *Paired Part* of the assignment = (PercentageJUnitTestsPassed * PairedPartTotalPoints)
-
-### 3) Commenting & Conventions Rubric
-To earn 100% for *Commenting & Conventions*, you must do the following:
-- The code in each file must being well formatted - Use Eclipse's *Format* command on the *Source* menu (shortcut: `Control+Shift+F` )
-- Use conventional Java variable naming conventions
-- Provide meaningful variable names
-- Add Javadoc *class-level* comments at the top of each class: SalesManager, Game, and Bundle
+### 4) Commenting & Conventions Details
+To earn full credit for *Commenting & Conventions*, follow the style guidelines in [the CSSE 220 Grading Guide](../../Docs/grading_guide.md). In particular, make sure you add Javadoc *class-level* comments at the top of each class: `SalesManagerMain`, `Game`, and `Bundle`. 
+For this assignment, you do NOT need Javadocs for every method. 
 
 ## To do:
-1. In Eclipse, import this project (HWVaporSalesManager) from your local copy of the CSSE220 repo. 
-2. Modify the classes SalesManager, Game, and Bundle to implement the required functionality. You may use your own DP2 solution, or you can refer to the DP2 solution we provided in class or via email (the delivery method varies by quarter). 
-3. Run the included JUnit tests to ensure your solution passes all the unit tests - do this by running *RunAllIndividualTests.java* and *RunAllPairedTests.java*
-4. Each student uploads her or his completed *.java* files to this assignment's Dropbox
-
-Upload *Game.java*, *Bundle.java*, and *SalesManagerMain.java*
+1. Import this project (HWVaporSalesManager) from your local copy of the CSSE220 repo into your IDE.  
+2. Modify the classes `SalesManagerMain`, `Game`, and `Bundle` to implement the required functionality. You may use your own DP2 solution, or you can refer to the DP2 solution we provided in class or via email (the delivery method varies by quarter). 
+3. Run the included JUnit tests to ensure your solution passes all the unit tests - do this by running *RunAllManualTests.java* and *RunAllGenAITests.java*
+4. Upload one copy per team of the completed *.java* files to this assignment's drop box: 
+    - *Game.java*
+    - *Bundle.java*
+    - *SalesManagerMain.java*
+5. Upload one copy per team of the written report, [VaporSalesReport.docx](./VaporSalesReport.docx), to this assignment's drop box. 
 
 ## Notes
-### The Individual Part (required to be done individually)
+### The Manual Part (required to be done with no external resources such as GenAI, StackOverflow, etc.)
 In this program, you are implementing a video game sales manager for Vapor, a hypothetical digital game distributor. This application will keep track of sales of games and game bundles.  From the [Design Problem 2 instructions](../DesignProblems/DP2/DP2.md):
 
 > Vapor, the popular video game digital store, has hired you as a consultant to design a sales management application. Each game available to purchase through Vapor has a title, ESRB rating (e.g., "T" for "Teen"), and price, all of which are fixed. You may assume game titles are unique. 
@@ -52,12 +60,13 @@ In this program, you are implementing a video game sales manager for Vapor, a hy
 > 
 > Finally, Vapor wants a method to determine the game with the highest total revenue and a method to determine the most popular (i.e., most copies sold) bundle. 
 
-To run this app, right click on the file *SalesManagerMain.java* and choose *Run As* | *Java Application*
+To run this app, run *SalesManagerMain.java* as a Java application. 
+To test this app, run *RunAllManualTests.java* and *RunAllGenAITests.java* as JUnit tests. 
 
-The interface for this program is entirely text based and the example input/output (below) will give
+The interface for this program is entirely text-based and the example input/output (below) will give
 you an idea of how the program will work. The green\* text is user input, and the rest of the text is the program output:
 
-\**GitHub may not show this text as green, but if you copy/paste the raw Markdown content of this README into [Markdown Live Preview](https://markdownlivepreview.com/), the green text will be green.*
+\**GitHub may not show this text as green, but if you view the README in your IDE or copy/paste the raw Markdown content into [Markdown Live Preview](https://markdownlivepreview.com/), the green text will be green.*
 
 <pre>
 Welcome to the Vapor Sales Manager.  Enter commands.  Type 'exit' to end. 
@@ -102,7 +111,7 @@ Total Revenue: $64.99
 
 Note that the total revenue for MoonCraft is determined by adding the individual sales revenue, (1 copy) x ($27.49 per copy), to the bundle revenue portions, (1 BuilderBundle) x ($75 per BuilderBundle) / (2 games in BuilderBundle). 
 
-The good news is that the difficulty of dealing with the text based input and output of the program has all been done for you. All you will have to write is the code to update the program's games, bundles, and sales records, as well as generate sales reports. 
+The good news is that the difficulty of dealing with the text-based input and output of the program has all been done for you. All you will have to write is the code to update the program's games, bundles, and sales records, as well as generate sales reports. 
 
 To solve this problem, you will modify 3 classes. 
 1. An instance of the `Game` class will keep track of a game's title, rating, price, and number of copies sold. 
@@ -111,23 +120,23 @@ To solve this problem, you will modify 3 classes.
 
 The starter code in SalesManagerMain supports the following commands:
 
-- `add-game [title] [rating] [price]`: creates a new `Game` object with the given info
+1. `add-game [title] [rating] [price]`: creates a new `Game` object with the given info
 
 See the `handleAddGame` method in `SalesManagerMain.java`, and add anything you need to add to the `Game` class. 
 
-- `add-bundle [name] [price] [gameTitle1] [gameTitle2] [...] [gameTitleN]`: creates a new `Bundle` object with the given info, where `N` is the number of games in the bundle
+2. `add-bundle [name] [price] [gameTitle1] [gameTitle2] [...] [gameTitleN]`: creates a new `Bundle` object with the given info, where `N` is the number of games in the bundle
 
 See the `handleAddBundle` method in `SalesManagerMain.java`, and add anything you need to add to the `Bundle` class. 
 
-- `sell-game [title]`: adds one to the number of copies sold for the `Game` with the given title
+3. `sell-game [title]`: adds one to the number of copies sold for the `Game` with the given title
 
 See the `handleSellGame` method in `SalesManagerMain.java`, and add anything you need to add to the `Game` class. 
 
-- `sell-bundle [name]`: adds one to the number of copies sold for the `Bundle` with the given name
+4. `sell-bundle [name]`: adds one to the number of copies sold for the `Bundle` with the given name
 
 See the `handleSellBundle` method in `SalesManagerMain.java`, plus anything you need to add to the `Bundle` class. 
 
-- `print-game-sales-report [title]`: prints a sales report for the `Game` with the given title. 
+5. `print-game-sales-report [title]`: prints a sales report for the `Game` with the given title. 
 
 See the `handlePrintGameSalesReport` method in `SalesManagerMain.java`, and add anything you need to add to the `Game` class. 
 
@@ -142,7 +151,7 @@ Total Copies Sold: 220
 Total Revenue: $6700.00
 </pre>
 
-- `print-bundle-sales-report [name]`: prints a sales report for the `Bundle` with the given title. 
+6. `print-bundle-sales-report [name]`: prints a sales report for the `Bundle` with the given title. 
 
 See the `handlePrintBundleSalesReport` method in `SalesManagerMain.java`, and add anything you need to add to the `Bundle` class. 
 
@@ -156,27 +165,34 @@ Total Revenue: $400.00
 </pre>
 
 > [!NOTE]
-> **Tip:** If you are having trouble matching the expected sales report formats, use Eclipse's expected vs. actual comparison tool. 
-> In the lower-left "Failure Trace" view, double-click on the comparison failure (circled in screenshot below) for the failed test case, or click on the "Compare Actual With Expected Test Result" button (also circled). 
-> Eclipse will then show you a side-by-side comparison of the expected and actual test results (second screenshot below). 
+> **Tip:** If you are having trouble matching the expected sales report formats, use the IDE's expected vs. actual comparison tool. 
+> In the test results view, find the failed test, and select the option to view the difference between the expected and actual test results. See the IntelliJ example below. 
 > This can help you find missing/extra whitespace and other small formatting errors. 
 
-<img src="comparison_failure_screenshot.png" alt="Comparison failure in Eclipse" width="800"/>
-<img src="expected_vs_actual_screenshot.png" alt="Expected vs Actual Test Result in Eclipse" width="800"/>
+<!-- <img src="comparison_failure_screenshot.png" alt="Comparison failure in Eclipse" width="800"/>
+<img src="expected_vs_actual_screenshot.png" alt="Expected vs Actual Test Result in Eclipse" width="800"/> -->
+
+<img src="comparison_failure_screenshot_intellij.png" alt="Comparison failure in IntelliJ" width="400"/>
+<img src="expected_vs_actual_screenshot_intellij.png" alt="Expected vs Actual Test Result in IntelliJ" width="600"/>
+
 
 Some additional details and hints are provided in the comments of the methods themselves. 
 
 Unit tests for these methods have been provided. 
 
-### The Paired Part (optionally do with a partner)
+### The GenAI Part
 
-For this part, you may work with a single partner, or alone. Both you and your partner should make clear who you worked with in the comments so there is no issue of plagiarism. Also, although you can work together and help each other, your code for the _Individual Part_ should not be identical. As a result, you may have to write slightly different code for the _Paired Part_. 
+For this part, you will use a GenAI chatbot tool of your choice. Start by completing Section 1 of the written report in [VaporSalesReport.docx](./VaporSalesReport.docx). 
 
-We highly recommend that you seek out a partner to collaborate on part. 
+For each of the tasks below, you will prompt the GenAI tool to complete the task. Be sure to include all necessary context. If the GenAI-produced solution does not pass the unit tests, try to guide it with additional prompts. Refer to [the CSSE 220 GenAI Prompting Guide](../../Docs/prompting_guide.md) for tips. 
 
-Why? Because you will be working on a multi-week project with at least 1 partner toward the end of this quarter. Now is a good time to find someone you can work with.
+If you cannot get a working solution from the GenAI tool after additional prompting, either manually fix its implementation or restart with a different GenAI tool. 
 
-#### Paired Part Tasks
+Review any and all GenAI-produced lines of code, and modify them as needed to meet the [documentation and style guidelines](../../Docs/grading_guide.md). 
+
+After your code passes all unit tests, return to [VaporSalesReport.docx](./VaporSalesReport.docx) and complete Section 2. 
+
+#### GenAI Part Tasks
 1. Implicitly create games if they appear in an `add-bundle` command but do not yet exist. The default price (if purchased individually) for a new game should be 49.95 USD, and the default rating should be "T". 
 2. Implement the `handleGetBestSellingBundle` method in `SalesManagerMain.java`, which will be called when the user enters the `best-selling-bundle` command. Remember that "best-selling" means most copies sold, not highest total revenue. 
 3. Implement the `handleGetHighestRevenueGame` method in `SalesManagerMain.java`, which will be called when the user enters the `highest-revenue-game` command. Remember that the total revenue for a game includes any revenue portions earned from selling bundles including that game. 

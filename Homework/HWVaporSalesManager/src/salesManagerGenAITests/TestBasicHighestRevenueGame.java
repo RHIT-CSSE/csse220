@@ -1,4 +1,4 @@
-package salesManagerPairedTests;
+package salesManagerGenAITests;
 
 import static org.junit.Assert.*;
 
@@ -6,7 +6,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import salesManager.RunAllPairedTests;
+import salesManager.RunAllGenAITests;
 import salesManager.SalesManagerMain;
 
 public class TestBasicHighestRevenueGame {
@@ -22,7 +22,7 @@ public class TestBasicHighestRevenueGame {
 	@AfterClass
 	public static void oneTimeTearDown() {
 		String className = TestBasicHighestRevenueGame.class.getSimpleName();
-		RunAllPairedTests.outputResults(testsPassed, numberOfTests, className);
+		RunAllGenAITests.outputResults(testsPassed, numberOfTests, className);
 	}
 	
 	// --------------------------------------------

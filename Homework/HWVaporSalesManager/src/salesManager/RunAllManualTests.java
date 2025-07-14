@@ -4,15 +4,15 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import salesManagerIndividualTests.RunAllTestsSetUp;
-import salesManagerIndividualTests.RunAllTestsTearDown;
-import salesManagerIndividualTests.TestAddBundle;
-import salesManagerIndividualTests.TestAddGame;
-import salesManagerIndividualTests.TestAllToStrings;
-import salesManagerIndividualTests.TestBundleSalesReport;
-import salesManagerIndividualTests.TestGameSalesReport;
-import salesManagerIndividualTests.TestSellBundle;
-import salesManagerIndividualTests.TestSellGame;
+import salesManagerManualTests.RunAllTestsSetUp;
+import salesManagerManualTests.RunAllTestsTearDown;
+import salesManagerManualTests.TestAddBundle;
+import salesManagerManualTests.TestAddGame;
+import salesManagerManualTests.TestAllToStrings;
+import salesManagerManualTests.TestBundleSalesReport;
+import salesManagerManualTests.TestGameSalesReport;
+import salesManagerManualTests.TestSellBundle;
+import salesManagerManualTests.TestSellGame;
 
 
 @RunWith(Suite.class)
@@ -20,7 +20,7 @@ import salesManagerIndividualTests.TestSellGame;
 	TestAllToStrings.class, TestBundleSalesReport.class, TestGameSalesReport.class, 
 	TestSellBundle.class, TestSellGame.class, RunAllTestsTearDown.class })
 
-public class RunAllIndividualTests {
+public class RunAllManualTests {
 	static public int allTestsPassedCount = 0;
 	static public int allTestsExecutedCount = 0;
 
@@ -31,7 +31,7 @@ public class RunAllIndividualTests {
 				testClassName);
 
 		// Add to grand total
-		RunAllIndividualTests.allTestsPassedCount += testsPassed;
-		RunAllIndividualTests.allTestsExecutedCount += numberOfTests;
+		RunAllManualTests.allTestsPassedCount += testsPassed;
+		RunAllManualTests.allTestsExecutedCount += numberOfTests;
 	} // outputResults
 } // RunAllTests

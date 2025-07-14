@@ -1,10 +1,10 @@
-package salesManagerIndividualTests;
+package salesManagerManualTests;
 import static org.junit.Assert.*;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import salesManager.RunAllIndividualTests;
+import salesManager.RunAllManualTests;
 import salesManager.SalesManagerMain;
 
 public class TestSellBundle {
@@ -32,7 +32,7 @@ public class TestSellBundle {
 	@AfterClass
 	public static void oneTimeTearDown() {
 		String className = TestSellBundle.class.getSimpleName();
-		RunAllIndividualTests.outputResults(testsPassed, numberOfTests, className);
+		RunAllManualTests.outputResults(testsPassed, numberOfTests, className);
 	}
 	
 	// --------------------------------------------

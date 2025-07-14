@@ -1,4 +1,4 @@
-package salesManagerIndividualTests;
+package salesManagerManualTests;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import salesManager.Bundle;
 import salesManager.Game;
-import salesManager.RunAllIndividualTests;
+import salesManager.RunAllManualTests;
 
 public class TestAllToStrings {
 	private static int testsPassed;
@@ -23,7 +23,7 @@ public class TestAllToStrings {
 	@AfterClass
 	public static void oneTimeTearDown() {
 		String className = TestAllToStrings.class.getSimpleName();
-		RunAllIndividualTests.outputResults(testsPassed, numberOfTests, className);
+		RunAllManualTests.outputResults(testsPassed, numberOfTests, className);
 	}
 	
 	// --------------------------------------------
