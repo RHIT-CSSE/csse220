@@ -10,7 +10,7 @@ public class RunAllTestsSetUp {
 	@BeforeClass
 	public static void oneTimeSetUp() {
 		System.out.println("------------------------------------------------------------------");
-		System.out.println("          Running: Vapor Sales Manager Individual JUnit Tests");
+		System.out.println("          Running: Vapor Sales Manager Manual Part JUnit Tests");
 		System.out.println("------------------------------------------------------------------");
 		System.out.println(" Tests       Tests    Percentage    JUnit Class");
 		System.out.println("Executed     Passed     Passed       Executed");

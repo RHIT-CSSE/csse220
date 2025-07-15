@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Sales Manager Design Problem.
  * 
  * All of the code in this class is provided for you, 
- * with the exception of the paired part tasks: (see README too)
+ * with the exception of the GenAI part tasks: (see README too)
  * 1. Modify handleAddBundle to implicitly create Game objects for unknown titles. 
  * 2. Implement handleGetBestSellingBundle.
  * 3. Implement handleGetHighestRevenueGame.  
@@ -19,11 +19,12 @@ import java.util.Scanner;
  * 
  *************************************************************************************** 
  * REQUIRED HELP CITATION
- * -------------------------------------------------------------------------------------
+ * 
  * TODO: cite your help here or say "only used CSSE220 materials"
- * -------------------------------------------------------------------------------------
- * TODO: List the name and email address of your partner for the paired part, or
- * say "I worked on the paired part alone."
+ *************************************************************************************** 
+ * TODO: List each team member's name and email username here. 
+ * @author First Student - studenfi
+ * @author Second Student - studense
  *************************************************************************************** 
  */
 
@@ -34,7 +35,7 @@ public class SalesManagerMain {
 	private ArrayList<Bundle> bundles;
 
 	/**
-	 * Constructor - initializes the fields of SalesManager
+	 * Constructor - initializes the fields of SalesManagerMain
 	 */
 	public SalesManagerMain() {
 		this.games = new ArrayList<Game>();
@@ -102,7 +103,7 @@ public class SalesManagerMain {
 		// ArrayList<Game> games = new ArrayList<Game>();
 		// for (String gameTitle : gameTitles) {
 		// 	Game game = this.getGameGivenTitle(gameTitle);
-		// 	// TODO (paired part): Create a new Game object if the given title does not yet exist
+		// 	// TODO (GenAI part): Create a new Game object if the given title does not yet exist
 		// 	games.add(game);
 		// }
 
@@ -190,11 +191,7 @@ public class SalesManagerMain {
 	}
 
 	/**
-	 * *** PAIRED PART ***
-	 * 
-	 * This part of the assignment may be done alone or with one partner. Be sure to
-	 * note who you paired with, or that you worked alone, in a comment at the top
-	 * of the file.
+	 * *** GenAI PART ***
 	 * 
 	 * Returns the name of the bundle with the most copies sold. You can assume
 	 * there is a clear winner (i.e., no tie for first place).
@@ -202,16 +199,12 @@ public class SalesManagerMain {
 	 * @return String name of the best-selling bundle
 	 */
 	private String handleGetBestSellingBundle() {
-		// TODO (paired part) Your code here
+		// TODO (GenAI part) Your code here
 		return null;
 	}
 
 	/**
-	 * *** PAIRED PART ***
-	 * 
-	 * This part of the assignment may be done alone or with one partner. Be sure to
-	 * note who you paired with, or that you worked alone, in a comment at the top
-	 * of the file.
+	 * *** GenAI PART ***
 	 * 
 	 * Returns the title of the game with the highest total revenue, combining
 	 * revenue from individual game sales with revenue portions earned from selling
@@ -225,7 +218,7 @@ public class SalesManagerMain {
 	 * @return String title of the game with the highest revenue
 	 */
 	private String handleGetHighestRevenueGame() {
-		// TODO (paired part) Your code here
+		// TODO (GenAI part) Your code here
 		return null;
 	}
 
@@ -341,13 +334,13 @@ public class SalesManagerMain {
 	@Override
 	public String toString() {
 		// This method is provided to potentially help with debugging
-		return "SalesManager [games=" + games + ", bundles=" + bundles + "]";
+		return "SalesManagerMain [games=" + games + ", bundles=" + bundles + "]";
 	}
 
 	/**
 	 * 
-	 * Run the SalesManager in console mode (that is, input is to come from the
-	 * console).
+	 * Run the SalesManagerMain in console mode 
+	 * (that is, input is to come from the console).
 	 * 
 	 * THIS METHOD IS WRITTEN FOR YOU - no need to edit
 	 * 

@@ -7,9 +7,10 @@ package salesManager;
  * REQUIRED HELP CITATION
  * 
  * TODO: cite your help here or say "only used CSSE220 materials"
- * 
- * TODO: List the name and email address of your partner for the paired part, or
- * say "I worked on the paired part alone."
+ *************************************************************************************** 
+ * TODO: List each team member's name and email username here. 
+ * @author First Student - studenfi
+ * @author Second Student - studense
  *************************************************************************************** 
  */
 public class Game {
