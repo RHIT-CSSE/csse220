@@ -45,7 +45,7 @@ Remove 1 or 2 points for a violation of EACH of the following (up to the maximum
 * Violation of Java Naming Conventions Classes should begin with a capital letter, fields and methods lowercase. Everything should be in camelCase (Exceptions are CONSTANTS in all capital letters)
 * Method Length: A method is too long (i.e., it should have been broken up into sub-method calls).
 * Statement Length: A statement is too long (i.e., an intermediate variable should have been introduced).
-* Improper Code Indentation: Control-Shift-F on the file causes any significant change.
+* Improper Code Indentation: using the auto-format feature (Eclipse's `Control+Shift+F`, or IntelliJ's `Control+Shift+Alt+L`) the file causes any significant change. 
 
 ## Documentation
 

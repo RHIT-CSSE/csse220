@@ -28,7 +28,7 @@ Your overall grade for this assignment comes from these parts:
 
 ### 3) Written Report Details
 Complete the report template in [VaporSalesReport.docx](./VaporSalesReport.docx). 
-To earn full credit, answer every question with thoughtful responses in complete sentences (with the exception of the whiteboard photos/pseudocode screenshots). 
+To earn full credit, answer every question with serious, thoughtful responses, using complete sentences (except in pseudocode and/or diagrams). 
 
 ### 4) Commenting & Conventions Details
 To earn full credit for *Commenting & Conventions*, follow the style guidelines in [the CSSE 220 Grading Guide](../../Docs/grading_guide.md). In particular, make sure you add Javadoc *class-level* comments at the top of each class: `SalesManagerMain`, `Game`, and `Bundle`. 
