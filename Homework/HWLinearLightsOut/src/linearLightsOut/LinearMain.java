@@ -6,12 +6,14 @@ import javax.swing.JOptionPane;
 /**
  * Runs the Linear Lights Out application.
  * 
- * @author <TODO: YOUR NAME HERE>
- * 
  *************************************************************************************** 
  *         REQUIRED HELP CITATION
  * 
  *         TODO: cite your help here or say "only used CSSE220 materials"
+ *************************************************************************************** 
+ *         TODO: List each team member's name and email username here. 
+ * @author First Student - studenfi
+ * @author Second Student - studense 
  ***************************************************************************************  
  */
 public class LinearMain {
@@ -26,8 +28,11 @@ public class LinearMain {
 				.showInputDialog("How many buttons would you like?");
 		int nButtons = Integer.parseInt(nButtonsString);
 		JFrame myFrame = new JFrame();
-		// you'll want to think about how you want to manage the state of the game
-		//also you want to add some buttons and stuff
+		
+		// TODO: Don't write code here before planning out your design in UML. 
+		// Where will you store the buttons? 
+		// How will action listeners access the needed data and/or methods? 
+
 		myFrame.setVisible(true);
 	}
 }
