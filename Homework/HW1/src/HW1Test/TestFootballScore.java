@@ -4,12 +4,10 @@ import static org.junit.Assert.*;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import HW1.RunAllTests;
 import HW1.HW1;
 
-@RunWith(RunAllTestsTestRunner.class)
 public class TestFootballScore {
 	
 	private static int testsPassed;
@@ -23,7 +21,7 @@ public class TestFootballScore {
 
 	@AfterClass
 	public static void oneTimeTearDown() {
-		RunAllTests.outputResults(testsPassed, numberOfTests);
+		RunAllTests.outputResults(testsPassed, numberOfTests, TestFootballScore.class.getSimpleName());
 	} // oneTimeTearDown
 
 	// --------------------------------------------
