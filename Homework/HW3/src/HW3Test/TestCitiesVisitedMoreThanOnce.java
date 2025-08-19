@@ -1,4 +1,4 @@
-package MapsTest;
+package HW3Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
@@ -6,14 +6,13 @@ import static org.junit.Assert.assertNotEquals;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import MapsHW.Maps;
-import MapsHW.RunAllTests;
+import HW3.HW3;
+import HW3.RunAllTests;
 
 public class TestCitiesVisitedMoreThanOnce {
 	private static int testsPassed;
@@ -27,7 +26,8 @@ public class TestCitiesVisitedMoreThanOnce {
 
 	@AfterClass
 	public static void oneTimeTearDown() {
-		RunAllTests.outputResults(testsPassed, numberOfTests);
+		String className = TestCitiesVisitedMoreThanOnce.class.getSimpleName();
+		RunAllTests.outputResults(testsPassed, numberOfTests, className);
 	} // oneTimeTearDown
 
 	
@@ -48,7 +48,7 @@ public class TestCitiesVisitedMoreThanOnce {
 		ArrayList<String> expectedList = new ArrayList<String>(Arrays.asList(expected));
 		Collections.sort(expectedList);
 		numberOfTests++;
-		ArrayList<String> actual = Maps.citiesVisitedMoreThanOnce(names, citiesVisited);
+		ArrayList<String> actual = HW3.citiesVisitedMoreThanOnce(names, citiesVisited);
 		Collections.sort(actual);
 		assertEquals(expectedList, actual);
 		testsPassed++;
@@ -67,7 +67,7 @@ public class TestCitiesVisitedMoreThanOnce {
 		ArrayList<String> expectedList = new ArrayList<String>(Arrays.asList(expected));
 		Collections.sort(expectedList);
 		numberOfTests++;
-		ArrayList<String> actual = Maps.citiesVisitedMoreThanOnce(names, citiesVisited);
+		ArrayList<String> actual = HW3.citiesVisitedMoreThanOnce(names, citiesVisited);
 		Collections.sort(actual);
 		assertEquals(expectedList, actual);
 		testsPassed++;
@@ -86,7 +86,7 @@ public class TestCitiesVisitedMoreThanOnce {
 		ArrayList<String> expectedList = new ArrayList<String>(Arrays.asList(expected));
 		Collections.sort(expectedList);
 		numberOfTests++;
-		ArrayList<String> actual = Maps.citiesVisitedMoreThanOnce(names, citiesVisited);
+		ArrayList<String> actual = HW3.citiesVisitedMoreThanOnce(names, citiesVisited);
 		Collections.sort(actual);
 		assertEquals(expectedList, actual);
 		testsPassed++;
@@ -105,7 +105,7 @@ public class TestCitiesVisitedMoreThanOnce {
 		ArrayList<String> expectedList = new ArrayList<String>(Arrays.asList(expected));
 		Collections.sort(expectedList);
 		numberOfTests++;
-		ArrayList<String> actual = Maps.citiesVisitedMoreThanOnce(names, citiesVisited);
+		ArrayList<String> actual = HW3.citiesVisitedMoreThanOnce(names, citiesVisited);
 		Collections.sort(actual);
 		assertEquals(expectedList, actual);
 		testsPassed++;
@@ -124,7 +124,7 @@ public class TestCitiesVisitedMoreThanOnce {
 		ArrayList<String> expectedList = new ArrayList<String>(Arrays.asList(expected));
 		Collections.sort(expectedList);
 		numberOfTests++;
-		ArrayList<String> actual = Maps.citiesVisitedMoreThanOnce(names, citiesVisited);
+		ArrayList<String> actual = HW3.citiesVisitedMoreThanOnce(names, citiesVisited);
 		Collections.sort(actual);
 		assertEquals(expectedList, actual);
 		testsPassed++;
@@ -143,7 +143,7 @@ public class TestCitiesVisitedMoreThanOnce {
 		ArrayList<String> expectedList = new ArrayList<String>(Arrays.asList(expected));
 		Collections.sort(expectedList);
 		numberOfTests++;
-		ArrayList<String> actual = Maps.citiesVisitedMoreThanOnce(names, citiesVisited);
+		ArrayList<String> actual = HW3.citiesVisitedMoreThanOnce(names, citiesVisited);
 		Collections.sort(actual);
 		assertEquals(expectedList, actual);
 		testsPassed++;
@@ -162,7 +162,7 @@ public class TestCitiesVisitedMoreThanOnce {
 		ArrayList<String> expectedList = new ArrayList<String>(Arrays.asList(expected));
 		Collections.sort(expectedList);
 		numberOfTests++;
-		ArrayList<String> actual = Maps.citiesVisitedMoreThanOnce(names, citiesVisited);
+		ArrayList<String> actual = HW3.citiesVisitedMoreThanOnce(names, citiesVisited);
 		Collections.sort(actual);
 		assertEquals(expectedList, actual);
 		testsPassed++;
@@ -181,7 +181,7 @@ public class TestCitiesVisitedMoreThanOnce {
 		ArrayList<String> expectedList = new ArrayList<String>(Arrays.asList(expected));
 		Collections.sort(expectedList);
 		numberOfTests++;
-		ArrayList<String> actual = Maps.citiesVisitedMoreThanOnce(names, citiesVisited);
+		ArrayList<String> actual = HW3.citiesVisitedMoreThanOnce(names, citiesVisited);
 		Collections.sort(actual);
 		assertEquals(expectedList, actual);
 		testsPassed++;
