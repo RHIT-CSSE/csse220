@@ -1,24 +1,24 @@
-package HWTest;
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+package HW0Test;
+
 import HW0.HW0;
 import HW0.RunAllTests;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
-
+import static org.junit.Assert.assertEquals;
 
 public class TestAddFractionGoodNumbers {
 	private static int testsPassed;
 	private static int numberOfTests;
 
-	@BeforeAll
+	@BeforeClass
 	public static void oneTimeSetUp() {
 		testsPassed = 0;
 		numberOfTests = 0;
 	} // oneTimeSetUp
 
-	@AfterAll
+	@AfterClass
 	public static void oneTimeTearDown() {
 		String className = TestAddFractionGoodNumbers.class.getSimpleName();
 		RunAllTests.outputResults(testsPassed, numberOfTests, className);

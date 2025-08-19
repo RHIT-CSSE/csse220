@@ -1,16 +1,15 @@
 package HW0;
- 
-import org.junit.platform.suite.api.Suite;
-import org.junit.platform.suite.api.SelectClasses;
-import HWTest.RunAllTestsSetUp;
-import HWTest.RunAllTestsTearDown;
-import HWTest.TestAddFractionGoodNumbers;
-import HWTest.TestIsProductAMultipleOfFour;
 
-@Suite
-@SelectClasses({RunAllTestsSetUp.class, TestAddFractionGoodNumbers.class, TestIsProductAMultipleOfFour.class, RunAllTestsTearDown.class})
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+		HW0Test.TestAddFractionGoodNumbers.class,
+		HW0Test.TestIsProductAMultipleOfFour.class
+})
 public class RunAllTests {
-	
+
 	static public int allTestsPassedCount = 0;
 	static public int allTestsExecutedCount = 0;
 	
