@@ -1,10 +1,8 @@
 package HW2Test;
 import static org.junit.Assert.*;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import HW2.HW2;
-@RunWith(RunAllTestsTestRunner.class)
 
 public class TestMostCommonCharacter {
 

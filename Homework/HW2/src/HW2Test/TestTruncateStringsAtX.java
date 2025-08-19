@@ -6,11 +6,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import HW2.HW2;
 
-@RunWith(RunAllTestsTestRunner.class)
 public class TestTruncateStringsAtX {
 	
 	@Test
