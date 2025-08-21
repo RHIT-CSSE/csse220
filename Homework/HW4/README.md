@@ -3,6 +3,7 @@
 ## Overview:
 - This exercise is intended to give you practice with implementing classes given their UML diagram
 - This is an individual exercise/assignment
+- Use of external resources, including genAI tools, is ***not*** permitted on this assignment
 
 ## The problem:
 Online Quizzes:
