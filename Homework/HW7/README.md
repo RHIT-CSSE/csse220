@@ -1,4 +1,4 @@
-﻿# HW5: The Fox and the Hound 
+﻿# HW7: The Fox and the Hound 
 
 ## Overview:
 - This exercise is intended to give you practice with Java Swing graphics
