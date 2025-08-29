@@ -1,0 +1,177 @@
+\model{The Software Design Process}
+
+\quest{30 min}
+
+\Q Summarize from the classwide discussion: 
+What makes software good? 
+\begin{answer}[2.2em]
+Answers will vary slightly based on student input, 
+but should be along the lines of: 
+works correctly (functional), 
+easy to extend/modify/reuse, 
+readable, 
+simple (as possible), 
+efficient
+\end{answer}
+
+\textbf{Interlude: Requirements and Design}
+
+The software development process 
+typically begins with abstract ideas, 
+such as ``dog-walking gig economy marketplace''. 
+These ideas need to be formed into \emph{requirements}---%
+what the clients want from the software. 
+(CSSE371 will teach you this \emph{requirements analysis} step.) 
+Once we have clear requirements, 
+we need to design software to meet them. 
+In CSSE220, we start practicing the design process. 
+You will build on these skills in future courses, 
+including CSSE280 (designing web applications), 
+CSSE333 (designing databases and applications which interact with them), 
+CSSE374 (applying more advanced software design patterns), 
+and senior capstone. 
+
+\Q %For all practical software systems, 
+If we come up with multiple design options, 
+how can we figure out which one to use? 
+Brainstorm some ideas. 
+\begin{answer}[4em]
+We could implement several possible designs, 
+then compare them at the end, but that would waste a lot of time. 
+Instead, we could ``sketch out'', in some way, 
+several candidate designs, and try to see which is best 
+\emph{without} implementing them all. 
+\end{answer}
+
+\Q Software design is an \emph{iterative} process 
+in which we \emph{learn from failure}, 
+refining our design until we land on something workable. 
+To make the process efficient, 
+we need some concise way of describing candidate designs. 
+In the specific context of object-oriented design, 
+how could we accomplish this? 
+(Hint: we have seen a useful type of diagram in previous classes.)
+\begin{answer}[2.5em]
+We can use UML diagrams to summarize designs and 
+visualize several classes together. 
+We will add arrows between classes in the UML diagram 
+to represent their relationships. 
+\end{answer}
+
+\Q Sketch (on a whiteboard or paper) 
+a UML diagram for the two classes below. 
+Refer to past worksheets as needed. 
+Make sure to capture the relationship between the two classes. 
+
+{\small
+\begin{minipage}{0.48\textwidth}
+\begin{javalst}
+public class Ninja {
+    private String name;
+    private int level;
+
+    public Ninja(String name) {
+        this.name = name;
+        this.level = 1;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+}
+\end{javalst}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\begin{javalst}
+public class Pirate {
+    private Ninja enemy;
+
+    public Pirate(Ninja enemy) {
+        this.enemy = enemy;
+    }
+
+    public Pirate() {
+        this.enemy = new Ninja("Foo");
+    }
+}
+\end{javalst}
+\end{minipage}
+}
+
+\Q\label{key1} Compare your UML diagram against 
+\href{https://www.plantuml.com/plantuml/uml/HOrB2W8n343tEKMMYlG2NSWSG4Jm164cI3IDqiG16RoxhH\_SXEGzU1aygCQzAFX5x4QL2deybDkiChuDZ4hkk1Sx4owGZ0fdF3Pl9qZACsj6iO2DS-pwkVh3TSRvAXCyVvc3L0h6fPFldhQVEC30DhMNBm00}{this solution}. 
+What differences do you notice? 
+\begin{answer}[5em]
+Answers will vary. 
+You may have included the constructors as methods, 
+but we often omit these. 
+The biggest difference is probably that 
+you included \java{enemy} as a field in \java{Pirate} 
+instead of drawing an arrow from \java{Pirate} to \java{Ninja}. 
+We read this arrow as ``Pirate \emph{has-a} Ninja''. 
+This arrow implies the existence of 
+the field of type \java{Ninja} in \java{Pirate}. 
+\end{answer}
+
+\Q Add the below \java{Wizard} class to your UML diagram. 
+{\small
+\begin{javalst}
+public class Wizard {
+    private String name;
+    private ArrayList<Ninja> ninjaFriends;
+
+    public Wizard(String name) {
+        this.name = name;
+        this.ninjaFriends = new ArrayList<>();
+    }
+
+    public void addNinjaFriend(Ninja newFriend) {
+        this.ninjaFriends.add(newFriend);
+    }
+}
+\end{javalst}
+}
+\begin{answer}[3em]
+See \href{https://www.plantuml.com/plantuml/uml/PO-\_2i9038VtF4Ner5hk1MuedPn410Vdq0iIlKQvEojQV7VxfzB19IJV3xuaTKmKqgFr4A-YTmhKOamlpqCDqam9D9vYnBteXR07ezIonUEGwncCvuwzHT44PUIq6yTyXON5xYOEFZ\_DGG8bndub9tbJS7\_cafoRTcw3iBfS-JbtTZwb60sBpLGpWyLbgcoJBQXcTSCRNm00}{solution}. 
+The ``*'' on the arrow means \java{Wizard} stores 
+\emph{0 to many} references to \java{Ninja} objects. 
+\end{answer}
+
+\Q We will use 
+the \href{https://www.plantuml.com/plantuml/}{PlantUML} web app 
+to create UML class diagrams throughout the course. 
+\textbf{In pairs} (or solo if you only have three today), 
+practice using this tool by reproducing the below UML class diagram. 
+Use the above example and your UML cheatsheet for reference. 
+(Note: We will always add \texttt{skinparam style strictuml} 
+as a first line to keep our UML diagrams simple.)
+\begin{center}
+\includegraphics[width=0.45\textwidth]{main_plantuml}
+\end{center}
+\begin{answer}[2em]
+\href{https://www.plantuml.com/plantuml/uml/NOx12i8m38RlVOgmqnHsyYxhxjx4UzYA5hjCcbGH4Nm7tz0diOrCn4lwatuV-LiMZ9B6OFZewOGHHs2v1fTdzBt-c3uWCspG4zmCWAPwKH8xiI5qEmp9yNPQvUrzvgsoXAChhwrBcgMFKP\_B\_54wLVefaPJGVO\_yunQWYNv\_a6QTCQFLNe\_dC5qeRwfb1TQOrj6W\_Ty0}{PlantUML solution}
+% @startuml
+% skinparam style strictuml
+
+% class Main {
+%    Main()
+%    setAllBValuesTo3()
+% }
+
+% class A{
+%    name
+%    A(name)
+%    setBValue(value)
+% }
+
+% class B{
+%    count
+%    B()
+%    setValue(value)
+% }
+
+% A  -right->  B
+% Main –down-> "*" A
+% @enduml
+\end{answer}

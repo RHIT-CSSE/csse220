@@ -1,0 +1,72 @@
+\model{Test-Driven Development (TDD)}
+
+While working on a fun side project, 
+we often want to jump into writing code right away 
+(spending as little time on the design phase as possible) 
+and maybe later think about testing our code. 
+For more serious work, 
+such as when a hospital or aircraft needs our code 
+to function correctly all the time, 
+we should consider the technique of 
+\emph{Test-Driven Development} (TDD). 
+The TDD process is:
+\begin{enumerate}
+\item Write a new unit test (that fails) for a not-yet-implemented system requirement. 
+\item Write just enough code to pass the new test. 
+\item \href{https://en.wikipedia.org/wiki/Code_refactoring}{Refactor} 
+    to better follow object-oriented design principles. 
+\item Repeat for other system requirements. 
+\end{enumerate}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.7\textwidth]{tdd-fowler}%
+\caption{A flowchart of Test-Driven Development \href{https://martinfowler.com/bliki/TestDrivenDevelopment.html}{by Martin Fowler}.}%
+\label{fig:tdd}
+\end{figure}
+
+Continuing with our \java{BadFrac} class, 
+we will practice TDD. 
+
+\quest{20 min}
+
+\Q Suppose we are asked to add a new feature to our \java{BadFrac} class: 
+multiplication. 
+In particular, our new method header should be 
+\java{public BadFrac multiply(BadFrac incoming)}. 
+Add this method to \java{BadFrac.java}, 
+with only one line: 
+
+\java{throw new UnsupportedOperationException("Not yet implemented");}
+
+\Q Using the same IDE test generation process as in~\ref{create-tests.tex}, 
+create a \java{testMultiply()} method in \emph{BadFracTest.java}. 
+
+\Q Add some \java{assert} statements in \java{testMultiply()}, 
+following our guidelines from~\ref{create-tests.tex}. 
+
+\Q Run your new \java{testMultiply()} test case. 
+Do you get the results you expect? 
+\begin{answer}[2em]
+The first \java{assert} statement should fail because of 
+the \java{UnsupportedOperationException}. 
+\end{answer}
+
+\Q Splitting into pairs (or solo if three), 
+implement the \java{multiply} method, 
+adjusting it until it passes your unit tests. 
+Then, compare your solution with your teammates' solution(s). 
+
+\Q\label{critiqueTDD} 
+What do you think are some advantages and disadvantages of TDD? Explain. 
+\begin{answer}
+See \href{https://en.wikipedia.org/wiki/Test-driven_development#Advantages_and_Disadvantages}{Wikipedia}
+for a nice list. 
+Some pros: clarifies requirements, increases confidence and coverage, 
+many find it boosts productivity. 
+Some cons: more code volume (lots of lines of tests), 
+more maintenance required, learning curve, may incentivize overcomplicated code. 
+\end{answer}
+
+
+

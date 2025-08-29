@@ -1,0 +1,74 @@
+\model{Unit Testing}
+
+In previous assignments, we have provided you with unit tests 
+(using the JUnit Java framework) to help you verify that your code is working as expected. 
+Today, we look at how (and why) to create this unit tests from scratch. 
+
+Take a look at the files \emph{BasicRectangle.java} and \emph{BasicRectangleTest.java} 
+in \texttt{src/rectangle} and answer the following questions. 
+
+\quest{15 min}
+
+\Q Examine the methods in \emph{BasicRectangleTest.java}. 
+What details are present that you do not see in typical source code methods, 
+such as those in \emph{BasicRectangle.java}? 
+What do you \emph{not} see here that you expect to find in source code classes? 
+\begin{answer}
+The methods have an annotation above them, \java{@Test}. 
+They also call \java{assertEquals()} methods 
+which are imported from \java{org.junit.Assert}. 
+There are no explicit fields or constructors. 
+\end{answer}
+
+\Q Look up a dictionary definition of ``assert''. 
+How does it apply to the \java{assertEquals()} methods 
+you see in JUnit tests? 
+Why do you think the JUnit creators chose ``assert'' 
+over other words? 
+\begin{answer}[4em]
+The ``assert'' definition from Merriam-Webster is 
+``to state or declare positively 
+and often forcefully or aggressively''. 
+Since the test case fails immediately when its first assert fails, 
+throwing an \java{AssertionError}, 
+it makes sense to use a word with such a forceful connotation 
+(instead of ``check'', ``test'', or similar). 
+\end{answer}
+
+\Q Run \emph{BasicRectangleTest.java} in your IDE as JUnit tests. 
+Which tests fail, and which tests pass? 
+\begin{answer}[3em]
+\java{testCalculatePerimeter()} and \java{testToString()} pass; 
+the others, \java{testCalculateArea()} and 
+\java{testCalculateDiagonalLength()}, fail. 
+\end{answer}
+
+\Q Search the \href{https://junit.org/junit4/javadoc/latest/}{JUnit 4 API} 
+for the definitions of the \java{assertEquals} methods. 
+(Hint: Look at the \java{import} statement at the top of \emph{BasicRectangleTest.java}.)
+Which versions of \java{assertEquals} are we using here to test \java{BasicRectangle}? 
+\begin{answer}[4em]
+We are using \java{assertEquals(long expected, long actual)} to compare integer values, 
+\java{assertEquals(Object expected, Object actual)} to compare String values, and 
+\java{assertEquals(double expected, double actual, double delta)} to compare double values. 
+\end{answer}
+
+\Q In the \java{assertEquals} calls within \java{testCalculateDiagonalLength()}, 
+what does the third parameter do? 
+Experiment with setting it to different values. 
+Can you adjust this parameter in a way that makes \java{testCalculateDiagonalLength()} fail earlier? 
+\begin{answer}[2em]
+This ``delta'' parameter sets the tolerance for the floating-point comparison. 
+Changing the first delta from \texttt{0.0001} to \texttt{0.00001} causes the assertion to fail. 
+\end{answer}
+
+\Q\label{whyUnitTests}%
+Instead of having all of this extra syntax and overhead for JUnit tests, 
+we could just print expected and actual values to the console and compare them. 
+Why do you think using unit test frameworks is a best practice? 
+\begin{answer}[3em]
+IDEs can format JUnit results in an easy-to-read, easy-to-navigate manner. 
+Printouts would require analyzing all lines and spotting subtle differences, 
+such as a single-character difference between long strings. 
+\end{answer}
+

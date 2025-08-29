@@ -1,5 +1,0 @@
-Introduce debugger after Strings.
-Save Documenting code until Mondays class.
-Make a debugging HW PROBLEM!
- * on StringsAndLists
-

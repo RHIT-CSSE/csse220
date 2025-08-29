@@ -1,0 +1,53 @@
+\model{Console Input using Scanner}
+
+Java provides the \java{Scanner} class 
+for reading user input from the console, a.k.a.~command line. 
+Review and run \emph{src/consoleInput/ConsoleInputMain.java}. 
+Then, use \emph{ConsoleInputMain.java} and 
+the Java API docs for the \java{Scanner} class 
+to answer the following questions. 
+
+\quest{15 min}
+
+\Q What type of object does the \java{Scanner} constructor take as a parameter? 
+In this example, what is the provided argument? 
+To which very familiar Java feature does it connect? 
+\begin{answer}[4em]
+Here, the \java{Scanner} constructor takes an \java{InputStream} object 
+named \java{System.in}. 
+This is the input counterpart to the familiar \java{System.out}, 
+which is the \java{PrintStream} object we use to print messages to the console. 
+\end{answer}
+
+\Q Based on the description at the top of the Java API docs for \java{Scanner}, 
+what are some other options for constructing a \java{Scanner} object? 
+\begin{answer}[2em]
+We can also construct a Scanner that reads from a File or String. 
+\end{answer}
+
+\Q\label{scannerTokens} The example uses the \java{next()} method to read String inputs. 
+Based on the Java API docs, how does \java{next()} know when to stop? 
+\begin{answer}[3em]
+The \java{next()} method reads the next \emph{complete token}, 
+which is a sequence of characters between \emph{delimiters} 
+(by default, whitespace characters, but they could be commas, semicolons, etc.). 
+\end{answer}
+
+\Q The example uses \java{nextInt()} and \java{nextDouble()} 
+to read integer and floating-point inputs. 
+What type of exception do you get if you try entering 
+an invalid \java{int}/\java{double} value? 
+\begin{answer}[2em]
+\java{InputMismatchException}
+\end{answer}
+
+\Q Test out the alternate approaches for reading \java{age} and \java{height}. 
+These use static methods from the \java{Integer} and \java{Double} wrapper classes 
+to convert the \java{String} returned by \java{scanner.nextLine()} into the appropriate type.  
+What happens if we comment out the \java{scanner.nextLine();} call before reading the age? 
+\begin{answer}[3em]
+We get a \java{NumberFormatException} after entering the name. 
+The two calls to \java{next()} did not consume the newline character, \verb|\n|, 
+so we passed an empty string to \java{Integer.parseInt}. 
+\end{answer}
+

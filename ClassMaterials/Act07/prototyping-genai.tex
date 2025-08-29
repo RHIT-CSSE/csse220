@@ -1,0 +1,82 @@
+\model{Prototyping Designs (with GenAI)}
+
+Sometimes, while we are learning object-oriented design principles, 
+the flaws in a design will not be immediately obvious to us from the UML. 
+In this activity, we see how rapid prototyping with the help of GenAI tools 
+can help us make connections between design flaws in UML and 
+how those flaws manifest in Java code. 
+
+\subsection*{Demo (15 min)}
+
+Recall the Book Tracker Problem from a previous class. 
+\begin{quote}
+A website tracks books and the kids that read them. 
+For each book the system stores the name and author. 
+For each kid the system stores name and grade level. 
+The teacher enters when a kid reads a particular book. 
+It should be possible to print a report on a book that includes 
+all kids who have read a particular book (with their grade level). 
+It should be possible to print a report on a kid that includes 
+the books (with authors) a particular kid has read. 
+\end{quote}
+
+We saw the following design (Fig.~\ref{fig:bookTrackerBadA}) 
+does not function correctly (violating principle 1 a/b), 
+because there is no sane way to look up a book for printing a report 
+or associating with a kid (when handling new reading). 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.7\textwidth]{bookTrackerBadA.png}
+\caption{Bad Design A for the Book Tracker Problem (\href{https://www.plantuml.com/plantuml/uml/VP3HJeKm38RlznGDLs3q3OmXNdYZ4iCRLDh0mjX8DpJ6yEvkWu3dufoRjca\_\_lzdjGyeOPcCygEsCmfEuCEFuLX5T\_cYEeFUmxDp8\_mg0B0uSUguXC59ccRHDhGyEmbbbKz4hvhAKLEbrbqWBYw\_xmM9t\_YBpJMDv5b-nf9K\_kLuHsqthG4j6MxuksKaRVjC9uDxYEPD7AeJ-pWjNfpi0MyoHu2DMbNwYUAkWCU7fzmJe8v8-p92gcPB-VN-0000}{view PlantUML})}%
+\label{fig:bookTrackerBadA}
+\end{figure}
+
+\Q The \texttt{src/bookTrackerBadA} folder shows 
+the code resulting from Bad Design A. 
+Review the code, and try running it. 
+What issues do you notice? 
+\begin{answer}[6em]
+The \java{handleNewReading} method creates 
+a new \java{Book} object (with author ``Unknown'') every time 
+since \java{BookMain} can't access existing books directly. 
+The \java{handlePrintBookNames()} method reveals  
+we may accidentally create multiple books with the same name. 
+The \java{handlePrintReportForBook} method has to 
+look through every kid's books to try to find the target book, 
+which is very indirect and confusing. 
+\end{answer}
+
+We saw the following improved design (Fig.~\ref{fig:bookTrackerImproved}). 
+To see why this design is better, 
+let's have a GenAI tool refactor our code 
+from Bad Design A to this design. 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.7\textwidth]{bookTrackerImproved.png}
+\caption{Improved Design for the Book Tracker Problem (\href{https://www.plantuml.com/plantuml/uml/XP31Je0m38RlUug64nXz0sE81oygCRn1fGqiZ8rqGsECx-uw2MYCyT8sxSV\_\_woD2ILjYpDnjdv5mGLYUdESgzYXNCpWC4Qu3M66TmC07XVMZbkQWkYqYlMfvpL8gfjo8hgtLC-M6lEn2-J5p-z7GU87Vc7tbuPwri-vgCgt78ze\_PVMX9uST\_pQCvBrOw7Lu1AoUPU7viIUJekx81hmF-O8e9I6q9-eBYgulhefNG5pHDgN6VgrAs3BdlAJVW80}{view PlantUML})}%
+\label{fig:bookTrackerImproved}
+\end{figure}
+
+\Q Take notes here on how we prompted the GenAI tool. 
+\begin{answer}
+See \href{https://claude.ai/share/619556c4-f49c-48db-80e5-0a347f0b6f3b}{sample Claude.AI conversation}. 
+Prompts should clearly ask for refactoring, give the old design and code, 
+and give the new design. Be sure to mention the designs are in PlantUML. 
+\end{answer}
+
+\Q\label{bookMainDiffs} Compare the \emph{BookMain.java} version from Bad Design A with 
+the \emph{BookMain.java} version produced by the GenAI tool. 
+What primary differences do you observe? 
+\begin{answer}[6em]
+The revised \emph{BookMain.java} should add a field 
+(\java{ArrayList} or \java{HashMap}) 
+for storing all \java{Book} objects. 
+If still using \java{ArrayList} fields, 
+it may also have new helper methods such as 
+\java{findBookByName} and \java{findKidByName}, 
+which loop through the lists to search. 
+All ``handle'' methods should be simpler except 
+\java{handlePrintKidNames}, which was fine to begin with. 
+\end{answer}

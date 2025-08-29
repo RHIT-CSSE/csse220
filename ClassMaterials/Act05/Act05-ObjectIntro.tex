@@ -1,0 +1,66 @@
+% comment out for student version
+\ifdefined\Student\relax\else\def\Teacher{}\fi
+
+\documentclass[12pt]{article}
+
+\title{Designing Objects}
+\author{Ian Ludden}
+\date{Summer 2025}
+
+\input{../../cspogil.sty}
+
+\begin{document}
+
+\maketitle
+
+Today, we look at how to create and apply custom object types in Java. 
+We will also see a useful data structure called a HashMap.
+
+\ifdefined\Student\rolenames{}\fi
+
+\guide{
+    \item I can explain the purpose of constructor, accessor, and mutator methods. 
+    \item I can implement the equals and toString methods for a given class design. 
+    \item I can design a new class (UML diagram) based on a general description. 
+    \item I can explain what a HashMap represents. 
+    \item I can list and apply essential HashMap operations. 
+    \item I can describe the benefits and limitations of HashMaps. 
+}{
+    \item Identifying attributes and data types that model a real-world object. (Problem Solving)
+}{
+\ref{common-methods.tex} begins with questions about constructors, getters, and setters.
+Report out as soon as the majority of teams have finished. 
+You may find it helpful to project the source code for \textit{Color.java} 
+while students work through the questions. 
+Reinforce the concept of immutable objects, 
+and point out that the \java{String} class is designed this way. 
+
+The questions at the beginning of \ref{equals-tostring.tex} 
+require students to understand the source code of \java{equals} and \java{toString}. 
+If this is the first time they have seen language features like \java{Object}, 
+\texttt{instanceof}, and \java{String.format}, 
+you might want to give a 5-minute lecture (but avoid giving away the answers). 
+
+When reporting out \ref{animal.tex}, have presenters write their designs on the board. 
+Compare the trade-offs of their different designs.
+For example, to store ID numbers some teams may use strings, others may use ints/longs/arrays of ints. 
+
+\ref{maps.tex} introduces HashMaps in the context of the Animal Shelter example. 
+
+Key questions: \ref{key1}, \ref{key2}, \ref{key3}, \ref{mapRefactor}
+
+Source files: 
+\src{Act05}{Color.java}, 
+\src{Act05}{Point.java}, 
+\src{Act05}{AnimalShelterMain.java}
+}
+
+\input{common-methods.tex}
+\newpage
+\input{equals-tostring.tex}
+\vspace{1em}
+\input{animal.tex}
+\newpage
+\input{maps.tex}
+
+\end{document}

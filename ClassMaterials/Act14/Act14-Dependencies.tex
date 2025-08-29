@@ -1,0 +1,76 @@
+% comment out for student version
+\ifdefined\Student\relax\else\def\Teacher{}\fi
+
+\documentclass[12pt]{article}
+
+\title{OODP 4: Minimize Dependencies}
+\author{Ian Ludden}
+\date{Summer 2025}
+
+\input{../../cspogil.sty}
+
+\begin{document}
+
+\maketitle
+
+Today, we look at our fourth object-oriented design principle: 
+\textbf{Minimize Dependencies}. 
+We not only want to reduce the \emph{number} of dependencies between our classes, 
+but also desire to decrease the \emph{strength} of the dependencies which 
+we cannot remove without breaking functionality. 
+Through several examples, we will see how and why to minimize dependencies. 
+
+\ifdefined\Student\rolenames{}\fi
+
+\guide{
+    \item I can identify and categorize dependencies between classes in both UML and code. 
+    \item I can explain the design goals of ``tell, don't ask'' and ``avoid message chains''. 
+    \item I can define coupling and cohesion in my own words. 
+    \item I can distinguish cohesion from encapsulation. 
+    \item I can apply coupling and cohesion to analyze the level and quality of dependencies in a UML design or code. 
+}{
+    \item Writing with technical detail using precise object-oriented design terminology. (Communication)
+	\item Interpreting UML diagrams and imagining possible implementations. (Information Processing)
+}{
+\textbf{First Hour:}
+\ref{tell-dont-ask.tex} introduces dependencies (in UML) and 
+the ``Tell, Don't Ask'' design principle. 
+
+End the first hour with a 10-minute mini lecture that shows 
+the difference between telling and asking for computing game revenue 
+in the Vapor Sales Manager implementation assignment. 
+
+\textbf{Second Hour:} 
+\ref{avoid-message-chains.tex} TODO
+
+\ref{coupling-cohesion.tex} TODO
+
+Key questions: 
+\ref{tellVsAsk}, 
+\ref{redFlags}, 
+\ref{elimMsgChain}, 
+% \ref{staticPatterns}, 
+% \ref{key1}, \ref{key2}, \ref{key3}, 
+% \ref{abstractKey1}, \ref{abstractKey2}
+% \ref{removeAnimal}, 
+% \ref{bookMainDiffs}, 
+% \ref{functionalButBad}, 
+% \ref{encapsAnalogy}, 
+% \ref{pizza}
+
+Source files: 
+% \src{Act08}{Point.java},  
+% \src{Act08}{MyBigInt.java},  
+% \src{Act08}{LoudToy.java}, 
+% \src{Act08}{ToySheep.java}, 
+% \src{Act08}{ToyRobot.java}, 
+% \src{Act08}{StudentV1[/V2].java}
+}
+
+\input{tell-dont-ask.tex}
+% \newpage
+\input{avoid-message-chains.tex}
+\newpage
+\input{coupling-cohesion.tex}
+
+\end{document}

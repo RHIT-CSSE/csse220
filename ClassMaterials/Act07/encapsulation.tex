@@ -1,0 +1,197 @@
+\model{Encapsulation}
+
+We end today with one of the pillars of object-oriented software design: 
+\emph{encapsulation}. 
+
+\quest{30 min}
+
+\Q\label{functionalButBad} 
+If our software system meets all requirements and has no bugs, 
+in what ways could it still be poorly designed? 
+\begin{answer}[3em]
+The code may be hard to read/understand. 
+It may also be difficult to add/modify features. 
+\end{answer}
+
+\Q Suppose Java's \java{Math} and \java{String} classes 
+were merged into one class, putting methods like \java{sqrt()} and 
+\java{substring()} next to each other. 
+What would be some negative consequences of this merger? 
+\begin{answer}[6em]
+It would be harder to know what is meant by a method like ``add''  or ``length''. 
+And when using/importing a method from the old Math or String class, 
+you would now load all of the other class's content too, more than you might actually need. 
+It would also be harder to find what you're looking for in the Java API docs for the merged class. 
+\end{answer}
+
+\Q In Java, 
+it is possible to put all variables and methods for a system in one big class. 
+Why is this a bad idea? 
+\begin{answer}[5em]
+Possible answers: 
+It will be hard to find variables and methods we are looking for. 
+Lots of unrelated things will be thrown together 
+(e.g., similar-named variables/methods 
+that would normally be in different classes), 
+which can be confusing. 
+The system may be less secure since all methods can access all fields, 
+not just the ones they need to access. 
+\end{answer}
+
+\Q Design Principle 3 (OODP 3) states, ``Functionality should be distributed efficiently:
+(a) No class/part should get too large, and (b) Each class should have a single responsibility.'' 
+As a team, restate this principle in your own words, 
+using simpler language. 
+\begin{answer}
+Possible answer: 
+Jobs (and data) should be spread out among right-sized classes, each with one job. 
+\end{answer}
+
+\Q \textbf{Constellation Design Problem:} 
+A particular program is designed to load constellations from datafiles 
+and draw them on the screen. 
+The datafiles include the names of the constellations and 
+details about star location, size, and color as well as 
+which stars ought to be connected to draw the constellation. 
+Depending on the star data, each star should be drawn differently 
+(e.g., right size, right color). 
+
+Apply our first three object-oriented design principles 
+to evaluate the following design. 
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{constellationBad.png}
+
+(\href{https://www.plantuml.com/plantuml/uml/PP1HIWGn38RVUugmJxioNa5MTl5f5M5E4DhgXisafQd8ADxTjam71rzQaZ\_9\_oL7pPZonyH6RoGH4qwWUMPVtaIsASOogi9ucv-H1BuDm1N5iRy4T6VC-4RizpQ8Pi-CcOAyuEG7S8jMeyFQTIQDZFCZy-blY-xV4yOhMJsOd-wvgMZEKcQLZqcybh\_YlmQbglVu53Ya7epqrGeve7kgd1L85Y2Ny7DZiJ9qzL9z\_cN7CdXD3X0NW05ijHv0YsdRej\_i\_c5tjzjkOypHYolt\_GK0}%
+{PlantUML source})
+\end{center}
+
+\begin{answer}
+This design violates Design Principle 3a, because 
+the \java{Constellation} class does everything except maybe 
+some input parsing handled in \java{SkyMain}. 
+\end{answer}
+
+\Q How could we improve this Constellation design? 
+\begin{answer}
+Create a \java{Star} class that stores position, color, and size, and 
+has a \java{drawStar} method. 
+See \href{https://www.plantuml.com/plantuml/uml/RP3HIaCn38Rl-nHbLvleAyZ4uTNqPa\_mqqONbgQ7faEc-EwU7Zgru4tJaF\_BLxgrYbBFIPoTM2SK96\_r8ZIVXSCoSK5WvW-dopDO\_QVp\_WYDGlkCk4F5AmkjGrQh98BAML-GwDR7FclTveVQiKs2ouF8ur\_4rcy5qv63RTpNrJaa5hCYqLo4bQpLZFZKzCsZtHCBtWVoTtMVxXl-d\_1GKHRFb8qREbz3bbpcQln1dM-n4R\_-pjtzwcOrljiDNK-q3MvB6iz9lW40}{revised PlantUML}. 
+This is an example of a general pattern: 
+Often, we will need to \emph{extract} a new class when one gets too complex. 
+(Here, \java{Star} was extracted from \java{Constellation}.) 
+\end{answer}
+
+
+\textbf{Interlude: Defining Encapsulation}
+
+\emph{Encapsulation} refers to the bundling (in a class) of \emph{related data} 
+with \emph{methods that operate on that data}. 
+A well-designed class forms a sort of ``capsule'' that has a single job and does it well. 
+We can pass around the capsule (as object references), and 
+other classes can use the methods to get things done 
+without needing to know (or interfering with) the private data inside. 
+
+Another benefit of encapsulation is that 
+you can often change \emph{how} a class works on the inside 
+without needing to change any classes that use that class, 
+as long as the public methods stay the same. 
+For example, if someone comes up with a better %fancy new-and-improved 
+way of implementing a HashMap, 
+Java can change the \java{HashMap} class internals 
+without breaking existing Java code. 
+
+\Q\label{encapsAnalogy} Come up with a real-world analogy 
+    that helps explain the benefits of encapsulation. 
+\begin{answer}[5em]
+Possible answers: 
+Iceberg, where the tip is the public methods of a class and 
+the underwater portion is the implementation details. 
+A sports team with specialized roles/positions, 
+where each player is like a class with a single job. 
+Players work together, but they don't need to think about every little detail 
+that their teammates are thinking about to perform their roles. 
+\end{answer}
+
+\Q\label{pizza} \textbf{Pizza Restaurant Design Problem:} 
+A pizza restaurant needs to calculate the cost of orders 
+and record what pizzas need to be made. 
+An order consists of a number of pizzas, 
+each of which might have toppings, 
+as well as a customer's name and an order date. 
+Each pizza costs \$8 with no toppings. 
+The first 2 toppings cost \$2 apiece. 
+Each additional topping beyond that costs \$1. 
+If a pizza has just peppers, onions, and sausage, 
+that's ``The Special'' and it costs \$12. 
+
+\begin{enumerate}
+\item What classes do you think are needed? \hfill 
+\ans{\java{PizzaMain}, \java{Order}, \java{Pizza}}
+\item Clearly, we need a method to computes a pizza's cost. 
+Where should it go? Why? 
+\begin{answer}[1em] 
+\java{Pizza}, because it has the needed data. 
+And \java{Order} already has its own job. 
+\end{answer}
+\item Compare 
+\href{https://www.plantuml.com/plantuml/uml/NOzBReCm48RtFeN52ghs2XKLNROaYrnWX4V4YX\_8CrOKejmzC844PVFBZs--NrCJG-BidQAJ3GCay9huud3AP3lvKPq38hstumZ\_O8E-AgsF48p39Y4mjdZU9OEfx39nz9X-WQ5wGZ\_6o6mPPwZD\_bDp70ORUghKRTMBGTGhDXstmkaAY-aG7tsBviyIptKzSXE9ourLSB6kbU\_SQwslx-AZq69MaikB4Ah6OB9tTm00}%
+{Solution A} 
+and 
+\href{https://www.plantuml.com/plantuml/uml/JOzDJiGm34RtEKKqgnR15T2W8bPGMFG2LcELYFn4jYD44NUdILhenehZb\_SvLnOWoTuf\_h0X0O7NB5yEjqfshXCrEs3MRtPTuGLiqDzAwtS8nk50288ZVhwIGUhcp18zqYC8z7\_GWp7rRHSBD6P\_goMcPCF2lVevzDLGrGUs7S\_2hONTDCMMjskUBKjVwEXJ5XmYorEabfbABSC5fGowKsGbQkInJ-EclMli\_x\_lxYytbxQeghNTD8-wOZ3Pkry0}%
+{Solution B}. 
+Which is a better design, and why? 
+\begin{answer}[5em]
+Solution A is better, 
+because it distributes functionality by 
+giving \java{Pizza} a meaningful \java{getCost()} method. 
+In Solution B, 
+\java{Pizza} is just a ``dumb'' or ``inert'' data holder. 
+(Aside: Moving methods like this 
+from the \emph{has-a} class to the \emph{has'ed} class 
+is sometimes called \emph{pushing functionality down}.)
+\end{answer}
+
+\item \emph{For this part and the next one, 
+split into pairs (unless you only have three today). 
+Each pair should choose a \underline{different} genAI tool.} 
+
+Use a GenAI tool to implement both Solution A and Solution B 
+(see~\ref{prototyping-genai.tex}). 
+Prompt it to highlight the differences in the two implementations. 
+Also ask it to evaluate the solutions with respect to OODP 3. 
+\begin{answer}[3em]
+See \href{https://claude.ai/share/8bbe0b04-1db2-4e15-91f7-03e1fd8eebac}%
+{sample Claude.AI conversation}. 
+\end{answer}
+\item Did the GenAI tool faithfully implement each design, 
+or did it change some things without telling you? 
+If something changed, what do you think was the motivation? 
+(Feel free to use follow-up prompts.) 
+\begin{answer}[3em]
+Answers will vary. You should note any fields or methods 
+that the genAI tool added, changed, or removed relative to the provided UML. 
+\end{answer}
+\item Did the genAI tool's assessment of the designs 
+match yours from (c)? Explain. 
+\begin{answer}[4em]
+Answers will vary. 
+\end{answer}
+\item \emph{Merge your pairs back together and discuss as a full team.} 
+Which genAI tool gave the better implementation and design comparison? Explain. 
+\begin{answer}[5em]
+Answers will vary. 
+\end{answer}
+\item We could continue extracting classes 
+(e.g., \java{Customer}, \java{Topping}). 
+Should we? Explain. 
+\begin{answer}[5em]
+It depends on whether there are other system requirements (perhaps coming soon).
+Based on the current system description, 
+these classes would just be dumb data holders. 
+But if we anticipate other reqs such as 
+a customer rewards program or varied topping prices, 
+we might want to preemptively add these classes. 
+\end{answer}
+\end{enumerate}
+

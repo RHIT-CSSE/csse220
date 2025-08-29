@@ -1,0 +1,72 @@
+% comment out for student version
+\ifdefined\Student\relax\else\def\Teacher{}\fi
+
+\documentclass[12pt]{article}
+
+\title{Software Engineering Techniques}
+\author{Ian Ludden}
+\date{Summer 2025}
+
+\input{../../cspogil.sty}
+
+\begin{document}
+
+\maketitle
+
+What makes software ``good''? 
+Today, we start building some guidelines, 
+object-oriented design principles (OODPs), 
+that will help us quickly plan software systems 
+with desirable qualities and rule out designs 
+that are likely to cause us (or our teammates, or worse, our clients) 
+frustration in the future. 
+
+\ifdefined\Student\rolenames{}\fi
+
+\guide{
+    \item I can list several attributes that make software ``good''. 
+    \item I can draw a UML class diagram representing given Java classes. 
+    \item I can create stubs of Java classes from a given UML class diagram. 
+    \item I can use the PlantUML service to create simple UML class diagrams. 
+    \item I can apply object-oriented design principles (OODPs) 1 and 2 to evaluate design options. 
+    \item I can improve candidate designs by fixing flaws with respect to OODPs 1 and 2. 
+}{
+    \item Communicating object-oriented design ideas to team members 
+          using precise language and diagrams. (Communication)
+    \item Reading system requirements descriptions and extracting key information 
+          for object-oriented design. (Information Processing)
+    \item Building consensus from different design ideas and 
+          including all team members in design discussions. (Teamwork)
+}{
+\ref{design-good-software.tex} introduces software design principles 
+and motivates UML class diagrams. 
+
+\ref{oodp1-oodp2.tex} defines the first two object-oriented design principles 
+and walks through the Book Tracker design problem. 
+
+\ref{design-practice.tex} structures additional practice design problems: 
+Company Accounts and Card Game. 
+
+Key questions: 
+\ref{key1}, 
+\ref{key2}, 
+\ref{key3}, 
+\ref{key4}, 
+\ref{key5}
+
+% Source files: None
+% \src{Act05}{ConsoleInputMain.java},  
+% \src{Act05}{Animal.java},
+% \src{Act05}{AnimalShelterMain.java}, 
+% \src{Act05}{BookMain.java}, 
+% \src{Act05}{Book.java}, 
+% \src{Act05}{Kid.java}
+}
+
+\input{design-good-software.tex}
+% \newpage
+\input{oodp1-oodp2.tex}
+\newpage
+\input{design-practice.tex}
+
+\end{document}

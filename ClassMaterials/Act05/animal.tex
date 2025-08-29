@@ -1,0 +1,111 @@
+\model{Shelter Animal}
+% based on Model 2 of "Activity 10 - Class Design" by Helen Hu
+
+Classes often represent objects in the real world.
+In this section, you will design a new class 
+that represents an \java{Animal} in a shelter like the one below. 
+This will be the first in a series of activities 
+in which we build up a record-keeping system for an animal shelter. 
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{shelter-cat.jpg}
+
+{
+\footnotesize%
+Photo by \href{https://unsplash.com/@ankumpan?utm\_content=creditCopyText&utm\_medium=referral&utm\_source=unsplash}{Anna Kumpan} 
+on \href{https://unsplash.com/photos/white-and-black-cat-on-white-metal-frame-Pm-8aIzBtvo?utm\_content=creditCopyText&utm\_medium=referral&utm\_source=unsplash}{Unsplash}
+}
+\end{center}
+
+
+\quest{15 min}
+
+
+\Q Identify four or more attributes (a.k.a.~fields) 
+that should be in the \java{Animal} class.
+For each attribute, indicate what data type would be most appropriate.
+
+\begin{answer}
+Answers may include
+\verb|name:String|, 
+\verb|id:int/String|, 
+\verb|species:String|, 
+\verb|ageYears:int|,
+\verb|dateArrived:Date|, 
+\verb|birthdate:Date|,  
+\verb|sex:String|, 
+\verb|size:String|, 
+\verb|weight:double|, 
+\verb|color:Color|, 
+\verb|isSpayedNeutered:boolean|, 
+\verb|isHouseTrained:boolean|, etc.
+\end{answer}
+
+
+\Q Using UML syntax, define two or more constructors for the \java{Animal} class.
+
+\begin{answer}
+\begin{javaans}
++Animal(id:int)
++Animal(id:int, name:String, species:String)
+\end{javaans}
+\end{answer}
+
+
+\Q Define two or more accessor methods for the \java{Animal} class.
+Include arguments and return values, using the same format as a UML diagram.
+
+\begin{answer}[5em]
+\begin{verbatim}
++getID(): int
++getName(): String
++getSpecies(): String
++getAgeYears(): int
++getWeight(): double
+\end{verbatim}
+\end{answer}
+
+
+\Q Define two or more mutator methods for the \java{Animal} class.
+Include arguments and return values, using the same format as a UML diagram.
+
+\begin{answer}[5em]
+\begin{verbatim}
++setWeight(weight:double): void
++setName(name:String): void
++setSpayedNeutered(status:boolean): void // could omit parameter
++setAgeYears(age:int): void
+\end{verbatim}
+\end{answer}
+
+
+\Q \label{key3}
+Describe how you would implement the \java{equals} method of the \java{Animal} class.
+
+\begin{answer}
+Two animals would be considered equal if they have the same ID number, 
+assuming we have been careful to keep these IDs unique. 
+\end{answer}
+
+
+\Q Describe how you would implement the \java{toString} method of 
+the \java{Animal} class. 
+
+\begin{answer}
+The \java{toString} would print the animal's ID, species, name, 
+and other field values, each separated by a comma.
+\end{answer}
+
+
+\Q When constructing (or updating) an \java{Animal} object, 
+which arguments would you need to validate? 
+What are the valid ranges of values for each attribute? 
+
+\begin{answer}[5em]
+The ID number should have a consistent length (number of digits), 
+age in years should be nonnegative, 
+dates need to have valid months and days, 
+names should be at most some upper bound number of letters and 
+not contain digits or other characters, 
+weight should be positive, etc. 
+\end{answer}

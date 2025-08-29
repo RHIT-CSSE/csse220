@@ -1,0 +1,146 @@
+\model{More Design Practice}
+
+We will end today with two more design problems. 
+For each design problem, 
+split into pairs (or individuals, if you only have three today) 
+for parts (a) and (b), then regroup for the rest. 
+
+\quest{30 min}
+
+\Q\label{key4}\textbf{Design Problem: Company Accounts}
+{\small
+\begin{quote}
+A particular company keeps a variety of different accounts for its projects. 
+Each account has an account number and a balance. 
+When a deposit or withdrawal occurs, the transaction occurs immediately, 
+and the current balance should be updated. 
+The system should support getting the current balance. 
+
+The system should also support getting the balance 
+as it existed at \emph{any} date/time in the past. 
+Note the input historical date/time may not correspond to 
+a particular transaction time---for example, 
+if the system had a balance of \$1 at 1 p.m.~and 
+then was changed to \$2 at 3 p.m., 
+a request for the balance at 2 p.m.~should return \$1.
+\end{quote}
+}
+\begin{enumerate}
+\item Suppose our main class is called \java{CompanyExpenseMain}. 
+What \java{handle} methods will it need? 
+\begin{answer}[3.3em]
+\java{handleDeposit(accountID, amount)}, 
+\java{handleWithdrawal(accountID, amount)},\\
+\java{handleGetCurrentBalance(accountID)}, \\
+\java{handleGetHistoricalBalance(accountID, dateTime)}
+\end{answer}
+\item Determine what classes to add, 
+what fields and methods they need, and 
+how they should relate to each other. 
+Sketch (on a whiteboard or paper) 
+a UML diagram for your design. 
+\item (\emph{Regroup.}) Compare your team's UML diagrams against 
+\href{https://www.plantuml.com/plantuml/uml/TP31JiCm343l-Ofe9uRMNvWsLWGSk4tYR1AB6HAdYXsD2V7lfAnbG-ikKMG_syzUYKBM4eEH3-8ECaGhUWXOtqpkDsDS016xIR43Fjn_TiY2pq1ilymEs0TiiKj2UWFEfSBwr2uinFut7u0NqftFi8TmdNb0tPISaVKE0h334tg6F99egcOGBgY5zQ2ufOXpyprQhu_PgahUk7_zZH-r1u_zOFaNUBjGgh4fXud1smmiu9HIVwVN8xZsxqKqreP6J_bsgEwB9wxSBCSjpBXDuvlbx7PsFiIia7s9uGS0}{Bad Design A}. 
+What differences do you notice? 
+And what is wrong with Bad Design A, in terms of OODPs 1 and 2? 
+\begin{answer}[4em]
+Bad Design A violates OODP 1(a), 
+because the main class only has one \java{Account}, 
+but it may need to have many. 
+It is also moderately difficult to compute historic balances, 
+so you could argue it violates 1(b) too. 
+\end{answer}
+\item Compare your team's UML diagrams against 
+\href{https://www.plantuml.com/plantuml/uml/TT11IqCn30VmUpx5OoSd-XLakebwy2Pu3crmmJGjJSeSudVtEVjqu-cbXEHF-3KhSwpUae2ziXQic0RplT3uLWw72GH1is6TKq7TtxuLKgD7P1tUOOiQXJPKih6VOGYvgJziBWPCNzMo1vxPjx7Y3kN_p1tvkjLAwZSeg85-eqUHUpRFempbEDKNHdHwuaHB-9ZKrz_JaSeHmib-o19xQH3x5oRJhej_6Yyptg4tzvmWu8-hNLujpXSJ35QaiINv1000}{Bad Design B}. 
+What differences do you notice? 
+And what is wrong with Bad Design B, in terms of OODPs 1 and 2? 
+\begin{answer}[4em]
+Bad Design B violates OODP 1(a). 
+\java{Account} doesn't have enough data 
+to make \java{getHistoricalBalance} work. 
+Perhaps \java{oldBalances} is a list of balances? 
+But transaction dates are not stored, 
+so we can't look up the balance on a particular day/time. 
+\end{answer}
+\item Combine your team's original designs into one final design, 
+applying any lessons learned from Bad Designs A and B. 
+Create a UML class diagram for your design using 
+\href{https://www.plantuml.com/plantuml}{PlantUML}. 
+(Remember to add the \texttt{skinparam style strictuml} line at the top.)
+Save your link. 
+% below by clicking the ``Decode URL'' button, 
+% then copy/pasting the updated URL from your browser's address bar. 
+\begin{answer}[3em]
+\href{https://www.plantuml.com/plantuml/uml/TT3FIWD130RmUvvYwSbAVGMfTaKzU1CyVyu46vp9B9CijOZlxjhk-eUrbs58li0lMPkZUfyJsQjeXuhScEyJ3s-LSEXGI31hDYLtqFtDMyTg_03Hvfssq9YuvQwO-1b2ABtwVRjgaBz-op7m9BwD5JkaqvbRzarVAwjV8q43_qH_HUx4l0mof5bgrKGuFqhc9NrCwgjZTw1AfEVZY95Ng26u56t76QCuRJ6oTYFwk_0o4nvgSz8V1_rpk8lBnVbYij6QDGw7_WG0}{Solution A}: 
+parallel ArrayLists for balances and transaction dateTimes\\
+\href{https://www.plantuml.com/plantuml/uml/TP31JiCm38RlUOfe9uRMLvWsLWGSk4tYR1B3B1AdYbsD2V7kjAnXHUqkaML_-lFP6r78siPWv8EuWGpHYfu2TcyczpinBe28tQNO09_kFnjamMSWjb_c0Em3rjWa8Rq1vrBB-bIlBCI-MWx02-d1PpX2kCuyeExQd97r3WAmmmiwGXv9D7Lc42RKodfGt5F4fVakrjlpj5CbRzo_VEEBzk1n72p_6kyJfQutvp3pyJu32pYbrD_fzGnktnJpQ6BqKjT3HXynS-jgNNOnPQVAL-l5xSAE0pV8letX1m00}{Solution B}: modified \java{Transaction} class
+\end{answer}
+\end{enumerate}
+
+\newpage
+
+\Q\label{key5}\textbf{Design Problem: Card Game}
+{\small
+\begin{quote}
+In a particular card game, players have hands of cards. 
+Each card is worth some points and also has a color (red, blue, green). 
+During play, players accrue bonuses that mean 
+cards of a particular color are worth bonus points. 
+During play, sometimes a random card is selected from one player's hand 
+and moved to another player's hand. 
+At the end of game, 
+it is necessary to compute the total points for each player's hand. 
+\end{quote}
+}
+\emph{Reminder: Do parts (a) and (b) in pairs/solo, then regroup.}
+\begin{enumerate}
+\item Suppose our main class is called \java{GameMain}. 
+What \java{handle} methods will it need? 
+\begin{answer}[4em]
+\java{handleMoveRandomCard(startPlayerName, endPlayerName)}, 
+\java{handleAddBonus(playerName, colorName, bonusAmount)},\\
+\java{handleComputeHandValueForPlayer(playerName)}
+\end{answer}
+\item Determine what classes to add, 
+what fields and methods they need, and 
+how they should relate to each other. 
+Sketch (on a whiteboard or paper) 
+a UML diagram for your design. 
+\item (\emph{Regroup.}) Compare your team's UML diagrams against 
+\href{https://www.plantuml.com/plantuml/uml/JL3DJiCm3BxdAQoTLWIlW3OgyNCOcZXmDuq54OvTEGbeGdjtqgpRUcdzwVFtusnIHiibialVGKOqZ93oWQb-BGoDSGDZIl24aNOO1FxS5ufdskaFlTL9Ou_cryrfptWWUwshjq3Yhx2RHLll7rHAMe-BpK5Pv_5Z8hTHY-IpfDSubapF5RmZ5tfKE_akF3e7S9oBJcrgIO1HW-GcgQ1brB_-2jcrrvbffQfpNyn8vZiQsSBtarLwaO6B3_9vEg5pHtTvbRjxMDsiMhZRaFWI-Hy0}{Bad Design A}. 
+What differences do you notice? 
+And what is wrong with Bad Design A, in terms of OODPs 1 and 2? 
+\begin{answer}[4.5em]
+Bad Design A violates OODP 1(a), 
+because a player's color bonuses can't be preserved 
+if they lose all their cards of that color. 
+Also, this design makes use iterate over all cards 
+to get a player's hand to move cards or compute final totals. 
+(Alternatives: 1(c), 
+cards duplicate player names and color bonuses;  
+2(a), missing \java{Player} class.)
+\end{answer}
+\item Compare your team's UML diagrams against 
+\href{https://www.plantuml.com/plantuml/uml/NL1DJyCm3BttLqGz5RITkAEDIdmS1XD2tBt6R1M9NIKEKZNjlvCqwSQuDFPxzdlFNNa19y6Qod_tD803gxoC1kFNzTt4L9q1xzKJMDn0J-fO7O2qmGt_u7kisBRWT3CfRGsCw5xZw48XwKjxKvRMMZym1TyCVoOxDbpANIBNbWF9lDAo7OBWSsm-mGHyP9TriqQHL-eq9ysiEaQC8XUVxfz4a-RjLVuFRbWEMAGJ3tFKATv2GKbrAZPjWbiGtBCR9pTX0RFbdiGdqyJ7buBTeNlxIYvdV5A-9CjBBzIPe7lQPzzaTVxho-Mzgc_hSbnLRapWNNqTfLeXwM3DBm00}{Bad Design B}. 
+What differences do you notice? 
+And what is wrong with Bad Design B, in terms of OODPs 1 and 2? 
+\begin{answer}[4em]
+Bad Design B violates OODP 1(a), 
+because once a card is added to a player's hand, 
+its specific point value is lost, 
+so the card cannot be randomly moved to another player's hand. 
+You could also argue for 2(a), since there is no \java{Card} class. 
+\end{answer}
+\item Combine your team's original designs into one final design, 
+applying any lessons learned from Bad Designs A and B. 
+Create a UML class diagram for your design using 
+\href{https://www.plantuml.com/plantuml}{PlantUML}. 
+(Remember to add the \texttt{skinparam style strictuml} line at the top.)
+Save your design below by clicking the ``Decode URL'' button, 
+then copy/pasting the updated URL from your browser's address bar. 
+\begin{answer}[3em]
+\href{https://www.plantuml.com/plantuml/uml/LP3TIWCn48NlynH3hwAqBo1IMWl-NAo8YlVZPcWNavcG7w58tzriDgljpPBicNFEDzd4X25bPrNy6jXZG0Sn7IsLRnZwggZUOepmW8uw71X-r07PMEhacrxBITmEWz4rwSNYaS9p6Lq2iVc_NZNJrfWxuHorFvlinKexVexYradcD5jsudnEz5Wk7sWptKkOShK_YmSupQIJMZW1k6WAfeBQUzEXltqhk_5--SI9zXJMTU2oGu-1xcB1Tz6I3jIwHntdNMhy4h1Xdnh7wAeKNWPESUOe-jzRhbPhM5ml6h9gvDFFwbSROfET_GK0}{Solution}: 
+each \java{Player} maintains a list of their \java{Card} objects. 
+(Remember we implicitly assume we have the necessary constructors, getters, and setters.)
+\end{answer}
+\end{enumerate}

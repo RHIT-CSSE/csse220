@@ -1,0 +1,87 @@
+% comment out for student version
+\ifdefined\Student\relax\else\def\Teacher{}\fi
+
+\documentclass[12pt]{article}
+
+\title{The \java{static} Keyword and Inheritance}
+\author{Ian Ludden}
+\date{Summer 2025}
+
+\input{../../cspogil.sty}
+
+\begin{document}
+
+\maketitle
+
+Today, we look at when and how to use the \java{static} keyword in Java. 
+We then examine \emph{inheritance}, one of the pillars of object-oriented design.  
+\ifdefined\Student\rolenames{}\fi
+
+\guide{
+    \item I can differentiate between static and instance variables and methods. 
+    \item I can summarize best practices for when to use static variables and methods. 
+    \item I can explain what it means for one class to extend another 
+        and summarize the \java{extends} and \java{super} keywords. 
+    \item I can generalize multiple classes that have overlapping code.
+    \item I can explain the requirements of abstract classes and methods. 
+    \item I can write a new method for an existing Java library class. 
+}{
+    \item Reading Java API documentation and making inferences. (Information Processing)
+	\item Making conclusions based on IDE hints and program output. (Critical Thinking)
+	%\item Identifying similarities and differences between classes and refactoring to use an appropriate superclass. (Critical Thinking)
+}{
+\textbf{First Hour:}
+\ref{static.tex} introduces static fields and methods through examples. 
+Be sure to summarize best practices at the end: 
+only use static fields for constants (until later courses), and 
+only use static methods for utility functions and \java{main}. 
+
+End the first hour with a 10-minute mini lecture that shows 
+how to create and add two BigIntegers, and how to find and replace strings. 
+
+\textbf{Second Hour:} 
+\ref{extending.tex} introduces inheritance with a custom extension of \java{BigInteger}. 
+This activity requires some prior knowledge of BigInteger and the \java{String.replace()} method. 
+BigInteger was originally chosen for this activity, because (1) it's a useful class in the Java library, and (2) it's not declared as \java{final} (so it can be extended).
+The new feature this activity is adding to BigInteger is the ability to work with comma separators.
+% Highlight important aspects of the documentation for BigInteger.
+Mention that BigInteger extends Number, which extends Object. 
+Notice the static constants. 
+% In addition to the constructors, there is a static \java{valueOf} method. 
+Prevent students from spending too much time on \ref{count1} and \ref{count2}. 
+% You can tell them the number of methods; they should be able to count the fields and constructors. 
+% Introduce ``is a'' and ``has a'' terminology when reporting out. 
+
+\ref{abstract.tex} introduces abstract superclasses. 
+% Do not provide \textit{LoudToy.java} (the code for Model 2) until after Model 1.
+% Students will develop their own version of this class in \ref{LoudToyV1} and later compare it with Model 2.
+
+% \ref{refactoring-inheritance.tex} demonstrates refactoring to use an abstract class 
+% in the ongoing Animal Shelter example project. 
+
+Key questions: 
+\ref{staticPatterns}, 
+\ref{key1}, \ref{key2}, \ref{key3}, 
+\ref{abstractKey1}, \ref{abstractKey2}
+% \ref{removeAnimal}, 
+% \ref{bookMainDiffs}, 
+% \ref{functionalButBad}, 
+% \ref{encapsAnalogy}, 
+% \ref{pizza}
+
+Source files: 
+\src{Act08}{Point.java},  
+\src{Act08}{MyBigInt.java},  
+\src{Act08}{LoudToy.java}, 
+\src{Act08}{ToySheep.java}, 
+\src{Act08}{ToyRobot.java}, 
+\src{Act08}{StudentV1[/V2].java}
+}
+
+\input{static.tex}
+\newpage
+\input{extending.tex}
+\newpage
+\input{abstract.tex}
+
+\end{document}

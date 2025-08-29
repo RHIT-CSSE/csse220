@@ -1,0 +1,359 @@
+\model{Abstract Classes}
+
+Just like in language and philosophy 
+there are abstract ideas and categories that can be realized as concrete examples/things, 
+Java allows us to distinguish between \java{abstract} classes and 
+\emph{concrete} (the default) classes. 
+
+%%% \model{Loud Toys}
+
+\begin{multicols}{2}
+\small
+
+\begin{javalst}
+public class ToySheep {
+    private int volume;
+
+    public ToySheep() {
+        this.volume = 3;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+        makeNoise();
+    }
+
+    public void makeNoise() {
+        System.out.println("Baaa");
+    }
+}
+\end{javalst}
+
+\begin{center}
+\includegraphics[height=8em]{shaun.png}
+\hspace{2em}
+\includegraphics[height=8em]{wall-e.jpg}
+\end{center}
+
+\columnbreak
+
+\begin{javalst}
+public class ToyRobot {
+    private int chargeLevel;
+    private int volume;
+
+    public ToyRobot() {
+        this.chargeLevel = 5;
+        this.volume = 10;
+    }
+
+    public void recharge() {
+        chargeLevel = 10;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+        makeNoise();
+    }
+
+    public void makeNoise() {
+        System.out.println("Beep Beep!");
+    }
+}
+\end{javalst}
+
+\end{multicols}
+
+\quest{25 min}
+
+
+\Q Identify \emph{similarities} in the code: 
+what fields and methods do the classes have in common?
+\ans[468pt]{
+\java{private int volume},~\java{getVolume()},~\java{setVolume(int volume)},~
+\java{makeNoise()}
+}
+%\\[1ex] \ans[468pt]{volume}
+%\\[1ex] \ans[468pt]{getVolume, setVolume, makeNoise}
+
+\Q Summarize \emph{differences} between the two classes. % constructors and \java{makeNoise} methods.
+
+\begin{answer}
+Constructor differences: 
+ToySheep sets volume to 3, but it's 10 in ToyRobot. 
+In \java{makeNoise()}, ToySheep says ``Baaa'', but ToyRobot says ``Beep Beep!''. 
+The ToyRobot has an extra \java{recharge()} method. 
+\end{answer}
+
+\clearpage
+
+\Q \label{LoudToyV1}
+Design a new class named \java{LoudToy} that contains 
+the code that \java{ToySheep} and \java{ToyRobots} have in common. 
+Its constructor should take \java{volume} as a parameter, and 
+\java{makeNoise} should have an empty body.
+
+\begin{javalst}
+public class LoudToy {
+\end{javalst}
+\vspace{-1ex}
+\begin{answer}[25em]
+\begin{javaans}
+    private int volume;
+
+    public LoudToy(int volume) {
+        this.volume = volume;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+        makeNoise();
+    }
+
+    public void makeNoise() {
+        // will be overridden in subclass
+    }
+\end{javaans}
+\end{answer}
+\vspace{-1ex}
+\begin{javalst}
+}
+\end{javalst}
+
+
+\Q Redesign \java{ToySheep} so that it extends \java{LoudToy}.
+The constructor of \java{ToySheep} should call the constructor of \java{LoudToy}.
+Remove the code from \java{ToySheep} that is no longer necessary.
+%Do not duplicate any code in \java{LoudToy}.
+
+\begin{javalst}
+public class ToySheep extends LoudToy {
+\end{javalst}
+\vspace{-1ex}
+\begin{answer}[12em]
+\begin{javaans}
+    public ToySheep() {
+        super(3);
+    }
+
+    public void makeNoise() {
+        System.out.println("Baaa");
+    }
+\end{javaans}
+\end{answer}
+\vspace{-1ex}
+\begin{javalst}
+}
+\end{javalst}
+
+
+\newpage
+
+\Q \label{abstractKey1}
+Redesign \java{ToyRobot} so that it extends \java{LoudToy}, and 
+remove extraneous code. 
+%Do not duplicate any code in \java{LoudToy}. 
+
+\begin{javalst}
+public class ToyRobot extends LoudToy {
+\end{javalst}
+\vspace{-1ex}
+\begin{answer}[20em]
+\begin{javaans}
+    private int chargeLevel;
+
+    public ToyRobot() {
+        super(10);
+        chargeLevel = 5;
+    }
+
+    public void recharge() {
+        chargeLevel = 10;
+    }
+
+    public void makeNoise() {
+        System.out.println("Beep Beep!");
+    }
+\end{javaans}
+\end{answer}
+\vspace{-1ex}
+\begin{javalst}
+}
+\end{javalst}
+
+
+\Q\label{toyOutput} What is the output of the following examples?
+
+\begin{enumerate}
+
+\item
+\begin{javalst}
+LoudToy toy1 = new LoudToy(1);
+toy1.makeNoise();
+\end{javalst}
+
+\vspace{-2.5em} \hspace{18em} \ans[20em]{(no output)}
+
+\item
+\begin{javalst}
+LoudToy toy2 = new ToySheep();
+toy2.makeNoise();
+\end{javalst}
+
+\vspace{-2.5em} \hspace{18em} \ans[20em]{\texttt{Baaa}}
+
+\item
+\begin{javalst}
+LoudToy toy3 = new ToyRobot();
+toy3.makeNoise();
+\end{javalst}
+
+\vspace{-2.5em} \hspace{18em} \ans[20em]{\texttt{Beep Beep!}}
+
+\end{enumerate}
+
+Notice that the \emph{instantiated type} of an object  
+can be a subclass of its variable's \emph{declared type}. 
+In other words, we can store \java{ObjectType} in a variable with declared type 
+\java{DeclaredType} if and only if \java{ObjectType} ``is-a'' \java{DeclaredType}.  
+
+\Q In~\ref{toyOutput}, 
+did the variable's \emph{declared} type or the object's \emph{instantiated} type 
+determine the version of \java{makeNoise} that was called? 
+
+\begin{answer}[2em]
+The object's instantiated type---notice that 
+the variable's declared type is the same in all three instances. 
+\end{answer}
+
+\Q Would it ever make sense to construct a \java{LoudToy} object? Why/why not?
+\begin{answer}[2em]
+Answers will vary, but 
+a \java{LoudToy} isn't very useful by itself, 
+since all it can do is get and set volume. 
+It needs other attributes and methods to represent an actual toy. 
+\end{answer}
+
+\clearpage
+
+
+%%% \model{Abstract Methods}
+
+The \java{abstract} keyword can be used to declare methods that have no body, 
+forcing subclasses to override them. 
+%These methods must be overridden in subclasses.
+Classes with abstract methods must also be defined as abstract.
+
+\begin{quote}
+\begin{javalst}
+public abstract class LoudToy {
+    private int volume;
+
+    public LoudToy(int volume) {
+        this.volume = volume;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+        makeNoise();
+    }
+
+    public abstract void makeNoise();
+}
+\end{javalst}
+\end{quote}
+
+
+%%% \quest{15 min}
+
+
+\Q Summarize the differences between \ref{\currfilename} and your answer to \ref{LoudToyV1}.
+
+\begin{answer}
+The class and the \java{makeNoise} method are declared as abstract.
+The definition of \java{makeNoise} ends with a semicolon, rather than an empty body \verb|{}|.
+\end{answer}
+
+
+\Q Open \textit{LoudToy.java} (from \ref{\currfilename}) in your IDE.
+Remove the word \java{abstract} from the class definition.
+What are the two compiler errors?
+
+\begin{answer}
+The type LoudToy must be an abstract class to define abstract methods. \\[1ex]
+The abstract method makeNoise in type LoudToy can only be defined by an abstract class.
+\end{answer}
+
+
+\Q Replace the word \java{abstract} in the class definition, and then remove the word \java{abstract} from the method definition.
+What is the compiler error now?
+
+\begin{answer}
+This method requires a body instead of a semicolon.
+\end{answer}
+
+
+\Q Remove the definition of \java{makeNoise} altogether, and notice the compiler error.
+Why is it necessary to declare this method in \java{LoudToy}?
+
+\begin{answer}[3em]
+The \java{setVolume} method calls the \java{makeNoise} method.
+\end{answer}
+
+
+\Q Undo all changes in \textit{LoudToy.java}, and add the following \java{main} method.
+What is the compiler error message?
+Why do you think Java doesn't allow you to construct a \java{LoudToy}?
+
+\begin{javalst}
+public static void main(String[] args) {
+    LoudToy toy1 = new LoudToy(1);
+    toy1.makeNoise();
+}
+\end{javalst}
+
+\begin{answer}
+The compiler says, ``Cannot instantiate the type LoudToy.''
+Abstract classes cannot be instantiated, because some of their methods aren't implemented.
+\end{answer}
+
+
+\Q Open \textit{ToySheep.java} and rename \java{makeNoise} to \java{makeNoise2}.
+What is the compiler error?
+
+\begin{answer}[3em]
+The type ToySheep must implement the inherited abstract method LoudToy.makeNoise().
+\end{answer}
+
+
+\Q Rename the method back to \java{makeNoise}, but change \java{void} to \java{int}.
+What is the error now?
+
+\begin{answer}[3em]
+The return type is incompatible with LoudToy.makeNoise().
+\end{answer}
+
+
+\Q\label{abstractKey2}
+Explain how an abstract method is like a contract.
+
+\begin{answer}[5em]
+If you inherit an abstract class, you must override the abstract methods exactly as defined.
+This is important because they might be called in the code of the abstract class.
+\end{answer}

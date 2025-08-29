@@ -1,0 +1,59 @@
+% comment out for student version
+\ifdefined\Student\relax\else\def\Teacher{}\fi
+
+\documentclass[12pt]{article}
+
+\title{Introduction to Objects and Debugging}
+\author{Ian Ludden}
+\date{Summer 2025}
+
+\input{../../cspogil.sty}
+
+\begin{document}
+
+\maketitle
+
+Today, we look at how to create and apply custom object types in Java. 
+
+\ifdefined\Student\rolenames{}\fi
+
+\guide{
+    \item I can define objects and related terms, such as field, attribute, method, constructor. 
+    \item I can identify the fields and methods of a Java object. 
+    \item I can create new object types in Java. 
+    \item Given a Java class, I can construct the corresponding UML class diagram. 
+    \item Given a UML class diagram, I can write the corresponding Java code. 
+    \item I can use debugging tools. 
+}{
+    \item Verifying program behavior by tracing code with a debugger. (Critical Thinking)
+}{
+The meta activity is ultimately about process skills and should help with student buy-in. 
+If you are using the \github{Handouts/role-cards-mayfield.pdf}{Role Cards}, have students look at the definitions on the reverse side. 
+Each activity targets specific ``process skill goals'' from these categories. 
+Point out that ``Technical skills'' and ``Leadership'' are probably ranked lower than expected. 
+
+In~\ref{die-class.tex}, students analyze a given Java class representing a six-sided die. 
+
+\ref{circle-class.tex} introduces UML class diagrams and how to translate them into code. 
+
+\ref{debugging.tex} introduces the why/what/how of the debugger and ends with debugging practice. 
+
+Key questions: 
+\ref{dievar}, \ref{circmain}, \ref{debugOptions}
+
+Source files:
+\src{Act04}{Die.java}, 
+\src{Act04}{debugger/DebugMe.java}, 
+\src{Act04}{debugger/DebugMeTest.java}, 
+\src{Act04}{debugger/WhackABug.java}
+}
+
+\input{../Meta/employers.tex}
+\newpage
+\input{die-class.tex} % Replaces BankAccount example
+\newpage
+\input{circle-class.tex} % Replaces RoseString and SmallClassProbs
+\newpage
+\input{debugging.tex} % Based on DebugMe and WhackABug
+
+\end{document}

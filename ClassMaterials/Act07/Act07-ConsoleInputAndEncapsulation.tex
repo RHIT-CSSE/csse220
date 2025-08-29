@@ -1,0 +1,76 @@
+% comment out for student version
+\ifdefined\Student\relax\else\def\Teacher{}\fi
+
+\documentclass[12pt]{article}
+
+\title{Console Input and Encapsulation}
+\author{Ian Ludden}
+\date{Summer 2025}
+
+\input{../../cspogil.sty}
+
+\begin{document}
+
+\maketitle
+
+Today, we start with reading user input from the console, or command line. 
+We then examine encapsulation, one of the pillars of object-oriented design. 
+
+\ifdefined\Student\rolenames{}\fi
+
+\guide{
+    \item I can read various data types %(string, integer, floating point) 
+        from the command line using the built-in \java{Scanner} class. 
+    \item I can explain the difference between 
+        the \java{next()} and \java{nextLine()} Scanner methods. 
+    \item I can add new commands to a command-line interface. 
+    \item I can use GenAI tools to rapidly prototype software designs. 
+    \item I can explain encapsulation and evaluate how well given UML designs achieve it. 
+}{
+    \item Identifying similarities and differences between syntax for 
+        reading different data types from the command line. (Problem Solving)
+    \item Interpreting UML class diagrams. (Information Processing)
+    \item Understanding the context of a problem/system and 
+        applying software design principles. (Problem Solving)
+}{
+\textbf{First hour, before quiz:}
+\ref{scanner.tex} introduces console input using the \java{Scanner} class. 
+Mention that console input will appear in HWVaporSales. 
+\ref{cli.tex} builds on this to talk about command-line interfaces and walks through 
+an example using the familiar Animal Shelter system. 
+In \ref{removeAnimal}, students pair-program a new command, 
+which has the intended side-effect of reminding them how to remove entries from HashMaps. 
+
+\textbf{Second hour:}
+\ref{prototyping-genai.tex} demonstrates using GenAI tools 
+to quickly prototype different UML designs 
+and see their strengths/weaknesses more clearly. 
+\ref{encapsulation.tex} introduces encapsulation (Design Principle 3) 
+and gives teams opportunities to practice applying it, 
+including one in which they use GenAI tools to prototype alternate designs. 
+
+Key questions: 
+\ref{scannerTokens}, 
+\ref{removeAnimal}, 
+\ref{bookMainDiffs}, 
+\ref{functionalButBad}, 
+\ref{encapsAnalogy}, 
+\ref{pizza}
+
+Source files: 
+\src{Act07}{ConsoleInputMain.java},  
+\src{Act07}{Animal.java},
+\src{Act07}{AnimalShelterMain.java}, 
+\src{Act07}{BookMain.java}, 
+\src{Act07}{Book.java}, 
+\src{Act07}{Kid.java}
+}
+
+\input{scanner.tex}
+\newpage
+\input{cli.tex}
+\newpage
+\input{prototyping-genai.tex}
+\input{encapsulation.tex}
+
+\end{document}

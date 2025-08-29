@@ -1,0 +1,140 @@
+\model{Object-Oriented Design Principles 1 and 2}
+
+Object-oriented design principles (OODPs) are guidelines 
+(think, ``rules of thumb'') that help developers write good software. 
+Today, we will get familiar with the first two OODPs from our CSSE220 list 
+(see the OODP reference sheet in Moodle). 
+
+\quest{25 min}
+
+\Q The most important object-oriented design principle (OODP \#1) is\dots
+\begin{answer}[4em]
+functionality! 
+Our design must 
+(a) be able to \emph{store required information} 
+(one/many to one/many relationships), 
+(b) be able to \emph{access the required information} 
+to accomplish tasks, and 
+(c) \emph{not duplicate data} (IDs/object references are OK) 
+\end{answer}
+
+\Q A second priority (OODP \#2) is 
+to structure the design \emph{around the data} to be stored. 
+Based on the examples of classes we have created so far, 
+which \href{https://en.wikipedia.org/wiki/Part\_of\_speech}{part of speech} 
+usually signals we should consider creating a class? 
+\begin{answer}[3em]
+Nouns, because each class is a blueprint for some type of object. 
+Note that we will generally not use plural nouns as class names; 
+instead, we will create multiple instances of an object when needed. 
+\end{answer}
+
+\Q Part (b) of OODP \#2 states, 
+``Classes should have intelligent behaviors (methods) 
+that may operate on their data.''
+Why do you think this is part of OODP \#2? 
+% How does this relate to real-world objects? 
+\begin{answer}[4em]
+It makes sense to put methods that use certain data 
+in the same place as those data for easy access. 
+And most interesting real-world objects 
+have not only internal ``data'' but also behaviors using that data. 
+(For example, a coffee maker is more than just a container for grounds.)
+\end{answer}
+
+\textbf{Interlude: Design Problems}
+
+Throughout the course, we will practice object-oriented design 
+using story problems: (multi-)paragraph descriptions of system requirements. 
+We will practice the design process by 
+\begin{enumerate}
+\item identifying flaws in designs we give you, and 
+\item developing your own design(s), following the OODPs. 
+\end{enumerate}
+Since object-oriented design is such an important skill, 
+there will be several opportunities to practice in class, 
+extra practice problems that you can work through on your own time, 
+and assignment/exam design problems, including your final project design. 
+
+\Q \textbf{Design Problem 1: Book Tracker}
+\begin{quote}
+A website tracks books and the kids that read them. 
+For each book the system stores the name and author. 
+For each kid the system stores name and grade level. 
+The teacher enters when a kid reads a particular book. 
+It should be possible to print a report on a book 
+that includes all kids who have read a particular book 
+(with their grade level). 
+It should be possible to print a report on a kid 
+that includes the books (with authors) a particular kid has read. 
+\end{quote}
+Suppose we start with a class called \java{BookMain} 
+that takes care of user input via three methods: 
+\java{handleNewReading(String bookName, String kidName)}, 
+\java{handlePrintReportForKid(String kidName)}, and 
+\java{handlePrintReportForBook(String bookName)}. 
+\begin{enumerate}
+\item What classes should we add? And with what fields? 
+\begin{answer}[4em]
+Looking at the nouns in the description, 
+``book'' and ``kid'' both make sense to turn into classes. 
+Our \java{Book} class should have \java{name} and \java{author} fields. 
+Our \java{Kid} class should have \java{name} and \java{gradeLevel} fields. 
+\end{answer}
+\item What relationships do we need to represent between classes? 
+\begin{answer}[4em]
+\java{BookMain} should probably keep a list of all \java{Kid} objects 
+and a list of all \java{Book} objects. 
+Each \java{Kid} might need to keep a list of its read \java{Book} objects, and 
+each \java{Book} might need to keep a list of the \java{Kid} objects who have read it. 
+\end{answer}
+
+\item What methods should our new classes have? 
+\begin{answer}[3em]
+Both \java{Kid} and \java{Book} need a \java{printReport()} method. 
+Also, \java{Kid} needs an \java{addBook(Book book)} method, and 
+\java{Book} needs an \java{addKid(Kid kid)} method. 
+\end{answer}
+
+\item Create a UML class diagram for your design using 
+\href{https://www.plantuml.com/plantuml}{PlantUML}. 
+(Remember to add the \texttt{skinparam style strictuml} line at the top.)
+To save your design, click the ``Decode URL'' button, 
+then copy/paste the updated URL from your browser's address bar. 
+\begin{answer}[2em]
+\href{https://www.plantuml.com/plantuml/uml/VO\_FQeGm48VlynJ1avRs3KgH7dffAyKtc3g31lD79h6bb7ttJKHTsOMzXCnlviitgKD4YRCr44Rj9XIqAiG\_m-aKtIqTw0o6e5wz7pzHE\_KF0peotF1loqZQzULtwZLe-L6DclAbMcU-HBlOykGbldbvrrJU7SYE\_R4AJfixWKdhKWYz8F47\_x21wSAM5I3HZX\_Gd6qipd7mSikjUotK\_isdb-AXoERhA9UGDqh5yo62cXtDrfm1}{PlantUML solution}
+\end{answer}
+
+\item\label{key2} Consider \href{https://www.plantuml.com/plantuml/uml/VOzDQiCm48NtSmhXbLtQ6vHYkkYchIc-mTGpsCBwCIEv9OJSFP9ZEu50Dc9uypvzKXqYIfojWJ1gDw6WLI4U3ATJTBTie3COWdhtVln6xTGH1dHakE7\_bf6qwylVj6lGyhCQDUMXMZi\_ebriUV8IFxnyQYeV5h9Zlwo2q-PEODAw548lIFp5VsnWkh9b1KYqupTepZOMvpXukUVMTotK\_isNj-Afo6R8zZI\_Nf9SW9eTpTQS0G00}{Bad Design A}. 
+Applying OODPs 1 and 2, what is wrong with this design? 
+\begin{answer}[3em]
+This design does not function. 
+There is no (sane) way to look up a book 
+for printing a report or for associating with a Kid. 
+\end{answer}
+
+\item\label{key3} Consider \href{https://www.plantuml.com/plantuml/uml/VP3FJe0m3CRlVOg54nXz1OCUzA0ImnjKsi32s4WtDCRuxcu3fj74oz8\_xU\_xrjO7bB0j1loixOg2Y\_BXtN1yHG-v0uD1xzMjS\_CJQgi-O49BXZj-wnb9sx5-YRqE5xvKiwOKDCVCisWRUbwTX3id3vhgVmUIHe4ry7bgnyKeQsCHHa7YHtvb0-UWJpPoThE5oScUhz\_akW4aAl0Vu5GxoPYN8HhS0IcuBsh-B\_3uJiQLwrnTLnTLCloxb59esLAywHS0}{Bad Design B}. 
+Applying OODPs 1 and 2, what is wrong with this design? 
+\begin{answer}[4em]
+This design functions but there is a lot of data duplication, 
+which in general we want to avoid. 
+In particular, the author/title information in Kid is duplicated, 
+and the name/grade level information in the book is duplicated. 
+\end{answer}
+
+\item Revisit your original design. 
+If it had similar flaws to those in Bad Designs A and B, fix them. 
+If it didn't have those design flaws, 
+double-check that your design adheres to OODPs 1 and 2. 
+Provide a link to your final PlantUML design below. 
+\begin{answer}[2em]
+\href{https://www.plantuml.com/plantuml/uml/VO\_FQeGm48VlynJ1avRs3KgH7dffAyKtc3g31lD79h6bb7ttJKHTsOMzXCnlviitgKD4YRCr44Rj9XIqAiG\_m-aKtIqTw0o6e5wz7pzHE\_KF0peotF1loqZQzULtwZLe-L6DclAbMcU-HBlOykGbldbvrrJU7SYE\_R4AJfixWKdhKWYz8F47\_x21wSAM5I3HZX\_Gd6qipd7mSikjUotK\_isdb-AXoERhA9UGDqh5yo62cXtDrfm1}{PlantUML solution}
+\end{answer}
+
+\end{enumerate}
+
+\emph{Aside: If you want a detailed, step-by-step process 
+for parsing story problems and identifying 
+classes, fields, and methods, 
+see the BookTracker slides in today's class materials folder.}
+

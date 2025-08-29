@@ -1,0 +1,153 @@
+\model{Tell, Don't Ask}
+Recall the Pizza Restaurant design problem from a previous class, 
+in which an Order consists of a list of Pizzas, 
+and the cost of each Pizza depends on its toppings. 
+Suppose that the restaurant adds different sizes (diameter, in inches) 
+and a stuffed crust option, and both factors affect Pizza cost. 
+Consider the two partial UML designs below. 
+(Details not related to our current focus have been left out.)
+
+\vspace{2em}
+
+\begin{minipage}{0.45\textwidth}
+Design A: (\href{https://www.plantuml.com/plantuml/uml/LO\_1QiCm44Jl-eeb9wV6Fo1A20HwAhJW\_e1YRy9IMHAxgqDT-kzTvD3YYv1cHe-PisXWhKjqyacf10uBY7v5j9DfQewROX21DvwHuTlrKrvALRnaqPVCxxIkeIiUskNeOSxr6d4Nw\_xbdmTkYnjkq5mAfRjuU2NHvr7PNYSt2AteWPAwWMJKUhlXVE4gwk6QSyIGN7z7\_NXyxuvxG3D7OvZHAFsUOl8VnqfjwuRJuUcmLNDdJBFD\_mK0}{PlantUML source})
+
+\includegraphics[width=\linewidth]{pizza_design_a}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+Design B: (\href{https://www.plantuml.com/plantuml/uml/VOvDYiCm34RtFeN8Qdxm1SmG0jaEj90JEB5IH1tRIFAYARrxJKEttGZ4z-2zGTIprYqQkL8gdlq6ehU8xJ8jhyKiqOl0YGCotCtlahTI5SSi-lNj8EGwHpIFDtUcVVUDivfBeNGH1\_ya-ZSfjwytLcX71vJKM999wxfY6BcAEfXpZkZJ1yTHOVlkfpjCPi0KMkOJ}{PlantUML source})
+
+\includegraphics[width=\linewidth]{pizza_design_b}
+\end{minipage}
+
+\quest{30 min}
+
+\Q The \java{computeCost()} method in Order will look very similar. 
+
+\vspace{1em}
+
+{\small
+\begin{minipage}{0.45\textwidth}
+In Design A: 
+\begin{javalst}
+public double computeCost() {
+    double cost = 0;
+    for (Pizza p : this.pizzas) {
+        cost += this.computeCostForPizza(p);
+    }
+    return cost;
+}
+\end{javalst}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+In Design B:
+\begin{javalst}
+public double computeCost() {
+    double cost = 0;
+    for (Pizza p : this.pizzas) {
+        cost += p.computeCost();
+    }
+    return cost;
+}
+\end{javalst}
+\end{minipage}
+}
+
+Where will the designs' differences appear in code, 
+if not in Order's \java{computeCost()}? 
+\begin{answer}[2em]
+In Design A's \java{Order.computeCostForPizza} method and 
+Design B's \java{Pizza.computeCost} method. 
+\end{answer}
+
+\Q\label{tellVsAsk} Which design is better? Justify your choice. 
+\begin{answer}[6em]
+Design B is better. 
+In Design A, Order is asking the Pizza class for all of its internal data, 
+then calculating the pizza's cost using that data. 
+This violates encapsulation because 
+Pizza doesn't have meaningful methods that operate on its data. 
+It also violates the principle of ``Tell, Don't Ask'', 
+which we will discuss today. 
+\end{answer}
+
+\clearpage
+
+The design principle of ``Tell, Don't Ask'' 
+(see Fig.~\ref{fig:tell_dont_ask}) 
+encourages us to keep operations (methods) 
+that operate on certain data with 
+the class(es) containing that data. 
+Instead of having Class A ask for Class B's internal data 
+and then do something with it, 
+possibly updating Class B's internal data afterward, 
+we should have Class A \emph{tell} Class B to perform that operation. 
+
+\begin{figure}[!ht]
+\centering 
+\includegraphics[width=0.3\linewidth]{tell_dont_ask}
+\caption{``Tell, Don't Ask'' diagram 
+    by \href{https://martinfowler.com/bliki/TellDontAsk.html}{Martin Fowler}.}%
+\label{fig:tell_dont_ask}
+\end{figure}
+
+\Q Asking is especially poor design when you return some internal class 
+that the caller would otherwise not know exists. 
+For example, suppose we have a class called \java{AppRunner}
+with a field called \java{framework} of type \java{LogFramework}, 
+which supports logging errors and user actions to files. 
+One of our methods: 
+\begin{javalst}
+public LogFramework getLogFramework() {
+    return this.framework;
+}
+\end{javalst}
+One of our client's methods: 
+\begin{javalst}
+public void activateVerboseLogging() {
+    LogFramework fw = this.appRunner.getLogFramework();
+    fw.setLevel(5);
+}
+\end{javalst}
+% but this tells our client
+% that the \java{LogFramework} exists, 
+% which they probably don't need to know. 
+How could you refactor to ``Tell, Don't Ask'' and 
+not expose \java{LogFramework} to the client? 
+\begin{answer}[12em]
+(1) Remove the \java{getLogFramework()} method. 
+(2) Change the client's method to:
+\begin{javaans}
+public void activateVerboseLogging() {
+    this.appRunner.activateVerboseLogging();
+}
+\end{javaans}
+(3) Add this method to \java{AppRunner}:
+\begin{javaans}
+public void activateVerboseLogging() {
+    this.framework.setLevel(5);
+}
+\end{javaans}
+Now, our client doesn't know that the \java{LogFramework} class exists. 
+\end{answer}
+
+\note{Interlude: Discuss ``Tell, Don't Ask'' example 
+from the Vapor Sales Manager implementation assignment. See slides.}
+
+\Q\label{redFlags} Based on the ``Tell, Don't Ask'' examples we've seen, 
+list a few \href{https://en.wikipedia.org/wiki/Rule\_of\_thumb}{rules of thumb} 
+for avoiding asking, and/or 
+\href{https://en.wikipedia.org/wiki/Red\_flag\_(idiom)}{red flags} 
+that suggest your design/code might be asking instead of telling. 
+\begin{answer}[5em]
+Answers will vary. 
+One red flag: 
+lots of getter method usage, 
+especially on the same object in quick succession. 
+One rule of thumb: 
+try to push a method as far ``down'' as possible, 
+toward the class(es) containing the involved data. 
+Add ``tell'' methods along the way to transmit data for the command. 
+\end{answer}

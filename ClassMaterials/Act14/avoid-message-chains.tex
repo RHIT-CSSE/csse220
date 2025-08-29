@@ -1,0 +1,129 @@
+\model{Message Chains}
+
+A \emph{message chain} is code in the form 
+\begin{center}
+\java{someObject.someMethod().otherMethod().stillOtherMethod();}
+\end{center}
+
+For example (this is taken from Java AWT/Swing; 
+the details of these classes are not important), 
+your code might have a line like 
+\begin{center}
+\java{myFrame.getBufferStrategy().getCapabilities().getFlip().wait(17);}
+\end{center}
+A rational programmer might split up this message chain 
+by introducing intermediate variables:
+\begin{javalst}
+BufferStrategy strategy = myFrame.getBufferStrategy();
+BufferCapabilities capabilities = strategy.getCapabilities();
+FlipContents flip = capabilities.getFlipContents();
+flip.wait(17);
+\end{javalst}
+
+By splitting the message chain like this, 
+the dependencies become even clearer, 
+as we see in the UML diagram below. 
+Your code knows details \emph{four levels deep} 
+in the called operations! 
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{message_chain}
+
+(\href{https://www.plantuml.com/plantuml/uml/RKzB3e903Dtt57C1FO8Xah1mwyfbXIADyo5jMH3ZtMKaSQAuQVi-UI-jr51i2Xxqpd54mU3KPa\_B56xVoi0TkK0sf4vNq3FvvORMewgxf4dgjD0FU09yqExWJerW85XN9evJtvESJT3eDiCtB8OQHxooPsDIs5BPs7WUwnIDecdft6ygYlGtlCW\_aHN5BZ\_\_0W00}{PlantUML source})
+\end{center}
+
+\quest{30 min}
+
+\Q\label{elimMsgChain} If you could modify these classes however you wanted, 
+how could you eliminate this message chain to reduce dependencies? 
+Draw your updated design on a whiteboard, paper, or in PlantUML, 
+and explain below. 
+\begin{answer}[6em]
+The solution is usually to embed the required feature in 
+the first class in the chain. 
+This insulates the caller from the inner classes. 
+Then the first class might implement the feature itself, 
+or if it still needs to rely on its internals, 
+repeat the message chain removal. 
+For this example, this process gives 
+\href{https://www.plantuml.com/plantuml/uml/ZP2n3e8m48RtFaL77Nm5GoHXS7KmZYSzv69fIU-88SPtjnKYe0jBU\_tkk-PlCnO8qZLMyPrS2m4QpT9RZ6kWyjEfoQ2k2AtXeRxuBkG-5WrAxICjBJ1F-AbU8peMyS84j6QKmb9x1f8DO-cTuMtqHl7GLHM6amGGlFMh1t9euKgMX91N3ALMxfsWaq5\_\_7hVD-psOtWrR0aiGwhbSHBceTG\_Ik8yYChGcVJFRm00}{this design}. 
+\end{answer}
+
+\clearpage
+
+\subsection*{Solar System Problem}
+\textbf{System description:}  
+A Java program draws a minute-by-minute updated diagram 
+of the solar system including all planets and moons. 
+To update the moon's position, 
+the moon's calculations must have 
+the updated position of the planet it is orbiting. 
+The diagram is colored---all planets are drawn the same color and 
+all moons are drawn the same color. 
+However, it needs to be possible to modify the planet color or the moon color. 
+
+\Q Examine the UML diagram below of a possible design for this system. 
+Which dependencies seem essential? 
+Which seem like we might be able to weaken or eliminate them? 
+\begin{center}
+\includegraphics[width=0.7\linewidth]{solar_system_original}
+
+(\href{https://www.plantuml.com/plantuml/uml/ZL792i8m4BtdAq9FLQnd3oA8NXL1\_82X7JGuMKX6YeZ\_RenRiNMvXCcycRSaOQ-C0mzQ1ZuInjEhaW-QX2W9Gf1hI-3Nny2e5w2CF0afTs0gmfdLxi2un7fbWs9bJSvAOs3GhlUScdkefqJvreFRgJAya8shW755O91dbgpF3TQfU9zPM6lQ4-SEYz6UY53vmrhLCdM-Sztif9JkvQnnIyHpOFXJfaFZ6YSfw9IhoQWVIMCjklXRDWRokwHelavHJ6GsokufHJAIzJCvBXwjz--E2urM2nvEFYr6v4f\_0G00}{PlantUML source})
+\end{center}
+\begin{answer}[3em]
+The SolarSystemMain dependencies on Moon and Planet seem unnecessary, 
+but the rest are essential. 
+\end{answer}
+
+\Q Investigate the implementation of this design 
+provided in the \texttt{src/solarSystem} package. 
+For the seemingly unnecessary dependencies, 
+where do they appear in the code? 
+What principle(s) do these dependencies violate? 
+\begin{answer}
+SolarSystemMain depends on Moon and Planet via 
+the message chains in the \java{handleUpdatePlanetColor} 
+and \java{handleUpdateMoonColor} methods. 
+The use of non-enhanced for loops is intentional 
+to highlight the message chains. 
+\end{answer}
+
+\Q Improve the UML design by applying our standard procedure 
+for handling the type of dependency you found. 
+Use the PlantUML source linked above as a starting point, and 
+paste your updated PlantUML link below. 
+(Remember to click the ``Decode URL'' button after making changes.)
+\begin{answer}
+Improved design, derived from mechanically following the advice 
+to propagate the method into the first class of the chain: 
+\href{https://www.plantuml.com/plantuml/uml/bP9DQyCm38Rl-HKcftGiznv6ORJNbaBP3n2EQCta3ooLK4R\_UpqtQTAcxEDYZFHQxoF9\_6bSW0XMiPm8qncDbgEbej04p6hd2UBkn89s3SQfhqAf0xY6SEbjE0fkiDrwDcAygyHOP04RPZVLAaBxJbJj8uI3qJnaFa83Wbi2XxBqv6FbiCsNHytQUpTLd9yWPZn66LVL\_OCK7ohTelgNDff90-VEzsgIBKFdbqkjG20NJWv\_DBWR3p-RnntyaEXPldEPn6RHcED7aWdug\_etN5h4U0LrlL3blEp6KsIoygLKRtKVUlnJwS4eT040}{PlantUML link}
+\end{answer}
+
+\Q Revisit the system description. 
+What do you notice about the color specifications 
+that suggests a further design improvement? 
+\begin{answer}[5em]
+The system description has all planets sharing the same color 
+and all moons sharing the same color, 
+so we only need one \java{planetColor} and one \java{moonColor} 
+for the SolarSystem, which can be stored as fields. 
+The current design duplicates data by storing 
+the same moon color in all Moon objects and 
+the same planet color in all Planet objects. 
+\end{answer}
+
+\Q Refactor the solar system project to match 
+\href{https://www.plantuml.com/plantuml/uml/ZPBB2i8m44Nt-OhGLPLsxq84qQqY53zWQ0SDJXua8wM8\_swDZrOhwYPCvd7lcP1mKCQ11oq3DuJjwLN9Hqr2b0GXoC8I-A89Z7e5oiYJa78FfY9SMEsEZ6kiDpOeLjQah3G61kr6pwwbXtfEbEuykBqgGrVPkWeODmG6UM79-jHW7OFtdfMrPjXn\_e0OyLmdsTxqOxYDon\_8rG3sVFUuORx8HwabCFmf\_5JD-eHP1zYvNHUENhVQ3wS1K2Q\_cR\_uYVxZvVbC9fFalgo85CauaTFyaNh\_3Ur0BtK1}{this design}, 
+which includes the improvement from the previous question. 
+You may get help from GenAI tools. 
+Looking at the methods where you previously saw 
+evidence of unnecessary dependencies, 
+what does the new implementation do? 
+How does it avoid the bad dependencies of the original version? 
+\begin{answer}
+Each of SolarSystemMain's \java{handleUpdatePlanetColor} and 
+\java{handleUpdateMoonColor} methods should now be a one-liner 
+that calls the appropriate setter on \java{this.solarSystem}. 
+This prevents SolarSystemMain from needing to know that 
+the Planet and Moon classes exist. 
+\end{answer}

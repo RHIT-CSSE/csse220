@@ -1,0 +1,69 @@
+\model{Creating Unit Tests}
+
+When creating unit tests, 
+we want to be thorough and consistent. 
+Just like we have object-oriented design principles 
+to guide the design of our source code, 
+we have some guidelines to follow for unit tests. 
+
+Good unit tests are:
+\begin{itemize}
+\item small, testing one thing at a time. 
+\item thorough, covering common cases as well as 
+    edge/boundary/special cases (zero, \java{null}, etc.). 
+\item safeguards against (re)introducing bugs. 
+    (When you find and fix a bug, add a unit test 
+    that would have revealed that defect, 
+    just in case later changes bring it back.)
+\end{itemize}
+
+Poor unit tests might: 
+\begin{itemize}
+\item provide illegal input(s) (e.g., a negative value 
+    when the method \emph{requires} a positive input). 
+\item test multiple things at once (e.g., several different methods). 
+\end{itemize}
+
+\quest{20 min}
+
+\Q Look back at the unit tests in \emph{BasicRectangleTest.java}. 
+Applying the above criteria, assess the quality of these test cases. 
+What are they doing well? How could they be improved? 
+\begin{answer}[3em]
+Pros: testing one method at a time, covering a few different cases, 
+providing only valid inputs. 
+Cons: tests different rectangles within each method, 
+maybe better to separate; 
+does not test edge cases like length/width of zero. 
+\end{answer}
+
+\Q In the \texttt{src/badFrac} folder, 
+briefly skim \emph{BadFrac.java} to discern the purpose of the class 
+and its available methods. 
+
+\Q Following the instructions or demo for your IDE, 
+create JUnit tests for the \java{isReduced()} and \java{add(BadFrac incoming)} methods. 
+Rename these test methods to \java{testIsReduced()} and \java{testAdd()}. 
+(\href{https://www.jetbrains.com/help/idea/create-tests.html?keymap=Windows#create-test-dialog}{Link to IntelliJ instructions})
+
+\Q Split into pairs (or solo, if your team only has three today). 
+Add several \java{BadFrac} objects as fields in the \java{BadFracTest} class. 
+Use a variety of parameters so that you can cover common and edge cases in your unit tests. 
+Then, add calls to appropriate \java{assert} methods 
+inside one of \java{testIsReduced()} or \java{testAdd()}, 
+making sure both are covered by someone on your team. 
+(Hint for \java{testIsReduced()}: 
+In addition to \java{assertEquals}, JUnit provides 
+\java{assertTrue} and \java{assertFalse}.) 
+
+\Q\label{reviewTests} (\textbf{Regroup.}) 
+Review the test cases produced by your teammates 
+for the other method. 
+Applying the guidelines at the start of this model, 
+are these test cases on target? Why/why not? 
+
+\Q Run your test cases as a team and inspect the results. 
+If you wrote good test cases, 
+then they should \emph{not} all pass. 
+As a team, use the results to fix the bugs in \emph{BadFrac.java}. 
+

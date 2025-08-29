@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="hamcrest" type="repository">
+    <properties maven-id="org.hamcrest:hamcrest:3.0">
+      <exclude>
+        <dependency maven-id="org.hamcrest:hamcrest" />
+      </exclude>
+    </properties>
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
