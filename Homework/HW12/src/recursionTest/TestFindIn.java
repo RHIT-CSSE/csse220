@@ -1,62 +1,94 @@
-package recursionPart2Test;
+package recursionTest;
 
 import static org.junit.Assert.*;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
-import recursionPart2.Part2Problems;
-
-@RunWith(RunAllTestsTestRunnerPart2.class)
+import recursion.RunAllTests;
+import recursion.HW12;
 
 public class TestFindIn {
-	
+	private static int testsPassed;
+	private static int numberOfTests;
+
+	@BeforeClass
+	public static void oneTimeSetUp() {
+		testsPassed = 0;
+		numberOfTests = 0;
+	} // oneTimeSetUp
+
+	@AfterClass
+	public static void oneTimeTearDown() {
+		String className = TestFindIn.class.getSimpleName();
+		RunAllTests.outputResults(testsPassed, numberOfTests, className);
+	} // oneTimeTearDown
+
+	// --------------------------------------------
+	// Test: findIn Part A
+	// --------------------------------------------
+
 	@Test
 	public void testFindInA01() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 1, 2, 3 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInA01
 
 	@Test
 	public void testFindInA02() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 2, 3, 4 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInA02
 
 	@Test
 	public void testFindInA03() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 3, 4, 5 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInA03
 
 	@Test
 	public void testFindInA04() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 5, 6, 7 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInA04
 
 	@Test
 	public void testFindInA05() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 6, 7, 8 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInA05
 
 	@Test
 	public void testFindInA06() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 7, 8, 9 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInA06
 
 	@Test
 	public void testFindInA07() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 7, 8, 9 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInA07
 
 	// --------------------------------------------
@@ -67,28 +99,36 @@ public class TestFindIn {
 	public void testFindInB01() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 1, 3, 5 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInB01
 
 	@Test
 	public void testFindInB02() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 1, 5, 9 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInB02
 
 	@Test
 	public void testFindInB03() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 7, 9 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInB03
 
 	@Test
 	public void testFindInB04() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 5, 7, 9 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInB04
 
 	// --------------------------------------------
@@ -99,21 +139,27 @@ public class TestFindIn {
 	public void testFindInC01() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 10, 20, 30 };
-		assertFalse(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertFalse(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInC01
 
 	@Test
 	public void testFindInC02() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 9, 5, 1 };
-		assertFalse(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertFalse(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInC02
 
 	@Test
 	public void testFindInC03() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 8, 9, 10 };
-		assertFalse(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertFalse(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInC03
 
 	// --------------------------------------------
@@ -124,21 +170,27 @@ public class TestFindIn {
 	public void testFindInD01() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 1 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInD01
 
 	@Test
 	public void testFindInD02() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 6 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInD02
 
 	@Test
 	public void testFindInD03() {
 		int[] input = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int[] toFind = new int[] { 9 };
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInD03
 
 	// --------------------------------------------
@@ -155,7 +207,9 @@ public class TestFindIn {
 			input[i] = i;
 			toFind[i] = i;
 		} // end for
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInE01
 
 	// --------------------------------------------
@@ -179,7 +233,9 @@ public class TestFindIn {
 			if (index >= toFindMaxSize)
 				break;
 		} // end for
-		assertTrue(Part2Problems.findIn(input, toFind));
+		numberOfTests++;
+		assertTrue(HW12.findIn(input, toFind));
+		testsPassed++;
 	} // testFindInF01
 
 	// --------------------------------------------
@@ -211,7 +267,9 @@ public class TestFindIn {
 			temp[i] = toFind[i];
 		} // end for
 		temp[(tempMaxSize - 1)] = 10000;
-		assertFalse(Part2Problems.findIn(input, temp));
+		numberOfTests++;
+		assertFalse(HW12.findIn(input, temp));
+		testsPassed++;
 	} // testFindInG01
 
 } // end TestFindIn

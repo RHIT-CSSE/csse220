@@ -1,4 +1,4 @@
-# HWRecursion
+# HW8
 
 ## Overview:
 - This assignment gives you practice writing recursive operations. 
