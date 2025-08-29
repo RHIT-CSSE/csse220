@@ -5,7 +5,7 @@ package debugger;
  * 
  * @author Curt Clifton. Created Sep 21, 2008.  Modified by Claude Anderson Dec 14, 2008.
  */
-public class WhackABug {
+public class WhackABugSol {
 
 	/**
 	 * Runs the buggy methods.

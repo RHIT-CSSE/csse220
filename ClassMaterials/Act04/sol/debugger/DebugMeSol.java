@@ -3,7 +3,7 @@ package debugger;
  * This class provides some buggy methods that you can use to practice with the
  * debugger. 
  */
-public class DebugMe {
+public class DebugMeSol {
 
 	/**
 	 * Returns the number of permutations possible when chosing
@@ -61,7 +61,7 @@ public class DebugMe {
 	 * {1,2,2,1} returns false
 	 * {1,3,1} returns false
 	 *
-	 * @param sentence
+	 * @param input the input array
 	 * @return
 	 */
 	public static boolean isArrayDoubled(int[] input) {

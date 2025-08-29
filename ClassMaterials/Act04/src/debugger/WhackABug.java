@@ -15,8 +15,8 @@ public class WhackABug {
 	 *            Command-line arguments, ignored here.
 	 */
 	public static void main(String[] args) {
-		// TODO: uncomment call to a buggy method, use debugger to find the
-		// bug, repeat
+		// TODO: uncomment call to a buggy method, use debugger to find the bug, repeat
+
 		// hasABug1();
 		// hasABug2();
 		// hasABug3();
