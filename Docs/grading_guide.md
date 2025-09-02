@@ -5,13 +5,13 @@ This document is the official grade guide for CSSE220.
 
 Unless instructed otherwise, assignments are graded in CSSE220 based on the following criteria.
 
-* Completion
-* Correctness
-* Style/Documentation
+* Completion - all parts are answered
+* Correctness - all answers are correct
+* Style/Documentation - see guidelines below
 
-A submission meeting all criteria will receive credit. If a submission is close 
+A submission meeting all criteria will receive credit. If a submission is close (e.g., passes nearly all of the unit tests), you may still receive credit, but you should review the grader's feedback to learn from your mistake(s). 
 
-A submission not meeting these criteria (but with reasonable progress) will be marked as needing revision. You can then 
+A submission not meeting these criteria (but with reasonable progress) will be marked as needing revision. You can then revise your work based on the grader's feedback. Show your revised, complete work to your instructor during drop-in hours to receive credit. 
 
 # Style/Documentation Details
 
