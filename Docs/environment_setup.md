@@ -1,6 +1,6 @@
 # Setting Up Software Development Environment
 
-## Install Java and Eclipse on your computer - do this just 1 time
+## Install Java and IntelliJ on your computer - do this just 1 time
 
 Follow the 
 instructions here: 
