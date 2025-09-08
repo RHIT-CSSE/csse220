@@ -15,11 +15,11 @@ public class ForLoops {
             System.out.println(i);
         }
 
-        System.out.println("\n==== Question 19 ====");
+        System.out.println("\n==== Question 23 ====");
 
         // TODO add your code here
 
-        System.out.println("\n==== Question 22 ====");
+        System.out.println("\n==== Question 26 ====");
 
         // TODO add your code here
     }

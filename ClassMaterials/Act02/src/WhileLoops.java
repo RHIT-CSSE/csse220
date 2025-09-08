@@ -19,7 +19,7 @@ public class WhileLoops {
             number++;
         } while (number <= 10);
 
-        System.out.println("\n==== Question 16 ====");
+        System.out.println("\n==== Question 20 ====");
 
 //        number = 99;
 //        do {
@@ -28,7 +28,7 @@ public class WhileLoops {
 //        } while (number <= 10);
 //        System.out.println(number);
 
-        System.out.println("\n==== Question 17 ====");
+        System.out.println("\n==== Question 21 ====");
 
 //        int i = 0;
 //        while (i < 3)
