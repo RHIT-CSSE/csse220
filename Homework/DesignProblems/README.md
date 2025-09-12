@@ -13,22 +13,23 @@ If you would like to earn incentive points (see syllabus) for practicing with th
 
 # The HWs
 
-The links for the 5 problems are provided below.
+The links for the design problems are provided below.
 
 + [DesignProbHW1 - Online Quizzes](DP1/DP1.md)
 + [DesignProbHW2 - Vapor Sales Manager](DP2/DP2.md)
 + [DesignProbHW3 - Spaceships](DP3/DP3.md)
 + [DesignProbHW4 - Team Budget](DP4/DP4.md)
-+ [DesignProbHW5 - Tag and Inventory](DP5/DP5.md)
++ [DesignProbHW5 - Inventory](DP5/DP5.md)
++ [DesignProbHW6 - Tag](DP6/DP6.md)
 
 # Turn-In Instructions 
 
-You will complete these via GradeScope which is linked from Moodle.
+You will complete these via Gradescope which is linked from Moodle. 
 
 # Grading 
 
 ### Assignment Parts and Points
-Details on the specific parts and point values are provided in GradeScope.
+See Gradescope for details. 
 
 ### Proposed Defective Solutions:
 + When identifying the principles that a defective solution has violated, it is vital
