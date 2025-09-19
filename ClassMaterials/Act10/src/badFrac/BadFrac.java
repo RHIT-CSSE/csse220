@@ -88,8 +88,4 @@ public class BadFrac {
 		int newNum = (this.numerator*incoming.denominator) + (incoming.numerator*this.denominator);
 		return new BadFrac(newNum, commonDen);
 	}
-
-	public BadFrac multiply(BadFrac incoming) {
-		throw new UnsupportedOperationException("Not yet implemented");
-	}
 }
