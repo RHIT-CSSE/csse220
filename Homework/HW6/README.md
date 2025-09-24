@@ -1,4 +1,4 @@
-# HWVaporSalesManager - Implementing Design Problem 2
+# HW6 VaporSalesManager - Implementing Design Problem 2
 
 ## Overview
 In this assignment, you will implement the sales manager for Vapor video games (Design Problem 2). This is a _Pair Programming_ assignment: you will work in a team of two, alternating Navigator and Driver roles so that each person has each role at least twice. Why? Because you will be working on a multi-week team project at the end of this quarter. Now is a good time to start building teamwork skills and looking for possible final project teammates. 
