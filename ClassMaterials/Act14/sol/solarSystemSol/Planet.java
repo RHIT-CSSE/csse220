@@ -1,4 +1,4 @@
-package solarSystem;
+package solarSystemSol;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -15,13 +15,11 @@ import java.util.List;
  */
 public class Planet {
     private final String name;
-    private Color planetColor;
     private final PlanetComputeData planetComputeData;
     private final List<Moon> moons;
 
-    public Planet(String name, Color color, int orbitRadius, double speed, int size) {
+    public Planet(String name, int orbitRadius, double speed, int size) {
         this.name = name;
-        this.planetColor = color;
         this.planetComputeData = new PlanetComputeData(orbitRadius, speed, size);
         this.moons = new ArrayList<>();
     }
@@ -39,7 +37,7 @@ public class Planet {
         }
     }
 
-    public void draw(Graphics graphics, boolean showNames) {
+    public void draw(Graphics graphics, Color planetColor, Color moonColor, boolean showNames) {
         int x = planetComputeData.getX();
         int y = planetComputeData.getY();
         int size = planetComputeData.getSize();
@@ -48,7 +46,7 @@ public class Planet {
         graphics.setColor(planetColor);
         graphics.fillOval(x - size/2, y - size/2, size, size);
 
-        // Draw planet name as tooltip above the planet
+        // Draw planet name as tooltip above the planet if showNames is true
         if (showNames) {
             graphics.setColor(Color.WHITE);
             graphics.drawString(name, x - size/2, y - size/2 - 5);
@@ -56,12 +54,12 @@ public class Planet {
 
         // Draw moons
         for (Moon moon : moons) {
-            moon.draw(graphics, showNames);
+            moon.draw(graphics, moonColor, showNames);
         }
     }
 
     public void setPlanetColor(Color newColor) {
-        this.planetColor = newColor;
+        // Method retained for compatibility, but no longer stores planetColor
     }
 
     public List<Moon> getMoons() {

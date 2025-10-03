@@ -1,4 +1,4 @@
-package solarSystem;
+package solarSystemSol;
 
 import javax.swing.JButton;
 import javax.swing.JColorChooser;
@@ -103,19 +103,13 @@ class SolarSystemMain extends JFrame {
     }
     
     public void handleUpdatePlanetColor(Color newColor) {
-        for (int i = 0; i < solarSystem.getPlanets().size(); i++) {
-            // TODO: Refactor to get rid of this hideous message chain!
-            solarSystem.getPlanets().get(i).setPlanetColor(newColor);
-        }
+        // DONE: Ahh, much better :)
+        solarSystem.setPlanetColor(newColor);
     }
     
     public void handleUpdateMoonColor(Color newColor) {
-        for (int i = 0; i < solarSystem.getPlanets().size(); i++) {
-            for (int j = 0; j < solarSystem.getPlanets().get(i).getMoons().size(); j++) {
-                // TODO: Refactor to get rid of this hideous message chain!
-                solarSystem.getPlanets().get(i).getMoons().get(j).setMoonColor(newColor);
-            }
-        }
+        // DONE: Ahh, much better :)
+        solarSystem.setMoonColor(newColor);
     }
 
     private static void runApp() {

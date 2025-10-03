@@ -1,4 +1,4 @@
-package solarSystem;
+package solarSystemSol;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -13,12 +13,10 @@ import java.awt.Graphics;
  */
 public class Moon {
     private final String name;
-    private Color moonColor;
     private final MoonComputeData moonComputeData;
 
-    public Moon(String name, Color color, int orbitRadius, double speed, int size) {
+    public Moon(String name, int orbitRadius, double speed, int size) {
         this.name = name;
-        this.moonColor = color;
         this.moonComputeData = new MoonComputeData(orbitRadius, speed, size);
     }
 
@@ -26,7 +24,7 @@ public class Moon {
         moonComputeData.updatePosition(planetComputeData, timestamp);
     }
 
-    public void draw(Graphics graphics, boolean showNames) {
+    public void draw(Graphics graphics, Color moonColor, boolean showNames) {
         int x = moonComputeData.getX();
         int y = moonComputeData.getY();
         int size = moonComputeData.getSize();
@@ -35,7 +33,7 @@ public class Moon {
         graphics.setColor(moonColor);
         graphics.fillOval(x - size/2, y - size/2, size, size);
 
-        // Draw moon name as tooltip above the moon
+        // Draw moon name as tooltip above the moon if showNames is true
         if (showNames) {
             graphics.setColor(Color.WHITE);
             graphics.drawString(name, x - size/2, y - size/2 - 5);
@@ -43,7 +41,7 @@ public class Moon {
     }
 
     public void setMoonColor(Color newColor) {
-        this.moonColor = newColor;
+        // Method retained for compatibility, but no longer stores moonColor
     }
 }
 
