@@ -1,8 +1,9 @@
-# HWLinearLightsOut
+# HW9: Event-Based Programming
 
 ## Overview:
-- This exercise will provide more practice with event based programming in Java Swing
-- There is an individual part and a paired part (details are below)
+- This exercise will provide more practice with event-based programming in Java Swing
+- You are ***strongly encouraged*** to work in pairs, but working alone is an option
+- There is a "Manual" part and a "GenAI" part (details are below)
 
 In this assignment, you will practice with event-based programming. This is a _Pair Programming_ assignment: you will work in a team of two, alternating Navigator and Driver roles. 
 
@@ -32,12 +33,13 @@ To earn full credit for the assignment, you must successfully complete the follo
 
 ## To Do:
 
-1. In your IDE, import this project (HWLinearLightsOut) from your local copy of the CSSE220 repo
+1. In your IDE, open this project (HWLinearLightsOut) from your local copy of the CSSE220 repo
 2. Implement the *Manual Part - Ball/Strike Counter* (details below)
 3. Complete the *GenAI Part - Linear Lights Out* (details below)
-4. Upload your team's completed *.java* files and report to the LinearLightsOut dropbox. Make sure the submission includes both team members. 
+4. Upload your team's completed *.java* files and report to the HW9 Gradescope dropbox. Make sure the submission [includes both team members](https://guides.gradescope.com/hc/en-us/articles/21863861823373-Adding-Group-Members-to-a-Submission).  
 
 ## Part 1 - Manual Part: Ball/Strike Counter
+In this part, you should ***not*** use genAI tools or other external resources (StackOverflow, GeeksforGeeks, etc.). You may only use CSSE 220 class materials and the [Java API](https://docs.oracle.com/en/java/javase/21/docs/api/index.html). 
 ### Overview
 Implement the code in the *ballStrikeCounter* package. In this starter project you have been give simple GUI framework for a program 
 that tracks balls and strikes for a baseball game. You need to add the buttons, ActionListeners, and variables necessary to make the code function correctly.
@@ -63,7 +65,7 @@ You may add any new classes or make any changes you feel necessary. The method f
 6. When that happens the user *wins* and the game is over. 
 ### Quick Notes
 - This starter package is providing less *scaffolding* for getting you started, but everything you need to solve the problem has either appeared in previous homework or examples, or is in the Java API documentation for *JButton*. 
-- Take the design phase seriously; the quality of your initial UML design will greatly affect the quality of the GenAI-produced code. 
+- **Take the design phase seriously**; the quality of your initial UML design will greatly affect the quality of the GenAI-produced code. 
 - Remember to ask for help if you get stuck. 
 
 Here's a screenshot of the game in progress:
@@ -119,7 +121,7 @@ Complete the Reflection Phase section of the report.
 1. *JButton*'s *setText()* and *getText()* methods are your friends, use them. 
 2. You do not need to use inheritance to solve this problem. 
 3. You may, however, use inheritance in this project if you wish: extending JFrame, JButton, and/or JPanel, for example. 
-4. Correct ALL compiler warnings: those warnings are telling you that something is incorrect about your code. 
+4. Correct compiler errors/IntelliJ warnings when possible: those warnings are telling you that something is incorrect about your code. 
 
 
 
