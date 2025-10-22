@@ -33,92 +33,92 @@ public class TestCompoundInterest {
 
 	@Test
 	public void testCompoundInterest01() {
-		// Test 1
+        numberOfTests++;
+        // Test 1
 		double expected = 1061.68;
 		double actual = HW12.compoundInterest(1000.0, 6.0, 12);
-		numberOfTests++;
 		assertEquals(expected, actual, DELTA); // accuracy within one cent
 		testsPassed++;
 	} // testCompoundInterest01
 
 	@Test
 	public void testCompoundInterest02() {
-		// Test 2
+        numberOfTests++;
+        // Test 2
 		double expected = 5502.74;
 		double actual = HW12.compoundInterest(5000.0, 4.8, 24);
-		numberOfTests++;
 		assertEquals(expected, actual, DELTA);
 		testsPassed++;
 	} // testCompoundInterest02
 
 	@Test
 	public void testCompoundInterest03_zeroMonths() {
+		numberOfTests++;
 		double expected = 1000.0;
 		double actual = HW12.compoundInterest(1000.0, 5.0, 0);
-		numberOfTests++;
 		assertEquals(expected, actual, DELTA);
 		testsPassed++;
 	} // testCompoundInterest03
 
 	@Test
 	public void testCompoundInterest04_zeroRate() {
+		numberOfTests++;
 		double expected = 2000.0;
 		double actual = HW12.compoundInterest(2000.0, 0.0, 24);
-		numberOfTests++;
 		assertEquals(expected, actual, DELTA);
 		testsPassed++;
 	} // testCompoundInterest04
 
 	@Test
 	public void testCompoundInterest05_negativeRate() {
+		numberOfTests++;
 		double expected = 980.0; // 1000 * (1 - DELTA)^24 ≈ 980.0
 		double actual = HW12.compoundInterest(1000.0, -1.0, 24);
-		numberOfTests++;
 		assertEquals(expected, actual, 0.5);
 		testsPassed++;
 	} // testCompoundInterest05
 
 	@Test
 	public void testCompoundInterest06_negativePrincipal() {
+		numberOfTests++;
 		double expected = -1061.68;
 		double actual = HW12.compoundInterest(-1000.0, 6.0, 12);
-		numberOfTests++;
 		assertEquals(expected, actual, DELTA);
 		testsPassed++;
 	} // testCompoundInterest06
 
 	@Test
 	public void testCompoundInterest07_largeValues() {
+		numberOfTests++;
 		double expected = 1061677.81;
 		double actual = HW12.compoundInterest(1000000.0, 6.0, 12);
-		numberOfTests++;
 		assertEquals(expected, actual, DELTA);
 		testsPassed++;
 	} // testCompoundInterest07
 
 	@Test
 	public void testCompoundInterest08() {
+		numberOfTests++;
 		double expected = 104.27;
 		double actual = HW12.compoundInterest(100.0, 8.4, 6);
-		numberOfTests++;
 		assertEquals(expected, actual, DELTA);
 		testsPassed++;
 	} // testCompoundInterest08
 
 	@Test
 	public void testCompoundInterest09_zeroPrincipal() {
+		numberOfTests++;
 		double expected = 0.0;
 		double actual = HW12.compoundInterest(0.0, 5.0, 12);
-		numberOfTests++;
 		assertEquals(expected, actual, DELTA);
 		testsPassed++;
 	} // testCompoundInterest09
 
 	@Test
 	public void testCompoundInterest10_highRateShortTerm() {
+		numberOfTests++;
 		double expected = 1050.0; // 1000 * (1 + 0.6/12)^1
 		double actual = HW12.compoundInterest(1000.0, 60.0, 1);
-		numberOfTests++;
 		assertEquals(expected, actual, DELTA);
 		testsPassed++;
 	} // testCompoundInterest10
