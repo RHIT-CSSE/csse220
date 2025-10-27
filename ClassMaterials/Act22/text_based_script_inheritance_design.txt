@@ -1,0 +1,97 @@
+
+Step #1 ~ 60 seconds
+
+Create class AbstractDrop and have it extend GameObject
+
+make sure it provides the two abstract methods we need it to guarantee:
+
+public abstract class AbstractDrop extends GameObject {
+
+	public AbstractDrop(String name) {
+		super(name);
+	}
+	public abstract void collideWith(BouncingPlatform p);
+	public abstract void collideWith(UserControlledPlatform p);
+	
+}
+
+Step #2 ~ 90 seconds for first method (then speed up and ask students what needs to be included or not)
+
+Have the two drops (Damaging and Healing) extend it.
+
+Copy code from TextCollisionMain into the appropriate methods in the drops.
+Then explain how we have modified things and want to adjust the variables names (d -> this)
+
+Make sure to have the check for intersects and any print statements.
+
+The intersections method has a random chance for collision, so you will get everything to collide
+if you just do the print statement.
+
+Example method
+
+public void collideWith(UserControlledPlatform userPlatform) {
+	if ( this.intersects(userPlatform ) ) {
+		System.out.println(this + " collided with userPlatform and will be removed");
+	}
+		
+}
+
+
+Step #3
+Modify TextCollisionMain so that it just uses the collideWith methods FOR ONE EXAMPLE
+
+
+Example:
+
+if (o1 instanceof DamagingDrop && o2 instanceof UserControlledPlatform) {
+	if (o1 != o2 ) {
+		DamagingDrop d = (DamagingDrop) o1;
+		UserControlledPlatform p = (UserControlledPlatform) o2;
+		d.collideWith(p);
+	}						
+}
+
+THEN explain that we really don't want the type predicated code at all.
+Have them DELETE THE entire nest for loop
+
+
+Step #4
+Inside of TextCollisionMain 
+Make a list to store drops, another for bouncing platforms, and then a userPlatform variable 
+Adjust the code as needed (comment out or delete the original single list of GameObjects)
+
+Delete the nested for loops and replace with simple elegant solution:
+
+
+for (AbstractDrop d: this.drops) {
+	for (BouncingPlatform p: this.platforms) {
+		d.collideWith(p);
+	} 
+	d.collideWith(userPlatform);
+} 
+
+
+Step #5 - Let students now create the drop discussed at the very beginning of the class
+
+
+(In the solution we have a method to BouncingPlatform makeInvincible(), but to save time we can just do it as a print)
+
+Then we can add the class InvincibilityDrop, which is very similar to the others except:
+
+
+@Override
+public void collideWith(BouncingPlatform platform) {
+	if ( this.intersects(platform ) ) {
+		System.out.println( this + " collided with bouncing platform and will be removed");
+		System.out.println( p + " collided with userPlatform and will be removed");
+
+	}	
+}
+
+
+Step #6 - Show the finished program
+
+Step #7 - Then load the finished verson of the graphics program and let them study it.
+
+NEXT: Advance slides to the Bomberman quiz
+

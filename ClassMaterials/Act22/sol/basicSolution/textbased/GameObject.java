@@ -1,0 +1,22 @@
+package textbased;
+
+public abstract class GameObject {
+	
+	public static final double ODDS_OF_COLLIDING=0.1;
+	private String name;
+	
+	public GameObject(String name) {
+		this.name= name;
+	}
+	
+	// 10% change
+	public boolean intersects( GameObject other) {
+		return Math.random() < ODDS_OF_COLLIDING;
+	}
+	
+	@Override
+	public String toString() {
+		return this.getClass().getSimpleName() + ": " + this.name;
+	}
+
+}
