@@ -16,14 +16,18 @@ Then run the downloaded file and install it in the default location
 
 # Install Eclipse
 
-The thing you want to install is the *Eclipse IDE for Java Developers*:
+The thing you ultimately want to install is the *Eclipse IDE for Java Developers*:
 <a href="https://www.eclipse.org/downloads/packages/">Download it here</a>
 
-Choose the download based on your platform: Windows, macOS, Linux
+We recommend downloading the installer (near the top), then clicking the .exe file it downloads.
 
-Then run the downloaded file and select *Eclipse IDE for Java Developers* and then default choices (if any are presented)
+Choose the appropriate download based on your platform: Windows, macOS, Linux. For x86_64 vs. AArch64, you'll likely choose x86_64. If you're using your Rose Laptop, you'll choose x86_64 since they use Intel processors. You can double check in Windows 11 > Settings > About > Device Specifications > Processor or System type (x64, means you want x86_64; ARM means you'll want AArch64).
 
-After that, just install eclipse following the defaults
+Then run the downloaded file and select *Eclipse IDE for Java Developers* and then default choices (if any are presented).
+
+After that, just install eclipse following the defaults.
+
+You may be asked if you want to exclude Eclipse from Windows Defender searches. We usually recommend not excluding it, but you may choose otherwise.
 
 
 # Run Eclipse and create a workspace
