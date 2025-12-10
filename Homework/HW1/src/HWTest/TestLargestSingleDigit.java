@@ -31,73 +31,73 @@ public class TestLargestSingleDigit {
 	// --------------------------------------------
 	
 	@Test
-	public void testFootballScoreN01() {
+	public void testLargestSingleDigitN01() {
 		numberOfTests++;
 		assertEquals(9, HW1.largestSingleDigit(9));
 		testsPassed++;
-	} // testFootballScoreN0
+	} // testLargestSingleDigitN0
 	
 	@Test
-	public void testFootballScoreN02() {
+	public void testLargestSingleDigitN02() {
 		numberOfTests++;
 		assertEquals(1, HW1.largestSingleDigit(1));
 		testsPassed++;
-	} // testFootballScoreN02
+	} // testLargestSingleDigitN02
 	
 	@Test
-	public void testFootballScoreN03() {
+	public void testLargestSingleDigitN03() {
 		numberOfTests++;
 		assertEquals(8, HW1.largestSingleDigit(12345678));
 		testsPassed++;
-	} // testFootballScoreN03
+	} // testLargestSingleDigitN03
 	
 	@Test
-	public void testFootballScoreN04() {
+	public void testLargestSingleDigitN04() {
 		numberOfTests++;
 		assertEquals(7, HW1.largestSingleDigit(7654321));
 		testsPassed++;
-	} // testFootballScoreN04
+	} // testLargestSingleDigitN04
 	
 	@Test
-	public void testFootballScoreN05() {
+	public void testLargestSingleDigitN05() {
 		numberOfTests++;
 		assertEquals(3, HW1.largestSingleDigit(123321));
 		testsPassed++;
-	} // testFootballScoreN05
+	} // testLargestSingleDigitN05
 	
 	@Test
-	public void testFootballScoreN06() {
+	public void testLargestSingleDigitN06() {
 		numberOfTests++;
 		assertEquals(7, HW1.largestSingleDigit(1234567654321l));
 		testsPassed++;
-	} // testFootballScoreN06
+	} // testLargestSingleDigitN06
 	
 	@Test
-	public void testFootballScoreN07() {
+	public void testLargestSingleDigitN07() {
 		numberOfTests++;
 		assertEquals(1, HW1.largestSingleDigit(10000000));
 		testsPassed++;
-	} // testFootballScoreN07
+	} // testLargestSingleDigitN07
 	
 	@Test
-	public void testFootballScoreN08() {
+	public void testLargestSingleDigitN08() {
 		numberOfTests++;
 		assertEquals(2, HW1.largestSingleDigit(100000002));
 		testsPassed++;
-	} // testFootballScoreN08
+	} // testLargestSingleDigitN08
 
 	@Test
-	public void testFootballScoreN09() {
+	public void testLargestSingleDigitN09() {
 		numberOfTests++;
 		assertEquals(2, HW1.largestSingleDigit(1000000020));
 		testsPassed++;
-	} // testFootballScoreN09
+	} // testLargestSingleDigitN09
 	
 	@Test
-	public void testFootballScoreN10() {
+	public void testLargestSingleDigitN10() {
 		numberOfTests++;
 		assertEquals(3, HW1.largestSingleDigit(130000002));
 		testsPassed++;
-	} // testFootballScoreN10
+	} // testLargestSingleDigitN10
 
 }
