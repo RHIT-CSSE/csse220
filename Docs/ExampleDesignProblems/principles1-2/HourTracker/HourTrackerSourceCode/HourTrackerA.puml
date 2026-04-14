@@ -1,0 +1,17 @@
+@startuml
+class HourTrackerMain {
+~ java.util.List<WorkLog> workLogs
++ void handleStartWork(String,String)
++ void handleStopWork(String,String)
++ void handlePrintPayReport(String)
++ {static} void main(String[])
+}
+
+
+class WorkLog {
+~ String employeeId
+~ String startDateAndTime
+~ String stopDateAndTime
+}
+
+@enduml
