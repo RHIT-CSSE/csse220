@@ -7,4 +7,4 @@ There is a company which has employees, each of which has a salary. There are sp
 ## Solution A
 ![Solution A UML Diagram](EmployeeSalaryA.png)
 
-[PlantUML link](https://www.plantuml.com/plantuml/img/NL0n3i8m3Dpp2giJHV213gWBOYfBnGFSnYeHYLCbwL0X_axIbWXOBFdkT7TsxGEwC1aj_4FnY0uD-31hYjEfVc54hz5xQ53nKm3SaQMcsoWnqDcCsiv4BMfqymuO3Ht0BnkKMNoXi2cI0CeAf9qwJUArUNzyad-ILD36U1xYQf1n87VzHPLlLho2pbfDo15SSxDv17Bk7vUg3PaiuQjGElDuWc9Vv5QY9fRf4sy0)
+[PlantUML link](https://www.plantuml.com/plantuml/uml/NL0n3i8m3Dpp2giJHV213gWBOYfBnGFSnYeHYLCbwL0X_axIbWXOBFdkT7TsxGEwC1aj_4FnY0uD-31hYjEfVc54hz5xQ53nKm3SaQMcsoWnqDcCsiv4BMfqymuO3Ht0BnkKMNoXi2cI0CeAf9qwJUArUNzyad-ILD36U1xYQf1n87VzHPLlLho2pbfDo15SSxDv17Bk7vUg3PaiuQjGElDuWc9Vv5QY9fRf4sy0)
