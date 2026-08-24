@@ -7,7 +7,6 @@ import sll.ILinkedList;
 import sll.SinglyLinkedList;
 import sllAlgorithms.Algorithms;
 
-@RunWith(RunAllTestsTestRunner.class)
 public class TestCheckSorted {
 
 	// --------------------------------------------

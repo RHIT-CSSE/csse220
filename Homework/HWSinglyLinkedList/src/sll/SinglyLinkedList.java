@@ -1,11 +1,11 @@
 package sll;
 
 /**
- * This class provides a basic implementation of a singly linked list. It's
- * motivated by the implementation in Big Java, 5e, ch. 16.1.
- * 
+ * This class provides a basic implementation of a singly linked list.
+ * <br>
+ * It's motivated by the implementation in Big Java, 5e, ch. 16.1.
+ * <br>
  * @author TODO <YOUR_NAME> on <DATE>.
- * 
  *************************************************************************************** 
  *         REQUIRED HELP CITATION
  * 
@@ -15,7 +15,7 @@ package sll;
 public class SinglyLinkedList implements ILinkedList {
 
 	/**
-	 * Be sure to BOTH first and last are kept up to date in all your operations
+	 * Make sure BOTH first and last are kept up to date in all your operations
 	 */
 
 	private ListNode first; // first holds the reference to the first node in the linked list
@@ -68,35 +68,66 @@ public class SinglyLinkedList implements ILinkedList {
 		result += current.element + "] first=[" + this.first.getElement() + "] last=[" + this.last.getElement() + "]";
 		return result;
 	} // toString
-	
-	// --------------------------------------------------------------------------------------------------
-	// From this point on is where you work
-	// --------------------------------------------------------------------------------------------------
-	
+
 	/**
-	 *  WARNING: add(Integer element) must be completed before OTHER tests can pass!
-	 *  
-	 * 	Make sure to complete this method FIRST before trying the other ones.
-	 *  
-	 *  This method should add the given element to the end of this list.
+	 *  (This method is provided to you as a starting point.)
+     *  <br>
+	 *  Add the given element to the end of this list.
+     *  @param element the element to add
 	 */
 	@Override
 	public void add(Integer element) {
-		// TODO 01
-		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+        if (this.first == null) {
+            this.first = new ListNode(element);
+            this.last = this.first;
+        } else {
+            this.last.next = new ListNode(element);
+            this.last = this.last.next;
+        }
 	}
 
-	
-	/**
-	 * WARNING: add(Integer element) must be completed before this test can pass!
-	 * 
-	 * 	Make sure to complete this method SECOND before trying the other ones.
-	 * 
+    /**
+     *  (This method is also provided to you as a starting point.)
+     *  <br>
+     *  Returns the index of the FIRST occurrence of the
+     *  given element, OR -1 if the element is not found in the list.
+     *  @param element the element to search for
+     */
+    @Override
+    public int indexOf(Integer element) {
+        // Set up a call to the recursive helper method
+        return indexOf(element, this.first, 0);
+    }
+
+    /**
+     * Recursive helper method for {@link #indexOf(Integer)}.
+     * @param x the element to search for
+     * @param current the current node being examined
+     * @param nodeCount the index of the current node
+     * @return the index of the first occurrence of x, or -1 if not found
+     */
+    private int indexOf(Integer x, ListNode current, int nodeCount) {
+        if (current == null) {
+            return -1;
+        } else if (current.getElement().equals(x)) {
+            return nodeCount;
+        } else {
+            return indexOf(x, current.next, nodeCount + 1);
+        }
+    }
+
+    // --------------------------------------------------------------------------------------------------
+    // From this point on is where you work
+    // --------------------------------------------------------------------------------------------------
+
+    /**
+	 * 	WARNING: Make sure to complete this method before trying the other ones.
+	 *  <br>
 	 *  This method should return the number of elements in the list.
 	 */
 	@Override
 	public Integer size() {
-		// TODO 02
+		// TODO 01
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	}
 	
@@ -120,7 +151,7 @@ public class SinglyLinkedList implements ILinkedList {
 	 */
 	@Override
 	public void insertAtIndex(int index, Integer element) throws IndexOutOfBoundsException {
-		// TODO 03
+		// TODO 02
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	}
 	
@@ -132,7 +163,7 @@ public class SinglyLinkedList implements ILinkedList {
 	 */
 	@Override
 	public boolean contains(Integer element) {
-		// TODO 04
+		// TODO 03
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	}
 
@@ -146,19 +177,7 @@ public class SinglyLinkedList implements ILinkedList {
 	 */
 	@Override
 	public boolean remove(Integer element) {
-		// TODO 05
-		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
-	}
-	
-	
-	/**
-	 *  This method should return the index of the FIRST occurrence of the 
-	 *  given element, OR -1 if the element is not found in the list.
-	 * 
-	 */
-	@Override
-	public int indexOf(Integer element) {
-		// TODO 06
+		// TODO 04
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	}
 
@@ -172,7 +191,7 @@ public class SinglyLinkedList implements ILinkedList {
 	 */
 	@Override
 	public Integer set(int index, Integer element) throws IndexOutOfBoundsException {
-		// TODO 07
+		// TODO 05
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	}
 }

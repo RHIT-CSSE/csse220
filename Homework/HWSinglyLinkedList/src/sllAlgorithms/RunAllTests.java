@@ -11,16 +11,12 @@ import sllAlgorithmsTest.TestCheckSorted;
 import sllAlgorithmsTest.TestDoubleList;
 import sllAlgorithmsTest.TestIsFibSeq;
 import sllAlgorithmsTest.TestInsertIntoSorted;
-import sllAlgorithmsTest.TestRecursiveGet;
-import sllAlgorithmsTest.TestRecursiveGetExceptionHandling;
-import sllAlgorithmsTest.TestRemoveLongNumbers;
 import sllAlgorithmsTest.RunAllTestsTearDown;
 
 
 @RunWith(Suite.class)
-@SuiteClasses({TestArrayListOf1s.class, TestInsertIntoSorted.class, 
-	TestRemoveLongNumbers.class, TestCheckSorted.class, TestDoubleList.class, TestIsFibSeq.class,
-	TestRecursiveGet.class, TestRecursiveGetExceptionHandling.class, RunAllTestsTearDown.class})
+@SuiteClasses({TestArrayListOf1s.class, TestInsertIntoSorted.class, TestCheckSorted.class,
+        TestDoubleList.class, TestIsFibSeq.class, RunAllTestsTearDown.class})
 public class RunAllTests {
 	
 	static public int allTestsPassedCountV1 = 0;

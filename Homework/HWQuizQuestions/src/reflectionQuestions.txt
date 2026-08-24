@@ -3,17 +3,17 @@ Reflection Questions:
 1.A In your implementation could you replace each Question class with just a Java String (yes or no)? 
 
 
-1.B Explain why or why not? (2-3 sentences)
+1.B Explain why or why not (2-3 sentences)
 
 
 
 2.A. What data type did you use to represent the 1-to-many relationship between QuizMain and Question? (provide the type declaration)
 
 
-2.B. What is another data type could you have used? (provide the type declaration) 
+2.B. What is another data type you could have used? (provide the type declaration) 
 
 
 
-2.C. Would that have made your implementation easier or harder to implement? Explain why? (2-3 sentences)
+2.C. Would that have made your implementation easier or harder to implement? Explain why (2-3 sentences)
 
 

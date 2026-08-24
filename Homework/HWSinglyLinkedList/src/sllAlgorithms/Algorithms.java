@@ -32,8 +32,31 @@ public class Algorithms {
 	 * So arraylistOf1s({123,456,1, 21}) yields [123, 1]
 	 */
 	public static SinglyLinkedList arraylistOf1s(int[] incomingA) {
+        // TODO 01: delete this statement and implement this operation.
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // arraylistOf1s
+
+    /**
+     * Returns whether the given incoming linked list is sorted in increasing order.
+     *
+     * So checkSorted([1,2,3]) yields true.
+     * checkSorted ([1,3,2]) yields false.
+     * checkSorted ([]) yields true.
+     */
+    public static boolean checkSorted(ILinkedList incomingList) {
+        // TODO 02: delete this statement and implement this operation.
+        throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+    } // checkSorted
+
+    /**
+     * Duplicates all elements of the incoming linked list.
+     *
+     * So doubleList([1, 2, 3]) yields [1, 1, 2, 2, 3, 3].
+     */
+    public static void doubleList(ILinkedList incomingList) {
+        // TODO 03: delete this statement and implement this operation.
+        throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
+    } // doubleList
 
 	/**
 	 * Takes a list of numbers in sorted (ascending) order and a number to add.
@@ -44,38 +67,9 @@ public class Algorithms {
 	 * 
 	 */
 	public static void insertIntoSorted(ILinkedList list, int numberToAdd) {
+        // TODO 04: delete this statement and implement this operation.
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // insertIntoSorted
-
-	/**
-	 * Takes an incoming linked list and removes all numbers longer than 3 digits from the
-	 * list.
-	 * 
-	 * So removeLongNumbers([1,1000,3,99999,999]) yields [1, 3, 999]
-	 */
-	public static void removeLongNumbers(ILinkedList incomingList) {
-		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
-	} // removeLongNumbers
-
-	/**
-	 * Returns whether the given incoming linked list is sorted in increasing order.
-	 * 
-	 * So checkSorted([1,2,3]) yields true.
-	 * checkSorted ([1,3,2]) yields false.
-	 * checkSorted ([]) yields true.
-	 */
-	public static boolean checkSorted(ILinkedList incomingList) {
-		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
-	} // checkSorted
-
-	/**
-	 * Duplicates all elements of the incoming linked list.
-	 * 
-	 * So doubleList([1, 2, 3]) yields [1, 1, 2, 2, 3, 3].
-	 */
-	public static void doubleList(ILinkedList incomingList) {
-		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
-	} // doubleList
 
 	/**
 	 * Returns whether the incoming linked list stores the values of a valid Fibonacci sequence.
@@ -87,21 +81,38 @@ public class Algorithms {
 	 * + 0. [1,4,5,9,14] is a fibonacci sequence.
 	 */
 	public static boolean isFibSeq(ILinkedList incomingList) {
+        // TODO 05: delete this statement and implement this operation.
 		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
 	} // isFibonacciSequence
 
-	/**
-	 * Gets the value of the ith node, relative to the node passed in the parameters.
-	 * 
-	 * If i==0, return the value of the given node.
-	 * 
-	 * If you are passed an invalid index you should throw an IndexOutOfBoundsException.
-	 * 
-	 */
-	public static Integer recursiveGet(int index, IListNode iListNode) {
-		// Use RECURSION to solve this problem.
-		// It is not necessary, but you may utilize a helper operation
-		throw new UnsupportedOperationException("TODO: delete this statement and implement this operation.");
-	} // recursiveGet
+
+
+//  This problem has been removed for 202610 (Fall 2025).
+//	/**
+//	 * Takes an incoming linked list and removes all numbers longer than 3 digits from the
+//	 * list.
+//	 *
+//	 * So removeLongNumbers([1,1000,3,99999,999]) yields [1, 3, 999]
+//	 */
+//	public static void removeLongNumbers(ILinkedList incomingList) {
+//		throw new UnsupportedOperationException("Not yet implemented.");
+//	} // removeLongNumbers
+
+
+
+//  This problem has been removed for 202610 (Fall 2025).
+//	/**
+//	 * Gets the value of the ith node, relative to the node passed in the parameters.
+//	 *
+//	 * If i==0, return the value of the given node.
+//	 *
+//	 * If you are passed an invalid index you should throw an IndexOutOfBoundsException.
+//	 *
+//	 */
+//	public static Integer recursiveGet(int index, IListNode iListNode) {
+//		// Use RECURSION to solve this problem.
+//		// It is not necessary, but you may utilize a helper operation
+//		throw new UnsupportedOperationException("Not yet implemented.");
+//	} // recursiveGet
 
 }

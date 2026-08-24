@@ -5,7 +5,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import sllAlgorithms.Algorithms;
 
-@RunWith(RunAllTestsTestRunner.class)
 public class TestArrayListOf1s {
 
 	// --------------------------------------------

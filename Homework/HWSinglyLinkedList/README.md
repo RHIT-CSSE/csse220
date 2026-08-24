@@ -1,31 +1,25 @@
-# HWSinglyLinkedList
+# HWSinglyLinkedList: Singly Linked List Implementation and Algorithms
 
 ## Overview:
 - This exercise provides you with the opportunity to implement and use a singly linked list
 - There are two parts:
-<br> -- Part 1: *sll* package contains 7 unimplemented operations. These must be done first, this is where you will implement your singly linked list
-<br> -- Part 2: *sslAlgorithms* package contains 7 unimplemented operations. These must be done second. It depends on the *sll* package. 
-<br>    These algorithms will give you practice at being a client programmer of the singly linked list
-
-
+<br> -- Part 1: *sll* package contains several unimplemented operations. These must be done first, this is where you will implement your singly linked list
+<br> -- Part 2: *sslAlgorithms* package contains several unimplemented operations. These must be done second, because they depend on the *sll* package. 
+<br>    These algorithms will give you practice at being a client programmer of the singly linked list (which is what you will need in CSSE 230 and beyond)
+  
 - There is no documentation requirement for this assignment
 - This is an individual exercise/assignment
 
 # Rubric
 
-- All JUnit tests for each operation must succeed in order to earn a 100% for the assignment
-- Your score for this assignment = (PercentageJUnitTestsPassed * SLLTotalPoints)
-- For example:
-  - if PercentageJUnitTestsPassed = 80%
-  - and if SLLTotalPoints = 25
-  - then Your Score = (.80 * 25) = 20 points
+- To earn credit for this assignment, you must pass nearly all JUnit tests
 
 ## To do:
 
-1. In Eclipse, import this project (HWSinglyLinkedList) from your local copy of the CSSE220 repo
-2. Implement the 7 operations in *SinglyLinkedList.java* found in the *sll* package
+1. Open this project (HWSinglyLinkedList) in IntelliJ from your local copy of the CSSE220 repo
+2. Complete the TODOs in *SinglyLinkedList.java* found in the *sll* package
 3. Run the included *RunAllTests.java* in the *sll* package to ensure your solution passes all the unit tests
-3. Implement the 7 operations in *Algorithms.java* found in the *sllAlgorithms* package
+3. Complete the TODOs in *Algorithms.java* found in the *sllAlgorithms* package
 3. Run the included *RunAllTests.java* in the *sllAlgorithms* package to ensure your solution passes all the unit tests
 4. Upload your completed *SinglyLinkedList.java* and *Algorithms.java* files to this assignment's Dropbox
 

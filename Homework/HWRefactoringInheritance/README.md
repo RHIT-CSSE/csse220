@@ -1,33 +1,31 @@
-# HWRefactoringInheritance
+# HWRefactoringInheritance: Refactoring Inheritance
 
 ## Overview:
 - In this assignment you are given some code that is poorly designed
 - This exercise will provide practice with software refactoring in order to reduce or eliminate code duplication
-- This is an individual exercise
+- You may work solo or in pairs
 
 ## To do:
 
-1. In Eclipse, import this project (HWRefactoringInheritance) from your local copy of the CSSE220 repo
-2. Design (Part 1) Come up with an improved design that uses inheritance to reduce code duplication
-3. Refactor (Part 2) Implement the new design by refactoring code
-4. Extend (Part 3 + 4) Add on additional functionality using inherited functionality from the recently improved classes/design
-5. Upload all of your *.java* files to this assignment's Dropbox
+1. Design (Part 1) Come up with an improved design that uses inheritance to reduce code duplication
+2. Refactor (Part 2) Implement the new design by refactoring code
+3. Extend (Part 3 + 4) Add on additional functionality using inherited functionality from the recently improved classes/design
+4. Upload all of your *.java* files to this assignment's Gradescope dropbox
 
 Run the code and ensure you see the functionality in the video below and then go ahead and get started
 
 ## Rubric:
 
-To earn a 100% for the assignment you must do the following tasks:
+To earn credit for the assignment you must do the following tasks:
 
 0. (no deliverable) Study the provided code and watch video explaining project  
-1. (35% of grade) Refactor the code for Particle and TagPlayer and create a super class
-2. (35% of grade) Create and complete the ChargedParticle class and modify SimulationViewer and SimulationComponent
-3. (30% of grade) Complete the Person class and modify SimulationViewer and SimulationComponent
+1. Refactor the code for Particle and TagPlayer and create a super class
+2. Create and complete the ChargedParticle class and modify SimulationViewer and SimulationComponent
+3. Complete the Person class and modify SimulationViewer and SimulationComponent
 
 
 ## Starting Point
-Much of this code is relevant to your final project and should be a good preparation 
-for both Exam2 and getting your project started. 
+Much of this code is relevant to your final project and should be a good preparation. 
 
 Starting UML for the classes we want to focus our attention on:
 
@@ -78,9 +76,10 @@ you can decide what all is placed in it and whether it should/needs to be abstra
 Be VERY careful when looking at the code and make sure to see where there are differences
 between the classes. MOST of the code should now be in your super class. 
 After refactoring, everything should still work as it started (test it by running it again).
-To easily reset your classes in Eclipse (in case you delete something on accident)
-you can Right Click->Replace With->HEAD Revision
-(Just be sure to make a backup copy if you want to keep your changes!)
+To easily reset your classes in IntelliJ (in case you delete something on accident), 
+you can Right Click->Git->Reset HEAD (or rollback). 
+Just be sure to make a backup copy if you want to keep your changes! 
+![IntelliJ Git Reset Screenshot](git-reset.png)
 
 
 ### *BE SURE NOT TO SHADOW VARIABLES* - This means that subclasses (Particle, TagPlayer) should NOT duplicate variable names from parent classes (SimulationObject)!
@@ -96,6 +95,8 @@ you can Right Click->Replace With->HEAD Revision
 
 Watch this video to see a nice trick to generating getters and setters:
 [Generating setters and getters in Eclipse](https://rose-hulman.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=91e09e7d-6f73-4298-b801-aba6002b99fb)
+To do the same in IntelliJ, you can right-click on an instance variable name, then select `Generate...`, and `Getter and Setter`. 
+![Screenshot Generating Getter and Setter in IntelliJ](generate-getter-setter.png)
 
 
 # Part 3: Extending the Particle class

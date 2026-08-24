@@ -6,8 +6,6 @@ import org.junit.runner.RunWith;
 import sll.ILinkedList;
 import sll.SinglyLinkedList;
 
-@RunWith(RunAllTestsTestRunner.class)
-
 public class TestSet {
 
 	@Test

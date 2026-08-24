@@ -1,7 +1,0 @@
-Version 2.0
-params:2.0,4.0,1.0,1.5,2.0,5.0
-buildAirportMap:2.0
-mostCommonCharacter:10.0
-getNumberOfCoursesToTake:6.0
-getTemperatureDropCity:6.0
-reverseHashmap:6.0

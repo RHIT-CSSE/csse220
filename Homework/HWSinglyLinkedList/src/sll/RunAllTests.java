@@ -7,9 +7,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 import sllTest.RunAllTestsTearDown;
-import sllTest.TestAdd;
 import sllTest.TestContains;
-import sllTest.TestIndexOf;
 import sllTest.TestInsertAtExceptionHandling;
 import sllTest.TestInsertAtIndex;
 import sllTest.TestRemove;
@@ -19,9 +17,9 @@ import sllTest.TestSize;
 
 
 @RunWith(Suite.class)
-@SuiteClasses({TestAdd.class, TestSize.class, TestInsertAtIndex.class,
-	TestInsertAtExceptionHandling.class, TestContains.class, TestRemove.class,
-	TestIndexOf.class, TestSet.class, TestSetExceptionHandling.class, RunAllTestsTearDown.class})
+@SuiteClasses({TestSize.class, TestInsertAtIndex.class,
+        TestInsertAtExceptionHandling.class, TestContains.class, TestRemove.class,
+        TestSet.class, TestSetExceptionHandling.class, RunAllTestsTearDown.class})
 public class RunAllTests {
 	
 	static public int allTestsPassedCount = 0;

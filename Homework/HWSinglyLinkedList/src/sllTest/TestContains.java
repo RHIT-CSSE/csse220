@@ -7,9 +7,6 @@ import org.junit.runner.RunWith;
 import sll.ILinkedList;
 import sll.SinglyLinkedList;
 
-
-@RunWith(RunAllTestsTestRunner.class)
-
 public class TestContains {
 
 	private static final Integer i2 = 2;
