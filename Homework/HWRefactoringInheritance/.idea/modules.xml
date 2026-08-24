@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HW11.iml" filepath="$PROJECT_DIR$/HW11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HWRefactoringInheritance.iml" filepath="$PROJECT_DIR$/HWRefactoringInheritance.iml" />
     </modules>
   </component>
 </project>
