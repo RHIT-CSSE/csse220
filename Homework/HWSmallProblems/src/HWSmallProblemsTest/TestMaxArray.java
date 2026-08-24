@@ -1,12 +1,12 @@
-package HW1Test;
+package HWSmallProblemsTest;
 import static org.junit.Assert.*;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import HW1.HW1;
-import HW1.RunAllTests;
+import HWSmallProblems.HWSmallProblems;
+import HWSmallProblems.RunAllTests;
 
 public class TestMaxArray {
 	private static int testsPassed;
@@ -28,7 +28,7 @@ public class TestMaxArray {
 		numberOfTests++;
 		int[] a = { 1, 2, 3 };
 		int[] b = { 4, 5, 6 };
-		assertArrayEquals(b, HW1.maxArray(a, b));
+		assertArrayEquals(b, HWSmallProblems.maxArray(a, b));
 		testsPassed++;
 	}
 	
@@ -38,7 +38,7 @@ public class TestMaxArray {
 		int[] b = { 4, 5, 6 };
 		int[] c = { 7, 1, 6 };
 		int[] d = { 7, 5, 6 };
-		assertArrayEquals(d, HW1.maxArray(b, c));
+		assertArrayEquals(d, HWSmallProblems.maxArray(b, c));
 		testsPassed++;
 	}
 

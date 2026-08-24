@@ -1,4 +1,4 @@
-package HW1Test;
+package HWSmallProblemsTest;
 
 import static org.junit.Assert.*;
 
@@ -6,8 +6,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import HW1.HW1;
-import HW1.RunAllTests;
+import HWSmallProblems.HWSmallProblems;
+import HWSmallProblems.RunAllTests;
 
 public class TestDistanceFromOrigin {
 
@@ -28,28 +28,28 @@ public class TestDistanceFromOrigin {
 	@Test
 	public void testDistanceFromOriginN01() {
 		numberOfTests++;
-		assertEquals(1, HW1.distanceFromOrigin(-1, 0), .001);
+		assertEquals(1, HWSmallProblems.distanceFromOrigin(-1, 0), .001);
 		testsPassed++;
 	}
 
 	@Test
 	public void testDistanceFromOriginN02() {
 		numberOfTests++;
-		assertEquals(108.894, HW1.distanceFromOrigin(77, 77), .001);
+		assertEquals(108.894, HWSmallProblems.distanceFromOrigin(77, 77), .001);
 		testsPassed++;
 	}
 
 	@Test
 	public void testDistanceFromOriginN03() {
 		numberOfTests++;
-		assertEquals(5, HW1.distanceFromOrigin(-3, -4), .001);
+		assertEquals(5, HWSmallProblems.distanceFromOrigin(-3, -4), .001);
 		testsPassed++;
 	}
 
 	@Test
 	public void testDistanceFromOriginN04() {
 		numberOfTests++;
-		assertEquals(11.1803, HW1.distanceFromOrigin(5, -10), .001);
+		assertEquals(11.1803, HWSmallProblems.distanceFromOrigin(5, -10), .001);
 		testsPassed++;
 	}
 

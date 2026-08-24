@@ -1,4 +1,4 @@
-package HW1Test;
+package HWSmallProblemsTest;
 
 import static org.junit.Assert.*;
 
@@ -6,8 +6,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import HW1.HW1;
-import HW1.RunAllTests;
+import HWSmallProblems.HWSmallProblems;
+import HWSmallProblems.RunAllTests;
 
 public class TestSecondDigit5 {
 
@@ -28,56 +28,56 @@ public class TestSecondDigit5 {
 	@Test
 	public void testSecondDigit5N01() {
 		numberOfTests++;
-		assertTrue(HW1.secondDigit5(50));
+		assertTrue(HWSmallProblems.secondDigit5(50));
 		testsPassed++;
 	}
 
 	@Test
 	public void testSecondDigit5N02() {
 		numberOfTests++;
-		assertTrue(HW1.secondDigit5(55));
+		assertTrue(HWSmallProblems.secondDigit5(55));
 		testsPassed++;
 	}
 
 	@Test
 	public void testSecondDigit5N03() {
 		numberOfTests++;
-		assertTrue(HW1.secondDigit5(450));
+		assertTrue(HWSmallProblems.secondDigit5(450));
 		testsPassed++;
 	}
 
 	@Test
 	public void testSecondDigit5N04() {
 		numberOfTests++;
-		assertTrue(HW1.secondDigit5(11251));
+		assertTrue(HWSmallProblems.secondDigit5(11251));
 		testsPassed++;
 	}
 
 	@Test
 	public void testSecondDigit5N05() {
 		numberOfTests++;
-		assertTrue(HW1.secondDigit5(555555));
+		assertTrue(HWSmallProblems.secondDigit5(555555));
 		testsPassed++;
 	}
 
 	@Test
 	public void testSecondDigit5N06() {
 		numberOfTests++;
-		assertFalse(HW1.secondDigit5(555505));
+		assertFalse(HWSmallProblems.secondDigit5(555505));
 		testsPassed++;
 	}
 
 	@Test
 	public void testSecondDigit5N07() {
 		numberOfTests++;
-		assertFalse(HW1.secondDigit5(5));
+		assertFalse(HWSmallProblems.secondDigit5(5));
 		testsPassed++;
 	}
 
 	@Test
 	public void testSecondDigit5N08() {
 		numberOfTests++;
-		assertFalse(HW1.secondDigit5(230));
+		assertFalse(HWSmallProblems.secondDigit5(230));
 		testsPassed++;
 	}
 }

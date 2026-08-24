@@ -1,4 +1,4 @@
-package HW1Test;
+package HWSmallProblemsTest;
 
 import static org.junit.Assert.*;
 
@@ -6,8 +6,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import HW1.HW1;
-import HW1.RunAllTests;
+import HWSmallProblems.HWSmallProblems;
+import HWSmallProblems.RunAllTests;
 
 public class TestPowersOfTwo {
 
@@ -29,7 +29,7 @@ public class TestPowersOfTwo {
 	public void testPowersOfTwoN01() {
 		numberOfTests++;
 		int[] a = { 1, 2, 4, 8 };
-		assertArrayEquals(a, HW1.powersOfTwo(3));
+		assertArrayEquals(a, HWSmallProblems.powersOfTwo(3));
 		testsPassed++;
 	}
 
@@ -37,7 +37,7 @@ public class TestPowersOfTwo {
 	public void testPowersOfTwoN02() {
 		numberOfTests++;
 		int[] b = { 1, 2, 4, 8, 16, 32, 64, 128 };
-		assertArrayEquals(b, HW1.powersOfTwo(7));
+		assertArrayEquals(b, HWSmallProblems.powersOfTwo(7));
 		testsPassed++;
 	}
 
@@ -45,7 +45,7 @@ public class TestPowersOfTwo {
 	public void testPowersOfTwoN03() {
 		numberOfTests++;
 		int[] c = { 1 };
-		assertArrayEquals(c, HW1.powersOfTwo(0));
+		assertArrayEquals(c, HWSmallProblems.powersOfTwo(0));
 		testsPassed++;
 	}
 
@@ -53,7 +53,7 @@ public class TestPowersOfTwo {
 	public void testPowersOfTwoN04() {
 		numberOfTests++;
 		int[] d = {};
-		assertArrayEquals(d, HW1.powersOfTwo(-200));
+		assertArrayEquals(d, HWSmallProblems.powersOfTwo(-200));
 		testsPassed++;
 	}
 }

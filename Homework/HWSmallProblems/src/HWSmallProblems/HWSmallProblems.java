@@ -1,4 +1,4 @@
-package HW1;
+package HWSmallProblems;
 
 /**
  ****************************************************************************************
@@ -8,7 +8,7 @@ package HW1;
  ****************************************************************************************
  *
  * <dl>
- * <dt>Class:</dt><dd>HW1</dd>
+ * <dt>Class:</dt><dd>HWSmallProblems</dd>
  *
  * <dt>Purpose:</dt>
  * <dd>The problems in this assignment give you practice with
@@ -30,7 +30,7 @@ package HW1;
  * @author CSSE Faculty
  */
 
-public class HW1 {
+public class HWSmallProblems {
 
 	/**
 	 * Determine if a given positive integer has a 5 in the second rightmost digit

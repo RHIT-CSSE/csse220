@@ -1,4 +1,4 @@
-package HW1;
+package HWSmallProblems;
 
 import java.sql.Timestamp;
 
@@ -6,12 +6,12 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import HW1Test.TestDistanceFromOrigin;
-import HW1Test.TestFootballScore;
-import HW1Test.TestMaxArray;
-import HW1Test.TestPow;
-import HW1Test.TestPowersOfTwo;
-import HW1Test.TestSecondDigit5;
+import HWSmallProblemsTest.TestDistanceFromOrigin;
+import HWSmallProblemsTest.TestFootballScore;
+import HWSmallProblemsTest.TestMaxArray;
+import HWSmallProblemsTest.TestPow;
+import HWSmallProblemsTest.TestPowersOfTwo;
+import HWSmallProblemsTest.TestSecondDigit5;
 
 @RunWith(Suite.class)
 
