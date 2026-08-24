@@ -4,6 +4,7 @@
 
 - The primary objective of this assignment is to get working smoothly the process of checking out homework projects Eclipse and submitting your .java files correctly to this assignment's Gradescope Dropbox
 - This is an individual exercise/assignment
+- Use of external resources, including genAI tools, is ***not*** permitted on this assignment
 
 ## Rubric:
 
