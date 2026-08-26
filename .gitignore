@@ -2,3 +2,5 @@ _site
 .gitignore
 *.class
 bin/
+vcs.xml
+
