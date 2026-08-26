@@ -17,8 +17,8 @@ repo](https://github.com/RHIT-CSSE/csse220.git). To access starter code for in-c
 5. Select *File > Clone Repository...*, then copy/paste `https://github.com/RHIT-CSSE/csse220.git` into the "Repository URL" field. 
 6. Optionally adjust the "Local path" field. Note the local path. 
 7. Click the "Clone" button. 
-8. **(For Dr. Ludden's sections only)** In the top middle of GitHub Desktop, select the dropdown that says "Current branch: master" and select the `sig-2025` branch. 
 
 ## Check your local copy
-9. Open your local copy of the csse220 repo by opening Windows Explorer (shortcut: `Win+E`) and navigating to the local path you saved in step 6. (If you forgot, check `C:\Users\USERNAME\OneDrive - Rose-Hulman Institute of Technology\Documents\GitHub\csse220`, replacing `USERNAME` with yours.)
-10. Verify that `csse220/Docs/getting_the_repo.md` matches this document. If so, you have successfully cloned the repo. If not, ask your instructor, a TA, or a classmate for help. 
+8. Open your local copy of the csse220 repo by opening Windows Explorer (shortcut: `Win+E`) and navigating to the local path you saved in step 6. (If you forgot, check `C:\Users\USERNAME\OneDrive - Rose-Hulman Institute of Technology\Documents\GitHub\csse220`, replacing `USERNAME` with yours.)
+9. Verify that `csse220/Docs/getting_the_repo.md` matches this document. If so, you have successfully cloned the repo. If not, ask your instructor, a TA, or a classmate for help. 
+
