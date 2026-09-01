@@ -34,7 +34,7 @@ public class WelcomeToJava {
         System.out.println(x);
         System.out.println(xSquared);
 
-        // === Model 2 ===
+        // === Part 2 ===
         /*
          * Predict the output when you run these two lines, 
          * then uncomment them and run to confirm.
