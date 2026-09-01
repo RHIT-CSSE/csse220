@@ -1,0 +1,287 @@
+%\ProvidesPackage{cspogil}
+
+% metadata
+\makeatletter
+\newcommand{\thetitle}{\@title}
+\newcommand{\theauthor}{\@author}
+\newcommand{\thedate}{\@date}
+\makeatother
+
+% fonts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+
+% spacing
+\usepackage[margin=2cm]{geometry}
+\renewcommand{\arraystretch}{1.4}
+\setlength{\parindent}{0pt}
+
+% orphans and widows
+\clubpenalty=10000
+\widowpenalty=10000
+\pagestyle{empty}
+
+% figures and tables
+\usepackage{graphicx}
+\graphicspath{{fig/}{../Meta/}}
+\usepackage{ifthen}
+\usepackage{multicol}
+%\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+% fixed-width columns
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% syntax colors (based on Eclipse)
+\usepackage[svgnames,table]{xcolor}
+\definecolor{bgcolor}{HTML}{FAFAFA}
+\definecolor{builtin}{HTML}{900090}
+\definecolor{comment}{HTML}{3F7F5F}
+\definecolor{keyword}{HTML}{7F0055}
+\definecolor{strings}{HTML}{2A00FF}
+\definecolor{answers}{HTML}{A9A9A9}
+
+% text highlighting
+%\usepackage{soul}
+%\sethlcolor{Yellow}
+
+% table backgrounds
+\newcommand{\tr}{\bf\cellcolor{Orange!10}}
+\newcommand{\tg}{\bf\cellcolor{Gray!10}}
+
+% special characters
+\usepackage{textcomp}
+\newcommand{\fs}{\footnotesize}
+\newcommand{\bs}{\textbackslash}
+\newcommand{\n}{\textbackslash n}
+\newcommand{\qs}{\textquotesingle}
+\newcommand{\chr}[1]{\texttt{\qs{#1}\qs}}
+\newcommand{\str}[1]{\texttt{"{#1}"}}
+
+% syntax highlighting
+\usepackage{listings}
+\lstset{
+    basicstyle=\ttfamily,
+    backgroundcolor=\color{bgcolor},
+    numberstyle=\scriptsize\color{answers},
+    commentstyle=\color{comment},
+    keywordstyle=\color{keyword},
+    stringstyle=\color{strings},
+    columns=fullflexible,
+    keepspaces=true,
+    showlines=true,
+    showstringspaces=false,
+    tabsize=4,
+    upquote=true
+}
+\lstdefinestyle{morejava}{
+    language=java,
+    morekeywords={enum}
+}
+\lstdefinestyle{morepython}{
+    language=python,
+    morekeywords={False,True},
+    deletekeywords={print},
+    morekeywords=[2]{print},
+    keywordstyle=[2]{\color{builtin}}
+}
+\lstdefinestyle{lstanswers}{
+    backgroundcolor=,
+    commentstyle=\color{answers},
+    keywordstyle=\color{answers},
+    keywordstyle=[2]{\color{answers}},
+    stringstyle=\color{answers}
+}
+
+% Java environments
+\newcommand{\java}[1]{\lstinline[style=morejava]{#1}}%[
+\newcommand{\jans}[1]{\lstinline[style=morejava,style=lstanswers]{#1}}%[
+\lstnewenvironment{javaans}{\lstset{style=morejava,style=lstanswers}\vspace{-1ex}}{}
+\lstnewenvironment{javalst}{\lstset{style=morejava,backgroundcolor=}}{}
+\lstnewenvironment{javanum}{\lstset{style=morejava,backgroundcolor=,numbers=left}}{}
+\lstnewenvironment{javabox}{\lstset{style=morejava,frame=single,numbers=left}\quote}{\endquote}
+\newcommand{\jafile}[1]{\lstinputlisting[style=morejava,backgroundcolor=,numbers=left]{src/#1}}
+
+% Python environments
+\newcommand{\pyth}[1]{\lstinline[style=morepython]{#1}}%[
+\newcommand{\pans}[1]{\lstinline[style=morepython,style=lstanswers]{#1}}%[
+\lstnewenvironment{pythans}{\lstset{style=morepython,style=lstanswers}\vspace{-1ex}}{}
+\lstnewenvironment{pythlst}{\lstset{style=morepython,backgroundcolor=}}{}
+\lstnewenvironment{pythnum}{\lstset{style=morepython,backgroundcolor=,numbers=left}}{}
+\lstnewenvironment{pythbox}{\lstset{style=morepython,frame=single,numbers=left}\quote}{\endquote}
+\newcommand{\pyfile}[1]{\lstinputlisting[style=morepython,backgroundcolor=,numbers=left]{src/#1}}
+
+% PDF properties
+\usepackage[pdftex]{hyperref}
+\urlstyle{same}
+\makeatletter
+\hypersetup{
+  pdftitle={\@title},
+  pdfauthor={\@author},
+  pdfsubject={\@date},
+  pdfkeywords={},
+  bookmarksopen=false,
+  colorlinks=true,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=blue
+}
+\makeatother
+
+\AtBeginDocument{%
+ \hypersetup{
+   urlcolor=blue,
+   urlbordercolor=blue,
+   pdfborder={1 1 1},
+   pdfborderstyle={/S/U/W 1}   
+}}
+
+%------------------------------------------------------------------------------%
+
+%% headers and footers
+%\usepackage{fancyhdr}
+%\usepackage{lastpage}
+%\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+%\definecolor{headers}{HTML}{808080}
+%\makeatletter
+%\lhead{\footnotesize\textcolor{headers}{\@title}}
+%\chead{}
+%\rhead{\footnotesize\textcolor{headers}{Page \thepage\ of \pageref*{LastPage}}}
+%\lfoot{}
+%\cfoot{}
+%\rfoot{}
+%\makeatother
+
+% titles
+\makeatletter
+\renewcommand{\maketitle}{\begin{center}\LARGE\@title\end{center}}
+\makeatother
+
+% role names
+\newcommand{\rolenames}{
+\begin{center}
+\begin{tabularx}{\linewidth}{@{}L{54pt}XL{54pt}X@{}}
+  Manager: & \ans{} &
+ Recorder: & \ans{} \\
+\end{tabularx}
+\par\medskip
+\begin{tabularx}{\linewidth}{@{}L{54pt}XL{54pt}X@{}}
+Presenter: & \ans{} &
+Reflector: & \ans{} \\
+\end{tabularx}
+\end{center}
+}
+
+% boxes [optional height]
+\newcommand{\emptybox}[1][10em]{
+\vspace{1em}
+\begin{tabularx}{\linewidth}{|X|}
+\hline\\[#1]\hline
+\end{tabularx}}
+
+% comment boxes
+\newcommand{\comment}[1]{
+\begin{center}
+\begin{tabularx}{\linewidth}{|X|}
+\hline
+\itshape #1 \\
+\hline
+\end{tabularx}
+\end{center}}
+
+% question type sections
+\usepackage{currfile}
+\newcommand{\qsec}[1]{\section{#1}\label{\currfilename}\nopagebreak}
+\renewcommand{\thesection}{Question Type~\Roman{section}}
+\DeclareTextFontCommand{\emph}{\bfseries\em}
+
+% questions
+\newcommand{\blank}[1][3em]{\rule{#1}{0.5pt}}
+\newcommand{\quest}[1]{\subsection*{Questions~ (#1) \hfill Start time: \ans[3.5em]}}
+\newcounter{question}
+\newcommand{\Q}{\vspace{1em}\refstepcounter{question}\textbf{\arabic{question}}.~ }
+\renewcommand{\thequestion}{\#\arabic{question}}
+
+% sub-question lists
+\usepackage{enumitem}
+\setenumerate[1]{label=\alph*),itemsep=1ex}
+\setlist{itemsep=1em,after=\vspace{1ex}}
+\newcommand{\bull}{\par\hspace{3ex}\raisebox{0.25ex}{\footnotesize$\bullet$}~~}
+
+% homework exercises
+\newcommand{\prob}[3]{\vspace{1em}\textbf{#1}~~(#2)\ifx&#3&\else\ -- \textit{#3}\fi}
+\newcommand{\exer}[2]{\vspace{1em}\textbf{#1}~~#2}
+\newcommand{\code}[1]{\colorbox{WhiteSmoke}{\textcolor{Maroon}{\texttt{#1}}}}
+
+% instructor notes
+\newcommand{\note}[1]{\ifdefined\Teacher\hspace*{1ex}\textcolor{answers}{#1}\fi}
+
+% answer frames (Teacher mode)
+\renewcommand\fbox{\fcolorbox{GhostWhite}{GhostWhite}}
+\setlength{\fboxrule}{0.4pt}  %0.4pt
+\setlength{\fboxsep}{2.25pt}  %3.0pt
+
+% dimensions of answer boxes
+\newlength{\depth}
+\newlength{\width}
+\newlength{\defaultwidth}
+\setlength{\defaultwidth}{15em}
+
+% inline answers [optional width]
+\newcounter{answer}
+\newcommand{\ans}[2][\defaultwidth]{
+\ifdefined\Teacher
+    \leavevmode%
+    \setlength{\width}{#1}\addtolength{\width}{-2.65pt}%
+    \fbox{\parbox[c][13pt][c]{\width}{\textcolor{answers}{#2}}}%
+\else
+    \leavevmode%
+    \refstepcounter{answer}%
+    \TextField[bordercolor=answers,height=13pt,width=#1,
+               name=ans\arabic{answer}]{}%
+\fi}
+
+% longer answers [optional height]
+\newsavebox{\ansbox}
+\newenvironment{answer}[1][4em]{
+\nopagebreak
+\begin{lrbox}{\ansbox}
+\setlength{\width}{\linewidth}\addtolength{\width}{-8.3pt}
+\begin{minipage}[t][#1]{\width}
+\color{answers}
+}{
+\end{minipage}
+\end{lrbox}
+\ifdefined\Teacher
+    \par\vspace{-3pt}\fbox{\usebox{\ansbox}}\vspace{3.3pt}%
+\else
+    \settodepth{\depth}{\usebox{\ansbox}}%
+    \addtolength{\depth}{2.65pt}%
+    \refstepcounter{answer}%
+    \par\vspace{1ex}%
+    \TextField[bordercolor={0 0 0},height=\depth,width=\linewidth,multiline=true,
+               name=ans\arabic{answer}]{}%
+\fi}
+
+% variable diagram
+\newcommand{\var}[2]{
+\begin{tabular}{R{50pt}|C{20pt}|}
+\cline{2-2}
+\texttt{#1} & \texttt{#2} \\
+\cline{2-2}
+\end{tabular}
+}
+
+%------------------------------------------------------------------------------%
+
+% Multiple choice
+\usepackage{amssymb,amsmath}%enumitem}
+\newcommand{\checkme}[1]{\item[{\Large \ifdefined\Teacher\ifnum#1=1$\boxtimes$\else$\Box$\fi\else$\Box$\fi}]}

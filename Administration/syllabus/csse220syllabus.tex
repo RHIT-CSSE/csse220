@@ -1,0 +1,44 @@
+% comment out for student version
+\ifdefined\Student\relax\else\def\Teacher{}\fi
+
+\documentclass[11pt]{article}
+
+\usepackage{syllabus220}
+
+\usepackage{booktabs}
+
+\usepackage{titlesec}
+\titlespacing*{\subsection}{0pt}{2pt}{1pt}
+\titlespacing*{\section}{0pt}{3pt}{1pt}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{lastpage}
+
+\newcommand{\update}[1]{{\color{blue}\textbf{#1}}}
+
+\fancyhf{}
+\fancyhead[R]{\emph{Last updated}: \update{\today{}}}
+\fancyhead[L]{Fall 2026--27, Sections 01 (8--10) and 04 (3--5)}
+\fancyfoot[C]{\thepage\ of~\pageref{LastPage}}
+
+\title{CSSE 220 Syllabus}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\input{welcome.tex}
+\input{official.tex}
+\input{help.tex}
+\input{assignments.tex}
+\input{final-project.tex}
+\input{assessments.tex}
+\newpage
+\input{course-policies.tex}
+\newpage
+\input{institute-policies.tex}
+\input{caveat.tex}
+
+\end{document}
