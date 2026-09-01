@@ -1,6 +1,15 @@
 _site
 .gitignore
+
+# Compiled Java files
 *.class
 bin/
+out/ 
+
+# Extraneous IntelliJ project files
 vcs.xml
+workspace.xml
+
+# Keep that macOS nonsense outta here!
+.DS_Store
 
