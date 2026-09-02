@@ -5,6 +5,8 @@
 - This is an individual exercise/assignment
 - Use of external resources, including genAI tools, is ***not*** permitted on this assignment
 
+<img src="../../Docs/images/no-ai.png" alt="icon indicating no AI use allowed" width="160">
+
 ## The problem:
 Online Quizzes:
 In an online quiz application, teachers update quizzes and students take them. 

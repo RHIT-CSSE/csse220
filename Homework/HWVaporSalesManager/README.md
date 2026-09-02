@@ -46,6 +46,9 @@ For this assignment, you do NOT need Javadocs for every method.
 
 ## Notes
 ### The Manual Part (required to be done with no external resources such as GenAI, StackOverflow, etc.)
+
+<img src="../../Docs/images/no-ai.png" alt="icon indicating no AI use allowed" width="160">
+
 In this program, you are implementing a video game sales manager for Vapor, a hypothetical digital game distributor. This application will keep track of sales of games and game bundles.  From the [Design Problem 2 instructions](../DesignProblems/DP2/DP2.md):
 
 > Vapor, the popular video game digital store, has hired you as a consultant to design a sales management application. Each game available to purchase through Vapor has a title, ESRB rating (e.g., "T" for "Teen"), and price, all of which are fixed. You may assume game titles are unique. 
@@ -181,6 +184,8 @@ Some additional details and hints are provided in the comments of the methods th
 Unit tests for these methods have been provided. 
 
 ### The GenAI Part
+
+<img src="../../Docs/images/cite-ai.png" alt="icon indicating genAI use allowed with citation" width="160">
 
 For this part, you will use a GenAI chatbot tool of your choice. Start by completing Section 1 of the written report in [VaporSalesReport.docx](./VaporSalesReport.docx). 
 

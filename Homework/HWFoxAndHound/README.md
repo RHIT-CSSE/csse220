@@ -3,7 +3,9 @@
 ## Overview:
 - This exercise is intended to give you practice with Java Swing graphics
 - You may work in pairs or individually on this assignment
+- Use of external resources, including genAI tools, is ***not*** permitted on this assignment
 
+<img src="../../Docs/images/no-ai.png" alt="icon indicating no AI use allowed" width="160">
 
 ## Rubric:
 To earn credit for the assignment, your *FoxViewer.java* and *HoundViewer.java* must draw each of the images *similar* to the provided samples. 

@@ -1,6 +1,9 @@
 # HWIntroToUnitTesting: Intro To Unit Testing
 - This exercise will let you practice creating unit tests for pre-existing code.
 - This is an individual exercise. 
+- Use of external resources, including genAI tools, is ***not*** permitted on this assignment
+
+<img src="../../Docs/images/no-ai.png" alt="icon indicating no AI use allowed" width="160">
 
 # Rubric
 - To earn credit for this assignment, you must create a file called *TestThisClassTest.java*. 

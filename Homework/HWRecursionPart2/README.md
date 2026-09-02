@@ -7,6 +7,9 @@
 - Some problems require you to implement a (private) recursive helper method. It is up to you to determine whether to use recursion directly or via a helper method. 
 - When you use a helper method, you still CANNOT use loops in either the public method or the helper method.  
 - This is an individual exercise/assignment. 
+- Use of external resources, including genAI tools, is ***not*** permitted on this assignment
+
+<img src="../../Docs/images/no-ai.png" alt="icon indicating no AI use allowed" width="160">
 
 ## Rubric:
 To earn credit for this assignment:

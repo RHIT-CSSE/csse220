@@ -5,6 +5,8 @@
 - This is an individual exercise/assignment. 
 - Use of external resources, including genAI tools, is ***not*** permitted on this assignment
 
+<img src="../../Docs/images/no-ai.png" alt="icon indicating no AI use allowed" width="160">
+
 ## Rubric:
 
 - All JUnit tests for each operation must succeed in order to earn credit for the assignment

@@ -3,6 +3,10 @@
 This exercise provides opportunities to practice object oriented design.  You will
 do this exercise by yourself.
 
+Use of external resources, including genAI tools, is ***not*** permitted on these problems.
+
+<img src="../../Docs/images/no-ai.png" alt="icon indicating no AI use allowed" width="160">
+
 # Example Problems
 
 The [*Example Problems*](../../Docs/ExampleDesignProblems) includes a set of  design problems for you to practice on. Since these are practice problems, you can work them on your own or collaborate with other students.  

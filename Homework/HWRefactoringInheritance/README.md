@@ -4,6 +4,9 @@
 - In this assignment you are given some code that is poorly designed
 - This exercise will provide practice with software refactoring in order to reduce or eliminate code duplication
 - You may work solo or in pairs
+- Use of external resources, including genAI tools, is ***not*** permitted on this assignment
+
+<img src="../../Docs/images/no-ai.png" alt="icon indicating no AI use allowed" width="160">
 
 ## To do:
 

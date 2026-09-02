@@ -39,6 +39,9 @@ To earn full credit for the assignment, you must successfully complete the follo
 4. Upload your team's completed *.java* files and report to the HWLinearLightsOut Gradescope dropbox. Make sure the submission [includes both team members](https://guides.gradescope.com/hc/en-us/articles/21863861823373-Adding-Group-Members-to-a-Submission).  
 
 ## Part 1 - Manual Part: Ball/Strike Counter
+
+<img src="../../Docs/images/no-ai.png" alt="icon indicating no AI use allowed" width="160">
+
 In this part, you should ***not*** use genAI tools or other external resources (StackOverflow, GeeksforGeeks, etc.). You may only use CSSE 220 class materials and the [Java API](https://docs.oracle.com/en/java/javase/21/docs/api/index.html). 
 ### Overview
 Implement the code in the *ballStrikeCounter* package. In this starter project you have been give simple GUI framework for a program 
@@ -56,6 +59,9 @@ You may add any new classes or make any changes you feel necessary. The method f
 
 
 ## Part 2 - GenAI Part: Linear Lights Out
+
+<img src="../../Docs/images/cite-ai.png" alt="icon indicating genAI use allowed with citation" width="160">
+
 ### Game Overview
 1. You will implement the app Linear Lights Out in the *linearLightsOut* package. 
 2. The app presents the user with an array of buttons that are randomly initialized to either Xs or Os, using a 50% probability. 
