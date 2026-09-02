@@ -1,0 +1,7 @@
+cite-ai.png: 
+ - Robot face from https://icons8.com/icons/set/robot-face
+ - Shapes and text added in PowerPoint by Ian Ludden
+
+no-ai.png: 
+ - Robot face from https://icons8.com/icons/set/robot-face
+ - Shapes and text added in PowerPoint by Ian Ludden
