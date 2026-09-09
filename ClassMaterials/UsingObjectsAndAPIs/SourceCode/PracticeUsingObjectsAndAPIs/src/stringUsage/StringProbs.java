@@ -1,27 +1,27 @@
 package stringUsage;
 /**
- * In the very beginning, I care about you knowing about 4 string functions:
- * 
+ * In the very beginning, we care about you knowing about 4 string functions:
+ * <p>
  * str.charAt(i) // returns the character a particular index
  * e.g.  "hello".charAt(1) returns 'e'
- * 
+ * <p>
  * str.length() // returns the length of the string
  * e.g. "hello".length() returns 5
- * 
+ * <p>
  * str.substring(i1,i2) // returns a string starting at index i1 and continuing to i2
  *                      // but not including it
  * e.g "hello".substring(1,3) returns "el"
- * 
+ * <p>
  * str.equals(otherStr) //compares one string to another
  *                      // NEVER use str == otherStr
  *                      // unless you want to check if a str is null
  *                      // if(str == null)
  *                      // ONLY time == is correct for strings
- *                      
- * BUT in general more string functions can be found in the java docs:
- * http://download.oracle.com/javase/7/docs/api/ 
- * ...find "String" in the All Classes window on the right
- * 
+ * <p>
+ * BUT in general more string functions can be found in the
+ * <a href="https://docs.oracle.com/javase/8/docs/api/">Java API docs</a>.
+ * ...find "String" in java.lang.
+ *
  * @author hewner
  *
  */
