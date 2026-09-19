@@ -1,0 +1,25 @@
+@startuml
+skinparam style strictuml
+
+class Book {
+   name
+   author
+   printReport()
+   addKid(kid)
+}
+class Kid {
+   name
+   gradeLevel
+   printReport()
+   addBook(book)
+}
+
+class BookMain {
+   handleNewReading(bookname, kidName)
+   handlePrintReportForKid(kidName)
+   handlePrintReportForBook(bookName)
+}
+Kid "*" <-> "*" Book
+BookMain -> "*" Kid
+BookMain -> "*" Book
+@enduml

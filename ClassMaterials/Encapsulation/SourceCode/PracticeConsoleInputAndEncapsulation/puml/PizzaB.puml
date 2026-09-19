@@ -1,0 +1,24 @@
+@startuml
+skinparam style strictuml
+
+class PizzaMain {
+  handleCreateNewOrder(customerData)
+  handleAddPizza(orderNum, toppings)
+}
+
+class Order {
+  orderNum
+  customerData
+  addPizzaToOrder(toppingList)
+  computeCostForPizza(pizza)
+  getCost()
+}
+
+class Pizza {
+  toppings
+  getToppings()
+}
+
+PizzaMain ->"*" Order
+Order ->"*" Pizza
+@enduml

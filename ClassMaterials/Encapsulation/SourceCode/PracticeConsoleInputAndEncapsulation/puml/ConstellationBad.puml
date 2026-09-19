@@ -1,0 +1,22 @@
+@startuml
+skinparam style strictuml
+
+class SkyMain {
+  handleLoadDatafile(constellationName, datafileName)
+  handleDisplayAllConstellations(graphics)
+}
+
+class Constellation {
+  name
+  lines
+  starPositions
+  starColors
+  starSizes
+  loadFile(filename)
+  drawConstellation(graphics)
+  drawLines(graphics)
+  drawStar(graphics, position, color, size)
+}
+
+SkyMain ->"*" Constellation
+@enduml
