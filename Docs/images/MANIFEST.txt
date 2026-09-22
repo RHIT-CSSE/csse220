@@ -5,3 +5,7 @@ cite-ai.png:
 no-ai.png: 
  - Robot face from https://icons8.com/icons/set/robot-face
  - Shapes and text added in PowerPoint by Ian Ludden
+
+import-instructions.png: 
+ - Screenshots from IntelliJ and Windows Explorer, 
+   created by Ian Ludden
