@@ -2,7 +2,7 @@ package liveCoding;
 import javax.swing.JFrame;
 
 /**
- * Draws a various graphics objects: rectangles, rounded rectangles, lines, arcs, elipses
+ * Draws a various graphics objects: rectangles, rounded rectangles, lines, arcs, ellipses
  * 
  * @author CSSE Faculty
  */
