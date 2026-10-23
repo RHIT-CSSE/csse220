@@ -12,7 +12,7 @@ also using it to submit your homework.
 
 
 
-*This step should only be done by one member of your Arcade Game team. This is what it should be. Yet another change*
+*This step should only be done by one member of your Arcade Game team.*
 
 
 
