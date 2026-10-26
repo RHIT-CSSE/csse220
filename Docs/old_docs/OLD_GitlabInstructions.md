@@ -10,7 +10,12 @@ also using it to submit your homework.
 
 # Step 1: Forking My Repo
 
+
+
 *This step should only be done by one member of your Arcade Game team.*
+
+
+
 
 1. Go to this URL:
 
